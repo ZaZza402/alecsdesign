@@ -1,0 +1,374 @@
+.pricing-section {
+  padding: 6rem 0;
+  background: linear-gradient(180deg, #ffffff 0%, #dbeafe 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.pricing-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.pricing-container.animate-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.pricing-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.pricing-title {
+  font-size: 2.75rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin: 0 0 1rem 0;
+  line-height: 1.2;
+}
+
+.pricing-subtitle {
+  font-size: 1.25rem;
+  color: #475569;
+  margin: 0;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.6;
+}
+
+.pricing-range-card {
+  background: white;
+  padding: 2.5rem;
+  border-radius: 12px;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  margin-bottom: 3rem;
+  text-align: center;
+  border: 2px solid rgba(59, 130, 246, 0.2);
+}
+
+.range-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.range-label {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #3b82f6;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.range-values {
+  display: flex;
+  align-items: baseline;
+  gap: 1rem;
+}
+
+.range-min {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #10b981;
+}
+
+.range-separator {
+  font-size: 2rem;
+  color: #94a3b8;
+}
+
+.range-max {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #3b82f6;
+}
+
+.range-note {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #64748b;
+  margin: 0;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.examples-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.example-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05),
+    0 2px 4px -1px rgba(0, 0, 0, 0.03);
+  transition: all 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+  border: 2px solid transparent;
+  opacity: 0;
+  animation: fadeInUp 0.6s ease forwards;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.example-card:hover {
+  transform: translateY(-8px);
+  border-color: rgba(59, 130, 246, 0.3);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+    0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+.example-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+  color: #3b82f6;
+}
+
+.example-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin: 0 0 0.75rem 0;
+  text-align: center;
+}
+
+.example-price {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #3b82f6;
+  margin: 0 0 1.5rem 0;
+  text-align: center;
+}
+
+.example-features {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.feature-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  font-size: 0.9375rem;
+  line-height: 1.6;
+  color: #475569;
+}
+
+.feature-check {
+  flex-shrink: 0;
+  color: #10b981;
+  margin-top: 0.125rem;
+}
+
+.pricing-cta-card {
+  background: linear-gradient(135deg, #3b82f6 0%, #10b981 100%);
+  padding: 3rem 2rem;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 10px 15px -3px rgba(59, 130, 246, 0.3),
+    0 4px 6px -2px rgba(59, 130, 246, 0.2);
+}
+
+.cta-text {
+  font-size: 1.25rem;
+  line-height: 1.7;
+  color: white;
+  margin: 0 0 1.5rem 0;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.pricing-cta-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1rem 2.5rem;
+  background: white;
+  color: #3b82f6;
+  font-size: 1.125rem;
+  font-weight: 700;
+  text-decoration: none;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.pricing-cta-button:hover {
+  transform: translateY(-2px) scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Mobile responsiveness */
+@media (max-width: 1024px) {
+  .examples-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .example-card:nth-child(3) {
+    grid-column: 1 / -1;
+    max-width: 500px;
+    margin: 0 auto;
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .pricing-section {
+    padding: 4rem 0;
+  }
+
+  .pricing-container {
+    padding: 0 1.5rem;
+  }
+
+  .pricing-header {
+    margin-bottom: 2.5rem;
+  }
+
+  .pricing-title {
+    font-size: 2.25rem;
+  }
+
+  .pricing-subtitle {
+    font-size: 1.125rem;
+  }
+
+  .pricing-range-card {
+    padding: 2rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .range-min,
+  .range-max {
+    font-size: 2rem;
+  }
+
+  .range-separator {
+    font-size: 1.5rem;
+  }
+
+  .examples-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .example-card {
+    padding: 1.75rem;
+  }
+
+  .example-card:nth-child(3) {
+    grid-column: auto;
+    max-width: none;
+  }
+
+  .pricing-cta-card {
+    padding: 2.5rem 1.5rem;
+  }
+
+  .cta-text {
+    font-size: 1.125rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .pricing-section {
+    padding: 3rem 0;
+  }
+
+  .pricing-container {
+    padding: 0 1rem;
+  }
+
+  .pricing-header {
+    margin-bottom: 2rem;
+  }
+
+  .pricing-title {
+    font-size: 1.875rem;
+  }
+
+  .pricing-subtitle {
+    font-size: 1rem;
+  }
+
+  .pricing-range-card {
+    padding: 1.75rem 1.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .range-values {
+    gap: 0.75rem;
+  }
+
+  .range-min,
+  .range-max {
+    font-size: 1.75rem;
+  }
+
+  .examples-grid {
+    gap: 1.25rem;
+    margin-bottom: 2rem;
+  }
+
+  .example-card {
+    padding: 1.5rem;
+  }
+
+  .example-icon {
+    font-size: 2.5rem;
+  }
+
+  .example-title {
+    font-size: 1.375rem;
+  }
+
+  .example-price {
+    font-size: 1rem;
+  }
+
+  .feature-item {
+    font-size: 0.875rem;
+  }
+
+  .pricing-cta-card {
+    padding: 2rem 1.25rem;
+  }
+
+  .cta-text {
+    font-size: 1rem;
+  }
+
+  .pricing-cta-button {
+    width: 100%;
+    padding: 1rem 2rem;
+  }
+}

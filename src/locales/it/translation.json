@@ -1,0 +1,221 @@
+{
+  "nav": {
+    "home": "Home",
+    "technology": "Tecnologia",
+    "portfolio": "Portfolio",
+    "pricing": "Prezzi",
+    "process": "Processo",
+    "contact": "Contatti"
+  },
+  "hero": {
+    "greeting": "Ciao!",
+    "name": "Sono Alex",
+    "title": "Il tuo",
+    "titleHighlight": "partner digitale per il tuo business",
+    "word1": "partner digitale per il business",
+    "word2": "consulente per la crescita online",
+    "word3": "alleato per il successo digitale",
+    "word4": "collaboratore per soluzioni web",
+    "description": "Costruisco soluzioni web che crescono insieme alla tua attività. Non solo siti web, ma strumenti scalabili che lavorano 24/7 per far crescere il tuo business."
+  },
+  "problem": {
+    "title": "Se sei arrivato qui, sai già che...",
+    "point1": "Possedere un'attività non basta più",
+    "point2": "Devi essere visibile dove sono i tuoi clienti: online",
+    "point3": "Un sito web non è solo 'bello da avere'",
+    "point4": "È il tuo dipendente 24/7",
+    "description": "Lavora senza sosta, non si lamenta mai, non ha bisogno di pause e ti rappresenta ovunque. La tua presenza digitale lavora mentre tu dormi.",
+    "cta": "Scopri come funziona"
+  },
+  "difference": {
+    "title": "Non costruisco solo siti belli",
+    "subtitle": "L'estetica è implicita. Io mi concentro sulle soluzioni.",
+    "pillar1": {
+      "title": "Soluzioni Prima di Tutto",
+      "description": "Non si tratta solo di bell'aspetto. Si tratta di risolvere problemi reali del business e renderti rilevante per i clienti."
+    },
+    "pillar2": {
+      "title": "SEO e Visibilità",
+      "description": "Google sa cosa fai. L'AI comprende il tuo business. I clienti possono trovarti. Ti rendo visibile dove conta."
+    },
+    "pillar3": {
+      "title": "Partnership a Lungo Termine",
+      "description": "Non costruisco e sparisco. Cresciamo insieme. Supporto continuo finché non decidi diversamente."
+    }
+  },
+  "technology": {
+    "title": "Il tuo sito è un'APP, non solo HTML",
+    "subtitle": "Ecco perché questo fa la differenza",
+    "benefit1": "Inizia con una landing page. Aggiungi un negozio online quando sei pronto. Espandi con un blog il mese prossimo.",
+    "benefit2": "Ogni pezzo si integra perfettamente. Niente ricostruzioni. Niente migrazioni complicate. Solo crescita fluida.",
+    "benefit3": "Sistema di autenticazione? Dashboard clienti? Funzionalità su misura? Aggiungi quello che serve, quando serve.",
+    "callout": "Non ci credi? Chiedi a Google o alla tua AI: 'Se costruisco un sito con React+Vite e Tailwind CSS, posso farlo crescere senza dover ricostruire?' Guarda i risultati.",
+    "visualLabel": "Architettura modulare"
+  },
+  "portfolio": {
+    "title": "Progetti Recenti",
+    "subtitle": "Soluzioni reali per business reali",
+    "viewProject": "Vedi Progetto",
+    "client": "Cliente",
+    "problem": "Problema",
+    "solution": "Soluzione",
+    "result": "Risultato",
+    "project1": {
+      "name": "Progetto 1",
+      "client": "Piccola Impresa Locale",
+      "problem": "Nessuna presenza online",
+      "solution": "Landing page responsive con sistema di prenotazioni",
+      "result": "40% aumento nelle richieste"
+    },
+    "project2": {
+      "name": "Progetto 2",
+      "client": "Negozio E-commerce",
+      "problem": "Catalogo prodotti difficile da gestire",
+      "solution": "Dashboard personalizzata con gestione inventario",
+      "result": "Risparmio di 10 ore/settimana"
+    },
+    "comingSoon": {
+      "title": "Prossimamente",
+      "description": "Nuovi progetti in arrivo presto. Rimani sintonizzato!"
+    }
+  },
+  "pricing": {
+    "title": "Quanto costa?",
+    "subtitle": "La risposta onesta: dipende dalla complessità",
+    "rangeLabel": "Fascia di prezzo tipica",
+    "rangeNote": "Il prezzo varia in base alle tue esigenze specifiche e alla complessità del progetto",
+    "examples": {
+      "simple": {
+        "title": "Progetto Semplice",
+        "price": "€150 - €500",
+        "features": [
+          "Landing page a pagina singola",
+          "Design responsive",
+          "Modulo di contatto base",
+          "Ottimizzazione SEO di base"
+        ]
+      },
+      "medium": {
+        "title": "Progetto Medio",
+        "price": "€500 - €1200",
+        "features": [
+          "Sito multi-pagina",
+          "Funzionalità personalizzate",
+          "Integrazioni con terze parti",
+          "SEO avanzato e analytics"
+        ]
+      },
+      "complex": {
+        "title": "Progetto Complesso",
+        "price": "€1200 - €2000+",
+        "features": [
+          "Piattaforma completa",
+          "Sistema di gestione contenuti",
+          "Database e autenticazione",
+          "Funzionalità avanzate su misura"
+        ]
+      }
+    },
+    "ctaText": "Ogni progetto è unico. Parliamo delle tue esigenze e creiamo una soluzione perfetta per te.",
+    "cta": "Richiedi Consulenza Gratuita"
+  },
+  "process": {
+    "title": "Come lavoriamo insieme?",
+    "subtitle": "Semplice, trasparente, senza impegni",
+    "step1": {
+      "title": "Contattami",
+      "description": "Gratuito, senza vincoli. Parliamo del tuo progetto."
+    },
+    "step2": {
+      "title": "Raccontami",
+      "description": "Le tue esigenze, obiettivi e visione per il business."
+    },
+    "step3": {
+      "title": "Creo un Piano",
+      "description": "Piano d'azione dettagliato con tempistiche e costi."
+    },
+    "step4": {
+      "title": "Tu Decidi",
+      "description": "Valuta la proposta, nessuna pressione o impegno."
+    },
+    "step5": {
+      "title": "Costruiamo Insieme",
+      "description": "Partnership dalla A alla Z per il tuo successo."
+    },
+    "note": "Ricorda: nessun impegno fino a quando non sei sicuro al 100%"
+  },
+  "blog": {
+    "title": "Blog & Approfondimenti",
+    "subtitle": "Strategie, consigli e approfondimenti per far crescere il tuo business online",
+    "imagePlaceholder": "Immagine in arrivo",
+    "minRead": "min lettura",
+    "readMore": "Leggi l'articolo completo",
+    "moreComingSoon": "Altri articoli in arrivo presto..."
+  },
+  "contact": {
+    "title": "Parliamo del tuo progetto",
+    "subtitle": "Iniziamo il tuo percorso digitale",
+    "successMessage": "Grazie! Ti contatterò presto.",
+    "form": {
+      "name": "Nome",
+      "namePlaceholder": "Il tuo nome",
+      "nameRequired": "Il nome è obbligatorio",
+      "contact": "Email o Telefono",
+      "contactPlaceholder": "Come posso contattarti?",
+      "contactRequired": "Email o telefono è obbligatorio",
+      "business": "Parlami della tua attività",
+      "businessPlaceholder": "Cosa fai? Cosa vuoi ottenere online?",
+      "businessRequired": "Raccontami della tua attività",
+      "needs": "Di cosa hai bisogno?",
+      "needsPlaceholder": "Seleziona...",
+      "needsRequired": "Seleziona un'opzione",
+      "needsOptions": {
+        "newWebsite": "Nuovo Sito Web",
+        "redesign": "Rifacimento Sito Esistente",
+        "consultation": "Consulenza",
+        "other": "Altro"
+      },
+      "preference": "Come preferisci essere contattato?",
+      "preferencePlaceholder": "Seleziona...",
+      "preferenceRequired": "Seleziona una preferenza",
+      "preferenceOptions": {
+        "email": "Email",
+        "phone": "Telefono",
+        "whatsapp": "WhatsApp"
+      },
+      "message": "Messaggio aggiuntivo (opzionale)",
+      "messagePlaceholder": "Qualcos'altro che dovrei sapere?",
+      "submit": "Invia Messaggio"
+    }
+  },
+  "footer": {
+    "company": {
+      "title": "Alecs Design",
+      "description": "Costruisco soluzioni web che crescono insieme alla tua attività. Partnership digitali a lungo termine per imprenditori seri.",
+      "location": "Italia"
+    },
+    "quickLinks": {
+      "title": "Link Rapidi",
+      "about": "Chi Sono",
+      "portfolio": "Portfolio",
+      "pricing": "Prezzi",
+      "contact": "Contatti"
+    },
+    "legal": {
+      "title": "Legale",
+      "privacy": "Privacy Policy",
+      "terms": "Termini & Condizioni"
+    },
+    "social": {
+      "title": "Seguimi"
+    },
+    "copyright": "Alecs Design. Tutti i diritti riservati.",
+    "revealContact": "Mostra Info Contatto"
+  },
+  "common": {
+    "loading": "Caricamento...",
+    "error": "Errore",
+    "close": "Chiudi",
+    "menu": "Menu"
+  }
+}

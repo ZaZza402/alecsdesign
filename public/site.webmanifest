@@ -1,0 +1,47 @@
+{
+  "name": "alecsdesign - Professional Web Development",
+  "short_name": "alecsdesign",
+  "description": "Professional web development services in Rome, Italy",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0f172a",
+  "theme_color": "#1e293b",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/logo/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/logo/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["business", "productivity", "utilities"],
+  "lang": "en",
+  "dir": "ltr",
+  "shortcuts": [
+    {
+      "name": "Blog",
+      "short_name": "Blog",
+      "description": "Read our blog posts",
+      "url": "/blog",
+      "icons": [
+        { "src": "/logo/android-chrome-192x192.png", "sizes": "192x192" }
+      ]
+    },
+    {
+      "name": "Contact",
+      "short_name": "Contact",
+      "description": "Get in touch",
+      "url": "/#contact",
+      "icons": [
+        { "src": "/logo/android-chrome-192x192.png", "sizes": "192x192" }
+      ]
+    }
+  ]
+}

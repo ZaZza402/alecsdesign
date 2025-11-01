@@ -1,0 +1,334 @@
+.portfolio-section {
+  padding: 6rem 0;
+  background: linear-gradient(180deg, #f0f9ff 0%, #ffffff 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.portfolio-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.portfolio-container.animate-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.portfolio-header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.portfolio-title {
+  font-size: 2.75rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin: 0 0 1rem 0;
+  line-height: 1.2;
+}
+
+.portfolio-subtitle {
+  font-size: 1.25rem;
+  color: #475569;
+  margin: 0;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.6;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+}
+
+.project-card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05),
+    0 2px 4px -1px rgba(0, 0, 0, 0.03);
+  overflow: hidden;
+  transition: all 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+  border: 2px solid transparent;
+  display: flex;
+  flex-direction: column;
+  opacity: 0;
+  animation: fadeInUp 0.6s ease forwards;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
+  border-color: rgba(59, 130, 246, 0.3);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+    0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+.project-image-placeholder {
+  width: 100%;
+  height: 200px;
+  background: linear-gradient(135deg, #dbeafe 0%, #f0f9ff 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.placeholder-pattern {
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(
+      45deg,
+      rgba(59, 130, 246, 0.05) 25%,
+      transparent 25%
+    ),
+    linear-gradient(-45deg, rgba(59, 130, 246, 0.05) 25%, transparent 25%),
+    linear-gradient(45deg, transparent 75%, rgba(59, 130, 246, 0.05) 75%),
+    linear-gradient(-45deg, transparent 75%, rgba(59, 130, 246, 0.05) 75%);
+  background-size: 20px 20px;
+  background-position: 0 0, 0 10px, 10px -10px, -10px 0px;
+}
+
+.project-content {
+  padding: 2rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.project-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin: 0;
+  line-height: 1.3;
+}
+
+.project-client,
+.project-problem,
+.project-solution,
+.project-result {
+  font-size: 0.9375rem;
+  line-height: 1.6;
+  color: #475569;
+  margin: 0;
+}
+
+.project-client {
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.project-problem {
+  padding: 0.75rem;
+  background: rgba(239, 68, 68, 0.05);
+  border-radius: 6px;
+  border-left: 3px solid #ef4444;
+}
+
+.project-problem strong {
+  color: #ef4444;
+}
+
+.project-solution {
+  padding: 0.75rem;
+  background: rgba(59, 130, 246, 0.05);
+  border-radius: 6px;
+  border-left: 3px solid #3b82f6;
+}
+
+.project-solution strong {
+  color: #3b82f6;
+}
+
+.project-result {
+  padding: 0.75rem;
+  background: rgba(16, 185, 129, 0.05);
+  border-radius: 6px;
+  border-left: 3px solid #10b981;
+}
+
+.project-result strong {
+  color: #10b981;
+}
+
+.project-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.875rem 1.5rem;
+  margin: 0 2rem 2rem;
+  background: linear-gradient(135deg, #3b82f6 0%, #10b981 100%);
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.project-link:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px rgba(59, 130, 246, 0.3);
+}
+
+/* Coming Soon Card */
+.project-card.coming-soon {
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 2rem;
+  background: linear-gradient(
+    135deg,
+    rgba(59, 130, 246, 0.03) 0%,
+    rgba(16, 185, 129, 0.03) 100%
+  );
+  border: 2px dashed rgba(59, 130, 246, 0.2);
+}
+
+.project-card.coming-soon:hover {
+  transform: translateY(-4px);
+  border-color: rgba(59, 130, 246, 0.4);
+  box-shadow: 0 12px 20px -5px rgba(59, 130, 246, 0.1);
+}
+
+.coming-soon-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 80px;
+  background: white;
+  border-radius: 50%;
+  color: #3b82f6;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.15);
+}
+
+.project-card.coming-soon .project-title {
+  text-align: center;
+  margin-bottom: 0.75rem;
+  color: #3b82f6;
+}
+
+.project-card.coming-soon .project-description {
+  text-align: center;
+  max-width: 300px;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .portfolio-section {
+    padding: 4rem 0;
+  }
+
+  .portfolio-container {
+    padding: 0 1.5rem;
+  }
+
+  .portfolio-header {
+    margin-bottom: 3rem;
+  }
+
+  .portfolio-title {
+    font-size: 2.25rem;
+  }
+
+  .portfolio-subtitle {
+    font-size: 1.125rem;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .project-content {
+    padding: 1.5rem;
+  }
+
+  .project-link {
+    margin: 0 1.5rem 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .portfolio-section {
+    padding: 3rem 0;
+  }
+
+  .portfolio-container {
+    padding: 0 1rem;
+  }
+
+  .portfolio-header {
+    margin-bottom: 2rem;
+  }
+
+  .portfolio-title {
+    font-size: 1.875rem;
+  }
+
+  .portfolio-subtitle {
+    font-size: 1rem;
+  }
+
+  .projects-grid {
+    gap: 1.25rem;
+  }
+
+  .project-image-placeholder {
+    height: 160px;
+  }
+
+  .project-content {
+    padding: 1.25rem;
+    gap: 0.875rem;
+  }
+
+  .project-title {
+    font-size: 1.375rem;
+  }
+
+  .project-description {
+    font-size: 0.9375rem;
+  }
+
+  .project-impact {
+    font-size: 0.875rem;
+    padding: 0.875rem;
+  }
+
+  .project-link {
+    margin: 0 1.25rem 1.25rem;
+    padding: 0.75rem 1.25rem;
+  }
+
+  .project-card.coming-soon {
+    padding: 2.5rem 1.5rem;
+  }
+
+  .coming-soon-icon {
+    width: 70px;
+    height: 70px;
+  }
+
+  .coming-soon-icon svg {
+    width: 36px;
+    height: 36px;
+  }
+}

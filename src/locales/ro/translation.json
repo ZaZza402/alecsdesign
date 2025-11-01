@@ -1,0 +1,221 @@
+{
+  "nav": {
+    "home": "Acasă",
+    "technology": "Tehnologie",
+    "portfolio": "Portofoliu",
+    "pricing": "Prețuri",
+    "process": "Proces",
+    "contact": "Contact"
+  },
+  "hero": {
+    "greeting": "Salut!",
+    "name": "Sunt Alex",
+    "title": "Partenerul tău",
+    "titleHighlight": "digital pentru afacerea ta",
+    "word1": "digital pentru afacerea ta",
+    "word2": "consultant pentru creștere online",
+    "word3": "aliat pentru succesul digital",
+    "word4": "colaborator pentru soluții web",
+    "description": "Construiesc soluții web care cresc odată cu afacerea ta. Nu doar site-uri web, ci instrumente scalabile care lucrează 24/7 pentru a ajuta afacerea ta să prospere."
+  },
+  "problem": {
+    "title": "Dacă ai ajuns aici, știi deja că...",
+    "point1": "A deține o afacere nu mai este suficient",
+    "point2": "Trebuie să fii vizibil unde sunt clienții tăi: online",
+    "point3": "Un site web nu este doar 'frumos de avut'",
+    "point4": "Este angajatul tău 24/7",
+    "description": "Lucrează non-stop, nu se plânge niciodată, nu are nevoie de pauze și te reprezintă peste tot. Prezența ta digitală lucrează în timp ce tu dormi.",
+    "cta": "Vezi cum funcționează"
+  },
+  "difference": {
+    "title": "Nu construiesc doar site-uri frumoase",
+    "subtitle": "Estetica este implicită. Mă concentrez pe soluții.",
+    "pillar1": {
+      "title": "Soluții Mai Întâi",
+      "description": "Nu este despre aspect. Este despre rezolvarea problemelor reale de business și a te face relevant pentru clienți."
+    },
+    "pillar2": {
+      "title": "SEO și Vizibilitate",
+      "description": "Google știe ce faci. AI înțelege afacerea ta. Clienții te pot găsi. Te fac vizibil unde contează."
+    },
+    "pillar3": {
+      "title": "Parteneriat pe Termen Lung",
+      "description": "Nu construiesc și dispar. Creștem împreună. Suport continuu până când decizi altfel."
+    }
+  },
+  "technology": {
+    "title": "Site-ul tău este o aplicație, nu doar HTML",
+    "subtitle": "Iată de ce face toată diferența",
+    "benefit1": "Începe cu o landing page. Adaugă un magazin online când ești gata. Extinde cu un blog luna viitoare.",
+    "benefit2": "Fiecare piesă se integrează perfect. Fără reconstrucții. Fără migrații complicate. Doar creștere fluidă.",
+    "benefit3": "Sistem de autentificare? Dashboard pentru clienți? Funcții personalizate? Adaugă ce ai nevoie, când ai nevoie.",
+    "callout": "Nu mă crezi? Întreabă Google sau AI-ul tău: 'Dacă construiesc un site cu React+Vite și Tailwind CSS, îl pot scala fără să reconstruiesc?' Vezi rezultatele.",
+    "visualLabel": "Arhitectură modulară"
+  },
+  "portfolio": {
+    "title": "Proiecte Recente",
+    "subtitle": "Soluții reale pentru afaceri reale",
+    "viewProject": "Vezi Proiect",
+    "client": "Client",
+    "problem": "Problemă",
+    "solution": "Soluție",
+    "result": "Rezultat",
+    "project1": {
+      "name": "Proiect 1",
+      "client": "Afacere Locală Mică",
+      "problem": "Fără prezență online",
+      "solution": "Landing page responsive cu sistem de rezervări",
+      "result": "Creștere de 40% în solicitări"
+    },
+    "project2": {
+      "name": "Proiect 2",
+      "client": "Magazin E-commerce",
+      "problem": "Catalog produse greu de gestionat",
+      "solution": "Dashboard personalizat cu management inventar",
+      "result": "Economisit 10 ore/săptămână"
+    },
+    "comingSoon": {
+      "title": "În curând",
+      "description": "Proiecte noi în curând. Rămâi conectat!"
+    }
+  },
+  "pricing": {
+    "title": "Cât costă?",
+    "subtitle": "Răspunsul sincer: depinde de complexitate",
+    "rangeLabel": "Interval de preț tipic",
+    "rangeNote": "Prețurile variază în funcție de nevoile tale specifice și complexitatea proiectului",
+    "examples": {
+      "simple": {
+        "title": "Proiect Simplu",
+        "price": "€150 - €500",
+        "features": [
+          "Landing page cu o pagină",
+          "Design responsive",
+          "Formular de contact de bază",
+          "Optimizare SEO de bază"
+        ]
+      },
+      "medium": {
+        "title": "Proiect Mediu",
+        "price": "€500 - €1200",
+        "features": [
+          "Site web multi-pagină",
+          "Funcționalitate personalizată",
+          "Integrări cu terțe părți",
+          "SEO avansat și analytics"
+        ]
+      },
+      "complex": {
+        "title": "Proiect Complex",
+        "price": "€1200 - €2000+",
+        "features": [
+          "Platformă completă",
+          "Sistem de management conținut",
+          "Bază de date și autentificare",
+          "Funcționalități avansate personalizate"
+        ]
+      }
+    },
+    "ctaText": "Fiecare proiect este unic. Să discutăm despre nevoile tale și să creăm soluția perfectă pentru tine.",
+    "cta": "Solicită Consultație Gratuită"
+  },
+  "process": {
+    "title": "Cum lucrăm împreună?",
+    "subtitle": "Simplu, transparent, fără angajamente",
+    "step1": {
+      "title": "Contactează-mă",
+      "description": "Gratuit, fără obligații. Să vorbim despre proiectul tău."
+    },
+    "step2": {
+      "title": "Spune-mi",
+      "description": "Nevoile, obiectivele și viziunea ta pentru afacere."
+    },
+    "step3": {
+      "title": "Creez un Plan",
+      "description": "Plan de acțiune detaliat cu termene și costuri."
+    },
+    "step4": {
+      "title": "Tu Decizi",
+      "description": "Evaluează propunerea, fără presiune sau angajament."
+    },
+    "step5": {
+      "title": "Construim Împreună",
+      "description": "Parteneriat de la A la Z pentru succesul tău."
+    },
+    "note": "Reține: niciun angajament până când nu ești 100% sigur"
+  },
+  "blog": {
+    "title": "Blog & Perspective",
+    "subtitle": "Strategii, sfaturi și perspective pentru a-ți crește afacerea online",
+    "imagePlaceholder": "Imagine în curând",
+    "minRead": "min citire",
+    "readMore": "Citește articolul complet",
+    "moreComingSoon": "Mai multe articole în curând..."
+  },
+  "contact": {
+    "title": "Să vorbim despre proiectul tău",
+    "subtitle": "Începe călătoria ta digitală",
+    "successMessage": "Mulțumesc! Te voi contacta în curând.",
+    "form": {
+      "name": "Nume",
+      "namePlaceholder": "Numele tău",
+      "nameRequired": "Numele este obligatoriu",
+      "contact": "Email sau Telefon",
+      "contactPlaceholder": "Cum te pot contacta?",
+      "contactRequired": "Email sau telefon este obligatoriu",
+      "business": "Spune-mi despre afacerea ta",
+      "businessPlaceholder": "Ce faci? Ce vrei să realizezi online?",
+      "businessRequired": "Spune-mi despre afacerea ta",
+      "needs": "De ce ai nevoie?",
+      "needsPlaceholder": "Selectează...",
+      "needsRequired": "Te rog selectează o opțiune",
+      "needsOptions": {
+        "newWebsite": "Site Nou",
+        "redesign": "Redesign Site Existent",
+        "consultation": "Consultanță",
+        "other": "Altceva"
+      },
+      "preference": "Cum preferi să fii contactat?",
+      "preferencePlaceholder": "Selectează...",
+      "preferenceRequired": "Te rog selectează o preferință",
+      "preferenceOptions": {
+        "email": "Email",
+        "phone": "Telefon",
+        "whatsapp": "WhatsApp"
+      },
+      "message": "Mesaj adițional (opțional)",
+      "messagePlaceholder": "Mai este ceva ce ar trebui să știu?",
+      "submit": "Trimite Mesaj"
+    }
+  },
+  "footer": {
+    "company": {
+      "title": "Alecs Design",
+      "description": "Construiesc soluții web care cresc odată cu afacerea ta. Parteneriate digitale pe termen lung pentru antreprenori serioși.",
+      "location": "Italia"
+    },
+    "quickLinks": {
+      "title": "Link-uri Rapide",
+      "about": "Despre Mine",
+      "portfolio": "Portfolio",
+      "pricing": "Prețuri",
+      "contact": "Contact"
+    },
+    "legal": {
+      "title": "Legal",
+      "privacy": "Politica de Confidențialitate",
+      "terms": "Termeni și Condiții"
+    },
+    "social": {
+      "title": "Urmărește-mă"
+    },
+    "copyright": "Alecs Design. Toate drepturile rezervate.",
+    "revealContact": "Arată Info Contact"
+  },
+  "common": {
+    "loading": "Se încarcă...",
+    "error": "Eroare",
+    "close": "Închide",
+    "menu": "Meniu"
+  }
+}

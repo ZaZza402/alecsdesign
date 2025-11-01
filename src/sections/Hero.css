@@ -1,0 +1,97 @@
+/* Hero Section Styles */
+
+.hero-section {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 2rem;
+  padding-bottom: 0; /* No padding at bottom - scroll bar sits flush */
+  overflow: hidden;
+}
+
+/* On mobile, start from top without header space */
+@media (max-width: 1024px) {
+  .hero-section {
+    padding-top: 2rem;
+    min-height: calc(100vh - 80px); /* Account for bottom nav */
+  }
+}
+
+/* On desktop with sidebar, reduce top padding even more */
+@media (min-width: 1025px) {
+  .hero-section {
+    padding-top: 1.5rem;
+  }
+}
+
+.hero-section__content {
+  position: relative;
+  text-align: center;
+  padding: 0 1.5rem 8rem 1.5rem; /* Extra bottom padding for scroll bar space */
+  max-width: 1200px;
+  margin: 0 auto;
+  z-index: 2;
+}
+
+.hero-section__title {
+  font-size: 3rem;
+  font-weight: 900;
+  line-height: 1.1;
+  margin-bottom: 1.5rem;
+  /* Richer gradient with better contrast */
+  background: linear-gradient(135deg, #3b82f6 0%, #10b981 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.hero-section__subtitle {
+  font-size: 1.25rem;
+  line-height: 1.6;
+  color: #475569; /* Darker for better readability */
+  max-width: 48rem;
+  margin: 0 auto 2rem;
+}
+
+.hero-section__highlight-container {
+  display: inline-block;
+  position: relative;
+  min-height: 1.6em;
+  vertical-align: bottom;
+  perspective: 1000px;
+}
+
+.hero-section__highlight {
+  display: inline-block;
+  font-weight: 700;
+  color: #0f172a;
+  /* Vibrant gradient for rotating words */
+  background: linear-gradient(135deg, #3b82f6 0%, #10b981 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  position: relative;
+}
+
+/* Responsive Typography */
+@media (min-width: 768px) {
+  .hero-section__title {
+    font-size: 3.75rem;
+  }
+
+  .hero-section__subtitle {
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .hero-section__title {
+    font-size: 4.5rem;
+  }
+
+  .hero-section__content {
+    padding: 0 3rem;
+  }
+}

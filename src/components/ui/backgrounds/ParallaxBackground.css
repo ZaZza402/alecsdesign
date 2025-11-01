@@ -1,0 +1,91 @@
+/* Parallax Background Styles */
+
+.parallax-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* Individual Tech Icons - More visible */
+.parallax-background__icon {
+  position: absolute;
+  will-change: transform, opacity, scale;
+  pointer-events: none;
+  filter: grayscale(10%) brightness(1.15) saturate(1.2);
+  transition: filter 0.3s ease;
+}
+
+.parallax-background__image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+  /* Stronger shadow for better visibility */
+  filter: drop-shadow(0 6px 20px rgba(59, 130, 246, 0.25))
+    drop-shadow(0 2px 8px rgba(16, 185, 129, 0.15));
+}
+
+/* Gradient Overlays for Better Content Readability */
+.parallax-background__gradient {
+  position: absolute;
+  left: 0;
+  right: 0;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.parallax-background__gradient--top {
+  top: 0;
+  height: 40%;
+  background: linear-gradient(
+    180deg,
+    rgba(241, 245, 249, 1) 0%,
+    rgba(241, 245, 249, 0.8) 50%,
+    rgba(241, 245, 249, 0) 100%
+  );
+}
+
+.parallax-background__gradient--bottom {
+  bottom: 0;
+  height: 30%;
+  background: linear-gradient(
+    0deg,
+    rgba(241, 245, 249, 1) 0%,
+    rgba(241, 245, 249, 0.6) 50%,
+    rgba(241, 245, 249, 0) 100%
+  );
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .parallax-background__icon {
+    transform: scale(0.7);
+  }
+
+  .parallax-background__gradient--top {
+    height: 35%;
+  }
+}
+
+@media (max-width: 480px) {
+  .parallax-background__icon {
+    transform: scale(0.6);
+  }
+
+  .parallax-background__gradient--top {
+    height: 30%;
+  }
+}
+
+/* Smooth Performance */
+@media (prefers-reduced-motion: reduce) {
+  .parallax-background__icon {
+    transform: none !important;
+    animation: none !important;
+  }
+}

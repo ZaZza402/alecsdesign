@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap");
+@import "./components/ui/backgrounds/MetallicBackground.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background-main text-text-primary font-sans antialiased;
+    overflow-x: hidden;
+    transition: margin-left 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  /* Sidebar spacing on desktop - start collapsed */
+  @media (min-width: 1025px) {
+    body {
+      margin-left: 80px;
+    }
+
+    body.sidebar-expanded {
+      margin-left: 280px;
+    }
+  }
+
+  /* Bottom nav spacing on mobile - no padding when collapsed */
+  @media (max-width: 1024px) {
+    body {
+      padding-bottom: 0;
+      margin-left: 0;
+    }
+
+    body.bottomnav-expanded {
+      padding-bottom: 80px;
+    }
+  }
+}
+
+@layer utilities {
+  .gradient-primary {
+    background: linear-gradient(135deg, #3b82f6 0%, #10b981 100%);
+  }
+
+  .text-gradient {
+    @apply bg-gradient-to-r from-primary-blue to-primary-green bg-clip-text text-transparent;
+  }
+
+  /* Smooth transitions */
+  .transition-smooth {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  /* Disable text selection for UI elements */
+  .no-select {
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+  }
+
+  /* Remove tap highlight on mobile */
+  .no-tap-highlight {
+    -webkit-tap-highlight-color: transparent;
+  }
+}
+
+/* Critical Z-Index Management */
+/* Ensure mobile menu and its components are always on top */
+.mobile-menu__backdrop,
+.mobile-menu,
+.menu-trigger {
+  isolation: isolate;
+}
+
+/* Prevent stacking context issues */
+main {
+  /* Remove position:relative to avoid creating stacking context */
+  z-index: auto;
+}
+
+section {
+  /* Remove z-index to let mobile menu stack naturally above */
+}

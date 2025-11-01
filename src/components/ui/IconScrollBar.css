@@ -1,0 +1,126 @@
+/* Icon Scroll Bar - Interactive Section Divider */
+
+.icon-scroll-bar {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 120px;
+  background: #dbeafe;
+  border-top: none;
+  overflow: hidden;
+  z-index: 10;
+}
+
+.icon-scroll-bar__track {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.icon-scroll-bar__content {
+  display: flex;
+  align-items: center;
+  gap: 48px;
+  padding: 0 24px;
+  will-change: transform;
+}
+
+.icon-scroll-bar__item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-width: 80px;
+  padding: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  user-select: none;
+}
+
+.icon-scroll-bar__image {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+  filter: grayscale(30%) saturate(1.1);
+  transition: all 0.3s ease;
+  pointer-events: none;
+}
+
+.icon-scroll-bar__item:hover .icon-scroll-bar__image {
+  filter: grayscale(0%) saturate(1.3)
+    drop-shadow(0 4px 12px rgba(59, 130, 246, 0.4))
+    drop-shadow(0 2px 6px rgba(16, 185, 129, 0.3));
+}
+
+.icon-scroll-bar__label {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #64748b;
+  text-align: center;
+  transition: all 0.3s ease;
+  opacity: 0;
+  transform: translateY(4px);
+  white-space: nowrap;
+}
+
+.icon-scroll-bar__item:hover .icon-scroll-bar__label {
+  opacity: 1;
+  transform: translateY(0);
+  background: linear-gradient(135deg, #3b82f6 0%, #10b981 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Smooth gradient edges for infinite scroll effect */
+.icon-scroll-bar__track::before,
+.icon-scroll-bar__track::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100px;
+  pointer-events: none;
+  z-index: 2;
+}
+
+.icon-scroll-bar__track::before {
+  left: 0;
+  background: linear-gradient(to right, #dbeafe 0%, transparent 100%);
+}
+
+.icon-scroll-bar__track::after {
+  right: 0;
+  background: linear-gradient(to left, #dbeafe 0%, transparent 100%);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .icon-scroll-bar {
+    height: 100px;
+  }
+
+  .icon-scroll-bar__content {
+    gap: 32px;
+  }
+
+  .icon-scroll-bar__item {
+    min-width: 60px;
+    padding: 8px;
+  }
+
+  .icon-scroll-bar__image {
+    width: 40px;
+    height: 40px;
+  }
+
+  .icon-scroll-bar__label {
+    font-size: 0.65rem;
+  }
+}

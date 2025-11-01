@@ -1,0 +1,221 @@
+{
+  "nav": {
+    "home": "Home",
+    "technology": "Technology",
+    "portfolio": "Portfolio",
+    "pricing": "Pricing",
+    "process": "Process",
+    "contact": "Contact"
+  },
+  "hero": {
+    "greeting": "Hey there!",
+    "name": "I'm Alex",
+    "title": "Your",
+    "titleHighlight": "digital business partner",
+    "word1": "digital business partner",
+    "word2": "online growth consultant",
+    "word3": "digital success ally",
+    "word4": "web solutions collaborator",
+    "description": "I build web solutions that grow with your business. Not just websites, but scalable tools that work 24/7 to help your business thrive."
+  },
+  "problem": {
+    "title": "If you landed here, you already know that...",
+    "point1": "Owning a business isn't enough anymore",
+    "point2": "You need to be visible where your customers are: online",
+    "point3": "A website isn't just 'nice to have'",
+    "point4": "It's your 24/7 employee",
+    "description": "Works non-stop, never complains, never needs a break, and represents you everywhere. Your digital presence works while you sleep.",
+    "cta": "See how it works"
+  },
+  "difference": {
+    "title": "I don't just build pretty websites",
+    "subtitle": "The aesthetics are implied. I focus on solutions.",
+    "pillar1": {
+      "title": "Solutions First",
+      "description": "It's not about looks. It's about solving real business problems and making you relevant to customers."
+    },
+    "pillar2": {
+      "title": "SEO & Discoverability",
+      "description": "Google knows what you do. AI understands your business. Customers can find you. I make you visible where it matters."
+    },
+    "pillar3": {
+      "title": "Long-term Partnership",
+      "description": "I don't build and disappear. We grow together. Ongoing support until you decide otherwise."
+    }
+  },
+  "technology": {
+    "title": "Your website is an APP, not just HTML",
+    "subtitle": "Here's why this makes all the difference",
+    "benefit1": "Start with a landing page. Add an online shop when ready. Expand with a blog next month.",
+    "benefit2": "Every piece integrates seamlessly. No rebuilds. No complicated migrations. Just smooth growth.",
+    "benefit3": "Authentication system? Customer dashboard? Custom features? Add what you need, when you need it.",
+    "callout": "Don't believe me? Ask Google or your AI: 'If I build a website with React+Vite and Tailwind CSS, can I scale it without rebuilding?' See the results.",
+    "visualLabel": "Modular architecture"
+  },
+  "portfolio": {
+    "title": "Recent Projects",
+    "subtitle": "Real solutions for real businesses",
+    "viewProject": "View Project",
+    "client": "Client",
+    "problem": "Problem",
+    "solution": "Solution",
+    "result": "Result",
+    "project1": {
+      "name": "Project 1",
+      "client": "Local Small Business",
+      "problem": "No online presence",
+      "solution": "Responsive landing page with booking system",
+      "result": "40% increase in inquiries"
+    },
+    "project2": {
+      "name": "Project 2",
+      "client": "E-commerce Store",
+      "problem": "Hard to manage product catalog",
+      "solution": "Custom dashboard with inventory management",
+      "result": "Saved 10 hours/week"
+    },
+    "comingSoon": {
+      "title": "Coming Soon",
+      "description": "New projects arriving soon. Stay tuned!"
+    }
+  },
+  "pricing": {
+    "title": "How much does it cost?",
+    "subtitle": "The honest answer: it depends on complexity",
+    "rangeLabel": "Typical price range",
+    "rangeNote": "Pricing varies based on your specific needs and project complexity",
+    "examples": {
+      "simple": {
+        "title": "Simple Project",
+        "price": "€150 - €500",
+        "features": [
+          "Single-page landing page",
+          "Responsive design",
+          "Basic contact form",
+          "Basic SEO optimization"
+        ]
+      },
+      "medium": {
+        "title": "Medium Project",
+        "price": "€500 - €1200",
+        "features": [
+          "Multi-page website",
+          "Custom functionality",
+          "Third-party integrations",
+          "Advanced SEO and analytics"
+        ]
+      },
+      "complex": {
+        "title": "Complex Project",
+        "price": "€1200 - €2000+",
+        "features": [
+          "Full platform",
+          "Content management system",
+          "Database and authentication",
+          "Advanced custom features"
+        ]
+      }
+    },
+    "ctaText": "Every project is unique. Let's discuss your needs and create the perfect solution for you.",
+    "cta": "Request Free Consultation"
+  },
+  "process": {
+    "title": "How do we work together?",
+    "subtitle": "Simple, transparent, no commitments",
+    "step1": {
+      "title": "Contact Me",
+      "description": "Free, no strings attached. Let's talk about your project."
+    },
+    "step2": {
+      "title": "Tell Me",
+      "description": "Your needs, goals, and vision for your business."
+    },
+    "step3": {
+      "title": "I Create a Plan",
+      "description": "Detailed action plan with timelines and costs."
+    },
+    "step4": {
+      "title": "You Decide",
+      "description": "Review the proposal, no pressure or commitment."
+    },
+    "step5": {
+      "title": "We Build Together",
+      "description": "Partnership from A to Z for your success."
+    },
+    "note": "Remember: no commitment until you're 100% sure"
+  },
+  "blog": {
+    "title": "Blog & Insights",
+    "subtitle": "Strategies, tips, and insights to grow your online business",
+    "imagePlaceholder": "Image coming soon",
+    "minRead": "min read",
+    "readMore": "Read full article",
+    "moreComingSoon": "More articles coming soon..."
+  },
+  "contact": {
+    "title": "Let's talk about your project",
+    "subtitle": "Start your digital journey",
+    "successMessage": "Thanks! I'll get back to you soon.",
+    "form": {
+      "name": "Name",
+      "namePlaceholder": "Your name",
+      "nameRequired": "Name is required",
+      "contact": "Email or Phone",
+      "contactPlaceholder": "How can I reach you?",
+      "contactRequired": "Email or phone is required",
+      "business": "Tell me about your business",
+      "businessPlaceholder": "What do you do? What do you want to achieve online?",
+      "businessRequired": "Tell me about your business",
+      "needs": "What do you need?",
+      "needsPlaceholder": "Select...",
+      "needsRequired": "Please select an option",
+      "needsOptions": {
+        "newWebsite": "New Website",
+        "redesign": "Redesign Existing Site",
+        "consultation": "Consultation",
+        "other": "Other"
+      },
+      "preference": "How do you prefer to be contacted?",
+      "preferencePlaceholder": "Select...",
+      "preferenceRequired": "Please select a preference",
+      "preferenceOptions": {
+        "email": "Email",
+        "phone": "Phone",
+        "whatsapp": "WhatsApp"
+      },
+      "message": "Additional message (optional)",
+      "messagePlaceholder": "Anything else I should know?",
+      "submit": "Send Message"
+    }
+  },
+  "footer": {
+    "company": {
+      "title": "Alecs Design",
+      "description": "Building web solutions that grow with your business. Long-term digital partnerships for serious entrepreneurs.",
+      "location": "Italy"
+    },
+    "quickLinks": {
+      "title": "Quick Links",
+      "about": "About",
+      "portfolio": "Portfolio",
+      "pricing": "Pricing",
+      "contact": "Contact"
+    },
+    "legal": {
+      "title": "Legal",
+      "privacy": "Privacy Policy",
+      "terms": "Terms & Conditions"
+    },
+    "social": {
+      "title": "Follow Me"
+    },
+    "copyright": "Alecs Design. All rights reserved.",
+    "revealContact": "Show Contact Info"
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "Error",
+    "close": "Close",
+    "menu": "Menu"
+  }
+}
