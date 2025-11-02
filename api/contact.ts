@@ -15,14 +15,30 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
       return res.status(400).json({ error: "Missing required fields" });
     }
 
-    // Create transporter using Gmail
-    // You'll need to set up environment variables in Vercel
+    // Check if environment variables are set
+    if (!process.env.EMAIL_USER || !process.env.EMAIL_PASS) {
+      console.error('Missing environment variables:', {
+        hasUser: !!process.env.EMAIL_USER,
+        hasPass: !!process.env.EMAIL_PASS
+      });
+      return res.status(500).json({ 
+        error: "Server configuration error",
+        details: "Email credentials not configured"
+      });
+    }
+
+    // Create transporter using Gmail with explicit SMTP settings
     const transporter = nodemailer.createTransport({
-      service: "gmail",
+      host: "smtp.gmail.com",
+      port: 587,
+      secure: false, // use TLS
       auth: {
-        user: process.env.EMAIL_USER, // Your Gmail address
-        pass: process.env.EMAIL_PASS, // App password (not your regular password)
+        user: process.env.EMAIL_USER,
+        pass: process.env.EMAIL_PASS,
       },
+      tls: {
+        rejectUnauthorized: true
+      }
     });
 
     // Email content
@@ -72,17 +88,39 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
       `,
     };
 
+    // Verify transporter connection
+    await transporter.verify();
+
     // Send email
-    await transporter.sendMail(mailOptions);
+    const info = await transporter.sendMail(mailOptions);
+    console.log('Email sent successfully:', info.messageId);
 
     return res
       .status(200)
       .json({ success: true, message: "Email sent successfully" });
   } catch (error) {
     console.error("Error sending email:", error);
+    
+    // Provide detailed error information
+    let errorMessage = "Failed to send email";
+    let errorDetails = "Unknown error";
+    
+    if (error instanceof Error) {
+      errorDetails = error.message;
+      
+      // Check for specific Gmail auth errors
+      if (errorDetails.includes('Invalid login')) {
+        errorMessage = "Email authentication failed";
+        errorDetails = "Invalid Gmail credentials. Please check your app password.";
+      } else if (errorDetails.includes('Username and Password not accepted')) {
+        errorMessage = "Gmail authentication failed";
+        errorDetails = "Gmail rejected the credentials. Make sure you're using an App Password, not your regular password.";
+      }
+    }
+    
     return res.status(500).json({
-      error: "Failed to send email",
-      details: error instanceof Error ? error.message : "Unknown error",
+      error: errorMessage,
+      details: errorDetails,
     });
   }
 }
