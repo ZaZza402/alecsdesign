@@ -1,5 +1,6 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
+import { useNavigate, useLocation } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import "./LanguageSwitcher.css";
 
@@ -11,13 +12,16 @@ const languages = [
 
 const LanguageSwitcher: React.FC = () => {
   const { i18n } = useTranslation();
+  const navigate = useNavigate();
+  const location = useLocation();
   const [isOpen, setIsOpen] = React.useState(false);
 
   const currentLanguage =
     languages.find((lang) => lang.code === i18n.language) || languages[0];
 
   const handleLanguageChange = (langCode: string) => {
-    i18n.changeLanguage(langCode);
+    // Navigate to new language path
+    navigate(`/${langCode}${location.hash}`);
     setIsOpen(false);
   };
 

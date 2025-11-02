@@ -6,8 +6,14 @@ import itTranslation from "./locales/it/translation.json";
 import enTranslation from "./locales/en/translation.json";
 import roTranslation from "./locales/ro/translation.json";
 
-// Get saved language from localStorage or default to Italian
-const savedLanguage = localStorage.getItem("language") || "it";
+// Detect language from URL path (e.g., /en, /it, /ro)
+const getLanguageFromPath = () => {
+  const path = window.location.pathname;
+  const langMatch = path.match(/^\/(en|it|ro)/);
+  return langMatch ? langMatch[1] : "en"; // Default to English
+};
+
+const initialLanguage = getLanguageFromPath();
 
 i18n
   .use(initReactI18next) // Pass i18n instance to react-i18next
@@ -23,8 +29,8 @@ i18n
         translation: roTranslation,
       },
     },
-    lng: savedLanguage, // Default language (Italian)
-    fallbackLng: "it", // Fallback to Italian if translation missing
+    lng: initialLanguage, // Language from URL path
+    fallbackLng: "en", // Fallback to English if translation missing
     interpolation: {
       escapeValue: false, // React already escapes values
     },
@@ -33,9 +39,8 @@ i18n
     },
   });
 
-// Save language preference when it changes
+// Update HTML lang attribute when language changes
 i18n.on("languageChanged", (lng) => {
-  localStorage.setItem("language", lng);
   document.documentElement.lang = lng; // Update HTML lang attribute for accessibility
 });
 

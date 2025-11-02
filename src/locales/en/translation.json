@@ -156,6 +156,7 @@
     "title": "Let's talk about your project",
     "subtitle": "Start your digital journey",
     "successMessage": "Thanks! I'll get back to you soon.",
+    "errorMessage": "Failed to send message. Please try contacting me directly via email or phone.",
     "form": {
       "name": "Name",
       "namePlaceholder": "Your name",

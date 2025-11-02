@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useTranslation } from "react-i18next";
+import { useNavigate, useLocation } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import "./MobileLanguageLabel.css";
 
@@ -11,10 +12,13 @@ const languages = [
 
 const MobileLanguageLabel: React.FC = () => {
   const { i18n } = useTranslation();
+  const navigate = useNavigate();
+  const location = useLocation();
   const [isOpen, setIsOpen] = useState(false);
 
   const handleLanguageChange = (langCode: string) => {
-    i18n.changeLanguage(langCode);
+    // Navigate to new language path
+    navigate(`/${langCode}${location.hash}`);
     setIsOpen(false); // Close after selection
   };
 

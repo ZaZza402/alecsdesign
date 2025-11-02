@@ -156,6 +156,7 @@
     "title": "Parliamo del tuo progetto",
     "subtitle": "Iniziamo il tuo percorso digitale",
     "successMessage": "Grazie! Ti contatterò presto.",
+    "errorMessage": "Impossibile inviare il messaggio. Per favore contattami direttamente via email o telefono.",
     "form": {
       "name": "Nome",
       "namePlaceholder": "Il tuo nome",

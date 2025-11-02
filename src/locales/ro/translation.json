@@ -156,6 +156,7 @@
     "title": "Să vorbim despre proiectul tău",
     "subtitle": "Începe călătoria ta digitală",
     "successMessage": "Mulțumesc! Te voi contacta în curând.",
+    "errorMessage": "Nu s-a putut trimite mesajul. Te rog contactează-mă direct prin email sau telefon.",
     "form": {
       "name": "Nume",
       "namePlaceholder": "Numele tău",

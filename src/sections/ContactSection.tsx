@@ -28,14 +28,32 @@ const ContactSection = () => {
   } = useForm<ContactFormData>();
 
   const onSubmit = async (data: ContactFormData) => {
-    // TODO: Implement form submission (send to email service or API)
-    console.log("Form data:", data);
+    try {
+      // Send form data to serverless function
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data),
+      });
 
-    // Simulate API call
-    await new Promise((resolve) => setTimeout(resolve, 1000));
+      const result = await response.json();
 
-    alert(t("contact.successMessage"));
-    reset();
+      if (!response.ok) {
+        throw new Error(result.error || "Failed to send message");
+      }
+
+      // Show success message
+      alert(t("contact.successMessage"));
+      reset();
+    } catch (error) {
+      console.error("Error submitting form:", error);
+      alert(
+        t("contact.errorMessage") ||
+          "Failed to send message. Please try again or contact me directly."
+      );
+    }
   };
 
   return (
