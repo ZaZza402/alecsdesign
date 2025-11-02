@@ -1,7 +1,9 @@
 {
   "rewrites": [
     { "source": "/sitemap.xml", "destination": "/sitemap.xml" },
-    { "source": "/robots.txt", "destination": "/robots.txt" }
+    { "source": "/robots.txt", "destination": "/robots.txt" },
+    { "source": "/api/:path*", "destination": "/api/:path*" },
+    { "source": "/(.*)", "destination": "/index.html" }
   ],
   "headers": [
     {
@@ -55,18 +57,6 @@
           "value": "public, max-age=31536000, immutable"
         }
       ]
-    }
-  ],
-  "redirects": [
-    {
-      "source": "/",
-      "destination": "/en",
-      "permanent": false
-    },
-    {
-      "source": "/index.html",
-      "destination": "/en",
-      "permanent": true
     }
   ]
 }
