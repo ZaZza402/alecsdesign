@@ -1,7 +1,8 @@
 import { useTranslation } from "react-i18next";
 import { useInView } from "react-intersection-observer";
 import { useForm } from "react-hook-form";
-import { Send } from "lucide-react";
+import { Send, CheckCircle, XCircle } from "lucide-react";
+import { useState } from "react";
 import "./ContactSection.css";
 
 interface ContactFormData {
@@ -13,6 +14,11 @@ interface ContactFormData {
   message: string;
 }
 
+interface Toast {
+  type: "success" | "error";
+  message: string;
+}
+
 const ContactSection = () => {
   const { t } = useTranslation();
   const { ref, inView } = useInView({
@@ -20,12 +26,19 @@ const ContactSection = () => {
     threshold: 0.2,
   });
 
+  const [toast, setToast] = useState<Toast | null>(null);
+
   const {
     register,
     handleSubmit,
     formState: { errors, isSubmitting },
     reset,
   } = useForm<ContactFormData>();
+
+  const showToast = (type: "success" | "error", message: string) => {
+    setToast({ type, message });
+    setTimeout(() => setToast(null), 5000); // Auto-hide after 5 seconds
+  };
 
   const onSubmit = async (data: ContactFormData) => {
     try {
@@ -45,11 +58,12 @@ const ContactSection = () => {
       }
 
       // Show success message
-      alert(t("contact.successMessage"));
+      showToast("success", t("contact.successMessage"));
       reset();
     } catch (error) {
       console.error("Error submitting form:", error);
-      alert(
+      showToast(
+        "error",
         t("contact.errorMessage") ||
           "Failed to send message. Please try again or contact me directly."
       );
@@ -58,6 +72,27 @@ const ContactSection = () => {
 
   return (
     <section className="contact-section" id="contact" ref={ref}>
+      {/* Toast Notification */}
+      {toast && (
+        <div className={`toast-notification toast-${toast.type}`}>
+          <div className="toast-content">
+            {toast.type === "success" ? (
+              <CheckCircle size={24} />
+            ) : (
+              <XCircle size={24} />
+            )}
+            <p>{toast.message}</p>
+          </div>
+          <button
+            className="toast-close"
+            onClick={() => setToast(null)}
+            aria-label="Close notification"
+          >
+            ×
+          </button>
+        </div>
+      )}
+
       <div className={`contact-container ${inView ? "animate-in" : ""}`}>
         <div className="contact-header">
           <h2 className="contact-title">{t("contact.title")}</h2>

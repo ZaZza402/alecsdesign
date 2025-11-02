@@ -186,7 +186,7 @@
       },
       "message": "Additional message (optional)",
       "messagePlaceholder": "Anything else I should know?",
-      "submit": "Send Message"
+      "submit": "Send"
     }
   },
   "footer": {
