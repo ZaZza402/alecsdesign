@@ -93,15 +93,15 @@ const Header: React.FC = () => {
           transition={{ duration: 0.5 }}
           onClick={(e) => handleNavClick(e, "#home")}
         >
-          <img
-            src="/logo/alecs-design-logo-nobackground.png"
-            alt="Alex's Design Logo"
-            className="header__logo-image"
-            width="180"
-            height="60"
-            fetchPriority="high"
-            decoding="async"
-          />
+          <div className="header__logo-wrapper">
+            <img
+              src="/logo/alecsdesign-logo.svg"
+              alt="alecsdesign"
+              className="header__logo-image"
+              fetchPriority="high"
+              decoding="async"
+            />
+          </div>
         </motion.a>
 
         {/* Desktop Navigation */}

@@ -104,15 +104,15 @@ const Sidebar = () => {
       <div className="sidebar-container">
         {/* Logo Section */}
         <div className="sidebar-logo">
-          <img
-            src="/logo/alecs-design-logo-nobackground.png"
-            alt="Alecs Design"
-            className={`sidebar-logo-image ${isCollapsed ? "collapsed" : ""}`}
-            width="180"
-            height="60"
-            loading="lazy"
-            decoding="async"
-          />
+          <div className={`sidebar-logo-wrapper ${isCollapsed ? "collapsed" : ""}`}>
+            <img
+              src="/logo/alecsdesign-logo.svg"
+              alt="alecsdesign"
+              className="sidebar-logo-image"
+              loading="lazy"
+              decoding="async"
+            />
+          </div>
         </div>
 
         {/* Navigation Items */}
