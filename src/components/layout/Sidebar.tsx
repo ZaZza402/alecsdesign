@@ -104,7 +104,9 @@ const Sidebar = () => {
       <div className="sidebar-container">
         {/* Logo Section */}
         <div className="sidebar-logo">
-          <div className={`sidebar-logo-wrapper ${isCollapsed ? "collapsed" : ""}`}>
+          <div
+            className={`sidebar-logo-wrapper ${isCollapsed ? "collapsed" : ""}`}
+          >
             <img
               src="/logo/alecsdesign-logo.svg"
               alt="alecsdesign"
