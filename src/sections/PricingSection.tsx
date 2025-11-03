@@ -59,12 +59,49 @@ const PricingSection = () => {
                     t(`pricing.examples.${example.key}.features`, {
                       returnObjects: true,
                     }) as string[]
-                  ).map((feature: string, featureIndex: number) => (
-                    <li key={featureIndex} className="feature-item">
-                      <Check size={16} className="feature-check" />
-                      <span>{feature}</span>
-                    </li>
-                  ))}
+                  ).map((feature: string, featureIndex: number) => {
+                    // Map feature names to explainer keys
+                    const explainerMap: Record<string, string> = {
+                      "Design responsive": "responsive",
+                      "Optimizare SEO de bază": "seo",
+                      "Responsive design": "responsive",
+                      "Basic SEO optimization": "seo",
+                      "Design responsivo": "responsive",
+                      "Ottimizzazione SEO di base": "seo",
+                      "Integrări cu terțe părți": "integrations",
+                      "Third-party integrations": "integrations",
+                      "Integrazioni di terze parti": "integrations",
+                      "SEO avansat și analytics": "analytics",
+                      "Advanced SEO and analytics": "analytics",
+                      "SEO avanzato e analytics": "analytics",
+                      "Sistem de management conținut": "cms",
+                      "Content management system": "cms",
+                      "Sistema di gestione contenuti": "cms",
+                      "Bază de date și autentificare": "database",
+                      "Database and authentication": "database",
+                      "Database e autenticazione": "database",
+                    };
+
+                    const explainerKey = explainerMap[feature];
+                    const explainerPath = `pricing.examples.${example.key}.explainers.${explainerKey}`;
+                    const explainerText = explainerKey
+                      ? t(explainerPath, { defaultValue: "" })
+                      : "";
+
+                    return (
+                      <li key={featureIndex} className="feature-item">
+                        <Check size={16} className="feature-check" />
+                        <div className="feature-content">
+                          <span>{feature}</span>
+                          {explainerText && (
+                            <span className="feature-explainer">
+                              {explainerText}
+                            </span>
+                          )}
+                        </div>
+                      </li>
+                    );
+                  })}
                 </ul>
               </div>
             );

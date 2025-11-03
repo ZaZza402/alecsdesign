@@ -200,6 +200,15 @@
   margin: 0;
 }
 
+.pillar-explainer {
+  font-size: 0.8125rem;
+  line-height: 1.5;
+  color: #64748b;
+  margin: 0.75rem 0 0 0;
+  font-style: italic;
+  opacity: 0.9;
+}
+
 /* Mobile responsiveness */
 @media (max-width: 1024px) {
   .pillars-grid {

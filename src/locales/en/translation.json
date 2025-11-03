@@ -36,7 +36,8 @@
     },
     "pillar2": {
       "title": "SEO & Discoverability",
-      "description": "Google knows what you do. AI understands your business. Customers can find you. I make you visible where it matters."
+      "description": "Google knows what you do. AI understands your business. Customers can find you. I make you visible where it matters.",
+      "explainer": "SEO = Search Engine Optimization. It means making your website easy for Google to find and show to people searching for what you offer."
     },
     "pillar3": {
       "title": "Long-term Partnership",
@@ -47,9 +48,12 @@
     "title": "Your website is an APP, not just HTML",
     "subtitle": "Here's why this makes all the difference",
     "benefit1": "Start with a landing page. Add an online shop when ready. Expand with a blog next month.",
+    "benefit1Explainer": "Landing page = A single web page designed to get visitors to take one specific action (like contacting you or buying).",
     "benefit2": "Every piece integrates seamlessly. No rebuilds. No complicated migrations. Just smooth growth.",
     "benefit3": "Authentication system? Customer dashboard? Custom features? Add what you need, when you need it.",
+    "benefit3Explainer": "Authentication = A secure login system that lets users create accounts and access personalized content safely.",
     "callout": "Don't believe me? Ask Google or your AI: 'If I build a website with React+Vite and Tailwind CSS, can I scale it without rebuilding?' See the results.",
+    "calloutExplainer": "React+Vite and Tailwind CSS are modern web technologies that make websites fast, easy to update, and able to grow without starting over.",
     "visualLabel": "Modular architecture"
   },
   "portfolio": {
@@ -93,7 +97,11 @@
           "Responsive design",
           "Basic contact form",
           "Basic SEO optimization"
-        ]
+        ],
+        "explainers": {
+          "responsive": "Works perfectly on phones, tablets, and computers",
+          "seo": "Optimized so Google can find and rank your site"
+        }
       },
       "medium": {
         "title": "Medium Project",
@@ -103,7 +111,11 @@
           "Custom functionality",
           "Third-party integrations",
           "Advanced SEO and analytics"
-        ]
+        ],
+        "explainers": {
+          "integrations": "Connect with tools like payment systems, booking calendars, or email services",
+          "analytics": "Track visitor behavior to understand what works and what doesn't"
+        }
       },
       "complex": {
         "title": "Complex Project",
@@ -113,7 +125,12 @@
           "Content management system",
           "Database and authentication",
           "Advanced custom features"
-        ]
+        ],
+        "explainers": {
+          "cms": "Easy-to-use admin panel to update content yourself without coding",
+          "database": "Secure storage for user data, products, orders, or any information your business needs",
+          "authentication": "Safe login system for user accounts with password protection"
+        }
       }
     },
     "ctaText": "Every project is unique. Let's discuss your needs and create the perfect solution for you.",
@@ -205,7 +222,8 @@
     "legal": {
       "title": "Legal",
       "privacy": "Privacy Policy",
-      "terms": "Terms & Conditions"
+      "terms": "Terms & Conditions",
+      "cookies": "Cookie Policy"
     },
     "social": {
       "title": "Follow Me"
@@ -218,5 +236,186 @@
     "error": "Error",
     "close": "Close",
     "menu": "Menu"
+  },
+  "legal": {
+    "backToHome": "Back to Home",
+    "lastUpdated": "Last Updated",
+    "privacy": {
+      "title": "Privacy Policy",
+      "intro": {
+        "title": "Introduction",
+        "text": "At Alecs Design, I respect your privacy and am committed to protecting your personal data. This privacy policy explains how I collect, use, and safeguard your information when you visit my website or use my services."
+      },
+      "dataCollection": {
+        "title": "Information I Collect",
+        "intro": "I collect the following types of information:",
+        "item1": "Contact information (name, email, phone number) when you fill out the contact form",
+        "item2": "Business information you provide when requesting a quote or consultation",
+        "item3": "Technical data collected through cookies and analytics (IP address, browser type, device information)",
+        "item4": "Communication history when we interact via email, phone, or WhatsApp"
+      },
+      "dataUse": {
+        "title": "How I Use Your Information",
+        "intro": "I use your information to:",
+        "item1": "Respond to your inquiries and provide the services you request",
+        "item2": "Communicate with you about projects, quotes, and updates",
+        "item3": "Improve my website and services based on analytics data",
+        "item4": "Send occasional updates about my services (only if you opt in)"
+      },
+      "analytics": {
+        "title": "Analytics and Cookies",
+        "text": "I use analytics tools to understand how visitors interact with my website. This helps me improve user experience and optimize my services. These tools may use cookies to collect anonymous usage data. You can control cookie preferences through your browser settings or using the cookie banner on this website."
+      },
+      "cookies": {
+        "title": "Cookies",
+        "text": "My website uses cookies for essential functionality, analytics, and to remember your preferences. You can manage your cookie preferences at any time. For more details, please see my Cookie Policy."
+      },
+      "thirdParty": {
+        "title": "Third-Party Services",
+        "text": "I may use third-party services like email providers, analytics platforms, and hosting services. These providers have their own privacy policies, and I ensure they meet reasonable data protection standards."
+      },
+      "dataProtection": {
+        "title": "Data Security",
+        "text": "I take reasonable measures to protect your personal information from unauthorized access, disclosure, or misuse. However, no method of transmission over the internet is 100% secure."
+      },
+      "yourRights": {
+        "title": "Your Rights",
+        "intro": "Under GDPR and other privacy laws, you have the right to:",
+        "item1": "Access the personal data I hold about you",
+        "item2": "Request correction or deletion of your data",
+        "item3": "Object to processing of your personal data",
+        "item4": "Withdraw consent at any time (where processing is based on consent)"
+      },
+      "contact": {
+        "title": "Contact Me",
+        "text": "If you have any questions about this privacy policy or how I handle your data, please contact me using the information provided on this website."
+      }
+    },
+    "terms": {
+      "title": "Terms & Conditions",
+      "acceptance": {
+        "title": "Acceptance of Terms",
+        "text": "By accessing and using this website or engaging my services, you agree to be bound by these Terms and Conditions. If you do not agree with any part of these terms, please do not use my services."
+      },
+      "services": {
+        "title": "Services Offered",
+        "text": "I provide professional web development and design services including but not limited to: website development, web applications, e-commerce solutions, and digital consulting. All services are provided on a project-by-project basis unless otherwise agreed."
+      },
+      "project": {
+        "title": "Project Process",
+        "intro": "Each project follows this general process:",
+        "item1": "Free initial consultation to understand your needs",
+        "item2": "Detailed quote and project timeline",
+        "item3": "Agreement on scope, deliverables, and payment terms",
+        "item4": "Development, review, and launch phases with ongoing communication"
+      },
+      "payment": {
+        "title": "Payment Terms",
+        "text": "Payment terms are agreed upon for each project individually. Typically, projects require a deposit upfront with the balance due upon completion. Specific payment schedules will be outlined in the project agreement."
+      },
+      "intellectual": {
+        "title": "Intellectual Property",
+        "text": "Upon full payment, you will own the final delivered website or application. I retain the right to use the work in my portfolio unless otherwise agreed. Third-party components, libraries, and frameworks remain under their respective licenses."
+      },
+      "warranty": {
+        "title": "Warranties and Support",
+        "text": "I provide a reasonable warranty period for bug fixes and issues directly related to my work. Ongoing maintenance and support can be arranged separately. I do not guarantee compatibility with future third-party updates or changes beyond my control."
+      },
+      "limitation": {
+        "title": "Limitation of Liability",
+        "text": "To the maximum extent permitted by law, I shall not be liable for any indirect, incidental, or consequential damages arising from the use of my services or website. My total liability is limited to the amount paid for the specific project in question."
+      },
+      "termination": {
+        "title": "Termination",
+        "text": "Either party may terminate a project agreement with written notice. If you terminate a project, you will be responsible for payment for work completed up to that point. If I terminate due to non-payment or breach of agreement, no refund will be provided."
+      },
+      "governing": {
+        "title": "Governing Law",
+        "text": "These terms are governed by the laws of Italy. Any disputes will be resolved in the courts of Rome, Italy."
+      },
+      "changes": {
+        "title": "Changes to Terms",
+        "text": "I reserve the right to update these Terms and Conditions at any time. Changes will be posted on this page with an updated revision date."
+      },
+      "contact": {
+        "title": "Contact",
+        "text": "For questions about these Terms and Conditions, please contact me through the contact form on this website."
+      }
+    },
+    "cookies": {
+      "title": "Cookie Policy",
+      "what": {
+        "title": "What Are Cookies?",
+        "text": "Cookies are small text files stored on your device when you visit a website. They help websites remember your preferences, understand how you use the site, and improve your experience."
+      },
+      "types": {
+        "title": "Types of Cookies",
+        "essential": {
+          "title": "Essential Cookies",
+          "text": "These cookies are necessary for the website to function properly. They enable basic features like navigation, security, and language preferences. The website cannot work properly without these cookies."
+        },
+        "analytics": {
+          "title": "Analytics Cookies",
+          "text": "These cookies help me understand how visitors interact with my website by collecting anonymous information. This data helps me improve the site and provide a better user experience."
+        },
+        "functional": {
+          "title": "Functional Cookies",
+          "text": "These cookies remember your preferences and choices (like language selection) to provide a more personalized experience."
+        }
+      },
+      "weUse": {
+        "title": "Cookies I Use",
+        "item1": {
+          "name": "Language Preference",
+          "desc": "Remembers your chosen language (English, Italian, or Romanian)"
+        },
+        "item2": {
+          "name": "Cookie Consent",
+          "desc": "Remembers your cookie preferences so I don't ask you again"
+        },
+        "item3": {
+          "name": "Analytics",
+          "desc": "Anonymous data to understand visitor behavior and improve the website"
+        }
+      },
+      "thirdParty": {
+        "title": "Third-Party Cookies",
+        "text": "Some cookies may be set by third-party services I use, such as analytics providers. These services have their own privacy policies and cookie practices."
+      },
+      "manage": {
+        "title": "Managing Cookies",
+        "text": "You can control and manage cookies through your browser settings. Most browsers allow you to refuse cookies or delete existing ones. Please note that disabling certain cookies may affect the functionality of this website."
+      },
+      "updates": {
+        "title": "Updates to This Policy",
+        "text": "I may update this Cookie Policy from time to time. Any changes will be posted on this page with an updated date."
+      },
+      "contact": {
+        "title": "Questions?",
+        "text": "If you have any questions about how I use cookies, please contact me through the contact form on this website."
+      }
+    }
+  },
+  "cookies": {
+    "banner": {
+      "title": "We Use Cookies",
+      "description": "This website uses cookies to improve your experience, analyze traffic, and remember your preferences. By clicking 'Accept', you consent to our use of cookies.",
+      "accept": "Accept All",
+      "acceptNecessary": "Accept Necessary Only",
+      "decline": "Decline",
+      "learnMore": "Learn More"
+    }
+  },
+  "notFound": {
+    "title": "Page Not Found",
+    "description": "The page you're looking for doesn't exist or has been moved. Don't worry, let's get you back on track!",
+    "goHome": "Go to Home",
+    "goBack": "Go Back",
+    "suggestions": {
+      "title": "Here's what you can do:",
+      "item1": "Check the URL for typos",
+      "item2": "Use the navigation menu to find what you need",
+      "item3": "Contact me if you think something is broken"
+    }
   }
 }

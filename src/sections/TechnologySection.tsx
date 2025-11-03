@@ -31,24 +31,45 @@ const TechnologySection = () => {
                 <div className="benefit-icon">
                   <Blocks size={20} />
                 </div>
-                <p className="benefit-text">{t("technology.benefit1")}</p>
+                <div>
+                  <p className="benefit-text">{t("technology.benefit1")}</p>
+                  {t("technology.benefit1Explainer", { defaultValue: "" }) && (
+                    <p className="benefit-explainer">
+                      {t("technology.benefit1Explainer")}
+                    </p>
+                  )}
+                </div>
               </div>
               <div className="benefit-item">
                 <div className="benefit-icon">
                   <Code size={20} />
                 </div>
-                <p className="benefit-text">{t("technology.benefit2")}</p>
+                <div>
+                  <p className="benefit-text">{t("technology.benefit2")}</p>
+                </div>
               </div>
               <div className="benefit-item">
                 <div className="benefit-icon">
                   <Sparkles size={20} />
                 </div>
-                <p className="benefit-text">{t("technology.benefit3")}</p>
+                <div>
+                  <p className="benefit-text">{t("technology.benefit3")}</p>
+                  {t("technology.benefit3Explainer", { defaultValue: "" }) && (
+                    <p className="benefit-explainer">
+                      {t("technology.benefit3Explainer")}
+                    </p>
+                  )}
+                </div>
               </div>
             </div>
 
             <div className="technology-callout">
               <p className="callout-text">{t("technology.callout")}</p>
+              {t("technology.calloutExplainer", { defaultValue: "" }) && (
+                <p className="callout-explainer">
+                  {t("technology.calloutExplainer")}
+                </p>
+              )}
             </div>
           </div>
 

@@ -96,6 +96,15 @@
   margin: 0;
 }
 
+.benefit-explainer {
+  font-size: 0.8125rem;
+  line-height: 1.5;
+  color: #64748b;
+  margin: 0.5rem 0 0 0;
+  font-style: italic;
+  opacity: 0.9;
+}
+
 .technology-callout {
   margin-top: 1rem;
   padding: 1.5rem;
@@ -113,6 +122,15 @@
   line-height: 1.7;
   color: #334155;
   margin: 0;
+}
+
+.callout-explainer {
+  font-size: 0.8125rem;
+  line-height: 1.5;
+  color: #475569;
+  margin: 0.75rem 0 0 0;
+  font-style: italic;
+  opacity: 0.9;
   font-style: italic;
 }
 

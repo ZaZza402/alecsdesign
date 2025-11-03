@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
+import { useNavigate } from "react-router-dom";
 import {
   Mail,
   MapPin,
@@ -11,7 +12,8 @@ import {
 import "./Footer.css";
 
 const Footer = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+  const navigate = useNavigate();
   const currentYear = new Date().getFullYear();
   const [showContact, setShowContact] = useState(false);
 
@@ -105,20 +107,10 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Legal & Social */}
+          {/* Social */}
           <div className="footer-column">
-            <h3 className="footer-heading">{t("footer.legal.title")}</h3>
-            <ul className="footer-links">
-              <li>
-                <a href="#privacy">{t("footer.legal.privacy")}</a>
-              </li>
-              <li>
-                <a href="#terms">{t("footer.legal.terms")}</a>
-              </li>
-            </ul>
-
+            <h3 className="footer-heading">{t("footer.social.title")}</h3>
             <div className="social-links">
-              <h4 className="social-heading">{t("footer.social.title")}</h4>
               <div className="social-icons">
                 <a
                   href={getFacebook()}
@@ -144,6 +136,32 @@ const Footer = () => {
         </div>
 
         <div className="footer-bottom">
+          <div className="footer-legal">
+            <h4 className="footer-legal-heading">{t("footer.legal.title")}</h4>
+            <ul className="footer-legal-links">
+              <li>
+                <button
+                  onClick={() => navigate(`/${i18n.language}/privacy-policy`)}
+                >
+                  {t("footer.legal.privacy")}
+                </button>
+              </li>
+              <li>
+                <button
+                  onClick={() => navigate(`/${i18n.language}/terms-conditions`)}
+                >
+                  {t("footer.legal.terms")}
+                </button>
+              </li>
+              <li>
+                <button
+                  onClick={() => navigate(`/${i18n.language}/cookie-policy`)}
+                >
+                  {t("footer.legal.cookies")}
+                </button>
+              </li>
+            </ul>
+          </div>
           <p className="copyright">
             © {currentYear} {t("footer.copyright")}
           </p>

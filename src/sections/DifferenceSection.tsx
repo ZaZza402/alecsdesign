@@ -54,6 +54,13 @@ const DifferenceSection = () => {
                 <p className="pillar-description">
                   {t(`difference.${pillar.key}.description`)}
                 </p>
+                {t(`difference.${pillar.key}.explainer`, {
+                  defaultValue: "",
+                }) && (
+                  <p className="pillar-explainer">
+                    {t(`difference.${pillar.key}.explainer`)}
+                  </p>
+                )}
               </div>
             );
           })}

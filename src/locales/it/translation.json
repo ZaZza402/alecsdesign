@@ -36,7 +36,8 @@
     },
     "pillar2": {
       "title": "SEO e Visibilità",
-      "description": "Google sa cosa fai. L'AI comprende il tuo business. I clienti possono trovarti. Ti rendo visibile dove conta."
+      "description": "Google sa cosa fai. L'AI comprende il tuo business. I clienti possono trovarti. Ti rendo visibile dove conta.",
+      "explainer": "SEO = Ottimizzazione per i Motori di Ricerca. Significa rendere il tuo sito facile da trovare su Google quando le persone cercano ciò che offri."
     },
     "pillar3": {
       "title": "Partnership a Lungo Termine",
@@ -47,9 +48,12 @@
     "title": "Il tuo sito è un'APP, non solo HTML",
     "subtitle": "Ecco perché questo fa la differenza",
     "benefit1": "Inizia con una landing page. Aggiungi un negozio online quando sei pronto. Espandi con un blog il mese prossimo.",
+    "benefit1Explainer": "Landing page = Una singola pagina web progettata per convincere i visitatori a compiere un'azione specifica (come contattarti o acquistare).",
     "benefit2": "Ogni pezzo si integra perfettamente. Niente ricostruzioni. Niente migrazioni complicate. Solo crescita fluida.",
     "benefit3": "Sistema di autenticazione? Dashboard clienti? Funzionalità su misura? Aggiungi quello che serve, quando serve.",
+    "benefit3Explainer": "Autenticazione = Un sistema di login sicuro che permette agli utenti di creare account e accedere a contenuti personalizzati in modo protetto.",
     "callout": "Non ci credi? Chiedi a Google o alla tua AI: 'Se costruisco un sito con React+Vite e Tailwind CSS, posso farlo crescere senza dover ricostruire?' Guarda i risultati.",
+    "calloutExplainer": "React+Vite e Tailwind CSS sono tecnologie web moderne che rendono i siti veloci, facili da aggiornare e capaci di crescere senza ripartire da zero.",
     "visualLabel": "Architettura modulare"
   },
   "portfolio": {
@@ -93,7 +97,11 @@
           "Design responsive",
           "Modulo di contatto base",
           "Ottimizzazione SEO di base"
-        ]
+        ],
+        "explainers": {
+          "responsive": "Funziona perfettamente su telefoni, tablet e computer",
+          "seo": "Ottimizzato affinché Google possa trovare e posizionare il tuo sito"
+        }
       },
       "medium": {
         "title": "Progetto Medio",
@@ -103,7 +111,11 @@
           "Funzionalità personalizzate",
           "Integrazioni con terze parti",
           "SEO avanzato e analytics"
-        ]
+        ],
+        "explainers": {
+          "integrations": "Collegamento con strumenti come sistemi di pagamento, calendari prenotazioni o servizi email",
+          "analytics": "Traccia il comportamento dei visitatori per capire cosa funziona e cosa no"
+        }
       },
       "complex": {
         "title": "Progetto Complesso",
@@ -113,7 +125,12 @@
           "Sistema di gestione contenuti",
           "Database e autenticazione",
           "Funzionalità avanzate su misura"
-        ]
+        ],
+        "explainers": {
+          "cms": "Pannello admin facile da usare per aggiornare i contenuti tu stesso senza programmare",
+          "database": "Archiviazione sicura per dati utenti, prodotti, ordini o qualsiasi informazione di cui il tuo business ha bisogno",
+          "authentication": "Sistema di login sicuro per account utente con protezione password"
+        }
       }
     },
     "ctaText": "Ogni progetto è unico. Parliamo delle tue esigenze e creiamo una soluzione perfetta per te.",
@@ -205,7 +222,8 @@
     "legal": {
       "title": "Legale",
       "privacy": "Privacy Policy",
-      "terms": "Termini & Condizioni"
+      "terms": "Termini & Condizioni",
+      "cookies": "Cookie Policy"
     },
     "social": {
       "title": "Seguimi"
@@ -218,5 +236,186 @@
     "error": "Errore",
     "close": "Chiudi",
     "menu": "Menu"
+  },
+  "legal": {
+    "backToHome": "Torna alla Home",
+    "lastUpdated": "Ultimo Aggiornamento",
+    "privacy": {
+      "title": "Privacy Policy",
+      "intro": {
+        "title": "Introduzione",
+        "text": "In Alecs Design, rispetto la tua privacy e mi impegno a proteggere i tuoi dati personali. Questa privacy policy spiega come raccolgo, utilizzo e proteggo le tue informazioni quando visiti il mio sito web o utilizzi i miei servizi."
+      },
+      "dataCollection": {
+        "title": "Informazioni che Raccolgo",
+        "intro": "Raccolgo i seguenti tipi di informazioni:",
+        "item1": "Informazioni di contatto (nome, email, numero di telefono) quando compili il modulo di contatto",
+        "item2": "Informazioni aziendali che fornisci quando richiedi un preventivo o una consulenza",
+        "item3": "Dati tecnici raccolti tramite cookie e analytics (indirizzo IP, tipo di browser, informazioni sul dispositivo)",
+        "item4": "Cronologia delle comunicazioni quando interagiamo via email, telefono o WhatsApp"
+      },
+      "dataUse": {
+        "title": "Come Utilizzo le Tue Informazioni",
+        "intro": "Utilizzo le tue informazioni per:",
+        "item1": "Rispondere alle tue richieste e fornire i servizi che hai richiesto",
+        "item2": "Comunicare con te riguardo a progetti, preventivi e aggiornamenti",
+        "item3": "Migliorare il mio sito web e i servizi basandomi sui dati analytics",
+        "item4": "Inviare aggiornamenti occasionali sui miei servizi (solo se hai acconsentito)"
+      },
+      "analytics": {
+        "title": "Analytics e Cookie",
+        "text": "Utilizzo strumenti di analytics per capire come i visitatori interagiscono con il mio sito web. Questo mi aiuta a migliorare l'esperienza utente e ottimizzare i miei servizi. Questi strumenti possono utilizzare cookie per raccogliere dati di utilizzo anonimi. Puoi controllare le preferenze dei cookie tramite le impostazioni del tuo browser o utilizzando il banner dei cookie su questo sito web."
+      },
+      "cookies": {
+        "title": "Cookie",
+        "text": "Il mio sito web utilizza cookie per funzionalità essenziali, analytics e per ricordare le tue preferenze. Puoi gestire le tue preferenze sui cookie in qualsiasi momento. Per maggiori dettagli, consulta la mia Cookie Policy."
+      },
+      "thirdParty": {
+        "title": "Servizi di Terze Parti",
+        "text": "Potrei utilizzare servizi di terze parti come provider email, piattaforme di analytics e servizi di hosting. Questi provider hanno le proprie privacy policy e mi assicuro che rispettino standard ragionevoli di protezione dei dati."
+      },
+      "dataProtection": {
+        "title": "Sicurezza dei Dati",
+        "text": "Adotto misure ragionevoli per proteggere le tue informazioni personali da accesso non autorizzato, divulgazione o uso improprio. Tuttavia, nessun metodo di trasmissione su Internet è sicuro al 100%."
+      },
+      "yourRights": {
+        "title": "I Tuoi Diritti",
+        "intro": "In base al GDPR e ad altre leggi sulla privacy, hai il diritto di:",
+        "item1": "Accedere ai dati personali che conservo su di te",
+        "item2": "Richiedere la correzione o la cancellazione dei tuoi dati",
+        "item3": "Opporti al trattamento dei tuoi dati personali",
+        "item4": "Revocare il consenso in qualsiasi momento (dove il trattamento si basa sul consenso)"
+      },
+      "contact": {
+        "title": "Contattami",
+        "text": "Se hai domande su questa privacy policy o su come gestisco i tuoi dati, contattami utilizzando le informazioni fornite su questo sito web."
+      }
+    },
+    "terms": {
+      "title": "Termini & Condizioni",
+      "acceptance": {
+        "title": "Accettazione dei Termini",
+        "text": "Accedendo e utilizzando questo sito web o ingaggiando i miei servizi, accetti di essere vincolato da questi Termini e Condizioni. Se non sei d'accordo con qualsiasi parte di questi termini, ti prego di non utilizzare i miei servizi."
+      },
+      "services": {
+        "title": "Servizi Offerti",
+        "text": "Fornisco servizi professionali di sviluppo web e design tra cui, ma non limitato a: sviluppo di siti web, applicazioni web, soluzioni e-commerce e consulenza digitale. Tutti i servizi sono forniti progetto per progetto salvo diverso accordo."
+      },
+      "project": {
+        "title": "Processo del Progetto",
+        "intro": "Ogni progetto segue questo processo generale:",
+        "item1": "Consulenza iniziale gratuita per comprendere le tue esigenze",
+        "item2": "Preventivo dettagliato e tempistica del progetto",
+        "item3": "Accordo su ambito, deliverable e termini di pagamento",
+        "item4": "Fasi di sviluppo, revisione e lancio con comunicazione continua"
+      },
+      "payment": {
+        "title": "Termini di Pagamento",
+        "text": "I termini di pagamento sono concordati per ogni progetto individualmente. In genere, i progetti richiedono un deposito anticipato con il saldo dovuto al completamento. Le scadenze di pagamento specifiche saranno delineate nell'accordo di progetto."
+      },
+      "intellectual": {
+        "title": "Proprietà Intellettuale",
+        "text": "Al pagamento completo, sarai proprietario del sito web o dell'applicazione finale consegnata. Mi riservo il diritto di utilizzare il lavoro nel mio portfolio salvo diverso accordo. Componenti, librerie e framework di terze parti rimangono sotto le rispettive licenze."
+      },
+      "warranty": {
+        "title": "Garanzie e Supporto",
+        "text": "Fornisco un periodo di garanzia ragionevole per correzioni di bug e problemi direttamente correlati al mio lavoro. La manutenzione e il supporto continuativi possono essere organizzati separatamente. Non garantisco la compatibilità con futuri aggiornamenti di terze parti o modifiche al di fuori del mio controllo."
+      },
+      "limitation": {
+        "title": "Limitazione di Responsabilità",
+        "text": "Nella massima misura consentita dalla legge, non sarò responsabile per danni indiretti, incidentali o consequenziali derivanti dall'uso dei miei servizi o del sito web. La mia responsabilità totale è limitata all'importo pagato per il progetto specifico in questione."
+      },
+      "termination": {
+        "title": "Risoluzione",
+        "text": "Entrambe le parti possono risolvere un accordo di progetto con preavviso scritto. Se risolvi un progetto, sarai responsabile del pagamento per il lavoro completato fino a quel momento. Se risolvo per mancato pagamento o violazione dell'accordo, non verrà fornito alcun rimborso."
+      },
+      "governing": {
+        "title": "Legge Applicabile",
+        "text": "Questi termini sono regolati dalle leggi italiane. Eventuali controversie saranno risolte nei tribunali di Roma, Italia."
+      },
+      "changes": {
+        "title": "Modifiche ai Termini",
+        "text": "Mi riservo il diritto di aggiornare questi Termini e Condizioni in qualsiasi momento. Le modifiche saranno pubblicate su questa pagina con una data di revisione aggiornata."
+      },
+      "contact": {
+        "title": "Contatti",
+        "text": "Per domande su questi Termini e Condizioni, contattami tramite il modulo di contatto su questo sito web."
+      }
+    },
+    "cookies": {
+      "title": "Cookie Policy",
+      "what": {
+        "title": "Cosa Sono i Cookie?",
+        "text": "I cookie sono piccoli file di testo memorizzati sul tuo dispositivo quando visiti un sito web. Aiutano i siti web a ricordare le tue preferenze, comprendere come utilizzi il sito e migliorare la tua esperienza."
+      },
+      "types": {
+        "title": "Tipi di Cookie",
+        "essential": {
+          "title": "Cookie Essenziali",
+          "text": "Questi cookie sono necessari per il corretto funzionamento del sito web. Abilitano funzionalità di base come navigazione, sicurezza e preferenze linguistiche. Il sito web non può funzionare correttamente senza questi cookie."
+        },
+        "analytics": {
+          "title": "Cookie Analytics",
+          "text": "Questi cookie mi aiutano a capire come i visitatori interagiscono con il mio sito web raccogliendo informazioni anonime. Questi dati mi aiutano a migliorare il sito e fornire un'esperienza utente migliore."
+        },
+        "functional": {
+          "title": "Cookie Funzionali",
+          "text": "Questi cookie ricordano le tue preferenze e scelte (come la selezione della lingua) per fornire un'esperienza più personalizzata."
+        }
+      },
+      "weUse": {
+        "title": "Cookie che Utilizzo",
+        "item1": {
+          "name": "Preferenza Lingua",
+          "desc": "Ricorda la lingua scelta (Inglese, Italiano o Rumeno)"
+        },
+        "item2": {
+          "name": "Consenso Cookie",
+          "desc": "Ricorda le tue preferenze sui cookie così non te lo chiedo di nuovo"
+        },
+        "item3": {
+          "name": "Analytics",
+          "desc": "Dati anonimi per comprendere il comportamento dei visitatori e migliorare il sito web"
+        }
+      },
+      "thirdParty": {
+        "title": "Cookie di Terze Parti",
+        "text": "Alcuni cookie potrebbero essere impostati da servizi di terze parti che utilizzo, come i provider di analytics. Questi servizi hanno le proprie privacy policy e pratiche sui cookie."
+      },
+      "manage": {
+        "title": "Gestione dei Cookie",
+        "text": "Puoi controllare e gestire i cookie tramite le impostazioni del tuo browser. La maggior parte dei browser ti consente di rifiutare i cookie o eliminare quelli esistenti. Nota che la disabilitazione di alcuni cookie può influire sulla funzionalità di questo sito web."
+      },
+      "updates": {
+        "title": "Aggiornamenti a Questa Policy",
+        "text": "Potrei aggiornare questa Cookie Policy di tanto in tanto. Eventuali modifiche saranno pubblicate su questa pagina con una data aggiornata."
+      },
+      "contact": {
+        "title": "Domande?",
+        "text": "Se hai domande su come utilizzo i cookie, contattami tramite il modulo di contatto su questo sito web."
+      }
+    }
+  },
+  "cookies": {
+    "banner": {
+      "title": "Utilizziamo i Cookie",
+      "description": "Questo sito web utilizza cookie per migliorare la tua esperienza, analizzare il traffico e ricordare le tue preferenze. Cliccando 'Accetta', consenti il nostro utilizzo dei cookie.",
+      "accept": "Accetta Tutti",
+      "acceptNecessary": "Solo Necessari",
+      "decline": "Rifiuta",
+      "learnMore": "Scopri di Più"
+    }
+  },
+  "notFound": {
+    "title": "Pagina Non Trovata",
+    "description": "La pagina che stai cercando non esiste o è stata spostata. Non preoccuparti, ti riportiamo sulla strada giusta!",
+    "goHome": "Vai alla Home",
+    "goBack": "Torna Indietro",
+    "suggestions": {
+      "title": "Ecco cosa puoi fare:",
+      "item1": "Controlla l'URL per errori di battitura",
+      "item2": "Usa il menu di navigazione per trovare ciò di cui hai bisogno",
+      "item3": "Contattami se pensi che qualcosa sia rotto"
+    }
   }
 }

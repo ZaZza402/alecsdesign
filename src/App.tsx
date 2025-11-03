@@ -10,6 +10,7 @@ import PricingSection from "./sections/PricingSection";
 import ProcessSection from "./sections/ProcessSection";
 import ContactSection from "./sections/ContactSection";
 import MobileLanguageLabel from "./components/ui/MobileLanguageLabel";
+import CookieBanner from "./components/ui/CookieBanner";
 import MetallicBackground from "./components/ui/backgrounds/MetallicBackground";
 import {
   SEO,
@@ -64,6 +65,7 @@ export default function App() {
       </main>
       <Footer />
       <BottomNav />
+      <CookieBanner />
     </div>
   );
 }

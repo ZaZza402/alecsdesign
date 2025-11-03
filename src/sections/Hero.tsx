@@ -92,8 +92,14 @@ const Hero: React.FC = () => {
         <motion.div initial="hidden" animate="visible" variants={titleVariants}>
           <h1 className="hero-section__title">
             <span className="hero-section__greeting">
-              <Hand className="hero-section__hand-wave" size={48} strokeWidth={2.5} />
-              <span className="hero-section__greeting-text">{t("hero.greeting")}</span>
+              <Hand
+                className="hero-section__hand-wave"
+                size={48}
+                strokeWidth={2.5}
+              />
+              <span className="hero-section__greeting-text">
+                {t("hero.greeting")}
+              </span>
             </span>
             <span className="hero-section__name">{t("hero.name")}</span>
           </h1>
