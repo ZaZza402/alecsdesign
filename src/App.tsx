@@ -1,3 +1,4 @@
+import { useTranslation } from "react-i18next";
 import Sidebar from "./components/layout/Sidebar";
 import Footer from "./components/layout/Footer";
 import BottomNav from "./components/layout/BottomNav";
@@ -20,13 +21,15 @@ import {
 } from "./utils/seo";
 
 export default function App() {
+  const { t } = useTranslation();
+
   return (
     <div className="min-h-screen relative">
       {/* SEO Meta Tags */}
       <SEO
-        title="alecsdesign - Professional Web Development in Rome | Modern Web Applications"
-        description="Professional web development services in Rome, Italy. Custom React applications, e-commerce solutions, and modern web design. Scalable, SEO-optimized websites for small businesses across Lazio and Europe."
-        keywords="web development Rome, sviluppo web Roma, web design Italy, React developer Rome, modern web applications, e-commerce development, SEO optimization, responsive websites, Lazio web developer, sviluppatore web Roma, applicazioni web moderne"
+        title={t("seo.title")}
+        description={t("seo.description")}
+        keywords={t("seo.keywords")}
         ogType="website"
       />
 

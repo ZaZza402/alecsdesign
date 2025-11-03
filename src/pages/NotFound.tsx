@@ -28,48 +28,50 @@ const NotFound = () => {
       <Sidebar />
       <MobileLanguageLabel />
       <div className="notfound-page">
-      <div className="notfound-background">
-        <div className="notfound-circle circle-1"></div>
-        <div className="notfound-circle circle-2"></div>
-        <div className="notfound-circle circle-3"></div>
+        <div className="notfound-background">
+          <div className="notfound-circle circle-1"></div>
+          <div className="notfound-circle circle-2"></div>
+          <div className="notfound-circle circle-3"></div>
+        </div>
+
+        <div className="notfound-container">
+          <div className="notfound-icon-wrapper">
+            <Search className="notfound-icon" size={80} />
+          </div>
+
+          <h1 className="notfound-title">404</h1>
+          <h2 className="notfound-subtitle">{t("notFound.title")}</h2>
+          <p className="notfound-description">{t("notFound.description")}</p>
+
+          <div className="notfound-actions">
+            <button
+              onClick={handleGoBack}
+              className="notfound-btn notfound-btn-secondary"
+            >
+              <ArrowLeft size={20} />
+              <span>{t("notFound.goBack")}</span>
+            </button>
+            <button
+              onClick={handleGoHome}
+              className="notfound-btn notfound-btn-primary"
+            >
+              <Home size={20} />
+              <span>{t("notFound.goHome")}</span>
+            </button>
+          </div>
+
+          <div className="notfound-suggestions">
+            <p className="suggestions-title">
+              {t("notFound.suggestions.title")}
+            </p>
+            <ul className="suggestions-list">
+              <li>{t("notFound.suggestions.item1")}</li>
+              <li>{t("notFound.suggestions.item2")}</li>
+              <li>{t("notFound.suggestions.item3")}</li>
+            </ul>
+          </div>
+        </div>
       </div>
-
-      <div className="notfound-container">
-        <div className="notfound-icon-wrapper">
-          <Search className="notfound-icon" size={80} />
-        </div>
-
-        <h1 className="notfound-title">404</h1>
-        <h2 className="notfound-subtitle">{t("notFound.title")}</h2>
-        <p className="notfound-description">{t("notFound.description")}</p>
-
-        <div className="notfound-actions">
-          <button
-            onClick={handleGoBack}
-            className="notfound-btn notfound-btn-secondary"
-          >
-            <ArrowLeft size={20} />
-            <span>{t("notFound.goBack")}</span>
-          </button>
-          <button
-            onClick={handleGoHome}
-            className="notfound-btn notfound-btn-primary"
-          >
-            <Home size={20} />
-            <span>{t("notFound.goHome")}</span>
-          </button>
-        </div>
-
-        <div className="notfound-suggestions">
-          <p className="suggestions-title">{t("notFound.suggestions.title")}</p>
-          <ul className="suggestions-list">
-            <li>{t("notFound.suggestions.item1")}</li>
-            <li>{t("notFound.suggestions.item2")}</li>
-            <li>{t("notFound.suggestions.item3")}</li>
-          </ul>
-        </div>
-      </div>
-    </div>
       <BottomNav />
     </>
   );

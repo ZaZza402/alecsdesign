@@ -17,9 +17,9 @@ interface SEOProps {
 }
 
 export const SEO = ({
-  title = "alecsdesign - Professional Web Development in Rome | Modern Web Applications",
-  description = "Professional web development services in Rome, Italy. Custom React applications, e-commerce solutions, and modern web design. Scalable, SEO-optimized websites for small businesses across Lazio and Europe.",
-  keywords = "web development Rome, sviluppo web Roma, web design Italy, React developer Rome, modern web applications, e-commerce development, SEO optimization, responsive websites, Lazio web developer",
+  title = "alecsdesign - Web Developer in Rome | Your 24/7 Digital Business Partner",
+  description = "Transform your business with scalable web solutions that work 24/7. Expert web developer in Rome specializing in React applications, e-commerce, and SEO-optimized websites. Your digital growth partner who builds solutions, not just websites.",
+  keywords = "web developer Rome, sviluppo web Roma, web design Italy, React developer Rome, business web solutions, e-commerce development, SEO optimization, scalable websites, digital business partner, sviluppatore web Roma",
   ogImage = "https://www.alecsdesign.xyz/og-image.jpg",
   ogType = "website",
   article,

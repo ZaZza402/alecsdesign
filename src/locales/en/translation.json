@@ -417,5 +417,10 @@
       "item2": "Use the navigation menu to find what you need",
       "item3": "Contact me if you think something is broken"
     }
+  },
+  "seo": {
+    "title": "alecsdesign - Web Developer in Rome | Your 24/7 Digital Business Partner",
+    "description": "Transform your business with scalable web solutions that work 24/7. Expert web developer in Rome specializing in React applications, e-commerce, and SEO-optimized websites. Your digital growth partner who builds solutions, not just websites.",
+    "keywords": "web developer Rome, React developer Rome, business web solutions, e-commerce development, SEO optimization, scalable websites, digital business partner, web apps Rome"
   }
 }
