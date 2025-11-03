@@ -10,10 +10,10 @@
   "hero": {
     "greeting": "Salut!",
     "name": "Sunt Alex",
-    "title": "Partenerul tău",
-    "word1": "Partener Digital",
-    "word2": "Consultant de Creștere",
-    "word3": "Aliat al Succesului",
+    "title": "Sunt",
+    "word1": "Dezvoltatorul Tău",
+    "word2": "Specialistul Tău",
+    "word3": "Partenerul Tău",
     "description": "Construiesc soluții web care cresc odată cu afacerea ta. Nu doar site-uri web, ci instrumente scalabile care lucrează 24/7 pentru a ajuta afacerea ta să prospere.",
     "ctaWhatsApp": "Să vorbim pe WhatsApp",
     "ctaEmail": "Sau poți scrie aici"
