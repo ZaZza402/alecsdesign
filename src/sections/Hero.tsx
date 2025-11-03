@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useTranslation } from "react-i18next";
-import ParallaxBackground from "../components/ui/backgrounds/ParallaxBackground";
+import { MessageCircle, Mail } from "lucide-react";
 import IconScrollBar from "../components/ui/IconScrollBar";
 import "./Hero.css";
 
@@ -9,12 +9,11 @@ const Hero: React.FC = () => {
   const { t } = useTranslation();
   const [currentWordIndex, setCurrentWordIndex] = useState(0);
 
-  // Rotating words for dynamic effect
+  // Shorter rotating words for single line display
   const rotatingWords = [
     t("hero.word1"),
     t("hero.word2"),
     t("hero.word3"),
-    t("hero.word4"),
   ];
 
   // Rotate words every 3 seconds
@@ -81,23 +80,31 @@ const Hero: React.FC = () => {
     },
   };
 
+  const handleWhatsAppClick = () => {
+    window.open("https://wa.me/380150307", "_blank");
+  };
+
+  const handleContactClick = () => {
+    const contactSection = document.getElementById("contact");
+    contactSection?.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <section id="home" className="hero-section" aria-label="Hero section">
-      {/* Parallax Background */}
-      <ParallaxBackground /> {/* Hero Content */}
+      {/* Hero Content */}
       <div className="hero-section__content">
         <motion.div initial="hidden" animate="visible" variants={titleVariants}>
-          <h1 className="hero-section__title">
-            {t("hero.greeting")} {t("hero.name")}
+          <h1 className="hero-section__title hero-section__title--animated">
+            <span className="hero-section__title-word">{t("hero.greeting")}</span>{" "}
+            <span className="hero-section__title-word">{t("hero.name")}</span>
           </h1>
         </motion.div>
 
         <motion.p
-          className="hero-section__subtitle"
+          className="hero-section__subtitle-label"
           initial="hidden"
           animate="visible"
           variants={subtitleVariants}
-          style={{ marginBottom: "0.5rem" }}
         >
           {t("hero.title")}
         </motion.p>
@@ -105,12 +112,6 @@ const Hero: React.FC = () => {
         <div
           className="hero-section__highlight-container"
           aria-live="polite"
-          style={{
-            minHeight: "3.5rem",
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-          }}
         >
           <AnimatePresence mode="wait">
             <motion.span
@@ -120,10 +121,6 @@ const Hero: React.FC = () => {
               initial="enter"
               animate="center"
               exit="exit"
-              style={{
-                fontSize: "2rem",
-                fontWeight: "700",
-              }}
             >
               {rotatingWords[currentWordIndex]}
             </motion.span>
@@ -131,14 +128,37 @@ const Hero: React.FC = () => {
         </div>
 
         <motion.p
-          className="hero-section__subtitle"
+          className="hero-section__description"
           initial="hidden"
           animate="visible"
           variants={descriptionVariants}
-          style={{ fontSize: "1.125rem", marginTop: "1rem" }}
         >
           {t("hero.description")}
         </motion.p>
+
+        {/* CTA Buttons */}
+        <motion.div
+          className="hero-section__cta"
+          initial="hidden"
+          animate="visible"
+          variants={descriptionVariants}
+        >
+          <button
+            onClick={handleWhatsAppClick}
+            className="hero-cta-button hero-cta-button--primary"
+          >
+            <MessageCircle size={20} />
+            <span>{t("hero.ctaWhatsApp")}</span>
+          </button>
+          
+          <button
+            onClick={handleContactClick}
+            className="hero-cta-button hero-cta-button--secondary"
+          >
+            <Mail size={20} />
+            <span>{t("hero.ctaEmail")}</span>
+          </button>
+        </motion.div>
       </div>
       {/* Interactive Icon Scroll Bar Divider */}
       <IconScrollBar />

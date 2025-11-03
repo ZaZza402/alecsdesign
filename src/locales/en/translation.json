@@ -11,12 +11,12 @@
     "greeting": "Hey there!",
     "name": "I'm Alex",
     "title": "Your",
-    "titleHighlight": "digital business partner",
-    "word1": "digital business partner",
-    "word2": "online growth consultant",
-    "word3": "digital success ally",
-    "word4": "web solutions collaborator",
-    "description": "I build web solutions that grow with your business. Not just websites, but scalable tools that work 24/7 to help your business thrive."
+    "word1": "Digital Partner",
+    "word2": "Growth Consultant",
+    "word3": "Success Ally",
+    "description": "I build web solutions that grow with your business. Not just websites, but scalable tools that work 24/7 to help your business thrive.",
+    "ctaWhatsApp": "Let's talk on WhatsApp",
+    "ctaEmail": "Or you can write"
   },
   "problem": {
     "title": "If you landed here, you already know that...",

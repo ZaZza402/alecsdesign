@@ -11,12 +11,12 @@
     "greeting": "Salut!",
     "name": "Sunt Alex",
     "title": "Partenerul tău",
-    "titleHighlight": "digital pentru afacerea ta",
-    "word1": "digital pentru afacerea ta",
-    "word2": "consultant pentru creștere online",
-    "word3": "aliat pentru succesul digital",
-    "word4": "colaborator pentru soluții web",
-    "description": "Construiesc soluții web care cresc odată cu afacerea ta. Nu doar site-uri web, ci instrumente scalabile care lucrează 24/7 pentru a ajuta afacerea ta să prospere."
+    "word1": "Partener Digital",
+    "word2": "Consultant Creștere",
+    "word3": "Aliat Succes",
+    "description": "Construiesc soluții web care cresc odată cu afacerea ta. Nu doar site-uri web, ci instrumente scalabile care lucrează 24/7 pentru a ajuta afacerea ta să prospere.",
+    "ctaWhatsApp": "Să vorbim pe WhatsApp",
+    "ctaEmail": "Sau poți scrie aici"
   },
   "problem": {
     "title": "Dacă ai ajuns aici, știi deja că...",
