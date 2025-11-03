@@ -47,7 +47,10 @@
   background: transparent;
   border: 3px solid transparent;
   border-radius: 50%;
-  background-image: linear-gradient(white, white),
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.03),
+      rgba(255, 255, 255, 0.03)
+    ),
     linear-gradient(135deg, #3b82f6 0%, #10b981 100%);
   background-origin: border-box;
   background-clip: padding-box, border-box;
@@ -64,8 +67,13 @@
 .sidebar-logo-wrapper:hover {
   transform: scale(1.08);
   border-width: 3.5px;
-  box-shadow: 0 4px 16px rgba(59, 130, 246, 0.2),
-    0 2px 8px rgba(16, 185, 129, 0.15);
+  box-shadow: 0 0 20px rgba(59, 130, 246, 0.4), 0 0 40px rgba(16, 185, 129, 0.3),
+    0 4px 16px rgba(59, 130, 246, 0.2);
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.05),
+      rgba(255, 255, 255, 0.05)
+    ),
+    linear-gradient(135deg, #3b82f6 0%, #10b981 100%);
 }
 
 .sidebar-logo-wrapper.collapsed:hover {

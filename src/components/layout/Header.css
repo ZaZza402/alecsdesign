@@ -55,7 +55,10 @@
   background: transparent;
   border: 2.5px solid transparent;
   border-radius: 50%;
-  background-image: linear-gradient(white, white),
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.05),
+      rgba(255, 255, 255, 0.05)
+    ),
     linear-gradient(135deg, #3b82f6 0%, #10b981 100%);
   background-origin: border-box;
   background-clip: padding-box, border-box;
@@ -64,8 +67,12 @@
 
 .header__logo:hover .header__logo-wrapper {
   border-width: 3px;
-  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.2),
-    0 2px 8px rgba(16, 185, 129, 0.15);
+  box-shadow: 0 0 20px rgba(59, 130, 246, 0.4), 0 0 40px rgba(16, 185, 129, 0.3);
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.08),
+      rgba(255, 255, 255, 0.08)
+    ),
+    linear-gradient(135deg, #3b82f6 0%, #10b981 100%);
 }
 
 .header__logo-image {
