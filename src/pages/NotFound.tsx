@@ -38,11 +38,17 @@ const NotFound = () => {
         <p className="notfound-description">{t("notFound.description")}</p>
 
         <div className="notfound-actions">
-          <button onClick={handleGoBack} className="notfound-btn notfound-btn-secondary">
+          <button
+            onClick={handleGoBack}
+            className="notfound-btn notfound-btn-secondary"
+          >
             <ArrowLeft size={20} />
             <span>{t("notFound.goBack")}</span>
           </button>
-          <button onClick={handleGoHome} className="notfound-btn notfound-btn-primary">
+          <button
+            onClick={handleGoHome}
+            className="notfound-btn notfound-btn-primary"
+          >
             <Home size={20} />
             <span>{t("notFound.goHome")}</span>
           </button>
