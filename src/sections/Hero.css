@@ -38,31 +38,38 @@
 .hero-section__title {
   font-size: 3rem;
   font-weight: 900;
-  line-height: 1.1;
+  line-height: 1.2;
   margin-bottom: 1.5rem;
-  /* Richer gradient with better contrast */
+}
+
+/* Animated greeting text - speaking effect */
+.hero-section__title--animated .hero-section__title-word {
+  display: inline-block;
   background: linear-gradient(135deg, #3b82f6 0%, #10b981 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-}
-
-/* Animated greeting text */
-.hero-section__title--animated .hero-section__title-word {
-  display: inline-block;
-  animation: wave 2s ease-in-out infinite;
+  animation: speakWave 2.5s ease-in-out infinite;
+  transform-origin: center bottom;
 }
 
 .hero-section__title--animated .hero-section__title-word:nth-child(2) {
-  animation-delay: 0.1s;
+  animation-delay: 0.15s;
 }
 
-@keyframes wave {
+/* Speaking wave animation - mimics talking motion */
+@keyframes speakWave {
   0%, 100% {
-    transform: translateY(0) scale(1);
+    transform: translateY(0) scale(1) rotateZ(0deg);
+  }
+  25% {
+    transform: translateY(-3px) scale(1.03) rotateZ(-1deg);
   }
   50% {
-    transform: translateY(-5px) scale(1.02);
+    transform: translateY(-5px) scale(1.05) rotateZ(0deg);
+  }
+  75% {
+    transform: translateY(-3px) scale(1.03) rotateZ(1deg);
   }
 }
 
