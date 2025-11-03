@@ -40,9 +40,6 @@
 
 .icon-grid {
   position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   width: 320px;
   height: 320px;
   margin: 0 auto;
@@ -64,27 +61,43 @@
 }
 
 .icon-1 {
-  top: 0;
+  top: 15px;
   left: 50%;
   transform: translateX(-50%);
+}
+
+.icon-1:hover {
+  transform: translateX(-50%) translateY(-4px);
 }
 
 .icon-2 {
   top: 50%;
-  right: 0;
+  right: 15px;
   transform: translateY(-50%);
 }
 
+.icon-2:hover {
+  transform: translateY(-50%) translateX(4px);
+}
+
 .icon-3 {
-  bottom: 0;
+  bottom: 15px;
   left: 50%;
   transform: translateX(-50%);
 }
 
+.icon-3:hover {
+  transform: translateX(-50%) translateY(4px);
+}
+
 .icon-4 {
   top: 50%;
-  left: 0;
+  left: 15px;
   transform: translateY(-50%);
+}
+
+.icon-4:hover {
+  transform: translateY(-50%) translateX(-4px);
 }
 
 @keyframes fadeInScale {
@@ -99,7 +112,6 @@
 }
 
 .icon-wrapper:hover {
-  transform: translateY(-2px);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08), 0 4px 8px rgba(0, 0, 0, 0.06);
   border-color: rgba(203, 213, 225, 1);
 }
@@ -108,7 +120,7 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%) !important;
   display: flex;
   align-items: center;
   justify-content: center;

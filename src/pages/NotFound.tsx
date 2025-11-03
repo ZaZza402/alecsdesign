@@ -2,6 +2,9 @@ import { useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import { useNavigate } from "react-router-dom";
 import { Home, ArrowLeft, Search } from "lucide-react";
+import Sidebar from "../components/layout/Sidebar";
+import BottomNav from "../components/layout/BottomNav";
+import MobileLanguageLabel from "../components/ui/MobileLanguageLabel";
 import "./NotFound.css";
 
 const NotFound = () => {
@@ -21,7 +24,10 @@ const NotFound = () => {
   };
 
   return (
-    <div className="notfound-page">
+    <>
+      <Sidebar />
+      <MobileLanguageLabel />
+      <div className="notfound-page">
       <div className="notfound-background">
         <div className="notfound-circle circle-1"></div>
         <div className="notfound-circle circle-2"></div>
@@ -64,6 +70,8 @@ const NotFound = () => {
         </div>
       </div>
     </div>
+      <BottomNav />
+    </>
   );
 };
 

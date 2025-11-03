@@ -2,6 +2,9 @@ import { useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import { useNavigate } from "react-router-dom";
 import { ArrowLeft } from "lucide-react";
+import Sidebar from "../components/layout/Sidebar";
+import BottomNav from "../components/layout/BottomNav";
+import MobileLanguageLabel from "../components/ui/MobileLanguageLabel";
 import "./LegalPage.css";
 
 const CookiePolicy = () => {
@@ -17,7 +20,10 @@ const CookiePolicy = () => {
   };
 
   return (
-    <div className="legal-page">
+    <>
+      <Sidebar />
+      <MobileLanguageLabel />
+      <div className="legal-page">
       <div className="legal-container">
         <button onClick={handleBack} className="back-button">
           <ArrowLeft size={20} />
@@ -88,6 +94,8 @@ const CookiePolicy = () => {
         </div>
       </div>
     </div>
+      <BottomNav />
+    </>
   );
 };
 
