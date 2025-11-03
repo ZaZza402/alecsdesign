@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useTranslation } from "react-i18next";
-import { MessageCircle, Mail } from "lucide-react";
+import { MessageCircle, Mail, Hand } from "lucide-react";
 import IconScrollBar from "../components/ui/IconScrollBar";
 import "./Hero.css";
 
@@ -10,11 +10,7 @@ const Hero: React.FC = () => {
   const [currentWordIndex, setCurrentWordIndex] = useState(0);
 
   // Shorter rotating words for single line display
-  const rotatingWords = [
-    t("hero.word1"),
-    t("hero.word2"),
-    t("hero.word3"),
-  ];
+  const rotatingWords = [t("hero.word1"), t("hero.word2"), t("hero.word3")];
 
   // Rotate words every 3 seconds
   useEffect(() => {
@@ -94,9 +90,12 @@ const Hero: React.FC = () => {
       {/* Hero Content */}
       <div className="hero-section__content">
         <motion.div initial="hidden" animate="visible" variants={titleVariants}>
-          <h1 className="hero-section__title hero-section__title--animated">
-            <span className="hero-section__title-word">{t("hero.greeting")}</span>{" "}
-            <span className="hero-section__title-word">{t("hero.name")}</span>
+          <h1 className="hero-section__title">
+            <span className="hero-section__greeting">
+              <Hand className="hero-section__hand-wave" size={48} strokeWidth={2.5} />
+              <span className="hero-section__greeting-text">{t("hero.greeting")}</span>
+            </span>
+            <span className="hero-section__name">{t("hero.name")}</span>
           </h1>
         </motion.div>
 
@@ -109,10 +108,7 @@ const Hero: React.FC = () => {
           {t("hero.title")}
         </motion.p>
 
-        <div
-          className="hero-section__highlight-container"
-          aria-live="polite"
-        >
+        <div className="hero-section__highlight-container" aria-live="polite">
           <AnimatePresence mode="wait">
             <motion.span
               key={currentWordIndex}
@@ -150,7 +146,7 @@ const Hero: React.FC = () => {
             <MessageCircle size={20} />
             <span>{t("hero.ctaWhatsApp")}</span>
           </button>
-          
+
           <button
             onClick={handleContactClick}
             className="hero-cta-button hero-cta-button--secondary"
