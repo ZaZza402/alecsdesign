@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <!-- English Homepage -->
+  <url>
+    <loc>https://www.alecsdesign.xyz/en</loc>
+    <lastmod>2025-11-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.alecsdesign.xyz/en" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.alecsdesign.xyz/it" />
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.alecsdesign.xyz/ro" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.alecsdesign.xyz/en" />
+  </url>
+
+  <!-- Italian Homepage -->
+  <url>
+    <loc>https://www.alecsdesign.xyz/it</loc>
+    <lastmod>2025-11-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.alecsdesign.xyz/en" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.alecsdesign.xyz/it" />
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.alecsdesign.xyz/ro" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.alecsdesign.xyz/en" />
+  </url>
+
+  <!-- Romanian Homepage -->
+  <url>
+    <loc>https://www.alecsdesign.xyz/ro</loc>
+    <lastmod>2025-11-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.alecsdesign.xyz/en" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.alecsdesign.xyz/it" />
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.alecsdesign.xyz/ro" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.alecsdesign.xyz/en" />
+  </url>
+
+  <!-- Privacy Policy - English -->
+  <url>
+    <loc>https://www.alecsdesign.xyz/en/privacy-policy</loc>
+    <lastmod>2025-11-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.alecsdesign.xyz/en/privacy-policy" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.alecsdesign.xyz/it/privacy-policy" />
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.alecsdesign.xyz/ro/privacy-policy" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.alecsdesign.xyz/en/privacy-policy" />
+  </url>
+
+  <!-- Privacy Policy - Italian -->
+  <url>
+    <loc>https://www.alecsdesign.xyz/it/privacy-policy</loc>
+    <lastmod>2025-11-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.alecsdesign.xyz/en/privacy-policy" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.alecsdesign.xyz/it/privacy-policy" />
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.alecsdesign.xyz/ro/privacy-policy" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.alecsdesign.xyz/en/privacy-policy" />
+  </url>
+
+  <!-- Privacy Policy - Romanian -->
+  <url>
+    <loc>https://www.alecsdesign.xyz/ro/privacy-policy</loc>
+    <lastmod>2025-11-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.alecsdesign.xyz/en/privacy-policy" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.alecsdesign.xyz/it/privacy-policy" />
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.alecsdesign.xyz/ro/privacy-policy" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.alecsdesign.xyz/en/privacy-policy" />
+  </url>
+
+  <!-- Terms & Conditions - English -->
+  <url>
+    <loc>https://www.alecsdesign.xyz/en/terms-conditions</loc>
+    <lastmod>2025-11-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.alecsdesign.xyz/en/terms-conditions" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.alecsdesign.xyz/it/terms-conditions" />
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.alecsdesign.xyz/ro/terms-conditions" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.alecsdesign.xyz/en/terms-conditions" />
+  </url>
+
+  <!-- Terms & Conditions - Italian -->
+  <url>
+    <loc>https://www.alecsdesign.xyz/it/terms-conditions</loc>
+    <lastmod>2025-11-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.alecsdesign.xyz/en/terms-conditions" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.alecsdesign.xyz/it/terms-conditions" />
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.alecsdesign.xyz/ro/terms-conditions" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.alecsdesign.xyz/en/terms-conditions" />
+  </url>
+
+  <!-- Terms & Conditions - Romanian -->
+  <url>
+    <loc>https://www.alecsdesign.xyz/ro/terms-conditions</loc>
+    <lastmod>2025-11-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.alecsdesign.xyz/en/terms-conditions" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.alecsdesign.xyz/it/terms-conditions" />
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.alecsdesign.xyz/ro/terms-conditions" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.alecsdesign.xyz/en/terms-conditions" />
+  </url>
+
+  <!-- Cookie Policy - English -->
+  <url>
+    <loc>https://www.alecsdesign.xyz/en/cookie-policy</loc>
+    <lastmod>2025-11-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.alecsdesign.xyz/en/cookie-policy" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.alecsdesign.xyz/it/cookie-policy" />
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.alecsdesign.xyz/ro/cookie-policy" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.alecsdesign.xyz/en/cookie-policy" />
+  </url>
+
+  <!-- Cookie Policy - Italian -->
+  <url>
+    <loc>https://www.alecsdesign.xyz/it/cookie-policy</loc>
+    <lastmod>2025-11-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.alecsdesign.xyz/en/cookie-policy" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.alecsdesign.xyz/it/cookie-policy" />
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.alecsdesign.xyz/ro/cookie-policy" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.alecsdesign.xyz/en/cookie-policy" />
+  </url>
+
+  <!-- Cookie Policy - Romanian -->
+  <url>
+    <loc>https://www.alecsdesign.xyz/ro/cookie-policy</loc>
+    <lastmod>2025-11-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.alecsdesign.xyz/en/cookie-policy" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.alecsdesign.xyz/it/cookie-policy" />
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.alecsdesign.xyz/ro/cookie-policy" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.alecsdesign.xyz/en/cookie-policy" />
+  </url>
+
+</urlset>

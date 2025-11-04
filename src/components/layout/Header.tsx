@@ -95,7 +95,7 @@ const Header: React.FC = () => {
         >
           <div className="header__logo-wrapper">
             <img
-              src="/logo/alecsdesign-logo.svg"
+              src="/logo/apple-touch-icon.png"
               alt="alecsdesign"
               className="header__logo-image"
               fetchPriority="high"

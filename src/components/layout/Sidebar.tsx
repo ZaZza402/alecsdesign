@@ -108,7 +108,7 @@ const Sidebar = () => {
             className={`sidebar-logo-wrapper ${isCollapsed ? "collapsed" : ""}`}
           >
             <img
-              src="/logo/alecsdesign-logo.svg"
+              src="/logo/apple-touch-icon.png"
               alt="alecsdesign"
               className="sidebar-logo-image"
               loading="lazy"
