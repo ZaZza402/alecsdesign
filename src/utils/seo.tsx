@@ -20,7 +20,7 @@ export const SEO = ({
   title = "alecsdesign - Web Developer in Rome | Your 24/7 Digital Business Partner",
   description = "Transform your business with scalable web solutions that work 24/7. Expert web developer in Rome specializing in React applications, e-commerce, and SEO-optimized websites. Your digital growth partner who builds solutions, not just websites.",
   keywords = "web developer Rome, sviluppo web Roma, web design Italy, React developer Rome, business web solutions, e-commerce development, SEO optimization, scalable websites, digital business partner, sviluppatore web Roma",
-  ogImage = "https://www.alecsdesign.xyz/og-image.jpg",
+  ogImage = "https://www.alecsdesign.xyz/logo/og-image.jpg",
   ogType = "website",
   article,
   canonical,
