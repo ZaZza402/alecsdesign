@@ -42,26 +42,17 @@
   line-height: 1.6;
 }
 
-/* Circular graph layout (desktop) */
+/* Grid layout for desktop */
 .lifecycle-circle-wrapper {
   position: relative;
   width: 100%;
-  max-width: 900px;
+  max-width: 1200px;
   margin: 0 auto 4rem;
-  height: 700px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: none;
 }
 
 .lifecycle-circle {
-  width: 400px;
-  height: 400px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  filter: drop-shadow(0 10px 30px rgba(59, 130, 246, 0.15));
+  display: none;
 }
 
 .central-circle {
@@ -83,39 +74,100 @@
   font-weight: 500;
 }
 
-/* Phase nodes */
+/* Phase nodes - Grid layout */
 .lifecycle-node {
-  position: absolute;
-  width: 200px;
+  display: none;
+}
+
+/* Desktop grid view */
+.lifecycle-desktop-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-bottom: 3rem;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.lifecycle-desktop-card {
   background: white;
-  padding: 1.5rem;
+  padding: 2rem 1.5rem;
   border-radius: 12px;
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05),
     0 2px 4px -1px rgba(0, 0, 0, 0.03);
-  transform: translate(-50%, -50%);
   transition: all 0.4s cubic-bezier(0.22, 1, 0.36, 1);
   border: 2px solid transparent;
   opacity: 0;
-  animation: fadeInScale 0.6s ease forwards;
+  animation: fadeInUp 0.6s ease forwards;
   text-align: center;
+  position: relative;
 }
 
-@keyframes fadeInScale {
+@keyframes fadeInUp {
   from {
     opacity: 0;
-    transform: translate(-50%, -50%) scale(0.8);
+    transform: translateY(30px);
   }
   to {
     opacity: 1;
-    transform: translate(-50%, -50%) scale(1);
+    transform: translateY(0);
   }
 }
 
-.lifecycle-node:hover {
-  transform: translate(-50%, -50%) scale(1.05);
+.lifecycle-desktop-card:hover {
+  transform: translateY(-8px);
   box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
     0 10px 10px -5px rgba(0, 0, 0, 0.04);
   z-index: 10;
+}
+
+.desktop-card-number {
+  position: absolute;
+  top: -14px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  border-radius: 50%;
+  font-weight: 700;
+  font-size: 0.875rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+}
+
+.desktop-card-icon-wrapper {
+  width: 64px;
+  height: 64px;
+  margin: 0 auto 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.desktop-card-icon {
+  transition: all 0.3s ease;
+}
+
+.desktop-card-title {
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin: 0 0 0.75rem 0;
+  line-height: 1.3;
+}
+
+.desktop-card-description {
+  font-size: 0.9375rem;
+  color: #64748b;
+  margin: 0;
+  line-height: 1.6;
 }
 
 .node-number {
@@ -166,108 +218,108 @@
   line-height: 1.5;
 }
 
-/* Color variants */
-.node-blue {
+/* Color variants for desktop cards */
+.card-blue {
   border-color: rgba(59, 130, 246, 0.2);
 }
-.node-blue:hover {
+.card-blue:hover {
   border-color: rgba(59, 130, 246, 0.4);
 }
-.node-blue .node-number {
+.card-blue .desktop-card-number {
   color: #3b82f6;
   border: 2px solid #3b82f6;
 }
-.node-blue .node-icon-wrapper {
+.card-blue .desktop-card-icon-wrapper {
   background: rgba(59, 130, 246, 0.1);
   color: #3b82f6;
 }
 
-.node-indigo {
+.card-indigo {
   border-color: rgba(99, 102, 241, 0.2);
 }
-.node-indigo:hover {
+.card-indigo:hover {
   border-color: rgba(99, 102, 241, 0.4);
 }
-.node-indigo .node-number {
+.card-indigo .desktop-card-number {
   color: #6366f1;
   border: 2px solid #6366f1;
 }
-.node-indigo .node-icon-wrapper {
+.card-indigo .desktop-card-icon-wrapper {
   background: rgba(99, 102, 241, 0.1);
   color: #6366f1;
 }
 
-.node-purple {
+.card-purple {
   border-color: rgba(147, 51, 234, 0.2);
 }
-.node-purple:hover {
+.card-purple:hover {
   border-color: rgba(147, 51, 234, 0.4);
 }
-.node-purple .node-number {
+.card-purple .desktop-card-number {
   color: #9333ea;
   border: 2px solid #9333ea;
 }
-.node-purple .node-icon-wrapper {
+.card-purple .desktop-card-icon-wrapper {
   background: rgba(147, 51, 234, 0.1);
   color: #9333ea;
 }
 
-.node-pink {
+.card-pink {
   border-color: rgba(236, 72, 153, 0.2);
 }
-.node-pink:hover {
+.card-pink:hover {
   border-color: rgba(236, 72, 153, 0.4);
 }
-.node-pink .node-number {
+.card-pink .desktop-card-number {
   color: #ec4899;
   border: 2px solid #ec4899;
 }
-.node-pink .node-icon-wrapper {
+.card-pink .desktop-card-icon-wrapper {
   background: rgba(236, 72, 153, 0.1);
   color: #ec4899;
 }
 
-.node-orange {
+.card-orange {
   border-color: rgba(249, 115, 22, 0.2);
 }
-.node-orange:hover {
+.card-orange:hover {
   border-color: rgba(249, 115, 22, 0.4);
 }
-.node-orange .node-number {
+.card-orange .desktop-card-number {
   color: #f97316;
   border: 2px solid #f97316;
 }
-.node-orange .node-icon-wrapper {
+.card-orange .desktop-card-icon-wrapper {
   background: rgba(249, 115, 22, 0.1);
   color: #f97316;
 }
 
-.node-green {
+.card-green {
   border-color: rgba(16, 185, 129, 0.2);
 }
-.node-green:hover {
+.card-green:hover {
   border-color: rgba(16, 185, 129, 0.4);
 }
-.node-green .node-number {
+.card-green .desktop-card-number {
   color: #10b981;
   border: 2px solid #10b981;
 }
-.node-green .node-icon-wrapper {
+.card-green .desktop-card-icon-wrapper {
   background: rgba(16, 185, 129, 0.1);
   color: #10b981;
 }
 
-.node-cyan {
+.card-cyan {
   border-color: rgba(6, 182, 212, 0.2);
 }
-.node-cyan:hover {
+.card-cyan:hover {
   border-color: rgba(6, 182, 212, 0.4);
 }
-.node-cyan .node-number {
+.card-cyan .desktop-card-number {
   color: #06b6d4;
   border: 2px solid #06b6d4;
 }
-.node-cyan .node-icon-wrapper {
+.card-cyan .desktop-card-icon-wrapper {
   background: rgba(6, 182, 212, 0.1);
   color: #06b6d4;
 }
@@ -299,9 +351,20 @@
   font-weight: 600;
 }
 
+/* Desktop view */
+@media (min-width: 1025px) {
+  .lifecycle-desktop-grid {
+    display: grid;
+  }
+
+  .lifecycle-timeline-mobile {
+    display: none;
+  }
+}
+
 /* Tablet and below - show mobile timeline */
 @media (max-width: 1024px) {
-  .lifecycle-circle-wrapper {
+  .lifecycle-desktop-grid {
     display: none;
   }
 
