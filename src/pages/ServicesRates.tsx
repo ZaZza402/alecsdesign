@@ -61,7 +61,7 @@ const ServicesRates = () => {
         keywords={t("servicesRates.seo.keywords")}
         ogType="website"
       />
-      
+
       <MetallicBackground />
       <Sidebar />
       <MobileLanguageLabel />
