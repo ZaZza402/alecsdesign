@@ -1,22 +1,27 @@
 import { useState, useEffect } from "react";
 import { useTranslation } from "react-i18next";
+import { useNavigate, useLocation } from "react-router-dom";
 import {
   Home,
   Code2,
   // Briefcase,
   DollarSign,
   Settings,
+  Receipt,
   Mail,
   ChevronDown,
 } from "lucide-react";
+import i18n from "../../i18n";
 import "./BottomNav.css";
 
 const BottomNav = () => {
   const { t } = useTranslation();
+  const navigate = useNavigate();
+  const location = useLocation();
   const [activeSection, setActiveSection] = useState("home");
   const [isCollapsed, setIsCollapsed] = useState(true);
 
-  const navItems = [
+  const navItemsRow1 = [
     { id: "home", icon: Home, label: t("nav.home"), href: "#home" },
     {
       id: "technology",
@@ -43,6 +48,16 @@ const BottomNav = () => {
       href: "#process",
     },
     { id: "contact", icon: Mail, label: t("nav.contact"), href: "#contact" },
+  ];
+
+  const navItemsRow2 = [
+    {
+      id: "services",
+      icon: Receipt,
+      label: t("nav.services"),
+      href: `/${i18n.language}/services-rates`,
+      isPage: true,
+    },
   ];
 
   // Update body class when bottom nav expands/collapses
@@ -81,13 +96,40 @@ const BottomNav = () => {
 
   const handleNavClick = (
     e: React.MouseEvent<HTMLAnchorElement>,
-    href: string
+    href: string,
+    isPage?: boolean
   ) => {
     e.preventDefault();
-    const element = document.querySelector(href);
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
-      setIsCollapsed(true); // Collapse after clicking
+    if (isPage) {
+      navigate(href);
+      setIsCollapsed(true);
+    } else {
+      // Check if we're on the landing page
+      const isOnLandingPage =
+        location.pathname === `/${i18n.language}` ||
+        location.pathname === `/en` ||
+        location.pathname === `/it` ||
+        location.pathname === `/ro`;
+
+      if (!isOnLandingPage) {
+        // Navigate to landing page with hash, then scroll after navigation
+        navigate(`/${i18n.language}${href}`);
+        setIsCollapsed(true);
+        // Use setTimeout to ensure navigation completes before scrolling
+        setTimeout(() => {
+          const element = document.querySelector(href);
+          if (element) {
+            element.scrollIntoView({ behavior: "smooth" });
+          }
+        }, 100);
+      } else {
+        // We're on landing page, just scroll
+        const element = document.querySelector(href);
+        if (element) {
+          element.scrollIntoView({ behavior: "smooth" });
+          setIsCollapsed(true); // Collapse after clicking
+        }
+      }
     }
   };
 
@@ -107,30 +149,60 @@ const BottomNav = () => {
       </button>
 
       <div className="bottom-nav-container">
-        {navItems.map((item) => {
-          const Icon = item.icon;
-          const isActive = activeSection === item.id;
+        <div className="bottom-nav-row">
+          {navItemsRow1.map((item) => {
+            const Icon = item.icon;
+            const isActive = activeSection === item.id;
 
-          return (
-            <a
-              key={item.id}
-              href={item.href}
-              className={`bottom-nav-item ${isActive ? "active" : ""}`}
-              onClick={(e) => handleNavClick(e, item.href)}
-              aria-label={item.label}
-            >
-              <div className="nav-icon-wrapper">
-                <Icon
-                  className="nav-icon"
-                  size={22}
-                  strokeWidth={isActive ? 2.5 : 2}
-                />
-                {isActive && <div className="active-indicator" />}
-              </div>
-              <span className="nav-label">{item.label}</span>
-            </a>
-          );
-        })}
+            return (
+              <a
+                key={item.id}
+                href={item.href}
+                className={`bottom-nav-item ${isActive ? "active" : ""}`}
+                onClick={(e) => handleNavClick(e, item.href)}
+                aria-label={item.label}
+              >
+                <div className="nav-icon-wrapper">
+                  <Icon
+                    className="nav-icon"
+                    size={22}
+                    strokeWidth={isActive ? 2.5 : 2}
+                  />
+                  {isActive && <div className="active-indicator" />}
+                </div>
+                <span className="nav-label">{item.label}</span>
+              </a>
+            );
+          })}
+        </div>
+        <div className="bottom-nav-row bottom-nav-row-2">
+          {navItemsRow2.map((item) => {
+            const Icon = item.icon;
+            const isActive = item.isPage
+              ? location.pathname.includes("services-rates")
+              : false;
+
+            return (
+              <a
+                key={item.id}
+                href={item.href}
+                className={`bottom-nav-item ${isActive ? "active" : ""}`}
+                onClick={(e) => handleNavClick(e, item.href, item.isPage)}
+                aria-label={item.label}
+              >
+                <div className="nav-icon-wrapper">
+                  <Icon
+                    className="nav-icon"
+                    size={22}
+                    strokeWidth={isActive ? 2.5 : 2}
+                  />
+                  {isActive && <div className="active-indicator" />}
+                </div>
+                <span className="nav-label">{item.label}</span>
+              </a>
+            );
+          })}
+        </div>
       </div>
     </nav>
   );

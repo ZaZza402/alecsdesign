@@ -1,0 +1,433 @@
+.services-rates-page {
+  margin-left: 0;
+  padding: 6rem 0;
+  min-height: 100vh;
+  position: relative;
+  z-index: 1;
+}
+
+.services-rates-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.services-rates-container.animate-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Header */
+.services-header {
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+.services-title {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin: 0 0 1.5rem 0;
+  line-height: 1.2;
+  background: linear-gradient(135deg, #3b82f6 0%, #10b981 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.services-subtitle {
+  font-size: 1.25rem;
+  color: #475569;
+  margin: 0;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.6;
+}
+
+/* Category Sections */
+.pricing-category {
+  margin-bottom: 5rem;
+}
+
+.category-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.category-icon {
+  color: #3b82f6;
+  margin-bottom: 1rem;
+}
+
+.category-title {
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin: 0 0 0.75rem 0;
+  line-height: 1.2;
+}
+
+.category-subtitle {
+  font-size: 1.125rem;
+  color: #64748b;
+  margin: 0;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.6;
+}
+
+/* Services Grid */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.service-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05),
+    0 2px 4px -1px rgba(0, 0, 0, 0.03);
+  transition: all 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+  border: 2px solid transparent;
+  opacity: 0;
+  animation: fadeInUp 0.6s ease forwards;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.service-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+    0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  border-color: rgba(59, 130, 246, 0.3);
+}
+
+.service-name {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin: 0 0 0.75rem 0;
+  line-height: 1.3;
+}
+
+.service-price {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #3b82f6;
+  margin: 0 0 1rem 0;
+  line-height: 1.2;
+}
+
+.service-description {
+  font-size: 0.9375rem;
+  color: #64748b;
+  margin: 0;
+  line-height: 1.6;
+}
+
+/* Retainer Packages */
+.retainer-section {
+  background: linear-gradient(
+    135deg,
+    rgba(59, 130, 246, 0.05) 0%,
+    rgba(16, 185, 129, 0.05) 100%
+  );
+  padding: 4rem 2rem;
+  border-radius: 16px;
+  margin-top: 6rem;
+}
+
+.retainer-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.retainer-card {
+  background: white;
+  padding: 2.5rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05),
+    0 2px 4px -1px rgba(0, 0, 0, 0.03);
+  transition: all 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+  border: 2px solid transparent;
+  position: relative;
+  opacity: 0;
+  animation: fadeInUp 0.6s ease forwards;
+}
+
+.retainer-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+    0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  border-color: rgba(59, 130, 246, 0.3);
+}
+
+.retainer-card.featured {
+  border-color: #3b82f6;
+  box-shadow: 0 10px 20px rgba(59, 130, 246, 0.15);
+}
+
+.featured-badge {
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: linear-gradient(135deg, #3b82f6 0%, #10b981 100%);
+  color: white;
+  padding: 0.5rem 1.5rem;
+  border-radius: 20px;
+  font-size: 0.875rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
+}
+
+.retainer-header {
+  text-align: center;
+  margin-bottom: 2rem;
+  padding-bottom: 2rem;
+  border-bottom: 2px solid #e2e8f0;
+}
+
+.retainer-icon {
+  color: #3b82f6;
+  margin-bottom: 1rem;
+}
+
+.retainer-name {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin: 0 0 1rem 0;
+  line-height: 1.2;
+}
+
+.retainer-price {
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: #3b82f6;
+  margin: 0;
+  line-height: 1.2;
+}
+
+.retainer-features {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.retainer-features li {
+  padding: 0.875rem 0;
+  border-bottom: 1px solid #e2e8f0;
+  color: #475569;
+  font-size: 1rem;
+  line-height: 1.6;
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+}
+
+.retainer-features li:last-child {
+  border-bottom: none;
+}
+
+.retainer-features li::before {
+  content: "✓";
+  color: #10b981;
+  font-weight: 700;
+  font-size: 1.25rem;
+  flex-shrink: 0;
+}
+
+/* CTA */
+.services-cta {
+  text-align: center;
+  margin-top: 5rem;
+  padding: 2.5rem;
+  background: linear-gradient(
+    135deg,
+    rgba(59, 130, 246, 0.08) 0%,
+    rgba(16, 185, 129, 0.08) 100%
+  );
+  border-radius: 16px;
+  border-left: 4px solid #3b82f6;
+}
+
+.cta-text {
+  font-size: 1.25rem;
+  line-height: 1.7;
+  color: #334155;
+  margin: 0;
+  font-weight: 600;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 1024px) {
+  .services-rates-page {
+    margin-left: 0;
+    padding: 5rem 0 4rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .services-rates-page {
+    padding: 4rem 0 3rem;
+  }
+
+  .services-rates-container {
+    padding: 0 1.5rem;
+  }
+
+  .services-header {
+    margin-bottom: 3rem;
+  }
+
+  .services-title {
+    font-size: 2.25rem;
+  }
+
+  .services-subtitle {
+    font-size: 1.125rem;
+  }
+
+  .pricing-category {
+    margin-bottom: 3.5rem;
+  }
+
+  .category-header {
+    margin-bottom: 2rem;
+  }
+
+  .category-title {
+    font-size: 1.875rem;
+  }
+
+  .category-subtitle {
+    font-size: 1rem;
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .retainer-section {
+    padding: 3rem 1.5rem;
+    margin-top: 4rem;
+  }
+
+  .retainer-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .services-cta {
+    margin-top: 3rem;
+    padding: 2rem;
+  }
+
+  .cta-text {
+    font-size: 1.125rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .services-rates-page {
+    padding: 3rem 0 2rem;
+  }
+
+  .services-rates-container {
+    padding: 0 1rem;
+  }
+
+  .services-header {
+    margin-bottom: 2.5rem;
+  }
+
+  .services-title {
+    font-size: 1.875rem;
+  }
+
+  .services-subtitle {
+    font-size: 1rem;
+  }
+
+  .pricing-category {
+    margin-bottom: 3rem;
+  }
+
+  .category-title {
+    font-size: 1.625rem;
+  }
+
+  .category-subtitle {
+    font-size: 0.9375rem;
+  }
+
+  .service-card {
+    padding: 1.5rem;
+  }
+
+  .service-name {
+    font-size: 1.125rem;
+  }
+
+  .service-price {
+    font-size: 1.5rem;
+  }
+
+  .service-description {
+    font-size: 0.875rem;
+  }
+
+  .retainer-section {
+    padding: 2.5rem 1rem;
+    margin-top: 3rem;
+  }
+
+  .retainer-card {
+    padding: 2rem 1.5rem;
+  }
+
+  .retainer-name {
+    font-size: 1.5rem;
+  }
+
+  .retainer-price {
+    font-size: 2rem;
+  }
+
+  .retainer-features li {
+    font-size: 0.9375rem;
+    padding: 0.75rem 0;
+  }
+
+  .services-cta {
+    margin-top: 2.5rem;
+    padding: 1.5rem;
+  }
+
+  .cta-text {
+    font-size: 1rem;
+  }
+}

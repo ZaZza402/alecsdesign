@@ -102,6 +102,14 @@ const Footer = () => {
                 <a href="#pricing">{t("footer.quickLinks.pricing")}</a>
               </li>
               <li>
+                <button
+                  onClick={() => navigate(`/${i18n.language}/services-rates`)}
+                  className="footer-link-button"
+                >
+                  {t("footer.quickLinks.servicesRates")}
+                </button>
+              </li>
+              <li>
                 <a href="#contact">{t("footer.quickLinks.contact")}</a>
               </li>
             </ul>

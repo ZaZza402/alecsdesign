@@ -17,8 +17,20 @@ const MobileLanguageLabel: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const handleLanguageChange = (langCode: string) => {
+    // Get the current path without the language prefix
+    const pathParts = location.pathname.split("/").filter(Boolean);
+    // Remove the first part if it's a language code
+    if (pathParts.length > 0 && ["en", "it", "ro"].includes(pathParts[0])) {
+      pathParts.shift();
+    }
+
+    // Reconstruct the path with new language
+    const newPath = `/${langCode}${
+      pathParts.length > 0 ? "/" + pathParts.join("/") : ""
+    }${location.hash}`;
+
     // Navigate to new language path
-    navigate(`/${langCode}${location.hash}`);
+    navigate(newPath);
     setIsOpen(false); // Close after selection
   };
 

@@ -1,20 +1,25 @@
 import { useState, useEffect } from "react";
 import { useTranslation } from "react-i18next";
+import { useNavigate, useLocation } from "react-router-dom";
 import {
   Home,
   Code2,
   // Briefcase,
   DollarSign,
   Settings,
+  Receipt,
   Mail,
   ChevronLeft,
   ChevronRight,
 } from "lucide-react";
 import LanguageSwitcher from "../ui/LanguageSwitcher";
+import i18n from "../../i18n";
 import "./Sidebar.css";
 
 const Sidebar = () => {
   const { t } = useTranslation();
+  const navigate = useNavigate();
+  const location = useLocation();
   const [isCollapsed, setIsCollapsed] = useState(true);
   const [activeSection, setActiveSection] = useState("home");
 
@@ -43,6 +48,13 @@ const Sidebar = () => {
       icon: Settings,
       label: t("nav.process"),
       href: "#process",
+    },
+    {
+      id: "services",
+      icon: Receipt,
+      label: t("nav.services"),
+      href: `/${i18n.language}/services-rates`,
+      isPage: true,
     },
     { id: "contact", icon: Mail, label: t("nav.contact"), href: "#contact" },
   ];
@@ -90,12 +102,37 @@ const Sidebar = () => {
 
   const handleNavClick = (
     e: React.MouseEvent<HTMLAnchorElement>,
-    href: string
+    href: string,
+    isPage?: boolean
   ) => {
     e.preventDefault();
-    const element = document.querySelector(href);
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
+    if (isPage) {
+      navigate(href);
+    } else {
+      // Check if we're on the landing page
+      const isOnLandingPage =
+        location.pathname === `/${i18n.language}` ||
+        location.pathname === `/en` ||
+        location.pathname === `/it` ||
+        location.pathname === `/ro`;
+
+      if (!isOnLandingPage) {
+        // Navigate to landing page with hash, then scroll after navigation
+        navigate(`/${i18n.language}${href}`);
+        // Use setTimeout to ensure navigation completes before scrolling
+        setTimeout(() => {
+          const element = document.querySelector(href);
+          if (element) {
+            element.scrollIntoView({ behavior: "smooth" });
+          }
+        }, 100);
+      } else {
+        // We're on landing page, just scroll
+        const element = document.querySelector(href);
+        if (element) {
+          element.scrollIntoView({ behavior: "smooth" });
+        }
+      }
     }
   };
 
@@ -121,14 +158,16 @@ const Sidebar = () => {
         <nav className="sidebar-nav">
           {navItems.map((item) => {
             const Icon = item.icon;
-            const isActive = activeSection === item.id;
+            const isActive = item.isPage
+              ? location.pathname.includes("services-rates")
+              : activeSection === item.id;
 
             return (
               <a
                 key={item.id}
                 href={item.href}
                 className={`sidebar-nav-item ${isActive ? "active" : ""}`}
-                onClick={(e) => handleNavClick(e, item.href)}
+                onClick={(e) => handleNavClick(e, item.href, item.isPage)}
                 title={isCollapsed ? item.label : undefined}
               >
                 <div className="nav-item-icon">
@@ -149,16 +188,16 @@ const Sidebar = () => {
             <LanguageSwitcher />
           </div>
         )}
-
-        {/* Toggle Button */}
-        <button
-          className="sidebar-toggle"
-          onClick={() => setIsCollapsed(!isCollapsed)}
-          aria-label={isCollapsed ? "Expand sidebar" : "Collapse sidebar"}
-        >
-          {isCollapsed ? <ChevronRight size={20} /> : <ChevronLeft size={20} />}
-        </button>
       </div>
+
+      {/* Toggle Button - Outside container, attached to right edge */}
+      <button
+        className="sidebar-toggle"
+        onClick={() => setIsCollapsed(!isCollapsed)}
+        aria-label={isCollapsed ? "Expand sidebar" : "Collapse sidebar"}
+      >
+        {isCollapsed ? <ChevronRight size={20} /> : <ChevronLeft size={20} />}
+      </button>
     </aside>
   );
 };

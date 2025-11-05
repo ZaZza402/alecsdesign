@@ -1,0 +1,579 @@
+.process-lifecycle-section {
+  padding: 6rem 0;
+  background: linear-gradient(180deg, #dbeafe 0%, #f0f9ff 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.process-lifecycle-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.process-lifecycle-container.animate-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.process-lifecycle-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.process-lifecycle-title {
+  font-size: 2.75rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin: 0 0 1rem 0;
+  line-height: 1.2;
+}
+
+.process-lifecycle-subtitle {
+  font-size: 1.25rem;
+  color: #475569;
+  margin: 0;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.6;
+}
+
+/* Tab Navigation */
+.tab-navigation {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-bottom: 3rem;
+  flex-wrap: wrap;
+}
+
+.tab-button {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1rem 2rem;
+  background: white;
+  border: 2px solid transparent;
+  border-radius: 12px;
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #64748b;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.22, 1, 0.36, 1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.tab-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  color: #3b82f6;
+  border-color: rgba(59, 130, 246, 0.2);
+}
+
+.tab-button.active {
+  background: linear-gradient(135deg, #3b82f6 0%, #10b981 100%);
+  color: white;
+  border-color: transparent;
+  box-shadow: 0 8px 16px rgba(59, 130, 246, 0.3);
+}
+
+.tab-button.active:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(59, 130, 246, 0.4);
+}
+
+.tab-button svg {
+  transition: all 0.3s ease;
+}
+
+.tab-button.active svg {
+  animation: bounce 0.6s ease;
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-4px);
+  }
+}
+
+/* Tab Content */
+.tab-content {
+  animation: fadeIn 0.4s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Process Steps Grid */
+.steps-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.step-card {
+  position: relative;
+  background: white;
+  padding: 2rem 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05),
+    0 2px 4px -1px rgba(0, 0, 0, 0.03);
+  transition: all 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+  border: 2px solid transparent;
+  opacity: 0;
+  animation: fadeInUp 0.6s ease forwards;
+  text-align: center;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.step-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+    0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+.step-number {
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  border-radius: 50%;
+  font-weight: 700;
+  font-size: 0.875rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.step-icon-wrapper {
+  width: 70px;
+  height: 70px;
+  margin: 0 auto 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.step-icon {
+  transition: all 0.3s ease;
+}
+
+.step-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin: 0 0 0.75rem 0;
+  line-height: 1.3;
+}
+
+.step-description {
+  font-size: 0.9375rem;
+  color: #64748b;
+  margin: 0;
+  line-height: 1.6;
+}
+
+/* Lifecycle Phases Grid */
+.phases-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.phase-card {
+  position: relative;
+  background: white;
+  padding: 2rem 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05),
+    0 2px 4px -1px rgba(0, 0, 0, 0.03);
+  transition: all 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+  border: 2px solid transparent;
+  opacity: 0;
+  animation: fadeInUp 0.6s ease forwards;
+  text-align: center;
+}
+
+.phase-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+    0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+.phase-number {
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  border-radius: 50%;
+  font-weight: 700;
+  font-size: 0.875rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.phase-icon-wrapper {
+  width: 64px;
+  height: 64px;
+  margin: 0 auto 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.phase-icon {
+  transition: all 0.3s ease;
+}
+
+.phase-title {
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin: 0 0 0.75rem 0;
+  line-height: 1.3;
+}
+
+.phase-description {
+  font-size: 0.9375rem;
+  color: #64748b;
+  margin: 0;
+  line-height: 1.6;
+}
+
+/* Color variants */
+.step-blue,
+.phase-blue {
+  border-color: rgba(59, 130, 246, 0.2);
+}
+.step-blue:hover,
+.phase-blue:hover {
+  border-color: rgba(59, 130, 246, 0.4);
+}
+.step-blue .step-number,
+.phase-blue .phase-number {
+  color: #3b82f6;
+  border: 2px solid #3b82f6;
+}
+.step-blue .step-icon-wrapper,
+.phase-blue .phase-icon-wrapper {
+  background: rgba(59, 130, 246, 0.1);
+  color: #3b82f6;
+}
+
+.step-green,
+.phase-green {
+  border-color: rgba(16, 185, 129, 0.2);
+}
+.step-green:hover,
+.phase-green:hover {
+  border-color: rgba(16, 185, 129, 0.4);
+}
+.step-green .step-number,
+.phase-green .phase-number {
+  color: #10b981;
+  border: 2px solid #10b981;
+}
+.step-green .step-icon-wrapper,
+.phase-green .phase-icon-wrapper {
+  background: rgba(16, 185, 129, 0.1);
+  color: #10b981;
+}
+
+.step-purple,
+.phase-purple {
+  border-color: rgba(147, 51, 234, 0.2);
+}
+.step-purple:hover,
+.phase-purple:hover {
+  border-color: rgba(147, 51, 234, 0.4);
+}
+.step-purple .step-number,
+.phase-purple .phase-number {
+  color: #9333ea;
+  border: 2px solid #9333ea;
+}
+.step-purple .step-icon-wrapper,
+.phase-purple .phase-icon-wrapper {
+  background: rgba(147, 51, 234, 0.1);
+  color: #9333ea;
+}
+
+.step-orange,
+.phase-orange {
+  border-color: rgba(249, 115, 22, 0.2);
+}
+.step-orange:hover,
+.phase-orange:hover {
+  border-color: rgba(249, 115, 22, 0.4);
+}
+.step-orange .step-number,
+.phase-orange .phase-number {
+  color: #f97316;
+  border: 2px solid #f97316;
+}
+.step-orange .step-icon-wrapper,
+.phase-orange .phase-icon-wrapper {
+  background: rgba(249, 115, 22, 0.1);
+  color: #f97316;
+}
+
+.step-pink,
+.phase-pink {
+  border-color: rgba(236, 72, 153, 0.2);
+}
+.step-pink:hover,
+.phase-pink:hover {
+  border-color: rgba(236, 72, 153, 0.4);
+}
+.step-pink .step-number,
+.phase-pink .phase-number {
+  color: #ec4899;
+  border: 2px solid #ec4899;
+}
+.step-pink .step-icon-wrapper,
+.phase-pink .phase-icon-wrapper {
+  background: rgba(236, 72, 153, 0.1);
+  color: #ec4899;
+}
+
+.phase-indigo {
+  border-color: rgba(99, 102, 241, 0.2);
+}
+.phase-indigo:hover {
+  border-color: rgba(99, 102, 241, 0.4);
+}
+.phase-indigo .phase-number {
+  color: #6366f1;
+  border: 2px solid #6366f1;
+}
+.phase-indigo .phase-icon-wrapper {
+  background: rgba(99, 102, 241, 0.1);
+  color: #6366f1;
+}
+
+.phase-cyan {
+  border-color: rgba(6, 182, 212, 0.2);
+}
+.phase-cyan:hover {
+  border-color: rgba(6, 182, 212, 0.4);
+}
+.phase-cyan .phase-number {
+  color: #06b6d4;
+  border: 2px solid #06b6d4;
+}
+.phase-cyan .phase-icon-wrapper {
+  background: rgba(6, 182, 212, 0.1);
+  color: #06b6d4;
+}
+
+/* Note Cards */
+.note-card,
+.lifecycle-cta {
+  background: linear-gradient(
+    135deg,
+    rgba(59, 130, 246, 0.08) 0%,
+    rgba(16, 185, 129, 0.08) 100%
+  );
+  padding: 2rem;
+  border-radius: 12px;
+  border-left: 4px solid #3b82f6;
+  text-align: center;
+}
+
+.note-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.note-icon {
+  color: #3b82f6;
+  flex-shrink: 0;
+}
+
+.note-text,
+.cta-text {
+  font-size: 1.125rem;
+  line-height: 1.7;
+  color: #334155;
+  margin: 0;
+  font-weight: 600;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .process-lifecycle-section {
+    padding: 4rem 0;
+  }
+
+  .process-lifecycle-container {
+    padding: 0 1.5rem;
+  }
+
+  .process-lifecycle-header {
+    margin-bottom: 2.5rem;
+  }
+
+  .process-lifecycle-title {
+    font-size: 2.25rem;
+  }
+
+  .process-lifecycle-subtitle {
+    font-size: 1.125rem;
+  }
+
+  .tab-navigation {
+    flex-direction: column;
+    gap: 0.75rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .tab-button {
+    width: 100%;
+    justify-content: center;
+    padding: 0.875rem 1.5rem;
+    font-size: 1rem;
+  }
+
+  .steps-grid,
+  .phases-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .step-card,
+  .phase-card {
+    padding: 1.75rem 1.5rem;
+  }
+
+  .step-icon-wrapper {
+    width: 60px;
+    height: 60px;
+  }
+
+  .phase-icon-wrapper {
+    width: 56px;
+    height: 56px;
+  }
+
+  .step-icon,
+  .phase-icon {
+    width: 24px;
+    height: 24px;
+  }
+
+  .note-text,
+  .cta-text {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .process-lifecycle-section {
+    padding: 3rem 0;
+  }
+
+  .process-lifecycle-container {
+    padding: 0 1rem;
+  }
+
+  .process-lifecycle-header {
+    margin-bottom: 2rem;
+  }
+
+  .process-lifecycle-title {
+    font-size: 1.875rem;
+  }
+
+  .process-lifecycle-subtitle {
+    font-size: 1rem;
+  }
+
+  .tab-button {
+    padding: 0.75rem 1.25rem;
+    font-size: 0.9375rem;
+    gap: 0.5rem;
+  }
+
+  .tab-button svg {
+    width: 18px;
+    height: 18px;
+  }
+
+  .steps-grid,
+  .phases-grid {
+    gap: 1.25rem;
+    margin-bottom: 2rem;
+  }
+
+  .step-card,
+  .phase-card {
+    padding: 1.5rem 1.25rem;
+  }
+
+  .step-title {
+    font-size: 1.125rem;
+  }
+
+  .phase-title {
+    font-size: 1rem;
+  }
+
+  .step-description,
+  .phase-description {
+    font-size: 0.875rem;
+  }
+
+  .note-card,
+  .lifecycle-cta {
+    padding: 1.5rem;
+  }
+
+  .note-text,
+  .cta-text {
+    font-size: 0.9375rem;
+  }
+}

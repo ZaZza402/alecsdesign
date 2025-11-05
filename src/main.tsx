@@ -7,6 +7,7 @@ import App from "./App.tsx";
 import PrivacyPolicy from "./pages/PrivacyPolicy.tsx";
 import TermsConditions from "./pages/TermsConditions.tsx";
 import CookiePolicy from "./pages/CookiePolicy.tsx";
+import ServicesRates from "./pages/ServicesRates.tsx";
 import NotFound from "./pages/NotFound.tsx";
 import i18n from "./i18n";
 import { detectUserLanguage } from "./utils/languageDetection";
@@ -96,6 +97,14 @@ createRoot(document.getElementById("root")!).render(
             </LegalPageWrapper>
           }
         />
+        <Route
+          path="/en/services-rates"
+          element={
+            <LegalPageWrapper lang="en">
+              <ServicesRates />
+            </LegalPageWrapper>
+          }
+        />
 
         {/* Legal pages - Italian */}
         <Route
@@ -122,6 +131,14 @@ createRoot(document.getElementById("root")!).render(
             </LegalPageWrapper>
           }
         />
+        <Route
+          path="/it/services-rates"
+          element={
+            <LegalPageWrapper lang="it">
+              <ServicesRates />
+            </LegalPageWrapper>
+          }
+        />
 
         {/* Legal pages - Romanian */}
         <Route
@@ -145,6 +162,14 @@ createRoot(document.getElementById("root")!).render(
           element={
             <LegalPageWrapper lang="ro">
               <CookiePolicy />
+            </LegalPageWrapper>
+          }
+        />
+        <Route
+          path="/ro/services-rates"
+          element={
+            <LegalPageWrapper lang="ro">
+              <ServicesRates />
             </LegalPageWrapper>
           }
         />

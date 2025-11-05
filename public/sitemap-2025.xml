@@ -146,4 +146,40 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.alecsdesign.xyz/en/cookie-policy" />
   </url>
 
+  <!-- Services & Rates - English -->
+  <url>
+    <loc>https://www.alecsdesign.xyz/en/services-rates</loc>
+    <lastmod>2025-11-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.alecsdesign.xyz/en/services-rates" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.alecsdesign.xyz/it/services-rates" />
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.alecsdesign.xyz/ro/services-rates" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.alecsdesign.xyz/en/services-rates" />
+  </url>
+
+  <!-- Services & Rates - Italian -->
+  <url>
+    <loc>https://www.alecsdesign.xyz/it/services-rates</loc>
+    <lastmod>2025-11-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.alecsdesign.xyz/en/services-rates" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.alecsdesign.xyz/it/services-rates" />
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.alecsdesign.xyz/ro/services-rates" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.alecsdesign.xyz/en/services-rates" />
+  </url>
+
+  <!-- Services & Rates - Romanian -->
+  <url>
+    <loc>https://www.alecsdesign.xyz/ro/services-rates</loc>
+    <lastmod>2025-11-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.alecsdesign.xyz/en/services-rates" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.alecsdesign.xyz/it/services-rates" />
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.alecsdesign.xyz/ro/services-rates" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.alecsdesign.xyz/en/services-rates" />
+  </url>
+
 </urlset>

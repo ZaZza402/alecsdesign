@@ -5,6 +5,7 @@
     "portfolio": "Portfolio",
     "pricing": "Pricing",
     "process": "Process",
+    "services": "Services & Rates",
     "contact": "Contact"
   },
   "hero": {
@@ -161,6 +162,14 @@
     },
     "note": "Remember: no commitment until you're 100% sure"
   },
+  "processLifecycle": {
+    "title": "How We Work Together",
+    "subtitle": "From first contact to final launch - a complete, transparent journey",
+    "tabs": {
+      "process": "Getting Started",
+      "lifecycle": "Development Phases"
+    }
+  },
   "developmentLifecycle": {
     "title": "Development Lifecycle",
     "subtitle": "From idea to launch: a transparent, structured process",
@@ -197,6 +206,111 @@
       "description": "Going live with ongoing support and optimization."
     },
     "cta": "Every phase is transparent, collaborative, and focused on your success"
+  },
+  "servicesRates": {
+    "title": "Services & Rates",
+    "subtitle": "Transparent pricing for post-project updates, features, and ongoing support",
+    "seo": {
+      "title": "Web Development Services & Rates | Alecs Design",
+      "description": "Transparent pricing for web development services: small updates (€50-90), medium tasks (€90-200), large features (€200-600+). Monthly support packages available.",
+      "keywords": "web development pricing, website maintenance costs, web design rates, hourly web development, monthly website support, website updates pricing"
+    },
+    "categories": {
+      "small": {
+        "title": "Small Updates",
+        "subtitle": "Quick changes and minor adjustments (1-2 hours)"
+      },
+      "medium": {
+        "title": "Medium Tasks",
+        "subtitle": "New pages, sections, and integrations (2-5 hours)"
+      },
+      "large": {
+        "title": "Large Features",
+        "subtitle": "Complex functionality and major additions (5-10+ hours)"
+      },
+      "retainer": {
+        "title": "Monthly Support Packages",
+        "subtitle": "Ongoing maintenance, updates, and priority support"
+      }
+    },
+    "services": {
+      "small": {
+        "text": {
+          "name": "Text & Image Changes",
+          "price": "€50-60",
+          "description": "Update existing content, swap images, adjust copy"
+        },
+        "form": {
+          "name": "Add Contact Form",
+          "price": "€60-90",
+          "description": "Integrate a simple contact or subscription form"
+        },
+        "styling": {
+          "name": "Styling Adjustments",
+          "price": "€50-80",
+          "description": "Color scheme updates, font changes, spacing tweaks"
+        }
+      },
+      "medium": {
+        "page": {
+          "name": "New Page (Simple)",
+          "price": "€90-150",
+          "description": "Add a new standard page with existing design system"
+        },
+        "section": {
+          "name": "New Section",
+          "price": "€80-120",
+          "description": "Create a new section on an existing page"
+        },
+        "blog": {
+          "name": "Blog Integration",
+          "price": "€150-200",
+          "description": "Set up a basic blog with content management"
+        }
+      },
+      "large": {
+        "ecommerce": {
+          "name": "E-commerce (Basic)",
+          "price": "€300-500",
+          "description": "Simple online store with payment processing"
+        },
+        "multilang": {
+          "name": "Multi-language",
+          "price": "€250-400",
+          "description": "Add additional languages with full translation"
+        },
+        "custom": {
+          "name": "Custom Functionality",
+          "price": "€200-600+",
+          "description": "Unique features tailored to your specific needs"
+        }
+      }
+    },
+    "retainer": {
+      "popular": "Most Popular",
+      "basic": {
+        "name": "Basic Support",
+        "price": "€80/month",
+        "features": [
+          "2 hours of updates included",
+          "Security updates & bug fixes",
+          "Monthly performance check",
+          "Email support (24-48h response)"
+        ]
+      },
+      "business": {
+        "name": "Business Support",
+        "price": "€150/month",
+        "features": [
+          "5 hours of updates included",
+          "All Basic Support features",
+          "Content & design updates",
+          "Priority support (12-24h response)",
+          "Monthly analytics report"
+        ]
+      }
+    },
+    "cta": "All prices are estimates. Actual costs depend on complexity. Contact me for a custom quote!"
   },
   "blog": {
     "title": "Blog & Insights",
@@ -254,6 +368,7 @@
       "about": "About",
       "portfolio": "Portfolio",
       "pricing": "Pricing",
+      "servicesRates": "Services & Rates",
       "contact": "Contact"
     },
     "legal": {

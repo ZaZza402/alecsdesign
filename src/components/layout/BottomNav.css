@@ -77,6 +77,13 @@
 
 .bottom-nav-container {
   display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 8px 0;
+}
+
+.bottom-nav-row {
+  display: flex;
   justify-content: space-around;
   align-items: center;
   max-width: 100%;
@@ -84,6 +91,12 @@
   padding: 8px 4px;
   gap: 4px;
   transition: opacity 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.bottom-nav-row-2 {
+  border-top: 1px solid rgba(148, 163, 184, 0.1);
+  padding-top: 12px;
+  justify-content: center;
 }
 
 .bottom-nav.collapsed .bottom-nav-container {

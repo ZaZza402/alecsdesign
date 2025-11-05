@@ -5,6 +5,7 @@
     "portfolio": "Portofoliu",
     "pricing": "Prețuri",
     "process": "Proces",
+    "services": "Servicii și Tarife",
     "contact": "Contact"
   },
   "hero": {
@@ -161,6 +162,14 @@
     },
     "note": "Reține: niciun angajament până când nu ești 100% sigur"
   },
+  "processLifecycle": {
+    "title": "Cum Lucrăm Împreună",
+    "subtitle": "De la primul contact până la lansarea finală - o călătorie completă și transparentă",
+    "tabs": {
+      "process": "Începerea Colaborării",
+      "lifecycle": "Fazele Dezvoltării"
+    }
+  },
   "developmentLifecycle": {
     "title": "Ciclul de Dezvoltare",
     "subtitle": "De la idee la lansare: un proces transparent și structurat",
@@ -197,6 +206,111 @@
       "description": "Publicarea cu suport continuu și optimizare."
     },
     "cta": "Fiecare fază este transparentă, colaborativă și concentrată pe succesul tău"
+  },
+  "servicesRates": {
+    "title": "Servicii și Tarife",
+    "subtitle": "Prețuri transparente pentru actualizări, funcționalități și suport continuu",
+    "seo": {
+      "title": "Servicii și Tarife Dezvoltare Web | Alecs Design",
+      "description": "Prețuri transparente pentru servicii de dezvoltare web: actualizări mici (€50-90), sarcini medii (€90-200), funcționalități mari (€200-600+). Pachete de suport lunar disponibile.",
+      "keywords": "prețuri dezvoltare web, costuri întreținere site, tarife web design, dezvoltare web pe oră, suport site lunar, prețuri actualizări site"
+    },
+    "categories": {
+      "small": {
+        "title": "Actualizări Mici",
+        "subtitle": "Modificări rapide și ajustări minore (1-2 ore)"
+      },
+      "medium": {
+        "title": "Sarcini Medii",
+        "subtitle": "Pagini noi, secțiuni și integrări (2-5 ore)"
+      },
+      "large": {
+        "title": "Funcționalități Mari",
+        "subtitle": "Funcționalitate complexă și adăugiri majore (5-10+ ore)"
+      },
+      "retainer": {
+        "title": "Pachete de Suport Lunar",
+        "subtitle": "Întreținere continuă, actualizări și suport prioritar"
+      }
+    },
+    "services": {
+      "small": {
+        "text": {
+          "name": "Modificări Text și Imagini",
+          "price": "€50-60",
+          "description": "Actualizare conținut existent, schimbare imagini, ajustare texte"
+        },
+        "form": {
+          "name": "Adăugare Formular Contact",
+          "price": "€60-90",
+          "description": "Integrare formular simplu de contact sau abonare"
+        },
+        "styling": {
+          "name": "Ajustări de Stil",
+          "price": "€50-80",
+          "description": "Actualizări schemă de culori, schimbări fonturi, ajustări spațiere"
+        }
+      },
+      "medium": {
+        "page": {
+          "name": "Pagină Nouă (Simplă)",
+          "price": "€90-150",
+          "description": "Adăugare pagină standard nouă cu sistemul de design existent"
+        },
+        "section": {
+          "name": "Secțiune Nouă",
+          "price": "€80-120",
+          "description": "Creare secțiune nouă pe o pagină existentă"
+        },
+        "blog": {
+          "name": "Integrare Blog",
+          "price": "€150-200",
+          "description": "Configurare blog de bază cu management de conținut"
+        }
+      },
+      "large": {
+        "ecommerce": {
+          "name": "E-commerce (De Bază)",
+          "price": "€300-500",
+          "description": "Magazin online simplu cu procesare plăți"
+        },
+        "multilang": {
+          "name": "Multi-limbă",
+          "price": "€250-400",
+          "description": "Adăugare limbi suplimentare cu traducere completă"
+        },
+        "custom": {
+          "name": "Funcționalitate Personalizată",
+          "price": "€200-600+",
+          "description": "Caracteristici unice adaptate nevoilor tale specifice"
+        }
+      }
+    },
+    "retainer": {
+      "popular": "Cel Mai Popular",
+      "basic": {
+        "name": "Suport De Bază",
+        "price": "€80/lună",
+        "features": [
+          "2 ore de actualizări incluse",
+          "Actualizări de securitate și remedieri bug-uri",
+          "Verificare performanță lunară",
+          "Suport email (răspuns 24-48h)"
+        ]
+      },
+      "business": {
+        "name": "Suport Business",
+        "price": "€150/lună",
+        "features": [
+          "5 ore de actualizări incluse",
+          "Toate funcțiile Suport De Bază",
+          "Actualizări conținut și design",
+          "Suport prioritar (răspuns 12-24h)",
+          "Raport analytics lunar"
+        ]
+      }
+    },
+    "cta": "Toate prețurile sunt estimări. Costurile reale depind de complexitate. Contactează-mă pentru o ofertă personalizată!"
   },
   "blog": {
     "title": "Blog & Perspective",
@@ -254,6 +368,7 @@
       "about": "Despre Mine",
       "portfolio": "Portfolio",
       "pricing": "Prețuri",
+      "servicesRates": "Servicii și Tarife",
       "contact": "Contact"
     },
     "legal": {

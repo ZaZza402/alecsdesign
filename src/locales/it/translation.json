@@ -5,6 +5,7 @@
     "portfolio": "Portfolio",
     "pricing": "Prezzi",
     "process": "Processo",
+    "services": "Servizi e Tariffe",
     "contact": "Contatti"
   },
   "hero": {
@@ -161,6 +162,14 @@
     },
     "note": "Ricorda: nessun impegno fino a quando non sei sicuro al 100%"
   },
+  "processLifecycle": {
+    "title": "Come Lavoriamo Insieme",
+    "subtitle": "Dal primo contatto al lancio finale - un percorso completo e trasparente",
+    "tabs": {
+      "process": "Iniziare",
+      "lifecycle": "Fasi di Sviluppo"
+    }
+  },
   "developmentLifecycle": {
     "title": "Ciclo di Sviluppo",
     "subtitle": "Dall'idea al lancio: un processo trasparente e strutturato",
@@ -197,6 +206,111 @@
       "description": "Andare online con supporto continuo e ottimizzazione."
     },
     "cta": "Ogni fase è trasparente, collaborativa e focalizzata sul tuo successo"
+  },
+  "servicesRates": {
+    "title": "Servizi e Tariffe",
+    "subtitle": "Prezzi trasparenti per aggiornamenti, funzionalità e supporto continuo",
+    "seo": {
+      "title": "Servizi e Tariffe Sviluppo Web | Alecs Design",
+      "description": "Prezzi trasparenti per servizi di sviluppo web: piccoli aggiornamenti (€50-90), compiti medi (€90-200), funzionalità grandi (€200-600+). Pacchetti di supporto mensile disponibili.",
+      "keywords": "prezzi sviluppo web, costi manutenzione sito, tariffe web design, sviluppo web orario, supporto sito mensile, prezzi aggiornamenti sito"
+    },
+    "categories": {
+      "small": {
+        "title": "Piccoli Aggiornamenti",
+        "subtitle": "Modifiche rapide e aggiustamenti minori (1-2 ore)"
+      },
+      "medium": {
+        "title": "Compiti Medi",
+        "subtitle": "Nuove pagine, sezioni e integrazioni (2-5 ore)"
+      },
+      "large": {
+        "title": "Funzionalità Grandi",
+        "subtitle": "Funzionalità complesse e aggiunte importanti (5-10+ ore)"
+      },
+      "retainer": {
+        "title": "Pacchetti di Supporto Mensile",
+        "subtitle": "Manutenzione continua, aggiornamenti e supporto prioritario"
+      }
+    },
+    "services": {
+      "small": {
+        "text": {
+          "name": "Modifiche Testo e Immagini",
+          "price": "€50-60",
+          "description": "Aggiornare contenuti esistenti, sostituire immagini, modificare testi"
+        },
+        "form": {
+          "name": "Aggiungere Form di Contatto",
+          "price": "€60-90",
+          "description": "Integrare un semplice form di contatto o iscrizione"
+        },
+        "styling": {
+          "name": "Aggiustamenti di Stile",
+          "price": "€50-80",
+          "description": "Aggiornamenti colori, cambi font, modifiche spaziatura"
+        }
+      },
+      "medium": {
+        "page": {
+          "name": "Nuova Pagina (Semplice)",
+          "price": "€90-150",
+          "description": "Aggiungere una nuova pagina standard con design esistente"
+        },
+        "section": {
+          "name": "Nuova Sezione",
+          "price": "€80-120",
+          "description": "Creare una nuova sezione su una pagina esistente"
+        },
+        "blog": {
+          "name": "Integrazione Blog",
+          "price": "€150-200",
+          "description": "Configurare un blog base con gestione contenuti"
+        }
+      },
+      "large": {
+        "ecommerce": {
+          "name": "E-commerce (Base)",
+          "price": "€300-500",
+          "description": "Negozio online semplice con elaborazione pagamenti"
+        },
+        "multilang": {
+          "name": "Multi-lingua",
+          "price": "€250-400",
+          "description": "Aggiungere lingue aggiuntive con traduzione completa"
+        },
+        "custom": {
+          "name": "Funzionalità Personalizzate",
+          "price": "€200-600+",
+          "description": "Caratteristiche uniche su misura per le tue esigenze"
+        }
+      }
+    },
+    "retainer": {
+      "popular": "Più Popolare",
+      "basic": {
+        "name": "Supporto Base",
+        "price": "€80/mese",
+        "features": [
+          "2 ore di aggiornamenti incluse",
+          "Aggiornamenti di sicurezza e correzione bug",
+          "Controllo prestazioni mensile",
+          "Supporto email (risposta 24-48h)"
+        ]
+      },
+      "business": {
+        "name": "Supporto Business",
+        "price": "€150/mese",
+        "features": [
+          "5 ore di aggiornamenti incluse",
+          "Tutte le funzionalità Supporto Base",
+          "Aggiornamenti contenuti e design",
+          "Supporto prioritario (risposta 12-24h)",
+          "Report analytics mensile"
+        ]
+      }
+    },
+    "cta": "Tutti i prezzi sono stime. I costi effettivi dipendono dalla complessità. Contattami per un preventivo personalizzato!"
   },
   "blog": {
     "title": "Blog & Approfondimenti",
@@ -254,6 +368,7 @@
       "about": "Chi Sono",
       "portfolio": "Portfolio",
       "pricing": "Prezzi",
+      "servicesRates": "Servizi e Tariffe",
       "contact": "Contatti"
     },
     "legal": {
