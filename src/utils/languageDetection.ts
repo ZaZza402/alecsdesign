@@ -81,7 +81,7 @@ function getBrowserLanguage(): SupportedLanguage | null {
 function getCountryFromTimezone(): SupportedLanguage | null {
   try {
     const timezone = Intl.DateTimeFormat().resolvedOptions().timeZone;
-    
+
     // Map common timezones to countries
     if (timezone.includes("Rome") || timezone.includes("Milan")) {
       return "it";
@@ -105,14 +105,14 @@ async function getCountryFromGeoAPI(): Promise<SupportedLanguage | null> {
     const response = await fetch("https://ipapi.co/json/", {
       signal: AbortSignal.timeout(3000), // 3 second timeout
     });
-    
+
     if (!response.ok) {
       throw new Error("Geo API request failed");
     }
-    
+
     const data = await response.json();
     const countryCode = data.country_code as string;
-    
+
     return COUNTRY_TO_LANGUAGE[countryCode] || null;
   } catch (error) {
     console.warn("Geo API failed, falling back to timezone detection:", error);

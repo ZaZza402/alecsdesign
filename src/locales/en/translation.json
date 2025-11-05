@@ -161,6 +161,43 @@
     },
     "note": "Remember: no commitment until you're 100% sure"
   },
+  "developmentLifecycle": {
+    "title": "Development Lifecycle",
+    "subtitle": "From idea to launch: a transparent, structured process",
+    "center": {
+      "main": "Your Project",
+      "sub": "7 Phases"
+    },
+    "phase1": {
+      "title": "Information Gathering",
+      "description": "Understanding your business, target audience, and project goals."
+    },
+    "phase2": {
+      "title": "Planning",
+      "description": "Creating a detailed roadmap with milestones and deliverables."
+    },
+    "phase3": {
+      "title": "Design",
+      "description": "Crafting the visual identity and user experience of your website."
+    },
+    "phase4": {
+      "title": "Content Creation",
+      "description": "Developing compelling copy and visual content that converts."
+    },
+    "phase5": {
+      "title": "Coding",
+      "description": "Building your website with clean, scalable, modern code."
+    },
+    "phase6": {
+      "title": "Testing",
+      "description": "Rigorous quality assurance across devices and browsers."
+    },
+    "phase7": {
+      "title": "Launch",
+      "description": "Going live with ongoing support and optimization."
+    },
+    "cta": "Every phase is transparent, collaborative, and focused on your success"
+  },
   "blog": {
     "title": "Blog & Insights",
     "subtitle": "Strategies, tips, and insights to grow your online business",

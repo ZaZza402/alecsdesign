@@ -37,7 +37,7 @@ export const SEO = ({
   const { i18n } = useTranslation();
   const currentLang = i18n.language || "en";
   const currentLocale = LOCALE_MAP[currentLang] || "en_US";
-  
+
   const fullUrl = `https://www.alecsdesign.xyz${window.location.pathname}`;
   const canonicalUrl = canonical || fullUrl;
 
@@ -101,13 +101,14 @@ export const SEO = ({
     setMetaTag("og:image", ogImage, "property");
     setMetaTag("og:site_name", "alecsdesign", "property");
     setMetaTag("og:locale", currentLocale, "property");
-    
+
     // Add alternate locales (excluding current)
     const alternateLocales = Object.values(LOCALE_MAP).filter(
       (locale) => locale !== currentLocale
     );
     alternateLocales.forEach((locale, index) => {
-      const attrName = index === 0 ? "og:locale:alternate" : `og:locale:alternate-${index}`;
+      const attrName =
+        index === 0 ? "og:locale:alternate" : `og:locale:alternate-${index}`;
       setMetaTag(attrName, locale, "property");
     });
 

@@ -161,6 +161,43 @@
     },
     "note": "Reține: niciun angajament până când nu ești 100% sigur"
   },
+  "developmentLifecycle": {
+    "title": "Ciclul de Dezvoltare",
+    "subtitle": "De la idee la lansare: un proces transparent și structurat",
+    "center": {
+      "main": "Proiectul Tău",
+      "sub": "7 Faze"
+    },
+    "phase1": {
+      "title": "Colectare Informații",
+      "description": "Înțelegerea afacerii tale, publicul țintă și obiectivele proiectului."
+    },
+    "phase2": {
+      "title": "Planificare",
+      "description": "Crearea unei foi de parcurs detaliate cu repere și livrabile."
+    },
+    "phase3": {
+      "title": "Design",
+      "description": "Proiectarea identității vizuale și experienței utilizatorului."
+    },
+    "phase4": {
+      "title": "Creare Conținut",
+      "description": "Dezvoltarea de texte și conținut vizual convingător."
+    },
+    "phase5": {
+      "title": "Codificare",
+      "description": "Construirea site-ului cu cod curat, scalabil și modern."
+    },
+    "phase6": {
+      "title": "Testare",
+      "description": "Control de calitate riguros pe toate dispozitivele și browserele."
+    },
+    "phase7": {
+      "title": "Lansare",
+      "description": "Publicarea cu suport continuu și optimizare."
+    },
+    "cta": "Fiecare fază este transparentă, colaborativă și concentrată pe succesul tău"
+  },
   "blog": {
     "title": "Blog & Perspective",
     "subtitle": "Strategii, sfaturi și perspective pentru a-ți crește afacerea online",

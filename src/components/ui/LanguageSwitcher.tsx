@@ -23,7 +23,7 @@ const LanguageSwitcher: React.FC = () => {
   const handleLanguageChange = (langCode: string) => {
     // Save language preference
     saveLanguagePreference(langCode as "en" | "it" | "ro");
-    
+
     // Navigate to new language path
     navigate(`/${langCode}${location.hash}`);
     setIsOpen(false);

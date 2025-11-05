@@ -9,6 +9,7 @@ import TechnologySection from "./sections/TechnologySection";
 // import PortfolioSection from "./sections/PortfolioSection";
 import PricingSection from "./sections/PricingSection";
 import ProcessSection from "./sections/ProcessSection";
+import DevelopmentLifecycleSection from "./sections/DevelopmentLifecycleSection";
 import ContactSection from "./sections/ContactSection";
 import MobileLanguageLabel from "./components/ui/MobileLanguageLabel";
 import CookieBanner from "./components/ui/CookieBanner";
@@ -61,6 +62,9 @@ export default function App() {
         </section>
         <section id="process" aria-labelledby="process-heading">
           <ProcessSection />
+        </section>
+        <section id="lifecycle" aria-labelledby="lifecycle-heading">
+          <DevelopmentLifecycleSection />
         </section>
         <section id="contact" aria-labelledby="contact-heading">
           <ContactSection />

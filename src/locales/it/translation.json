@@ -161,6 +161,43 @@
     },
     "note": "Ricorda: nessun impegno fino a quando non sei sicuro al 100%"
   },
+  "developmentLifecycle": {
+    "title": "Ciclo di Sviluppo",
+    "subtitle": "Dall'idea al lancio: un processo trasparente e strutturato",
+    "center": {
+      "main": "Il Tuo Progetto",
+      "sub": "7 Fasi"
+    },
+    "phase1": {
+      "title": "Raccolta Informazioni",
+      "description": "Comprendere il tuo business, il pubblico e gli obiettivi del progetto."
+    },
+    "phase2": {
+      "title": "Pianificazione",
+      "description": "Creare una roadmap dettagliata con milestone e deliverables."
+    },
+    "phase3": {
+      "title": "Design",
+      "description": "Progettare l'identità visiva e l'esperienza utente del tuo sito."
+    },
+    "phase4": {
+      "title": "Creazione Contenuti",
+      "description": "Sviluppare testi e contenuti visivi coinvolgenti che convertono."
+    },
+    "phase5": {
+      "title": "Codifica",
+      "description": "Costruire il tuo sito con codice pulito, scalabile e moderno."
+    },
+    "phase6": {
+      "title": "Testing",
+      "description": "Controllo qualità rigoroso su tutti i dispositivi e browser."
+    },
+    "phase7": {
+      "title": "Lancio",
+      "description": "Andare online con supporto continuo e ottimizzazione."
+    },
+    "cta": "Ogni fase è trasparente, collaborativa e focalizzata sul tuo successo"
+  },
   "blog": {
     "title": "Blog & Approfondimenti",
     "subtitle": "Strategie, consigli e approfondimenti per far crescere il tuo business online",
