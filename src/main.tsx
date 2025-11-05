@@ -1,4 +1,4 @@
-import { StrictMode, useEffect } from "react";
+import { StrictMode, useEffect, useState } from "react";
 import { createRoot } from "react-dom/client";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import "./index.css";
@@ -9,6 +9,7 @@ import TermsConditions from "./pages/TermsConditions.tsx";
 import CookiePolicy from "./pages/CookiePolicy.tsx";
 import NotFound from "./pages/NotFound.tsx";
 import i18n from "./i18n";
+import { detectUserLanguage } from "./utils/languageDetection";
 
 // Language wrapper component
 function LanguageWrapper({ lang }: { lang: string }) {
@@ -39,12 +40,31 @@ function LegalPageWrapper({
   return <>{children}</>;
 }
 
+// Smart redirect component with geo-based language detection
+function SmartLanguageRedirect() {
+  const [detectedLang, setDetectedLang] = useState<string | null>(null);
+
+  useEffect(() => {
+    detectUserLanguage().then((lang) => {
+      setDetectedLang(lang);
+    });
+  }, []);
+
+  // Show nothing while detecting
+  if (!detectedLang) {
+    return null;
+  }
+
+  // Redirect to detected language
+  return <Navigate to={`/${detectedLang}`} replace />;
+}
+
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
     <BrowserRouter>
       <Routes>
-        {/* Redirect root to default language */}
-        <Route path="/" element={<Navigate to="/en" replace />} />
+        {/* Smart redirect with geo-based language detection */}
+        <Route path="/" element={<SmartLanguageRedirect />} />
 
         {/* Language-specific routes */}
         <Route path="/en" element={<LanguageWrapper lang="en" />} />

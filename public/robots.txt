@@ -4,6 +4,7 @@ Allow: /
 
 # Sitemaps
 Sitemap: https://www.alecsdesign.xyz/sitemap.xml
+Sitemap: https://www.alecsdesign.xyz/sitemap-2025.xml
 
 # Allow all major search engines
 User-agent: Googlebot

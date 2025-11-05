@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import { useTranslation } from "react-i18next";
 
 interface SEOProps {
   title?: string;
@@ -16,6 +17,13 @@ interface SEOProps {
   noindex?: boolean;
 }
 
+// Map language codes to Open Graph locale codes
+const LOCALE_MAP: Record<string, string> = {
+  en: "en_US",
+  it: "it_IT",
+  ro: "ro_RO",
+};
+
 export const SEO = ({
   title = "alecsdesign - Web Developer in Rome | Your 24/7 Digital Business Partner",
   description = "Transform your business with scalable web solutions that work 24/7. Expert web developer in Rome specializing in React applications, e-commerce, and SEO-optimized websites. Your digital growth partner who builds solutions, not just websites.",
@@ -26,6 +34,10 @@ export const SEO = ({
   canonical,
   noindex = false,
 }: SEOProps) => {
+  const { i18n } = useTranslation();
+  const currentLang = i18n.language || "en";
+  const currentLocale = LOCALE_MAP[currentLang] || "en_US";
+  
   const fullUrl = `https://www.alecsdesign.xyz${window.location.pathname}`;
   const canonicalUrl = canonical || fullUrl;
 
@@ -88,9 +100,16 @@ export const SEO = ({
     setMetaTag("og:type", ogType, "property");
     setMetaTag("og:image", ogImage, "property");
     setMetaTag("og:site_name", "alecsdesign", "property");
-    setMetaTag("og:locale", "en_US", "property");
-    setMetaTag("og:locale:alternate", "it_IT", "property");
-    setMetaTag("og:locale:alternate", "ro_RO", "property");
+    setMetaTag("og:locale", currentLocale, "property");
+    
+    // Add alternate locales (excluding current)
+    const alternateLocales = Object.values(LOCALE_MAP).filter(
+      (locale) => locale !== currentLocale
+    );
+    alternateLocales.forEach((locale, index) => {
+      const attrName = index === 0 ? "og:locale:alternate" : `og:locale:alternate-${index}`;
+      setMetaTag(attrName, locale, "property");
+    });
 
     // Twitter Card tags
     setMetaTag("twitter:card", "summary_large_image");
@@ -136,6 +155,8 @@ export const SEO = ({
     canonicalUrl,
     fullUrl,
     noindex,
+    currentLocale,
+    currentLang,
   ]);
 
   return null;

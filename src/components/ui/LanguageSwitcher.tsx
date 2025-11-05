@@ -3,6 +3,7 @@ import { useTranslation } from "react-i18next";
 import { useNavigate, useLocation } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import "./LanguageSwitcher.css";
+import { saveLanguagePreference } from "../../utils/languageDetection";
 
 const languages = [
   { code: "it", label: "IT", fullName: "Italiano" },
@@ -20,6 +21,9 @@ const LanguageSwitcher: React.FC = () => {
     languages.find((lang) => lang.code === i18n.language) || languages[0];
 
   const handleLanguageChange = (langCode: string) => {
+    // Save language preference
+    saveLanguagePreference(langCode as "en" | "it" | "ro");
+    
     // Navigate to new language path
     navigate(`/${langCode}${location.hash}`);
     setIsOpen(false);
