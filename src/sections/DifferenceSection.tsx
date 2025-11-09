@@ -45,12 +45,14 @@ const DifferenceSection = () => {
                 className={`pillar-card pillar-${pillar.color}`}
                 style={{ animationDelay: `${index * 0.15}s` }}
               >
-                <div className="pillar-icon-wrapper">
-                  <Icon className="pillar-icon" size={36} strokeWidth={2} />
+                <div className="pillar-header">
+                  <div className="pillar-icon-wrapper">
+                    <Icon className="pillar-icon" size={36} strokeWidth={2} />
+                  </div>
+                  <h3 className="pillar-title">
+                    {t(`difference.${pillar.key}.title`)}
+                  </h3>
                 </div>
-                <h3 className="pillar-title">
-                  {t(`difference.${pillar.key}.title`)}
-                </h3>
                 <p className="pillar-description">
                   {t(`difference.${pillar.key}.description`)}
                 </p>
