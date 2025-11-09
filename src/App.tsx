@@ -1,3 +1,4 @@
+import { lazy, Suspense } from "react";
 import { useTranslation } from "react-i18next";
 import Sidebar from "./components/layout/Sidebar";
 import Footer from "./components/layout/Footer";
@@ -5,15 +6,16 @@ import BottomNav from "./components/layout/BottomNav";
 import Hero from "./sections/Hero";
 import ProblemSection from "./sections/ProblemSection";
 import DifferenceSection from "./sections/DifferenceSection";
-import TechnologySection from "./sections/TechnologySection";
-import WhyNotWordPressSection from "./sections/WhyNotWordPressSection";
-// import PortfolioSection from "./sections/PortfolioSection";
-import PricingSection from "./sections/PricingSection";
-import ProcessLifecycleSection from "./sections/ProcessLifecycleSection";
-import ContactSection from "./sections/ContactSection";
 import MobileLanguageLabel from "./components/ui/MobileLanguageLabel";
 import CookieBanner from "./components/ui/CookieBanner";
 import MetallicBackground from "./components/ui/backgrounds/MetallicBackground";
+
+// Lazy load below-fold sections for better initial load performance
+const TechnologySection = lazy(() => import("./sections/TechnologySection"));
+const WhyNotWordPressSection = lazy(() => import("./sections/WhyNotWordPressSection"));
+const PricingSection = lazy(() => import("./sections/PricingSection"));
+const ProcessLifecycleSection = lazy(() => import("./sections/ProcessLifecycleSection"));
+const ContactSection = lazy(() => import("./sections/ContactSection"));
 import {
   SEO,
   StructuredData,
@@ -51,24 +53,29 @@ export default function App() {
           <ProblemSection />
           <DifferenceSection />
         </section>
-        <section id="technology" aria-labelledby="technology-heading">
-          <TechnologySection />
-        </section>
-        <section id="why-not-wordpress" aria-labelledby="why-not-wordpress-heading">
-          <WhyNotWordPressSection />
-        </section>
-        {/* <section id="portfolio" aria-labelledby="portfolio-heading">
+        <Suspense fallback={<div style={{ minHeight: "100vh" }} />}>
+          <section id="technology" aria-labelledby="technology-heading">
+            <TechnologySection />
+          </section>
+          <section
+            id="why-not-wordpress"
+            aria-labelledby="why-not-wordpress-heading"
+          >
+            <WhyNotWordPressSection />
+          </section>
+          {/* <section id="portfolio" aria-labelledby="portfolio-heading">
           <PortfolioSection />
         </section> */}
-        <section id="pricing" aria-labelledby="pricing-heading">
-          <PricingSection />
-        </section>
-        <section id="process" aria-labelledby="process-heading">
-          <ProcessLifecycleSection />
-        </section>
-        <section id="contact" aria-labelledby="contact-heading">
-          <ContactSection />
-        </section>
+          <section id="pricing" aria-labelledby="pricing-heading">
+            <PricingSection />
+          </section>
+          <section id="process" aria-labelledby="process-heading">
+            <ProcessLifecycleSection />
+          </section>
+          <section id="contact" aria-labelledby="contact-heading">
+            <ContactSection />
+          </section>
+        </Suspense>
       </main>
       <Footer />
       <BottomNav />

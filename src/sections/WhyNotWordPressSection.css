@@ -105,7 +105,11 @@
   left: 0;
   right: 0;
   height: 4px;
-  background: linear-gradient(90deg, var(--card-color), var(--card-color-light));
+  background: linear-gradient(
+    90deg,
+    var(--card-color),
+    var(--card-color-light)
+  );
   opacity: 0;
   transition: opacity 0.3s ease;
 }
@@ -147,7 +151,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(135deg, var(--card-color), var(--card-color-light));
+  background: linear-gradient(
+    135deg,
+    var(--card-color),
+    var(--card-color-light)
+  );
   margin-bottom: 1.5rem;
   color: white;
 }

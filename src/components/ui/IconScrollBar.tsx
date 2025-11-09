@@ -51,6 +51,10 @@ const IconScrollBar: React.FC = () => {
                 src={icon.path}
                 alt={icon.name}
                 className="icon-scroll-bar__image"
+                loading="lazy"
+                decoding="async"
+                width="40"
+                height="40"
               />
               <span className="icon-scroll-bar__label">{icon.name}</span>
             </motion.div>
