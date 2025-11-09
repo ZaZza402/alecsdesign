@@ -57,6 +57,53 @@
     "calloutExplainer": "React+Vite și Tailwind CSS sunt tehnologii web moderne care permit site-ului tău să crească și să adauge funcționalități noi fără să fie reconstruit de la zero.",
     "visualLabel": "Arhitectură modulară"
   },
+  "whyNotWordPress": {
+    "title": "De Ce Nu WordPress sau Wix?",
+    "quote": "Nu construiesc site-uri care necesită întreținere constantă. Construiesc soluții care funcționează.",
+    "subtitle": "Iată adevărul despre de ce am ales dezvoltarea web modernă în loc de platformele 'ușoare'.",
+    "wpLabel": "WordPress/Wix",
+    "myStackLabel": "Stack-ul Meu",
+    "performance": {
+      "title": "Performanță",
+      "wordpress": "Plugin-uri grele, cod umflat, timpi de încărcare 3-5 secunde. Fiecare plugin te încetinește.",
+      "myStack": "Rapid ca fulgerul. Încărcare sub o secundă. Construit ușor, rulează fluid. Zero umflătură."
+    },
+    "security": {
+      "title": "Securitate",
+      "wordpress": "Patch-uri de securitate constante. Plugin-uri învechite sunt magneți pentru hackeri. Întreținere săptămânală necesară.",
+      "myStack": "Nicio bază de date de hackuit. Niciun panou admin de spart. Deploy static = suprafață minimă de atac."
+    },
+    "maintenance": {
+      "title": "Întreținere",
+      "wordpress": "Update-uri săptămânale, conflicte între plugin-uri, probleme de compatibilitate. Ceva se strică mereu.",
+      "myStack": "Deploy o dată, rulează pentru totdeauna. Fără update-uri plugin, zero conflicte, nicio defecțiune surpriză."
+    },
+    "scalability": {
+      "title": "Scalabilitate",
+      "wordpress": "Costurile serverului cresc cu traficul. Mai mulți vizitatori = mai multă presiune pe server = mai mulți bani.",
+      "myStack": "Gestionează 100.000 de vizitatori la același preț ca 100. Distribuție globală prin CDN."
+    },
+    "advantagesTitle": "Ce Primești Cu Adevărat",
+    "advantages": {
+      "speed": {
+        "title": "Viteză Fulgerătoare",
+        "description": "React + Vite = încărcare sub o secundă. Clienții tăi nu așteaptă. Google iubește site-urile rapide. Te poziționezi mai sus."
+      },
+      "custom": {
+        "title": "100% Personalizat",
+        "description": "Fără limitări de temă. Fără 'plugin-ul ăla nu face exact ce avem nevoie'. Tot construit pentru NEVOILE TALE."
+      },
+      "secure": {
+        "title": "Securitate Maximă",
+        "description": "Niciun panou admin de hackuit. Nicio bază de date de spart. Deploy static pe CDN global. Dormi liniștit."
+      },
+      "cost": {
+        "title": "Costuri Reduse pe Termen Lung",
+        "description": "Fără hosting lunar care crește cu traficul. Fără plugin-uri premium. Zero costuri surpriză. Previzibil, accesibil."
+      }
+    },
+    "bottomNote": "WordPress și Wix sunt grozave pentru bloguri și site-uri simple. Dar dacă vrei un instrument business scalabil, sigur și super-rapid care nu necesită întreținere constantă? Dezvoltarea web modernă câștigă de fiecare dată."
+  },
   "portfolio": {
     "title": "Proiecte Recente",
     "subtitle": "Soluții reale pentru afaceri reale",

@@ -57,6 +57,53 @@
     "calloutExplainer": "React+Vite e Tailwind CSS sono tecnologie web moderne che rendono i siti veloci, facili da aggiornare e capaci di crescere senza ripartire da zero.",
     "visualLabel": "Architettura modulare"
   },
+  "whyNotWordPress": {
+    "title": "Perché Non WordPress o Wix?",
+    "quote": "Non costruisco siti che richiedono manutenzione costante. Costruisco soluzioni che funzionano.",
+    "subtitle": "Ecco la verità su perché ho scelto lo sviluppo web moderno invece delle piattaforme 'facili'.",
+    "wpLabel": "WordPress/Wix",
+    "myStackLabel": "Il Mio Stack",
+    "performance": {
+      "title": "Prestazioni",
+      "wordpress": "Plugin pesanti, codice gonfio, tempi di caricamento 3-5 secondi. Ogni plugin ti rallenta.",
+      "myStack": "Velocità fulminea. Caricamento sotto il secondo. Costruito leggero, gira liscio. Zero gonfiore."
+    },
+    "security": {
+      "title": "Sicurezza",
+      "wordpress": "Patch di sicurezza costanti. Plugin obsoleti sono magneti per hacker. Manutenzione settimanale richiesta.",
+      "myStack": "Nessun database da hackerare. Nessun pannello admin da violare. Deploy statico = superficie d'attacco minima."
+    },
+    "maintenance": {
+      "title": "Manutenzione",
+      "wordpress": "Aggiornamenti settimanali, conflitti tra plugin, problemi di compatibilità. Qualcosa si rompe sempre.",
+      "myStack": "Deploy una volta, gira per sempre. Niente aggiornamenti plugin, zero conflitti, niente rotture improvvise."
+    },
+    "scalability": {
+      "title": "Scalabilità",
+      "wordpress": "I costi server crescono col traffico. Più visitatori = più carico server = più soldi.",
+      "myStack": "Gestisce 100.000 visitatori allo stesso costo di 100. Distribuzione globale via CDN."
+    },
+    "advantagesTitle": "Cosa Ottieni Davvero",
+    "advantages": {
+      "speed": {
+        "title": "Velocità Lampo",
+        "description": "React + Vite = caricamento sotto il secondo. I tuoi clienti non aspettano. Google ama i siti veloci. Ti posizioni meglio."
+      },
+      "custom": {
+        "title": "100% Personalizzato",
+        "description": "Nessun limite di tema. Niente 'quel plugin non fa esattamente quello che serve'. Tutto costruito per LE TUE esigenze."
+      },
+      "secure": {
+        "title": "Sicurezza Blindata",
+        "description": "Nessun pannello admin da hackerare. Nessun database da violare. Deploy statico su CDN globale. Dormi tranquillo."
+      },
+      "cost": {
+        "title": "Costi Inferiori a Lungo Termine",
+        "description": "Nessun hosting mensile che scala col traffico. Niente plugin premium. Zero costi a sorpresa. Prevedibile, accessibile."
+      }
+    },
+    "bottomNote": "WordPress e Wix sono ottimi per blog e siti semplici. Ma se vuoi uno strumento business scalabile, sicuro e velocissimo che non richiede manutenzione costante? Lo sviluppo web moderno vince sempre."
+  },
   "portfolio": {
     "title": "Progetti Recenti",
     "subtitle": "Soluzioni reali per business reali",

@@ -6,6 +6,7 @@ import Hero from "./sections/Hero";
 import ProblemSection from "./sections/ProblemSection";
 import DifferenceSection from "./sections/DifferenceSection";
 import TechnologySection from "./sections/TechnologySection";
+import WhyNotWordPressSection from "./sections/WhyNotWordPressSection";
 // import PortfolioSection from "./sections/PortfolioSection";
 import PricingSection from "./sections/PricingSection";
 import ProcessLifecycleSection from "./sections/ProcessLifecycleSection";
@@ -52,6 +53,9 @@ export default function App() {
         </section>
         <section id="technology" aria-labelledby="technology-heading">
           <TechnologySection />
+        </section>
+        <section id="why-not-wordpress" aria-labelledby="why-not-wordpress-heading">
+          <WhyNotWordPressSection />
         </section>
         {/* <section id="portfolio" aria-labelledby="portfolio-heading">
           <PortfolioSection />

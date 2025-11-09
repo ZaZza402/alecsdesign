@@ -57,6 +57,53 @@
     "calloutExplainer": "React+Vite and Tailwind CSS are modern web technologies that make websites fast, easy to update, and able to grow without starting over.",
     "visualLabel": "Modular architecture"
   },
+  "whyNotWordPress": {
+    "title": "Why Not WordPress or Wix?",
+    "quote": "I don't build websites that need constant babysitting. I build solutions that just work.",
+    "subtitle": "Here's the honest truth about why I chose modern web development over the 'easy' platforms.",
+    "wpLabel": "WordPress/Wix",
+    "myStackLabel": "My Tech Stack",
+    "performance": {
+      "title": "Performance",
+      "wordpress": "Heavy plugins, bloated code, 3-5 second load times. Every plugin slows you down.",
+      "myStack": "Lightning fast. Sub-second load times. Built lean, runs smooth. No bloat."
+    },
+    "security": {
+      "title": "Security",
+      "wordpress": "Constant security patches. Outdated plugins are hacker magnets. Weekly maintenance required.",
+      "myStack": "No database to hack. No admin panel to breach. Static deployment = minimal attack surface."
+    },
+    "maintenance": {
+      "title": "Maintenance",
+      "wordpress": "Weekly updates, plugin conflicts, theme compatibility issues. Something always breaks.",
+      "myStack": "Deploy once, runs forever. No plugin updates, no theme conflicts, no surprise breakages."
+    },
+    "scalability": {
+      "title": "Scalability",
+      "wordpress": "Server costs grow with traffic. More visitors = more server strain = more money.",
+      "myStack": "Handles 100,000 visitors for the same cost as 100. CDN-powered global distribution."
+    },
+    "advantagesTitle": "What You Actually Get",
+    "advantages": {
+      "speed": {
+        "title": "Blazing Speed",
+        "description": "React + Vite = sub-second load times. Your customers don't wait. Google loves fast sites. You rank higher."
+      },
+      "custom": {
+        "title": "100% Custom",
+        "description": "No theme limitations. No 'that plugin doesn't do exactly what we need'. Everything built for YOUR needs."
+      },
+      "secure": {
+        "title": "Fort Knox Security",
+        "description": "No admin panel to hack. No database to breach. Static deployment on global CDN. Sleep easy."
+      },
+      "cost": {
+        "title": "Lower Long-Term Costs",
+        "description": "No monthly hosting that scales with traffic. No premium plugins. No surprise costs. Predictable, affordable."
+      }
+    },
+    "bottomNote": "WordPress and Wix are great for blogs and simple sites. But if you want a scalable, secure, lightning-fast business tool that won't need constant maintenance? Modern web development wins every time."
+  },
   "portfolio": {
     "title": "Recent Projects",
     "subtitle": "Real solutions for real businesses",
