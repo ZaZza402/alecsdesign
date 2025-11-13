@@ -12,9 +12,13 @@ import MetallicBackground from "./components/ui/backgrounds/MetallicBackground";
 
 // Lazy load below-fold sections for better initial load performance
 const TechnologySection = lazy(() => import("./sections/TechnologySection"));
-const WhyNotWordPressSection = lazy(() => import("./sections/WhyNotWordPressSection"));
+const WhyNotWordPressSection = lazy(
+  () => import("./sections/WhyNotWordPressSection")
+);
 const PricingSection = lazy(() => import("./sections/PricingSection"));
-const ProcessLifecycleSection = lazy(() => import("./sections/ProcessLifecycleSection"));
+const ProcessLifecycleSection = lazy(
+  () => import("./sections/ProcessLifecycleSection")
+);
 const ContactSection = lazy(() => import("./sections/ContactSection"));
 import {
   SEO,

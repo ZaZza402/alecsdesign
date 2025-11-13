@@ -2,7 +2,7 @@
   padding: 6rem 0;
   background: linear-gradient(180deg, #dbeafe 0%, #f0f9ff 100%);
   position: relative;
-  overflow: hidden;
+  overflow: visible;
 }
 
 .process-lifecycle-container {
@@ -12,6 +12,7 @@
   opacity: 0;
   transform: translateY(30px);
   transition: all 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+  position: relative;
 }
 
 .process-lifecycle-container.animate-in {
@@ -40,6 +41,143 @@
   margin-left: auto;
   margin-right: auto;
   line-height: 1.6;
+}
+
+/* Section Dividers */
+.section-divider {
+  margin: 4rem 0 3rem 0;
+  text-align: center;
+}
+
+.section-divider:first-of-type {
+  margin-top: 0;
+}
+
+.timeline-section-title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin: 0;
+  display: inline-block;
+  padding: 0.5rem 1.5rem;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+/* Timeline Styles */
+.process-timeline {
+  position: relative;
+  padding-left: 80px;
+  margin-bottom: 3rem;
+  max-width: 900px;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 3rem;
+  z-index: 5;
+}
+
+/* Content is always visible - no animations */
+.timeline-content {
+  padding-left: 0;
+  opacity: 1;
+  transition: transform 0.3s ease;
+}
+
+.timeline-item:hover .timeline-content {
+  transform: translateY(-4px);
+}
+
+/* Wrapper for timeline animation zone */
+.timeline-animation-wrapper {
+  position: relative;
+}
+
+/* React Icon - Fixed at center of screen */
+.timeline-react-icon {
+  position: fixed;
+  left: 40px;
+  top: 50vh;
+  width: 50px;
+  height: 50px;
+  z-index: 1001;
+  pointer-events: none;
+  filter: drop-shadow(0 4px 20px rgba(59, 130, 246, 0.9))
+    drop-shadow(0 0 40px rgba(59, 130, 246, 0.6));
+  will-change: transform, opacity;
+  opacity: 0;
+} /* SVG Trail - Absolute position within section */
+.timeline-trail-svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 999;
+  overflow: visible;
+}
+
+.timeline-trail-svg path {
+  filter: drop-shadow(0 0 8px rgba(59, 130, 246, 0.8))
+    drop-shadow(0 0 16px rgba(59, 130, 246, 0.4));
+}
+
+/* Title wrapper with icon */
+.timeline-title-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.timeline-title-icon {
+  flex-shrink: 0;
+  transition: transform 0.3s ease;
+}
+
+.timeline-item:hover .timeline-title-icon {
+  transform: scale(1.1);
+}
+
+/* Icon color variations */
+.icon-blue {
+  color: #3b82f6;
+}
+.icon-green {
+  color: #10b981;
+}
+.icon-purple {
+  color: #9333ea;
+}
+.icon-orange {
+  color: #f97316;
+}
+.icon-pink {
+  color: #ec4899;
+}
+.icon-indigo {
+  color: #6366f1;
+}
+.icon-cyan {
+  color: #06b6d4;
+}
+
+.timeline-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin: 0;
+  line-height: 1.3;
+}
+
+.timeline-description {
+  font-size: 1.125rem;
+  line-height: 1.8;
+  color: #475569;
+  margin: 0;
 }
 
 /* Tab Navigation */
@@ -464,6 +602,49 @@
     font-size: 1.125rem;
   }
 
+  .section-divider {
+    margin: 3rem 0 2rem 0;
+  }
+
+  .timeline-section-title {
+    font-size: 1.5rem;
+    padding: 0.5rem 1rem;
+  }
+
+  .process-timeline {
+    padding-left: 50px;
+  }
+
+  .process-timeline::before,
+  .process-timeline::after {
+    left: 18px;
+    width: 2px;
+  }
+
+  .timeline-marker {
+    left: -31px;
+    width: 38px;
+    height: 38px;
+    font-size: 0.9375rem;
+  }
+
+  .timeline-content {
+    padding-left: 1rem;
+  }
+
+  .timeline-icon {
+    width: 28px;
+    height: 28px;
+  }
+
+  .timeline-title {
+    font-size: 1.25rem;
+  }
+
+  .timeline-description {
+    font-size: 1rem;
+  }
+
   .tab-navigation {
     flex-direction: column;
     gap: 0.75rem;
@@ -509,6 +690,12 @@
   .cta-text {
     font-size: 1rem;
   }
+
+  .timeline-react-icon {
+    width: 50px;
+    height: 50px;
+    left: 35px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -530,6 +717,39 @@
 
   .process-lifecycle-subtitle {
     font-size: 1rem;
+  }
+
+  .timeline-section-title {
+    font-size: 1.25rem;
+  }
+
+  .process-timeline {
+    padding-left: 45px;
+  }
+
+  .process-timeline::before,
+  .process-timeline::after {
+    left: 16px;
+  }
+
+  .timeline-marker {
+    left: -28px;
+    width: 34px;
+    height: 34px;
+    font-size: 0.875rem;
+  }
+
+  .timeline-icon {
+    width: 24px;
+    height: 24px;
+  }
+
+  .timeline-title {
+    font-size: 1.125rem;
+  }
+
+  .timeline-description {
+    font-size: 0.9375rem;
   }
 
   .tab-button {
@@ -575,5 +795,11 @@
   .note-text,
   .cta-text {
     font-size: 0.9375rem;
+  }
+
+  .timeline-react-icon {
+    width: 45px;
+    height: 45px;
+    left: 30px;
   }
 }

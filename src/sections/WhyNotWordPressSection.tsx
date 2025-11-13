@@ -1,15 +1,6 @@
 import { useTranslation } from "react-i18next";
 import { useInView } from "react-intersection-observer";
-import {
-  Zap,
-  Shield,
-  Code2,
-  Gauge,
-  Lock,
-  Wrench,
-  DollarSign,
-  TrendingUp,
-} from "lucide-react";
+import { Shield, Gauge, Wrench, TrendingUp } from "lucide-react";
 import "./WhyNotWordPressSection.css";
 
 const WhyNotWordPressSection = () => {
@@ -47,29 +38,6 @@ const WhyNotWordPressSection = () => {
       wordpress: t("whyNotWordPress.scalability.wordpress"),
       myStack: t("whyNotWordPress.scalability.myStack"),
       color: "orange",
-    },
-  ];
-
-  const myStackAdvantages = [
-    {
-      icon: Zap,
-      title: t("whyNotWordPress.advantages.speed.title"),
-      description: t("whyNotWordPress.advantages.speed.description"),
-    },
-    {
-      icon: Code2,
-      title: t("whyNotWordPress.advantages.custom.title"),
-      description: t("whyNotWordPress.advantages.custom.description"),
-    },
-    {
-      icon: Lock,
-      title: t("whyNotWordPress.advantages.secure.title"),
-      description: t("whyNotWordPress.advantages.secure.description"),
-    },
-    {
-      icon: DollarSign,
-      title: t("whyNotWordPress.advantages.cost.title"),
-      description: t("whyNotWordPress.advantages.cost.description"),
     },
   ];
 
@@ -118,29 +86,6 @@ const WhyNotWordPressSection = () => {
               </div>
             );
           })}
-        </div>
-
-        {/* My Stack Advantages */}
-        <div className="advantages-section">
-          <h3 className="advantages-title">
-            {t("whyNotWordPress.advantagesTitle")}
-          </h3>
-          <div className="advantages-grid">
-            {myStackAdvantages.map((advantage, index) => {
-              const Icon = advantage.icon;
-              return (
-                <div key={index} className="advantage-card">
-                  <div className="advantage-icon">
-                    <Icon size={24} strokeWidth={2} />
-                  </div>
-                  <h4 className="advantage-title">{advantage.title}</h4>
-                  <p className="advantage-description">
-                    {advantage.description}
-                  </p>
-                </div>
-              );
-            })}
-          </div>
         </div>
 
         {/* Bottom Note */}

@@ -103,24 +103,26 @@
 /* Responsive adjustments */
 @media (max-width: 768px) {
   .icon-scroll-bar {
-    height: 100px;
+    height: 110px;
+    margin-top: 2rem;
   }
 
   .icon-scroll-bar__content {
-    gap: 32px;
+    gap: 36px;
   }
 
   .icon-scroll-bar__item {
-    min-width: 60px;
-    padding: 8px;
+    min-width: 64px;
+    padding: 10px;
+    transform: scale(1.05);
   }
 
   .icon-scroll-bar__image {
-    width: 40px;
-    height: 40px;
+    width: 44px;
+    height: 44px;
   }
 
   .icon-scroll-bar__label {
-    font-size: 0.65rem;
+    font-size: 0.7rem;
   }
 }

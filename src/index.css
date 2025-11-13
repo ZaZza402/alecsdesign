@@ -20,6 +20,49 @@
     @apply bg-background-main text-text-primary font-sans antialiased;
     overflow-x: hidden;
     transition: margin-left 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    font-size: 1.125rem;
+    line-height: 1.7;
+  }
+
+  /* Typography Hierarchy - Mobile First */
+  h1 {
+    font-size: 2.5rem;
+    font-weight: 900;
+    line-height: 1.2;
+    color: #0f172a;
+  }
+
+  h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 1.3;
+    color: #0f172a;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 1.4;
+    color: #0f172a;
+  }
+
+  p {
+    line-height: 1.7;
+  }
+
+  /* Desktop Typography Scaling */
+  @media (min-width: 769px) {
+    h1 {
+      font-size: 3rem;
+    }
+
+    h2 {
+      font-size: 2.5rem;
+    }
+
+    h3 {
+      font-size: 1.75rem;
+    }
   }
 
   /* Sidebar spacing on desktop - start collapsed */

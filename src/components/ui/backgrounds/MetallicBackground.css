@@ -169,7 +169,7 @@
     animation: none !important;
     transform: none !important;
   }
-  
+
   /* Simplify blur on mobile */
   .metallic-background__mesh {
     filter: blur(40px);
@@ -184,7 +184,7 @@
     animation: none !important;
     transform: none !important;
   }
-  
+
   .metallic-background__mesh {
     filter: none;
   }
@@ -195,11 +195,11 @@
   .metallic-background__mesh {
     will-change: transform;
   }
-  
+
   .metallic-background__shine {
     will-change: transform;
   }
-  
+
   .metallic-background__particles {
     will-change: transform;
   }

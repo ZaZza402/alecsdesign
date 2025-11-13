@@ -83,25 +83,6 @@
       "wordpress": "I costi server crescono col traffico. Più visitatori = più carico server = più soldi.",
       "myStack": "Gestisce 100.000 visitatori allo stesso costo di 100. Distribuzione globale via CDN."
     },
-    "advantagesTitle": "Cosa Ottieni Davvero",
-    "advantages": {
-      "speed": {
-        "title": "Velocità Lampo",
-        "description": "React + Vite = caricamento sotto il secondo. I tuoi clienti non aspettano. Google ama i siti veloci. Ti posizioni meglio."
-      },
-      "custom": {
-        "title": "100% Personalizzato",
-        "description": "Nessun limite di tema. Niente 'quel plugin non fa esattamente quello che serve'. Tutto costruito per LE TUE esigenze."
-      },
-      "secure": {
-        "title": "Sicurezza Blindata",
-        "description": "Nessun pannello admin da hackerare. Nessun database da violare. Deploy statico su CDN globale. Dormi tranquillo."
-      },
-      "cost": {
-        "title": "Costi Inferiori a Lungo Termine",
-        "description": "Nessun hosting mensile che scala col traffico. Niente plugin premium. Zero costi a sorpresa. Prevedibile, accessibile."
-      }
-    },
     "bottomNote": "WordPress e Wix sono ottimi per blog e siti semplici. Ma se vuoi uno strumento business scalabile, sicuro e velocissimo che non richiede manutenzione costante? Lo sviluppo web moderno vince sempre."
   },
   "portfolio": {
