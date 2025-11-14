@@ -7,31 +7,40 @@ export default {
         sans: ["Inter", "sans-serif"],
       },
       colors: {
-        // Primary Colors - Richer, more saturated blue & green
+        // Primary Color - Single bold accent (professional blue)
         primary: {
-          blue: "#3B82F6", // Rich blue (was too light before)
-          green: "#10B981", // Vibrant green (was too pastel)
+          DEFAULT: "#2563EB", // Professional blue (main accent)
+          light: "#3B82F6", // Lighter variant
+          dark: "#1E40AF", // Darker variant
+          50: "#EFF6FF",
+          100: "#DBEAFE",
+          600: "#2563EB", // Main color
+          700: "#1D4ED8",
         },
-        // Secondary Colors - Better contrast
+        // Secondary Colors - Neutral palette
         secondary: {
-          light: "#F0F9FF", // Light blue tint background
-          dark: "#0F172A", // Deeper dark for stronger contrast
+          light: "#F8FAFC", // Very light background
+          DEFAULT: "#F1F5F9", // Light gray background
+          dark: "#0F172A", // Deep dark for contrast
         },
-        // Background hierarchy
+        // Background hierarchy - cleaner
         background: {
-          main: "#FFFFFF", // Pure white main background
-          alt: "#DBEAFE", // Light blue alternative (more presence)
+          main: "#FFFFFF", // Pure white
+          alt: "#F8FAFC", // Subtle gray (not blue-tinted)
+          accent: "#EFF6FF", // Very subtle blue tint when needed
         },
-        // Text colors - Improved contrast
+        // Text colors - Strong hierarchy
         text: {
-          primary: "#0F172A", // Dark slate for main text
-          secondary: "#475569", // Darker medium gray (better readability)
-          light: "#64748B", // Medium gray for subtle text
+          primary: "#0F172A", // Almost black
+          secondary: "#475569", // Medium gray
+          light: "#64748B", // Light gray
+          muted: "#94A3B8", // Very light gray
         },
-        // Border colors
+        // Border colors - subtle
         border: {
-          light: "#BFDBFE", // Light blue border
-          DEFAULT: "#93C5FD", // Blue-tinted border
+          light: "#E2E8F0", // Light gray border
+          DEFAULT: "#CBD5E1", // Default border
+          dark: "#94A3B8", // Darker border
         },
       },
       animation: {

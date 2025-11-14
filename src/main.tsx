@@ -2,15 +2,16 @@ import { StrictMode, useEffect, useState } from "react";
 import { createRoot } from "react-dom/client";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import "./index.css";
-import "./i18n"; // Initialize i18n
+import i18n from "./i18n"; // Initialize i18n FIRST
 import App from "./App.tsx";
 import PrivacyPolicy from "./pages/PrivacyPolicy.tsx";
 import TermsConditions from "./pages/TermsConditions.tsx";
 import CookiePolicy from "./pages/CookiePolicy.tsx";
 import ServicesRates from "./pages/ServicesRates.tsx";
 import NotFound from "./pages/NotFound.tsx";
-import i18n from "./i18n";
 import { detectUserLanguage } from "./utils/languageDetection";
+
+import Layout from "./components/layout/Layout.tsx";
 
 // Language wrapper component
 function LanguageWrapper({ lang }: { lang: string }) {
@@ -24,7 +25,7 @@ function LanguageWrapper({ lang }: { lang: string }) {
   return <App />;
 }
 
-// Legal page wrapper
+// Legal page wrapper with Sidebar and Footer
 function LegalPageWrapper({
   lang,
   children,
@@ -38,7 +39,7 @@ function LegalPageWrapper({
     }
   }, [lang]);
 
-  return <>{children}</>;
+  return <Layout>{children}</Layout>;
 }
 
 // Smart redirect component with geo-based language detection

@@ -53,20 +53,12 @@ const Sidebar = () => {
       id: "services",
       icon: Receipt,
       label: t("nav.services"),
-      href: `/${i18n.language}/services-rates`,
-      isPage: true,
+      href: "#services",
     },
     { id: "contact", icon: Mail, label: t("nav.contact"), href: "#contact" },
   ];
 
-  // Update body class when sidebar expands/collapses
-  useEffect(() => {
-    if (isCollapsed) {
-      document.body.classList.remove("sidebar-expanded");
-    } else {
-      document.body.classList.add("sidebar-expanded");
-    }
-  }, [isCollapsed]);
+  // Sidebar now uses absolute positioning overlay - no body class manipulation needed
 
   // Track active section on scroll
   useEffect(() => {
@@ -102,36 +94,32 @@ const Sidebar = () => {
 
   const handleNavClick = (
     e: React.MouseEvent<HTMLAnchorElement>,
-    href: string,
-    isPage?: boolean
+    href: string
   ) => {
     e.preventDefault();
-    if (isPage) {
-      navigate(href);
-    } else {
-      // Check if we're on the landing page
-      const isOnLandingPage =
-        location.pathname === `/${i18n.language}` ||
-        location.pathname === `/en` ||
-        location.pathname === `/it` ||
-        location.pathname === `/ro`;
 
-      if (!isOnLandingPage) {
-        // Navigate to landing page with hash, then scroll after navigation
-        navigate(`/${i18n.language}${href}`);
-        // Use setTimeout to ensure navigation completes before scrolling
-        setTimeout(() => {
-          const element = document.querySelector(href);
-          if (element) {
-            element.scrollIntoView({ behavior: "smooth" });
-          }
-        }, 100);
-      } else {
-        // We're on landing page, just scroll
+    // Check if we're on the landing page
+    const isOnLandingPage =
+      location.pathname === `/${i18n.language}` ||
+      location.pathname === `/en` ||
+      location.pathname === `/it` ||
+      location.pathname === `/ro`;
+
+    if (!isOnLandingPage) {
+      // Navigate to landing page with hash, then scroll after navigation
+      navigate(`/${i18n.language}${href}`);
+      // Use setTimeout to ensure navigation completes before scrolling
+      setTimeout(() => {
         const element = document.querySelector(href);
         if (element) {
           element.scrollIntoView({ behavior: "smooth" });
         }
+      }, 100);
+    } else {
+      // We're on landing page, just scroll
+      const element = document.querySelector(href);
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
       }
     }
   };
@@ -158,16 +146,14 @@ const Sidebar = () => {
         <nav className="sidebar-nav">
           {navItems.map((item) => {
             const Icon = item.icon;
-            const isActive = item.isPage
-              ? location.pathname.includes("services-rates")
-              : activeSection === item.id;
+            const isActive = activeSection === item.id;
 
             return (
               <a
                 key={item.id}
                 href={item.href}
                 className={`sidebar-nav-item ${isActive ? "active" : ""}`}
-                onClick={(e) => handleNavClick(e, item.href, item.isPage)}
+                onClick={(e) => handleNavClick(e, item.href)}
                 title={isCollapsed ? item.label : undefined}
               >
                 <div className="nav-item-icon">
@@ -196,7 +182,7 @@ const Sidebar = () => {
         onClick={() => setIsCollapsed(!isCollapsed)}
         aria-label={isCollapsed ? "Expand sidebar" : "Collapse sidebar"}
       >
-        {isCollapsed ? <ChevronRight size={20} /> : <ChevronLeft size={20} />}
+        {isCollapsed ? <ChevronRight size={16} /> : <ChevronLeft size={16} />}
       </button>
     </aside>
   );

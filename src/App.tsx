@@ -8,7 +8,9 @@ import ProblemSection from "./sections/ProblemSection";
 import DifferenceSection from "./sections/DifferenceSection";
 import MobileLanguageLabel from "./components/ui/MobileLanguageLabel";
 import CookieBanner from "./components/ui/CookieBanner";
+import ScrollProgress from "./components/ui/ScrollProgress";
 import MetallicBackground from "./components/ui/backgrounds/MetallicBackground";
+import LoadingSkeleton from "./components/ui/LoadingSkeleton";
 
 // Lazy load below-fold sections for better initial load performance
 const TechnologySection = lazy(() => import("./sections/TechnologySection"));
@@ -19,6 +21,7 @@ const PricingSection = lazy(() => import("./sections/PricingSection"));
 const ProcessLifecycleSection = lazy(
   () => import("./sections/ProcessLifecycleSection")
 );
+const ServicesSection = lazy(() => import("./sections/ServicesSection"));
 const ContactSection = lazy(() => import("./sections/ContactSection"));
 import {
   SEO,
@@ -31,7 +34,10 @@ export default function App() {
   const { t } = useTranslation();
 
   return (
-    <div className="min-h-screen relative">
+    <div
+      className="min-h-screen relative"
+      style={{ maxWidth: "100vw", overflowX: "hidden" }}
+    >
       {/* SEO Meta Tags */}
       <SEO
         title={t("seo.title")}
@@ -57,7 +63,7 @@ export default function App() {
           <ProblemSection />
           <DifferenceSection />
         </section>
-        <Suspense fallback={<div style={{ minHeight: "100vh" }} />}>
+        <Suspense fallback={<LoadingSkeleton />}>
           <section id="technology" aria-labelledby="technology-heading">
             <TechnologySection />
           </section>
@@ -76,6 +82,9 @@ export default function App() {
           <section id="process" aria-labelledby="process-heading">
             <ProcessLifecycleSection />
           </section>
+          <section id="services" aria-labelledby="services-heading">
+            <ServicesSection />
+          </section>
           <section id="contact" aria-labelledby="contact-heading">
             <ContactSection />
           </section>
@@ -84,6 +93,7 @@ export default function App() {
       <Footer />
       <BottomNav />
       <CookieBanner />
+      <ScrollProgress />
     </div>
   );
 }

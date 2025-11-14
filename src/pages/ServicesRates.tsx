@@ -1,19 +1,7 @@
 import { useTranslation } from "react-i18next";
 import { useEffect } from "react";
 import { useInView } from "react-intersection-observer";
-import {
-  Clock,
-  Zap,
-  Rocket,
-  Shield,
-  HeadphonesIcon,
-  Sparkles,
-} from "lucide-react";
-import Sidebar from "../components/layout/Sidebar";
-import Footer from "../components/layout/Footer";
-import BottomNav from "../components/layout/BottomNav";
-import MobileLanguageLabel from "../components/ui/MobileLanguageLabel";
-import MetallicBackground from "../components/ui/backgrounds/MetallicBackground";
+import { Clock, Zap, Rocket, Shield, Sparkles, Headphones } from "lucide-react";
 import { SEO } from "../utils/seo";
 import "./ServicesRates.css";
 
@@ -53,7 +41,7 @@ const ServicesRates = () => {
   ];
 
   return (
-    <div className="min-h-screen relative">
+    <>
       {/* SEO Meta Tags */}
       <SEO
         title={t("servicesRates.seo.title")}
@@ -61,10 +49,6 @@ const ServicesRates = () => {
         keywords={t("servicesRates.seo.keywords")}
         ogType="website"
       />
-
-      <MetallicBackground />
-      <Sidebar />
-      <MobileLanguageLabel />
 
       <main className="services-rates-page" role="main">
         <div
@@ -176,11 +160,7 @@ const ServicesRates = () => {
           {/* Retainer Packages */}
           <section className="pricing-category retainer-section">
             <div className="category-header">
-              <HeadphonesIcon
-                className="category-icon"
-                size={32}
-                strokeWidth={2}
-              />
+              <Headphones className="category-icon" size={32} strokeWidth={2} />
               <h2 className="category-title">
                 {t("servicesRates.categories.retainer.title")}
               </h2>
@@ -238,10 +218,7 @@ const ServicesRates = () => {
           </div>
         </div>
       </main>
-
-      <Footer />
-      <BottomNav />
-    </div>
+    </>
   );
 };
 

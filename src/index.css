@@ -14,67 +14,97 @@
 
   html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
+    max-width: 100vw;
   }
 
   body {
     @apply bg-background-main text-text-primary font-sans antialiased;
     overflow-x: hidden;
+    max-width: 100vw;
     transition: margin-left 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     font-size: 1.125rem;
     line-height: 1.7;
   }
 
-  /* Typography Hierarchy - Mobile First */
+  /* Typography Hierarchy - Mobile First (improved contrast) */
   h1 {
-    font-size: 2.5rem;
+    font-size: 2.25rem; /* Slightly smaller on mobile for readability */
     font-weight: 900;
-    line-height: 1.2;
+    line-height: 1.15;
     color: #0f172a;
+    letter-spacing: -0.02em; /* Tighter tracking for large text */
   }
 
   h2 {
-    font-size: 2rem;
-    font-weight: 700;
-    line-height: 1.3;
+    font-size: 1.75rem; /* Better differentiation from h1 */
+    font-weight: 800; /* Heavier weight */
+    line-height: 1.25;
     color: #0f172a;
+    letter-spacing: -0.01em;
   }
 
   h3 {
-    font-size: 1.5rem;
-    font-weight: 600;
-    line-height: 1.4;
-    color: #0f172a;
+    font-size: 1.25rem; /* Clearer hierarchy */
+    font-weight: 700; /* Heavier than before */
+    line-height: 1.35;
+    color: #1e293b; /* Slightly lighter for hierarchy */
   }
 
   p {
+    font-size: 1rem; /* Ensure minimum 16px on mobile */
     line-height: 1.7;
+    color: #475569;
+    max-width: 70ch; /* Optimal line length */
   }
 
-  /* Desktop Typography Scaling */
+  /* Prevent horizontal overflow on all sections */
+  section {
+    max-width: 100vw;
+    overflow-x: hidden;
+    box-sizing: border-box;
+  }
+
+  main {
+    max-width: 100vw;
+    overflow-x: hidden;
+  }
+
+  /* Desktop Typography Scaling - stronger hierarchy */
   @media (min-width: 769px) {
     h1 {
-      font-size: 3rem;
+      font-size: 3.5rem; /* More dramatic on desktop */
+      line-height: 1.1;
     }
 
     h2 {
-      font-size: 2.5rem;
+      font-size: 2.5rem; /* Bigger jump from h3 */
+      line-height: 1.2;
     }
 
     h3 {
-      font-size: 1.75rem;
+      font-size: 1.5rem; /* Clear distinction */
+      line-height: 1.3;
+    }
+
+    p {
+      font-size: 1.125rem; /* Slightly larger on desktop */
+      max-width: 65ch; /* Narrower for better readability */
     }
   }
 
-  /* Sidebar spacing on desktop - start collapsed */
-  @media (min-width: 1025px) {
-    body {
-      margin-left: 80px;
+  /* Large desktop - even more dramatic */
+  @media (min-width: 1440px) {
+    h1 {
+      font-size: 4rem;
     }
 
-    body.sidebar-expanded {
-      margin-left: 280px;
+    h2 {
+      font-size: 2.75rem;
     }
   }
+
+  /* Sidebar now uses absolute positioning overlay - no body margin adjustments needed */
 
   /* Bottom nav spacing on mobile - no padding when collapsed */
   @media (max-width: 1024px) {
@@ -91,11 +121,21 @@
 
 @layer utilities {
   .gradient-primary {
-    background: linear-gradient(135deg, #3b82f6 0%, #10b981 100%);
+    background: linear-gradient(135deg, #2563eb 0%, #1e40af 100%);
   }
 
   .text-gradient {
-    @apply bg-gradient-to-r from-primary-blue to-primary-green bg-clip-text text-transparent;
+    @apply bg-gradient-to-r from-primary-600 to-primary-700 bg-clip-text text-transparent;
+  }
+
+  /* Consistent hover states for interactive elements */
+  .hover-lift {
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .hover-lift:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.15);
   }
 
   /* Smooth transitions */
@@ -113,6 +153,11 @@
   /* Remove tap highlight on mobile */
   .no-tap-highlight {
     -webkit-tap-highlight-color: transparent;
+  }
+
+  /* Consistent focus states for accessibility */
+  .focus-ring {
+    @apply focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2;
   }
 }
 

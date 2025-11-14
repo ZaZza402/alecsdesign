@@ -35,7 +35,7 @@ i18n
       escapeValue: false, // React already escapes values
     },
     react: {
-      useSuspense: false, // Disable suspense for easier setup
+      useSuspense: true, // Enable suspense to ensure translations load before render
     },
   });
 

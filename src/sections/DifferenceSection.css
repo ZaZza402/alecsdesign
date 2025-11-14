@@ -1,6 +1,6 @@
 .difference-section {
   padding: 6rem 0;
-  background: #dbeafe;
+  background: #f8fafc; /* Subtle gray instead of blue tint */
   position: relative;
   overflow: hidden;
 }

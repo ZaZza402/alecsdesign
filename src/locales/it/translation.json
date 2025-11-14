@@ -20,70 +20,70 @@
     "ctaEmail": "Oppure scrivi qui"
   },
   "problem": {
-    "title": "Se sei arrivato qui, sai già che...",
-    "point1": "Possedere un'attività non basta più",
-    "point2": "Devi essere visibile dove sono i tuoi clienti: online",
-    "point3": "Un sito web non è solo 'bello da avere'",
-    "point4": "È il tuo dipendente 24/7",
-    "description": "Lavora senza sosta, non si lamenta mai, non ha bisogno di pause e ti rappresenta ovunque. La tua presenza digitale lavora mentre tu dormi.",
-    "cta": "Scopri come funziona"
+    "title": "I tuoi concorrenti ti stanno rubando clienti",
+    "point1": "Il telefono non squilla perché i clienti non ti trovano online",
+    "point2": "Stai perdendo migliaia di euro al mese a favore di concorrenti con siti migliori",
+    "point3": "Sei bloccato a fare lavoro manuale che potrebbe essere automatizzato",
+    "point4": "Il tuo sito attuale ti imbarazza invece di impressionare i clienti",
+    "description": "Creo soluzioni che risolvono esattamente questi problemi. Non template preconfezionati. Sistemi reali progettati per farti trovare, portarti prenotazioni e farti risparmiare tempo. Il mio focus è far funzionare meglio la tua attività, non solo renderla più bella.",
+    "cta": "Risolviamo questo"
   },
   "difference": {
-    "title": "Non costruisco solo siti belli",
-    "subtitle": "L'estetica è implicita. Io mi concentro sulle soluzioni.",
+    "title": "Mi concentro su ciò che conta davvero",
+    "subtitle": "Risultati, non chiacchiere. Onestà, non hype.",
     "pillar1": {
-      "title": "Soluzioni Prima di Tutto",
-      "description": "Non si tratta solo di bell'aspetto. Si tratta di risolvere problemi reali del business e renderti rilevante per i clienti."
+      "title": "Costruito per Convertire, Non Solo per Esistere",
+      "description": "Il tuo sito deve portarti clienti, non solo stare lì bello. Progetto ogni elemento con un obiettivo: trasformare visitatori in clienti paganti. Call-to-action chiare, caricamento veloce, mobile-first. Tutto è orientato ai risultati."
     },
     "pillar2": {
-      "title": "SEO e Visibilità",
-      "description": "Google sa cosa fai. L'AI comprende il tuo business. I clienti possono trovarti. Ti rendo visibile dove conta.",
-      "explainer": "SEO = Ottimizzazione per i Motori di Ricerca. Significa rendere il tuo sito facile da trovare su Google quando le persone cercano ciò che offri."
+      "title": "Effettivamente Trovabile su Google",
+      "description": "A cosa serve un ottimo sito se nessuno lo vede? Costruisco con la SEO integrata fin dal primo giorno. Quando i tuoi clienti cercano ciò che offri, tu appari. Semplice.",
+      "explainer": "Traduzione: Più visibilità = più richieste. Senza bruciare soldi in pubblicità."
     },
     "pillar3": {
-      "title": "Partnership a Lungo Termine",
-      "description": "Non costruisco e sparisco. Cresciamo insieme. Supporto continuo finché non decidi diversamente."
+      "title": "Parlo Chiaro, Non Tecnicismi",
+      "description": "Niente gergo tecnico. Niente sparizioni dopo il lancio. Spiego tutto chiaramente, rispondo alle tue domande e resto per aiutare la tua attività a crescere. Non stai solo assumendo uno sviluppatore—hai qualcuno che si preoccupa davvero del tuo successo."
     }
   },
   "technology": {
-    "title": "Il tuo sito è un'APP, non solo HTML",
-    "subtitle": "Ecco perché questo fa la differenza",
-    "benefit1": "Inizia con una landing page. Aggiungi un negozio online quando sei pronto. Espandi con un blog il mese prossimo.",
-    "benefit1Explainer": "Landing page = Una singola pagina web progettata per convincere i visitatori a compiere un'azione specifica (come contattarti o acquistare).",
-    "benefit2": "Ogni pezzo si integra perfettamente. Niente ricostruzioni. Niente migrazioni complicate. Solo crescita fluida.",
-    "benefit3": "Sistema di autenticazione? Dashboard clienti? Funzionalità su misura? Aggiungi quello che serve, quando serve.",
-    "benefit3Explainer": "Autenticazione = Un sistema di login sicuro che permette agli utenti di creare account e accedere a contenuti personalizzati in modo protetto.",
-    "callout": "Non ci credi? Chiedi a Google o alla tua AI: 'Se costruisco un sito con React+Vite e Tailwind CSS, posso farlo crescere senza dover ricostruire?' Guarda i risultati.",
-    "calloutExplainer": "React+Vite e Tailwind CSS sono tecnologie web moderne che rendono i siti veloci, facili da aggiornare e capaci di crescere senza ripartire da zero.",
-    "visualLabel": "Architettura modulare"
+    "title": "Costruito per velocità. Costruito per durare.",
+    "subtitle": "Siti web moderni che caricano velocemente e restano veloci mentre cresci.",
+    "benefit1": "Caricamento ultra-veloce = più clienti",
+    "benefit1Explainer": "Ogni secondo conta. I siti più veloci convertono meglio—non è un'opinione, sono dati.",
+    "benefit2": "Facile da aggiornare senza rompere nulla",
+    "benefit3": "Cresce con la tua attività senza dover ricostruire",
+    "benefit3Explainer": "Inizia con quello che ti serve ora. Aggiungi funzionalità dopo senza ripartire da zero.",
+    "callout": "Costruisco con strumenti che danno priorità a performance e affidabilità.",
+    "calloutExplainer": "Il risultato? Tempi di caricamento più rapidi che migliorano la tua SEO, interazioni fluide che mantengono i visitatori coinvolti, e una base solida che non cede mentre cresci.",
+    "visualLabel": "Blocchi Costruttivi"
   },
   "whyNotWordPress": {
-    "title": "Perché Non WordPress o Wix?",
-    "quote": "Non costruisco siti che richiedono manutenzione costante. Costruisco soluzioni che funzionano.",
-    "subtitle": "Ecco la verità su perché ho scelto lo sviluppo web moderno invece delle piattaforme 'facili'.",
+    "title": "WordPress vs. Sviluppo Personalizzato",
+    "quote": "WordPress è ottimo per molte cose. Ma per siti business critici per le prestazioni? C'è un modo migliore.",
+    "subtitle": "Un confronto equo per aiutarti a scegliere cosa è giusto per la tua attività.",
     "wpLabel": "WordPress/Wix",
-    "myStackLabel": "Il Mio Stack",
+    "myStackLabel": "Approccio Personalizzato",
     "performance": {
       "title": "Prestazioni",
-      "wordpress": "Plugin pesanti, codice gonfio, tempi di caricamento 3-5 secondi. Ogni plugin ti rallenta.",
-      "myStack": "Velocità fulminea. Caricamento sotto il secondo. Costruito leggero, gira liscio. Zero gonfiore."
+      "wordpress": "Flessibile ma pesante. I plugin aggiungono peso. Tempi di caricamento tipicamente 2-4 secondi.",
+      "myStack": "Costruito leggero dalle fondamenta. Caricamento sotto il secondo. Solo ciò che serve, niente di più."
     },
     "security": {
       "title": "Sicurezza",
-      "wordpress": "Patch di sicurezza costanti. Plugin obsoleti sono magneti per hacker. Manutenzione settimanale richiesta.",
-      "myStack": "Nessun database da hackerare. Nessun pannello admin da violare. Deploy statico = superficie d'attacco minima."
+      "wordpress": "Obiettivo popolare per attacchi. Aggiornamenti regolari necessari. Vulnerabilità dei plugin sono comuni.",
+      "myStack": "Nessun database significa niente SQL injection. Nessun pannello admin da violare. Superficie d'attacco ridotta."
     },
     "maintenance": {
       "title": "Manutenzione",
-      "wordpress": "Aggiornamenti settimanali, conflitti tra plugin, problemi di compatibilità. Qualcosa si rompe sempre.",
-      "myStack": "Deploy una volta, gira per sempre. Niente aggiornamenti plugin, zero conflitti, niente rotture improvvise."
+      "wordpress": "Aggiornamenti plugin necessari. Controlli di compatibilità richiesti. Gli aggiornamenti tema possono rompere cose.",
+      "myStack": "Deploy e dimentica. Nessun conflitto plugin da gestire. Gli aggiornamenti sono intenzionali, non forzati."
     },
     "scalability": {
       "title": "Scalabilità",
-      "wordpress": "I costi server crescono col traffico. Più visitatori = più carico server = più soldi.",
-      "myStack": "Gestisce 100.000 visitatori allo stesso costo di 100. Distribuzione globale via CDN."
+      "wordpress": "I costi server scalano col traffico. Più visitatori = bollette hosting più alte.",
+      "myStack": "I picchi di traffico non influenzano i costi. Costruito per gestire la crescita dal primo giorno."
     },
-    "bottomNote": "WordPress e Wix sono ottimi per blog e siti semplici. Ma se vuoi uno strumento business scalabile, sicuro e velocissimo che non richiede manutenzione costante? Lo sviluppo web moderno vince sempre."
+    "bottomNote": "WordPress è eccellente per siti ricchi di contenuti, blog, e quando serve un enorme ecosistema di plugin.\n\nLo sviluppo personalizzato brilla quando serve massima performance, minima manutenzione, e un sito che cresce con la tua attività senza aumentare la complessità.\n\nEntrambi hanno il loro posto. La domanda è: cosa serve davvero alla tua attività?"
   },
   "portfolio": {
     "title": "Progetti Recenti",
@@ -113,86 +113,89 @@
     }
   },
   "pricing": {
-    "title": "Quanto costa?",
-    "subtitle": "La risposta onesta: dipende dalla complessità",
-    "rangeLabel": "Fascia di prezzo tipica",
-    "rangeNote": "Il prezzo varia in base alle tue esigenze specifiche e alla complessità del progetto",
+    "title": "Investimento Che Ha Senso",
+    "subtitle": "Prezzi chiari basati su ciò di cui hai realmente bisogno",
+    "rangeLabel": "Fascia di investimento",
+    "rangeNote": "Il prezzo finale dipende dalle tue esigenze specifiche—nessun costo nascosto",
     "examples": {
       "simple": {
-        "title": "Progetto Semplice",
+        "title": "Sito Base",
         "price": "€150 - €500",
         "features": [
-          "Landing page a pagina singola",
-          "Design responsive",
-          "Modulo di contatto base",
-          "Ottimizzazione SEO di base"
+          "Sito landing a pagina singola",
+          "Design mobile-friendly",
+          "Modulo di contatto",
+          "SEO di base",
+          "NON incluso: Negozio online, funzionalità personalizzate, aggiornamenti contenuti"
         ],
         "explainers": {
-          "responsive": "Funziona perfettamente su telefoni, tablet e computer",
-          "seo": "Ottimizzato affinché Google possa trovare e posizionare il tuo sito"
+          "responsive": "Ideale per: Attività locali, freelancer, o chiunque stia testando un'idea di business e ha bisogno di una semplice presenza online",
+          "seo": "Cosa ottieni: Un sito veloce e professionale che appare bene su ogni dispositivo e può essere trovato su Google"
         }
       },
       "medium": {
-        "title": "Progetto Medio",
+        "title": "Sito Business",
         "price": "€500 - €1200",
         "features": [
           "Sito multi-pagina",
           "Funzionalità personalizzate",
-          "Integrazioni con terze parti",
-          "SEO avanzato e analytics"
+          "Connessioni con strumenti terzi",
+          "SEO avanzato & analytics",
+          "NON incluso: Account utente, database complessi, gestione contenuti continua"
         ],
         "explainers": {
-          "integrations": "Collegamento con strumenti come sistemi di pagamento, calendari prenotazioni o servizi email",
-          "analytics": "Traccia il comportamento dei visitatori per capire cosa funziona e cosa no"
+          "integrations": "Ideale per: Business in crescita che necessitano sistemi di prenotazione, elaborazione pagamenti, o automazione email",
+          "analytics": "Cosa ottieni: Una piattaforma professionale che funziona con i tuoi strumenti esistenti e traccia ciò che conta"
         }
       },
       "complex": {
-        "title": "Progetto Complesso",
+        "title": "Piattaforma Completa",
         "price": "€1200 - €2000+",
         "features": [
-          "Piattaforma completa",
-          "Sistema di gestione contenuti",
-          "Database e autenticazione",
-          "Funzionalità avanzate su misura"
+          "Applicazione web completa",
+          "Pannello admin per aggiornamenti",
+          "Account utente & sicurezza",
+          "Database personalizzato",
+          "NON incluso: App mobile, supporto continuo (disponibile separatamente)"
         ],
         "explainers": {
-          "cms": "Pannello admin facile da usare per aggiornare i contenuti tu stesso senza programmare",
-          "database": "Archiviazione sicura per dati utenti, prodotti, ordini o qualsiasi informazione di cui il tuo business ha bisogno",
-          "authentication": "Sistema di login sicuro per account utente con protezione password"
+          "cms": "Ideale per: Business che necessitano membership, e-commerce, o applicazioni ricche di dati",
+          "database": "Cosa ottieni: Una soluzione scalabile che può gestire vera complessità business senza rompersi",
+          "authentication": "Pensa a: Portali clienti, corsi online, piattaforme di prenotazione, o qualsiasi cosa richieda login utente"
         }
       }
     },
-    "ctaText": "Ogni progetto è unico. Parliamo delle tue esigenze e creiamo una soluzione perfetta per te.",
-    "cta": "Richiedi Consulenza Gratuita"
+    "ctaText": "Non sei sicuro quale si adatti? Parliamo dei tuoi obiettivi, non solo delle funzionalità. Ti aiuterò a capire cosa ti serve davvero.",
+    "cta": "Ottieni Consiglio Onesto"
   },
   "process": {
     "title": "Come lavoriamo insieme?",
     "subtitle": "Semplice, trasparente, senza impegni",
     "step1": {
-      "title": "Contattami",
-      "description": "Gratuito, senza vincoli. Parliamo del tuo progetto."
+      "title": "Chiamata Conoscitiva (Settimana 1)",
+      "description": "Tu: Condividi obiettivi, sfide attuali e visione. Io: Faccio domande, prendo note, capisco cosa significa successo per te."
     },
     "step2": {
-      "title": "Raccontami",
-      "description": "Le tue esigenze, obiettivi e visione per il business."
+      "title": "Strategia & Proposta (Settimana 1)",
+      "description": "Tu: Fornisci materiali esistenti (logo, contenuti, esempi). Io: Creo proposta dettagliata con timeline, prezzi e cosa costruiremo."
     },
     "step3": {
-      "title": "Creo un Piano",
-      "description": "Piano d'azione dettagliato con tempistiche e costi."
+      "title": "Fase Design (Settimana 2-3)",
+      "description": "Tu: Revisioni design, feedback, approvi direzione. Io: Creo mockup, rifinisco in base al tuo input, ottengo conferma prima del codice."
     },
     "step4": {
-      "title": "Tu Decidi",
-      "description": "Valuta la proposta, nessuna pressione o impegno."
+      "title": "Sviluppo (Settimana 3-5)",
+      "description": "Tu: Fornisci contenuti finali (testo, immagini). Io: Costruisco il sito, invio aggiornamenti, gestisco tutto il lavoro tecnico."
     },
     "step5": {
-      "title": "Costruiamo Insieme",
-      "description": "Partnership dalla A alla Z per il tuo successo."
+      "title": "Test & Lancio (Settimana 5-6)",
+      "description": "Tu: Testi sui tuoi dispositivi, confermi che tutto funziona. Io: Risolvo problemi, ottimizzo performance, gestisco il deploy."
     },
-    "note": "Ricorda: nessun impegno fino a quando non sei sicuro al 100%"
+    "note": "Timeline tipica: 4-6 settimane dall'inizio al lancio. Nessun impegno finché non approvi la proposta."
   },
   "processLifecycle": {
     "title": "Come Lavoriamo Insieme",
-    "subtitle": "Dal primo contatto al lancio finale - un percorso completo e trasparente",
+    "subtitle": "Dalla prima chiamata al lancio: 4-6 settimane, totalmente trasparente",
     "tabs": {
       "process": "Iniziare",
       "lifecycle": "Fasi di Sviluppo"
@@ -214,20 +217,20 @@
       "description": "Creare una roadmap dettagliata con milestone e deliverables."
     },
     "phase3": {
-      "title": "Design",
-      "description": "Progettare l'identità visiva e l'esperienza utente del tuo sito."
+      "title": "Design (Settimana 2-3)",
+      "description": "Tu revisioni i mockup e approvi la direzione. Io rifinisco in base al tuo feedback."
     },
     "phase4": {
       "title": "Creazione Contenuti",
       "description": "Sviluppare testi e contenuti visivi coinvolgenti che convertono."
     },
     "phase5": {
-      "title": "Codifica",
-      "description": "Costruire il tuo sito con codice pulito, scalabile e moderno."
+      "title": "Codifica (Settimana 3-5)",
+      "description": "Io costruisco mentre tu fornisci i contenuti finali. Aggiornamenti regolari sui progressi."
     },
     "phase6": {
-      "title": "Testing",
-      "description": "Controllo qualità rigoroso su tutti i dispositivi e browser."
+      "title": "Testing (Settimana 5-6)",
+      "description": "Tu testi sui tuoi dispositivi. Io risolvo problemi e ottimizzo le performance."
     },
     "phase7": {
       "title": "Lancio",
@@ -260,6 +263,17 @@
         "title": "Pacchetti di Supporto Mensile",
         "subtitle": "Manutenzione continua, aggiornamenti e supporto prioritario"
       }
+    },
+    "servicesOverview": {
+      "title": "Servizi e Competenze",
+      "subtitle": "Dal design allo sviluppo, supporto continuo alla crescita",
+      "webDesign": "Web Design",
+      "webDesignDesc": "Design moderni e responsivi che funzionano perfettamente su ogni dispositivo e convertono i visitatori in clienti.",
+      "webDevelopment": "Sviluppo Web",
+      "webDevelopmentDesc": "Siti web veloci e scalabili costruiti con tecnologie moderne. Niente bloat, solo codice pulito che funziona.",
+      "maintenance": "Manutenzione e Supporto",
+      "maintenanceDesc": "Aggiornamenti continui, monitoraggio della sicurezza e supporto tecnico. Il tuo sito rimane aggiornato e sicuro.",
+      "viewFullRates": "Visualizza Servizi e Tariffe Complete"
     },
     "services": {
       "small": {
@@ -349,8 +363,8 @@
     "moreComingSoon": "Altri articoli in arrivo presto..."
   },
   "contact": {
-    "title": "Parliamo del tuo progetto",
-    "subtitle": "Iniziamo il tuo percorso digitale",
+    "title": "Pronto per Iniziare?",
+    "subtitle": "Accetto solo 2-3 progetti al mese. Prenota il tuo posto prima che il calendario si riempia.",
     "successMessage": "Grazie! Ti contatterò presto.",
     "errorMessage": "Impossibile inviare il messaggio. Per favore contattami direttamente via email o telefono.",
     "form": {

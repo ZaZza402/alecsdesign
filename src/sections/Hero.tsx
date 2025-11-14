@@ -92,14 +92,23 @@ const Hero: React.FC = () => {
         <motion.div initial="hidden" animate="visible" variants={titleVariants}>
           <h1 className="hero-section__title">
             <span className="hero-section__greeting">
-              <Hand
-                className="hero-section__hand-wave"
-                size={48}
-                strokeWidth={2.5}
-              />
               <span className="hero-section__greeting-text">
                 {t("hero.greeting")}
               </span>
+              <motion.span
+                className="hero-section__hand-wave"
+                animate={{
+                  rotate: [0, 14, -8, 14, -4, 10, 0, 0],
+                }}
+                transition={{
+                  duration: 2,
+                  repeat: Infinity,
+                  ease: "linear",
+                }}
+                style={{ display: "inline-block", transformOrigin: "70% 70%" }}
+              >
+                <Hand size={32} strokeWidth={2.5} />
+              </motion.span>
             </span>
             <span className="hero-section__name">{t("hero.name")}</span>
           </h1>

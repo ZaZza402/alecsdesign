@@ -20,70 +20,70 @@
     "ctaEmail": "Sau poți scrie aici"
   },
   "problem": {
-    "title": "Dacă ai ajuns aici, știi deja că...",
-    "point1": "A deține o afacere nu mai este suficient",
-    "point2": "Trebuie să fii vizibil unde sunt clienții tăi: online",
-    "point3": "Un site web nu este doar 'frumos de avut'",
-    "point4": "Este angajatul tău 24/7",
-    "description": "Lucrează non-stop, nu se plânge niciodată, nu are nevoie de pauze și te reprezintă peste tot. Prezența ta digitală lucrează în timp ce tu dormi.",
-    "cta": "Vezi cum funcționează"
+    "title": "Concurența tăi îți fură clienții",
+    "point1": "Telefonul nu sună pentru că clienții nu te găsesc online",
+    "point2": "Pierzi mii de euro lunar către concurenți cu site-uri mai bune",
+    "point3": "Ești blocat făcând muncă manuală care ar putea fi automatizată",
+    "point4": "Site-ul tău actual te jenează în loc să impresioneze clienții",
+    "description": "Construiesc soluții care rezolvă exact aceste probleme. Nu șabloane prefabricate. Sisteme reale concepute să te facă găsit, să-ți aducă rezervări și să-ți economisească timp. Focusul meu este să fac afacerea ta să funcționeze mai bine, nu doar să arate mai frumos.",
+    "cta": "Hai să reparăm asta"
   },
   "difference": {
-    "title": "Nu construiesc doar site-uri frumoase",
-    "subtitle": "Estetica este implicită. Mă concentrez pe soluții.",
+    "title": "Mă concentrez pe ce contează cu adevărat",
+    "subtitle": "Rezultate, nu povești. Onestitate, nu exagerări.",
     "pillar1": {
-      "title": "Soluții Mai Întâi",
-      "description": "Nu este despre aspect. Este despre rezolvarea problemelor reale de business și a te face relevant pentru clienți."
+      "title": "Construit să Convertească, Nu Doar să Existe",
+      "description": "Site-ul tău trebuie să-ți aducă clienți, nu doar să stea acolo frumos. Proiectez fiecare element cu un scop: să transforme vizitatori în clienți plătitori. Call-to-action clare, încărcare rapidă, mobile-first. Totul despre rezultate."
     },
     "pillar2": {
-      "title": "SEO și Vizibilitate",
-      "description": "Google știe ce faci. AI înțelege afacerea ta. Clienții te pot găsi. Te fac vizibil unde contează.",
-      "explainer": "SEO = Optimizare pentru Motoare de Căutare. Înseamnă să fac site-ul tău ușor de găsit pe Google când oamenii caută ce oferi tu."
+      "title": "Chiar Găsibil pe Google",
+      "description": "La ce bun un site grozav dacă nimeni nu-l vede? Construiesc cu SEO integrat de la început. Când clienții tău caută ce oferi, tu apari. Simplu.",
+      "explainer": "Traducere: Mai multă vizibilitate = mai multe cereri. Fără să arzi bani pe reclame."
     },
     "pillar3": {
-      "title": "Parteneriat pe Termen Lung",
-      "description": "Nu construiesc și dispar. Creștem împreună. Suport continuu până când decizi altfel."
+      "title": "Vorbesc Omenește, Nu Jargon",
+      "description": "Fără termeni tehnici complicați. Fără dispariții după lansare. Explic totul clar, răspund la întrebări și rămân să ajut afacerea ta să crească. Nu angajezi doar un dezvoltator—ai pe cineva căruia îi pasă cu adevărat de succesul tău."
     }
   },
   "technology": {
-    "title": "Site-ul tău este o aplicație, nu doar HTML",
-    "subtitle": "Iată de ce face toată diferența",
-    "benefit1": "Începe cu o landing page. Adaugă un magazin online când ești gata. Extinde cu un blog luna viitoare.",
-    "benefit1Explainer": "Landing page = O singură pagină web creată special pentru a transforma vizitatorii în clienți.",
-    "benefit2": "Fiecare piesă se integrează perfect. Fără reconstrucții. Fără migrații complicate. Doar creștere fluidă.",
-    "benefit3": "Sistem de autentificare? Dashboard pentru clienți? Funcții personalizate? Adaugă ce ai nevoie, când ai nevoie.",
-    "benefit3Explainer": "Autentificare = Un sistem de login sigur care permite utilizatorilor să se conecteze și să acceseze zone private.",
-    "callout": "Nu mă crezi? Întreabă Google sau AI-ul tău: 'Dacă construiesc un site cu React+Vite și Tailwind CSS, îl pot scala fără să reconstruiesc?' Vezi rezultatele.",
-    "calloutExplainer": "React+Vite și Tailwind CSS sunt tehnologii web moderne care permit site-ului tău să crească și să adauge funcționalități noi fără să fie reconstruit de la zero.",
-    "visualLabel": "Arhitectură modulară"
+    "title": "Construit pentru viteză. Construit să dureze.",
+    "subtitle": "Site-uri web moderne care se încarcă rapid și rămân rapide pe măsură ce crești.",
+    "benefit1": "Încărcare ultra-rapidă = mai mulți clienți",
+    "benefit1Explainer": "Fiecare secundă contează. Site-urile mai rapide convertesc mai bine—nu e opinie, sunt date.",
+    "benefit2": "Ușor de actualizat fără să strici nimic",
+    "benefit3": "Crește cu afacerea ta fără să reconstruiești",
+    "benefit3Explainer": "Începe cu ce ai nevoie acum. Adaugă funcționalități mai târziu fără să o iei de la început.",
+    "callout": "Construiesc cu instrumente care prioritizează performanța și fiabilitatea.",
+    "calloutExplainer": "Rezultatul? Timpi de încărcare mai rapizi care îmbunătățesc SEO-ul tău, interacțiuni fluide care mențin vizitatorii implicați, și o fundație solidă care nu cedează pe măsură ce crești.",
+    "visualLabel": "Blocuri de Construcție"
   },
   "whyNotWordPress": {
-    "title": "De Ce Nu WordPress sau Wix?",
-    "quote": "Nu construiesc site-uri care necesită întreținere constantă. Construiesc soluții care funcționează.",
-    "subtitle": "Iată adevărul despre de ce am ales dezvoltarea web modernă în loc de platformele 'ușoare'.",
+    "title": "WordPress vs. Dezvoltare Personalizată",
+    "quote": "WordPress e grozav pentru multe lucruri. Dar pentru site-uri business critice pentru performanță? Există o cale mai bună.",
+    "subtitle": "O comparație corectă pentru a te ajuta să alegi ce e potrivit pentru afacerea ta.",
     "wpLabel": "WordPress/Wix",
-    "myStackLabel": "Stack-ul Meu",
+    "myStackLabel": "Abordare Personalizată",
     "performance": {
       "title": "Performanță",
-      "wordpress": "Plugin-uri grele, cod umflat, timpi de încărcare 3-5 secunde. Fiecare plugin te încetinește.",
-      "myStack": "Rapid ca fulgerul. Încărcare sub o secundă. Construit ușor, rulează fluid. Zero umflătură."
+      "wordpress": "Flexibil dar greu. Plugin-urile adaugă greutate. Timpi de încărcare tipic 2-4 secunde.",
+      "myStack": "Construit ușor de la fundație. Încărcare sub o secundă. Doar ce ai nevoie, nimic mai mult."
     },
     "security": {
       "title": "Securitate",
-      "wordpress": "Patch-uri de securitate constante. Plugin-uri învechite sunt magneți pentru hackeri. Întreținere săptămânală necesară.",
-      "myStack": "Nicio bază de date de hackuit. Niciun panou admin de spart. Deploy static = suprafață minimă de atac."
+      "wordpress": "Țintă populară pentru atacuri. Update-uri regulate necesare. Vulnerabilitățile plugin-urilor sunt comune.",
+      "myStack": "Fără bază de date înseamnă fără SQL injection. Fără panou admin de spart. Suprafață de atac redusă."
     },
     "maintenance": {
       "title": "Întreținere",
-      "wordpress": "Update-uri săptămânale, conflicte între plugin-uri, probleme de compatibilitate. Ceva se strică mereu.",
-      "myStack": "Deploy o dată, rulează pentru totdeauna. Fără update-uri plugin, zero conflicte, nicio defecțiune surpriză."
+      "wordpress": "Update-uri plugin necesare. Verificări de compatibilitate necesare. Update-urile de temă pot strica lucruri.",
+      "myStack": "Deploy și uită. Fără conflicte plugin de gestionat. Update-urile sunt intenționate, nu forțate."
     },
     "scalability": {
       "title": "Scalabilitate",
-      "wordpress": "Costurile serverului cresc cu traficul. Mai mulți vizitatori = mai multă presiune pe server = mai mulți bani.",
-      "myStack": "Gestionează 100.000 de vizitatori la același preț ca 100. Distribuție globală prin CDN."
+      "wordpress": "Costurile serverului scalează cu traficul. Mai mulți vizitatori = facturi hosting mai mari.",
+      "myStack": "Vârfurile de trafic nu afectează costurile. Construit să gestioneze creșterea din prima zi."
     },
-    "bottomNote": "WordPress și Wix sunt grozave pentru bloguri și site-uri simple. Dar dacă vrei un instrument business scalabil, sigur și super-rapid care nu necesită întreținere constantă? Dezvoltarea web modernă câștigă de fiecare dată."
+    "bottomNote": "WordPress este excelent pentru site-uri bogate în conținut, bloguri, și când ai nevoie de un ecosistem imens de plugin-uri.\n\nDezvoltarea personalizată strălucește când ai nevoie de performanță maximă, întreținere minimă, și un site care crește cu afacerea ta fără să crească complexitatea.\n\nAmbele au locul lor. Întrebarea este: de ce are nevoie cu adevărat afacerea ta?"
   },
   "portfolio": {
     "title": "Proiecte Recente",
@@ -113,86 +113,89 @@
     }
   },
   "pricing": {
-    "title": "Cât costă?",
-    "subtitle": "Răspunsul sincer: depinde de complexitate",
-    "rangeLabel": "Interval de preț tipic",
-    "rangeNote": "Prețurile variază în funcție de nevoile tale specifice și complexitatea proiectului",
+    "title": "Investiție Care Are Sens",
+    "subtitle": "Prețuri clare bazate pe ce ai nevoie cu adevărat",
+    "rangeLabel": "Interval de investiție",
+    "rangeNote": "Prețul final depinde de cerințele tale specifice—fără taxe ascunse",
     "examples": {
       "simple": {
-        "title": "Proiect Simplu",
+        "title": "Site de Bază",
         "price": "€150 - €500",
         "features": [
-          "Landing page cu o pagină",
-          "Design responsive",
-          "Formular de contact de bază",
-          "Optimizare SEO de bază"
+          "Site landing cu o pagină",
+          "Design mobile-friendly",
+          "Formular de contact",
+          "SEO de bază",
+          "NU inclus: Magazin online, funcții personalizate, actualizări conținut"
         ],
         "explainers": {
-          "responsive": "Funcționează perfect pe telefoane, tablete și computere",
-          "seo": "Optimizat astfel încât Google să poată găsi și clasa site-ul tău"
+          "responsive": "Ideal pentru: Afaceri locale, freelanceri, sau oricine testează o idee de business și are nevoie de o prezență online simplă",
+          "seo": "Ce primești: Un site rapid și profesional care arată grozav pe orice dispozitiv și poate fi găsit pe Google"
         }
       },
       "medium": {
-        "title": "Proiect Mediu",
+        "title": "Site Business",
         "price": "€500 - €1200",
         "features": [
           "Site web multi-pagină",
-          "Funcționalitate personalizată",
-          "Integrări cu terțe părți",
-          "SEO avansat și analytics"
+          "Funcții personalizate",
+          "Conectări cu instrumente terțe",
+          "SEO avansat & analytics",
+          "NU inclus: Conturi utilizator, baze de date complexe, management continuu conținut"
         ],
         "explainers": {
-          "integrations": "Conectare cu instrumente precum sisteme de plată, email marketing sau CRM",
-          "analytics": "Urmărește comportamentul vizitatorilor pentru a înțelege ce funcționează"
+          "integrations": "Ideal pentru: Afaceri în creștere care au nevoie de sisteme de rezervări, procesare plăți, sau automatizare email",
+          "analytics": "Ce primești: O platformă profesională care funcționează cu instrumentele tale existente și urmărește ce contează"
         }
       },
       "complex": {
-        "title": "Proiect Complex",
+        "title": "Platformă Completă",
         "price": "€1200 - €2000+",
         "features": [
-          "Platformă completă",
-          "Sistem de management conținut",
-          "Bază de date și autentificare",
-          "Funcționalități avansate personalizate"
+          "Aplicație web completă",
+          "Panou admin pentru actualizări",
+          "Conturi utilizator & securitate",
+          "Bază de date personalizată",
+          "NU inclus: Aplicații mobile, suport continuu (disponibil separat)"
         ],
         "explainers": {
-          "cms": "Panou admin ușor de folosit pentru a actualiza conținutul fără ajutor tehnic",
-          "database": "Stocare sigură pentru date utilizatori, comenzi sau conținut personalizat",
-          "authentication": "Sistem de login sigur pentru a proteja zonele private"
+          "cms": "Ideal pentru: Afaceri care au nevoie de memberships, e-commerce, sau aplicații bogate în date",
+          "database": "Ce primești: O soluție scalabilă care poate gestiona complexitate business reală fără să se strice",
+          "authentication": "Gândește-te la: Portale clienți, cursuri online, platforme de rezervări, sau orice necesită login-uri utilizator"
         }
       }
     },
-    "ctaText": "Fiecare proiect este unic. Să discutăm despre nevoile tale și să creăm soluția perfectă pentru tine.",
-    "cta": "Solicită Consultație Gratuită"
+    "ctaText": "Nu ești sigur care se potrivește? Să vorbim despre obiectivele tale, nu doar despre funcții. Te voi ajuta să îți dai seama ce ai nevoie cu adevărat.",
+    "cta": "Primește Sfaturi Oneste"
   },
   "process": {
     "title": "Cum lucrăm împreună?",
     "subtitle": "Simplu, transparent, fără angajamente",
     "step1": {
-      "title": "Contactează-mă",
-      "description": "Gratuit, fără obligații. Să vorbim despre proiectul tău."
+      "title": "Apel Descoperire (Săptămâna 1)",
+      "description": "Tu: Îmi spui obiectivele, provocările actuale și viziunea. Eu: Pun întrebări, iau notițe, înțeleg ce înseamnă succes pentru tine."
     },
     "step2": {
-      "title": "Spune-mi",
-      "description": "Nevoile, obiectivele și viziunea ta pentru afacere."
+      "title": "Strategie & Propunere (Săptămâna 1)",
+      "description": "Tu: Oferi materiale existente (logo, conținut, exemple). Eu: Creez propunere detaliată cu timeline, prețuri și ce vom construi."
     },
     "step3": {
-      "title": "Creez un Plan",
-      "description": "Plan de acțiune detaliat cu termene și costuri."
+      "title": "Fază Design (Săptămâna 2-3)",
+      "description": "Tu: Revizuiești design-uri, dai feedback, aprobi direcția. Eu: Creez mockup-uri, rafinează bazat pe input-ul tău, obțin confirmare înainte de cod."
     },
     "step4": {
-      "title": "Tu Decizi",
-      "description": "Evaluează propunerea, fără presiune sau angajament."
+      "title": "Dezvoltare (Săptămâna 3-5)",
+      "description": "Tu: Oferi conținut final (text, imagini). Eu: Construiesc site-ul, trimit actualizări progres, gestionez toată munca tehnică."
     },
     "step5": {
-      "title": "Construim Împreună",
-      "description": "Parteneriat de la A la Z pentru succesul tău."
+      "title": "Testare & Lansare (Săptămâna 5-6)",
+      "description": "Tu: Testezi pe dispozitivele tale, confirmi că totul funcționează. Eu: Rezolv probleme, optimizez performanța, gestionez deployment-ul."
     },
-    "note": "Reține: niciun angajament până când nu ești 100% sigur"
+    "note": "Timeline tipic: 4-6 săptămâni de la start la lansare. Niciun angajament până nu aprobi propunerea."
   },
   "processLifecycle": {
     "title": "Cum Lucrăm Împreună",
-    "subtitle": "De la primul contact până la lansarea finală - o călătorie completă și transparentă",
+    "subtitle": "De la primul apel la lansare: 4-6 săptămâni, complet transparent",
     "tabs": {
       "process": "Începerea Colaborării",
       "lifecycle": "Fazele Dezvoltării"
@@ -214,20 +217,20 @@
       "description": "Crearea unei foi de parcurs detaliate cu repere și livrabile."
     },
     "phase3": {
-      "title": "Design",
-      "description": "Proiectarea identității vizuale și experienței utilizatorului."
+      "title": "Design (Săptămâna 2-3)",
+      "description": "Tu revizuiești mockup-urile și aprobi direcția. Eu rafinează bazat pe feedback-ul tău."
     },
     "phase4": {
       "title": "Creare Conținut",
       "description": "Dezvoltarea de texte și conținut vizual convingător."
     },
     "phase5": {
-      "title": "Codificare",
-      "description": "Construirea site-ului cu cod curat, scalabil și modern."
+      "title": "Codificare (Săptămâna 3-5)",
+      "description": "Eu construiesc în timp ce tu oferi conținutul final. Actualizări regulate de progres."
     },
     "phase6": {
-      "title": "Testare",
-      "description": "Control de calitate riguros pe toate dispozitivele și browserele."
+      "title": "Testare (Săptămâna 5-6)",
+      "description": "Tu testezi pe dispozitivele tale. Eu rezolv problemele și optimizez performanța."
     },
     "phase7": {
       "title": "Lansare",
@@ -260,6 +263,17 @@
         "title": "Pachete de Suport Lunar",
         "subtitle": "Întreținere continuă, actualizări și suport prioritar"
       }
+    },
+    "servicesOverview": {
+      "title": "Servicii și Expertiză",
+      "subtitle": "De la design la implementare, suport continuu la creștere",
+      "webDesign": "Web Design",
+      "webDesignDesc": "Design-uri moderne, responsive, care arată grozav pe orice dispozitiv și convertesc vizitatorii în clienți.",
+      "webDevelopment": "Dezvoltare Web",
+      "webDevelopmentDesc": "Site-uri web rapide, scalabile, construite cu tehnologie modernă. Fără umflături, doar cod curat care funcționează.",
+      "maintenance": "Întreținere și Suport",
+      "maintenanceDesc": "Actualizări continue, monitorizare securitate și suport tehnic. Site-ul tău rămâne actual și sigur.",
+      "viewFullRates": "Vezi Servicii și Tarife Complete"
     },
     "services": {
       "small": {
@@ -349,8 +363,8 @@
     "moreComingSoon": "Mai multe articole în curând..."
   },
   "contact": {
-    "title": "Să vorbim despre proiectul tău",
-    "subtitle": "Începe călătoria ta digitală",
+    "title": "Gata să Începi?",
+    "subtitle": "Accept doar 2-3 proiecte pe lună. Rezervă-ți locul înainte ca calendarul să se umple.",
     "successMessage": "Mulțumesc! Te voi contacta în curând.",
     "errorMessage": "Nu s-a putut trimite mesajul. Te rog contactează-mă direct prin email sau telefon.",
     "form": {

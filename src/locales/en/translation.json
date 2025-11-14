@@ -20,71 +20,71 @@
     "ctaEmail": "Or you can write"
   },
   "problem": {
-    "title": "If you landed here, you already know that...",
-    "point1": "Owning a business isn't enough anymore",
-    "point2": "You need to be visible where your customers are: online",
-    "point3": "A website isn't just 'nice to have'",
-    "point4": "It's your 24/7 employee",
-    "description": "Works non-stop, never complains, never needs a break, and represents you everywhere. Your digital presence works while you sleep.",
-    "cta": "See how it works"
+    "title": "Your competitors are eating your lunch",
+    "point1": "Your phone isn't ringing because customers can't find you online",
+    "point2": "You're losing €1,000s monthly to competitors with better websites",
+    "point3": "You're stuck doing manual work that could be automated",
+    "point4": "Your current website embarrasses you instead of impressing clients",
+    "description": "I build solutions that fix these exact problems. Not cookie-cutter templates. Real systems designed to get you found, get you bookings, and save you time. My focus is making your business work better, not just looking prettier.",
+    "cta": "Let's fix this"
   },
   "difference": {
-    "title": "I don't just build pretty websites",
-    "subtitle": "The aesthetics are implied. I focus on solutions.",
+    "title": "I focus on what actually matters",
+    "subtitle": "Results over fluff. Honesty over hype.",
     "pillar1": {
-      "title": "Solutions First",
-      "description": "It's not about looks. It's about solving real business problems and making you relevant to customers."
+      "title": "Built to Convert, Not Just to Exist",
+      "description": "Your website should bring in customers, not just sit there looking nice. I design every element with one goal: turning visitors into paying clients. Clear calls-to-action, fast loading, mobile-first. It's all about results."
     },
     "pillar2": {
-      "title": "SEO & Discoverability",
-      "description": "Google knows what you do. AI understands your business. Customers can find you. I make you visible where it matters.",
-      "explainer": "SEO = Search Engine Optimization. It means making your website easy for Google to find and show to people searching for what you offer."
+      "title": "Actually Findable on Google",
+      "description": "What's the point of a great website if nobody sees it? I build with SEO baked in from day one. When your customers search for what you offer, you show up. Simple as that.",
+      "explainer": "Translation: More visibility = more inquiries. Without burning cash on ads."
     },
     "pillar3": {
-      "title": "Long-term Partnership",
-      "description": "I don't build and disappear. We grow together. Ongoing support until you decide otherwise."
+      "title": "I Speak Human, Not Jargon",
+      "description": "No tech gibberish. No disappearing after launch. I explain everything clearly, answer your questions, and stick around to help your business grow. You're not just hiring a developer—you're getting someone who actually cares about your success."
     }
   },
   "technology": {
-    "title": "Your website is an APP, not just HTML",
-    "subtitle": "Here's why this makes all the difference",
-    "benefit1": "Start with a landing page. Add an online shop when ready. Expand with a blog next month.",
-    "benefit1Explainer": "Landing page = A single web page designed to get visitors to take one specific action (like contacting you or buying).",
-    "benefit2": "Every piece integrates seamlessly. No rebuilds. No complicated migrations. Just smooth growth.",
-    "benefit3": "Authentication system? Customer dashboard? Custom features? Add what you need, when you need it.",
-    "benefit3Explainer": "Authentication = A secure login system that lets users create accounts and access personalized content safely.",
-    "callout": "Don't believe me? Ask Google or your AI: 'If I build a website with React+Vite and Tailwind CSS, can I scale it without rebuilding?' See the results.",
-    "calloutExplainer": "React+Vite and Tailwind CSS are modern web technologies that make websites fast, easy to update, and able to grow without starting over.",
-    "visualLabel": "Modular architecture"
+    "title": "Built for speed. Built to last.",
+    "subtitle": "Modern websites that load fast and stay fast as you grow.",
+    "benefit1": "Lightning-fast loading = more customers",
+    "benefit1Explainer": "Every second counts. Faster sites convert better—that's not opinion, it's data.",
+    "benefit2": "Easy to update without breaking things",
+    "benefit3": "Grows with your business without rebuilding",
+    "benefit3Explainer": "Start with what you need now. Add features later without starting from scratch.",
+    "callout": "I build with tools that prioritize performance and reliability.",
+    "calloutExplainer": "The result? Faster load times that boost your SEO, smooth interactions that keep visitors engaged, and a solid foundation that won't buckle as you grow.",
+    "visualLabel": "Building Blocks"
   },
   "whyNotWordPress": {
-    "title": "Why Not WordPress or Wix?",
-    "quote": "I don't build websites that need constant babysitting. I build solutions that just work.",
-    "subtitle": "Here's the honest truth about why I chose modern web development over the 'easy' platforms.",
+    "title": "WordPress vs. Custom Development",
+    "quote": "WordPress is great for many things. But for performance-critical business sites? There's a better way.",
+    "subtitle": "A fair comparison to help you choose what's right for your business.",
     "wpLabel": "WordPress/Wix",
-    "myStackLabel": "My Tech Stack",
+    "myStackLabel": "Custom Approach",
     "performance": {
       "title": "Performance",
-      "wordpress": "Heavy plugins, bloated code, 3-5 second load times. Every plugin slows you down.",
-      "myStack": "Lightning fast. Sub-second load times. Built lean, runs smooth. No bloat."
+      "wordpress": "Flexible but heavy. Plugins add weight. Load times typically 2-4 seconds.",
+      "myStack": "Built lean from the ground up. Sub-second load times. Only what you need, nothing more."
     },
     "security": {
       "title": "Security",
-      "wordpress": "Constant security patches. Outdated plugins are hacker magnets. Weekly maintenance required.",
-      "myStack": "No database to hack. No admin panel to breach. Static deployment = minimal attack surface."
+      "wordpress": "Popular target for attacks. Regular updates required. Plugin vulnerabilities are common.",
+      "myStack": "No database means no SQL injection. No admin panel to breach. Smaller attack surface."
     },
     "maintenance": {
       "title": "Maintenance",
-      "wordpress": "Weekly updates, plugin conflicts, theme compatibility issues. Something always breaks.",
-      "myStack": "Deploy once, runs forever. No plugin updates, no theme conflicts, no surprise breakages."
+      "wordpress": "Plugin updates needed. Compatibility checks required. Theme updates can break things.",
+      "myStack": "Deploy and forget. No plugin conflicts to manage. Updates are intentional, not forced."
     },
     "scalability": {
       "title": "Scalability",
-      "wordpress": "Server costs grow with traffic. More visitors = more server strain = more money.",
-      "myStack": "Handles 100,000 visitors for the same cost as 100. CDN-powered global distribution."
+      "wordpress": "Server costs scale with traffic. More visitors = higher hosting bills.",
+      "myStack": "Traffic spikes don't affect costs. Built to handle growth from day one."
     },
 
-    "bottomNote": "WordPress and Wix are great for blogs and simple sites. But if you want a scalable, secure, lightning-fast business tool that won't need constant maintenance? Modern web development wins every time."
+    "bottomNote": "WordPress is excellent for content-heavy sites, blogs, and when you need a huge plugin ecosystem.\n\nCustom development shines when you need maximum performance, minimal maintenance, and a site that grows with your business without increasing complexity.\n\nBoth have their place. The question is: what does your business actually need?"
   },
   "portfolio": {
     "title": "Recent Projects",
@@ -114,86 +114,89 @@
     }
   },
   "pricing": {
-    "title": "How much does it cost?",
-    "subtitle": "The honest answer: it depends on complexity",
-    "rangeLabel": "Typical price range",
-    "rangeNote": "Pricing varies based on your specific needs and project complexity",
+    "title": "Investment That Makes Sense",
+    "subtitle": "Clear pricing based on what you actually need",
+    "rangeLabel": "Investment range",
+    "rangeNote": "Final pricing depends on your specific requirements—no hidden fees",
     "examples": {
       "simple": {
-        "title": "Simple Project",
+        "title": "Starter Site",
         "price": "€150 - €500",
         "features": [
-          "Single-page landing page",
-          "Responsive design",
-          "Basic contact form",
-          "Basic SEO optimization"
+          "Single-page landing site",
+          "Mobile-friendly design",
+          "Contact form",
+          "SEO basics",
+          "NOT included: Online shop, custom features, content updates"
         ],
         "explainers": {
-          "responsive": "Works perfectly on phones, tablets, and computers",
-          "seo": "Optimized so Google can find and rank your site"
+          "responsive": "Best for: Local businesses, freelancers, or anyone testing a business idea who needs a simple online presence",
+          "seo": "What you get: A fast, professional site that looks great on any device and can be found on Google"
         }
       },
       "medium": {
-        "title": "Medium Project",
+        "title": "Business Site",
         "price": "€500 - €1200",
         "features": [
           "Multi-page website",
-          "Custom functionality",
-          "Third-party integrations",
-          "Advanced SEO and analytics"
+          "Custom features",
+          "Third-party tool connections",
+          "Advanced SEO & analytics",
+          "NOT included: User accounts, complex databases, ongoing content management"
         ],
         "explainers": {
-          "integrations": "Connect with tools like payment systems, booking calendars, or email services",
-          "analytics": "Track visitor behavior to understand what works and what doesn't"
+          "integrations": "Best for: Growing businesses that need booking systems, payment processing, or email automation",
+          "analytics": "What you get: A professional platform that works with your existing tools and tracks what matters"
         }
       },
       "complex": {
-        "title": "Complex Project",
+        "title": "Full Platform",
         "price": "€1200 - €2000+",
         "features": [
-          "Full platform",
-          "Content management system",
-          "Database and authentication",
-          "Advanced custom features"
+          "Complete web application",
+          "Admin panel for updates",
+          "User accounts & security",
+          "Custom database",
+          "NOT included: Mobile apps, ongoing support (available separately)"
         ],
         "explainers": {
-          "cms": "Easy-to-use admin panel to update content yourself without coding",
-          "database": "Secure storage for user data, products, orders, or any information your business needs",
-          "authentication": "Safe login system for user accounts with password protection"
+          "cms": "Best for: Businesses that need memberships, e-commerce, or data-heavy applications",
+          "database": "What you get: A scalable solution that can handle real business complexity without breaking",
+          "authentication": "Think: Customer portals, online courses, booking platforms, or anything requiring user logins"
         }
       }
     },
-    "ctaText": "Every project is unique. Let's discuss your needs and create the perfect solution for you.",
-    "cta": "Request Free Consultation"
+    "ctaText": "Not sure which fits? Let's talk about your goals, not just features. I'll help you figure out what you actually need.",
+    "cta": "Get Honest Advice"
   },
   "process": {
     "title": "How do we work together?",
     "subtitle": "Simple, transparent, no commitments",
     "step1": {
-      "title": "Contact Me",
-      "description": "Free, no strings attached. Let's talk about your project."
+      "title": "Discovery Call (Week 1)",
+      "description": "You: Share your business goals, current challenges, and vision. Me: Ask questions, take notes, understand what success looks like for you."
     },
     "step2": {
-      "title": "Tell Me",
-      "description": "Your needs, goals, and vision for your business."
+      "title": "Strategy & Proposal (Week 1)",
+      "description": "You: Provide any existing materials (logos, content, competitor examples). Me: Create a detailed proposal with timeline, pricing, and what we'll build together."
     },
     "step3": {
-      "title": "I Create a Plan",
-      "description": "Detailed action plan with timelines and costs."
+      "title": "Design Phase (Week 2-3)",
+      "description": "You: Review designs, give feedback, approve direction. Me: Create mockups, refine based on your input, get sign-off before coding."
     },
     "step4": {
-      "title": "You Decide",
-      "description": "Review the proposal, no pressure or commitment."
+      "title": "Development (Week 3-5)",
+      "description": "You: Provide final content (text, images). Me: Build the site, send progress updates, handle all the technical work."
     },
     "step5": {
-      "title": "We Build Together",
-      "description": "Partnership from A to Z for your success."
+      "title": "Testing & Launch (Week 5-6)",
+      "description": "You: Test on your devices, confirm everything works as expected. Me: Fix any issues, optimize performance, handle deployment."
     },
-    "note": "Remember: no commitment until you're 100% sure"
+    "note": "Typical timeline: 4-6 weeks from start to launch. No commitment until you approve the proposal."
   },
   "processLifecycle": {
     "title": "How We Work Together",
-    "subtitle": "From first contact to final launch - a complete, transparent journey",
+    "subtitle": "From first call to launch: 4-6 weeks, fully transparent",
     "tabs": {
       "process": "Getting Started",
       "lifecycle": "Development Phases"
@@ -215,20 +218,20 @@
       "description": "Creating a detailed roadmap with milestones and deliverables."
     },
     "phase3": {
-      "title": "Design",
-      "description": "Crafting the visual identity and user experience of your website."
+      "title": "Design (Week 2-3)",
+      "description": "You review mockups and approve direction. I refine based on your feedback."
     },
     "phase4": {
       "title": "Content Creation",
       "description": "Developing compelling copy and visual content that converts."
     },
     "phase5": {
-      "title": "Coding",
-      "description": "Building your website with clean, scalable, modern code."
+      "title": "Coding (Week 3-5)",
+      "description": "I build while you provide final content. Regular progress updates."
     },
     "phase6": {
-      "title": "Testing",
-      "description": "Rigorous quality assurance across devices and browsers."
+      "title": "Testing (Week 5-6)",
+      "description": "You test on your devices. I fix issues and optimize performance."
     },
     "phase7": {
       "title": "Launch",
@@ -261,6 +264,17 @@
         "title": "Monthly Support Packages",
         "subtitle": "Ongoing maintenance, updates, and priority support"
       }
+    },
+    "servicesOverview": {
+      "title": "Services & Expertise",
+      "subtitle": "From design to deployment, ongoing support to growth",
+      "webDesign": "Web Design",
+      "webDesignDesc": "Modern, responsive designs that look great on every device and convert visitors into customers.",
+      "webDevelopment": "Web Development",
+      "webDevelopmentDesc": "Fast, scalable websites built with modern technology. No bloat, just clean code that works.",
+      "maintenance": "Maintenance & Support",
+      "maintenanceDesc": "Ongoing updates, security monitoring, and technical support. Your website stays current and secure.",
+      "viewFullRates": "View Full Services & Rates"
     },
     "services": {
       "small": {
@@ -350,8 +364,8 @@
     "moreComingSoon": "More articles coming soon..."
   },
   "contact": {
-    "title": "Let's talk about your project",
-    "subtitle": "Start your digital journey",
+    "title": "Ready to Start?",
+    "subtitle": "I only take on 2-3 projects per month. Book your spot before my calendar fills up.",
     "successMessage": "Thanks! I'll get back to you soon.",
     "errorMessage": "Failed to send message. Please try contacting me directly via email or phone.",
     "form": {
