@@ -11,21 +11,21 @@
   "hero": {
     "greeting": "Salut!",
     "name": "Sunt Alex",
-    "title": "Sunt",
+    "title": "Eu sunt",
     "word1": "Dezvoltatorul Tău",
-    "word2": "Specialistul Tău",
-    "word3": "Partenerul Tău",
+    "word2": "Partenerul Tău",
+    "word3": "Soluția Ta",
     "description": "Construiesc soluții web care cresc odată cu afacerea ta. Nu doar site-uri web, ci instrumente scalabile care lucrează 24/7 pentru a ajuta afacerea ta să prospere.",
     "ctaWhatsApp": "Să vorbim pe WhatsApp",
     "ctaEmail": "Sau poți scrie aici"
   },
   "problem": {
-    "title": "Concurența tăi îți fură clienții",
+    "title": "Concurenții tăi îți fură clienții",
     "point1": "Telefonul nu sună pentru că clienții nu te găsesc online",
-    "point2": "Pierzi mii de euro lunar către concurenți cu site-uri mai bune",
+    "point2": "Pierzi mii de euro lunar în favoarea concurenților cu site-uri mai bune",
     "point3": "Ești blocat făcând muncă manuală care ar putea fi automatizată",
-    "point4": "Site-ul tău actual te jenează în loc să impresioneze clienții",
-    "description": "Construiesc soluții care rezolvă exact aceste probleme. Nu șabloane prefabricate. Sisteme reale concepute să te facă găsit, să-ți aducă rezervări și să-ți economisească timp. Focusul meu este să fac afacerea ta să funcționeze mai bine, nu doar să arate mai frumos.",
+    "point4": "Site-ul tău actual te pune într-o postură jenantă în loc să-ți impresioneze clienții",
+    "description": "Construiesc soluții care rezolvă exact aceste probleme. Fără șabloane prefabricate. Sisteme reale concepute să te facă vizibil online, să-ți aducă clienți și să-ți economisească timp. Mă concentrez să fac afacerea ta să funcționeze mai bine, nu doar să arate mai frumos.",
     "cta": "Hai să reparăm asta"
   },
   "difference": {
@@ -41,15 +41,15 @@
       "explainer": "Traducere: Mai multă vizibilitate = mai multe cereri. Fără să arzi bani pe reclame."
     },
     "pillar3": {
-      "title": "Vorbesc Omenește, Nu Jargon",
-      "description": "Fără termeni tehnici complicați. Fără dispariții după lansare. Explic totul clar, răspund la întrebări și rămân să ajut afacerea ta să crească. Nu angajezi doar un dezvoltator—ai pe cineva căruia îi pasă cu adevărat de succesul tău."
+      "title": "Comunic Clar, Fără Jargon Tehnic",
+      "description": "Fără termeni tehnici complicați. Nu dispar după lansare. Explic totul clar, răspund la întrebările tale și rămân alături pentru a te ajuta să crești. Nu angajezi doar un dezvoltator—obții un partener căruia îi pasă cu adevărat de succesul tău."
     }
   },
   "technology": {
     "title": "Construit pentru viteză. Construit să dureze.",
     "subtitle": "Site-uri web moderne care se încarcă rapid și rămân rapide pe măsură ce crești.",
     "benefit1": "Încărcare ultra-rapidă = mai mulți clienți",
-    "benefit1Explainer": "Fiecare secundă contează. Site-urile mai rapide convertesc mai bine—nu e opinie, sunt date.",
+    "benefit1Explainer": "Fiecare secundă contează. Site-urile mai rapide au conversii mai bune—nu este o opinie, este demonstrat cu date.",
     "benefit2": "Ușor de actualizat fără să strici nimic",
     "benefit3": "Crește cu afacerea ta fără să reconstruiești",
     "benefit3Explainer": "Începe cu ce ai nevoie acum. Adaugă funcționalități mai târziu fără să o iei de la început.",
@@ -70,20 +70,20 @@
     },
     "security": {
       "title": "Securitate",
-      "wordpress": "Țintă populară pentru atacuri. Update-uri regulate necesare. Vulnerabilitățile plugin-urilor sunt comune.",
-      "myStack": "Fără bază de date înseamnă fără SQL injection. Fără panou admin de spart. Suprafață de atac redusă."
+      "wordpress": "Țintă populară pentru atacuri. Actualizări regulate obligatorii. Vulnerabilitățile extensiilor sunt frecvente.",
+      "myStack": "Fără bază de date înseamnă fără riscul de SQL injection. Fără panou admin care poate fi compromis. Suprafață de atac minimă."
     },
     "maintenance": {
       "title": "Întreținere",
-      "wordpress": "Update-uri plugin necesare. Verificări de compatibilitate necesare. Update-urile de temă pot strica lucruri.",
-      "myStack": "Deploy și uită. Fără conflicte plugin de gestionat. Update-urile sunt intenționate, nu forțate."
+      "wordpress": "Actualizări de plugin-uri necesare constant. Verificări de compatibilitate obligatorii. Actualizările de temă pot genera probleme.",
+      "myStack": "O dată lansat, nu mai necesită îngrijire constantă. Fără conflicte de plugin-uri. Actualizările sunt intenționate, nu forțate."
     },
     "scalability": {
       "title": "Scalabilitate",
       "wordpress": "Costurile serverului scalează cu traficul. Mai mulți vizitatori = facturi hosting mai mari.",
       "myStack": "Vârfurile de trafic nu afectează costurile. Construit să gestioneze creșterea din prima zi."
     },
-    "bottomNote": "WordPress este excelent pentru site-uri bogate în conținut, bloguri, și când ai nevoie de un ecosistem imens de plugin-uri.\n\nDezvoltarea personalizată strălucește când ai nevoie de performanță maximă, întreținere minimă, și un site care crește cu afacerea ta fără să crească complexitatea.\n\nAmbele au locul lor. Întrebarea este: de ce are nevoie cu adevărat afacerea ta?"
+    "bottomNote": "WordPress este excelent pentru site-uri cu mult conținut, bloguri și când ai nevoie de un ecosistem vast de extensii.\n\nDezvoltarea personalizată este alegerea potrivită când ai nevoie de performanță maximă, întreținere minimă și un site care crește odată cu afacerea ta fără să devină mai complicat.\n\nAmbele au locul lor. Întrebarea este: de ce are nevoie cu adevărat afacerea ta?"
   },
   "portfolio": {
     "title": "Proiecte Recente",
@@ -209,8 +209,8 @@
       "sub": "7 Faze"
     },
     "phase1": {
-      "title": "Colectare Informații",
-      "description": "Înțelegerea afacerii tale, publicul țintă și obiectivele proiectului."
+      "title": "Descoperire",
+      "description": "Înțeleg afacerea ta, publicul țintă și obiectivele tale."
     },
     "phase2": {
       "title": "Planificare",
@@ -225,8 +225,8 @@
       "description": "Dezvoltarea de texte și conținut vizual convingător."
     },
     "phase5": {
-      "title": "Codificare (Săptămâna 3-5)",
-      "description": "Eu construiesc în timp ce tu oferi conținutul final. Actualizări regulate de progres."
+      "title": "Dezvoltare (Săptămâna 3-5)",
+      "description": "Construiesc site-ul în timp ce tu pregătești conținutul final. Primesti actualizări regulate despre progres."
     },
     "phase6": {
       "title": "Testare (Săptămâna 5-6)",
@@ -334,21 +334,21 @@
         "name": "Suport De Bază",
         "price": "€80/lună",
         "features": [
-          "2 ore de actualizări incluse",
-          "Actualizări de securitate și remedieri bug-uri",
+          "2 ore de lucru incluse lunar",
+          "Actualizări de securitate și remedierea erorilor",
           "Verificare performanță lunară",
-          "Suport email (răspuns 24-48h)"
+          "Suport prin email (răspuns în 24-48h)"
         ]
       },
       "business": {
         "name": "Suport Business",
         "price": "€150/lună",
         "features": [
-          "5 ore de actualizări incluse",
-          "Toate funcțiile Suport De Bază",
-          "Actualizări conținut și design",
-          "Suport prioritar (răspuns 12-24h)",
-          "Raport analytics lunar"
+          "5 ore de lucru incluse lunar",
+          "Toate avantajele pachetului De Bază",
+          "Actualizări de conținut și design",
+          "Suport prioritar (răspuns în 12-24h)",
+          "Raport de analiză lunar"
         ]
       }
     },
@@ -364,7 +364,7 @@
   },
   "contact": {
     "title": "Gata să Începi?",
-    "subtitle": "Accept doar 2-3 proiecte pe lună. Rezervă-ți locul înainte ca calendarul să se umple.",
+    "subtitle": "Accept doar 2-3 proiecte pe lună. Rezervă-ți locul înainte să se umple calendarul.",
     "successMessage": "Mulțumesc! Te voi contacta în curând.",
     "errorMessage": "Nu s-a putut trimite mesajul. Te rog contactează-mă direct prin email sau telefon.",
     "form": {
@@ -402,7 +402,7 @@
   "footer": {
     "company": {
       "title": "alecsdesign.xyz",
-      "description": "Construiesc soluții web care cresc odată cu afacerea ta. Parteneriate digitale pe termen lung pentru antreprenori serioși.",
+      "description": "Construiesc soluții web care cresc alături de afacerea ta. Parteneriate digitale pe termen lung pentru antreprenori serioși.",
       "location": "Italia"
     },
     "quickLinks": {

@@ -13,14 +13,14 @@
     "name": "Sono Alex",
     "title": "Il tuo",
     "word1": "Sviluppatore",
-    "word2": "Risolutore",
+    "word2": "Problem Solver",
     "word3": "Partner di Crescita",
     "description": "Costruisco soluzioni web che crescono insieme alla tua attività. Non solo siti web, ma strumenti scalabili che lavorano 24/7 per far crescere il tuo business.",
     "ctaWhatsApp": "Parliamo su WhatsApp",
     "ctaEmail": "Oppure scrivi qui"
   },
   "problem": {
-    "title": "I tuoi concorrenti ti stanno rubando clienti",
+    "title": "I tuoi concorrenti ti stanno mangiando i clienti",
     "point1": "Il telefono non squilla perché i clienti non ti trovano online",
     "point2": "Stai perdendo migliaia di euro al mese a favore di concorrenti con siti migliori",
     "point3": "Sei bloccato a fare lavoro manuale che potrebbe essere automatizzato",
@@ -41,15 +41,15 @@
       "explainer": "Traduzione: Più visibilità = più richieste. Senza bruciare soldi in pubblicità."
     },
     "pillar3": {
-      "title": "Parlo Chiaro, Non Tecnicismi",
-      "description": "Niente gergo tecnico. Niente sparizioni dopo il lancio. Spiego tutto chiaramente, rispondo alle tue domande e resto per aiutare la tua attività a crescere. Non stai solo assumendo uno sviluppatore—hai qualcuno che si preoccupa davvero del tuo successo."
+      "title": "Comunico in Modo Chiaro, Senza Tecnicismi",
+      "description": "Niente gergo tecnico incomprensibile. Non sparisco dopo il lancio. Spiego tutto chiaramente, rispondo alle tue domande e resto al tuo fianco per aiutare la tua attività a crescere. Non stai solo assumendo uno sviluppatore—hai un partner che tiene davvero al tuo successo."
     }
   },
   "technology": {
     "title": "Costruito per velocità. Costruito per durare.",
     "subtitle": "Siti web moderni che caricano velocemente e restano veloci mentre cresci.",
     "benefit1": "Caricamento ultra-veloce = più clienti",
-    "benefit1Explainer": "Ogni secondo conta. I siti più veloci convertono meglio—non è un'opinione, sono dati.",
+    "benefit1Explainer": "Ogni secondo conta. I siti più veloci convertono meglio—non è un'opinione, lo dimostrano i dati.",
     "benefit2": "Facile da aggiornare senza rompere nulla",
     "benefit3": "Cresce con la tua attività senza dover ricostruire",
     "benefit3Explainer": "Inizia con quello che ti serve ora. Aggiungi funzionalità dopo senza ripartire da zero.",
@@ -70,13 +70,13 @@
     },
     "security": {
       "title": "Sicurezza",
-      "wordpress": "Obiettivo popolare per attacchi. Aggiornamenti regolari necessari. Vulnerabilità dei plugin sono comuni.",
-      "myStack": "Nessun database significa niente SQL injection. Nessun pannello admin da violare. Superficie d'attacco ridotta."
+      "wordpress": "Bersaglio frequente di attacchi. Richiede aggiornamenti costanti. Le vulnerabilità dei plugin sono comuni.",
+      "myStack": "Senza database non c'è rischio di SQL injection. Nessun pannello admin da compromettere. Superficie d'attacco minima."
     },
     "maintenance": {
       "title": "Manutenzione",
-      "wordpress": "Aggiornamenti plugin necessari. Controlli di compatibilità richiesti. Gli aggiornamenti tema possono rompere cose.",
-      "myStack": "Deploy e dimentica. Nessun conflitto plugin da gestire. Gli aggiornamenti sono intenzionali, non forzati."
+      "wordpress": "Aggiornamenti plugin continui. Controlli di compatibilità necessari. Gli aggiornamenti del tema possono causare problemi.",
+      "myStack": "Una volta online, richiede pochissima manutenzione. Nessun conflitto tra plugin. Gli aggiornamenti sono pianificati, non forzati."
     },
     "scalability": {
       "title": "Scalabilità",
@@ -334,21 +334,21 @@
         "name": "Supporto Base",
         "price": "€80/mese",
         "features": [
-          "2 ore di aggiornamenti incluse",
-          "Aggiornamenti di sicurezza e correzione bug",
+          "2 ore di lavoro incluse al mese",
+          "Aggiornamenti di sicurezza e correzione errori",
           "Controllo prestazioni mensile",
-          "Supporto email (risposta 24-48h)"
+          "Supporto via email (risposta entro 24-48h)"
         ]
       },
       "business": {
         "name": "Supporto Business",
         "price": "€150/mese",
         "features": [
-          "5 ore di aggiornamenti incluse",
-          "Tutte le funzionalità Supporto Base",
-          "Aggiornamenti contenuti e design",
-          "Supporto prioritario (risposta 12-24h)",
-          "Report analytics mensile"
+          "5 ore di lavoro incluse al mese",
+          "Tutti i vantaggi del Supporto Base",
+          "Aggiornamenti di contenuti e design",
+          "Supporto prioritario (risposta entro 12-24h)",
+          "Report di analisi mensile"
         ]
       }
     },
@@ -364,7 +364,7 @@
   },
   "contact": {
     "title": "Pronto per Iniziare?",
-    "subtitle": "Accetto solo 2-3 progetti al mese. Prenota il tuo posto prima che il calendario si riempia.",
+    "subtitle": "Accetto solo 2-3 progetti al mese. Prenota il tuo spazio prima che il calendario si riempia.",
     "successMessage": "Grazie! Ti contatterò presto.",
     "errorMessage": "Impossibile inviare il messaggio. Per favore contattami direttamente via email o telefono.",
     "form": {
