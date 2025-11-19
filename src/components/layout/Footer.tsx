@@ -23,6 +23,12 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
   const [showContact, setShowContact] = useState(false);
 
+  // Helper to get proper route based on language (English uses root, others use /lang prefix)
+  const getLocalizedRoute = (path: string) => {
+    const lang = i18n.language;
+    return lang === "en" ? path : `/${lang}${path}`;
+  };
+
   // Obfuscated contact info to prevent crawler harvesting
   const getEmail = () => {
     const parts = ["mka.alecs", "gmail", "com"];
@@ -134,7 +140,7 @@ const Footer = () => {
                 <button
                   onClick={() => {
                     trackButtonClick("Services & Rates", "Footer Quick Links");
-                    navigate(`/${i18n.language}/services-rates`);
+                    navigate(getLocalizedRoute("/services-rates"));
                   }}
                 >
                   {t("nav.servicesRates")}
@@ -182,23 +188,25 @@ const Footer = () => {
             <ul className="footer-legal-links">
               <li>
                 <button
-                  onClick={() => navigate(`/${i18n.language}/privacy-policy`)}
+                  onClick={() => navigate(getLocalizedRoute("/privacy-policy"))}
                 >
                   {t("footer.legal.privacy")}
                 </button>
               </li>
               <li>
                 <button
-                  onClick={() => navigate(`/${i18n.language}/terms-conditions`)}
+                  onClick={() =>
+                    navigate(getLocalizedRoute("/terms-conditions"))
+                  }
                 >
                   {t("footer.legal.terms")}
                 </button>
               </li>
               <li>
                 <button
-                  onClick={() => navigate(`/${i18n.language}/cookie-policy`)}
+                  onClick={() => navigate(getLocalizedRoute("/cookie-policy"))}
                 >
-                  {t("footer.legal.cookies")}
+                  {t("footer.legal.cookie")}
                 </button>
               </li>
             </ul>

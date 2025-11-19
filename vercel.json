@@ -1,8 +1,15 @@
 {
   "rewrites": [
     {
-      "source": "/:path((?!sitemap\\.xml|robots\\.txt|api).*)",
+      "source": "/:path((?!sitemap.*\\.xml|robots\\.txt|api).*)",
       "destination": "/index.html"
+    }
+  ],
+  "redirects": [
+    {
+      "source": "/en",
+      "destination": "/",
+      "permanent": true
     }
   ],
   "headers": [
@@ -16,6 +23,27 @@
         {
           "key": "X-Content-Type-Options",
           "value": "nosniff"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=3600, must-revalidate"
+        }
+      ]
+    },
+    {
+      "source": "/sitemap-2025.xml",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "application/xml; charset=utf-8"
+        },
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=3600, must-revalidate"
         }
       ]
     },

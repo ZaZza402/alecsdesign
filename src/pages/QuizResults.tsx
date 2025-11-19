@@ -31,10 +31,16 @@ const QuizResults = () => {
   const navigate = useNavigate();
   const results = location.state?.results as QuizResults;
 
+  // Helper to get proper route based on language
+  const getLocalizedRoute = (path: string) => {
+    const lang = i18n.language;
+    return lang === "en" ? path : `/${lang}${path}`;
+  };
+
   useEffect(() => {
     // Redirect to quiz if no results
     if (!results) {
-      navigate(`/${i18n.language}/quiz`);
+      navigate(getLocalizedRoute("/quiz"));
     } else {
       // Track results view
       trackEvent({
@@ -43,6 +49,7 @@ const QuizResults = () => {
         label: `${results.recommendedModel} - €${results.estimatedPrice.min}-${results.estimatedPrice.max}`,
       });
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [results, navigate, i18n.language]);
 
   if (!results) {
@@ -77,7 +84,7 @@ const QuizResults = () => {
       category: "Quiz",
       label: "From Results Page",
     });
-    navigate(`/${i18n.language}/quiz`);
+    navigate(getLocalizedRoute("/quiz"));
   };
 
   return (

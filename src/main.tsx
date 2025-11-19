@@ -63,7 +63,57 @@ createRoot(document.getElementById("root")!).render(
         <Route path="/it" element={<LanguageWrapper lang="it" />} />
         <Route path="/ro" element={<LanguageWrapper lang="ro" />} />
 
-        {/* Legal pages - English */}
+        {/* English pages - Root paths (no /en prefix) */}
+        <Route
+          path="/privacy-policy"
+          element={
+            <PageWrapper lang="en">
+              <PrivacyPolicy />
+            </PageWrapper>
+          }
+        />
+        <Route
+          path="/terms-conditions"
+          element={
+            <PageWrapper lang="en">
+              <TermsConditions />
+            </PageWrapper>
+          }
+        />
+        <Route
+          path="/cookie-policy"
+          element={
+            <PageWrapper lang="en">
+              <CookiePolicy />
+            </PageWrapper>
+          }
+        />
+        <Route
+          path="/services-rates"
+          element={
+            <PageWrapper lang="en">
+              <ServicesRates />
+            </PageWrapper>
+          }
+        />
+        <Route
+          path="/quiz"
+          element={
+            <PageWrapper lang="en">
+              <QuizPage />
+            </PageWrapper>
+          }
+        />
+        <Route
+          path="/quiz/results"
+          element={
+            <PageWrapper lang="en">
+              <QuizResults />
+            </PageWrapper>
+          }
+        />
+
+        {/* Legacy /en routes - Keep for backward compatibility */}
         <Route
           path="/en/privacy-policy"
           element={

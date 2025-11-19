@@ -38,6 +38,12 @@ const PricingSection = () => {
     threshold: 0.15,
   });
 
+  // Helper to get proper route based on language
+  const getLocalizedRoute = (path: string) => {
+    const lang = i18n.language;
+    return lang === "en" ? path : `/${lang}${path}`;
+  };
+
   // Track section view
   useEffect(() => {
     if (inView) {
@@ -273,7 +279,7 @@ const PricingSection = () => {
           <h3>{t("pricing.decisionQuiz.title")}</h3>
           <p>{t("pricing.decisionQuiz.subtitle")}</p>
           <Link
-            to={`/${i18n.language}/quiz`}
+            to={getLocalizedRoute("/quiz")}
             className="quiz-button"
             onClick={() => trackCTAClick("Take the Quiz", "Pricing Section")}
           >

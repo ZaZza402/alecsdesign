@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
-  <!-- Root Domain (serves English content) -->
+  <!-- Root Domain (English - Primary) -->
   <url>
     <loc>https://www.alecsdesign.xyz/</loc>
     <lastmod>2025-11-19</lastmod>
@@ -40,14 +40,14 @@
 
   <!-- Privacy Policy - English -->
   <url>
-    <loc>https://www.alecsdesign.xyz/en/privacy-policy</loc>
+    <loc>https://www.alecsdesign.xyz/privacy-policy</loc>
     <lastmod>2025-11-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.alecsdesign.xyz/en/privacy-policy" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.alecsdesign.xyz/privacy-policy" />
     <xhtml:link rel="alternate" hreflang="it" href="https://www.alecsdesign.xyz/it/privacy-policy" />
     <xhtml:link rel="alternate" hreflang="ro" href="https://www.alecsdesign.xyz/ro/privacy-policy" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.alecsdesign.xyz/en/privacy-policy" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.alecsdesign.xyz/privacy-policy" />
   </url>
 
   <!-- Privacy Policy - Italian -->
@@ -76,14 +76,14 @@
 
   <!-- Terms & Conditions - English -->
   <url>
-    <loc>https://www.alecsdesign.xyz/en/terms-conditions</loc>
+    <loc>https://www.alecsdesign.xyz/terms-conditions</loc>
     <lastmod>2025-11-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.alecsdesign.xyz/en/terms-conditions" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.alecsdesign.xyz/terms-conditions" />
     <xhtml:link rel="alternate" hreflang="it" href="https://www.alecsdesign.xyz/it/terms-conditions" />
     <xhtml:link rel="alternate" hreflang="ro" href="https://www.alecsdesign.xyz/ro/terms-conditions" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.alecsdesign.xyz/en/terms-conditions" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.alecsdesign.xyz/terms-conditions" />
   </url>
 
   <!-- Terms & Conditions - Italian -->
@@ -112,14 +112,14 @@
 
   <!-- Cookie Policy - English -->
   <url>
-    <loc>https://www.alecsdesign.xyz/en/cookie-policy</loc>
+    <loc>https://www.alecsdesign.xyz/cookie-policy</loc>
     <lastmod>2025-11-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.alecsdesign.xyz/en/cookie-policy" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.alecsdesign.xyz/cookie-policy" />
     <xhtml:link rel="alternate" hreflang="it" href="https://www.alecsdesign.xyz/it/cookie-policy" />
     <xhtml:link rel="alternate" hreflang="ro" href="https://www.alecsdesign.xyz/ro/cookie-policy" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.alecsdesign.xyz/en/cookie-policy" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.alecsdesign.xyz/cookie-policy" />
   </url>
 
   <!-- Cookie Policy - Italian -->
@@ -148,14 +148,14 @@
 
   <!-- Quiz Page - English -->
   <url>
-    <loc>https://www.alecsdesign.xyz/en/quiz</loc>
+    <loc>https://www.alecsdesign.xyz/quiz</loc>
     <lastmod>2025-11-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.alecsdesign.xyz/en/quiz" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.alecsdesign.xyz/quiz" />
     <xhtml:link rel="alternate" hreflang="it" href="https://www.alecsdesign.xyz/it/quiz" />
     <xhtml:link rel="alternate" hreflang="ro" href="https://www.alecsdesign.xyz/ro/quiz" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.alecsdesign.xyz/en/quiz" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.alecsdesign.xyz/quiz" />
   </url>
 
   <!-- Quiz Page - Italian -->
@@ -184,14 +184,14 @@
 
   <!-- Services & Rates - English -->
   <url>
-    <loc>https://www.alecsdesign.xyz/en/services-rates</loc>
+    <loc>https://www.alecsdesign.xyz/services-rates</loc>
     <lastmod>2025-11-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.alecsdesign.xyz/en/services-rates" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.alecsdesign.xyz/services-rates" />
     <xhtml:link rel="alternate" hreflang="it" href="https://www.alecsdesign.xyz/it/services-rates" />
     <xhtml:link rel="alternate" hreflang="ro" href="https://www.alecsdesign.xyz/ro/services-rates" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.alecsdesign.xyz/en/services-rates" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.alecsdesign.xyz/services-rates" />
   </url>
 
   <!-- Services & Rates - Italian -->
