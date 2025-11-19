@@ -35,6 +35,7 @@
   line-height: 1.6;
   max-width: 700px;
   margin: 0 auto;
+  text-align: center;
 }
 
 /* Section Structure */
@@ -200,8 +201,10 @@
   font-size: 1.125rem;
   color: #1e293b;
   line-height: 1.7;
-  margin: 0;
+  margin: 0 auto;
   font-weight: 500;
+  text-align: center;
+  max-width: 800px;
 }
 
 /* Mobile Adjustments */
