@@ -138,6 +138,56 @@
   margin-right: auto;
 }
 
+/* Model Toggle Tabs */
+.model-toggle {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin: 3rem 0 2rem;
+  flex-wrap: wrap;
+}
+
+.toggle-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1rem 2rem;
+  background: #ffffff;
+  border: 2px solid #e2e8f0;
+  border-radius: 12px;
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: #64748b;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.toggle-btn:hover {
+  border-color: #f35422;
+  color: #f35422;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(243, 84, 34, 0.15);
+}
+
+.toggle-btn.active {
+  background: linear-gradient(135deg, #f35422 0%, #000 100%);
+  border-color: #f35422;
+  color: #ffffff;
+  box-shadow: 0 4px 12px rgba(243, 84, 34, 0.3);
+}
+
+.toggle-btn.active:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px rgba(243, 84, 34, 0.4);
+}
+
+@media (max-width: 767px) {
+  .toggle-btn {
+    padding: 0.875rem 1.5rem;
+    font-size: 1rem;
+  }
+}
+
 /* Pricing Divider */
 .pricing-divider {
   position: relative;
@@ -747,6 +797,18 @@
   background: white;
   border-radius: 12px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  animation: fadeInUp 0.5s ease-out;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .model-title {
@@ -907,6 +969,7 @@
   border-radius: 12px;
   border: 2px solid #f35422;
   box-shadow: 0 4px 20px rgba(243, 84, 34, 0.1);
+  animation: fadeInUp 0.5s ease-out;
 }
 
 .subscribe-model-section .model-title {

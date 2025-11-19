@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { useInView } from "react-intersection-observer";
 import { Check, ShoppingCart, Calendar, Globe, Zap } from "lucide-react";
@@ -37,6 +37,9 @@ const PricingSection = () => {
     triggerOnce: true,
     threshold: 0.15,
   });
+
+  // State to toggle between Buy & Own and Subscribe & Relax
+  const [activeModel, setActiveModel] = useState<"buy" | "subscribe">("buy");
 
   // Helper to get proper route based on language
   const getLocalizedRoute = (path: string) => {
@@ -122,7 +125,26 @@ const PricingSection = () => {
           <p className="pricing-subtitle">{t("pricing.subtitle")}</p>
         </div>
 
+        {/* Model Toggle Tabs */}
+        <div className="model-toggle">
+          <button
+            className={`toggle-btn ${activeModel === "buy" ? "active" : ""}`}
+            onClick={() => setActiveModel("buy")}
+          >
+            <ShoppingCart size={20} />
+            {t("pricing.buyModel.title")}
+          </button>
+          <button
+            className={`toggle-btn ${activeModel === "subscribe" ? "active" : ""}`}
+            onClick={() => setActiveModel("subscribe")}
+          >
+            <Calendar size={20} />
+            {t("pricing.subscribeModel.title")}
+          </button>
+        </div>
+
         {/* Buy & Own Model */}
+        {activeModel === "buy" && (
         <div className="buy-model-section">
           <div className="model-badge">{t("pricing.buyModel.badge")}</div>
           <h3 className="model-title">{t("pricing.buyModel.title")}</h3>
@@ -179,8 +201,10 @@ const PricingSection = () => {
             {t("pricing.buyModel.cta")}
           </button>
         </div>
+        )}
 
         {/* Subscribe & Relax Model */}
+        {activeModel === "subscribe" && (
         <div className="subscribe-model-section">
           <div className="model-badge">{t("pricing.subscribeModel.badge")}</div>
           <h3 className="model-title">{t("pricing.subscribeModel.title")}</h3>
@@ -238,6 +262,7 @@ const PricingSection = () => {
             {t("pricing.subscribeModel.cta")}
           </button>
         </div>
+        )}
 
         {/* Add-Ons Section */}
         <div className="addons-section">
