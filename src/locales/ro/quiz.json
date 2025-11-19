@@ -1,0 +1,694 @@
+﻿{
+  "quiz": {
+    "meta": {
+      "title": "Evaluare Nevoi Proiect",
+      "subtitle": "Ajută-mă să înțeleg cerințele proiectului tău în detaliu - durează aproximativ 2-3 minute",
+      "description": "Răspunde la aceste întrebări pentru a primi o estimare personalizată și un calendar al proiectului. Toate câmpurile sunt sigure și informațiile tale nu sunt niciodată partajate.",
+      "estimatedTime": "2-3 minute",
+      "totalSteps": "12 întrebări"
+    },
+    "helpText": {
+      "general": "💡 Sfat: Cu cât oferi mai multe detalii, cu atât estimarea va fi mai precisă",
+      "pricing": "Toate estimările sunt aproximative. Prețul final depinde de nevoile tale specifice și va fi discutat în consultația noastră gratuită.",
+      "timeline": "Proiectele tipice durează 1-4 săptămâni în funcție de complexitate. Livrarea rapidă poate fi disponibilă cu o taxă suplimentară.",
+      "process": "După trimitere, vei primi o detaliere prin email și putem programa o consultație gratuită pentru a discuta proiectul tău."
+    },
+    "socialProof": {
+      "title": "Ales de afaceri ca a ta",
+      "stats": [
+        { "number": "50+", "label": "Proiecte Finalizate" },
+        { "number": "4.9/5", "label": "Rating Mediu" },
+        { "number": "1-2 săptămâni", "label": "Livrare Medie" }
+      ]
+    },
+    "benefits": {
+      "title": "De ce să alegi această evaluare?",
+      "items": [
+        {
+          "icon": "⚡",
+          "title": "Rapid și Precis",
+          "description": "Primești o estimare detaliată în mai puțin de 3 minute bazată pe nevoile tale specifice"
+        },
+        {
+          "icon": "💰",
+          "title": "Prețuri Transparente",
+          "description": "Fără taxe ascunse sau costuri surpriză - știi exact la ce să te aștepți din timp"
+        },
+        {
+          "icon": "🎯",
+          "title": "Soluție Personalizată",
+          "description": "Fiecare recomandare este adaptată obiectivelor tale de afaceri și bugetului"
+        },
+        {
+          "icon": "🤝",
+          "title": "Consultație Gratuită",
+          "description": "Primești un apel gratuit de 30 de minute pentru a discuta proiectul tău în detaliu"
+        }
+      ]
+    },
+    "progress": {
+      "step": "Întrebarea {{current}} din {{total}}",
+      "complete": "Aproape gata!",
+      "calculating": "Calculez estimarea ta..."
+    },
+    "navigation": {
+      "back": "Înapoi",
+      "next": "Înainte",
+      "skip": "Sari",
+      "finish": "Obține Estimarea",
+      "restart": "Restart"
+    },
+    "questions": {
+      "q1": {
+        "id": "websiteType",
+        "question": "Ce tip de site web ai nevoie?",
+        "subtitle": "Aceasta mă ajută să înțeleg complexitatea și funcționalitățile necesare",
+        "type": "single",
+        "required": true,
+        "options": [
+          {
+            "value": "landing",
+            "label": "Landing Page",
+            "description": "Pagină unică pentru prezentarea unui produs/serviciu",
+            "impact": "Structură simplă, livrare mai rapidă",
+            "priceImpact": "low"
+          },
+          {
+            "value": "business",
+            "label": "Site de Afaceri",
+            "description": "5-10 pagini: Acasă, Despre, Servicii, Portofoliu, Contact",
+            "impact": "Structură standard, prezență profesională",
+            "priceImpact": "medium"
+          },
+          {
+            "value": "ecommerce",
+            "label": "Magazin E-commerce",
+            "description": "Magazin online cu catalog produse și checkout",
+            "impact": "Integrare plăți, gestionare stoc",
+            "priceImpact": "high"
+          },
+          {
+            "value": "booking",
+            "label": "Sistem Rezervări/Programări",
+            "description": "Sistem calendar pentru rezervări sau programări",
+            "impact": "Integrare calendar, sistem notificări",
+            "priceImpact": "high"
+          },
+          {
+            "value": "webapp",
+            "label": "Aplicație Web",
+            "description": "Funcționalitate personalizată, conturi utilizator, dashboard-uri",
+            "impact": "Backend complex, bază de date, autentificare",
+            "priceImpact": "very-high"
+          },
+          {
+            "value": "unsure",
+            "label": "Nu Sunt Sigur",
+            "description": "Am nevoie de ajutor să clarific asta",
+            "impact": "Vom discuta în consultare",
+            "priceImpact": "consultation"
+          }
+        ]
+      },
+      "q2": {
+        "id": "contentReady",
+        "question": "Ai conținutul pregătit?",
+        "subtitle": "Conținutul include texte, imagini, logo-uri și materiale de brand",
+        "type": "single",
+        "required": true,
+        "options": [
+          {
+            "value": "all-ready",
+            "label": "Da, Totul Este Gata",
+            "description": "Texte, imagini, logo-uri, toate organizate și furnizate",
+            "impact": "Start proiect mai rapid, cost mai mic",
+            "priceImpact": "none"
+          },
+          {
+            "value": "some-ready",
+            "label": "Parțial Pregătit",
+            "description": "Am conținut parțial dar am nevoie de ajutor pentru organizare/optimizare",
+            "impact": "Lucru minor la conținut inclus",
+            "priceImpact": "low"
+          },
+          {
+            "value": "need-help",
+            "label": "Am Nevoie de Ajutor pentru Creare Conținut",
+            "description": "Am nevoie de îndrumări ce conținut să creez",
+            "impact": "Consultare strategie conținut inclusă",
+            "priceImpact": "medium"
+          },
+          {
+            "value": "full-service",
+            "label": "Am Nevoie de Creare Conținut Completă",
+            "description": "Copywriting profesional, căutare imagini, branding",
+            "impact": "Serviciu complet de creare conținut",
+            "priceImpact": "high"
+          }
+        ]
+      },
+      "q3": {
+        "id": "competitionResearch",
+        "question": "Ai nevoie de analiză concurență?",
+        "subtitle": "Pot cerceta concurenții tăi pentru a te ajuta să te distingi",
+        "type": "single",
+        "required": false,
+        "options": [
+          {
+            "value": "yes-detailed",
+            "label": "Da, Analiză Detaliată",
+            "description": "Cercetare 5-10 concurenți: design, prețuri, funcționalități, poziționare",
+            "impact": "Insight-uri strategice, strategie diferențiere (3-5 ore)",
+            "priceImpact": "medium"
+          },
+          {
+            "value": "yes-basic",
+            "label": "Da, Prezentare de Bază",
+            "description": "Revizuire rapidă a 2-3 concurenți principali",
+            "impact": "Insight-uri competitive de bază (1-2 ore)",
+            "priceImpact": "low"
+          },
+          {
+            "value": "no",
+            "label": "Nu, Cunosc Piața Mea",
+            "description": "Înțeleg deja concurența mea",
+            "impact": "Nu e necesară cercetare suplimentară",
+            "priceImpact": "none"
+          },
+          {
+            "value": "unsure",
+            "label": "Nu Sunt Sigur",
+            "description": "Să discutăm dacă ar ajuta",
+            "impact": "Vom discuta în consultare",
+            "priceImpact": "consultation"
+          }
+        ]
+      },
+      "q4": {
+        "id": "seoLevel",
+        "question": "Ce nivel de SEO ai nevoie?",
+        "subtitle": "SEO ajută oamenii să găsească site-ul tău pe Google",
+        "type": "single",
+        "required": true,
+        "options": [
+          {
+            "value": "basic",
+            "label": "SEO de Bază",
+            "description": "Google Analytics, Search Console, meta tag-uri, sitemap",
+            "impact": "Fundație SEO esențială (inclusă în toate proiectele)",
+            "priceImpact": "none"
+          },
+          {
+            "value": "advanced",
+            "label": "SEO Avansat",
+            "description": "Cercetare cuvinte cheie, analiză concurență, optimizare conținut",
+            "impact": "Planificare și implementare SEO strategică",
+            "priceImpact": "medium"
+          },
+          {
+            "value": "local",
+            "label": "SEO Local",
+            "description": "Google My Business, directoare locale, targeting locație",
+            "impact": "Optimizat pentru vizibilitate căutare locală",
+            "priceImpact": "medium"
+          },
+          {
+            "value": "enterprise",
+            "label": "SEO Enterprise",
+            "description": "Audit SEO tehnic, schema markup, optimizare performanță",
+            "impact": "Strategie SEO comprehensivă și optimizare continuă",
+            "priceImpact": "high"
+          }
+        ]
+      },
+      "q5": {
+        "id": "analytics",
+        "question": "Ce vrei să urmărești?",
+        "subtitle": "Înțelegerea comportamentului vizitatorilor te ajută să crești",
+        "type": "multiple",
+        "required": true,
+        "options": [
+          {
+            "value": "visitors",
+            "label": "Număr Vizitatori",
+            "description": "Câți oameni vizitează site-ul tău",
+            "impact": "Google Analytics (inclus)",
+            "priceImpact": "none"
+          },
+          {
+            "value": "behavior",
+            "label": "Comportament Utilizatori",
+            "description": "Ce pagini vizitează, cât stau, unde dau click",
+            "impact": "Configurare analytics avansată",
+            "priceImpact": "low"
+          },
+          {
+            "value": "conversions",
+            "label": "Conversii & Obiective",
+            "description": "Urmărește trimitere formulare, achiziții, înscrieri",
+            "impact": "Urmărire obiective și funnel-uri conversie",
+            "priceImpact": "low"
+          },
+          {
+            "value": "heatmaps",
+            "label": "Hărți Termice & Înregistrări",
+            "description": "Vezi exact cum interacționează utilizatorii cu site-ul",
+            "impact": "Integrare Hotjar/Microsoft Clarity",
+            "priceImpact": "medium"
+          },
+          {
+            "value": "advanced",
+            "label": "Analytics Avansat",
+            "description": "Dashboard-uri personalizate, testare A/B, rapoarte detaliate",
+            "impact": "Soluție analytics personalizată",
+            "priceImpact": "high"
+          },
+          {
+            "value": "basic-only",
+            "label": "Doar Elementele de Bază",
+            "description": "Urmărire simplă vizitatori este suficient",
+            "impact": "Google Analytics standard",
+            "priceImpact": "none"
+          }
+        ]
+      },
+      "q6": {
+        "id": "animations",
+        "question": "Ce nivel de animații vrei?",
+        "subtitle": "Animațiile îmbunătățesc experiența utilizatorului dar afectează complexitatea",
+        "type": "single",
+        "required": true,
+        "options": [
+          {
+            "value": "none",
+            "label": "Fără Animații",
+            "description": "Pagini curate, simple, încărcare rapidă",
+            "impact": "Dezvoltare cea mai rapidă, complexitate minimă",
+            "priceImpact": "discount"
+          },
+          {
+            "value": "simple",
+            "label": "Animații Simple",
+            "description": "Fade-in-uri, scroll lin, efecte hover",
+            "impact": "Senzație modernă fără complexitate (standard)",
+            "priceImpact": "none"
+          },
+          {
+            "value": "moderate",
+            "label": "Animații Moderate",
+            "description": "Slide-in-uri, efecte parallax, tranziții animate",
+            "impact": "Experiență utilizator captivantă, timp dezvoltare moderat",
+            "priceImpact": "low"
+          },
+          {
+            "value": "advanced",
+            "label": "Animații Avansate",
+            "description": "Interacțiuni complexe, animații personalizate, micro-interacțiuni",
+            "impact": "Senzație premium, necesită timp dezvoltare suplimentar",
+            "priceImpact": "medium"
+          },
+          {
+            "value": "showcase",
+            "label": "Animații Nivel Showcase",
+            "description": "Animații de premii, efecte cinematice, elemente 3D",
+            "impact": "Calitate pentru portofoliu, timp dezvoltare semnificativ",
+            "priceImpact": "high"
+          }
+        ]
+      },
+      "q7": {
+        "id": "products",
+        "question": "Vei vinde produse sau servicii?",
+        "subtitle": "Aceasta determină dacă ai nevoie de funcționalitate e-commerce",
+        "type": "single",
+        "required": true,
+        "conditional": {
+          "showIf": "websiteType",
+          "values": ["business", "ecommerce", "unsure"]
+        },
+        "options": [
+          {
+            "value": "no",
+            "label": "Nu, Doar Informații",
+            "description": "Doar prezentare, nu e nevoie de funcționalitate vânzare",
+            "impact": "Site informațional standard",
+            "priceImpact": "none"
+          },
+          {
+            "value": "external",
+            "label": "Link către Magazin Extern",
+            "description": "Vând deja în altă parte (Etsy, Amazon, etc.)",
+            "impact": "Link-uri simple către platforme externe",
+            "priceImpact": "none"
+          },
+          {
+            "value": "few-products",
+            "label": "Da, Sub 20 Produse",
+            "description": "Catalog produse mic cu checkout simplu",
+            "impact": "Configurare e-commerce de bază cu gateway plată",
+            "priceImpact": "medium"
+          },
+          {
+            "value": "many-products",
+            "label": "Da, 20-100 Produse",
+            "description": "Catalog mediu cu categorii și filtre",
+            "impact": "E-commerce complet cu gestionare stoc",
+            "priceImpact": "high"
+          },
+          {
+            "value": "large-catalog",
+            "label": "Da, 100+ Produse",
+            "description": "Catalog mare cu funcționalități avansate",
+            "impact": "Soluție e-commerce enterprise",
+            "priceImpact": "very-high"
+          },
+          {
+            "value": "services",
+            "label": "Servicii, Nu Produse",
+            "description": "Ofer servicii cu rezervare/plată opțională",
+            "impact": "Prezentare servicii cu integrare rezervare opțională",
+            "priceImpact": "medium"
+          }
+        ]
+      },
+      "q8": {
+        "id": "languages",
+        "question": "De câte limbi ai nevoie?",
+        "subtitle": "Site-urile multilingve te ajută să ajungi la mai mulți clienți",
+        "type": "single",
+        "required": true,
+        "options": [
+          {
+            "value": "one",
+            "label": "Doar O Limbă",
+            "description": "O singură limbă este suficientă pentru piața mea",
+            "impact": "Site standard într-o limbă",
+            "priceImpact": "none"
+          },
+          {
+            "value": "two",
+            "label": "Două Limbi",
+            "description": "Site bilingv (ex. Română + Engleză)",
+            "impact": "+1 limbă traducere și configurare",
+            "priceImpact": "low"
+          },
+          {
+            "value": "three",
+            "label": "Trei Limbi",
+            "description": "Site trilingv pentru acoperire mai largă",
+            "impact": "+2 limbi traducere și configurare",
+            "priceImpact": "medium"
+          },
+          {
+            "value": "many",
+            "label": "4+ Limbi",
+            "description": "Targetare audiență internațională",
+            "impact": "Configurare multilingvă enterprise",
+            "priceImpact": "high"
+          }
+        ]
+      },
+      "q9": {
+        "id": "design",
+        "question": "Ce abordare de design preferi?",
+        "subtitle": "Design-ul afectează atât termenul cât și costul",
+        "type": "single",
+        "required": true,
+        "options": [
+          {
+            "value": "template",
+            "label": "Bazat pe Șablon",
+            "description": "Pornește de la un design dovedit, personalizează branding-ul",
+            "impact": "Livrare cea mai rapidă, cost mai mic, rezultat profesional",
+            "priceImpact": "discount"
+          },
+          {
+            "value": "inspired",
+            "label": "Inspirat din Exemple",
+            "description": "Arată-mi site-uri care îți plac, voi crea ceva similar",
+            "impact": "Design semi-personalizat, termen și cost echilibrate",
+            "priceImpact": "none"
+          },
+          {
+            "value": "custom",
+            "label": "Design Complet Personalizat",
+            "description": "Design unic adaptat brand-ului tău de la zero",
+            "impact": "Control creativ complet, termen mai lung",
+            "priceImpact": "medium"
+          },
+          {
+            "value": "premium",
+            "label": "Design Personalizat Premium",
+            "description": "Design de premii cu multiple runde de revizuire",
+            "impact": "Calitate pentru portofoliu, termen extins",
+            "priceImpact": "high"
+          }
+        ]
+      },
+      "q10": {
+        "id": "userAccounts",
+        "question": "Utilizatorii au nevoie de conturi/login?",
+        "subtitle": "Autentificarea utilizatorilor adaugă complexitate",
+        "type": "single",
+        "required": true,
+        "options": [
+          {
+            "value": "no",
+            "label": "Nu E Nevoie de Conturi Utilizator",
+            "description": "Site public, login nu e necesar",
+            "impact": "Site public standard",
+            "priceImpact": "none"
+          },
+          {
+            "value": "simple",
+            "label": "Login Simplu",
+            "description": "Conturi utilizator de bază cu gestionare profil",
+            "impact": "Autentificare utilizator și profiluri de bază",
+            "priceImpact": "medium"
+          },
+          {
+            "value": "advanced",
+            "label": "Sistem Utilizator Avansat",
+            "description": "Roluri, permisiuni, dashboard-uri utilizator, acces conținut",
+            "impact": "Sistem complex de autentificare și autorizare",
+            "priceImpact": "high"
+          },
+          {
+            "value": "social",
+            "label": "Login Social",
+            "description": "Login cu Google, Facebook, etc.",
+            "impact": "Integrare OAuth și gestionare utilizatori",
+            "priceImpact": "medium"
+          }
+        ]
+      },
+      "q11": {
+        "id": "timeline",
+        "question": "Când ai nevoie să fie lansat?",
+        "subtitle": "Termenul afectează planificarea și prețurile",
+        "type": "single",
+        "required": true,
+        "options": [
+          {
+            "value": "urgent",
+            "label": "ASAP (1-2 săptămâni)",
+            "description": "Proiect urgent, necesită atenție imediată",
+            "impact": "Se aplică tarif urgență, runde revizuire limitate",
+            "priceImpact": "high"
+          },
+          {
+            "value": "soon",
+            "label": "În Curând (2-4 săptămâni)",
+            "description": "Termen standard pentru majoritatea proiectelor",
+            "impact": "Ritm dezvoltare normal, prețuri standard",
+            "priceImpact": "none"
+          },
+          {
+            "value": "flexible",
+            "label": "Flexibil (1-2 luni)",
+            "description": "Fără grabă, calitatea e prioritate",
+            "impact": "Mai mult timp pentru rafinare și testare",
+            "priceImpact": "none"
+          },
+          {
+            "value": "planning",
+            "label": "Doar Planificare (3+ luni)",
+            "description": "Cercetez opțiuni, nu sunt pregătit să încep încă",
+            "impact": "Timp pentru planificare și strategie amănunțite",
+            "priceImpact": "discount"
+          }
+        ]
+      },
+      "q12": {
+        "id": "budget",
+        "question": "Care este bugetul tău aproximativ?",
+        "subtitle": "Un buget onest mă ajută să recomand cea mai bună abordare",
+        "type": "single",
+        "required": true,
+        "options": [
+          {
+            "value": "under-500",
+            "label": "Sub €500",
+            "description": "Buget de început pentru proiecte simple",
+            "impact": "Model Abonează-te și Relaxează-te recomandat",
+            "priceImpact": "consultation"
+          },
+          {
+            "value": "500-1000",
+            "label": "€500 - €1.000",
+            "description": "Buget standard pentru site-uri afaceri mici",
+            "impact": "Nivel Essentials sau Abonează-te și Relaxează-te",
+            "priceImpact": "consultation"
+          },
+          {
+            "value": "1000-2000",
+            "label": "€1.000 - €2.000",
+            "description": "Buget confortabil pentru site-uri profesionale",
+            "impact": "Nivel Growth cu funcționalități complete",
+            "priceImpact": "consultation"
+          },
+          {
+            "value": "2000-5000",
+            "label": "€2.000 - €5.000",
+            "description": "Buget premium pentru proiecte avansate",
+            "impact": "Nivel Custom Solutions disponibil",
+            "priceImpact": "consultation"
+          },
+          {
+            "value": "over-5000",
+            "label": "Peste €5.000",
+            "description": "Buget enterprise pentru proiecte complexe",
+            "impact": "Dezvoltare custom completă, fără limitări",
+            "priceImpact": "consultation"
+          },
+          {
+            "value": "unsure",
+            "label": "Nu Sunt Sigur",
+            "description": "Ajută-mă să înțeleg ce e rezonabil",
+            "impact": "Vom discuta bugete realiste pentru nevoile tale",
+            "priceImpact": "consultation"
+          }
+        ]
+      }
+    },
+    "results": {
+      "title": "Estimarea Proiectului Tău",
+      "subtitle": "Pe baza răspunsurilor tale, iată ce recomand",
+      "disclaimer": "Aceasta este o estimare automată. Prețul final poate varia în funcție de cerințele specifice discutate în consultare.",
+      "sections": {
+        "overview": {
+          "title": "Prezentare Proiect",
+          "complexity": "Nivel Complexitate",
+          "timeline": "Termen Estimat",
+          "model": "Model Recomandat"
+        },
+        "breakdown": {
+          "title": "Ce Este Inclus",
+          "basePrice": "Dezvoltare de Bază",
+          "features": "Funcționalități Adiționale",
+          "services": "Servicii & Add-on-uri",
+          "total": "Total Estimat"
+        },
+        "featuresIncluded": {
+          "title": "Ce Este Inclus"
+        },
+        "recommendations": {
+          "title": "Recomandările Mele",
+          "whyThisModel": "De ce acest model funcționează pentru tine",
+          "considerations": "Lucruri de luat în considerare",
+          "nextSteps": "Pașii Următori",
+          "explanations": {
+            "subscribe": "Pe baza nevoilor tale, modelul Abonează-te și Relaxează-te oferă cea mai bună valoare. Primești un site web profesional fără costuri inițiale mari, și eu mă ocup de toate detaliile tehnice pentru tine.",
+            "buy-essentials": "Nivelul Cumpără și Deține - Essentials este perfect pentru proiectul tău. Vei deține codul din prima zi, cu planuri de gestionare opționale pentru a menține totul funcțional.",
+            "buy-growth": "Nivelul Cumpără și Deține - Growth se potrivește cerințelor tale. Vei primi funcționalități avansate cu tehnologie modernă, plus proprietate completă a codului și suport continuu opțional.",
+            "buy-custom": "Proiectul tău necesită Soluții Personalizate. Acest nivel oferă funcționalitatea complexă și dezvoltarea personalizată pe care proiectul tău o necesită, cu proprietate completă a codului.",
+            "consultation": "Proiectul tău are cerințe unice care merită o discuție detaliată. Hai să programăm o consultare GRATUITĂ pentru a crea o soluție personalizată care se potrivește exact nevoilor și bugetului tău."
+          },
+          "steps": [
+            "Rezervă o consultare GRATUITĂ de 30 de minute pentru a discuta nevoile tale specifice",
+            "Îți voi oferi o ofertă detaliată și un calendar al proiectului",
+            "Ne punem de acord asupra scopului, livrabilelor și condițiilor de plată",
+            "Încep să construiesc prezența ta web profesională"
+          ]
+        }
+      },
+      "complexity": {
+        "simple": "Simplu",
+        "moderate": "Moderat",
+        "complex": "Complex",
+        "advanced": "Avansat",
+        "enterprise": "Enterprise"
+      },
+      "timeline": {
+        "fast": "1-2 săptămâni",
+        "standard": "2-4 săptămâni",
+        "extended": "1-2 luni",
+        "long": "2-3 luni",
+        "custom": "Să discutăm"
+      },
+      "models": {
+        "subscribe": {
+          "title": "Abonează-te și Relaxează-te",
+          "price": "€150 setup + €468/an",
+          "description": "Perfect pentru nevoile tale. Serviciu totul inclus cu suport continuu.",
+          "benefits": [
+            "Cost inițial mic (€150 setup)",
+            "Tot gestionat pentru tine",
+            "2 ore actualizări lunare incluse",
+            "Anulează după 2 ani, sau cumpără codul pentru €500"
+          ]
+        },
+        "buy-essentials": {
+          "title": "Cumpără și Deține - Essentials",
+          "price": "€500 - €900",
+          "description": "Plată unică, deții codul pentru totdeauna.",
+          "benefits": [
+            "Proprietate completă cod din prima zi",
+            "Fără angajamente continue",
+            "Gestionare opțională de la €99/an",
+            "Perfect pentru site-uri simple, statice"
+          ]
+        },
+        "buy-growth": {
+          "title": "Cumpără și Deține - Growth",
+          "price": "€900 - €2.000",
+          "description": "Site profesional cu funcționalități avansate.",
+          "benefits": [
+            "Proprietate completă cod",
+            "Performanță React/Next.js",
+            "Funcționalitate avansată inclusă",
+            "Gestionare opțională de la €150/an"
+          ]
+        },
+        "buy-custom": {
+          "title": "Cumpără și Deține - Custom Solutions",
+          "price": "€2.000+",
+          "description": "Funcționalitate complexă adaptată nevoilor tale.",
+          "benefits": [
+            "Proprietate completă cod",
+            "Backend și bază de date personalizate",
+            "Integrări avansate",
+            "Gestionare recomandată: €399/an"
+          ]
+        },
+        "consultation": {
+          "title": "Să Vorbim",
+          "price": "Consultare GRATUITĂ",
+          "description": "Proiectul tău necesită o discuție detaliată.",
+          "benefits": [
+            "Consultare de 30 minute GRATUITĂ",
+            "Ofertă personalizată bazată pe nevoile tale",
+            "Sfaturi oneste despre cea mai bună abordare",
+            "Fără presiune, doar informații"
+          ]
+        }
+      },
+      "cta": {
+        "primary": "Rezervă Consultare GRATUITĂ",
+        "secondary": "Vezi Prețuri Complete",
+        "share": "Distribuie Rezultate",
+        "restart": "Restart"
+      }
+    }
+  }
+}

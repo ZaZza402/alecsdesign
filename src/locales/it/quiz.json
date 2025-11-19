@@ -1,0 +1,694 @@
+﻿{
+  "quiz": {
+    "meta": {
+      "title": "Valutazione Esigenze Progetto",
+      "subtitle": "Aiutami a capire i requisiti del tuo progetto in dettaglio - richiede circa 2-3 minuti",
+      "description": "Rispondi a queste domande per ottenere una stima personalizzata e una tempistica del progetto. Tutti i campi sono sicuri e le tue informazioni non vengono mai condivise.",
+      "estimatedTime": "2-3 minuti",
+      "totalSteps": "12 domande"
+    },
+    "helpText": {
+      "general": "💡 Suggerimento: Più dettagli fornisci, più accurata sarà la tua stima",
+      "pricing": "Tutte le stime sono approssimative. Il prezzo finale dipende dalle tue esigenze specifiche e sarà discusso nella nostra consulenza gratuita.",
+      "timeline": "I progetti tipici richiedono 1-4 settimane a seconda della complessità. La consegna urgente può essere disponibile con un costo aggiuntivo.",
+      "process": "Dopo l'invio, riceverai una descrizione dettagliata via email e possiamo programmare una consulenza gratuita per discutere il tuo progetto."
+    },
+    "socialProof": {
+      "title": "Scelto da aziende come la tua",
+      "stats": [
+        { "number": "50+", "label": "Progetti Completati" },
+        { "number": "4.9/5", "label": "Valutazione Media" },
+        { "number": "1-2 settimane", "label": "Consegna Media" }
+      ]
+    },
+    "benefits": {
+      "title": "Perché scegliere questa valutazione?",
+      "items": [
+        {
+          "icon": "⚡",
+          "title": "Veloce e Preciso",
+          "description": "Ottieni una stima dettagliata in meno di 3 minuti basata sulle tue esigenze specifiche"
+        },
+        {
+          "icon": "💰",
+          "title": "Prezzi Trasparenti",
+          "description": "Nessuna commissione nascosta o costi a sorpresa - sai esattamente cosa aspettarti in anticipo"
+        },
+        {
+          "icon": "🎯",
+          "title": "Soluzione Personalizzata",
+          "description": "Ogni raccomandazione è su misura per i tuoi obiettivi aziendali e budget"
+        },
+        {
+          "icon": "🤝",
+          "title": "Consulenza Gratuita",
+          "description": "Ottieni una chiamata gratuita di 30 minuti per discutere il tuo progetto in dettaglio"
+        }
+      ]
+    },
+    "progress": {
+      "step": "Domanda {{current}} di {{total}}",
+      "complete": "Quasi fatto!",
+      "calculating": "Calcolo la tua stima..."
+    },
+    "navigation": {
+      "back": "Indietro",
+      "next": "Avanti",
+      "skip": "Salta",
+      "finish": "Ottieni la Mia Stima",
+      "restart": "Ricomincia"
+    },
+    "questions": {
+      "q1": {
+        "id": "websiteType",
+        "question": "Che tipo di sito web ti serve?",
+        "subtitle": "Questo mi aiuta a capire la complessità e le funzionalità richieste",
+        "type": "single",
+        "required": true,
+        "options": [
+          {
+            "value": "landing",
+            "label": "Landing Page",
+            "description": "Pagina singola per mostrare un prodotto/servizio",
+            "impact": "Struttura semplice, consegna più rapida",
+            "priceImpact": "low"
+          },
+          {
+            "value": "business",
+            "label": "Sito Aziendale",
+            "description": "5-10 pagine: Home, Chi Siamo, Servizi, Portfolio, Contatti",
+            "impact": "Struttura standard, presenza professionale",
+            "priceImpact": "medium"
+          },
+          {
+            "value": "ecommerce",
+            "label": "Negozio E-commerce",
+            "description": "Negozio online con catalogo prodotti e checkout",
+            "impact": "Integrazione pagamenti, gestione inventario",
+            "priceImpact": "high"
+          },
+          {
+            "value": "booking",
+            "label": "Sistema Prenotazioni/Appuntamenti",
+            "description": "Sistema calendario per prenotazioni o appuntamenti",
+            "impact": "Integrazione calendario, sistema notifiche",
+            "priceImpact": "high"
+          },
+          {
+            "value": "webapp",
+            "label": "Applicazione Web",
+            "description": "Funzionalità personalizzate, account utente, dashboard",
+            "impact": "Backend complesso, database, autenticazione",
+            "priceImpact": "very-high"
+          },
+          {
+            "value": "unsure",
+            "label": "Non Sono Sicuro",
+            "description": "Ho bisogno di aiuto per capirlo",
+            "impact": "Ne discuteremo in consulenza",
+            "priceImpact": "consultation"
+          }
+        ]
+      },
+      "q2": {
+        "id": "contentReady",
+        "question": "Hai i contenuti pronti?",
+        "subtitle": "I contenuti includono testi, immagini, loghi e materiali del brand",
+        "type": "single",
+        "required": true,
+        "options": [
+          {
+            "value": "all-ready",
+            "label": "Sì, Tutto Pronto",
+            "description": "Testi, immagini, loghi, tutto organizzato e fornito",
+            "impact": "Inizio progetto più rapido, costo inferiore",
+            "priceImpact": "none"
+          },
+          {
+            "value": "some-ready",
+            "label": "Parzialmente Pronto",
+            "description": "Ho alcuni contenuti ma serve aiuto per organizzare/ottimizzare",
+            "impact": "Lavoro contenuti minore incluso",
+            "priceImpact": "low"
+          },
+          {
+            "value": "need-help",
+            "label": "Ho Bisogno di Aiuto per Creare Contenuti",
+            "description": "Mi serve guida su quali contenuti creare",
+            "impact": "Consulenza strategia contenuti inclusa",
+            "priceImpact": "medium"
+          },
+          {
+            "value": "full-service",
+            "label": "Ho Bisogno di Creazione Contenuti Completa",
+            "description": "Copywriting professionale, ricerca immagini, branding",
+            "impact": "Servizio creazione contenuti completo",
+            "priceImpact": "high"
+          }
+        ]
+      },
+      "q3": {
+        "id": "competitionResearch",
+        "question": "Ti serve un'analisi della concorrenza?",
+        "subtitle": "Posso ricercare i tuoi concorrenti per aiutarti a distinguerti",
+        "type": "single",
+        "required": false,
+        "options": [
+          {
+            "value": "yes-detailed",
+            "label": "Sì, Analisi Dettagliata",
+            "description": "Ricerca 5-10 concorrenti: design, prezzi, funzionalità, posizionamento",
+            "impact": "Insights strategici, strategia differenziazione (3-5 ore)",
+            "priceImpact": "medium"
+          },
+          {
+            "value": "yes-basic",
+            "label": "Sì, Panoramica Base",
+            "description": "Revisione rapida di 2-3 concorrenti principali",
+            "impact": "Insights competitivi base (1-2 ore)",
+            "priceImpact": "low"
+          },
+          {
+            "value": "no",
+            "label": "No, Conosco il Mio Mercato",
+            "description": "Capisco già la mia concorrenza",
+            "impact": "Nessuna ricerca aggiuntiva necessaria",
+            "priceImpact": "none"
+          },
+          {
+            "value": "unsure",
+            "label": "Non Sono Sicuro",
+            "description": "Discutiamo se questo potrebbe aiutare",
+            "impact": "Ne discuteremo in consulenza",
+            "priceImpact": "consultation"
+          }
+        ]
+      },
+      "q4": {
+        "id": "seoLevel",
+        "question": "Che livello di SEO ti serve?",
+        "subtitle": "La SEO aiuta le persone a trovare il tuo sito su Google",
+        "type": "single",
+        "required": true,
+        "options": [
+          {
+            "value": "basic",
+            "label": "SEO Base",
+            "description": "Google Analytics, Search Console, meta tag, sitemap",
+            "impact": "Fondamenta SEO essenziali (incluso in tutti i progetti)",
+            "priceImpact": "none"
+          },
+          {
+            "value": "advanced",
+            "label": "SEO Avanzata",
+            "description": "Ricerca keyword, analisi concorrenza, ottimizzazione contenuti",
+            "impact": "Pianificazione e implementazione SEO strategica",
+            "priceImpact": "medium"
+          },
+          {
+            "value": "local",
+            "label": "SEO Locale",
+            "description": "Google My Business, directory locali, targeting località",
+            "impact": "Ottimizzato per visibilità ricerca locale",
+            "priceImpact": "medium"
+          },
+          {
+            "value": "enterprise",
+            "label": "SEO Enterprise",
+            "description": "Audit SEO tecnico, schema markup, ottimizzazione performance",
+            "impact": "Strategia SEO completa e ottimizzazione continua",
+            "priceImpact": "high"
+          }
+        ]
+      },
+      "q5": {
+        "id": "analytics",
+        "question": "Cosa vuoi tracciare?",
+        "subtitle": "Capire il comportamento dei visitatori ti aiuta a crescere",
+        "type": "multiple",
+        "required": true,
+        "options": [
+          {
+            "value": "visitors",
+            "label": "Numero Visitatori",
+            "description": "Quante persone visitano il tuo sito",
+            "impact": "Google Analytics (incluso)",
+            "priceImpact": "none"
+          },
+          {
+            "value": "behavior",
+            "label": "Comportamento Utenti",
+            "description": "Quali pagine visitano, quanto restano, dove cliccano",
+            "impact": "Setup analytics avanzato",
+            "priceImpact": "low"
+          },
+          {
+            "value": "conversions",
+            "label": "Conversioni & Obiettivi",
+            "description": "Traccia invio form, acquisti, iscrizioni",
+            "impact": "Tracking obiettivi e funnel conversione",
+            "priceImpact": "low"
+          },
+          {
+            "value": "heatmaps",
+            "label": "Mappe Calore & Registrazioni",
+            "description": "Vedi esattamente come gli utenti interagiscono con il sito",
+            "impact": "Integrazione Hotjar/Microsoft Clarity",
+            "priceImpact": "medium"
+          },
+          {
+            "value": "advanced",
+            "label": "Analytics Avanzata",
+            "description": "Dashboard personalizzate, A/B testing, report dettagliati",
+            "impact": "Soluzione analytics personalizzata",
+            "priceImpact": "high"
+          },
+          {
+            "value": "basic-only",
+            "label": "Solo le Basi",
+            "description": "Tracking visitatori semplice è sufficiente",
+            "impact": "Google Analytics standard",
+            "priceImpact": "none"
+          }
+        ]
+      },
+      "q6": {
+        "id": "animations",
+        "question": "Che livello di animazioni vuoi?",
+        "subtitle": "Le animazioni migliorano l'esperienza utente ma influenzano la complessità",
+        "type": "single",
+        "required": true,
+        "options": [
+          {
+            "value": "none",
+            "label": "Nessuna Animazione",
+            "description": "Pagine pulite, semplici, caricamento veloce",
+            "impact": "Sviluppo più rapido, complessità minima",
+            "priceImpact": "discount"
+          },
+          {
+            "value": "simple",
+            "label": "Animazioni Semplici",
+            "description": "Fade-in, scroll fluido, effetti hover",
+            "impact": "Sensazione moderna senza complessità (standard)",
+            "priceImpact": "none"
+          },
+          {
+            "value": "moderate",
+            "label": "Animazioni Moderate",
+            "description": "Slide-in, effetti parallasse, transizioni animate",
+            "impact": "Esperienza utente coinvolgente, tempo sviluppo moderato",
+            "priceImpact": "low"
+          },
+          {
+            "value": "advanced",
+            "label": "Animazioni Avanzate",
+            "description": "Interazioni complesse, animazioni personalizzate, micro-interazioni",
+            "impact": "Sensazione premium, richiede tempo sviluppo aggiuntivo",
+            "priceImpact": "medium"
+          },
+          {
+            "value": "showcase",
+            "label": "Animazioni da Showcase",
+            "description": "Animazioni da premio, effetti cinematici, elementi 3D",
+            "impact": "Qualità da portfolio, tempo sviluppo significativo",
+            "priceImpact": "high"
+          }
+        ]
+      },
+      "q7": {
+        "id": "products",
+        "question": "Venderai prodotti o servizi?",
+        "subtitle": "Questo determina se ti serve funzionalità e-commerce",
+        "type": "single",
+        "required": true,
+        "conditional": {
+          "showIf": "websiteType",
+          "values": ["business", "ecommerce", "unsure"]
+        },
+        "options": [
+          {
+            "value": "no",
+            "label": "No, Solo Informazioni",
+            "description": "Solo showcase, nessuna funzionalità vendita necessaria",
+            "impact": "Sito informativo standard",
+            "priceImpact": "none"
+          },
+          {
+            "value": "external",
+            "label": "Link a Negozio Esterno",
+            "description": "Vendo già altrove (Etsy, Amazon, ecc.)",
+            "impact": "Semplici link a piattaforme esterne",
+            "priceImpact": "none"
+          },
+          {
+            "value": "few-products",
+            "label": "Sì, Sotto 20 Prodotti",
+            "description": "Catalogo prodotti piccolo con checkout semplice",
+            "impact": "Setup e-commerce base con gateway pagamento",
+            "priceImpact": "medium"
+          },
+          {
+            "value": "many-products",
+            "label": "Sì, 20-100 Prodotti",
+            "description": "Catalogo medio con categorie e filtri",
+            "impact": "E-commerce completo con gestione inventario",
+            "priceImpact": "high"
+          },
+          {
+            "value": "large-catalog",
+            "label": "Sì, 100+ Prodotti",
+            "description": "Catalogo grande con funzionalità avanzate",
+            "impact": "Soluzione e-commerce enterprise",
+            "priceImpact": "very-high"
+          },
+          {
+            "value": "services",
+            "label": "Servizi, Non Prodotti",
+            "description": "Offro servizi con prenotazione/pagamento opzionale",
+            "impact": "Showcase servizi con integrazione prenotazione opzionale",
+            "priceImpact": "medium"
+          }
+        ]
+      },
+      "q8": {
+        "id": "languages",
+        "question": "Quante lingue ti servono?",
+        "subtitle": "I siti multilingua ti aiutano a raggiungere più clienti",
+        "type": "single",
+        "required": true,
+        "options": [
+          {
+            "value": "one",
+            "label": "Solo Una Lingua",
+            "description": "Una singola lingua è sufficiente per il mio mercato",
+            "impact": "Sito standard monolingua",
+            "priceImpact": "none"
+          },
+          {
+            "value": "two",
+            "label": "Due Lingue",
+            "description": "Sito bilingue (es. Italiano + Inglese)",
+            "impact": "+1 lingua traduzione e setup",
+            "priceImpact": "low"
+          },
+          {
+            "value": "three",
+            "label": "Tre Lingue",
+            "description": "Sito trilingue per portata più ampia",
+            "impact": "+2 lingue traduzione e setup",
+            "priceImpact": "medium"
+          },
+          {
+            "value": "many",
+            "label": "4+ Lingue",
+            "description": "Targeting pubblico internazionale",
+            "impact": "Setup multilingua enterprise",
+            "priceImpact": "high"
+          }
+        ]
+      },
+      "q9": {
+        "id": "design",
+        "question": "Quale approccio di design preferisci?",
+        "subtitle": "Il design influenza sia i tempi che i costi",
+        "type": "single",
+        "required": true,
+        "options": [
+          {
+            "value": "template",
+            "label": "Basato su Template",
+            "description": "Parti da un design collaudato, personalizza il branding",
+            "impact": "Consegna più rapida, costo inferiore, risultato professionale",
+            "priceImpact": "discount"
+          },
+          {
+            "value": "inspired",
+            "label": "Ispirato da Esempi",
+            "description": "Mostrami siti che ti piacciono, creerò qualcosa di simile",
+            "impact": "Design semi-personalizzato, tempi e costi bilanciati",
+            "priceImpact": "none"
+          },
+          {
+            "value": "custom",
+            "label": "Design Completamente Personalizzato",
+            "description": "Design unico su misura per il tuo brand da zero",
+            "impact": "Controllo creativo completo, tempi più lunghi",
+            "priceImpact": "medium"
+          },
+          {
+            "value": "premium",
+            "label": "Design Personalizzato Premium",
+            "description": "Design da premio con round di revisione multipli",
+            "impact": "Qualità da portfolio, tempi estesi",
+            "priceImpact": "high"
+          }
+        ]
+      },
+      "q10": {
+        "id": "userAccounts",
+        "question": "Gli utenti hanno bisogno di account/login?",
+        "subtitle": "L'autenticazione utente aggiunge complessità",
+        "type": "single",
+        "required": true,
+        "options": [
+          {
+            "value": "no",
+            "label": "Nessun Account Utente Necessario",
+            "description": "Sito pubblico, login non richiesto",
+            "impact": "Sito pubblico standard",
+            "priceImpact": "none"
+          },
+          {
+            "value": "simple",
+            "label": "Login Semplice",
+            "description": "Account utente base con gestione profilo",
+            "impact": "Autenticazione utente e profili base",
+            "priceImpact": "medium"
+          },
+          {
+            "value": "advanced",
+            "label": "Sistema Utente Avanzato",
+            "description": "Ruoli, permessi, dashboard utente, accesso contenuti",
+            "impact": "Sistema autenticazione e autorizzazione complesso",
+            "priceImpact": "high"
+          },
+          {
+            "value": "social",
+            "label": "Login Social",
+            "description": "Login con Google, Facebook, ecc.",
+            "impact": "Integrazione OAuth e gestione utenti",
+            "priceImpact": "medium"
+          }
+        ]
+      },
+      "q11": {
+        "id": "timeline",
+        "question": "Quando ti serve lanciarlo?",
+        "subtitle": "I tempi influenzano pianificazione e prezzi",
+        "type": "single",
+        "required": true,
+        "options": [
+          {
+            "value": "urgent",
+            "label": "ASAP (1-2 settimane)",
+            "description": "Progetto urgente, serve attenzione immediata",
+            "impact": "Si applica tariffa urgenza, round revisioni limitati",
+            "priceImpact": "high"
+          },
+          {
+            "value": "soon",
+            "label": "Presto (2-4 settimane)",
+            "description": "Tempistica standard per la maggior parte dei progetti",
+            "impact": "Ritmo sviluppo normale, prezzi standard",
+            "priceImpact": "none"
+          },
+          {
+            "value": "flexible",
+            "label": "Flessibile (1-2 mesi)",
+            "description": "Nessuna fretta, la qualità è priorità",
+            "impact": "Più tempo per rifinitura e testing",
+            "priceImpact": "none"
+          },
+          {
+            "value": "planning",
+            "label": "Solo Pianificazione (3+ mesi)",
+            "description": "Sto ricercando opzioni, non pronto a iniziare ancora",
+            "impact": "Tempo per pianificazione e strategia approfondite",
+            "priceImpact": "discount"
+          }
+        ]
+      },
+      "q12": {
+        "id": "budget",
+        "question": "Qual è il tuo budget approssimativo?",
+        "subtitle": "Un budget onesto mi aiuta a consigliarti l'approccio migliore",
+        "type": "single",
+        "required": true,
+        "options": [
+          {
+            "value": "under-500",
+            "label": "Sotto €500",
+            "description": "Budget starter per progetti semplici",
+            "impact": "Modello Abbonati e Stai Tranquillo consigliato",
+            "priceImpact": "consultation"
+          },
+          {
+            "value": "500-1000",
+            "label": "€500 - €1.000",
+            "description": "Budget standard per siti piccole imprese",
+            "impact": "Tier Essentials o Abbonati e Stai Tranquillo",
+            "priceImpact": "consultation"
+          },
+          {
+            "value": "1000-2000",
+            "label": "€1.000 - €2.000",
+            "description": "Budget confortevole per siti professionali",
+            "impact": "Tier Growth con funzionalità complete",
+            "priceImpact": "consultation"
+          },
+          {
+            "value": "2000-5000",
+            "label": "€2.000 - €5.000",
+            "description": "Budget premium per progetti avanzati",
+            "impact": "Tier Custom Solutions disponibile",
+            "priceImpact": "consultation"
+          },
+          {
+            "value": "over-5000",
+            "label": "Oltre €5.000",
+            "description": "Budget enterprise per progetti complessi",
+            "impact": "Sviluppo custom completo, nessuna limitazione",
+            "priceImpact": "consultation"
+          },
+          {
+            "value": "unsure",
+            "label": "Non Sono Sicuro",
+            "description": "Aiutami a capire cosa è ragionevole",
+            "impact": "Discuteremo budget realistici per le tue esigenze",
+            "priceImpact": "consultation"
+          }
+        ]
+      }
+    },
+    "results": {
+      "title": "La Tua Stima Progetto",
+      "subtitle": "In base alle tue risposte, ecco cosa consiglio",
+      "disclaimer": "Questa è una stima automatica. Il prezzo finale può variare in base ai requisiti specifici discussi in consulenza.",
+      "sections": {
+        "overview": {
+          "title": "Panoramica Progetto",
+          "complexity": "Livello Complessità",
+          "timeline": "Tempi Stimati",
+          "model": "Modello Consigliato"
+        },
+        "breakdown": {
+          "title": "Cosa è Incluso",
+          "basePrice": "Sviluppo Base",
+          "features": "Funzionalità Aggiuntive",
+          "services": "Servizi & Add-on",
+          "total": "Totale Stimato"
+        },
+        "featuresIncluded": {
+          "title": "Cosa è Incluso"
+        },
+        "recommendations": {
+          "title": "I Miei Consigli",
+          "whyThisModel": "Perché questo modello funziona per te",
+          "considerations": "Cose da considerare",
+          "nextSteps": "Prossimi Passi",
+          "explanations": {
+            "subscribe": "In base alle tue esigenze, il modello Abbonati e Stai Tranquillo offre il miglior rapporto qualità-prezzo. Ottieni un sito web professionale senza costi iniziali elevati, e gestisco tutti i dettagli tecnici per te.",
+            "buy-essentials": "Il livello Compra e Possiedi - Essentials è perfetto per il tuo progetto. Possiederai il codice dal primo giorno, con piani di gestione opzionali per mantenere tutto funzionante senza problemi.",
+            "buy-growth": "Il livello Compra e Possiedi - Growth corrisponde ai tuoi requisiti. Otterrai funzionalità avanzate con tecnologia moderna, oltre alla proprietà completa del codice e supporto continuo opzionale.",
+            "buy-custom": "Il tuo progetto necessita di Soluzioni Personalizzate. Questo livello fornisce le funzionalità complesse e lo sviluppo personalizzato richiesti dal tuo progetto, con proprietà completa del codice.",
+            "consultation": "Il tuo progetto ha requisiti unici che meritano una discussione dettagliata. Programmiamo una consulenza GRATUITA per creare una soluzione personalizzata che si adatti perfettamente alle tue esigenze e al tuo budget."
+          },
+          "steps": [
+            "Prenota una consulenza GRATUITA di 30 minuti per discutere le tue esigenze specifiche",
+            "Ti fornirò un preventivo dettagliato e la tempistica del progetto",
+            "Concordiamo ambito, deliverable e termini di pagamento",
+            "Inizio a costruire la tua presenza web professionale"
+          ]
+        }
+      },
+      "complexity": {
+        "simple": "Semplice",
+        "moderate": "Moderato",
+        "complex": "Complesso",
+        "advanced": "Avanzato",
+        "enterprise": "Enterprise"
+      },
+      "timeline": {
+        "fast": "1-2 settimane",
+        "standard": "2-4 settimane",
+        "extended": "1-2 mesi",
+        "long": "2-3 mesi",
+        "custom": "Discutiamone"
+      },
+      "models": {
+        "subscribe": {
+          "title": "Abbonati e Stai Tranquillo",
+          "price": "€150 setup + €468/anno",
+          "description": "Perfetto per le tue esigenze. Servizio tutto incluso con supporto continuo.",
+          "benefits": [
+            "Costo iniziale basso (€150 setup)",
+            "Tutto gestito per te",
+            "2 ore aggiornamenti mensili incluse",
+            "Cancella dopo 2 anni, o compra il codice per €500"
+          ]
+        },
+        "buy-essentials": {
+          "title": "Compra e Possiedi - Essentials",
+          "price": "€500 - €900",
+          "description": "Pagamento unico, possiedi il codice per sempre.",
+          "benefits": [
+            "Proprietà codice completa dal primo giorno",
+            "Nessun impegno continuativo",
+            "Gestione opzionale da €99/anno",
+            "Perfetto per siti semplici e statici"
+          ]
+        },
+        "buy-growth": {
+          "title": "Compra e Possiedi - Growth",
+          "price": "€900 - €2.000",
+          "description": "Sito professionale con funzionalità avanzate.",
+          "benefits": [
+            "Proprietà codice completa",
+            "Performance React/Next.js",
+            "Funzionalità avanzate incluse",
+            "Gestione opzionale da €150/anno"
+          ]
+        },
+        "buy-custom": {
+          "title": "Compra e Possiedi - Custom Solutions",
+          "price": "€2.000+",
+          "description": "Funzionalità complesse su misura per le tue esigenze.",
+          "benefits": [
+            "Proprietà codice completa",
+            "Backend e database personalizzati",
+            "Integrazioni avanzate",
+            "Gestione consigliata: €399/anno"
+          ]
+        },
+        "consultation": {
+          "title": "Parliamone",
+          "price": "Consulenza GRATUITA",
+          "description": "Il tuo progetto richiede una discussione dettagliata.",
+          "benefits": [
+            "Consulenza di 30 minuti GRATUITA",
+            "Preventivo personalizzato in base alle tue esigenze",
+            "Consigli onesti sul miglior approccio",
+            "Nessuna pressione, solo informazioni"
+          ]
+        }
+      },
+      "cta": {
+        "primary": "Prenota Consulenza GRATUITA",
+        "secondary": "Vedi Prezzi Completi",
+        "share": "Condividi Risultati",
+        "restart": "Ricomincia"
+      }
+    }
+  }
+}

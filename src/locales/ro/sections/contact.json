@@ -1,0 +1,43 @@
+﻿{
+  "title": "Hai Să Începem",
+  "subtitle": "Nu mai aștepta. Rezervă consultația gratuită și hai să discutăm despre viziunea ta.",
+  "successMessage": "Mulțumesc! Am primit detaliile și te voi contacta în scurt timp.",
+  "errorMessage": "Eroare la trimitere. Te rog contactează-mă direct pe email sau WhatsApp.",
+  "responseTime": "Răspund de obicei:",
+  "responseTimeValue": "în 24 de ore",
+  "whatsappStatus": "WhatsApp:",
+  "whatsappAvailable": "Online Acum",
+  "whatsappOffline": "Offline (Revin la 9:00)",
+  "form": {
+    "name": "Nume",
+    "namePlaceholder": "Numele tău complet",
+    "nameRequired": "Numele este obligatoriu",
+    "contact": "Email sau Telefon",
+    "contactPlaceholder": "contact@exemplu.ro",
+    "contactRequired": "Email sau telefon obligatoriu",
+    "business": "Spune-mi despre afacerea ta",
+    "businessPlaceholder": "Cu ce te ocupi? Care este obiectivul principal al site-ului?",
+    "businessRequired": "Descrie scurt proiectul",
+    "needs": "De ce ai nevoie?",
+    "needsPlaceholder": "Selectează tipul de proiect...",
+    "needsRequired": "Te rog selectează o opțiune",
+    "needsOptions": {
+      "newWebsite": "Site Nou de la Zero",
+      "redesign": "Redesign Site Existent",
+      "consultation": "Consultanță Tehnică",
+      "other": "Altceva / Nu sunt sigur"
+    },
+    "preference": "Cum preferi să fii contactat?",
+    "preferencePlaceholder": "Selectează...",
+    "preferenceRequired": "Te rog selectează o preferință",
+    "preferenceOptions": {
+      "email": "Email",
+      "phone": "Apel Telefonic",
+      "whatsapp": "Mesaj WhatsApp"
+    },
+    "message": "Detalii suplimentare (opțional)",
+    "messagePlaceholder": "Ai un termen limită sau funcționalități specifice în minte?",
+    "submit": "Trimite Solicitarea",
+    "sending": "Se trimite..."
+  }
+}

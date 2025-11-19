@@ -1,0 +1,10 @@
+﻿{
+  "banner": {
+    "title": "Folosim Cookie-uri",
+    "description": "Acest site web folosește cookie-uri pentru a-ți îmbunătăți experiența, a analiza traficul și a-ți aminti preferințele. Apăsând pe 'Acceptă', consimți utilizarea cookie-urilor de către noi.",
+    "accept": "Acceptă Toate",
+    "acceptNecessary": "Doar Necesare",
+    "decline": "Refuză",
+    "learnMore": "Află Mai Multe"
+  }
+}

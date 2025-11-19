@@ -1,0 +1,10 @@
+{
+  "banner": {
+    "title": "We Use Cookies",
+    "description": "This website uses cookies to improve your experience, analyze traffic, and remember your preferences. By clicking 'Accept', you consent to our use of cookies.",
+    "accept": "Accept All",
+    "acceptNecessary": "Accept Necessary Only",
+    "decline": "Decline",
+    "learnMore": "Learn More"
+  }
+}

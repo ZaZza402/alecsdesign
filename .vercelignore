@@ -1,0 +1,32 @@
+# Backup folders
+backup_*/
+backup_*/**
+archived_*/
+archived_*/**
+
+# Documentation (keep README.md)
+DEPLOYMENT.md
+EMAIL_SETUP.md
+QUICK-START.md
+REDESIGN-IMPLEMENTATION-GUIDE.md
+SEO-GUIDE.md
+subscription-business-model.md
+SUBSCRIPTION-REDESIGN-SPEC.md
+UX-AUDIT-FINDINGS.md
+DUAL-MODEL-IMPLEMENTATION-PLAN.md
+IMPLEMENTATION-PROGRESS.md
+
+# Development files
+.vscode/
+.idea/
+*.log
+*.swp
+.DS_Store
+
+# Testing
+coverage/
+.nyc_output/
+
+# Build artifacts (handled by Vercel)
+node_modules/
+dist/

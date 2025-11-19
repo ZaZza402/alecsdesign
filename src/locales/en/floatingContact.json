@@ -1,0 +1,18 @@
+{
+  "floatingContact": {
+    "main": {
+      "label": "Get in Touch",
+      "ariaLabel": "Contact options"
+    },
+    "options": {
+      "whatsapp": {
+        "label": "WhatsApp Chat",
+        "description": "Quick response"
+      },
+      "form": {
+        "label": "Contact Form",
+        "description": "Detailed inquiry"
+      }
+    }
+  }
+}

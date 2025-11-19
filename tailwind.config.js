@@ -9,13 +9,13 @@ export default {
       colors: {
         // Primary Color - Single bold accent (professional blue)
         primary: {
-          DEFAULT: "#2563EB", // Professional blue (main accent)
-          light: "#3B82F6", // Lighter variant
-          dark: "#1E40AF", // Darker variant
+          DEFAULT: "#000", // Professional blue (main accent)
+          light: "#f35422", // Lighter variant
+          dark: "#000", // Darker variant
           50: "#EFF6FF",
           100: "#DBEAFE",
-          600: "#2563EB", // Main color
-          700: "#1D4ED8",
+          600: "#000", // Main color
+          700: "#000",
         },
         // Secondary Colors - Neutral palette
         secondary: {

@@ -1,0 +1,18 @@
+﻿{
+  "floatingContact": {
+    "main": {
+      "label": "Contattami",
+      "ariaLabel": "Opzioni di contatto"
+    },
+    "options": {
+      "whatsapp": {
+        "label": "Chat WhatsApp",
+        "description": "Risposta rapida"
+      },
+      "form": {
+        "label": "Modulo di Contatto",
+        "description": "Richiesta dettagliata"
+      }
+    }
+  }
+}

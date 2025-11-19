@@ -1,0 +1,18 @@
+﻿{
+  "floatingContact": {
+    "main": {
+      "label": "Contactează-mă",
+      "ariaLabel": "Opțiuni de contact"
+    },
+    "options": {
+      "whatsapp": {
+        "label": "Chat WhatsApp",
+        "description": "Răspuns rapid"
+      },
+      "form": {
+        "label": "Formular de Contact",
+        "description": "Solicitare detaliată"
+      }
+    }
+  }
+}

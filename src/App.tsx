@@ -1,27 +1,23 @@
 import { lazy, Suspense } from "react";
 import { useTranslation } from "react-i18next";
-import Sidebar from "./components/layout/Sidebar";
+import Header from "./components/layout/Header";
 import Footer from "./components/layout/Footer";
-import BottomNav from "./components/layout/BottomNav";
-import Hero from "./sections/Hero";
+import HeroSection from "./sections/HeroSection";
 import ProblemSection from "./sections/ProblemSection";
 import DifferenceSection from "./sections/DifferenceSection";
-import MobileLanguageLabel from "./components/ui/MobileLanguageLabel";
+import HowItWorksSection from "./sections/HowItWorksSection";
 import CookieBanner from "./components/ui/CookieBanner";
 import ScrollProgress from "./components/ui/ScrollProgress";
+import LanguageSuggestionBanner from "./components/ui/LanguageSuggestionBanner";
 import MetallicBackground from "./components/ui/backgrounds/MetallicBackground";
 import LoadingSkeleton from "./components/ui/LoadingSkeleton";
 
 // Lazy load below-fold sections for better initial load performance
-const TechnologySection = lazy(() => import("./sections/TechnologySection"));
-const WhyNotWordPressSection = lazy(
-  () => import("./sections/WhyNotWordPressSection")
-);
 const PricingSection = lazy(() => import("./sections/PricingSection"));
-const ProcessLifecycleSection = lazy(
-  () => import("./sections/ProcessLifecycleSection")
+const PortfolioSection = lazy(() => import("./sections/PortfolioSection"));
+const SubscriptionFAQSection = lazy(
+  () => import("./sections/SubscriptionFAQSection")
 );
-const ServicesSection = lazy(() => import("./sections/ServicesSection"));
 const ContactSection = lazy(() => import("./sections/ContactSection"));
 import {
   SEO,
@@ -53,45 +49,41 @@ export default function App() {
       {/* Global metallic background */}
       <MetallicBackground />
 
-      <Sidebar />
-      <MobileLanguageLabel />
-      <main role="main">
+      {/* Language suggestion banner */}
+      <LanguageSuggestionBanner />
+
+      {/* New minimal header */}
+      <Header />
+
+      <main role="main" style={{ paddingTop: "80px" }}>
         <section id="home" aria-labelledby="hero-heading">
-          <Hero />
+          <HeroSection />
         </section>
         <section id="problem" aria-labelledby="problem-heading">
           <ProblemSection />
+        </section>
+        <section id="how-it-works" aria-labelledby="how-it-works-heading">
+          <HowItWorksSection />
+        </section>
+        <section id="difference" aria-labelledby="difference-heading">
           <DifferenceSection />
         </section>
         <Suspense fallback={<LoadingSkeleton />}>
-          <section id="technology" aria-labelledby="technology-heading">
-            <TechnologySection />
-          </section>
-          <section
-            id="why-not-wordpress"
-            aria-labelledby="why-not-wordpress-heading"
-          >
-            <WhyNotWordPressSection />
-          </section>
-          {/* <section id="portfolio" aria-labelledby="portfolio-heading">
-          <PortfolioSection />
-        </section> */}
           <section id="pricing" aria-labelledby="pricing-heading">
-            <PricingSection />
+            <PricingSection key={`pricing-${t("nav.pricing")}`} />
           </section>
-          <section id="process" aria-labelledby="process-heading">
-            <ProcessLifecycleSection />
+          <section id="portfolio" aria-labelledby="portfolio-heading">
+            <PortfolioSection key={`portfolio-${t("nav.portfolio")}`} />
           </section>
-          <section id="services" aria-labelledby="services-heading">
-            <ServicesSection />
+          <section id="faq" aria-labelledby="faq-heading">
+            <SubscriptionFAQSection key={`faq-${t("nav.faq")}`} />
           </section>
           <section id="contact" aria-labelledby="contact-heading">
-            <ContactSection />
+            <ContactSection key={`contact-${t("nav.contact")}`} />
           </section>
         </Suspense>
       </main>
       <Footer />
-      <BottomNav />
       <CookieBanner />
       <ScrollProgress />
     </div>

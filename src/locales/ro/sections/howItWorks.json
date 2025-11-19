@@ -1,0 +1,20 @@
+﻿{
+  "title": "Cum Funcționează",
+  "subtitle": "De la primul apel la site-ul live în 4 pași simpli",
+  "step1": {
+    "title": "Discutăm (Consultanță Gratuită)",
+    "description": "Îmi povestești despre afacerea ta și obiectivele tale. Eu îți explic ce soluție ți se potrivește. Fără termeni tehnici complicați, doar sfaturi oneste."
+  },
+  "step2": {
+    "title": "Design și Dezvoltare",
+    "description": "Design personalizat pentru brandul tău. Includem două runde de revizuiri pentru a garanta că grafica este perfectă înainte de a scrie codul. Optimizat pentru mobil și rapid din prima zi."
+  },
+  "step3": {
+    "title": "Lansare Completă",
+    "description": "Mă ocup de domeniu, hosting, Google Analytics și Search Console. Prelucrez toată configurația tehnică pentru ca tu să nu îți bați capul."
+  },
+  "step4": {
+    "title": "Abonament Simplu (€468/an)",
+    "description": "Taxă activare €150 (o singură dată), apoi angajament minim 2 ani. Include ore de mentenanță lunară, monitorizare și suport. Poți rezilia oricând după 2 ani sau poți cumpăra codul sursă definitiv."
+  }
+}

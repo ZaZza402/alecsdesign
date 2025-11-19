@@ -1,122 +1,305 @@
-{
+﻿{
   "nav": {
     "home": "Acasă",
-    "technology": "Tehnologie",
+    "howItWorks": "Cum Funcționează",
+    "difference": "De Ce Noi",
     "portfolio": "Portofoliu",
     "pricing": "Prețuri",
-    "process": "Proces",
-    "services": "Servicii și Tarife",
+    "faq": "Întrebări",
     "contact": "Contact"
   },
   "hero": {
     "greeting": "Salut!",
     "name": "Sunt Alex",
-    "title": "Eu sunt",
-    "word1": "Dezvoltatorul Tău",
-    "word2": "Partenerul Tău",
-    "word3": "Soluția Ta",
-    "description": "Construiesc soluții web care cresc odată cu afacerea ta. Nu doar site-uri web, ci instrumente scalabile care lucrează 24/7 pentru a ajuta afacerea ta să prospere.",
-    "ctaWhatsApp": "Să vorbim pe WhatsApp",
-    "ctaEmail": "Sau poți scrie aici"
+    "title": "Site-ul Tău,",
+    "word1": "Termenii Tăi",
+    "word2": "Alegerea Ta",
+    "word3": "Stilul Tău",
+    "description": "Dezvoltare profesională fără costurile ascunse ale agențiilor. Alege între proprietate completă sau un abonament all-inclusive care gestionează totul.",
+    "subtitle": "Două modele flexibile. Un rezultat profesional.",
+    "ctaWhatsApp": "Chat WhatsApp",
+    "ctaEmail": "Sau scrie-mi"
   },
   "problem": {
-    "title": "Concurenții tăi îți fură clienții",
-    "point1": "Telefonul nu sună pentru că clienții nu te găsesc online",
-    "point2": "Pierzi mii de euro lunar în favoarea concurenților cu site-uri mai bune",
-    "point3": "Ești blocat făcând muncă manuală care ar putea fi automatizată",
-    "point4": "Site-ul tău actual te pune într-o postură jenantă în loc să-ți impresioneze clienții",
-    "description": "Construiesc soluții care rezolvă exact aceste probleme. Fără șabloane prefabricate. Sisteme reale concepute să te facă vizibil online, să-ți aducă clienți și să-ți economisească timp. Mă concentrez să fac afacerea ta să funcționeze mai bine, nu doar să arate mai frumos.",
-    "cta": "Hai să reparăm asta"
+    "title": "De ce cele mai multe afaceri se luptă cu prezența lor web",
+    "point1": "Agențiile sunt rigide: Costuri inițiale mari care adesea includ lucruri de care nu ai nevoie încă",
+    "point2": "DIY este frustrant: Constructori ca Wix par ușori până trebuie să personalizezi sau să repari layout-urile mobile",
+    "point3": "Întreținerea este o corvoada: Cine actualizează plugin-urile? Cine rezolvă site-ul dacă se blochează?",
+    "point4": "Ești blocat: Ai nevoie de o schimbare? Plătești dezvoltatorul din nou, sau te lupti cu dashboard-uri complicate",
+    "description": "Eu gestionez durerile de cap tehnice ca tu să te concentrezi pe afacerea ta. Două modele flexibile, ambele gestionate profesional.",
+    "cta": "Vezi Cum Funcționează"
   },
   "difference": {
-    "title": "Mă concentrez pe ce contează cu adevărat",
-    "subtitle": "Rezultate, nu povești. Onestitate, nu exagerări.",
+    "title": "De ce are sens",
+    "subtitle": "Pentru afacerile mici și pentru tine",
     "pillar1": {
-      "title": "Construit să Convertească, Nu Doar să Existe",
-      "description": "Site-ul tău trebuie să-ți aducă clienți, nu doar să stea acolo frumos. Proiectez fiecare element cu un scop: să transforme vizitatori în clienți plătitori. Call-to-action clare, încărcare rapidă, mobile-first. Totul despre rezultate."
+      "title": "Barieră de Intrare Mică",
+      "description": "Plătești €150 configurare + €468/an în loc de mii de euro în avans. Sunt €39/lună – mai puțin decât un abonament la sală. Începe fără să-ți golești contul."
     },
     "pillar2": {
-      "title": "Chiar Găsibil pe Google",
-      "description": "La ce bun un site grozav dacă nimeni nu-l vede? Construiesc cu SEO integrat de la început. Când clienții tău caută ce oferi, tu apari. Simplu.",
-      "explainer": "Traducere: Mai multă vizibilitate = mai multe cereri. Fără să arzi bani pe reclame."
+      "title": "Eu Mă Ocup de Toată Partea Tehnică",
+      "description": "Nu trebuie să înțelegi hosting, DNS, certificate SSL sau Google Console. Eu configurez totul și țin sistemul funcțional 24/7. Tu îmi trimiți conținut și eu îl fac live pe site.",
+      "explainer": "Domeniu, găzduire, securitate, SEO, analytics – toate incluse în abonament."
     },
     "pillar3": {
-      "title": "Comunic Clar, Fără Jargon Tehnic",
-      "description": "Fără termeni tehnici complicați. Nu dispar după lansare. Explic totul clar, răspund la întrebările tale și rămân alături pentru a te ajuta să crești. Nu angajezi doar un dezvoltator—obții un partener căruia îi pasă cu adevărat de succesul tău."
+      "title": "Site-ul Tău Crește Odată cu Afacerea Ta",
+      "description": "Începi cu un site simplu. Când ești pregătit pentru e-commerce, sisteme de rezervări sau funcționalități personalizate, le adăugăm. Nu trebuie să reconstruim totul de la zero. Sunt investit în succesul tău pe termen lung."
     }
   },
-  "technology": {
-    "title": "Construit pentru viteză. Construit să dureze.",
-    "subtitle": "Site-uri web moderne care se încarcă rapid și rămân rapide pe măsură ce crești.",
-    "benefit1": "Încărcare ultra-rapidă = mai mulți clienți",
-    "benefit1Explainer": "Fiecare secundă contează. Site-urile mai rapide au conversii mai bune—nu este o opinie, este demonstrat cu date.",
-    "benefit2": "Ușor de actualizat fără să strici nimic",
-    "benefit3": "Crește cu afacerea ta fără să reconstruiești",
-    "benefit3Explainer": "Începe cu ce ai nevoie acum. Adaugă funcționalități mai târziu fără să o iei de la început.",
-    "callout": "Construiesc cu instrumente care prioritizează performanța și fiabilitatea.",
-    "calloutExplainer": "Rezultatul? Timpi de încărcare mai rapizi care îmbunătățesc SEO-ul tău, interacțiuni fluide care mențin vizitatorii implicați, și o fundație solidă care nu cedează pe măsură ce crești.",
-    "visualLabel": "Blocuri de Construcție"
-  },
-  "whyNotWordPress": {
-    "title": "WordPress vs. Dezvoltare Personalizată",
-    "quote": "WordPress e grozav pentru multe lucruri. Dar pentru site-uri business critice pentru performanță? Există o cale mai bună.",
-    "subtitle": "O comparație corectă pentru a te ajuta să alegi ce e potrivit pentru afacerea ta.",
-    "wpLabel": "WordPress/Wix",
-    "myStackLabel": "Abordare Personalizată",
-    "performance": {
-      "title": "Performanță",
-      "wordpress": "Flexibil dar greu. Plugin-urile adaugă greutate. Timpi de încărcare tipic 2-4 secunde.",
-      "myStack": "Construit ușor de la fundație. Încărcare sub o secundă. Doar ce ai nevoie, nimic mai mult."
+  "howItWorks": {
+    "title": "Cum Funcționează",
+    "subtitle": "De la primul apel la site-ul live în 4 pași simpli",
+    "step1": {
+      "title": "Discutăm (Întrevedere Gratuită)",
+      "description": "Îmi spui despre afacerea ta, obiectivele tale și viziunea ta. Eu îți explic ce este posibil și ce se potrivește nevoilor tale. Fără jargon tehnic, doar sfaturi oneste."
     },
-    "security": {
-      "title": "Securitate",
-      "wordpress": "Țintă populară pentru atacuri. Actualizări regulate obligatorii. Vulnerabilitățile extensiilor sunt frecvente.",
-      "myStack": "Fără bază de date înseamnă fără riscul de SQL injection. Fără panou admin care poate fi compromis. Suprafață de atac minimă."
+    "step2": {
+      "title": "Construiesc Site-ul Tău",
+      "description": "Design personalizat adaptat brandului tău. Includem două runde de revizuiri dedicate pentru a ne asigura că designul se potrivește perfect viziunii tale înainte de a scrie codul. Prietenos pentru mobil și rapid din prima zi."
     },
-    "maintenance": {
-      "title": "Întreținere",
-      "wordpress": "Actualizări de plugin-uri necesare constant. Verificări de compatibilitate obligatorii. Actualizările de temă pot genera probleme.",
-      "myStack": "O dată lansat, nu mai necesită îngrijire constantă. Fără conflicte de plugin-uri. Actualizările sunt intenționate, nu forțate."
+    "step3": {
+      "title": "Lansez Totul",
+      "description": "Cumpăr domeniul, configurez găzduirea, conectez Google Analytics și Search Console. Eu mă ocup de toată configurarea tehnică pe care nu trebuie s-o înțelegi."
     },
-    "scalability": {
-      "title": "Scalabilitate",
-      "wordpress": "Costurile serverului scalează cu traficul. Mai mulți vizitatori = facturi hosting mai mari.",
-      "myStack": "Vârfurile de trafic nu afectează costurile. Construit să gestioneze creșterea din prima zi."
-    },
-    "bottomNote": "WordPress este excelent pentru site-uri cu mult conținut, bloguri și când ai nevoie de un ecosistem vast de extensii.\n\nDezvoltarea personalizată este alegerea potrivită când ai nevoie de performanță maximă, întreținere minimă și un site care crește odată cu afacerea ta fără să devină mai complicat.\n\nAmbele au locul lor. Întrebarea este: de ce are nevoie cu adevărat afacerea ta?"
+    "step4": {
+      "title": "Tu Plătești Anual (€468/an)",
+      "description": "Taxă de configurare €150 o singură dată, apoi angajament minim de 2 ani. Include 2 ore de actualizări pe lună, monitorizare 24/7 și suport prin email. Anulează oricând după 2 ani, sau cumpără codul când vrei."
+    }
   },
   "portfolio": {
-    "title": "Proiecte Recente",
-    "subtitle": "Soluții reale pentru afaceri reale",
-    "viewProject": "Vezi Proiect",
-    "client": "Client",
-    "problem": "Problemă",
-    "solution": "Soluție",
-    "result": "Rezultat",
-    "project1": {
-      "name": "Proiect 1",
-      "client": "Afacere Locală Mică",
-      "problem": "Fără prezență online",
-      "solution": "Landing page responsive cu sistem de rezervări",
-      "result": "Creștere de 40% în solicitări"
-    },
-    "project2": {
-      "name": "Proiect 2",
-      "client": "Magazin E-commerce",
-      "problem": "Catalog produse greu de gestionat",
-      "solution": "Dashboard personalizat cu management inventar",
-      "result": "Economisit 10 ore/săptămână"
-    },
-    "comingSoon": {
-      "title": "În curând",
-      "description": "Proiecte noi în curând. Rămâi conectat!"
+    "title": "Proiecte Reale, Rezultate Reale",
+    "subtitle": "Vezi ce am construit pentru afaceri ca a ta",
+    "viewProject": "Vezi Site Live",
+    "featuresTitle": "Caracteristici Cheie",
+    "techStackTitle": "Stack Tehnologic",
+    "visitLive": "Vizitează Live",
+    "seeDetails": "Vezi Detalii",
+    "showLess": "Arată Mai Puțin",
+    "filterAll": "Toate Proiectele",
+    "filterBuy": "Cumpără & Deține",
+    "filterSubscribe": "Abonează-te",
+    "projects": [
+      {
+        "id": "psychologist",
+        "url": "https://www.popescumaria.ro",
+        "image": "/portfolio images/website-psycologis-portfolio.webp",
+        "category": "Site Web pentru Profesionist în Sănătate",
+        "model": "Cumpără & Deține + Gestionare de Bază (€99/an)",
+        "description": "Site web modern și liniștitor pentru un psiholog clinic. Design curat focusat pe construirea încrederii și ușurința programării online pentru pacienți.",
+        "features": [
+          "Design complet responsive pentru mobil",
+          "Formulare de contact integrate",
+          "SEO optimizat pentru căutare locală",
+          "Imagini și branding profesional",
+          "Integrare Google Maps",
+          "Animații și tranziții fluide"
+        ],
+        "tech": "React, TypeScript, Vite, Tailwind CSS, Framer Motion"
+      },
+      {
+        "id": "immigration-agency",
+        "url": "https://www.puntomigrare.it",
+        "image": "/portfolio images/service-agency-website.webp",
+        "category": "Site Web pentru Servicii Profesionale",
+        "model": "Cumpără & Deține + Gestionare de Bază (€99/an)",
+        "description": "Site web profesional pentru un centru de asistență imigrare (CAF) în Italia. Creat pentru a ajuta imigranții să navigheze cu ușurință procese birocratice complexe.",
+        "features": [
+          "Afișare în timp real a programului biroului (deschis/închis)",
+          "Integrare interactivă Google Maps",
+          "Progressive Web App (PWA) - instalabil pe mobil",
+          "Prezentare servicii cu descrieri detaliate",
+          "Integrare contact și formulare de solicitare",
+          "SEO optimizat pentru vizibilitate în căutare locală",
+          "Animații scroll fluide"
+        ],
+        "tech": "React, JavaScript, Vite, Tailwind CSS, Framer Motion, PWA"
+      },
+      {
+        "id": "velvet-shaker",
+        "url": "https://velvet-shaker.alecsdesign.xyz",
+        "image": "/portfolio images/velvet-shaker-bar-showcase-design.webp",
+        "category": "Cocktail Bar & Divertisment",
+        "model": "Proiect Personal de Prezentare",
+        "description": "Site web cinematografic pentru un bar de cocktailuri sofisticat. O călătorie pe o singură pagină concepută pentru a cufunda vizitatorii în arta poeziei lichide, de la vibrații underground la cocktailuri signature.",
+        "features": [
+          "Design intro mobil cinematografic",
+          "Meniu mobil minimalist și elegant",
+          "Meniu cu carduri animate pentru prezentare cocktailuri",
+          "Cursor desktop personalizat pentru senzație premium",
+          "Galerie glisantă animată frumoasă",
+          "Integrare Google Maps pentru locație",
+          "Formulare pentru rezervări",
+          "Integrare abonament newsletter",
+          "Tipografie strategică cu fonturi elegante",
+          "Experiență narativă pe întreaga pagină"
+        ],
+        "tech": "React, TypeScript, Vite, Tailwind CSS, Framer Motion, Swiper.js"
+      }
+    ],
+    "cta": {
+      "title": "Vrei să vezi proiectul tău aici?",
+      "subtitle": "Hai să construim ceva grozav împreună",
+      "button": "Începe Proiectul Tău"
     }
   },
   "pricing": {
-    "title": "Investiție Care Are Sens",
-    "subtitle": "Prețuri clare bazate pe ce ai nevoie cu adevărat",
-    "rangeLabel": "Interval de investiție",
-    "rangeNote": "Prețul final depinde de cerințele tale specifice—fără taxe ascunse",
+    "title": "Alege Modelul Tău",
+    "subtitle": "Două modalități de a obține un site web profesional care crește cu afacerea ta",
+    "buyModel": {
+      "badge": "Bazat pe Proiect",
+      "title": "Cumpără & Deține",
+      "description": "Plătești o dată, deții pe vecie. Perfect pentru afaceri care preferă lucrul tradițional bazat pe proiect.",
+      "tiers": [
+        {
+          "name": "Esențiale",
+          "priceRange": "Începe de la €500",
+          "description": "Ideal pentru portofolii, landing pages și site-uri informaționale pentru afaceri locale",
+          "features": [
+            "Structură statică sau CMS simplu",
+            "Până la 3 layout-uri de pagină distincte",
+            "Design responsive pentru mobil",
+            "SEO de bază și formulare de contact",
+            "Deții tot codul & design-ul"
+          ],
+          "management": {
+            "price": "€99/an",
+            "label": "Management Opțional",
+            "features": [
+              "Management găzduire & domeniu",
+              "Actualizări securitate",
+              "Modificări conținut minore",
+              "Suport prin email"
+            ]
+          },
+          "turnaround": "Termen tipic: 1-2 săptămâni"
+        },
+        {
+          "name": "Creștere",
+          "priceRange": "Începe de la €900",
+          "description": "Ideal pentru site-uri business interactive și platforme orientate spre conținut",
+          "features": [
+            "Performanță React/Next.js",
+            "Integrare CMS pentru editare ușoară",
+            "Animații avansate & interactivitate",
+            "Integrări terțe părți",
+            "Deții tot codul & design-ul"
+          ],
+          "management": {
+            "price": "€150/an",
+            "label": "Recomandat",
+            "features": [
+              "Management găzduire & domeniu",
+              "Actualizări securitate & dependențe",
+              "Modificări conținut (2h/lună)",
+              "Monitorizare performanță",
+              "Suport email prioritar"
+            ]
+          },
+          "turnaround": "Termen tipic: 2-4 săptămâni"
+        },
+        {
+          "name": "Soluții Personalizate",
+          "priceRange": "Ofertă Personalizată",
+          "description": "Ideal pentru aplicații web, platforme SaaS și necesități de funcționalități complexe",
+          "features": [
+            "Autentificare utilizatori & baze de date",
+            "Logică de business complexă",
+            "Integrări API terțe părți",
+            "Panouri admin personalizate",
+            "Deții tot codul & design-ul"
+          ],
+          "management": {
+            "price": "€399/an",
+            "label": "Foarte Recomandat",
+            "features": [
+              "Management găzduire & domeniu",
+              "Actualizări securitate & dependențe",
+              "Modificări conținut (4h/lună)",
+              "Îmbunătățiri funcționalități",
+              "Monitorizare performanță",
+              "Suport prioritar (răspuns 24h)"
+            ]
+          },
+          "turnaround": "Hai să discutăm cerințele tale specifice"
+        }
+      ],
+      "note": "Prețurile listate reprezintă puncte de plecare tipice. Investiția finală depinde de complexitatea design-ului și cerințele funcționale specifice. Toate prețurile exclud costurile de găzduire. Planurile de management sunt opționale dar recomandate pentru liniște sufletească.",
+      "cta": "Hai Să Discutăm Proiectul Tău"
+    },
+    "subscribeModel": {
+      "badge": "TOTUL INCLUS",
+      "title": "Abonează-te și Relaxează-te",
+      "price": "€39/lună",
+      "upfront": "Taxă de configurare €150 o singură dată",
+      "annual": "facturat anual (€468/an)",
+      "commitment": "Angajament minim 2 ani",
+      "description": "Abonamentul totul inclus pentru afaceri care vor o experiență fără griji. Include design, dezvoltare și management continuu pentru site-uri web de anvergură standard.",
+      "features": [
+        "Design & dezvoltare (anvergură standard inclusă)",
+        "Până la 5 pagini cu layout-uri standard",
+        "Găzduire, domeniu & SSL incluse",
+        "2 ore de actualizări conținut pe lună",
+        "Actualizări securitate & monitorizare",
+        "Suport email (răspuns 48h)",
+        "Design responsive mobil",
+        "Configurare SEO de bază"
+      ],
+      "ownership": {
+        "title": "Ce Deții",
+        "items": [
+          "Domeniu înregistrat pe numele tău",
+          "Tot conținutul, imaginile, textele furnizate",
+          "Export conținut disponibil oricând",
+          "După 2 ani: cumpără cod la 40% din valoarea de piață"
+        ]
+      },
+      "cancellation": {
+        "title": "Politică de Anulare",
+        "details": "Angajament minim 2 ani. După 2 ani, anulează oricând cu preaviz 30 zile. Site-ul devine offline după perioada preaviz. Transfer domeniu disponibil (numele tău, proprietatea ta). Export conținut furnizat."
+      },
+      "cta": "Începe cu €0"
+    },
+    "addons": {
+      "title": "Suplimente (Ambele Modele)",
+      "subtitle": "Îmbunătățește site-ul cu funcționalități adiționale",
+      "items": [
+        {
+          "icon": "🛒",
+          "name": "Integrare E-commerce",
+          "buyPrice": "Începe de la €400 configurare",
+          "subscribePrice": "Începe de la €200/an",
+          "description": "Vinde produse în siguranță. Include configurare gateway plăți (Stripe/PayPal) și catalog produse"
+        },
+        {
+          "icon": "📅",
+          "name": "Sisteme de Rezervări",
+          "buyPrice": "Începe de la €200 configurare",
+          "subscribePrice": "Începe de la €100/an",
+          "description": "Integrări Calendly/Acuity sau logică de rezervare personalizată"
+        },
+        {
+          "icon": "🌍",
+          "name": "Multilingv",
+          "buyPrice": "Începe de la €150/limbă",
+          "subscribePrice": "Începe de la €75/an per limbă",
+          "description": "Ajunge la audiențe internaționale în limba lor cu suport de traducere profesional"
+        },
+        {
+          "icon": "⚡",
+          "name": "Funcționalități Personalizate",
+          "buyPrice": "Ofertă personalizată",
+          "subscribePrice": "Ofertă personalizată",
+          "description": "Integrări complexe, baze de date personalizate sau funcționalități unice—hai să discutăm nevoile tale specifice"
+        }
+      ],
+      "cta": "Discutăm Nevoile Tale"
+    },
+    "decisionQuiz": {
+      "title": "Nu Ești Sigur Ce Model?",
+      "subtitle": "Face quiz-ul nostru de 2 minute pentru a găsi potrivirea perfectă",
+      "cta": "Face Quiz-ul"
+    },
+    "pitch": "Aceeași calitate, același dezvoltator, aceleași rezultate — alege doar structura de plată care se potrivește afacerii tale.",
     "examples": {
       "simple": {
         "title": "Site de Bază",
@@ -135,7 +318,7 @@
       },
       "medium": {
         "title": "Site Business",
-        "price": "€500 - €1200",
+        "price": "Începe de la €900",
         "features": [
           "Site web multi-pagină",
           "Funcții personalizate",
@@ -150,7 +333,7 @@
       },
       "complex": {
         "title": "Platformă Completă",
-        "price": "€1200 - €2000+",
+        "price": "Ofertă personalizată",
         "features": [
           "Aplicație web completă",
           "Panou admin pentru actualizări",
@@ -165,19 +348,65 @@
         }
       }
     },
-    "ctaText": "Nu ești sigur care se potrivește? Să vorbim despre obiectivele tale, nu doar despre funcții. Te voi ajuta să îți dai seama ce ai nevoie cu adevărat.",
-    "cta": "Primește Sfaturi Oneste"
+    "subscriptionFAQ": {
+      "title": "Întrebări Frecvente",
+      "subtitle": "Tot ce trebuie să știi despre ambele modele",
+      "searchPlaceholder": "Caută în întrebări...",
+      "noResults": "Nicio întrebare nu corespunde căutării tale. Încearcă alte cuvinte cheie!",
+      "minRead": "min citire",
+      "stillHaveQuestions": "Mai ai întrebări?",
+      "q1": {
+        "question": "Ce model ar trebui să aleg?",
+        "answer": "Alege Cumpară & Deține dacă preferi plăți unice și proprietate completă a codului. Alege Abonează-te & Relaxează-te dacă vrei cost inițial zero și suport continuu inclus. Fă quiz-ul nostru mai sus pentru o recomandare personalizată."
+      },
+      "q2": {
+        "question": "Ce este inclus în planurile de management?",
+        "answer": "Planurile de management includ management găzduire & domeniu, actualizări securitate, modificări conținut minore (orele variază pe nivel), monitorizare performanță și suport email. Sunt opționale pentru Cumpară & Deține dar foarte recomandate pentru liniște sufletească."
+      },
+      "q3": {
+        "question": "Pot schimba modelele mai târziu?",
+        "answer": "Da! Clienții Abonează-te & Relaxează-te pot cumpăra codul după 2 ani pentru €500. Clienții Cumpără & Deține pot adăuga planuri de management oricând. Suntem flexibili — afacerea ta evoluează, site-ul tău ar trebui de asemenea."
+      },
+      "q4": {
+        "question": "Ce se întâmplă după angajamentul de 2 ani al abonamentului?",
+        "answer": "După 2 ani, poți: (1) Continua lună de lună cu preaviz de 30 zile, (2) Cumpăra codul pentru €500 și să-l deții pe vecie, sau (3) Anula oricând fără penalități."
+      },
+      "q5": {
+        "question": "Trebuie să înțeleg hosting, DNS, SEO sau lucruri tehnice?",
+        "answer": "Nu. Cu Abonează-te & Relaxează-te sau planuri de management, mă ocup eu de totul. Fără management, pot să te ajut să configurezi și să te ghidez — tu doar gestionezi reînnoirile și actualizările singur."
+      },
+      "q6": {
+        "question": "Ce se numără drept 'modificări conținut' în planurile de management?",
+        "answer": "Actualizări text, schimbări imagini, ajustări culori, modificări layout minore. Modificări complexe precum adăugarea de pagini noi, formulare personalizate sau funcționalități sunt cotate separat la €50-100/oră în funcție de complexitate."
+      },
+      "q7": {
+        "question": "De ce să nu folosesc pur și simplu Wix sau Squarespace?",
+        "answer": "Constructorii de site-uri sunt grozavi pentru faci-singur, dar schimbi simplitatea cu limitări. Cu mine, primești cod personalizat care face exact ce ai nevoie, suport direct de la persoana care a construit site-ul, și nicio blocare pe platformă. Plus, în 3 ani, Wix costă €600+ (€16/lună × 36) vs. €1,554 pentru Abonează-te & Relaxează-te (€150 configurare + €468/an × 3) — cu calitate mai bună și suport personal."
+      },
+      "q8": {
+        "question": "Ce se întâmplă dacă dispari sau opresti serviciul?",
+        "answer": "Întrebare justă. Dacă vreodată opresc serviciul, clienții Abonează-te & Relaxează-te pot cumpăra codul la un preț puternic redus. Clienții Cumpară & Deține dețin deja totul. Conținutul și domeniul tău sunt mereu ale tale — poți exporta și muta oricând."
+      },
+      "q9": {
+        "question": "Pot anula Abonează-te & Relaxează-te înainte de 2 ani?",
+        "answer": "Da, dar există o penalitate de terminare timpurie: fie plătești lunile rămase fie cumperi codul pentru €750 (vs. €500 după 2 ani). Angajamentul de 2 ani asigură echitate — eu investesc timp construind site-ul tău în avans."
+      },
+      "q10": {
+        "question": "Cum funcționează suplimentele cu fiecare model?",
+        "answer": "Suplimentele (e-commerce, rezervări, multilingv) au prețuri diferite pentru fiecare model. Cumpară & Deține = mai mare în avans, cost anual scăzut/zero. Abonează-te & Relaxează-te = mai mic în avans, inclus în tariful anual. Verifică secțiunea prețuri mai sus pentru tarifele specifice."
+      }
+    }
   },
-  "process": {
-    "title": "Cum lucrăm împreună?",
-    "subtitle": "Simplu, transparent, fără angajamente",
+  "servicesRates": {
+    "title": "Servicii și Tarife",
+    "subtitle": "Prețuri transparente pentru actualizări, funcționalități și suport continuu",
     "step1": {
       "title": "Apel Descoperire (Săptămâna 1)",
-      "description": "Tu: Îmi spui obiectivele, provocările actuale și viziunea. Eu: Pun întrebări, iau notițe, înțeleg ce înseamnă succes pentru tine."
+      "description": "Tu: Spune obiectivele, bugetul și viziunea. Eu: Pun întrebări, recomand care model se potrivește cel mai bine (Cumpară vs Abonare), și conturez ce vom construi."
     },
     "step2": {
-      "title": "Strategie & Propunere (Săptămâna 1)",
-      "description": "Tu: Oferi materiale existente (logo, conținut, exemple). Eu: Creez propunere detaliată cu timeline, prețuri și ce vom construi."
+      "title": "Propunere & Selectare Model (Săptămâna 1)",
+      "description": "Tu: Revizuiești propunerea detaliată cu prețuri pentru modelul ales. Eu: Ofer defalcare clară a costurilor, timeline, livrabile și răspund la toate întrebările înainte să te angajezi."
     },
     "step3": {
       "title": "Fază Design (Săptămâna 2-3)",
@@ -232,15 +461,6 @@
       "title": "Testare (Săptămâna 5-6)",
       "description": "Tu testezi pe dispozitivele tale. Eu rezolv problemele și optimizez performanța."
     },
-    "phase7": {
-      "title": "Lansare",
-      "description": "Publicarea cu suport continuu și optimizare."
-    },
-    "cta": "Fiecare fază este transparentă, colaborativă și concentrată pe succesul tău"
-  },
-  "servicesRates": {
-    "title": "Servicii și Tarife",
-    "subtitle": "Prețuri transparente pentru actualizări, funcționalități și suport continuu",
     "seo": {
       "title": "Servicii și Tarife Dezvoltare Web | Alecs Design",
       "description": "Prețuri transparente pentru servicii de dezvoltare web: actualizări mici (€50-90), sarcini medii (€90-200), funcționalități mari (€200-600+). Pachete de suport lunar disponibile.",
@@ -313,12 +533,12 @@
       "large": {
         "ecommerce": {
           "name": "E-commerce (De Bază)",
-          "price": "€300-500",
+          "price": "Începe de la €400",
           "description": "Magazin online simplu cu procesare plăți"
         },
         "multilang": {
           "name": "Multi-limbă",
-          "price": "€250-400",
+          "price": "Începe de la €150/limbă",
           "description": "Adăugare limbi suplimentare cu traducere completă"
         },
         "custom": {
@@ -354,19 +574,16 @@
     },
     "cta": "Toate prețurile sunt estimări. Costurile reale depind de complexitate. Contactează-mă pentru o ofertă personalizată!"
   },
-  "blog": {
-    "title": "Blog & Perspective",
-    "subtitle": "Strategii, sfaturi și perspective pentru a-ți crește afacerea online",
-    "imagePlaceholder": "Imagine în curând",
-    "minRead": "min citire",
-    "readMore": "Citește articolul complet",
-    "moreComingSoon": "Mai multe articole în curând..."
-  },
   "contact": {
     "title": "Gata să Începi?",
-    "subtitle": "Accept doar 2-3 proiecte pe lună. Rezervă-ți locul înainte să se umple calendarul.",
+    "subtitle": "Gata să începi? Rezervă consultația ta gratuită și să discutăm despre proiectul tău.",
     "successMessage": "Mulțumesc! Te voi contacta în curând.",
     "errorMessage": "Nu s-a putut trimite mesajul. Te rog contactează-mă direct prin email sau telefon.",
+    "responseTime": "Răspuns tipic:",
+    "responseTimeValue": "în 24 de ore",
+    "whatsappStatus": "WhatsApp:",
+    "whatsappAvailable": "Disponibil Acum",
+    "whatsappOffline": "Indisponibil (9:00 - 22:00)",
     "form": {
       "name": "Nume",
       "namePlaceholder": "Numele tău",
@@ -396,7 +613,8 @@
       },
       "message": "Mesaj adițional (opțional)",
       "messagePlaceholder": "Mai este ceva ce ar trebui să știu?",
-      "submit": "Trimite"
+      "submit": "Trimite",
+      "sending": "Se trimite..."
     }
   },
   "footer": {

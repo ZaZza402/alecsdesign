@@ -2,9 +2,12 @@ import { useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import { useNavigate } from "react-router-dom";
 import { ArrowLeft } from "lucide-react";
-import Sidebar from "../components/layout/Sidebar";
-import BottomNav from "../components/layout/BottomNav";
-import MobileLanguageLabel from "../components/ui/MobileLanguageLabel";
+import Header from "../components/layout/Header";
+import Footer from "../components/layout/Footer";
+import CookieBanner from "../components/ui/CookieBanner";
+import ScrollProgress from "../components/ui/ScrollProgress";
+import LanguageSuggestionBanner from "../components/ui/LanguageSuggestionBanner";
+import MetallicBackground from "../components/ui/backgrounds/MetallicBackground";
 import "./LegalPage.css";
 
 const TermsConditions = () => {
@@ -21,9 +24,10 @@ const TermsConditions = () => {
 
   return (
     <>
-      <Sidebar />
-      <MobileLanguageLabel />
-      <div className="legal-page">
+      <MetallicBackground />
+      <LanguageSuggestionBanner />
+      <Header />
+      <div className="legal-page" style={{ paddingTop: "80px" }}>
         <div className="legal-container">
           <button onClick={handleBack} className="back-button">
             <ArrowLeft size={20} />
@@ -32,7 +36,7 @@ const TermsConditions = () => {
 
           <h1 className="legal-title">{t("legal.terms.title")}</h1>
           <p className="legal-update">
-            {t("legal.lastUpdated")}: November 3, 2025
+            {t("legal.lastUpdated")}: November 17, 2025
           </p>
 
           <div className="legal-content">
@@ -99,7 +103,9 @@ const TermsConditions = () => {
           </div>
         </div>
       </div>
-      <BottomNav />
+      <Footer />
+      <CookieBanner />
+      <ScrollProgress />
     </>
   );
 };

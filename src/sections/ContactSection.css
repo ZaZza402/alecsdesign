@@ -18,13 +18,13 @@
 }
 
 .toast-success {
-  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+  background: linear-gradient(135deg, #f35422 0%, #000 100%);
   border-color: rgba(255, 255, 255, 0.3);
   color: white;
 }
 
 .toast-error {
-  background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);
+  background: linear-gradient(135deg, #f35422 0%, #000 100%);
   border-color: rgba(255, 255, 255, 0.3);
   color: white;
 }
@@ -86,24 +86,60 @@
 }
 
 .contact-section {
-  padding: 6rem 0;
-  background: linear-gradient(180deg, #ffffff 0%, #dbeafe 100%);
+  padding: 4rem 0;
+  background: linear-gradient(180deg, #ffffff 0%, #eeeeee 100%);
   position: relative;
   overflow: hidden;
+}
+
+@media (min-width: 1024px) {
+  .contact-section {
+    padding: 5rem 0;
+  }
+}
+
+/* Contact Indicators */
+.contact-indicators {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+  margin-top: 2rem;
+  padding: 1.5rem;
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 12px;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.indicator-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.875rem;
+  color: #475569;
+}
+
+.indicator-item svg {
+  color: #f35422;
+}
+
+.indicator-item.available .status-badge {
+  color: #f35422;
+}
+
+.indicator-item.unavailable .status-badge {
+  color: #94a3b8;
+}
+
+.status-badge {
+  font-weight: 600;
 }
 
 .contact-container {
   max-width: 900px;
   margin: 0 auto;
   padding: 0 2rem;
-  opacity: 0;
-  transform: translateY(30px);
-  transition: all 0.6s cubic-bezier(0.22, 1, 0.36, 1);
-}
-
-.contact-container.animate-in {
-  opacity: 1;
-  transform: translateY(0);
 }
 
 .contact-header {
@@ -112,11 +148,17 @@
 }
 
 .contact-title {
-  font-size: 2.75rem;
+  font-size: 1.75rem;
   font-weight: 700;
   color: #0f172a;
   margin: 0 0 1rem 0;
   line-height: 1.2;
+}
+
+@media (min-width: 1024px) {
+  .contact-title {
+    font-size: 2rem;
+  }
 }
 
 .contact-subtitle {
@@ -132,7 +174,7 @@
   border-radius: 12px;
   box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
     0 4px 6px -2px rgba(0, 0, 0, 0.05);
-  border: 2px solid rgba(59, 130, 246, 0.1);
+  border: 2px solid rgba(243, 84, 34, 0.1);
 }
 
 .form-grid {
@@ -171,14 +213,14 @@
 .form-textarea:focus,
 .form-select:focus {
   outline: none;
-  border-color: #3b82f6;
-  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+  border-color: #f35422;
+  box-shadow: 0 0 0 3px rgba(243, 84, 34, 0.1);
 }
 
 .form-input.error,
 .form-textarea.error,
 .form-select.error {
-  border-color: #ef4444;
+  border-color: #f35422;
 }
 
 .form-textarea {
@@ -192,7 +234,7 @@
 
 .error-message {
   font-size: 0.875rem;
-  color: #ef4444;
+  color: #f35422;
   margin-top: -0.25rem;
 }
 
@@ -202,7 +244,7 @@
   justify-content: center;
   gap: 0.75rem;
   padding: 1rem 2.5rem;
-  background: linear-gradient(135deg, #3b82f6 0%, #10b981 100%);
+  background: linear-gradient(135deg, #f35422 0%, #f35422 100%);
   color: white;
   font-size: 1.125rem;
   font-weight: 700;
@@ -210,14 +252,14 @@
   border-radius: 10px;
   cursor: pointer;
   transition: all 0.3s ease;
-  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
+  box-shadow: 0 4px 12px rgba(243, 84, 34, 0.3);
   width: 100%;
   margin-top: 0.5rem;
 }
 
 .submit-button:hover:not(:disabled) {
   transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(59, 130, 246, 0.4);
+  box-shadow: 0 6px 20px rgba(243, 84, 34, 0.4);
 }
 
 .submit-button:disabled {
@@ -251,7 +293,7 @@
   }
 
   .contact-title {
-    font-size: 2.25rem;
+    font-size: 2rem;
   }
 
   .contact-subtitle {

@@ -1,0 +1,12 @@
+﻿{
+  "title": "Pagina Nu a Fost Găsită",
+  "description": "Pagina pe care o cauți nu există sau a fost mutată. Nu-ți face griji, hai să te punem înapoi pe drumul cel bun!",
+  "goHome": "Mergi Acasă",
+  "goBack": "Înapoi",
+  "suggestions": {
+    "title": "Iată ce poți face:",
+    "item1": "Verifică URL-ul pentru greșeli de scriere",
+    "item2": "Folosește meniul de navigare pentru a găsi ce ai nevoie",
+    "item3": "Contactează-mă dacă crezi că ceva este stricat"
+  }
+}

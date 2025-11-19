@@ -1,140 +1,185 @@
-import React, { useState, useEffect } from "react";
-import { motion } from "framer-motion";
+import { useState, useEffect } from "react";
 import { useTranslation } from "react-i18next";
-import MenuTrigger from "../ui/buttons/MenuTrigger";
-import MobileMenu from "./MobileMenu";
+import { useNavigate, useLocation } from "react-router-dom";
 import LanguageSwitcher from "../ui/LanguageSwitcher";
+import i18n from "../../i18n";
 import "./Header.css";
 
-interface NavLink {
-  name: string;
-  href: string;
-}
-
-const Header: React.FC = () => {
+const Header = () => {
   const { t } = useTranslation();
-  const [isOpen, setIsOpen] = useState(false);
+  const navigate = useNavigate();
+  const location = useLocation();
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const [activeSection, setActiveSection] = useState("home");
 
-  const navLinks: NavLink[] = [
-    { name: t("nav.home"), href: "#home" },
-    { name: t("nav.about"), href: "#about" },
-    { name: t("nav.services"), href: "#services" },
-    { name: t("nav.projects"), href: "#projects" },
-    { name: t("nav.contact"), href: "#contact" },
+  const navItems = [
+    { id: "home", label: t("nav.home"), href: "#home" },
+    { id: "how-it-works", label: t("nav.howItWorks"), href: "#how-it-works" },
+    { id: "difference", label: t("nav.difference"), href: "#difference" },
+    { id: "pricing", label: t("nav.pricing"), href: "#pricing" },
+    { id: "portfolio", label: t("nav.portfolio"), href: "#portfolio" },
+    { id: "faq", label: t("nav.faq"), href: "#faq" },
+    { id: "contact", label: t("nav.contact"), href: "#contact" },
   ];
 
-  // Handle scroll detection
+  // Handle scroll to add shadow
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 20);
+
+      // Track active section
+      const sections = [
+        "home",
+        "how-it-works",
+        "difference",
+        "pricing",
+        "portfolio",
+        "faq",
+        "contact",
+      ];
+      const scrollPosition = window.scrollY + 100;
+
+      for (const sectionId of sections) {
+        const element = document.getElementById(sectionId);
+        if (element) {
+          const { offsetTop, offsetHeight } = element;
+          if (
+            scrollPosition >= offsetTop &&
+            scrollPosition < offsetTop + offsetHeight
+          ) {
+            setActiveSection(sectionId);
+            break;
+          }
+        }
+      }
     };
 
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  // Prevent body scroll when menu is open (but allow menu itself to scroll)
+  // Prevent body scroll when menu is open
   useEffect(() => {
-    if (isOpen) {
-      // Get scrollbar width to prevent layout shift
-      const scrollbarWidth =
-        window.innerWidth - document.documentElement.clientWidth;
-
-      // Lock body scroll but allow menu to scroll
+    if (isMenuOpen) {
       document.body.style.overflow = "hidden";
-      document.body.style.paddingRight = `${scrollbarWidth}px`;
-
-      // Ensure mobile menu can still scroll
-      const mobileMenu = document.querySelector(".mobile-menu");
-      if (mobileMenu) {
-        (mobileMenu as HTMLElement).style.overflow = "auto";
-      }
+      document.body.style.height = "100%";
+      document.documentElement.style.overflow = "hidden";
     } else {
       document.body.style.overflow = "";
-      document.body.style.paddingRight = "";
+      document.body.style.height = "";
+      document.documentElement.style.overflow = "";
     }
-
     return () => {
       document.body.style.overflow = "";
-      document.body.style.paddingRight = "";
+      document.body.style.height = "";
+      document.documentElement.style.overflow = "";
     };
-  }, [isOpen]);
+  }, [isMenuOpen]);
 
   const handleNavClick = (
     e: React.MouseEvent<HTMLAnchorElement>,
     href: string
   ) => {
     e.preventDefault();
-    setIsOpen(false);
+    setIsMenuOpen(false);
 
-    // Only try to scroll if we have a valid selector
-    if (href && href.trim()) {
-      try {
+    const isOnLandingPage =
+      location.pathname === `/${i18n.language}` ||
+      location.pathname === `/en` ||
+      location.pathname === `/it` ||
+      location.pathname === `/ro`;
+
+    if (!isOnLandingPage) {
+      navigate(`/${i18n.language}${href}`);
+      setTimeout(() => {
         const element = document.querySelector(href);
         if (element) {
           element.scrollIntoView({ behavior: "smooth" });
         }
-      } catch {
-        console.warn(`Invalid selector: ${href}`);
+      }, 100);
+    } else {
+      const element = document.querySelector(href);
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
       }
     }
   };
 
   return (
-    <header className={`header ${isScrolled ? "header--scrolled" : ""}`}>
-      <div className="header__container">
+    <header className={`header ${isScrolled ? "scrolled" : ""}`}>
+      <div className="header-container">
         {/* Logo */}
-        <motion.a
+        <a
           href="#home"
-          className="header__logo"
-          initial={{ opacity: 0, x: -20 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.5 }}
+          className="header-logo"
           onClick={(e) => handleNavClick(e, "#home")}
         >
-          <div className="header__logo-wrapper">
-            <img
-              src="/logo/apple-touch-icon.png"
-              alt="alecsdesign"
-              className="header__logo-image"
-              fetchPriority="high"
-              decoding="async"
-            />
-          </div>
-        </motion.a>
+          <span className="logo-text">
+            alecsdesign
+            <svg
+              className="logo-heart"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+            </svg>
+            xyz
+          </span>
+        </a>
 
         {/* Desktop Navigation */}
-        <nav className="header__nav">
-          {navLinks.map((link, index) => (
-            <motion.a
-              key={link.name}
-              href={link.href}
-              className="header__nav-link"
-              onClick={(e) => handleNavClick(e, link.href)}
-              initial={{ opacity: 0, y: -20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.3, delay: index * 0.1 }}
+        <nav className="header-nav desktop-nav">
+          {navItems.map((item) => (
+            <a
+              key={item.id}
+              href={item.href}
+              className={`nav-link ${
+                activeSection === item.id ? "active" : ""
+              }`}
+              onClick={(e) => handleNavClick(e, item.href)}
             >
-              {link.name}
-            </motion.a>
+              {item.label}
+            </a>
           ))}
-
-          {/* Language Switcher - Desktop Only */}
-          <LanguageSwitcher />
         </nav>
 
-        {/* Mobile Menu Toggle */}
-        <MenuTrigger isOpen={isOpen} onClick={() => setIsOpen(!isOpen)} />
+        {/* Language Switcher - visible on all screen sizes */}
+        <div className="header-actions">
+          <LanguageSwitcher />
+        </div>
+
+        {/* Mobile Menu Button - dd.nyc style animated hamburger */}
+        <button
+          className="mobile-menu-button"
+          onClick={() => setIsMenuOpen(!isMenuOpen)}
+          aria-label="Toggle menu"
+        >
+          <div className={`hamburger ${isMenuOpen ? "open" : ""}`}>
+            <span className="hamburger-line"></span>
+            <span className="hamburger-line"></span>
+          </div>
+        </button>
       </div>
 
-      {/* Mobile Menu */}
-      <MobileMenu
-        isOpen={isOpen}
-        navLinks={navLinks}
-        onNavClick={handleNavClick}
-        onClose={() => setIsOpen(false)}
-      />
+      {/* Mobile Menu Overlay */}
+      <div className={`mobile-menu ${isMenuOpen ? "open" : ""}`}>
+        <nav className="mobile-nav">
+          {navItems.map((item) => (
+            <a
+              key={item.id}
+              href={item.href}
+              className={`mobile-nav-link ${
+                activeSection === item.id ? "active" : ""
+              }`}
+              onClick={(e) => handleNavClick(e, item.href)}
+            >
+              {item.label}
+            </a>
+          ))}
+        </nav>
+      </div>
     </header>
   );
 };

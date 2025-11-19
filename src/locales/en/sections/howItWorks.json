@@ -1,0 +1,20 @@
+{
+  "title": "How It Works",
+  "subtitle": "From first call to live website in 4 simple steps",
+  "step1": {
+    "title": "We Talk (Free Consultation)",
+    "description": "You share your business goals and vision. I explain what's possible and what fits your needs. No technical jargon, just honest advice."
+  },
+  "step2": {
+    "title": "I Build Your Website",
+    "description": "Custom design tailored to your brand. We include two rounds of dedicated revisions to ensure the design matches your vision perfectly before writing a single line of code."
+  },
+  "step3": {
+    "title": "I Launch Everything",
+    "description": "I buy your domain, set up hosting, and connect Google Analytics. I handle the complex technical configuration so you don't have to."
+  },
+  "step4": {
+    "title": "Simple Annual Billing",
+    "description": "One-time €150 setup fee, then a 2-year minimum commitment. Includes monthly update hours, 24/7 monitoring, and email support. Cancel anytime after 2 years, or buy the code whenever you want."
+  }
+}

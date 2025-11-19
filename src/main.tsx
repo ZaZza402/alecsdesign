@@ -1,7 +1,9 @@
-import { StrictMode, useEffect, useState } from "react";
+import { StrictMode, useEffect } from "react";
 import { createRoot } from "react-dom/client";
-import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./index.css";
+import "aos/dist/aos.css"; // Import AOS styles
+import AOS from "aos";
 import i18n from "./i18n"; // Initialize i18n FIRST
 import App from "./App.tsx";
 import PrivacyPolicy from "./pages/PrivacyPolicy.tsx";
@@ -9,9 +11,16 @@ import TermsConditions from "./pages/TermsConditions.tsx";
 import CookiePolicy from "./pages/CookiePolicy.tsx";
 import ServicesRates from "./pages/ServicesRates.tsx";
 import NotFound from "./pages/NotFound.tsx";
-import { detectUserLanguage } from "./utils/languageDetection";
+import QuizPage from "./pages/QuizPage.tsx";
+import QuizResults from "./pages/QuizResults.tsx";
 
-import Layout from "./components/layout/Layout.tsx";
+// Initialize AOS
+AOS.init({
+  duration: 800,
+  easing: "ease-out",
+  once: true,
+  offset: 100,
+});
 
 // Language wrapper component
 function LanguageWrapper({ lang }: { lang: string }) {
@@ -25,8 +34,8 @@ function LanguageWrapper({ lang }: { lang: string }) {
   return <App />;
 }
 
-// Legal page wrapper with Sidebar and Footer
-function LegalPageWrapper({
+// Page wrapper - sets language for separate pages
+function PageWrapper({
   lang,
   children,
 }: {
@@ -39,34 +48,15 @@ function LegalPageWrapper({
     }
   }, [lang]);
 
-  return <Layout>{children}</Layout>;
-}
-
-// Smart redirect component with geo-based language detection
-function SmartLanguageRedirect() {
-  const [detectedLang, setDetectedLang] = useState<string | null>(null);
-
-  useEffect(() => {
-    detectUserLanguage().then((lang) => {
-      setDetectedLang(lang);
-    });
-  }, []);
-
-  // Show nothing while detecting
-  if (!detectedLang) {
-    return null;
-  }
-
-  // Redirect to detected language
-  return <Navigate to={`/${detectedLang}`} replace />;
+  return <>{children}</>;
 }
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
     <BrowserRouter>
       <Routes>
-        {/* Smart redirect with geo-based language detection */}
-        <Route path="/" element={<SmartLanguageRedirect />} />
+        {/* Root domain serves English by default for SEO */}
+        <Route path="/" element={<LanguageWrapper lang="en" />} />
 
         {/* Language-specific routes */}
         <Route path="/en" element={<LanguageWrapper lang="en" />} />
@@ -77,33 +67,49 @@ createRoot(document.getElementById("root")!).render(
         <Route
           path="/en/privacy-policy"
           element={
-            <LegalPageWrapper lang="en">
+            <PageWrapper lang="en">
               <PrivacyPolicy />
-            </LegalPageWrapper>
+            </PageWrapper>
           }
         />
         <Route
           path="/en/terms-conditions"
           element={
-            <LegalPageWrapper lang="en">
+            <PageWrapper lang="en">
               <TermsConditions />
-            </LegalPageWrapper>
+            </PageWrapper>
           }
         />
         <Route
           path="/en/cookie-policy"
           element={
-            <LegalPageWrapper lang="en">
+            <PageWrapper lang="en">
               <CookiePolicy />
-            </LegalPageWrapper>
+            </PageWrapper>
           }
         />
         <Route
           path="/en/services-rates"
           element={
-            <LegalPageWrapper lang="en">
+            <PageWrapper lang="en">
               <ServicesRates />
-            </LegalPageWrapper>
+            </PageWrapper>
+          }
+        />
+        <Route
+          path="/en/quiz"
+          element={
+            <PageWrapper lang="en">
+              <QuizPage />
+            </PageWrapper>
+          }
+        />
+        <Route
+          path="/en/quiz/results"
+          element={
+            <PageWrapper lang="en">
+              <QuizResults />
+            </PageWrapper>
           }
         />
 
@@ -111,33 +117,49 @@ createRoot(document.getElementById("root")!).render(
         <Route
           path="/it/privacy-policy"
           element={
-            <LegalPageWrapper lang="it">
+            <PageWrapper lang="it">
               <PrivacyPolicy />
-            </LegalPageWrapper>
+            </PageWrapper>
           }
         />
         <Route
           path="/it/terms-conditions"
           element={
-            <LegalPageWrapper lang="it">
+            <PageWrapper lang="it">
               <TermsConditions />
-            </LegalPageWrapper>
+            </PageWrapper>
           }
         />
         <Route
           path="/it/cookie-policy"
           element={
-            <LegalPageWrapper lang="it">
+            <PageWrapper lang="it">
               <CookiePolicy />
-            </LegalPageWrapper>
+            </PageWrapper>
           }
         />
         <Route
           path="/it/services-rates"
           element={
-            <LegalPageWrapper lang="it">
+            <PageWrapper lang="it">
               <ServicesRates />
-            </LegalPageWrapper>
+            </PageWrapper>
+          }
+        />
+        <Route
+          path="/it/quiz"
+          element={
+            <PageWrapper lang="it">
+              <QuizPage />
+            </PageWrapper>
+          }
+        />
+        <Route
+          path="/it/quiz/results"
+          element={
+            <PageWrapper lang="it">
+              <QuizResults />
+            </PageWrapper>
           }
         />
 
@@ -145,33 +167,49 @@ createRoot(document.getElementById("root")!).render(
         <Route
           path="/ro/privacy-policy"
           element={
-            <LegalPageWrapper lang="ro">
+            <PageWrapper lang="ro">
               <PrivacyPolicy />
-            </LegalPageWrapper>
+            </PageWrapper>
           }
         />
         <Route
           path="/ro/terms-conditions"
           element={
-            <LegalPageWrapper lang="ro">
+            <PageWrapper lang="ro">
               <TermsConditions />
-            </LegalPageWrapper>
+            </PageWrapper>
           }
         />
         <Route
           path="/ro/cookie-policy"
           element={
-            <LegalPageWrapper lang="ro">
+            <PageWrapper lang="ro">
               <CookiePolicy />
-            </LegalPageWrapper>
+            </PageWrapper>
           }
         />
         <Route
           path="/ro/services-rates"
           element={
-            <LegalPageWrapper lang="ro">
+            <PageWrapper lang="ro">
               <ServicesRates />
-            </LegalPageWrapper>
+            </PageWrapper>
+          }
+        />
+        <Route
+          path="/ro/quiz"
+          element={
+            <PageWrapper lang="ro">
+              <QuizPage />
+            </PageWrapper>
+          }
+        />
+        <Route
+          path="/ro/quiz/results"
+          element={
+            <PageWrapper lang="ro">
+              <QuizResults />
+            </PageWrapper>
           }
         />
 
@@ -179,25 +217,25 @@ createRoot(document.getElementById("root")!).render(
         <Route
           path="/en/404"
           element={
-            <LegalPageWrapper lang="en">
+            <PageWrapper lang="en">
               <NotFound />
-            </LegalPageWrapper>
+            </PageWrapper>
           }
         />
         <Route
           path="/it/404"
           element={
-            <LegalPageWrapper lang="it">
+            <PageWrapper lang="it">
               <NotFound />
-            </LegalPageWrapper>
+            </PageWrapper>
           }
         />
         <Route
           path="/ro/404"
           element={
-            <LegalPageWrapper lang="ro">
+            <PageWrapper lang="ro">
               <NotFound />
-            </LegalPageWrapper>
+            </PageWrapper>
           }
         />
 
@@ -205,9 +243,9 @@ createRoot(document.getElementById("root")!).render(
         <Route
           path="*"
           element={
-            <LegalPageWrapper lang="en">
+            <PageWrapper lang="en">
               <NotFound />
-            </LegalPageWrapper>
+            </PageWrapper>
           }
         />
       </Routes>

@@ -1,0 +1,17 @@
+﻿{
+  "title": "De ce merită investiția",
+  "subtitle": "Pentru afacerea ta și pentru tine",
+  "pillar1": {
+    "title": "Investiție Inițială Minimală",
+    "description": "Plătești doar €150 instalare + €39/lună în loc de mii de euro avans. Mai puțin decât un abonament la sală. Începi profesionist fără să blochezi banii firmei."
+  },
+  "pillar2": {
+    "title": "Zero Stres Tehnic",
+    "description": "Nu trebuie să îți bati capul cu hosting, DNS sau certificate SSL. Eu configurez totul și asigur funcționarea 24/7. Tu îmi trimiți conținutul, iar eu mă ocup de restul.",
+    "explainer": "Domeniu, găzduire, securitate, SEO, analytics – toate incluse."
+  },
+  "pillar3": {
+    "title": "Site-ul Crește cu Tine",
+    "description": "Începi cu un site solid. Când ești pregătit pentru e-commerce sau funcționalități complexe, le adăugăm direct. Nu trebuie să reconstruim site-ul de la zero."
+  }
+}

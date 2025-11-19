@@ -1,0 +1,17 @@
+{
+  "title": "Perché ti conviene",
+  "subtitle": "Per la tua attività e per il tuo budget",
+  "pillar1": {
+    "title": "Investimento Iniziale Minimo",
+    "description": "Solo €150 di setup + €39/mese invece di migliaia di euro subito. Costa meno di un abbonamento in palestra. Inizia alla grande senza svuotare la cassa."
+  },
+  "pillar2": {
+    "title": "Zero Stress Tecnico",
+    "description": "Dimentica hosting, DNS, certificati SSL o Google Console. Configuro tutto io e mantengo il sito attivo 24/7. Tu mi mandi i testi, io penso a tutto il resto.",
+    "explainer": "Dominio, hosting, sicurezza, SEO e analytics – tutto incluso."
+  },
+  "pillar3": {
+    "title": "Cresce con la Tua Attività",
+    "description": "Parti con un sito essenziale. Quando sarai pronto per vendere online o aggiungere funzionalità avanzate, le integreremo senza dover rifare il sito da capo."
+  }
+}

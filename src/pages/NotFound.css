@@ -5,7 +5,7 @@
   justify-content: center;
   position: relative;
   overflow: hidden;
-  background: linear-gradient(135deg, #dbeafe 0%, #e0e7ff 100%);
+  background: linear-gradient(135deg, #eeeeee 0%, #ffffff 100%);
   padding: 2rem;
 }
 
@@ -26,7 +26,7 @@
 .circle-1 {
   width: 400px;
   height: 400px;
-  background: linear-gradient(135deg, #3b82f6 0%, #10b981 100%);
+  background: linear-gradient(135deg, #f35422 0%, #f35422 100%);
   top: -200px;
   left: -200px;
   animation-delay: 0s;
@@ -35,7 +35,7 @@
 .circle-2 {
   width: 300px;
   height: 300px;
-  background: linear-gradient(135deg, #10b981 0%, #3b82f6 100%);
+  background: linear-gradient(135deg, #f35422 0%, #f35422 100%);
   bottom: -150px;
   right: -150px;
   animation-delay: -7s;
@@ -44,7 +44,7 @@
 .circle-3 {
   width: 250px;
   height: 250px;
-  background: linear-gradient(135deg, #8b5cf6 0%, #3b82f6 100%);
+  background: linear-gradient(135deg, #8b5cf6 0%, #f35422 100%);
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -96,8 +96,8 @@
   height: 140px;
   background: linear-gradient(
     135deg,
-    rgba(59, 130, 246, 0.1) 0%,
-    rgba(16, 185, 129, 0.1) 100%
+    rgba(243, 84, 34, 0.1) 0%,
+    rgba(243, 84, 34, 0.1) 100%
   );
   border-radius: 50%;
   margin-bottom: 2rem;
@@ -117,13 +117,13 @@
 }
 
 .notfound-icon {
-  color: #3b82f6;
+  color: #f35422;
 }
 
 .notfound-title {
   font-size: 6rem;
   font-weight: 800;
-  background: linear-gradient(135deg, #3b82f6 0%, #10b981 100%);
+  background: linear-gradient(135deg, #f35422 0%, #f35422 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -182,14 +182,14 @@
 }
 
 .notfound-btn-primary {
-  background: linear-gradient(135deg, #3b82f6 0%, #10b981 100%);
+  background: linear-gradient(135deg, #f35422 0%, #f35422 100%);
   color: white;
-  box-shadow: 0 4px 6px -1px rgba(59, 130, 246, 0.3);
+  box-shadow: 0 4px 6px -1px rgba(243, 84, 34, 0.3);
 }
 
 .notfound-btn-primary:hover {
   transform: translateY(-2px);
-  box-shadow: 0 10px 15px -3px rgba(59, 130, 246, 0.4);
+  box-shadow: 0 10px 15px -3px rgba(243, 84, 34, 0.4);
 }
 
 .notfound-btn-secondary {
@@ -207,11 +207,11 @@
   padding: 1.5rem;
   background: linear-gradient(
     135deg,
-    rgba(59, 130, 246, 0.05) 0%,
-    rgba(16, 185, 129, 0.05) 100%
+    rgba(243, 84, 34, 0.05) 0%,
+    rgba(243, 84, 34, 0.05) 100%
   );
   border-radius: 10px;
-  border-left: 3px solid #3b82f6;
+  border-left: 3px solid #f35422;
   animation: slideIn 0.8s cubic-bezier(0.22, 1, 0.36, 1) 0.6s backwards;
 }
 
@@ -242,7 +242,7 @@
   content: "→";
   position: absolute;
   left: 0;
-  color: #3b82f6;
+  color: #f35422;
   font-weight: 700;
 }
 

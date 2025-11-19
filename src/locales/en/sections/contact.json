@@ -1,0 +1,43 @@
+{
+  "title": "Let's Build It",
+  "subtitle": "Don't wait. Book your free consultation and let's discuss your project today.",
+  "responseTime": "I typically reply:",
+  "responseTimeValue": "within 24 hours",
+  "whatsappStatus": "WhatsApp:",
+  "whatsappAvailable": "Online Now",
+  "whatsappOffline": "Offline (Back at 9 AM)",
+  "successMessage": "Thanks! I've received your details and will be in touch shortly.",
+  "errorMessage": "Message failed. Please email me directly or try WhatsApp.",
+  "form": {
+    "name": "Name",
+    "namePlaceholder": "Your full name",
+    "nameRequired": "Name is required",
+    "contact": "Email or Phone",
+    "contactPlaceholder": "bestway@to-reach.you",
+    "contactRequired": "Email or phone is required",
+    "business": "Tell me about your business",
+    "businessPlaceholder": "What do you do? What is your main goal for this website?",
+    "businessRequired": "Please give me a brief overview",
+    "needs": "What do you need?",
+    "needsPlaceholder": "Select a project type...",
+    "needsRequired": "Please select an option",
+    "needsOptions": {
+      "newWebsite": "New Website From Scratch",
+      "redesign": "Redesign Existing Site",
+      "consultation": "Technical Consultation",
+      "other": "Other / Not Sure"
+    },
+    "preference": "How should I contact you?",
+    "preferencePlaceholder": "Select...",
+    "preferenceRequired": "Please select a preference",
+    "preferenceOptions": {
+      "email": "Email",
+      "phone": "Phone Call",
+      "whatsapp": "WhatsApp Message"
+    },
+    "message": "Additional details (optional)",
+    "messagePlaceholder": "Any specific deadlines or features in mind?",
+    "submit": "Send Request",
+    "sending": "Sending..."
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "title": "Future Changes & Add-ons",
+  "subtitle": "Transparent pricing for website enhancements and additions after your initial launch",
+  "addons": {
+    "title": "Popular Add-ons",
+    "description": "Expand your website's functionality with these common features",
+    "items": {
+      "ecommerce": {
+        "name": "E-commerce Integration",
+        "description": "Transform your site into a full online store with secure payments and product management"
+      },
+      "booking": {
+        "name": "Booking System",
+        "description": "Let clients schedule appointments directly on your website with automated confirmations"
+      },
+      "multilingual": {
+        "name": "Additional Language",
+        "description": "Reach a wider audience by adding another language to your website"
+      },
+      "customFeature": {
+        "name": "Custom Functionality",
+        "description": "Need something unique? Let's discuss your specific requirements"
+      }
+    }
+  },
+  "modifications": {
+    "title": "Common Modifications",
+    "description": "Post-launch updates and changes to keep your site fresh and relevant",
+    "items": {
+      "contentUpdate": {
+        "name": "Content Updates",
+        "description": "Quick text, image, or information changes to keep your site current"
+      },
+      "designTweaks": {
+        "name": "Design Adjustments",
+        "description": "Visual refinements to better align with your evolving brand"
+      },
+      "newSection": {
+        "name": "New Page or Section",
+        "description": "Expand your site with additional pages or content sections"
+      },
+      "security": {
+        "name": "Security & Maintenance",
+        "description": "Covered in your annual management package—no extra charge"
+      }
+    }
+  },
+  "note": "All prices are estimates. Contact me for a precise quote based on your specific needs. Most modifications can be completed within 1-2 weeks.",
+  "seo": {
+    "title": "Future Changes & Add-ons | alecsdesign.xyz",
+    "description": "Transparent pricing for website enhancements, add-ons, and modifications. See what it costs to expand your site's functionality.",
+    "keywords": "website modifications, add-ons pricing, e-commerce integration, booking system, multilingual website, website updates"
+  }
+}

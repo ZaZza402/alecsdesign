@@ -1,0 +1,202 @@
+{
+  "title": "Alege Modelul Tău",
+  "subtitle": "Două moduri de a obține un site profesional care crește odată cu afacerea ta",
+  "buyModel": {
+    "badge": "Bazat pe Proiect",
+    "title": "Cumpără și Deține",
+    "description": "Plătești o dată, deții pentru totdeauna. Perfect pentru afaceri care preferă munca tradițională pe proiect și control total asupra activelor.",
+    "tiers": [
+      {
+        "name": "Essentials",
+        "priceRange": "Începe de la €500",
+        "description": "Ideal pentru portofolii, landing page-uri și site-uri de prezentare locală",
+        "features": [
+          "Structură statică sau CMS simplu",
+          "Până la 3 layout-uri de pagină distincte",
+          "Design optimizat pentru mobil",
+          "SEO de bază și formulare de contact",
+          "Deții tot codul și designul"
+        ],
+        "management": {
+          "price": "€99/an",
+          "label": "Management Opțional",
+          "features": [
+            "Administrare hosting și domeniu",
+            "Actualizări de securitate",
+            "Modificări minore de conținut",
+            "Suport email"
+          ]
+        },
+        "turnaround": "Timp execuție: 1-2 săptămâni"
+      },
+      {
+        "name": "Growth",
+        "priceRange": "Începe de la €900",
+        "description": "Ideal pentru site-uri interactive și platforme bazate pe conținut",
+        "features": [
+          "Performanță React/Next.js",
+          "Integrare CMS pentru editare ușoară",
+          "Animații avansate și interactivitate",
+          "Integrări terțe părți",
+          "Deții tot codul și designul"
+        ],
+        "management": {
+          "price": "€150/an",
+          "label": "Recomandat",
+          "features": [
+            "Administrare hosting și domeniu",
+            "Actualizări securitate și dependențe",
+            "Modificări conținut (2h/lună)",
+            "Monitorizare performanță",
+            "Suport email prioritar"
+          ]
+        },
+        "turnaround": "Timp execuție: 2-4 săptămâni"
+      },
+      {
+        "name": "Soluții Custom",
+        "priceRange": "Ofertă Personalizată",
+        "description": "Ideal pentru aplicații web, platforme SaaS și funcționalități complexe",
+        "features": [
+          "Autentificare utilizatori și baze de date",
+          "Logică de business complexă",
+          "Integrări API terțe părți",
+          "Panouri de administrare personalizate",
+          "Deții tot codul și designul"
+        ],
+        "management": {
+          "price": "€399/an",
+          "label": "Foarte Recomandat",
+          "features": [
+            "Administrare hosting și domeniu",
+            "Actualizări securitate și dependențe",
+            "Modificări conținut (4h/lună)",
+            "Îmbunătățiri funcționalități",
+            "Monitorizare performanță",
+            "Suport prioritar (răspuns 24h)"
+          ]
+        },
+        "turnaround": "Discutăm specificațiile tale"
+      }
+    ],
+    "note": "Prețurile afișate reprezintă puncte de pornire tipice. Investiția finală depinde de complexitatea designului și funcționalitățile necesare. Prețurile exclud costurile de hosting. Planurile de management sunt opționale, dar recomandate pentru liniște.",
+    "cta": "Discută Proiectul Tău"
+  },
+  "subscribeModel": {
+    "badge": "ALL-INCLUSIVE",
+    "title": "Abonament Relaxat",
+    "price": "€39/lună",
+    "upfront": "Taxă activare €150 o singură dată",
+    "annual": "facturat anual (€468/an)",
+    "commitment": "angajament minim 2 ani",
+    "description": "Abonamentul all-inclusive pentru afaceri care vor o experiență fără griji. Include design, dezvoltare și management continuu pentru site-uri standard.",
+    "features": [
+      "Design și dezvoltare (scop standard inclus)",
+      "Până la 5 pagini cu layout-uri standard",
+      "Hosting, domeniu și SSL incluse",
+      "2 ore de actualizări conținut pe lună",
+      "Actualizări de securitate și monitorizare",
+      "Suport email (răspuns 48h)",
+      "Design optimizat pentru mobil",
+      "Configurare SEO de bază"
+    ],
+    "ownership": {
+      "title": "Ce Deții",
+      "items": [
+        "Nume domeniu înregistrat pe numele tău",
+        "Tot conținutul, imaginile și textele furnizate",
+        "Export conținut disponibil oricând",
+        "După 2 ani: cumperi codul pentru o taxă fixă (vezi FAQ)"
+      ]
+    },
+    "cancellation": {
+      "title": "Politică de Anulare",
+      "details": "Angajament minim 2 ani. După 2 ani, anulezi oricând cu preaviz de 30 zile. Site-ul merge offline după perioada de preaviz. Transfer domeniu disponibil. Export conținut furnizat."
+    },
+    "cta": "Începe Abonamentul"
+  },
+  "addons": {
+    "title": "Add-Ons (Ambele Modele)",
+    "subtitle": "Îmbunătățește site-ul cu funcționalități suplimentare",
+    "items": [
+      {
+        "icon": "🛒",
+        "name": "Integrare E-commerce",
+        "buyPrice": "De la €400 setup",
+        "subscribePrice": "De la €200/an",
+        "description": "Vinde produse în siguranță. Include configurare procesator plăți și catalog produse"
+      },
+      {
+        "icon": "📅",
+        "name": "Sisteme de Rezervări",
+        "buyPrice": "De la €200 setup",
+        "subscribePrice": "De la €100/an",
+        "description": "Integrări Calendly/Acuity sau logică de rezervare personalizată"
+      },
+      {
+        "icon": "🌍",
+        "name": "Multilingv",
+        "buyPrice": "De la €150/limbă",
+        "subscribePrice": "De la €75/an per limbă",
+        "description": "Ajunge la public internațional în limba lor cu suport profesional pentru traduceri"
+      },
+      {
+        "icon": "⚡",
+        "name": "Funcționalități Custom",
+        "buyPrice": "Ofertă personalizată",
+        "subscribePrice": "Ofertă personalizată",
+        "description": "Integrări complexe, baze de date sau funcții unice — discutăm nevoile tale specifice"
+      }
+    ],
+    "cta": "Discută Nevoile Tale"
+  },
+  "decisionQuiz": {
+    "title": "Nu Ești Sigur de Model?",
+    "subtitle": "Fă testul nostru de 2 minute pentru a găsi varianta perfectă",
+    "cta": "Fă Testul"
+  },
+  "pitch": "Aceeași calitate, același dezvoltator, aceleași rezultate — alegi doar structura de plată potrivită afacerii tale.",
+  "subscriptionFAQ": {
+    "title": "Întrebări Frecvente",
+    "subtitle": "Tot ce trebuie să știi despre ambele modele",
+    "searchPlaceholder": "Caută în FAQ...",
+    "noResults": "Niciun rezultat găsit.",
+    "minRead": "min citire",
+    "stillHaveQuestions": "Mai ai întrebări?",
+    "q1": {
+      "question": "Ce model ar trebui să aleg?",
+      "answer": "Alege Cumpără și Deține dacă preferi plăți unice și proprietate totală asupra codului. Alege Abonament Relaxat dacă vrei o barieră mică de intrare (taxă activare minimă) și suport continuu inclus."
+    },
+    "q2": {
+      "question": "Ce este inclus în planurile de management?",
+      "answer": "Planurile includ administrare hosting/domeniu, update-uri de securitate, mici modificări de conținut, monitorizare și suport. Sunt opționale pentru cumpărare, dar recomandate pentru liniște."
+    },
+    "q3": {
+      "question": "Pot schimba modelul mai târziu?",
+      "answer": "Da! Clienții la abonament pot cumpăra codul după 2 ani pentru €500. Cei care cumpără pot adăuga planuri de management oricând. Suntem flexibili."
+    },
+    "q4": {
+      "question": "Ce se întâmplă după cei 2 ani de angajament?",
+      "answer": "După 2 ani poți: (1) Continua lună de lună, (2) Cumpăra codul pentru €500 și îl deții definitiv, sau (3) Anula oricând fără penalizări."
+    },
+    "q5": {
+      "question": "Trebuie să înțeleg hosting, DNS sau chestii tehnice?",
+      "answer": "Nu. Cu abonament sau planuri de management, mă ocup eu de tot. Fără management, te pot ajuta la configurarea inițială, dar apoi vei gestiona singur reînnoirile."
+    },
+    "q6": {
+      "question": "Ce se consideră 'modificări de conținut'?",
+      "answer": "Update text, schimbare imagini, culori, mici ajustări layout. Modificări complexe precum pagini noi sau formulare custom sunt taxate separat."
+    }
+  },
+  "basicWebsite": {
+    "badge": "Opțiune Buget",
+    "title": "Ai Nevoie de un Site HTML Simplu?",
+    "description": "Perfect pentru site-uri web simple de 1-3 pagini pe care le poți încărca direct pe hosting. Fără configurare React complexă—doar fișiere HTML/CSS/JavaScript pure gata de implementare.",
+    "setup": "Configurare unică",
+    "annual": "Domeniu + Hosting",
+    "note": "Grozav pentru site-uri \"setează și uită\". Site-urile React de mai jos oferă funcționalități avansate, performanță mai bună și actualizări mai ușoare—de aceea costă mai mult.",
+    "setupLabel": "Configurare unică",
+    "annualLabel": "Domeniu + Hosting/an"
+  },
+  "advancedSites": "Pentru Site-uri Web React Avansate"
+}

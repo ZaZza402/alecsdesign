@@ -1,48 +1,101 @@
 import { useTranslation } from "react-i18next";
 import { useEffect } from "react";
-import { useInView } from "react-intersection-observer";
-import { Clock, Zap, Rocket, Shield, Sparkles, Headphones } from "lucide-react";
+import { ShoppingCart, Wrench, Palette, Globe, Zap, Lock } from "lucide-react";
 import { SEO } from "../utils/seo";
+import Header from "../components/layout/Header";
+import Footer from "../components/layout/Footer";
+import CookieBanner from "../components/ui/CookieBanner";
+import ScrollProgress from "../components/ui/ScrollProgress";
+import LanguageSuggestionBanner from "../components/ui/LanguageSuggestionBanner";
+import MetallicBackground from "../components/ui/backgrounds/MetallicBackground";
 import "./ServicesRates.css";
 
 const ServicesRates = () => {
   const { t } = useTranslation();
-  const { ref, inView } = useInView({
-    triggerOnce: true,
-    threshold: 0.1, // Reduced from 0.2 to trigger earlier
-    initialInView: true, // Start with content visible on load
-  });
 
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
-  const smallUpdates = [
-    { key: "text", icon: Zap },
-    { key: "form", icon: Zap },
-    { key: "styling", icon: Zap },
+  const addons = [
+    {
+      key: "ecommerce",
+      icon: ShoppingCart,
+      price: "€400",
+      examples: [
+        "Product catalog with cart",
+        "Payment integration (Stripe/PayPal)",
+        "Order management system",
+      ],
+    },
+    {
+      key: "booking",
+      icon: Zap,
+      price: "€200",
+      examples: [
+        "Appointment scheduling",
+        "Calendar integration",
+        "Automated email confirmations",
+      ],
+    },
+    {
+      key: "multilingual",
+      icon: Globe,
+      price: "€150/language",
+      examples: [
+        "Full site translation",
+        "Language switcher",
+        "SEO for each language",
+      ],
+    },
+    {
+      key: "customFeature",
+      icon: Wrench,
+      price: "Custom quote",
+      examples: [
+        "User authentication & login",
+        "Custom integrations",
+        "Advanced functionality",
+      ],
+    },
   ];
 
-  const mediumTasks = [
-    { key: "page", icon: Clock },
-    { key: "section", icon: Clock },
-    { key: "blog", icon: Clock },
-  ];
-
-  const largeFeatures = [
-    { key: "ecommerce", icon: Rocket },
-    { key: "multilang", icon: Rocket },
-    { key: "custom", icon: Rocket },
-  ];
-
-  const retainerPackages = [
-    { key: "basic", icon: Shield },
-    { key: "business", icon: Sparkles },
+  const modifications = [
+    {
+      key: "contentUpdate",
+      icon: Palette,
+      price: "€50-100",
+      examples: ["Text changes", "Image replacements", "Contact info updates"],
+    },
+    {
+      key: "designTweaks",
+      icon: Palette,
+      price: "€100-200",
+      examples: [
+        "Color scheme changes",
+        "Layout adjustments",
+        "Typography updates",
+      ],
+    },
+    {
+      key: "newSection",
+      icon: Wrench,
+      price: "€150-300",
+      examples: ["New page section", "Additional page", "FAQ section"],
+    },
+    {
+      key: "security",
+      icon: Lock,
+      price: "Included",
+      examples: ["SSL certificates", "Security updates", "Backup management"],
+    },
   ];
 
   return (
     <>
-      {/* SEO Meta Tags */}
+      <MetallicBackground />
+      <LanguageSuggestionBanner />
+      <Header />
       <SEO
         title={t("servicesRates.seo.title")}
         description={t("servicesRates.seo.description")}
@@ -51,159 +104,51 @@ const ServicesRates = () => {
       />
 
       <main className="services-rates-page" role="main">
-        <div
-          className={`services-rates-container ${inView ? "animate-in" : ""}`}
-          ref={ref}
-        >
-          {/* Header */}
-          <div className="services-header">
+        <div className="services-rates-container">
+          {/* Hero Section */}
+          <div className="services-hero" data-aos="fade-up">
             <h1 className="services-title">{t("servicesRates.title")}</h1>
             <p className="services-subtitle">{t("servicesRates.subtitle")}</p>
           </div>
 
-          {/* Small Updates */}
-          <section className="pricing-category">
-            <div className="category-header">
-              <Zap className="category-icon" size={32} strokeWidth={2} />
-              <h2 className="category-title">
-                {t("servicesRates.categories.small.title")}
+          {/* Addons Section */}
+          <section
+            className="services-section"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div className="section-header">
+              <h2 className="section-title">
+                {t("servicesRates.addons.title")}
               </h2>
-              <p className="category-subtitle">
-                {t("servicesRates.categories.small.subtitle")}
+              <p className="section-description">
+                {t("servicesRates.addons.description")}
               </p>
             </div>
-            <div className="services-grid">
-              {smallUpdates.map((item, index) => (
-                <div
-                  key={item.key}
-                  className="service-card"
-                  style={{ animationDelay: `${index * 0.1}s` }}
-                >
-                  <h3 className="service-name">
-                    {t(`servicesRates.services.small.${item.key}.name`)}
-                  </h3>
-                  <p className="service-price">
-                    {t(`servicesRates.services.small.${item.key}.price`)}
-                  </p>
-                  <p className="service-description">
-                    {t(`servicesRates.services.small.${item.key}.description`)}
-                  </p>
-                </div>
-              ))}
-            </div>
-          </section>
 
-          {/* Medium Tasks */}
-          <section className="pricing-category">
-            <div className="category-header">
-              <Clock className="category-icon" size={32} strokeWidth={2} />
-              <h2 className="category-title">
-                {t("servicesRates.categories.medium.title")}
-              </h2>
-              <p className="category-subtitle">
-                {t("servicesRates.categories.medium.subtitle")}
-              </p>
-            </div>
             <div className="services-grid">
-              {mediumTasks.map((item, index) => (
-                <div
-                  key={item.key}
-                  className="service-card"
-                  style={{ animationDelay: `${index * 0.1}s` }}
-                >
-                  <h3 className="service-name">
-                    {t(`servicesRates.services.medium.${item.key}.name`)}
-                  </h3>
-                  <p className="service-price">
-                    {t(`servicesRates.services.medium.${item.key}.price`)}
-                  </p>
-                  <p className="service-description">
-                    {t(`servicesRates.services.medium.${item.key}.description`)}
-                  </p>
-                </div>
-              ))}
-            </div>
-          </section>
-
-          {/* Large Features */}
-          <section className="pricing-category">
-            <div className="category-header">
-              <Rocket className="category-icon" size={32} strokeWidth={2} />
-              <h2 className="category-title">
-                {t("servicesRates.categories.large.title")}
-              </h2>
-              <p className="category-subtitle">
-                {t("servicesRates.categories.large.subtitle")}
-              </p>
-            </div>
-            <div className="services-grid">
-              {largeFeatures.map((item, index) => (
-                <div
-                  key={item.key}
-                  className="service-card"
-                  style={{ animationDelay: `${index * 0.1}s` }}
-                >
-                  <h3 className="service-name">
-                    {t(`servicesRates.services.large.${item.key}.name`)}
-                  </h3>
-                  <p className="service-price">
-                    {t(`servicesRates.services.large.${item.key}.price`)}
-                  </p>
-                  <p className="service-description">
-                    {t(`servicesRates.services.large.${item.key}.description`)}
-                  </p>
-                </div>
-              ))}
-            </div>
-          </section>
-
-          {/* Retainer Packages */}
-          <section className="pricing-category retainer-section">
-            <div className="category-header">
-              <Headphones className="category-icon" size={32} strokeWidth={2} />
-              <h2 className="category-title">
-                {t("servicesRates.categories.retainer.title")}
-              </h2>
-              <p className="category-subtitle">
-                {t("servicesRates.categories.retainer.subtitle")}
-              </p>
-            </div>
-            <div className="retainer-grid">
-              {retainerPackages.map((pkg, index) => {
-                const Icon = pkg.icon;
+              {addons.map((addon, index) => {
+                const Icon = addon.icon;
                 return (
                   <div
-                    key={pkg.key}
-                    className={`retainer-card ${
-                      pkg.key === "business" ? "featured" : ""
-                    }`}
-                    style={{ animationDelay: `${index * 0.15}s` }}
+                    key={addon.key}
+                    className="service-card"
+                    data-aos="fade-up"
+                    data-aos-delay={150 + index * 50}
                   >
-                    {pkg.key === "business" && (
-                      <div className="featured-badge">
-                        {t("servicesRates.retainer.popular")}
-                      </div>
-                    )}
-                    <div className="retainer-header">
-                      <Icon
-                        className="retainer-icon"
-                        size={40}
-                        strokeWidth={2}
-                      />
-                      <h3 className="retainer-name">
-                        {t(`servicesRates.retainer.${pkg.key}.name`)}
-                      </h3>
-                      <p className="retainer-price">
-                        {t(`servicesRates.retainer.${pkg.key}.price`)}
-                      </p>
+                    <div className="service-icon">
+                      <Icon size={24} strokeWidth={2} />
                     </div>
-                    <ul className="retainer-features">
-                      {(
-                        t(`servicesRates.retainer.${pkg.key}.features`, {
-                          returnObjects: true,
-                        }) as string[]
-                      ).map((feature: string, idx: number) => (
-                        <li key={idx}>{feature}</li>
+                    <h3 className="service-name">
+                      {t(`servicesRates.addons.items.${addon.key}.name`)}
+                    </h3>
+                    <p className="service-price">{addon.price}</p>
+                    <p className="service-description">
+                      {t(`servicesRates.addons.items.${addon.key}.description`)}
+                    </p>
+                    <ul className="service-examples">
+                      {addon.examples.map((example, idx) => (
+                        <li key={idx}>{example}</li>
                       ))}
                     </ul>
                   </div>
@@ -212,12 +157,60 @@ const ServicesRates = () => {
             </div>
           </section>
 
-          {/* CTA Note */}
-          <div className="services-cta">
-            <p className="cta-text">{t("servicesRates.cta")}</p>
+          {/* Modifications Section */}
+          <section className="services-section" data-aos="fade-up">
+            <div className="section-header">
+              <h2 className="section-title">
+                {t("servicesRates.modifications.title")}
+              </h2>
+              <p className="section-description">
+                {t("servicesRates.modifications.description")}
+              </p>
+            </div>
+
+            <div className="services-grid">
+              {modifications.map((mod, index) => {
+                const Icon = mod.icon;
+                return (
+                  <div
+                    key={mod.key}
+                    className="service-card"
+                    data-aos="fade-up"
+                    data-aos-delay={150 + index * 50}
+                  >
+                    <div className="service-icon">
+                      <Icon size={24} strokeWidth={2} />
+                    </div>
+                    <h3 className="service-name">
+                      {t(`servicesRates.modifications.items.${mod.key}.name`)}
+                    </h3>
+                    <p className="service-price">{mod.price}</p>
+                    <p className="service-description">
+                      {t(
+                        `servicesRates.modifications.items.${mod.key}.description`
+                      )}
+                    </p>
+                    <ul className="service-examples">
+                      {mod.examples.map((example, idx) => (
+                        <li key={idx}>{example}</li>
+                      ))}
+                    </ul>
+                  </div>
+                );
+              })}
+            </div>
+          </section>
+
+          {/* Note Section */}
+          <div className="services-note" data-aos="fade-up">
+            <p className="note-text">{t("servicesRates.note")}</p>
           </div>
         </div>
       </main>
+
+      <Footer />
+      <CookieBanner />
+      <ScrollProgress />
     </>
   );
 };

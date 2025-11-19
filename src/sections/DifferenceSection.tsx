@@ -1,58 +1,41 @@
 import { useTranslation } from "react-i18next";
-import { useInView } from "react-intersection-observer";
-import { Lightbulb, Search, Handshake } from "lucide-react";
 import "./DifferenceSection.css";
 
 const DifferenceSection = () => {
   const { t } = useTranslation();
-  const { ref, inView } = useInView({
-    triggerOnce: true,
-    threshold: 0.15,
-  });
 
   const pillars = [
-    {
-      key: "pillar1",
-      icon: Lightbulb,
-      color: "blue",
-    },
-    {
-      key: "pillar2",
-      icon: Search,
-      color: "green",
-    },
-    {
-      key: "pillar3",
-      icon: Handshake,
-      color: "purple",
-    },
+    { key: "pillar1", number: "01" },
+    { key: "pillar2", number: "02" },
+    { key: "pillar3", number: "03" },
   ];
 
   return (
-    <section className="difference-section" ref={ref}>
-      <div className={`difference-container ${inView ? "animate-in" : ""}`}>
-        <div className="difference-header">
+    <section className="difference-section">
+      <div className="difference-container">
+        <div
+          className="difference-header"
+          data-aos="fade-up"
+          data-aos-duration="800"
+        >
           <h2 className="difference-title">{t("difference.title")}</h2>
           <p className="difference-subtitle">{t("difference.subtitle")}</p>
         </div>
 
         <div className="pillars-grid">
           {pillars.map((pillar, index) => {
-            const Icon = pillar.icon;
             return (
               <div
                 key={pillar.key}
-                className={`pillar-card pillar-${pillar.color}`}
-                style={{ animationDelay: `${index * 0.15}s` }}
+                className="pillar-card"
+                data-aos="fade-up"
+                data-aos-duration="800"
+                data-aos-delay={index * 150}
               >
-                <div className="pillar-header">
-                  <div className="pillar-icon-wrapper">
-                    <Icon className="pillar-icon" size={36} strokeWidth={2} />
-                  </div>
-                  <h3 className="pillar-title">
-                    {t(`difference.${pillar.key}.title`)}
-                  </h3>
-                </div>
+                <span className="pillar-number">{pillar.number}</span>
+                <h3 className="pillar-title">
+                  {t(`difference.${pillar.key}.title`)}
+                </h3>
                 <p className="pillar-description">
                   {t(`difference.${pillar.key}.description`)}
                 </p>

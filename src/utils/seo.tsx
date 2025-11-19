@@ -142,10 +142,37 @@ export const SEO = ({
     // Canonical URL
     setLinkTag("canonical", canonicalUrl);
 
-    // Alternate language URLs
-    setLinkTag("alternate", `${fullUrl}?lang=en`);
-    setLinkTag("alternate", `${fullUrl}?lang=it`);
-    setLinkTag("alternate", `${fullUrl}?lang=ro`);
+    // Hreflang tags for language versions
+    const baseUrl = "https://www.alecsdesign.xyz";
+    const pathname = window.location.pathname;
+
+    // Remove existing hreflang links
+    document
+      .querySelectorAll('link[rel="alternate"][hreflang]')
+      .forEach((el) => el.remove());
+
+    // Add hreflang for each language
+    const languages = ["en", "it", "ro"];
+    languages.forEach((lang) => {
+      const link = document.createElement("link");
+      link.rel = "alternate";
+      link.hreflang = lang;
+      // If on root, link to /en, /it, /ro
+      // If on language path, replace with correct language
+      const langPath =
+        pathname === "/"
+          ? `/${lang}`
+          : pathname.replace(/^\/(en|it|ro)/, `/${lang}`);
+      link.href = `${baseUrl}${langPath}`;
+      document.head.appendChild(link);
+    });
+
+    // Add x-default hreflang pointing to English version
+    const defaultLink = document.createElement("link");
+    defaultLink.rel = "alternate";
+    defaultLink.hreflang = "x-default";
+    defaultLink.href = `${baseUrl}/en`;
+    document.head.appendChild(defaultLink);
   }, [
     title,
     description,

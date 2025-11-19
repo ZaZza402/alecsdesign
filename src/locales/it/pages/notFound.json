@@ -1,0 +1,12 @@
+{
+  "title": "Pagina Non Trovata",
+  "description": "La pagina che stai cercando non esiste o è stata spostata. Non preoccuparti, ti riportiamo sulla strada giusta!",
+  "goHome": "Vai alla Home",
+  "goBack": "Torna Indietro",
+  "suggestions": {
+    "title": "Ecco cosa puoi fare:",
+    "item1": "Controlla l'URL per errori di battitura",
+    "item2": "Usa il menu di navigazione per trovare ciò di cui hai bisogno",
+    "item3": "Contattami se pensi che qualcosa sia rotto"
+  }
+}

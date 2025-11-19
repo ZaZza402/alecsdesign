@@ -1,0 +1,202 @@
+{
+  "title": "Scegli il Tuo Modello",
+  "subtitle": "Due modi per avere un sito professionale che cresce con la tua attività",
+  "buyModel": {
+    "badge": "Su Progetto",
+    "title": "Acquista e Possiedi",
+    "description": "Paghi una volta, possiedi per sempre. Ideale per chi preferisce il lavoro tradizionale basato su progetto e il controllo completo degli asset.",
+    "tiers": [
+      {
+        "name": "Essentials",
+        "priceRange": "A partire da €500",
+        "description": "Ideale per portfolio, landing page e siti vetrina locali",
+        "features": [
+          "Struttura statica o CMS semplice",
+          "Fino a 3 layout di pagina distinti",
+          "Design responsive per mobile",
+          "SEO base e moduli di contatto",
+          "Possiedi tutto il codice e il design"
+        ],
+        "management": {
+          "price": "€99/anno",
+          "label": "Gestione Opzionale",
+          "features": [
+            "Gestione hosting e dominio",
+            "Aggiornamenti di sicurezza",
+            "Modifiche minori ai contenuti",
+            "Supporto email"
+          ]
+        },
+        "turnaround": "Tempi tipici: 1-2 settimane"
+      },
+      {
+        "name": "Growth",
+        "priceRange": "A partire da €900",
+        "description": "Ideale per siti aziendali interattivi e piattaforme ricche di contenuti",
+        "features": [
+          "Prestazioni React/Next.js",
+          "Integrazione CMS per modifiche facili",
+          "Animazioni avanzate e interattività",
+          "Integrazioni di terze parti",
+          "Possiedi tutto il codice e il design"
+        ],
+        "management": {
+          "price": "€150/anno",
+          "label": "Raccomandato",
+          "features": [
+            "Gestione hosting e dominio",
+            "Aggiornamenti sicurezza e dipendenze",
+            "Modifiche contenuti (2h/mese)",
+            "Monitoraggio prestazioni",
+            "Supporto email prioritario"
+          ]
+        },
+        "turnaround": "Tempi tipici: 2-4 settimane"
+      },
+      {
+        "name": "Soluzioni Custom",
+        "priceRange": "Preventivo Su Misura",
+        "description": "Ideale per web app, piattaforme SaaS e funzionalità complesse",
+        "features": [
+          "Autenticazione utenti e database",
+          "Logiche di business complesse",
+          "Integrazioni API terze parti",
+          "Pannelli di amministrazione personalizzati",
+          "Possiedi tutto il codice e il design"
+        ],
+        "management": {
+          "price": "€399/anno",
+          "label": "Altamente Raccomandato",
+          "features": [
+            "Gestione hosting e dominio",
+            "Aggiornamenti sicurezza e dipendenze",
+            "Modifiche contenuti (4h/mese)",
+            "Miglioramenti funzionalità",
+            "Monitoraggio prestazioni",
+            "Supporto prioritario (risposta 24h)"
+          ]
+        },
+        "turnaround": "Discutiamo le tue specifiche"
+      }
+    ],
+    "note": "I prezzi elencati rappresentano punti di partenza tipici. L'investimento finale dipende dalla complessità del design e dalle funzionalità richieste. I prezzi escludono i costi di hosting. I piani di gestione sono opzionali ma consigliati per la tranquillità.",
+    "cta": "Discuti il Tuo Progetto"
+  },
+  "subscribeModel": {
+    "badge": "TUTTO INCLUSO",
+    "title": "Abbonati e Rilassati",
+    "price": "€39/mese",
+    "upfront": "Costo attivazione €150 una tantum",
+    "annual": "fatturato annualmente (€468/anno)",
+    "commitment": "impegno minimo 2 anni",
+    "description": "L'abbonamento tutto incluso per chi vuole un'esperienza senza pensieri. Include design, sviluppo e gestione continua per siti di portata standard.",
+    "features": [
+      "Design e sviluppo (portata standard inclusa)",
+      "Fino a 5 pagine con layout standard",
+      "Hosting, dominio e SSL inclusi",
+      "2 ore di aggiornamenti contenuti al mese",
+      "Aggiornamenti di sicurezza e monitoraggio",
+      "Supporto email (risposta 48h)",
+      "Design responsive per mobile",
+      "Configurazione SEO base"
+    ],
+    "ownership": {
+      "title": "Cosa Possiedi",
+      "items": [
+        "Nome dominio registrato a tuo nome",
+        "Tutti i contenuti, immagini e testi forniti",
+        "Export dei contenuti disponibile sempre",
+        "Dopo 2 anni: acquista il codice per una tariffa fissa (vedi FAQ)"
+      ]
+    },
+    "cancellation": {
+      "title": "Politica di Cancellazione",
+      "details": "Impegno minimo di 2 anni. Dopo 2 anni, disdici quando vuoi con preavviso di 30 giorni. Il sito va offline dopo il periodo di preavviso. Trasferimento dominio disponibile. Export contenuti fornito."
+    },
+    "cta": "Inizia Abbonamento"
+  },
+  "addons": {
+    "title": "Add-On (Entrambi i Modelli)",
+    "subtitle": "Migliora il tuo sito con funzionalità aggiuntive",
+    "items": [
+      {
+        "icon": "🛒",
+        "name": "Integrazione E-commerce",
+        "buyPrice": "Da €400 setup",
+        "subscribePrice": "Da €200/anno",
+        "description": "Vendi prodotti in sicurezza. Include setup gateway di pagamento (Stripe/PayPal) e configurazione catalogo"
+      },
+      {
+        "icon": "📅",
+        "name": "Sistemi di Prenotazione",
+        "buyPrice": "Da €200 setup",
+        "subscribePrice": "Da €100/anno",
+        "description": "Integrazioni Calendly/Acuity o logiche di prenotazione personalizzate"
+      },
+      {
+        "icon": "🌍",
+        "name": "Multilingua",
+        "buyPrice": "Da €150/lingua",
+        "subscribePrice": "Da €75/anno per lingua",
+        "description": "Raggiungi un pubblico internazionale nella loro lingua con supporto traduzioni professionale"
+      },
+      {
+        "icon": "⚡",
+        "name": "Funzionalità Custom",
+        "buyPrice": "Preventivo custom",
+        "subscribePrice": "Preventivo custom",
+        "description": "Integrazioni complesse, database personalizzati o funzionalità uniche — parliamo delle tue esigenze"
+      }
+    ],
+    "cta": "Discuti le Tue Esigenze"
+  },
+  "decisionQuiz": {
+    "title": "Non Sicuro del Modello?",
+    "subtitle": "Fai il nostro quiz di 2 minuti per trovare la soluzione perfetta",
+    "cta": "Fai il Quiz"
+  },
+  "pitch": "Stessa qualità, stesso sviluppatore, stessi risultati — scegli solo la struttura di pagamento adatta alla tua attività.",
+  "subscriptionFAQ": {
+    "title": "Domande Frequenti",
+    "subtitle": "Tutto quello che devi sapere su entrambi i modelli",
+    "searchPlaceholder": "Cerca nelle FAQ...",
+    "noResults": "Nessuna FAQ corrisponde alla ricerca.",
+    "minRead": "min lettura",
+    "stillHaveQuestions": "Hai ancora domande?",
+    "q1": {
+      "question": "Quale modello dovrei scegliere?",
+      "answer": "Scegli Acquista e Possiedi se preferisci pagamenti una tantum e la piena proprietà del codice. Scegli Abbonati e Rilassati se vuoi una barriera d'ingresso bassa (costo setup minimo) e supporto continuo incluso."
+    },
+    "q2": {
+      "question": "Cosa è incluso nei piani di gestione?",
+      "answer": "I piani includono gestione hosting/dominio, aggiornamenti di sicurezza, piccole modifiche ai contenuti, monitoraggio e supporto. Sono opzionali per chi acquista, ma raccomandati per la tranquillità."
+    },
+    "q3": {
+      "question": "Posso cambiare modello dopo?",
+      "answer": "Sì! I clienti in abbonamento possono acquistare il codice dopo 2 anni per €500. I clienti che acquistano possono aggiungere piani di gestione in qualsiasi momento. Siamo flessibili."
+    },
+    "q4": {
+      "question": "Cosa succede dopo i 2 anni di abbonamento?",
+      "answer": "Dopo 2 anni puoi: (1) Continuare mese per mese con preavviso di 30 giorni, (2) Acquistare il codice per €500 e possederlo per sempre, o (3) Disdire senza penali."
+    },
+    "q5": {
+      "question": "Devo capire di hosting, DNS o cose tecniche?",
+      "answer": "No. Con l'abbonamento o i piani di gestione, gestisco tutto io. Senza gestione, posso comunque aiutarti nel setup iniziale, ma poi gestirai rinnovi e aggiornamenti da solo."
+    },
+    "q6": {
+      "question": "Cosa conta come 'modifiche ai contenuti'?",
+      "answer": "Aggiornamenti testi, cambio immagini, modifiche colori, piccoli aggiustamenti di layout. Modifiche complesse come nuove pagine o form personalizzati sono preventivate a parte."
+    }
+  },
+  "basicWebsite": {
+    "badge": "Opzione Economica",
+    "title": "Hai Bisogno di un Sito HTML Semplice?",
+    "description": "Perfetto per siti web basici di 1-3 pagine che puoi caricare direttamente sul tuo hosting. Nessuna configurazione React complessa—solo file HTML/CSS/JavaScript puri pronti per il deploy.",
+    "setup": "Configurazione una tantum",
+    "annual": "Dominio + Hosting",
+    "note": "Ottimo per siti web \"configura e dimentica\". I siti React qui sotto offrono funzionalità avanzate, prestazioni migliori e aggiornamenti più semplici—ecco perché costano di più.",
+    "setupLabel": "Configurazione una tantum",
+    "annualLabel": "Dominio + Hosting/anno"
+  },
+  "advancedSites": "Per Siti Web React Avanzati"
+}

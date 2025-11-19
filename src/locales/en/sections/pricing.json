@@ -1,0 +1,202 @@
+{
+  "title": "Choose Your Model",
+  "subtitle": "Two ways to get a professional website that grows with your business",
+  "buyModel": {
+    "badge": "Project-Based",
+    "title": "Buy & Own",
+    "description": "Pay once, own forever. Perfect for businesses that prefer traditional project-based work and full asset control.",
+    "tiers": [
+      {
+        "name": "Essentials",
+        "priceRange": "Starts at €500",
+        "description": "Best for portfolios, landing pages, and local business information sites",
+        "features": [
+          "Static or simple CMS structure",
+          "Up to 3 distinct page layouts",
+          "Mobile-responsive design",
+          "Basic SEO & contact forms",
+          "You own all code & design"
+        ],
+        "management": {
+          "price": "€99/year",
+          "label": "Optional Management",
+          "features": [
+            "Hosting & domain management",
+            "Security updates",
+            "Minor content changes",
+            "Email support"
+          ]
+        },
+        "turnaround": "Typical turnaround: 1-2 weeks"
+      },
+      {
+        "name": "Growth",
+        "priceRange": "Starts at €900",
+        "description": "Best for interactive business sites and content-driven platforms",
+        "features": [
+          "React/Next.js performance",
+          "CMS integration for easy editing",
+          "Advanced animations & interactivity",
+          "Third-party integrations",
+          "You own all code & design"
+        ],
+        "management": {
+          "price": "€150/year",
+          "label": "Recommended",
+          "features": [
+            "Hosting & domain management",
+            "Security & dependency updates",
+            "Content changes (2h/month)",
+            "Performance monitoring",
+            "Priority email support"
+          ]
+        },
+        "turnaround": "Typical turnaround: 2-4 weeks"
+      },
+      {
+        "name": "Custom Solutions",
+        "priceRange": "Custom Quote",
+        "description": "Best for web apps, SaaS platforms, and complex functionality needs",
+        "features": [
+          "User authentication & databases",
+          "Complex business logic",
+          "Third-party API integrations",
+          "Custom admin panels",
+          "You own all code & design"
+        ],
+        "management": {
+          "price": "€399/year",
+          "label": "Highly Recommended",
+          "features": [
+            "Hosting & domain management",
+            "Security & dependency updates",
+            "Content changes (4h/month)",
+            "Feature enhancements",
+            "Performance monitoring",
+            "Priority support (24h response)"
+          ]
+        },
+        "turnaround": "Let's discuss your specific requirements"
+      }
+    ],
+    "note": "Prices listed represent typical starting points. Final investment depends on design complexity and specific functionality requirements. All prices exclude hosting costs. Management plans are optional but recommended for peace of mind.",
+    "cta": "Discuss Your Project"
+  },
+  "subscribeModel": {
+    "badge": "ALL-INCLUSIVE",
+    "title": "Subscribe & Relax",
+    "price": "€39/month",
+    "upfront": "One-time €150 setup fee",
+    "annual": "billed annually (€468/year)",
+    "commitment": "2-year minimum commitment",
+    "description": "The all-inclusive subscription for businesses who want a hands-off experience. Includes design, development, and ongoing management for standard-scope websites.",
+    "features": [
+      "Design & development (standard scope included)",
+      "Up to 5 pages with standard layouts",
+      "Hosting, domain & SSL included",
+      "2 hours of content updates per month",
+      "Security updates & monitoring",
+      "Email support (48h response)",
+      "Mobile-responsive design",
+      "Basic SEO setup"
+    ],
+    "ownership": {
+      "title": "What You Own",
+      "items": [
+        "Domain name registered in your name",
+        "All content, images, text you provide",
+        "Content export available anytime",
+        "After 2 years: buy code for a fixed fee (see FAQ)"
+      ]
+    },
+    "cancellation": {
+      "title": "Cancellation Policy",
+      "details": "2-year minimum commitment. After 2 years, cancel anytime with 30 days notice. Site goes offline after notice period. Domain transfer available. Content export provided."
+    },
+    "cta": "Start Subscription"
+  },
+  "addons": {
+    "title": "Add-Ons (Both Models)",
+    "subtitle": "Enhance your site with additional features",
+    "items": [
+      {
+        "icon": "🛒",
+        "name": "E-commerce Integration",
+        "buyPrice": "From €400 setup",
+        "subscribePrice": "From €200/year",
+        "description": "Sell products safely. Includes payment gateway setup (Stripe/PayPal) and product catalog configuration"
+      },
+      {
+        "icon": "📅",
+        "name": "Booking Systems",
+        "buyPrice": "From €200 setup",
+        "subscribePrice": "From €100/year",
+        "description": "Calendly/Acuity integrations or custom booking logic"
+      },
+      {
+        "icon": "🌍",
+        "name": "Multilingual",
+        "buyPrice": "From €150/language",
+        "subscribePrice": "From €75/year per language",
+        "description": "Reach international audiences in their language with professional translation support"
+      },
+      {
+        "icon": "⚡",
+        "name": "Custom Features",
+        "buyPrice": "Custom quote",
+        "subscribePrice": "Custom quote",
+        "description": "Complex integrations, custom databases, or unique functionality—let's discuss your specific needs"
+      }
+    ],
+    "cta": "Discuss Your Needs"
+  },
+  "decisionQuiz": {
+    "title": "Not Sure Which Model?",
+    "subtitle": "Take our 2-minute quiz to find your perfect fit",
+    "cta": "Take the Quiz"
+  },
+  "pitch": "Same quality, same developer, same results — just choose the payment structure that fits your business.",
+  "subscriptionFAQ": {
+    "title": "Frequently Asked Questions",
+    "subtitle": "Everything you need to know about both models",
+    "searchPlaceholder": "Search FAQs...",
+    "noResults": "No FAQs match your search. Try different keywords!",
+    "minRead": "min read",
+    "stillHaveQuestions": "Still have questions?",
+    "q1": {
+      "question": "Which model should I choose?",
+      "answer": "Choose Buy & Own if you prefer one-time payments and full code ownership. Choose Subscribe & Relax if you want a low barrier to entry (minimal setup fee) and ongoing support included."
+    },
+    "q2": {
+      "question": "What's included in the management plans?",
+      "answer": "Management plans include hosting & domain management, security updates, minor content changes (hours vary by tier), performance monitoring, and email support. They're optional for Buy & Own but highly recommended for peace of mind."
+    },
+    "q3": {
+      "question": "Can I switch models later?",
+      "answer": "Yes! Subscribe & Relax clients can buy the code after 2 years for €500. Buy & Own clients can add management plans anytime. We're flexible — your business evolves, your website should too."
+    },
+    "q4": {
+      "question": "What happens after the 2-year subscription commitment?",
+      "answer": "After 2 years, you can: (1) Continue month-to-month with 30 days notice, (2) Buy the code for €500 and own it forever, or (3) Cancel anytime with no penalty."
+    },
+    "q5": {
+      "question": "Do I need to understand hosting, DNS, SEO, or technical stuff?",
+      "answer": "Nope. With Subscribe & Relax or management plans, I handle everything. Without management, I can still help set things up and guide you — you just manage renewals and updates yourself."
+    },
+    "q6": {
+      "question": "What counts as 'content changes' in management plans?",
+      "answer": "Text updates, image swaps, color tweaks, minor layout adjustments. Complex changes like adding new pages, custom forms, or features are quoted separately at a standard hourly rate."
+    }
+  },
+  "basicWebsite": {
+    "badge": "Budget Option",
+    "title": "Need a Simple HTML Website?",
+    "description": "Perfect for basic 1-3 page websites you can upload directly to your hosting. No complex React setup—just pure HTML/CSS/JavaScript files ready to deploy.",
+    "setup": "One-time setup",
+    "annual": "Domain + Hosting",
+    "note": "Great for \"set and forget\" websites. The React sites below offer advanced features, better performance, and easier updates—which is why they cost more.",
+    "setupLabel": "One-time setup",
+    "annualLabel": "Domain + Hosting/year"
+  },
+  "advancedSites": "For Advanced React Websites"
+}

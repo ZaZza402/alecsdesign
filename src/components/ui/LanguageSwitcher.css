@@ -1,14 +1,8 @@
-/* Language Switcher - Desktop */
+/* Language Switcher - All screens */
 
 .language-switcher {
   position: relative;
-  display: none;
-}
-
-@media (min-width: 768px) {
-  .language-switcher {
-    display: block;
-  }
+  display: block;
 }
 
 .language-switcher__trigger {
@@ -16,19 +10,21 @@
   align-items: center;
   gap: 4px;
   padding: 6px 10px;
-  background: rgba(59, 130, 246, 0.1);
-  border: 1px solid rgba(59, 130, 246, 0.2);
+  background: rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 6px;
-  color: #3b82f6;
+  color: #000;
   font-weight: 600;
   font-size: 0.75rem;
   cursor: pointer;
   transition: all 0.2s ease;
+  font-family: "Manrope", sans-serif;
 }
 
 .language-switcher__trigger:hover {
-  background: rgba(59, 130, 246, 0.18);
-  border-color: rgba(96, 165, 250, 0.3);
+  background: rgba(243, 84, 34, 0.08);
+  border-color: rgba(243, 84, 34, 0.2);
+  color: #f35422;
   transform: translateY(-1px);
 }
 
@@ -42,7 +38,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  z-index: 9997;
+  z-index: 100;
 }
 
 .language-switcher__dropdown {
@@ -52,10 +48,10 @@
   min-width: 140px;
   background: white;
   border-radius: 10px;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
   overflow: hidden;
-  z-index: 9998;
-  border: 1px solid rgba(96, 165, 250, 0.1);
+  z-index: 101;
+  border: 1px solid rgba(0, 0, 0, 0.08);
 }
 
 .language-switcher__option {
@@ -70,19 +66,20 @@
   cursor: pointer;
   transition: all 0.2s ease;
   position: relative;
+  font-family: "Manrope", sans-serif;
 }
 
 .language-switcher__option:hover {
-  background: rgba(59, 130, 246, 0.1);
+  background: rgba(243, 84, 34, 0.08);
 }
 
 .language-switcher__option--active {
-  background: rgba(59, 130, 246, 0.15);
+  background: rgba(243, 84, 34, 0.1);
 }
 
 .language-switcher__option-code {
   font-weight: 700;
-  color: #3b82f6;
+  color: #f35422;
   font-size: 0.75rem;
   letter-spacing: 0.3px;
   min-width: 20px;
@@ -90,12 +87,13 @@
 
 .language-switcher__option-name {
   flex: 1;
-  color: #475569;
+  color: #000;
   font-size: 0.75rem;
+  font-weight: 400;
 }
 
 .language-switcher__check {
-  color: #10b981;
+  color: #f35422;
   font-weight: 700;
   font-size: 0.875rem;
 }

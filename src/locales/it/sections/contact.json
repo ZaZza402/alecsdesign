@@ -1,0 +1,43 @@
+{
+  "title": "Iniziamo il Progetto",
+  "subtitle": "Non aspettare. Prenota la tua consulenza gratuita e discutiamo della tua visione.",
+  "successMessage": "Grazie! Ho ricevuto la tua richiesta e ti contatterò a breve.",
+  "errorMessage": "Invio fallito. Per favore contattami direttamente via email o WhatsApp.",
+  "responseTime": "Rispondo di solito:",
+  "responseTimeValue": "entro 24 ore",
+  "whatsappStatus": "WhatsApp:",
+  "whatsappAvailable": "Online Ora",
+  "whatsappOffline": "Offline (Torno alle 9:00)",
+  "form": {
+    "name": "Nome",
+    "namePlaceholder": "Il tuo nome completo",
+    "nameRequired": "Il nome è obbligatorio",
+    "contact": "Email o Telefono",
+    "contactPlaceholder": "contatto@esempio.it",
+    "contactRequired": "Email o telefono obbligatorio",
+    "business": "Parlami della tua attività",
+    "businessPlaceholder": "Di cosa ti occupi? Qual è il tuo obiettivo principale?",
+    "businessRequired": "Raccontami brevemente il progetto",
+    "needs": "Di cosa hai bisogno?",
+    "needsPlaceholder": "Seleziona il tipo di progetto...",
+    "needsRequired": "Seleziona un'opzione",
+    "needsOptions": {
+      "newWebsite": "Nuovo Sito da Zero",
+      "redesign": "Restyling Sito Esistente",
+      "consultation": "Consulenza Tecnica",
+      "other": "Altro / Non so ancora"
+    },
+    "preference": "Come preferisci essere ricontattato?",
+    "preferencePlaceholder": "Seleziona...",
+    "preferenceRequired": "Seleziona una preferenza",
+    "preferenceOptions": {
+      "email": "Email",
+      "phone": "Telefonata",
+      "whatsapp": "Messaggio WhatsApp"
+    },
+    "message": "Dettagli aggiuntivi (opzionale)",
+    "messagePlaceholder": "Hai scadenze o funzionalità specifiche in mente?",
+    "submit": "Invia Richiesta",
+    "sending": "Invio in corso..."
+  }
+}

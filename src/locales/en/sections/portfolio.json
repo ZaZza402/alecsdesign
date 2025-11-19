@@ -1,0 +1,76 @@
+{
+  "title": "Real Projects, Real Results",
+  "subtitle": "See what I've built for businesses like yours",
+  "viewProject": "View Live Site",
+  "visitLive": "Visit Live",
+  "seeDetails": "See Details",
+  "showLess": "Show Less",
+  "filterAll": "All Projects",
+  "filterBuy": "Buy & Own",
+  "filterSubscribe": "Subscribe",
+  "featuresTitle": "Key Features",
+  "techStackTitle": "Tech Stack",
+  "projects": [
+    {
+      "id": "psychologist",
+      "url": "https://www.popescumaria.ro",
+      "image": "/portfolio images/website-psycologis-portfolio.webp",
+      "category": "Healthcare Professional Website",
+      "model": "Buy & Own + Basic Management (€99/year)",
+      "description": "Modern, calming website for a clinical psychologist. Clean design focused on building trust and making it easy for patients to book appointments online.",
+      "features": [
+        "Fully mobile-responsive design",
+        "Integrated contact forms",
+        "SEO optimized for local search",
+        "Professional imagery and branding",
+        "Google Maps integration",
+        "Smooth animations and transitions"
+      ],
+      "tech": "React, TypeScript, Vite, Tailwind CSS, Framer Motion"
+    },
+    {
+      "id": "immigration-agency",
+      "url": "https://www.puntomigrare.it",
+      "image": "/portfolio images/service-agency-website.webp",
+      "category": "Professional Services Website",
+      "model": "Buy & Own + Basic Management (€99/year)",
+      "description": "Professional website for an immigration assistance center (CAF) in Italy. Designed to help immigrants navigate complex bureaucratic processes with ease.",
+      "features": [
+        "Real-time office hours display (open/closed)",
+        "Interactive Google Maps integration",
+        "Progressive Web App (PWA) - installable on mobile",
+        "Service showcase with detailed descriptions",
+        "Contact integration and inquiry forms",
+        "SEO optimized for local search visibility",
+        "Smooth scroll animations"
+      ],
+      "tech": "React, JavaScript, Vite, Tailwind CSS, Framer Motion, PWA"
+    },
+    {
+      "id": "velvet-shaker",
+      "url": "https://velvet-shaker.alecsdesign.xyz",
+      "image": "/portfolio images/velvet-shaker-bar-showcase-design.webp",
+      "category": "Cocktail Bar & Entertainment",
+      "model": "Premium Concept Showcase Project",
+      "description": "Cinematic storytelling website for a sophisticated cocktail bar. A single-page journey designed to immerse visitors in the art of liquid poetry, from underground vibes to signature cocktails.",
+      "features": [
+        "Cinematic mobile intro design",
+        "Minimalist and sleek mobile menu",
+        "Animated card menu for cocktail showcase",
+        "Custom desktop cursor for premium feel",
+        "Beautiful animated swipeable gallery",
+        "Google Maps integration for location",
+        "Booking and reservation forms",
+        "Newsletter subscription integration",
+        "Strategic typography with elegant fonts",
+        "Full-page storytelling experience"
+      ],
+      "tech": "React, TypeScript, Vite, Tailwind CSS, Framer Motion, Swiper.js"
+    }
+  ],
+  "cta": {
+    "title": "Want to see your project here?",
+    "subtitle": "Let's build something great together",
+    "button": "Start Your Project"
+  }
+}

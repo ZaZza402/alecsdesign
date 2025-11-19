@@ -15,36 +15,39 @@
 
 .scroll-progress-fill {
   height: 100%;
-  background: linear-gradient(90deg, #2563eb, #7c3aed);
+  background: linear-gradient(90deg, #000, #7c3aed);
   transition: width 0.1s ease-out;
-  box-shadow: 0 0 8px rgba(37, 99, 235, 0.5);
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
 }
 
-/* Floating CTA button */
-.floating-cta {
+/* Floating CTA wrapper and button */
+.floating-cta-wrapper {
   position: fixed;
   bottom: 24px;
   right: 24px;
+  z-index: 999;
+  animation: slideInUp 0.4s ease-out;
+}
+
+.floating-cta {
   display: flex;
   align-items: center;
   gap: 8px;
   padding: 12px 20px;
-  background: linear-gradient(135deg, #2563eb, #7c3aed);
+  background: linear-gradient(135deg, #000, #7c3aed);
   color: white;
   border: none;
   border-radius: 50px;
   font-size: 15px;
   font-weight: 600;
   cursor: pointer;
-  box-shadow: 0 8px 24px rgba(37, 99, 235, 0.4);
-  z-index: 999;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  animation: slideInUp 0.4s ease-out;
 }
 
 .floating-cta:hover {
   transform: translateY(-2px);
-  box-shadow: 0 12px 32px rgba(37, 99, 235, 0.5);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.5);
 }
 
 .floating-cta:active {
@@ -53,6 +56,64 @@
 
 .floating-cta-text {
   white-space: nowrap;
+}
+
+/* Floating options dropdown */
+.floating-options-menu {
+  position: absolute;
+  bottom: 70px;
+  right: 0;
+  min-width: 220px;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.floating-option {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+  padding: 14px 16px;
+  background: white;
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-align: left;
+}
+
+.floating-option:last-child {
+  border-bottom: none;
+}
+
+.floating-option:hover {
+  background: rgba(124, 58, 237, 0.04);
+}
+
+.floating-option svg {
+  color: #7c3aed;
+  flex-shrink: 0;
+}
+
+.floating-option-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  flex: 1;
+}
+
+.floating-option-label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #1e293b;
+}
+
+.floating-option-desc {
+  font-size: 12px;
+  color: #64748b;
 }
 
 /* Scroll to top button */
@@ -99,11 +160,18 @@
 
 /* Large Desktop (1440px+) */
 @media (min-width: 1440px) {
-  .floating-cta {
+  .floating-cta-wrapper {
     bottom: 32px;
     right: 32px;
+  }
+
+  .floating-cta {
     padding: 14px 24px;
     font-size: 16px;
+  }
+
+  .floating-options-menu {
+    min-width: 240px;
   }
 
   .scroll-to-top {
@@ -118,9 +186,12 @@
 
 /* Tablet Landscape (769px - 1023px) */
 @media (max-width: 1023px) and (min-width: 769px) {
-  .floating-cta {
+  .floating-cta-wrapper {
     bottom: 20px;
     right: 20px;
+  }
+
+  .floating-cta {
     padding: 12px 18px;
     font-size: 14px;
   }
@@ -139,9 +210,12 @@
     height: 2px;
   }
 
-  .floating-cta {
+  .floating-cta-wrapper {
     bottom: 88px; /* Above BottomNav (72px) + spacing */
     right: 16px;
+  }
+
+  .floating-cta {
     width: 52px;
     height: 52px;
     justify-content: center;
@@ -150,6 +224,11 @@
 
   .floating-cta-text {
     display: none;
+  }
+
+  .floating-options-menu {
+    min-width: 200px;
+    bottom: 64px;
   }
 
   .scroll-to-top {
@@ -166,9 +245,12 @@
     height: 2px;
   }
 
-  .floating-cta {
+  .floating-cta-wrapper {
     bottom: 80px; /* Tighter spacing for small screens */
     right: 12px;
+  }
+
+  .floating-cta {
     width: 48px;
     height: 48px;
     justify-content: center;
@@ -177,6 +259,15 @@
 
   .floating-cta-text {
     display: none;
+  }
+
+  .floating-options-menu {
+    min-width: 190px;
+    bottom: 60px;
+  }
+
+  .floating-option {
+    padding: 12px 14px;
   }
 
   .scroll-to-top {
@@ -193,9 +284,12 @@
     height: 2px;
   }
 
-  .floating-cta {
+  .floating-cta-wrapper {
     bottom: 76px;
     right: 8px;
+  }
+
+  .floating-cta {
     width: 44px;
     height: 44px;
     justify-content: center;
@@ -205,6 +299,29 @@
 
   .floating-cta-text {
     display: none;
+  }
+
+  .floating-options-menu {
+    min-width: 180px;
+    bottom: 56px;
+  }
+
+  .floating-option {
+    padding: 10px 12px;
+    gap: 10px;
+  }
+
+  .floating-option svg {
+    width: 16px;
+    height: 16px;
+  }
+
+  .floating-option-label {
+    font-size: 13px;
+  }
+
+  .floating-option-desc {
+    font-size: 11px;
   }
 
   .scroll-to-top {

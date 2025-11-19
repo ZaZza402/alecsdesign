@@ -1,0 +1,159 @@
+﻿{
+  "backToHome": "Înapoi Acasă",
+  "lastUpdated": "Ultima Actualizare",
+  "privacy": {
+    "title": "Politica de Confidențialitate",
+    "intro": {
+      "title": "Introducere",
+      "text": "La alecsdesign, respect confidențialitatea ta și mă angajez să îți protejez datele personale. Această politică de confidențialitate explică cum colectez, utilizez și protejez informațiile tale când vizitezi site-ul meu web sau folosești serviciile mele."
+    },
+    "dataCollection": {
+      "title": "Informații pe Care le Colectez",
+      "intro": "Colectez următoarele tipuri de informații:",
+      "item1": "Informații de contact (nume, email, număr de telefon) când completezi formularul de contact",
+      "item2": "Informații despre afacere pe care le furnizezi când soliciți o ofertă sau o consultație",
+      "item3": "Date tehnice colectate prin cookie-uri și analytics (adresă IP, tip de browser, informații despre dispozitiv)",
+      "item4": "Istoricul comunicării când interacționăm prin email, telefon sau WhatsApp"
+    },
+    "dataUse": {
+      "title": "Cum Folosesc Informațiile Tale",
+      "intro": "Folosesc informațiile tale pentru a:",
+      "item1": "Răspunde la întrebările tale și a furniza serviciile pe care le-ai solicitat",
+      "item2": "Comunica cu tine despre proiecte, oferte și actualizări",
+      "item3": "Îmbunătăți site-ul meu web și serviciile bazat pe datele analytics",
+      "item4": "Trimite actualizări ocazionale despre serviciile mele (doar dacă ai consimțit)"
+    },
+    "analytics": {
+      "title": "Analytics și Cookie-uri",
+      "text": "Folosesc instrumente de analytics pentru a înțelege cum interacționează vizitatorii cu site-ul meu web. Acest lucru mă ajută să îmbunătățesc experiența utilizatorilor și să optimizez serviciile mele. Aceste instrumente pot folosi cookie-uri pentru a colecta date anonime de utilizare. Poți controla preferințele cookie-urilor prin setările browser-ului tău sau folosind bannerul de cookie-uri de pe acest site web."
+    },
+    "cookies": {
+      "title": "Cookie-uri",
+      "text": "Site-ul meu web folosește cookie-uri pentru funcționalitate esențială, analytics și pentru a-ți aminti preferințele. Poți gestiona preferințele cookie-urilor în orice moment. Pentru mai multe detalii, consultă Politica mea de Cookie-uri."
+    },
+    "thirdParty": {
+      "title": "Servicii de la Terțe Părți",
+      "text": "Pot folosi servicii de la terțe părți precum furnizori de email, platforme de analytics și servicii de hosting. Selectez furnizori care respectă standarde rezonabile de protecție a datelor."
+    },
+    "dataProtection": {
+      "title": "Securitatea Datelor",
+      "text": "Iau măsuri rezonabile pentru a-ți proteja informațiile personale de acces neautorizat, divulgare sau utilizare greșită. Cu toate acestea, nicio metodă de transmisie pe internet nu este 100% sigură."
+    },
+    "yourRights": {
+      "title": "Drepturile Tale",
+      "intro": "Sub GDPR și alte legi privind confidențialitatea, ai dreptul de a:",
+      "item1": "Accesa datele personale pe care le dețin despre tine",
+      "item2": "Solicita corectarea sau ștergerea datelor tale",
+      "item3": "Obiecta împotriva procesării datelor tale personale",
+      "item4": "Retrage consimțământul în orice moment (unde procesarea se bazează pe consimțământ)"
+    },
+    "contact": {
+      "title": "Contactează-mă",
+      "text": "Dacă ai întrebări despre această politică de confidențialitate sau despre cum gestionez datele tale, contactează-mă folosind informațiile furnizate pe acest site web."
+    }
+  },
+  "terms": {
+    "title": "Termeni și Condiții",
+    "acceptance": {
+      "title": "Acceptarea Termenilor",
+      "text": "Accesând și folosind acest site web sau angajând serviciile mele, ești de acord să respecți acești Termeni și Condiții. Dacă nu ești de acord cu orice parte a acestor termeni, te rog să nu folosești serviciile mele."
+    },
+    "services": {
+      "title": "Servicii Oferite",
+      "text": "Ofer servicii profesionale de dezvoltare web și design inclusiv, dar fără a se limita la: dezvoltare de site-uri web, aplicații web, soluții de e-commerce și consultanță digitală. Toate serviciile sunt furnizate pe bază de proiect, cu excepția cazului în care se convine altfel."
+    },
+    "project": {
+      "title": "Procesul Proiectului",
+      "intro": "Fiecare proiect urmează acest proces general:",
+      "item1": "Consultație inițială gratuită pentru a înțelege nevoile tale",
+      "item2": "Ofertă detaliată și cronologie a proiectului",
+      "item3": "Acord privind domeniul, livrabilele și termenii de plată",
+      "item4": "Faze de dezvoltare, revizuire și lansare cu comunicare continuă"
+    },
+    "payment": {
+      "title": "Termeni de Plată",
+      "text": "Termenii de plată sunt stabiliți pentru fiecare proiect în mod individual. De obicei, proiectele necesită un depozit în avans, iar soldul este scadent la finalizare. Programele specifice de plată vor fi detaliate în acordul de proiect."
+    },
+    "intellectual": {
+      "title": "Proprietate Intelectuală",
+      "text": "La plata completă, vei deține site-ul web sau aplicația finală livrată. Îmi rezerv dreptul de a folosi lucrarea în portofoliul meu cu excepția cazului în care se convine altfel. Componentele, librăriile și framework-urile de la terțe părți rămân sub licențele lor respective."
+    },
+    "warranty": {
+      "title": "Garanții și Suport",
+      "text": "Ofer un termen de garanție pentru corectarea erorilor direct legate de codul meu, conform contractului. Mentenanța continuă se aranjează separat. Nu garantez compatibilitatea cu actualizări viitoare de la terțe părți dincolo de controlul meu."
+    },
+    "limitation": {
+      "title": "Limitarea Răspunderii",
+      "text": "În măsura maximă permisă de lege, nu voi fi responsabil pentru daune indirecte, incidentale sau consecvente care rezultă din utilizarea serviciilor mele sau a site-ului web. Răspunderea mea totală este limitată la suma plătită pentru proiectul specific în cauză."
+    },
+    "termination": {
+      "title": "Reziliere",
+      "text": "Oricare dintre părți poate rezilia un acord de proiect cu notificare scrisă. Dacă reziliezi un proiect, vei fi responsabil pentru plata lucrărilor finalizate până în acel moment. Dacă reziliez din cauza neplății sau încălcării acordului, nu va fi furnizată nicio rambursare."
+    },
+    "governing": {
+      "title": "Legea Aplicabilă",
+      "text": "Acești termeni sunt reglementați de legile Italiei. Orice dispute vor fi rezolvate în instanțele din Roma, Italia."
+    },
+    "changes": {
+      "title": "Modificări ale Termenilor",
+      "text": "Îmi rezerv dreptul de a actualiza acești Termeni și Condiții în orice moment. Modificările vor fi postate pe această pagină cu o dată de revizuire actualizată."
+    },
+    "contact": {
+      "title": "Contact",
+      "text": "Pentru întrebări despre acești Termeni și Condiții, contactează-mă prin formularul de contact de pe acest site web."
+    }
+  },
+  "cookies": {
+    "title": "Politica Cookie-uri",
+    "what": {
+      "title": "Ce Sunt Cookie-urile?",
+      "text": "Cookie-urile sunt fișiere text mici stocate pe dispozitivul tău când vizitezi un site web. Ele ajută site-urile web să îți amintească preferințele, să înțeleagă cum folosești site-ul și să îmbunătățească experiența ta."
+    },
+    "types": {
+      "title": "Tipuri de Cookie-uri",
+      "essential": {
+        "title": "Cookie-uri Esențiale",
+        "text": "Aceste cookie-uri sunt necesare pentru ca site-ul web să funcționeze corect. Ele activează funcții de bază precum navigarea, securitatea și preferințele de limbă. Site-ul web nu poate funcționa corect fără aceste cookie-uri."
+      },
+      "analytics": {
+        "title": "Cookie-uri Analytics",
+        "text": "Aceste cookie-uri mă ajută să înțeleg cum interacționează vizitatorii cu site-ul meu web prin colectarea de informații anonime. Aceste date mă ajută să îmbunătățesc site-ul și să ofer o experiență mai bună pentru utilizatori."
+      },
+      "functional": {
+        "title": "Cookie-uri Funcționale",
+        "text": "Aceste cookie-uri îți amintesc preferințele și alegerile (precum selecția limbii) pentru a oferi o experiență mai personalizată."
+      }
+    },
+    "weUse": {
+      "title": "Cookie-urile pe Care le Folosesc",
+      "item1": {
+        "name": "Preferință Limbă",
+        "desc": "Îți amintește limba aleasă (Engleză, Italiană sau Română)"
+      },
+      "item2": {
+        "name": "Consimțământ Cookie-uri",
+        "desc": "Îți amintește preferințele pentru cookie-uri astfel încât să nu te întreb din nou"
+      },
+      "item3": {
+        "name": "Analytics",
+        "desc": "Date anonime pentru a înțelege comportamentul vizitatorilor și a îmbunătăți site-ul web"
+      }
+    },
+    "thirdParty": {
+      "title": "Cookie-uri de la Terțe Părți",
+      "text": "Unele cookie-uri pot fi setate de servicii terțe pe care le folosesc, cum ar fi furnizorii de analytics. Aceste servicii au propriile lor politici de confidențialitate și practici privind cookie-urile."
+    },
+    "manage": {
+      "title": "Gestionarea Cookie-urilor",
+      "text": "Poți controla și gestiona cookie-urile prin setările browser-ului tău. Majoritatea browser-elor îți permit să refuzi cookie-urile sau să ștergi cele existente. Te rog să reții că dezactivarea anumitor cookie-uri poate afecta funcționalitatea acestui site web."
+    },
+    "updates": {
+      "title": "Actualizări ale Acestei Politici",
+      "text": "Pot actualiza această Politică de Cookie-uri din când în când. Orice modificări vor fi postate pe această pagină cu o dată actualizată."
+    },
+    "contact": {
+      "title": "Întrebări?",
+      "text": "Dacă ai întrebări despre cum folosesc cookie-urile, contactează-mă prin formularul de contact de pe acest site web."
+    }
+  }
+}

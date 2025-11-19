@@ -1,0 +1,54 @@
+{
+  "title": "Modifiche Future e Aggiunte",
+  "subtitle": "Prezzi trasparenti per miglioramenti e aggiunte al tuo sito web dopo il lancio iniziale",
+  "addons": {
+    "title": "Aggiunte Popolari",
+    "description": "Espandi le funzionalità del tuo sito con queste caratteristiche comuni",
+    "items": {
+      "ecommerce": {
+        "name": "Integrazione E-commerce",
+        "description": "Trasforma il tuo sito in un negozio online completo con pagamenti sicuri e gestione prodotti"
+      },
+      "booking": {
+        "name": "Sistema di Prenotazione",
+        "description": "Permetti ai clienti di prenotare appuntamenti direttamente sul tuo sito con conferme automatiche"
+      },
+      "multilingual": {
+        "name": "Lingua Aggiuntiva",
+        "description": "Raggiungi un pubblico più ampio aggiungendo un'altra lingua al tuo sito"
+      },
+      "customFeature": {
+        "name": "Funzionalità Personalizzata",
+        "description": "Hai bisogno di qualcosa di unico? Parliamo delle tue esigenze specifiche"
+      }
+    }
+  },
+  "modifications": {
+    "title": "Modifiche Comuni",
+    "description": "Aggiornamenti e modifiche post-lancio per mantenere il tuo sito fresco e rilevante",
+    "items": {
+      "contentUpdate": {
+        "name": "Aggiornamenti Contenuti",
+        "description": "Modifiche rapide a testo, immagini o informazioni per mantenere il sito aggiornato"
+      },
+      "designTweaks": {
+        "name": "Aggiustamenti Design",
+        "description": "Perfezionamenti visivi per allinearsi meglio con il tuo brand in evoluzione"
+      },
+      "newSection": {
+        "name": "Nuova Pagina o Sezione",
+        "description": "Espandi il tuo sito con pagine o sezioni di contenuto aggiuntive"
+      },
+      "security": {
+        "name": "Sicurezza e Manutenzione",
+        "description": "Incluso nel tuo pacchetto di gestione annuale—nessun costo aggiuntivo"
+      }
+    }
+  },
+  "note": "Tutti i prezzi sono stime. Contattami per un preventivo preciso basato sulle tue esigenze specifiche. La maggior parte delle modifiche può essere completata entro 1-2 settimane.",
+  "seo": {
+    "title": "Modifiche Future e Aggiunte | alecsdesign.xyz",
+    "description": "Prezzi trasparenti per miglioramenti, aggiunte e modifiche al sito web. Scopri quanto costa espandere le funzionalità del tuo sito.",
+    "keywords": "modifiche sito web, prezzi aggiunte, integrazione e-commerce, sistema prenotazioni, sito multilingue, aggiornamenti sito"
+  }
+}

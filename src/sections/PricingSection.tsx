@@ -1,120 +1,266 @@
 import { useTranslation } from "react-i18next";
 import { useInView } from "react-intersection-observer";
-import { ArrowRight, Check, FileText, Target, Rocket } from "lucide-react";
+import { Check, ShoppingCart, Calendar, Globe, Zap } from "lucide-react";
+import { Link } from "react-router-dom";
 import "./PricingSection.css";
 
+interface Tier {
+  name: string;
+  priceRange: string;
+  description: string;
+  features: string[];
+  management: {
+    price: string;
+    label: string;
+    features: string[];
+  };
+  examples: string;
+}
+
+interface Addon {
+  icon: string;
+  name: string;
+  buyPrice: string;
+  subscribePrice: string;
+  description: string;
+}
+
 const PricingSection = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const { ref, inView } = useInView({
     triggerOnce: true,
-    threshold: 0.2,
+    threshold: 0.15,
   });
 
-  const examples = [
-    { key: "simple", icon: FileText },
-    { key: "medium", icon: Target },
-    { key: "complex", icon: Rocket },
-  ];
+  const buyTiers = t("pricing.buyModel.tiers", {
+    returnObjects: true,
+  }) as Tier[];
+
+  const subscribeFeatures = t("pricing.subscribeModel.features", {
+    returnObjects: true,
+  }) as string[];
+
+  const subscribeOwnership = t("pricing.subscribeModel.ownership.items", {
+    returnObjects: true,
+  }) as string[];
+
+  const addons = t("pricing.addons.items", {
+    returnObjects: true,
+  }) as Addon[];
+
+  const getAddonIcon = (iconName: string) => {
+    switch (iconName) {
+      case "🛒":
+        return <ShoppingCart size={32} />;
+      case "📅":
+        return <Calendar size={32} />;
+      case "🌍":
+        return <Globe size={32} />;
+      case "⚡":
+        return <Zap size={32} />;
+      default:
+        return <Zap size={32} />;
+    }
+  };
 
   return (
-    <section className="pricing-section" ref={ref}>
+    <section id="pricing" className="pricing-section" ref={ref}>
       <div className={`pricing-container ${inView ? "animate-in" : ""}`}>
+        {/* Basic HTML Website - Separate Service */}
+        <div className="basic-website-section" data-aos="fade-up">
+          <div className="basic-website-card">
+            <span className="notice-badge">
+              {t("pricing.basicWebsite.badge")}
+            </span>
+            <h3 className="notice-title">{t("pricing.basicWebsite.title")}</h3>
+            <p className="notice-description">
+              {t("pricing.basicWebsite.description")}
+            </p>
+            <div className="notice-pricing">
+              <div className="notice-price-item">
+                <span className="price-label">
+                  {t("pricing.basicWebsite.setupLabel")}
+                </span>
+                <span className="price-value">€150</span>
+              </div>
+              <div className="notice-price-item">
+                <span className="price-label">
+                  {t("pricing.basicWebsite.annualLabel")}
+                </span>
+                <span className="price-value">€120/year</span>
+              </div>
+            </div>
+            <p className="notice-footer">{t("pricing.basicWebsite.note")}</p>
+          </div>
+        </div>
+
+        <div className="pricing-divider">
+          <span className="divider-text">{t("pricing.advancedSites")}</span>
+        </div>
+
         <div className="pricing-header">
           <h2 className="pricing-title">{t("pricing.title")}</h2>
           <p className="pricing-subtitle">{t("pricing.subtitle")}</p>
         </div>
 
-        <div className="pricing-range-card">
-          <div className="range-header">
-            <span className="range-label">{t("pricing.rangeLabel")}</span>
-            <div className="range-values">
-              <span className="range-min">€150</span>
-              <span className="range-separator">-</span>
-              <span className="range-max">€2000+</span>
-            </div>
-          </div>
-          <p className="range-note">{t("pricing.rangeNote")}</p>
-        </div>
+        {/* Buy & Own Model */}
+        <div className="buy-model-section">
+          <div className="model-badge">{t("pricing.buyModel.badge")}</div>
+          <h3 className="model-title">{t("pricing.buyModel.title")}</h3>
+          <p className="model-description">
+            {t("pricing.buyModel.description")}
+          </p>
 
-        <div className="examples-grid">
-          {examples.map((example, index) => {
-            const Icon = example.icon;
-            return (
-              <div
-                key={example.key}
-                className="example-card"
-                style={{ animationDelay: `${index * 0.15}s` }}
-              >
-                <div className="example-icon">
-                  <Icon size={48} strokeWidth={1.5} />
-                </div>
-                <h3 className="example-title">
-                  {t(`pricing.examples.${example.key}.title`)}
-                </h3>
-                <p className="example-price">
-                  {t(`pricing.examples.${example.key}.price`)}
-                </p>
-                <ul className="example-features">
-                  {(
-                    t(`pricing.examples.${example.key}.features`, {
-                      returnObjects: true,
-                    }) as string[]
-                  ).map((feature: string, featureIndex: number) => {
-                    // Map feature names to explainer keys
-                    const explainerMap: Record<string, string> = {
-                      "Design responsive": "responsive",
-                      "Optimizare SEO de bază": "seo",
-                      "Responsive design": "responsive",
-                      "Basic SEO optimization": "seo",
-                      "Design responsivo": "responsive",
-                      "Ottimizzazione SEO di base": "seo",
-                      "Integrări cu terțe părți": "integrations",
-                      "Third-party integrations": "integrations",
-                      "Integrazioni di terze parti": "integrations",
-                      "SEO avansat și analytics": "analytics",
-                      "Advanced SEO and analytics": "analytics",
-                      "SEO avanzato e analytics": "analytics",
-                      "Sistem de management conținut": "cms",
-                      "Content management system": "cms",
-                      "Sistema di gestione contenuti": "cms",
-                      "Bază de date și autentificare": "database",
-                      "Database and authentication": "database",
-                      "Database e autenticazione": "database",
-                    };
+          <div className="tiers-grid">
+            {buyTiers.map((tier, index) => (
+              <div key={index} className="tier-card">
+                <h4 className="tier-name">{tier.name}</h4>
+                <p className="tier-price">{tier.priceRange}</p>
+                <p className="tier-description">{tier.description}</p>
 
-                    const explainerKey = explainerMap[feature];
-                    const explainerPath = `pricing.examples.${example.key}.explainers.${explainerKey}`;
-                    const explainerText = explainerKey
-                      ? t(explainerPath, { defaultValue: "" })
-                      : "";
-
-                    return (
-                      <li key={featureIndex} className="feature-item">
-                        <Check size={16} className="feature-check" />
-                        <div className="feature-content">
-                          <span>{feature}</span>
-                          {explainerText && (
-                            <span className="feature-explainer">
-                              {explainerText}
-                            </span>
-                          )}
-                        </div>
-                      </li>
-                    );
-                  })}
+                <ul className="tier-features">
+                  {tier.features.map((feature, idx) => (
+                    <li key={idx}>
+                      <Check size={16} /> {feature}
+                    </li>
+                  ))}
                 </ul>
+
+                <div className="management-plan">
+                  <div className="management-header">
+                    <span className="management-price">
+                      {tier.management.price}
+                    </span>
+                    <span className="management-label">
+                      {tier.management.label}
+                    </span>
+                  </div>
+                  <ul className="management-features">
+                    {tier.management.features.map((feature, idx) => (
+                      <li key={idx}>{feature}</li>
+                    ))}
+                  </ul>
+                </div>
+
+                <p className="tier-examples">{tier.examples}</p>
               </div>
-            );
-          })}
+            ))}
+          </div>
+
+          <p className="buy-note">{t("pricing.buyModel.note")}</p>
+          <button
+            onClick={() => {
+              const section = document.getElementById("contact");
+              section?.scrollIntoView({ behavior: "smooth" });
+            }}
+            className="model-cta"
+          >
+            {t("pricing.buyModel.cta")}
+          </button>
         </div>
 
-        <div className="pricing-cta-card">
-          <p className="cta-text">{t("pricing.ctaText")}</p>
-          <a href="#contact" className="pricing-cta-button">
-            <span>{t("pricing.cta")}</span>
-            <ArrowRight size={20} />
-          </a>
+        {/* Subscribe & Relax Model */}
+        <div className="subscribe-model-section">
+          <div className="model-badge">{t("pricing.subscribeModel.badge")}</div>
+          <h3 className="model-title">{t("pricing.subscribeModel.title")}</h3>
+
+          <div className="subscribe-pricing">
+            <span className="subscribe-price">
+              {t("pricing.subscribeModel.price")}{" "}
+              <span className="price-label">
+                {t("pricing.subscribeModel.upfront")}
+              </span>
+            </span>
+            <span className="subscribe-annual">
+              {t("pricing.subscribeModel.annual")}
+            </span>
+          </div>
+
+          <p className="subscribe-commitment">
+            {t("pricing.subscribeModel.commitment")}
+          </p>
+          <p className="subscribe-description">
+            {t("pricing.subscribeModel.description")}
+          </p>
+
+          <ul className="subscribe-features">
+            {subscribeFeatures.map((feature, index) => (
+              <li key={index}>
+                <Check size={20} /> {feature}
+              </li>
+            ))}
+          </ul>
+
+          <div className="ownership-info">
+            <h4>{t("pricing.subscribeModel.ownership.title")}</h4>
+            <ul>
+              {subscribeOwnership.map((item, index) => (
+                <li key={index}>{item}</li>
+              ))}
+            </ul>
+          </div>
+
+          <div className="cancellation-info">
+            <h4>{t("pricing.subscribeModel.cancellation.title")}</h4>
+            <p>{t("pricing.subscribeModel.cancellation.details")}</p>
+          </div>
+
+          <button
+            onClick={() => {
+              const section = document.getElementById("contact");
+              section?.scrollIntoView({ behavior: "smooth" });
+            }}
+            className="model-cta"
+          >
+            {t("pricing.subscribeModel.cta")}
+          </button>
         </div>
+
+        {/* Add-Ons Section */}
+        <div className="addons-section">
+          <h3 className="addons-title">{t("pricing.addons.title")}</h3>
+          <p className="addons-subtitle">{t("pricing.addons.subtitle")}</p>
+
+          <div className="addons-grid">
+            {addons.map((addon, index) => (
+              <div key={index} className="addon-card">
+                <div className="addon-header">
+                  <div className="addon-icon">{getAddonIcon(addon.icon)}</div>
+                  <h4 className="addon-name">{addon.name}</h4>
+                </div>
+                <div className="addon-pricing">
+                  <p className="addon-buy-price">Buy: {addon.buyPrice}</p>
+                  <p className="addon-subscribe-price">
+                    Subscribe: {addon.subscribePrice}
+                  </p>
+                </div>
+                <p className="addon-description">{addon.description}</p>
+              </div>
+            ))}
+          </div>
+
+          <button
+            onClick={() => {
+              const section = document.getElementById("contact");
+              section?.scrollIntoView({ behavior: "smooth" });
+            }}
+            className="addons-cta"
+          >
+            {t("pricing.addons.cta")}
+          </button>
+        </div>
+
+        {/* Decision Quiz CTA */}
+        <div className="decision-quiz-cta">
+          <h3>{t("pricing.decisionQuiz.title")}</h3>
+          <p>{t("pricing.decisionQuiz.subtitle")}</p>
+          <Link to={`/${i18n.language}/quiz`} className="quiz-button">
+            {t("pricing.decisionQuiz.cta")}
+          </Link>
+        </div>
+
+        {/* Pitch */}
+        <p className="pricing-pitch">{t("pricing.pitch")}</p>
       </div>
     </section>
   );

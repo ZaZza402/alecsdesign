@@ -1,0 +1,17 @@
+{
+  "title": "Why this makes sense",
+  "subtitle": "For small businesses and for you",
+  "pillar1": {
+    "title": "Minimal Upfront Investment",
+    "description": "Pay just €150 setup + €39/month instead of thousands upfront. Preserve your capital for marketing and growth while still getting a premium website."
+  },
+  "pillar2": {
+    "title": "I Handle All The Technical Stuff",
+    "description": "Forget about hosting, DNS, SSL certificates, or Google Console. I set up everything and keep it running 24/7. You just send me content and I make it live.",
+    "explainer": "Domain, hosting, security, SEO, analytics – all included in your subscription."
+  },
+  "pillar3": {
+    "title": "Scales With Your Business",
+    "description": "Start with a solid foundation. When you're ready for e-commerce, booking systems, or custom features, we simply add them. No need to rebuild from scratch."
+  }
+}

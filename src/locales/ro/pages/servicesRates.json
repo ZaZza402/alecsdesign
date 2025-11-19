@@ -1,0 +1,54 @@
+{
+  "title": "Modificări Viitoare și Adăugiri",
+  "subtitle": "Prețuri transparente pentru îmbunătățiri și adăugiri la site-ul tău după lansarea inițială",
+  "addons": {
+    "title": "Adăugiri Populare",
+    "description": "Extinde funcționalitatea site-ului tău cu aceste caracteristici comune",
+    "items": {
+      "ecommerce": {
+        "name": "Integrare E-commerce",
+        "description": "Transformă site-ul într-un magazin online complet cu plăți securizate și gestionare produse"
+      },
+      "booking": {
+        "name": "Sistem de Rezervări",
+        "description": "Permite clienților să programeze întâlniri direct pe site-ul tău cu confirmări automate"
+      },
+      "multilingual": {
+        "name": "Limbă Suplimentară",
+        "description": "Ajunge la un public mai larg adăugând o altă limbă pe site-ul tău"
+      },
+      "customFeature": {
+        "name": "Funcționalitate Personalizată",
+        "description": "Ai nevoie de ceva unic? Hai să discutăm despre cerințele tale specifice"
+      }
+    }
+  },
+  "modifications": {
+    "title": "Modificări Comune",
+    "description": "Actualizări și modificări post-lansare pentru a menține site-ul relevant și fresh",
+    "items": {
+      "contentUpdate": {
+        "name": "Actualizări Conținut",
+        "description": "Modificări rapide de text, imagini sau informații pentru a menține site-ul actual"
+      },
+      "designTweaks": {
+        "name": "Ajustări Design",
+        "description": "Rafinamente vizuale pentru a se alinia mai bine cu brandul tău în evoluție"
+      },
+      "newSection": {
+        "name": "Pagină sau Secțiune Nouă",
+        "description": "Extinde site-ul cu pagini sau secțiuni de conținut suplimentare"
+      },
+      "security": {
+        "name": "Securitate și Întreținere",
+        "description": "Inclus în pachetul tău de management anual—fără cost suplimentar"
+      }
+    }
+  },
+  "note": "Toate prețurile sunt estimări. Contactează-mă pentru o ofertă precisă bazată pe nevoile tale specifice. Majoritatea modificărilor pot fi finalizate în 1-2 săptămâni.",
+  "seo": {
+    "title": "Modificări Viitoare și Adăugiri | alecsdesign.xyz",
+    "description": "Prețuri transparente pentru îmbunătățiri, adăugiri și modificări de site. Vezi cât costă să extinzi funcționalitatea site-ului.",
+    "keywords": "modificări site web, prețuri adăugiri, integrare e-commerce, sistem rezervări, site multilingv, actualizări site"
+  }
+}
