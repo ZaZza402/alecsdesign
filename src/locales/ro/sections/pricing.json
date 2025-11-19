@@ -191,12 +191,12 @@
   "basicWebsite": {
     "badge": "Opțiune Buget",
     "title": "Ai Nevoie de un Site HTML Simplu?",
-    "description": "Perfect pentru site-uri web simple de 1-3 pagini pe care le poți încărca direct pe hosting. Fără configurare React complexă—doar fișiere HTML/CSS/JavaScript pure gata de implementare.",
-    "setup": "Configurare unică",
-    "annual": "Domeniu + Hosting",
-    "note": "Grozav pentru site-uri \"setează și uită\". Site-urile React de mai jos oferă funcționalități avansate, performanță mai bună și actualizări mai ușoare—de aceea costă mai mult.",
-    "setupLabel": "Configurare unică",
-    "annualLabel": "Domeniu + Hosting/an"
+    "description": "De la €150 pentru a-ți construi site-ul. Îți livrez fișiere HTML/CSS/JavaScript curate gata să fie puse online. Ai nevoie de ajutor cu domeniul și hosting-ul? Pot configura totul pentru tine (prețuri în celelalte categorii).",
+    "setup": "Construire Site",
+    "annual": "Servicii Opționale",
+    "note": "Perfect pentru site-uri simple fără stiva React avansată. Sunt aici să te ajut cu configurarea hosting-ului dacă ai nevoie—sau poți folosi al tău. Opțiunile React de mai jos includ management și suport continuu.",
+    "setupLabel": "Construire Site",
+    "annualLabel": "Hosting (te ajut eu!)"
   },
   "advancedSites": "Pentru Site-uri Web React Avansate"
 }

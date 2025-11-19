@@ -100,13 +100,13 @@ const PricingSection = () => {
                 <span className="price-label">
                   {t("pricing.basicWebsite.setupLabel")}
                 </span>
-                <span className="price-value">€150</span>
+                <span className="price-value">€150+</span>
               </div>
               <div className="notice-price-item">
                 <span className="price-label">
                   {t("pricing.basicWebsite.annualLabel")}
                 </span>
-                <span className="price-value">€120/year</span>
+                <span className="price-value">-</span>
               </div>
             </div>
             <p className="notice-footer">{t("pricing.basicWebsite.note")}</p>

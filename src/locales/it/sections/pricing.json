@@ -191,12 +191,12 @@
   "basicWebsite": {
     "badge": "Opzione Economica",
     "title": "Hai Bisogno di un Sito HTML Semplice?",
-    "description": "Perfetto per siti web basici di 1-3 pagine che puoi caricare direttamente sul tuo hosting. Nessuna configurazione React complessa—solo file HTML/CSS/JavaScript puri pronti per il deploy.",
-    "setup": "Configurazione una tantum",
-    "annual": "Dominio + Hosting",
-    "note": "Ottimo per siti web \"configura e dimentica\". I siti React qui sotto offrono funzionalità avanzate, prestazioni migliori e aggiornamenti più semplici—ecco perché costano di più.",
-    "setupLabel": "Configurazione una tantum",
-    "annualLabel": "Dominio + Hosting/anno"
+    "description": "A partire da €150 per realizzare il tuo sito. Ti consegno file HTML/CSS/JavaScript puliti e pronti per andare online. Hai bisogno di aiuto con dominio e hosting? Posso configurare tutto per te (prezzi nelle altre categorie).",
+    "setup": "Realizzazione Sito",
+    "annual": "Servizi Opzionali",
+    "note": "Perfetto per siti semplici senza lo stack React avanzato. Sono qui per aiutarti con la configurazione hosting se ne hai bisogno—o puoi usare il tuo. Le opzioni React qui sotto includono gestione e supporto continui.",
+    "setupLabel": "Realizzazione Sito",
+    "annualLabel": "Hosting (ti aiuto io!)"
   },
   "advancedSites": "Per Siti Web React Avanzati"
 }

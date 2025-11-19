@@ -191,12 +191,12 @@
   "basicWebsite": {
     "badge": "Budget Option",
     "title": "Need a Simple HTML Website?",
-    "description": "Perfect for basic 1-3 page websites you can upload directly to your hosting. No complex React setup—just pure HTML/CSS/JavaScript files ready to deploy.",
-    "setup": "One-time setup",
-    "annual": "Domain + Hosting",
-    "note": "Great for \"set and forget\" websites. The React sites below offer advanced features, better performance, and easier updates—which is why they cost more.",
-    "setupLabel": "One-time setup",
-    "annualLabel": "Domain + Hosting/year"
+    "description": "Starting from €150 to build your website. I deliver clean HTML/CSS/JavaScript files ready to go live. Need help with domain and hosting? I can set that up for you too (prices listed in other categories).",
+    "setup": "Website Build",
+    "annual": "Optional Services",
+    "note": "Perfect for simple sites without the advanced React tech stack. I'm here to help with hosting setup if you need it—or you can use your own. The React options below include ongoing management and support.",
+    "setupLabel": "Website Build",
+    "annualLabel": "Hosting (I can help!)"
   },
   "advancedSites": "For Advanced React Websites"
 }
