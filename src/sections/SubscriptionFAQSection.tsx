@@ -1,8 +1,9 @@
-import { useState, useMemo } from "react";
+import { useState, useMemo, useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import { useInView } from "react-intersection-observer";
 import { ChevronDown, Search, MessageCircle, Clock } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
+import { trackSectionView } from "../utils/analytics";
 import "./SubscriptionFAQSection.css";
 
 const FAQ_KEYS = ["q1", "q2", "q3", "q4", "q5", "q6"];
@@ -18,6 +19,13 @@ const SubscriptionFAQSection = () => {
   const [searchQuery, setSearchQuery] = useState("");
 
   const currentLang = i18n.language;
+
+  // Track section view
+  useEffect(() => {
+    if (inView) {
+      trackSectionView("FAQ Section");
+    }
+  }, [inView]);
 
   const toggleFAQ = (index: number) => {
     setActiveIndex(activeIndex === index ? null : index);

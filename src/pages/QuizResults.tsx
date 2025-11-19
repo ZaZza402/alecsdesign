@@ -7,6 +7,7 @@ import Footer from "../components/layout/Footer";
 import CookieBanner from "../components/ui/CookieBanner";
 import ScrollProgress from "../components/ui/ScrollProgress";
 import MetallicBackground from "../components/ui/backgrounds/MetallicBackground";
+import { trackCTAClick, trackEvent } from "../utils/analytics";
 import "./QuizPage.css";
 
 interface QuizResults {
@@ -34,6 +35,13 @@ const QuizResults = () => {
     // Redirect to quiz if no results
     if (!results) {
       navigate(`/${i18n.language}/quiz`);
+    } else {
+      // Track results view
+      trackEvent({
+        action: "quiz_results_view",
+        category: "Quiz",
+        label: `${results.recommendedModel} - €${results.estimatedPrice.min}-${results.estimatedPrice.max}`,
+      });
     }
   }, [results, navigate, i18n.language]);
 
@@ -53,15 +61,22 @@ const QuizResults = () => {
   const timelineLabel = t(`quiz.results.timeline.${results.timeline}`);
 
   const handleContactClick = () => {
+    trackCTAClick("Contact from Quiz Results", "Quiz Results Page");
     // Scroll to contact section
     navigate(`/${i18n.language}/#contact`);
   };
 
   const handlePricingClick = () => {
+    trackCTAClick("View Pricing Details", "Quiz Results Page");
     navigate(`/${i18n.language}/#pricing`);
   };
 
   const handleRestart = () => {
+    trackEvent({
+      action: "quiz_restart",
+      category: "Quiz",
+      label: "From Results Page",
+    });
     navigate(`/${i18n.language}/quiz`);
   };
 

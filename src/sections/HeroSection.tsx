@@ -3,6 +3,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { useTranslation } from "react-i18next";
 import { Hand } from "lucide-react";
 import IconScrollBar from "../components/ui/IconScrollBar";
+import { trackCTAClick, trackWhatsAppClick } from "../utils/analytics";
 import "./HeroSection.css";
 
 const HeroSection: React.FC = () => {
@@ -77,11 +78,14 @@ const HeroSection: React.FC = () => {
   };
 
   const handleHowItWorksClick = () => {
+    trackCTAClick("How It Works", "Hero Section");
     const howItWorksSection = document.getElementById("how-it-works");
     howItWorksSection?.scrollIntoView({ behavior: "smooth" });
   };
 
   const handleWhatsAppClick = () => {
+    trackWhatsAppClick("Hero Section");
+    trackCTAClick("WhatsApp Contact", "Hero Section");
     window.open("https://wa.me/380150307", "_blank");
   };
 

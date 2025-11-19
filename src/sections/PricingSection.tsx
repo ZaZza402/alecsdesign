@@ -1,7 +1,13 @@
+import { useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import { useInView } from "react-intersection-observer";
 import { Check, ShoppingCart, Calendar, Globe, Zap } from "lucide-react";
 import { Link } from "react-router-dom";
+import {
+  trackCTAClick,
+  trackPricingInterest,
+  trackSectionView,
+} from "../utils/analytics";
 import "./PricingSection.css";
 
 interface Tier {
@@ -31,6 +37,13 @@ const PricingSection = () => {
     triggerOnce: true,
     threshold: 0.15,
   });
+
+  // Track section view
+  useEffect(() => {
+    if (inView) {
+      trackSectionView("Pricing Section");
+    }
+  }, [inView]);
 
   const buyTiers = t("pricing.buyModel.tiers", {
     returnObjects: true,
@@ -150,6 +163,8 @@ const PricingSection = () => {
           <p className="buy-note">{t("pricing.buyModel.note")}</p>
           <button
             onClick={() => {
+              trackCTAClick("Get Started", "Buy & Own Model");
+              trackPricingInterest("buy");
               const section = document.getElementById("contact");
               section?.scrollIntoView({ behavior: "smooth" });
             }}
@@ -207,6 +222,8 @@ const PricingSection = () => {
 
           <button
             onClick={() => {
+              trackCTAClick("Get Started", "Subscribe & Relax Model");
+              trackPricingInterest("subscribe");
               const section = document.getElementById("contact");
               section?.scrollIntoView({ behavior: "smooth" });
             }}
@@ -241,6 +258,7 @@ const PricingSection = () => {
 
           <button
             onClick={() => {
+              trackCTAClick("Discuss Add-ons", "Pricing Section");
               const section = document.getElementById("contact");
               section?.scrollIntoView({ behavior: "smooth" });
             }}
@@ -254,7 +272,11 @@ const PricingSection = () => {
         <div className="decision-quiz-cta">
           <h3>{t("pricing.decisionQuiz.title")}</h3>
           <p>{t("pricing.decisionQuiz.subtitle")}</p>
-          <Link to={`/${i18n.language}/quiz`} className="quiz-button">
+          <Link
+            to={`/${i18n.language}/quiz`}
+            className="quiz-button"
+            onClick={() => trackCTAClick("Take the Quiz", "Pricing Section")}
+          >
             {t("pricing.decisionQuiz.cta")}
           </Link>
         </div>

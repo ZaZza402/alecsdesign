@@ -9,6 +9,12 @@ import {
   Phone,
   MessageCircle,
 } from "lucide-react";
+import {
+  trackButtonClick,
+  trackEmailClick,
+  trackWhatsAppClick,
+  trackExternalLink,
+} from "../../utils/analytics";
 import "./Footer.css";
 
 const Footer = () => {
@@ -63,7 +69,10 @@ const Footer = () => {
               {!showContact ? (
                 <button
                   className="reveal-contact-btn"
-                  onClick={() => setShowContact(true)}
+                  onClick={() => {
+                    trackButtonClick("Reveal Contact Info", "Footer");
+                    setShowContact(true);
+                  }}
                 >
                   <Mail size={18} />
                   <span>{t("footer.revealContact")}</span>
@@ -72,11 +81,19 @@ const Footer = () => {
                 <>
                   <div className="contact-item">
                     <Mail size={18} />
-                    <a href={`mailto:${getEmail()}`}>{getEmail()}</a>
+                    <a
+                      href={`mailto:${getEmail()}`}
+                      onClick={() => trackEmailClick("Footer")}
+                    >
+                      {getEmail()}
+                    </a>
                   </div>
                   <div className="contact-item">
                     <Phone size={18} />
-                    <a href={`tel:${getPhone().replace(/\s/g, "")}`}>
+                    <a
+                      href={`tel:${getPhone().replace(/\s/g, "")}`}
+                      onClick={() => trackButtonClick("Phone Call", "Footer")}
+                    >
                       {getPhone()}
                     </a>
                   </div>
@@ -86,6 +103,7 @@ const Footer = () => {
                       href={getWhatsApp()}
                       target="_blank"
                       rel="noopener noreferrer"
+                      onClick={() => trackWhatsAppClick("Footer")}
                     >
                       WhatsApp
                     </a>
@@ -114,7 +132,10 @@ const Footer = () => {
               </li>
               <li>
                 <button
-                  onClick={() => navigate(`/${i18n.language}/services-rates`)}
+                  onClick={() => {
+                    trackButtonClick("Services & Rates", "Footer Quick Links");
+                    navigate(`/${i18n.language}/services-rates`);
+                  }}
                 >
                   {t("nav.servicesRates")}
                 </button>
@@ -136,6 +157,7 @@ const Footer = () => {
                   aria-label="Facebook"
                   target="_blank"
                   rel="noopener noreferrer"
+                  onClick={() => trackExternalLink(getFacebook(), "Facebook")}
                 >
                   <Facebook size={20} />
                 </a>
@@ -145,6 +167,7 @@ const Footer = () => {
                   aria-label="Instagram"
                   target="_blank"
                   rel="noopener noreferrer"
+                  onClick={() => trackExternalLink(getInstagram(), "Instagram")}
                 >
                   <Instagram size={20} />
                 </a>

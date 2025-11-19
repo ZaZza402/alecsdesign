@@ -3,6 +3,7 @@ import { useInView } from "react-intersection-observer";
 import { useForm } from "react-hook-form";
 import { Send, CheckCircle, XCircle, Clock, MessageSquare } from "lucide-react";
 import { useState, useEffect } from "react";
+import { trackSectionView } from "../utils/analytics";
 import "./ContactSection.css";
 
 interface ContactFormData {
@@ -28,6 +29,13 @@ const ContactSection = () => {
 
   const [toast, setToast] = useState<Toast | null>(null);
   const [isWhatsAppAvailable, setIsWhatsAppAvailable] = useState(false);
+
+  // Track section view
+  useEffect(() => {
+    if (inView) {
+      trackSectionView("Contact Section");
+    }
+  }, [inView]);
 
   // Check WhatsApp availability (9 AM - 10 PM local time)
   useEffect(() => {

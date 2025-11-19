@@ -1,7 +1,8 @@
-import { useState, useRef } from "react";
+import { useState, useRef, useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import { useInView } from "react-intersection-observer";
 import { ExternalLink, Check, ChevronDown } from "lucide-react";
+import { trackSectionView } from "../utils/analytics";
 import "./PortfolioSection.css";
 
 interface Project {
@@ -27,6 +28,13 @@ const PortfolioSection = () => {
   );
   const [filter, setFilter] = useState<string>("all");
   const cardRefs = useRef<{ [key: string]: HTMLDivElement | null }>({});
+
+  // Track section view
+  useEffect(() => {
+    if (inView) {
+      trackSectionView("Portfolio Section");
+    }
+  }, [inView]);
 
   const projects = t("portfolio.projects", {
     returnObjects: true,

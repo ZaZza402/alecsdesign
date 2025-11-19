@@ -7,6 +7,7 @@ import Footer from "../components/layout/Footer";
 import CookieBanner from "../components/ui/CookieBanner";
 import ScrollProgress from "../components/ui/ScrollProgress";
 import MetallicBackground from "../components/ui/backgrounds/MetallicBackground";
+import { trackQuizEvent, trackEvent } from "../utils/analytics";
 import "./QuizPage.css";
 
 interface QuizAnswer {
@@ -42,6 +43,25 @@ const QuizPage = () => {
   const [answers, setAnswers] = useState<QuizAnswer[]>([]);
   const [selectedOptions, setSelectedOptions] = useState<string[]>([]);
   const [isCalculating, setIsCalculating] = useState(false);
+  const [quizStarted, setQuizStarted] = useState(false);
+
+  // Track quiz start
+  useEffect(() => {
+    if (!quizStarted) {
+      trackQuizEvent("start");
+      setQuizStarted(true);
+    }
+  }, [quizStarted]);
+
+  // Track quiz abandonment on unmount
+  useEffect(() => {
+    return () => {
+      if (currentStep < totalSteps - 1 && answers.length > 0) {
+        trackQuizEvent("abandon", `Step ${currentStep + 1} of ${totalSteps}`);
+      }
+    };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   // Get all questions
   const getQuestions = (): QuizQuestion[] => {
@@ -143,6 +163,14 @@ const QuizPage = () => {
     });
     setAnswers(newAnswers);
 
+    // Track progress
+    trackEvent({
+      action: "quiz_progress",
+      category: "Quiz",
+      label: `Step ${currentStep + 1} completed`,
+      value: Math.round(((currentStep + 1) / totalSteps) * 100),
+    });
+
     if (currentStep < totalSteps - 1) {
       setCurrentStep(currentStep + 1);
     } else {
@@ -159,6 +187,7 @@ const QuizPage = () => {
 
   const handleFinish = (finalAnswers: QuizAnswer[]) => {
     setIsCalculating(true);
+    trackQuizEvent("complete", `${totalSteps} questions`);
 
     // Calculate results and navigate to results page with data
     setTimeout(() => {
