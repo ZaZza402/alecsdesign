@@ -206,7 +206,7 @@ const Footer = () => {
                 <button
                   onClick={() => navigate(getLocalizedRoute("/cookie-policy"))}
                 >
-                  {t("footer.legal.cookie")}
+                  {t("footer.legal.cookies")}
                 </button>
               </li>
             </ul>
