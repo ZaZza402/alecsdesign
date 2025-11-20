@@ -1,71 +1,28 @@
 {
   "title": "Progetti Reali, Risultati Reali",
   "subtitle": "Guarda cosa ho costruito per business come il tuo",
-  "viewProject": "Vedi Sito Live",
-  "featuresTitle": "Caratteristiche Principali",
-  "techStackTitle": "Stack Tecnologico",
   "visitLive": "Visita Live",
-  "seeDetails": "Vedi Dettagli",
-  "showLess": "Mostra Meno",
-  "filterAll": "Tutti i Progetti",
-  "filterBuy": "Acquista & Possiedi",
-  "filterSubscribe": "Abbonati",
   "projects": [
     {
-      "id": "psychologist",
-      "url": "https://www.popescumaria.ro",
-      "image": "/portfolio images/website-psycologis-portfolio.webp",
-      "category": "Sito Web per Professionista Sanitaria",
-      "model": "Acquista & Possiedi + Gestione Base (€99/anno)",
-      "description": "Sito web moderno e rassicurante per una psicologa clinica. Design pulito focalizzato sulla costruzione della fiducia e sulla facilità di prenotazione online per i pazienti.",
-      "features": [
-        "Design completamente responsive per mobile",
-        "Moduli di contatto integrati",
-        "SEO ottimizzato per ricerca locale",
-        "Immagini e branding professionali",
-        "Integrazione Google Maps",
-        "Animazioni e transizioni fluide"
-      ],
-      "tech": "React, TypeScript, Vite, Tailwind CSS, Framer Motion"
+      "id": "velvet-shaker",
+      "url": "https://velvet-shaker.alecsdesign.xyz",
+      "image": "/portfolio images/bar-design-portfolio-showcase-mockup.webp",
+      "category": "Cocktail Bar & Intrattenimento",
+      "techStack": "React, TypeScript, Vite, Tailwind CSS"
     },
     {
       "id": "immigration-agency",
       "url": "https://www.puntomigrare.it",
-      "image": "/portfolio images/service-agency-website.webp",
+      "image": "/portfolio images/punto-migrare-portfolio-showcase-mockup.webp",
       "category": "Sito Web per Servizi Professionali",
-      "model": "Acquista & Possiedi + Gestione Base (€99/anno)",
-      "description": "Sito web professionale per un centro di assistenza immigrazione (CAF) in Italia. Progettato per aiutare gli immigrati a navigare facilmente processi burocratici complessi.",
-      "features": [
-        "Visualizzazione orari ufficio in tempo reale (aperto/chiuso)",
-        "Integrazione Google Maps interattiva",
-        "Progressive Web App (PWA) - installabile su mobile",
-        "Vetrina servizi con descrizioni dettagliate",
-        "Integrazione contatti e moduli di richiesta",
-        "SEO ottimizzato per visibilità ricerca locale",
-        "Animazioni scroll fluide"
-      ],
-      "tech": "React, JavaScript, Vite, Tailwind CSS, Framer Motion, PWA"
+      "techStack": "React, JavaScript, Vite, Tailwind CSS"
     },
     {
-      "id": "velvet-shaker",
-      "url": "https://velvet-shaker.alecsdesign.xyz",
-      "image": "/portfolio images/velvet-shaker-bar-showcase-design.webp",
-      "category": "Cocktail Bar & Intrattenimento",
-      "model": "Concept Dimostrativo Premium",
-      "description": "Sito web cinematografico per un sofisticato cocktail bar. Un viaggio a pagina singola progettato per immergere i visitatori nell'arte della poesia liquida, dalle atmosfere underground ai cocktail signature.",
-      "features": [
-        "Design intro mobile cinematografico",
-        "Menu mobile minimalista ed elegante",
-        "Menu a carte animate per vetrina cocktail",
-        "Cursore desktop personalizzato per sensazione premium",
-        "Galleria scorrevole animata elegante",
-        "Integrazione Google Maps per posizione",
-        "Moduli per prenotazioni e riservazioni",
-        "Integrazione newsletter",
-        "Tipografia strategica con font eleganti",
-        "Esperienza narrativa a pagina intera"
-      ],
-      "tech": "React, TypeScript, Vite, Tailwind CSS, Framer Motion, Swiper.js"
+      "id": "psychologist",
+      "url": "https://www.popescumaria.ro",
+      "image": "/portfolio images/psiholog-website-portfolio-showcase-mockup.webp",
+      "category": "Sito Web per Professionista Sanitaria",
+      "techStack": "React, TypeScript, Vite, Tailwind CSS"
     }
   ],
   "cta": {

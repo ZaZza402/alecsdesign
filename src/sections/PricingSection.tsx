@@ -135,7 +135,9 @@ const PricingSection = () => {
             {t("pricing.buyModel.title")}
           </button>
           <button
-            className={`toggle-btn ${activeModel === "subscribe" ? "active" : ""}`}
+            className={`toggle-btn ${
+              activeModel === "subscribe" ? "active" : ""
+            }`}
             onClick={() => setActiveModel("subscribe")}
           >
             <Calendar size={20} />
@@ -145,123 +147,125 @@ const PricingSection = () => {
 
         {/* Buy & Own Model */}
         {activeModel === "buy" && (
-        <div className="buy-model-section">
-          <div className="model-badge">{t("pricing.buyModel.badge")}</div>
-          <h3 className="model-title">{t("pricing.buyModel.title")}</h3>
-          <p className="model-description">
-            {t("pricing.buyModel.description")}
-          </p>
+          <div className="buy-model-section">
+            <div className="model-badge">{t("pricing.buyModel.badge")}</div>
+            <h3 className="model-title">{t("pricing.buyModel.title")}</h3>
+            <p className="model-description">
+              {t("pricing.buyModel.description")}
+            </p>
 
-          <div className="tiers-grid">
-            {buyTiers.map((tier, index) => (
-              <div key={index} className="tier-card">
-                <h4 className="tier-name">{tier.name}</h4>
-                <p className="tier-price">{tier.priceRange}</p>
-                <p className="tier-description">{tier.description}</p>
+            <div className="tiers-grid">
+              {buyTiers.map((tier, index) => (
+                <div key={index} className="tier-card">
+                  <h4 className="tier-name">{tier.name}</h4>
+                  <p className="tier-price">{tier.priceRange}</p>
+                  <p className="tier-description">{tier.description}</p>
 
-                <ul className="tier-features">
-                  {tier.features.map((feature, idx) => (
-                    <li key={idx}>
-                      <Check size={16} /> {feature}
-                    </li>
-                  ))}
-                </ul>
-
-                <div className="management-plan">
-                  <div className="management-header">
-                    <span className="management-price">
-                      {tier.management.price}
-                    </span>
-                    <span className="management-label">
-                      {tier.management.label}
-                    </span>
-                  </div>
-                  <ul className="management-features">
-                    {tier.management.features.map((feature, idx) => (
-                      <li key={idx}>{feature}</li>
+                  <ul className="tier-features">
+                    {tier.features.map((feature, idx) => (
+                      <li key={idx}>
+                        <Check size={16} /> {feature}
+                      </li>
                     ))}
                   </ul>
+
+                  <div className="management-plan">
+                    <div className="management-header">
+                      <span className="management-price">
+                        {tier.management.price}
+                      </span>
+                      <span className="management-label">
+                        {tier.management.label}
+                      </span>
+                    </div>
+                    <ul className="management-features">
+                      {tier.management.features.map((feature, idx) => (
+                        <li key={idx}>{feature}</li>
+                      ))}
+                    </ul>
+                  </div>
+
+                  <p className="tier-examples">{tier.examples}</p>
                 </div>
+              ))}
+            </div>
 
-                <p className="tier-examples">{tier.examples}</p>
-              </div>
-            ))}
+            <p className="buy-note">{t("pricing.buyModel.note")}</p>
+            <button
+              onClick={() => {
+                trackCTAClick("Get Started", "Buy & Own Model");
+                trackPricingInterest("buy");
+                const section = document.getElementById("contact");
+                section?.scrollIntoView({ behavior: "smooth" });
+              }}
+              className="model-cta"
+            >
+              {t("pricing.buyModel.cta")}
+            </button>
           </div>
-
-          <p className="buy-note">{t("pricing.buyModel.note")}</p>
-          <button
-            onClick={() => {
-              trackCTAClick("Get Started", "Buy & Own Model");
-              trackPricingInterest("buy");
-              const section = document.getElementById("contact");
-              section?.scrollIntoView({ behavior: "smooth" });
-            }}
-            className="model-cta"
-          >
-            {t("pricing.buyModel.cta")}
-          </button>
-        </div>
         )}
 
         {/* Subscribe & Relax Model */}
         {activeModel === "subscribe" && (
-        <div className="subscribe-model-section">
-          <div className="model-badge">{t("pricing.subscribeModel.badge")}</div>
-          <h3 className="model-title">{t("pricing.subscribeModel.title")}</h3>
+          <div className="subscribe-model-section">
+            <div className="model-badge">
+              {t("pricing.subscribeModel.badge")}
+            </div>
+            <h3 className="model-title">{t("pricing.subscribeModel.title")}</h3>
 
-          <div className="subscribe-pricing">
-            <span className="subscribe-price">
-              {t("pricing.subscribeModel.price")}{" "}
-              <span className="price-label">
-                {t("pricing.subscribeModel.upfront")}
+            <div className="subscribe-pricing">
+              <span className="subscribe-price">
+                {t("pricing.subscribeModel.price")}{" "}
+                <span className="price-label">
+                  {t("pricing.subscribeModel.upfront")}
+                </span>
               </span>
-            </span>
-            <span className="subscribe-annual">
-              {t("pricing.subscribeModel.annual")}
-            </span>
-          </div>
+              <span className="subscribe-annual">
+                {t("pricing.subscribeModel.annual")}
+              </span>
+            </div>
 
-          <p className="subscribe-commitment">
-            {t("pricing.subscribeModel.commitment")}
-          </p>
-          <p className="subscribe-description">
-            {t("pricing.subscribeModel.description")}
-          </p>
+            <p className="subscribe-commitment">
+              {t("pricing.subscribeModel.commitment")}
+            </p>
+            <p className="subscribe-description">
+              {t("pricing.subscribeModel.description")}
+            </p>
 
-          <ul className="subscribe-features">
-            {subscribeFeatures.map((feature, index) => (
-              <li key={index}>
-                <Check size={20} /> {feature}
-              </li>
-            ))}
-          </ul>
-
-          <div className="ownership-info">
-            <h4>{t("pricing.subscribeModel.ownership.title")}</h4>
-            <ul>
-              {subscribeOwnership.map((item, index) => (
-                <li key={index}>{item}</li>
+            <ul className="subscribe-features">
+              {subscribeFeatures.map((feature, index) => (
+                <li key={index}>
+                  <Check size={20} /> {feature}
+                </li>
               ))}
             </ul>
-          </div>
 
-          <div className="cancellation-info">
-            <h4>{t("pricing.subscribeModel.cancellation.title")}</h4>
-            <p>{t("pricing.subscribeModel.cancellation.details")}</p>
-          </div>
+            <div className="ownership-info">
+              <h4>{t("pricing.subscribeModel.ownership.title")}</h4>
+              <ul>
+                {subscribeOwnership.map((item, index) => (
+                  <li key={index}>{item}</li>
+                ))}
+              </ul>
+            </div>
 
-          <button
-            onClick={() => {
-              trackCTAClick("Get Started", "Subscribe & Relax Model");
-              trackPricingInterest("subscribe");
-              const section = document.getElementById("contact");
-              section?.scrollIntoView({ behavior: "smooth" });
-            }}
-            className="model-cta"
-          >
-            {t("pricing.subscribeModel.cta")}
-          </button>
-        </div>
+            <div className="cancellation-info">
+              <h4>{t("pricing.subscribeModel.cancellation.title")}</h4>
+              <p>{t("pricing.subscribeModel.cancellation.details")}</p>
+            </div>
+
+            <button
+              onClick={() => {
+                trackCTAClick("Get Started", "Subscribe & Relax Model");
+                trackPricingInterest("subscribe");
+                const section = document.getElementById("contact");
+                section?.scrollIntoView({ behavior: "smooth" });
+              }}
+              className="model-cta"
+            >
+              {t("pricing.subscribeModel.cta")}
+            </button>
+          </div>
         )}
 
         {/* Add-Ons Section */}

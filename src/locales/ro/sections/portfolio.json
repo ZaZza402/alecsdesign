@@ -1,71 +1,28 @@
 ﻿{
   "title": "Proiecte Reale, Rezultate Reale",
   "subtitle": "Vezi ce am construit pentru afaceri ca a ta",
-  "viewProject": "Vezi Site Live",
-  "featuresTitle": "Caracteristici Cheie",
-  "techStackTitle": "Stack Tehnologic",
   "visitLive": "Vizitează Live",
-  "seeDetails": "Vezi Detalii",
-  "showLess": "Arată Mai Puțin",
-  "filterAll": "Toate Proiectele",
-  "filterBuy": "Cumpără & Deține",
-  "filterSubscribe": "Abonează-te",
   "projects": [
     {
-      "id": "psychologist",
-      "url": "https://www.popescumaria.ro",
-      "image": "/portfolio images/website-psycologis-portfolio.webp",
-      "category": "Site Web pentru Profesionist în Sănătate",
-      "model": "Cumpără & Deține + Gestionare de Bază (€99/an)",
-      "description": "Site web modern și liniștitor pentru un psiholog clinic. Design curat focusat pe construirea încrederii și ușurința programării online pentru pacienți.",
-      "features": [
-        "Design complet responsive pentru mobil",
-        "Formulare de contact integrate",
-        "SEO optimizat pentru căutare locală",
-        "Imagini și branding profesional",
-        "Integrare Google Maps",
-        "Animații și tranziții fluide"
-      ],
-      "tech": "React, TypeScript, Vite, Tailwind CSS, Framer Motion"
+      "id": "velvet-shaker",
+      "url": "https://velvet-shaker.alecsdesign.xyz",
+      "image": "/portfolio images/bar-design-portfolio-showcase-mockup.webp",
+      "category": "Cocktail Bar & Divertisment",
+      "techStack": "React, TypeScript, Vite, Tailwind CSS"
     },
     {
       "id": "immigration-agency",
       "url": "https://www.puntomigrare.it",
-      "image": "/portfolio images/service-agency-website.webp",
+      "image": "/portfolio images/punto-migrare-portfolio-showcase-mockup.webp",
       "category": "Site Web pentru Servicii Profesionale",
-      "model": "Cumpără & Deține + Gestionare de Bază (€99/an)",
-      "description": "Site web profesional pentru un centru de asistență imigrare (CAF) în Italia. Creat pentru a ajuta imigranții să navigheze cu ușurință procese birocratice complexe.",
-      "features": [
-        "Afișare în timp real a programului biroului (deschis/închis)",
-        "Integrare interactivă Google Maps",
-        "Progressive Web App (PWA) - instalabil pe mobil",
-        "Prezentare servicii cu descrieri detaliate",
-        "Integrare contact și formulare de solicitare",
-        "SEO optimizat pentru vizibilitate în căutare locală",
-        "Animații scroll fluide"
-      ],
-      "tech": "React, JavaScript, Vite, Tailwind CSS, Framer Motion, PWA"
+      "techStack": "React, JavaScript, Vite, Tailwind CSS"
     },
     {
-      "id": "velvet-shaker",
-      "url": "https://velvet-shaker.alecsdesign.xyz",
-      "image": "/portfolio images/velvet-shaker-bar-showcase-design.webp",
-      "category": "Cocktail Bar & Divertisment",
-      "model": "Concept Showcase Premium",
-      "description": "Site web cinematografic pentru un bar de cocktailuri sofisticat. O călătorie pe o singură pagină concepută pentru a cufunda vizitatorii în arta poeziei lichide, de la vibrații underground la cocktailuri signature.",
-      "features": [
-        "Design intro mobil cinematografic",
-        "Meniu mobil minimalist și elegant",
-        "Meniu cu carduri animate pentru prezentare cocktailuri",
-        "Cursor desktop personalizat pentru senzație premium",
-        "Galerie glisantă animată frumoasă",
-        "Integrare Google Maps pentru locație",
-        "Formulare pentru rezervări",
-        "Integrare abonament newsletter",
-        "Tipografie strategică cu fonturi elegante",
-        "Experiență narativă pe întreaga pagină"
-      ],
-      "tech": "React, TypeScript, Vite, Tailwind CSS, Framer Motion, Swiper.js"
+      "id": "psychologist",
+      "url": "https://www.popescumaria.ro",
+      "image": "/portfolio images/psiholog-website-portfolio-showcase-mockup.webp",
+      "category": "Site Web pentru Profesionist în Sănătate",
+      "techStack": "React, TypeScript, Vite, Tailwind CSS"
     }
   ],
   "cta": {
