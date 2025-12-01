@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { createPortal } from "react-dom";
 import { useTranslation } from "react-i18next";
 import { useNavigate, useLocation } from "react-router-dom";
 import LanguageSwitcher from "../ui/LanguageSwitcher";
@@ -18,9 +19,9 @@ const Header = () => {
     { id: "how-it-works", label: t("nav.howItWorks"), href: "#how-it-works" },
     { id: "difference", label: t("nav.difference"), href: "#difference" },
     { id: "pricing", label: t("nav.pricing"), href: "#pricing" },
-    { id: "portfolio", label: t("nav.portfolio"), href: "#portfolio" },
+    { id: "portfolio", label: t("nav.portfolio"), href: "/portfolio" },
     { id: "faq", label: t("nav.faq"), href: "#faq" },
-    { id: "contact", label: t("nav.contact"), href: "#contact" },
+    { id: "contact", label: t("nav.contact"), href: "/contact" },
   ];
 
   // Handle scroll to add shadow
@@ -84,11 +85,21 @@ const Header = () => {
     e.preventDefault();
     setIsMenuOpen(false);
 
+    // Handle page navigation (not anchor links)
+    if (!href.startsWith("#")) {
+      const lang = i18n.language;
+      const route = lang === "en" ? href : `/${lang}${href}`;
+      navigate(route);
+      window.scrollTo(0, 0);
+      return;
+    }
+
     const isOnLandingPage =
       location.pathname === `/${i18n.language}` ||
       location.pathname === `/en` ||
       location.pathname === `/it` ||
-      location.pathname === `/ro`;
+      location.pathname === `/ro` ||
+      location.pathname === `/`;
 
     if (!isOnLandingPage) {
       navigate(`/${i18n.language}${href}`);
@@ -163,23 +174,26 @@ const Header = () => {
         </button>
       </div>
 
-      {/* Mobile Menu Overlay */}
-      <div className={`mobile-menu ${isMenuOpen ? "open" : ""}`}>
-        <nav className="mobile-nav">
-          {navItems.map((item) => (
-            <a
-              key={item.id}
-              href={item.href}
-              className={`mobile-nav-link ${
-                activeSection === item.id ? "active" : ""
-              }`}
-              onClick={(e) => handleNavClick(e, item.href)}
-            >
-              {item.label}
-            </a>
-          ))}
-        </nav>
-      </div>
+      {/* Mobile Menu Overlay - Portaled to body to avoid z-index/transform issues */}
+      {createPortal(
+        <div className={`mobile-menu ${isMenuOpen ? "open" : ""}`}>
+          <nav className="mobile-nav">
+            {navItems.map((item) => (
+              <a
+                key={item.id}
+                href={item.href}
+                className={`mobile-nav-link ${
+                  activeSection === item.id ? "active" : ""
+                }`}
+                onClick={(e) => handleNavClick(e, item.href)}
+              >
+                {item.label}
+              </a>
+            ))}
+          </nav>
+        </div>,
+        document.body
+      )}
     </header>
   );
 };

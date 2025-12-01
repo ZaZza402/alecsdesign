@@ -2,12 +2,11 @@
 .header {
   position: fixed;
   top: 0;
-  z-index: 55;
+  left: 0;
+  z-index: 1000;
   width: 100%;
   background-color: rgba(255, 255, 255, 0);
-  transition-property: transform, background-color;
-  transition-duration: 0.75s, 0.5s;
-  transition-timing-function: cubic-bezier(0.65, 0.05, 0.36, 1);
+  transition: background-color 0.5s cubic-bezier(0.65, 0.05, 0.36, 1);
 }
 
 .header.scrolled {

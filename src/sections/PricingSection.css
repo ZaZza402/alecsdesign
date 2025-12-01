@@ -914,35 +914,17 @@
   margin-bottom: 1rem;
 }
 
-.management-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 0.75rem;
-}
-
-.management-price {
-  font-size: 1.25rem;
+.management-title {
+  font-size: 1rem;
   font-weight: 700;
-  color: #f35422;
+  color: #1e293b;
+  margin-bottom: 0.5rem;
 }
 
-.management-label {
-  font-size: 0.85rem;
-  color: #64748b;
-  font-weight: 500;
-}
-
-.management-features {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.management-features li {
-  padding: 0.35rem 0;
-  color: #64748b;
+.management-description {
   font-size: 0.9rem;
+  color: #64748b;
+  line-height: 1.5;
 }
 
 .tier-examples {

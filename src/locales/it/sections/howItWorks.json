@@ -1,20 +1,20 @@
 {
   "title": "Come Funziona",
-  "subtitle": "Dalla prima chiamata al sito online in 4 passaggi",
+  "subtitle": "Dall'idea al sito online in 4 passaggi chiari",
   "step1": {
-    "title": "Parliamo (Consulenza Gratuita)",
-    "description": "Mi racconti della tua attività e della tua visione. Ti spiego cosa è possibile fare e quale soluzione si adatta meglio alle tue esigenze. Niente gergo tecnico, solo consigli onesti."
+    "title": "Strategia e Obiettivi",
+    "description": "Analizziamo i tuoi obiettivi di business, non solo le funzioni del sito. Ti consiglio la strada migliore: da una landing page veloce a una piattaforma complessa su misura."
   },
   "step2": {
-    "title": "Sviluppo e Design",
-    "description": "Design su misura per il tuo brand. Includiamo due cicli di revisioni per assicurarci che la grafica sia perfetta prima di scrivere il codice. Sito veloce e ottimizzato per mobile fin dal primo giorno."
+    "title": "Design e Sviluppo",
+    "description": "Iniziamo con un design cucito sul tuo brand. Includiamo cicli di revisione per perfezionare l'estetica prima ancora di scrivere il codice, garantendo un risultato esattamente come lo immagini."
   },
   "step3": {
-    "title": "Lancio e Configurazione",
-    "description": "Acquisto il dominio, configuro l'hosting e collego Google Analytics. Gestisco tutta la complessità tecnica al posto tuo."
+    "title": "Lancio Tecnico",
+    "description": "Mi occupo di tutta la parte difficile: configurazione dominio, certificati SSL, hosting e integrazione Analytics. Il tuo sito va online perfettamente funzionante senza stress per te."
   },
   "step4": {
-    "title": "Gestione Tutto Incluso",
-    "description": "Setup €150 una tantum, poi canone annuale (€468/anno). Impegno minimo di 2 anni. Include aggiornamenti mensili, monitoraggio e supporto. Disdici quando vuoi dopo 2 anni, o riscatta il codice del sito in qualsiasi momento."
+    "title": "Evoluzione e Supporto",
+    "description": "Finalizziamo la collaborazione in base al modello scelto. Posso consegnarti il 100% del codice e degli asset, oppure attiviamo la Partnership Gestita per garantirti aggiornamenti e sicurezza nel tempo."
   }
 }

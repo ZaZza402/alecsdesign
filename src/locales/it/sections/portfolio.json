@@ -1,33 +1,20 @@
 {
-  "title": "Progetti Reali, Risultati Reali",
-  "subtitle": "Guarda cosa ho costruito per business come il tuo",
-  "visitLive": "Visita Live",
-  "projects": [
-    {
-      "id": "velvet-shaker",
-      "url": "https://velvet-shaker.alecsdesign.xyz",
-      "image": "/portfolio images/bar-design-portfolio-showcase-mockup.webp",
-      "category": "Cocktail Bar & Intrattenimento",
-      "techStack": "React, TypeScript, Vite, Tailwind CSS"
+  "title": "Lavori Selezionati",
+  "subtitle": "Una vetrina di esperienze digitali recenti realizzate con precisione.",
+  "visitWebsite": "Visita il Sito",
+  "viewAllProjects": "Vedi Tutti i Progetti",
+  "projects": {
+    "immigration-agency": {
+      "description": "Una piattaforma professionale per un centro di assistenza immigrazione (CAF). Progettata per semplificare processi burocratici complessi e fornire informazioni chiare e accessibili."
     },
-    {
-      "id": "immigration-agency",
-      "url": "https://www.puntomigrare.it",
-      "image": "/portfolio images/punto-migrare-portfolio-showcase-mockup.webp",
-      "category": "Sito Web per Servizi Professionali",
-      "techStack": "React, JavaScript, Vite, Tailwind CSS"
+    "psychologist": {
+      "description": "Uno spazio digitale sereno e affidabile per una psicologa clinica. Il design privilegia il comfort dell'utente, la privacy e un facile accesso alla prenotazione degli appuntamenti."
     },
-    {
-      "id": "psychologist",
-      "url": "https://www.popescumaria.ro",
-      "image": "/portfolio images/psiholog-website-portfolio-showcase-mockup.webp",
-      "category": "Sito Web per Professionista Sanitaria",
-      "techStack": "React, TypeScript, Vite, Tailwind CSS"
+    "sartoria": {
+      "description": "Un'elegante vetrina digitale per una sartoria su misura a Roma. Il sito riflette l'artigianalità e l'attenzione ai dettagli che definiscono il marchio."
+    },
+    "restaurant": {
+      "description": "Un sito web vivace e invitante per un ristorante romano. Presenta un menu interattivo, una galleria e un'integrazione perfetta delle prenotazioni."
     }
-  ],
-  "cta": {
-    "title": "Vuoi vedere il tuo progetto qui?",
-    "subtitle": "Costruiamo qualcosa di grande insieme",
-    "button": "Inizia il Tuo Progetto"
   }
 }

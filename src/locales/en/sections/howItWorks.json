@@ -1,20 +1,20 @@
 {
   "title": "How It Works",
-  "subtitle": "From first call to live website in 4 simple steps",
+  "subtitle": "From concept to launch in 4 streamlined steps",
   "step1": {
-    "title": "We Talk (Free Consultation)",
-    "description": "You share your business goals and vision. I explain what's possible and what fits your needs. No technical jargon, just honest advice."
+    "title": "Discovery & Strategy",
+    "description": "We discuss your business goals, not just web features. I assess your needs and recommend the right approach—whether it's a simple launchpad or a complex custom platform."
   },
   "step2": {
-    "title": "I Build Your Website",
-    "description": "Custom design tailored to your brand. We include two rounds of dedicated revisions to ensure the design matches your vision perfectly before writing a single line of code."
+    "title": "Design & Development",
+    "description": "We start with a design tailored to your brand. You get dedicated revision rounds to perfect the look before I write a single line of high-performance code."
   },
   "step3": {
-    "title": "I Launch Everything",
-    "description": "I buy your domain, set up hosting, and connect Google Analytics. I handle the complex technical configuration so you don't have to."
+    "title": "Seamless Launch",
+    "description": "I handle the technical heavy lifting: domain configuration, SSL setup, hosting deployment, and Google Analytics integration. Your site goes live without you touching a server."
   },
   "step4": {
-    "title": "Simple Annual Billing",
-    "description": "One-time €150 setup fee, then a 2-year minimum commitment. Includes monthly update hours, 24/7 monitoring, and email support. Cancel anytime after 2 years, or buy the code whenever you want."
+    "title": "Evolution & Support",
+    "description": "We finalize our engagement based on your chosen model. Either I hand over full ownership of the code and assets, or we transition into a Managed Partnership for long-term peace of mind."
   }
 }

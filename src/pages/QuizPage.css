@@ -6,10 +6,10 @@
 
 .quiz-page,
 .quiz-results-page {
-  min-height: 100vh;
+  min-height: auto; /* Changed from 100vh to auto to prevent massive space */
   background: #ffffff;
   color: #0f172a;
-  padding: 5.5rem 1rem 1rem;
+  padding: 1rem;
   display: flex;
   flex-direction: column;
 }

@@ -1,33 +1,20 @@
 ﻿{
-  "title": "Proiecte Reale, Rezultate Reale",
-  "subtitle": "Vezi ce am construit pentru afaceri ca a ta",
-  "visitLive": "Vizitează Live",
-  "projects": [
-    {
-      "id": "velvet-shaker",
-      "url": "https://velvet-shaker.alecsdesign.xyz",
-      "image": "/portfolio images/bar-design-portfolio-showcase-mockup.webp",
-      "category": "Cocktail Bar & Divertisment",
-      "techStack": "React, TypeScript, Vite, Tailwind CSS"
+  "title": "Lucrări Selectate",
+  "subtitle": "O prezentare a experiențelor digitale recente create cu precizie.",
+  "visitWebsite": "Vizitează Site-ul",
+  "viewAllProjects": "Vezi Toate Proiectele",
+  "projects": {
+    "immigration-agency": {
+      "description": "O platformă profesională pentru un centru de asistență imigrare (CAF). Proiectată pentru a simplifica procesele birocratice complexe și a oferi informații clare și accesibile."
     },
-    {
-      "id": "immigration-agency",
-      "url": "https://www.puntomigrare.it",
-      "image": "/portfolio images/punto-migrare-portfolio-showcase-mockup.webp",
-      "category": "Site Web pentru Servicii Profesionale",
-      "techStack": "React, JavaScript, Vite, Tailwind CSS"
+    "psychologist": {
+      "description": "Un spațiu digital senin și de încredere pentru un psiholog clinic. Designul prioritizează confortul utilizatorului, confidențialitatea și accesul ușor la programări."
     },
-    {
-      "id": "psychologist",
-      "url": "https://www.popescumaria.ro",
-      "image": "/portfolio images/psiholog-website-portfolio-showcase-mockup.webp",
-      "category": "Site Web pentru Profesionist în Sănătate",
-      "techStack": "React, TypeScript, Vite, Tailwind CSS"
+    "sartoria": {
+      "description": "O vitrină digitală elegantă pentru o croitorie la comandă în Roma. Site-ul reflectă măiestria și atenția la detalii care definesc brandul."
+    },
+    "restaurant": {
+      "description": "Un site web vibrant și apetisant pentru un restaurant din Roma. Dispune de un meniu interactiv, galerie și integrare perfectă a rezervărilor."
     }
-  ],
-  "cta": {
-    "title": "Vrei să vezi proiectul tău aici?",
-    "subtitle": "Hai să construim ceva grozav împreună",
-    "button": "Începe Proiectul Tău"
   }
 }

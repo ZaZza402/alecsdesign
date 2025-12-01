@@ -128,14 +128,12 @@ export async function detectUserLanguage(): Promise<SupportedLanguage> {
   // 1. Check for saved preference (highest priority)
   const saved = getSavedLanguage();
   if (saved) {
-    console.log("Using saved language preference:", saved);
     return saved;
   }
 
   // 2. Check browser language settings
   const browserLang = getBrowserLanguage();
   if (browserLang) {
-    console.log("Using browser language:", browserLang);
     saveLanguagePreference(browserLang); // Save for next time
     return browserLang;
   }
@@ -143,13 +141,11 @@ export async function detectUserLanguage(): Promise<SupportedLanguage> {
   // 3. Try to detect from geographic location
   const geoLang = await getCountryFromGeoAPI();
   if (geoLang) {
-    console.log("Using geo-detected language:", geoLang);
     saveLanguagePreference(geoLang); // Save for next time
     return geoLang;
   }
 
   // 4. Fall back to default language
-  console.log("Using default language:", DEFAULT_LANGUAGE);
   return DEFAULT_LANGUAGE;
 }
 

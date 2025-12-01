@@ -14,6 +14,7 @@ import enContact from "./locales/en/sections/contact.json";
 import enServicesRates from "./locales/en/pages/servicesRates.json";
 import enNotFound from "./locales/en/pages/notFound.json";
 import enLegal from "./locales/en/pages/legal.json";
+import enPortfolioPage from "./locales/en/pages/portfolioPage.json";
 
 // Import English translations - Components
 import enNav from "./locales/en/components/nav.json";
@@ -35,6 +36,7 @@ import itContact from "./locales/it/sections/contact.json";
 import itServicesRates from "./locales/it/pages/servicesRates.json";
 import itNotFound from "./locales/it/pages/notFound.json";
 import itLegal from "./locales/it/pages/legal.json";
+import itPortfolioPage from "./locales/it/pages/portfolioPage.json";
 
 // Import Italian translations - Components
 import itNav from "./locales/it/components/nav.json";
@@ -56,6 +58,7 @@ import roContact from "./locales/ro/sections/contact.json";
 import roServicesRates from "./locales/ro/pages/servicesRates.json";
 import roNotFound from "./locales/ro/pages/notFound.json";
 import roLegal from "./locales/ro/pages/legal.json";
+import roPortfolioPage from "./locales/ro/pages/portfolioPage.json";
 
 // Import Romanian translations - Components
 import roNav from "./locales/ro/components/nav.json";
@@ -68,6 +71,11 @@ import roSeo from "./locales/ro/components/seo.json";
 import itQuiz from "./locales/it/quiz.json";
 import enQuiz from "./locales/en/quiz.json";
 import roQuiz from "./locales/ro/quiz.json";
+
+// Import calculator translations
+import itCalculator from "./locales/it/calculator.json";
+import enCalculator from "./locales/en/calculator.json";
+import roCalculator from "./locales/ro/calculator.json";
 
 // Import floating contact translations
 import itFloatingContact from "./locales/it/floatingContact.json";
@@ -101,6 +109,7 @@ i18n
           servicesRates: enServicesRates,
           notFound: enNotFound,
           legal: enLegal,
+          portfolioPage: enPortfolioPage,
           // Components
           nav: enNav,
           footer: enFooter,
@@ -109,6 +118,7 @@ i18n
           seo: enSeo,
           // Other
           ...enQuiz,
+          ...enCalculator,
           ...enFloatingContact,
         },
       },
@@ -126,6 +136,7 @@ i18n
           servicesRates: itServicesRates,
           notFound: itNotFound,
           legal: itLegal,
+          portfolioPage: itPortfolioPage,
           // Components
           nav: itNav,
           footer: itFooter,
@@ -134,6 +145,7 @@ i18n
           seo: itSeo,
           // Other
           ...itQuiz,
+          ...itCalculator,
           ...itFloatingContact,
         },
       },
@@ -151,6 +163,7 @@ i18n
           servicesRates: roServicesRates,
           notFound: roNotFound,
           legal: roLegal,
+          portfolioPage: roPortfolioPage,
           // Components
           nav: roNav,
           footer: roFooter,
@@ -159,6 +172,7 @@ i18n
           seo: roSeo,
           // Other
           ...roQuiz,
+          ...roCalculator,
           ...roFloatingContact,
         },
       },

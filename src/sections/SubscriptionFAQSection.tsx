@@ -82,6 +82,10 @@ const SubscriptionFAQSection = () => {
             <Search size={20} className="search-icon" />
             <input
               type="text"
+              id="faq-search"
+              name="faq-search"
+              autoComplete="off"
+              aria-label={t("pricing.subscriptionFAQ.searchPlaceholder")}
               placeholder={t("pricing.subscriptionFAQ.searchPlaceholder")}
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}

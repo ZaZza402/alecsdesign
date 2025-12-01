@@ -12,13 +12,11 @@ import "./PricingSection.css";
 
 interface Tier {
   name: string;
-  priceRange: string;
   description: string;
   features: string[];
   management: {
-    price: string;
-    label: string;
-    features: string[];
+    title: string;
+    description: string;
   };
   examples: string;
 }
@@ -26,11 +24,8 @@ interface Tier {
 interface Addon {
   icon: string;
   name: string;
-  buyPrice: string;
-  subscribePrice: string;
   description: string;
 }
-
 const PricingSection = () => {
   const { t, i18n } = useTranslation();
   const { ref, inView } = useInView({
@@ -98,21 +93,6 @@ const PricingSection = () => {
             <p className="notice-description">
               {t("pricing.basicWebsite.description")}
             </p>
-            <div className="notice-pricing">
-              <div className="notice-price-item">
-                <span className="price-label">
-                  {t("pricing.basicWebsite.setupLabel")}
-                </span>
-                <span className="price-value">€150+</span>
-              </div>
-              <div className="notice-price-item">
-                <span className="price-label">
-                  {t("pricing.basicWebsite.annualLabel")}
-                </span>
-                <span className="price-value">-</span>
-              </div>
-            </div>
-            <p className="notice-footer">{t("pricing.basicWebsite.note")}</p>
           </div>
         </div>
 
@@ -158,9 +138,7 @@ const PricingSection = () => {
               {buyTiers.map((tier, index) => (
                 <div key={index} className="tier-card">
                   <h4 className="tier-name">{tier.name}</h4>
-                  <p className="tier-price">{tier.priceRange}</p>
                   <p className="tier-description">{tier.description}</p>
-
                   <ul className="tier-features">
                     {tier.features.map((feature, idx) => (
                       <li key={idx}>
@@ -169,21 +147,16 @@ const PricingSection = () => {
                     ))}
                   </ul>
 
-                  <div className="management-plan">
-                    <div className="management-header">
-                      <span className="management-price">
-                        {tier.management.price}
-                      </span>
-                      <span className="management-label">
-                        {tier.management.label}
-                      </span>
+                  {tier.management && (
+                    <div className="management-plan">
+                      <h5 className="management-title">
+                        {tier.management.title}
+                      </h5>
+                      <p className="management-description">
+                        {tier.management.description}
+                      </p>
                     </div>
-                    <ul className="management-features">
-                      {tier.management.features.map((feature, idx) => (
-                        <li key={idx}>{feature}</li>
-                      ))}
-                    </ul>
-                  </div>
+                  )}
 
                   <p className="tier-examples">{tier.examples}</p>
                 </div>
@@ -213,21 +186,6 @@ const PricingSection = () => {
             </div>
             <h3 className="model-title">{t("pricing.subscribeModel.title")}</h3>
 
-            <div className="subscribe-pricing">
-              <span className="subscribe-price">
-                {t("pricing.subscribeModel.price")}{" "}
-                <span className="price-label">
-                  {t("pricing.subscribeModel.upfront")}
-                </span>
-              </span>
-              <span className="subscribe-annual">
-                {t("pricing.subscribeModel.annual")}
-              </span>
-            </div>
-
-            <p className="subscribe-commitment">
-              {t("pricing.subscribeModel.commitment")}
-            </p>
             <p className="subscribe-description">
               {t("pricing.subscribeModel.description")}
             </p>
@@ -280,17 +238,10 @@ const PricingSection = () => {
                   <div className="addon-icon">{getAddonIcon(addon.icon)}</div>
                   <h4 className="addon-name">{addon.name}</h4>
                 </div>
-                <div className="addon-pricing">
-                  <p className="addon-buy-price">Buy: {addon.buyPrice}</p>
-                  <p className="addon-subscribe-price">
-                    Subscribe: {addon.subscribePrice}
-                  </p>
-                </div>
                 <p className="addon-description">{addon.description}</p>
               </div>
             ))}
           </div>
-
           <button
             onClick={() => {
               trackCTAClick("Discuss Add-ons", "Pricing Section");

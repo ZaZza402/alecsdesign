@@ -1,0 +1,163 @@
+{
+  "calculator": {
+    "questions": {
+      "q1": {
+        "question": "Qual è il compito principale di questo sito?",
+        "options": {
+          "opt1": {
+            "label": "Informazione / Validazione",
+            "desc": "Stabilisci credibilità e fornisci informazioni essenziali."
+          },
+          "opt2": {
+            "label": "Marketing / Lead Gen",
+            "desc": "Attrai nuovi clienti e cattura contatti efficacemente."
+          },
+          "opt3": {
+            "label": "Vendite / Utility / App",
+            "desc": "Vendi prodotti direttamente o fornisci strumenti complessi."
+          }
+        }
+      },
+      "q2": {
+        "question": "Come gestisci la parte 'Tech' (DNS, Hosting, Update)?",
+        "options": {
+          "opt1": {
+            "label": "Ho un team IT / Programmo",
+            "desc": "Tu gestisci i dettagli tecnici; noi forniamo il codice."
+          },
+          "opt2": {
+            "label": "So usare una dashboard",
+            "desc": "Pannello di amministrazione facile per gestire i contenuti."
+          },
+          "opt3": {
+            "label": "Voglio che sia fatto per me",
+            "desc": "Servizio completo - gestiamo hosting, aggiornamenti e manutenzione."
+          }
+        }
+      },
+      "q3": {
+        "question": "Quanto spesso cambieranno i contenuti?",
+        "options": {
+          "opt1": {
+            "label": "Raramente (Info statiche)",
+            "desc": "Imposta e dimentica. Perfetto per siti vetrina."
+          },
+          "opt2": {
+            "label": "Mensilmente (Blog/Progetti)",
+            "desc": "Aggiornamenti regolari per coinvolgere il pubblico."
+          },
+          "opt3": {
+            "label": "Ogni giorno (Prodotti/Utenti)",
+            "desc": "Aggiornamenti frequenti per attività dinamiche."
+          }
+        }
+      },
+      "q4": {
+        "question": "Hai bisogno di funzionalità specifiche?",
+        "options": {
+          "opt1": {
+            "label": "Nessuna / Solo modulo contatti",
+            "desc": "Mantienilo semplice e focalizzato."
+          },
+          "opt2": {
+            "label": "Supporto multilingua",
+            "desc": "Raggiungi un pubblico internazionale più ampio."
+          },
+          "opt3": {
+            "label": "Sistema di prenotazione / Calendario",
+            "desc": "Permetti ai clienti di prenotare appuntamenti online."
+          },
+          "opt4": {
+            "label": "Pagamenti online / E-shop",
+            "desc": "Accetta pagamenti in modo sicuro sul tuo sito."
+          }
+        }
+      },
+      "q5": {
+        "question": "Preferenza Finanziaria",
+        "options": {
+          "opt1": {
+            "label": "Investimento unico",
+            "desc": "Paga una volta, possiedilo per sempre."
+          },
+          "opt2": {
+            "label": "Canone mensile",
+            "desc": "Costo iniziale inferiore, include supporto continuo."
+          }
+        }
+      }
+    },
+    "results": {
+      "managed": {
+        "title": "Partner Gestito",
+        "desc": "Cerchi tranquillità e prestazioni."
+      },
+      "owned": {
+        "title": "Proprietà del Progetto",
+        "desc": "Cerchi controllo e indipendenza."
+      },
+      "tiers": {
+        "low": "Soluzione Launchpad",
+        "mid": "Soluzione Dinamica",
+        "high": "Soluzione Piattaforma"
+      },
+      "details": {
+        "low": {
+          "priceRange": "€500 - €900",
+          "timeline": "1 Settimana",
+          "features": [
+            "Pagina Singola / 3 Pagine",
+            "Modulo di Contatto",
+            "SEO Base",
+            "Responsive Mobile"
+          ],
+          "bestFor": [
+            "Portfolio Personali",
+            "Landing Page",
+            "Piccole Imprese Locali"
+          ]
+        },
+        "mid": {
+          "priceRange": "€1,000 - €2,500",
+          "timeline": "2-4 Settimane",
+          "features": [
+            "Integrazione CMS",
+            "Sezione Blog / News",
+            "SEO Avanzata",
+            "Dashboard Analitica"
+          ],
+          "bestFor": [
+            "Aziende in Crescita",
+            "Content Creator",
+            "Fornitori di Servizi"
+          ]
+        },
+        "high": {
+          "priceRange": "€3,000+",
+          "timeline": "1-2 Mesi",
+          "features": [
+            "Funzionalità Personalizzate",
+            "Account Utente",
+            "Integrazioni API",
+            "Alte Prestazioni"
+          ],
+          "bestFor": ["E-commerce", "Prodotti SaaS", "Grandi Organizzazioni"]
+        }
+      }
+    },
+    "ui": {
+      "title": "Calcolatore Progetto",
+      "step": "Passo",
+      "of": "di",
+      "back": "Indietro",
+      "next": "Prossimo Passo",
+      "calculate": "Calcola Risultato",
+      "analyzing": "Analizzando le tue esigenze...",
+      "complexity": "Complessità Progetto",
+      "simple": "Semplice",
+      "dynamic": "Dinamico",
+      "complex": "Complesso",
+      "confirm": "Conferma Selezione"
+    }
+  }
+}

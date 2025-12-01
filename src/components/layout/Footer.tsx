@@ -45,11 +45,11 @@ const Footer = () => {
   };
 
   const getFacebook = () => {
-    return "https://www.facebook.com/ax.m826/";
+    return "https://www.facebook.com/AxiomWeb/";
   };
 
   const getInstagram = () => {
-    return "https://www.instagram.com/alex.zm8/";
+    return "https://www.instagram.com/alecs.dsgn/";
   };
 
   return (
@@ -128,10 +128,18 @@ const Footer = () => {
             <h3 className="footer-heading">{t("footer.quickLinks.title")}</h3>
             <ul className="footer-links">
               <li>
-                <a href="#about">{t("footer.quickLinks.about")}</a>
+                <a href="#difference">{t("footer.quickLinks.about")}</a>
               </li>
               <li>
-                <a href="#portfolio">{t("footer.quickLinks.portfolio")}</a>
+                <button
+                  onClick={() => {
+                    trackButtonClick("Portfolio", "Footer Quick Links");
+                    navigate(getLocalizedRoute("/portfolio"));
+                    window.scrollTo(0, 0);
+                  }}
+                >
+                  {t("footer.quickLinks.portfolio")}
+                </button>
               </li>
               <li>
                 <a href="#pricing">{t("footer.quickLinks.pricing")}</a>
@@ -147,7 +155,15 @@ const Footer = () => {
                 </button>
               </li>
               <li>
-                <a href="#contact">{t("footer.quickLinks.contact")}</a>
+                <button
+                  onClick={() => {
+                    trackButtonClick("Contact", "Footer Quick Links");
+                    navigate(getLocalizedRoute("/contact"));
+                    window.scrollTo(0, 0);
+                  }}
+                >
+                  {t("footer.quickLinks.contact")}
+                </button>
               </li>
             </ul>
           </div>

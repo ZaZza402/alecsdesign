@@ -1,0 +1,163 @@
+{
+  "calculator": {
+    "questions": {
+      "q1": {
+        "question": "What is the primary job of this website?",
+        "options": {
+          "opt1": {
+            "label": "Information / Validation",
+            "desc": "Establish credibility and provide essential business information."
+          },
+          "opt2": {
+            "label": "Marketing / Lead Gen",
+            "desc": "Attract new customers and capture leads effectively."
+          },
+          "opt3": {
+            "label": "Sales / Utility / App",
+            "desc": "Sell products directly or provide complex online tools."
+          }
+        }
+      },
+      "q2": {
+        "question": "How do you handle 'Tech' (DNS, Hosting, Updates)?",
+        "options": {
+          "opt1": {
+            "label": "I have an IT team / I code",
+            "desc": "You handle the technical details; we deliver the code."
+          },
+          "opt2": {
+            "label": "I can manage a dashboard",
+            "desc": "User-friendly admin panel to manage content yourself."
+          },
+          "opt3": {
+            "label": "I want it done for me",
+            "desc": "Full service - we handle hosting, updates, and maintenance."
+          }
+        }
+      },
+      "q3": {
+        "question": "How often will content need to change?",
+        "options": {
+          "opt1": {
+            "label": "Rarely (Static info)",
+            "desc": "Set it and forget it. Perfect for brochures."
+          },
+          "opt2": {
+            "label": "Monthly (Blog/Projects)",
+            "desc": "Regular updates to keep your audience engaged."
+          },
+          "opt3": {
+            "label": "Daily (Products/Users)",
+            "desc": "High-frequency updates for dynamic businesses."
+          }
+        }
+      },
+      "q4": {
+        "question": "Do you need any of these specific features?",
+        "options": {
+          "opt1": {
+            "label": "None / Just a contact form",
+            "desc": "Keep it simple and focused."
+          },
+          "opt2": {
+            "label": "Multi-language support",
+            "desc": "Reach a broader, international audience."
+          },
+          "opt3": {
+            "label": "Booking System / Calendar",
+            "desc": "Allow clients to schedule appointments online."
+          },
+          "opt4": {
+            "label": "Payment Processing / E-shop",
+            "desc": "Accept payments securely on your website."
+          }
+        }
+      },
+      "q5": {
+        "question": "Financial Preference",
+        "options": {
+          "opt1": {
+            "label": "One-time investment",
+            "desc": "Pay once, own it forever. Standard development model."
+          },
+          "opt2": {
+            "label": "Monthly retainer",
+            "desc": "Lower upfront cost, includes ongoing support and updates."
+          }
+        }
+      }
+    },
+    "results": {
+      "managed": {
+        "title": "Managed Partner",
+        "desc": "You value peace of mind and performance."
+      },
+      "owned": {
+        "title": "Project Ownership",
+        "desc": "You value control and independence."
+      },
+      "tiers": {
+        "low": "Launchpad Solution",
+        "mid": "Dynamic Solution",
+        "high": "Platform Solution"
+      },
+      "details": {
+        "low": {
+          "priceRange": "€500 - €900",
+          "timeline": "1 Week",
+          "features": [
+            "Single Page / 3 Pages",
+            "Contact Form",
+            "Basic SEO",
+            "Mobile Responsive"
+          ],
+          "bestFor": [
+            "Personal Portfolios",
+            "Landing Pages",
+            "Small Local Businesses"
+          ]
+        },
+        "mid": {
+          "priceRange": "€1,000 - €2,500",
+          "timeline": "2-4 Weeks",
+          "features": [
+            "CMS Integration",
+            "Blog / News Section",
+            "Advanced SEO",
+            "Analytics Dashboard"
+          ],
+          "bestFor": [
+            "Growing Businesses",
+            "Content Creators",
+            "Service Providers"
+          ]
+        },
+        "high": {
+          "priceRange": "€3,000+",
+          "timeline": "1-2 Months",
+          "features": [
+            "Custom Functionality",
+            "User Accounts",
+            "API Integrations",
+            "High Performance"
+          ],
+          "bestFor": ["E-commerce", "SaaS Products", "Large Organizations"]
+        }
+      }
+    },
+    "ui": {
+      "title": "Project Calculator",
+      "step": "Step",
+      "of": "of",
+      "back": "Back",
+      "next": "Next Step",
+      "calculate": "Calculate Result",
+      "analyzing": "Analyzing your needs...",
+      "complexity": "Project Complexity",
+      "simple": "Simple",
+      "dynamic": "Dynamic",
+      "complex": "Complex",
+      "confirm": "Confirm Selection"
+    }
+  }
+}

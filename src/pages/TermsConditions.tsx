@@ -2,12 +2,7 @@ import { useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import { useNavigate } from "react-router-dom";
 import { ArrowLeft } from "lucide-react";
-import Header from "../components/layout/Header";
-import Footer from "../components/layout/Footer";
-import CookieBanner from "../components/ui/CookieBanner";
-import ScrollProgress from "../components/ui/ScrollProgress";
-import LanguageSuggestionBanner from "../components/ui/LanguageSuggestionBanner";
-import MetallicBackground from "../components/ui/backgrounds/MetallicBackground";
+import { SEO } from "../utils/seo";
 import "./LegalPage.css";
 
 const TermsConditions = () => {
@@ -23,90 +18,87 @@ const TermsConditions = () => {
   };
 
   return (
-    <>
-      <MetallicBackground />
-      <LanguageSuggestionBanner />
-      <Header />
-      <div className="legal-page" style={{ paddingTop: "80px" }}>
-        <div className="legal-container">
-          <button onClick={handleBack} className="back-button">
-            <ArrowLeft size={20} />
-            <span>{t("legal.backToHome")}</span>
-          </button>
+    <div className="legal-page">
+      <SEO
+        title={`${t("legal.terms.title")} | AlecsDesign`}
+        description={t("legal.terms.acceptance.text").substring(0, 160)}
+        keywords="terms and conditions, terms of service, legal agreement, alecsdesign terms"
+      />
+      <div className="legal-container">
+        <button onClick={handleBack} className="back-button">
+          <ArrowLeft size={20} />
+          <span>{t("legal.backToHome")}</span>
+        </button>
 
-          <h1 className="legal-title">{t("legal.terms.title")}</h1>
-          <p className="legal-update">
-            {t("legal.lastUpdated")}: November 17, 2025
-          </p>
+        <h1 className="legal-title">{t("legal.terms.title")}</h1>
+        <p className="legal-update">
+          {t("legal.lastUpdated")}: November 17, 2025
+        </p>
 
-          <div className="legal-content">
-            <section className="legal-section">
-              <h2>{t("legal.terms.acceptance.title")}</h2>
-              <p>{t("legal.terms.acceptance.text")}</p>
-            </section>
+        <div className="legal-content">
+          <section className="legal-section">
+            <h2>{t("legal.terms.acceptance.title")}</h2>
+            <p>{t("legal.terms.acceptance.text")}</p>
+          </section>
 
-            <section className="legal-section">
-              <h2>{t("legal.terms.services.title")}</h2>
-              <p>{t("legal.terms.services.text")}</p>
-            </section>
+          <section className="legal-section">
+            <h2>{t("legal.terms.services.title")}</h2>
+            <p>{t("legal.terms.services.text")}</p>
+          </section>
 
-            <section className="legal-section">
-              <h2>{t("legal.terms.project.title")}</h2>
-              <p>{t("legal.terms.project.intro")}</p>
-              <ul>
-                <li>{t("legal.terms.project.item1")}</li>
-                <li>{t("legal.terms.project.item2")}</li>
-                <li>{t("legal.terms.project.item3")}</li>
-                <li>{t("legal.terms.project.item4")}</li>
-              </ul>
-            </section>
+          <section className="legal-section">
+            <h2>{t("legal.terms.project.title")}</h2>
+            <p>{t("legal.terms.project.intro")}</p>
+            <ul>
+              <li>{t("legal.terms.project.item1")}</li>
+              <li>{t("legal.terms.project.item2")}</li>
+              <li>{t("legal.terms.project.item3")}</li>
+              <li>{t("legal.terms.project.item4")}</li>
+            </ul>
+          </section>
 
-            <section className="legal-section">
-              <h2>{t("legal.terms.payment.title")}</h2>
-              <p>{t("legal.terms.payment.text")}</p>
-            </section>
+          <section className="legal-section">
+            <h2>{t("legal.terms.payment.title")}</h2>
+            <p>{t("legal.terms.payment.text")}</p>
+          </section>
 
-            <section className="legal-section">
-              <h2>{t("legal.terms.intellectual.title")}</h2>
-              <p>{t("legal.terms.intellectual.text")}</p>
-            </section>
+          <section className="legal-section">
+            <h2>{t("legal.terms.intellectual.title")}</h2>
+            <p>{t("legal.terms.intellectual.text")}</p>
+          </section>
 
-            <section className="legal-section">
-              <h2>{t("legal.terms.warranty.title")}</h2>
-              <p>{t("legal.terms.warranty.text")}</p>
-            </section>
+          <section className="legal-section">
+            <h2>{t("legal.terms.warranty.title")}</h2>
+            <p>{t("legal.terms.warranty.text")}</p>
+          </section>
 
-            <section className="legal-section">
-              <h2>{t("legal.terms.limitation.title")}</h2>
-              <p>{t("legal.terms.limitation.text")}</p>
-            </section>
+          <section className="legal-section">
+            <h2>{t("legal.terms.limitation.title")}</h2>
+            <p>{t("legal.terms.limitation.text")}</p>
+          </section>
 
-            <section className="legal-section">
-              <h2>{t("legal.terms.termination.title")}</h2>
-              <p>{t("legal.terms.termination.text")}</p>
-            </section>
+          <section className="legal-section">
+            <h2>{t("legal.terms.termination.title")}</h2>
+            <p>{t("legal.terms.termination.text")}</p>
+          </section>
 
-            <section className="legal-section">
-              <h2>{t("legal.terms.governing.title")}</h2>
-              <p>{t("legal.terms.governing.text")}</p>
-            </section>
+          <section className="legal-section">
+            <h2>{t("legal.terms.governing.title")}</h2>
+            <p>{t("legal.terms.governing.text")}</p>
+          </section>
 
-            <section className="legal-section">
-              <h2>{t("legal.terms.changes.title")}</h2>
-              <p>{t("legal.terms.changes.text")}</p>
-            </section>
+          <section className="legal-section">
+            <h2>{t("legal.terms.changes.title")}</h2>
+            <p>{t("legal.terms.changes.text")}</p>
+          </section>
 
-            <section className="legal-section">
-              <h2>{t("legal.terms.contact.title")}</h2>
-              <p>{t("legal.terms.contact.text")}</p>
-            </section>
-          </div>
+          <section className="legal-section">
+            <h2>{t("legal.terms.contact.title")}</h2>
+            <p>{t("legal.terms.contact.text")}</p>
+          </section>
         </div>
       </div>
-      <Footer />
-      <CookieBanner />
-      <ScrollProgress />
-    </>
+    </div>
   );
 };
 

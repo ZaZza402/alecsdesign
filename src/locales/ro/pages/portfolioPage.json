@@ -1,0 +1,44 @@
+{
+  "title": "Portofoliu",
+  "subtitle": "<0>Proiectele mele recente</0> și <0>tehnologia</0> din spate.",
+  "visitWebsite": "Vizitează Site-ul",
+  "techStack": "Tehnologii Folosite",
+  "projects": {
+    "puntomigrare": {
+      "title": "Punto Migrare",
+      "description": "O platformă cuprinzătoare pentru un centru de asistență imigrare. Site-ul este conceput pentru a organiza informații birocratice complexe într-o interfață accesibilă și ușor de utilizat. Dispune de formulare personalizate pentru solicitările clienților și interacțiuni modale pentru acces rapid la servicii esențiale.",
+      "stack": [
+        "JavaScript",
+        "HTML5",
+        "CSS3",
+        "Formulare Personalizate",
+        "Modale"
+      ]
+    },
+    "psychologist": {
+      "title": "Portofoliu Psiholog",
+      "description": "O prezență digitală senină și profesională pentru un psiholog clinic. Designul se concentrează pe construirea încrederii printr-o paletă de culori liniștitoare și o tipografie clară. Include secțiuni pentru servicii de terapie, experiență profesională și o metodă de contact ușor de utilizat.",
+      "stack": ["React", "TypeScript", "Tailwind CSS", "Framer Motion"]
+    },
+    "sartoria": {
+      "title": "Sartoria Vio",
+      "description": "O vitrină elegantă pentru o croitorie la comandă în Roma. Site-ul web reflectă precizia și arta meseriei, utilizând imagini de înaltă calitate și un aspect sofisticat. Servește ca un portofoliu digital pentru cele mai bune lucrări ale croitorului.",
+      "stack": ["React", "TypeScript", "Tailwind CSS", "Design Responsiv"]
+    },
+    "restaurant": {
+      "title": "Ristorante 13",
+      "description": "Un site web vibrant pentru un restaurant modern din Roma. Caracteristicile cheie includ un meniu digital interactiv, o galerie foto cu preparate și integrare perfectă pentru rezervări. Abordarea mobile-first asigură că clienții pot vizualiza ușor meniul pe telefoanele lor.",
+      "stack": ["React", "TypeScript", "Tailwind CSS", "Meniu Interactiv"]
+    },
+    "ctx": {
+      "title": "CTX Fintech Template",
+      "description": "Un șablon de dashboard fintech de ultimă generație, conceput pentru aplicații financiare moderne. Demonstrează componente UI complexe, layout-uri de vizualizare a datelor și o estetică elegantă dark-mode, potrivită pentru platforme de tranzacționare sau portofele crypto.",
+      "stack": ["React", "TypeScript", "Tailwind CSS", "Vizualizare Date"]
+    },
+    "velvet": {
+      "title": "Velvet Shaker",
+      "description": "Un site web elegant și atmosferic pentru un cocktail bar premium. Designul folosește vizualuri bogate și animații fluide pentru a capta atmosfera localului. Include o prezentare a meniului de băuturi și informații despre evenimente.",
+      "stack": ["React", "TypeScript", "Tailwind CSS", "GSAP"]
+    }
+  }
+}

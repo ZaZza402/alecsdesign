@@ -1,0 +1,38 @@
+{
+  "title": "Portfolio",
+  "subtitle": "My <0>recent projects</0> and the <0>tech</0> behind them.",
+  "visitWebsite": "Visit Live Site",
+  "techStack": "Tech Stack",
+  "projects": {
+    "puntomigrare": {
+      "title": "Punto Migrare",
+      "description": "A comprehensive platform for an immigration assistance center. The site is designed to organize complex bureaucratic information into an accessible and user-friendly interface. It features custom forms for client inquiries and modal interactions to provide quick access to essential services without navigating away from the main content.",
+      "stack": ["JavaScript", "HTML5", "CSS3", "Custom Forms", "Modals"]
+    },
+    "psychologist": {
+      "title": "Psychologist Portfolio",
+      "description": "A serene and professional digital presence for a clinical psychologist. The design focuses on building trust through a calming color palette and clear typography. It includes sections for therapy services, professional background, and an easy-to-use contact method for scheduling appointments.",
+      "stack": ["React", "TypeScript", "Tailwind CSS", "Framer Motion"]
+    },
+    "sartoria": {
+      "title": "Sartoria Vio",
+      "description": "An elegant showcase for a bespoke tailoring atelier in Rome. The website reflects the precision and artistry of the craft, utilizing high-quality imagery and a sophisticated layout. It serves as a digital portfolio for the tailor's finest work.",
+      "stack": ["React", "TypeScript", "Tailwind CSS", "Responsive Design"]
+    },
+    "restaurant": {
+      "title": "Ristorante 13",
+      "description": "A vibrant website for a modern Roman restaurant. Key features include an interactive digital menu, a photo gallery of signature dishes, and seamless integration for table reservations. The mobile-first approach ensures customers can easily view the menu on their phones.",
+      "stack": ["React", "TypeScript", "Tailwind CSS", "Interactive Menu"]
+    },
+    "ctx": {
+      "title": "CTX Fintech Template",
+      "description": "A cutting-edge fintech dashboard template designed for modern financial applications. It demonstrates complex UI components, data visualization layouts, and a sleek dark-mode aesthetic suitable for trading platforms or crypto wallets.",
+      "stack": ["React", "TypeScript", "Tailwind CSS", "Data Visualization"]
+    },
+    "velvet": {
+      "title": "Velvet Shaker",
+      "description": "A stylish and atmospheric website for a premium cocktail bar. The design uses rich visuals and smooth animations to capture the mood of the venue. It includes a drink menu showcase and event information.",
+      "stack": ["React", "TypeScript", "Tailwind CSS", "GSAP"]
+    }
+  }
+}

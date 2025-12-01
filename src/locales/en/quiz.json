@@ -19,6 +19,9 @@
       "finish": "Get My Estimate",
       "restart": "Start Over"
     },
+    "ui": {
+      "confirm": "Confirm Selection"
+    },
     "questions": {
       "q1": {
         "id": "websiteType",
@@ -288,11 +291,7 @@
         "required": true,
         "conditional": {
           "showIf": "websiteType",
-          "values": [
-            "business",
-            "ecommerce",
-            "unsure"
-          ]
+          "values": ["business", "ecommerce", "unsure"]
         },
         "options": [
           {
@@ -543,6 +542,39 @@
       "title": "Your Project Estimate",
       "subtitle": "Based on your answers, here's what I recommend",
       "disclaimer": "This is an automated estimate. Final pricing may vary based on specific requirements discussed in consultation.",
+      "modelFit": "Model Fit",
+      "complexityScore": "Complexity Score",
+      "sentToTeam": "Sent to team",
+      "share": "Share",
+      "copied": "Copied!",
+      "recommendedPlan": "Recommended Plan",
+      "timelineLabel": "Timeline:",
+      "estimatedRange": "Estimated Range",
+      "perMonth": "/ month",
+      "oneTime": "one-time",
+      "whatYouGet": "What you get",
+      "whyThisFits": "Why this fits",
+      "complexityLevels": {
+        "low": "Simple & Fast",
+        "mid": "Dynamic & Robust",
+        "high": "Complex & Scalable"
+      },
+      "modelLabels": {
+        "managed": "Managed (Subscription)",
+        "owned": "Owned (One-time)"
+      },
+      "modelDescriptions": {
+        "managed": "Based on your preference for ongoing support and lower upfront costs, a subscription model is recommended.",
+        "owned": "Based on your preference for independence and long-term control, a one-time purchase model is recommended."
+      },
+      "emailForm": {
+        "title": "Send Results to Us",
+        "description": "Enter your email and we'll receive your project blueprint to start the conversation.",
+        "success": "Sent successfully! We'll be in touch.",
+        "error": "Failed to send. Please try again.",
+        "alertError": "Failed to send email: ",
+        "alertConnectionError": "Failed to send email. Please check your connection and try again."
+      },
       "sections": {
         "overview": {
           "title": "Project Overview",

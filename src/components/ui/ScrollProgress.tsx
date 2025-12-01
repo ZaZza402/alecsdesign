@@ -2,10 +2,12 @@ import { useState, useEffect, useRef } from "react";
 import { ArrowUp, MessageCircle, MessageSquare, Send } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { motion } from "framer-motion";
+import { useNavigate } from "react-router-dom";
 import "./ScrollProgress.css";
 
 const ScrollProgress = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+  const navigate = useNavigate();
   const [scrollProgress, setScrollProgress] = useState(0);
   const [showCTA, setShowCTA] = useState(false);
   const [showScrollTop, setShowScrollTop] = useState(false);
@@ -59,7 +61,11 @@ const ScrollProgress = () => {
   const scrollToContact = () => {
     setShowOptions(false);
     const contactSection = document.getElementById("contact");
-    contactSection?.scrollIntoView({ behavior: "smooth" });
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: "smooth" });
+    } else {
+      navigate(`/${i18n.language}/contact`);
+    }
   };
 
   const openWhatsApp = () => {

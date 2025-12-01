@@ -1,17 +1,17 @@
 ﻿{
-  "title": "De ce merită investiția",
-  "subtitle": "Pentru afacerea ta și pentru tine",
+  "title": "De ce să colaborăm",
+  "subtitle": "Construit pentru creștere, gândit pentru liniștea ta",
   "pillar1": {
-    "title": "Investiție Inițială Minimală",
-    "description": "Plătești doar €150 instalare + €39/lună în loc de mii de euro avans. Mai puțin decât un abonament la sală. Începi profesionist fără să blochezi banii firmei."
+    "title": "Eficiență a Capitalului",
+    "description": "Evită capcana costurilor de agenție sau a template-urilor ieftine. Indiferent dacă alegi un plan gestionat sau un proiect dedicat, investiția ta merge direct în cod de calitate și valoare pe termen lung."
   },
   "pillar2": {
-    "title": "Zero Stres Tehnic",
-    "description": "Nu trebuie să îți bati capul cu hosting, DNS sau certificate SSL. Eu configurez totul și asigur funcționarea 24/7. Tu îmi trimiți conținutul, iar eu mă ocup de restul.",
-    "explainer": "Domeniu, găzduire, securitate, SEO, analytics – toate incluse."
+    "title": "Partenerul Tău Tehnic",
+    "description": "Mă comport ca departamentul tău digital intern. De la configurări DNS complexe la securitate și găzduire, gestionez infrastructura 24/7, astfel încât tu să te poți concentra exclusiv pe afacerea ta.",
+    "explainer": "Găzduire, securitate, arhitectură SEO și analytics – totul gestionat."
   },
   "pillar3": {
-    "title": "Site-ul Crește cu Tine",
-    "description": "Începi cu un site solid. Când ești pregătit pentru e-commerce sau funcționalități complexe, le adăugăm direct. Nu trebuie să reconstruim site-ul de la zero."
+    "title": "Scalabilitate Fără Limite",
+    "description": "Începem cu o fundație solidă și ultra-rapidă. Pentru că nu folosesc constructori de site-uri restrictivi, adăugarea de e-commerce sau funcții custom pe viitor este simplă. Nu va fi nevoie să reconstruim site-ul."
   }
 }

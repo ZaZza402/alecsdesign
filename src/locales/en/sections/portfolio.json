@@ -1,33 +1,20 @@
 {
-  "title": "Real Projects, Real Results",
-  "subtitle": "See what I've built for businesses like yours",
-  "visitLive": "Visit Live",
-  "projects": [
-    {
-      "id": "velvet-shaker",
-      "url": "https://velvet-shaker.alecsdesign.xyz",
-      "image": "/portfolio images/bar-design-portfolio-showcase-mockup.webp",
-      "category": "Cocktail Bar & Entertainment",
-      "techStack": "React, TypeScript, Vite, Tailwind CSS"
+  "title": "Selected Works",
+  "subtitle": "A showcase of recent digital experiences crafted with precision.",
+  "visitWebsite": "Visit Website",
+  "viewAllProjects": "View All Projects",
+  "projects": {
+    "immigration-agency": {
+      "description": "A professional platform for an immigration assistance center (CAF). Designed to simplify complex bureaucratic processes and provide clear, accessible information to users navigating immigration services."
     },
-    {
-      "id": "immigration-agency",
-      "url": "https://www.puntomigrare.it",
-      "image": "/portfolio images/punto-migrare-portfolio-showcase-mockup.webp",
-      "category": "Professional Services Website",
-      "techStack": "React, JavaScript, Vite, Tailwind CSS"
+    "psychologist": {
+      "description": "A serene and trustworthy digital space for a clinical psychologist. The design prioritizes user comfort, privacy, and easy access to appointment scheduling."
     },
-    {
-      "id": "psychologist",
-      "url": "https://www.popescumaria.ro",
-      "image": "/portfolio images/psiholog-website-portfolio-showcase-mockup.webp",
-      "category": "Healthcare Professional Website",
-      "techStack": "React, TypeScript, Vite, Tailwind CSS"
+    "sartoria": {
+      "description": "An elegant digital showcase for a bespoke tailoring service in Rome. The site reflects the craftsmanship and attention to detail that defines the brand."
+    },
+    "restaurant": {
+      "description": "A vibrant and appetizing website for a Roman restaurant. Features an interactive menu, gallery, and seamless reservation integration to drive bookings."
     }
-  ],
-  "cta": {
-    "title": "Want to see your project here?",
-    "subtitle": "Let's build something great together",
-    "button": "Start Your Project"
   }
 }

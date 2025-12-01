@@ -2,12 +2,6 @@ import { useTranslation } from "react-i18next";
 import { useEffect } from "react";
 import { ShoppingCart, Wrench, Palette, Globe, Zap, Lock } from "lucide-react";
 import { SEO } from "../utils/seo";
-import Header from "../components/layout/Header";
-import Footer from "../components/layout/Footer";
-import CookieBanner from "../components/ui/CookieBanner";
-import ScrollProgress from "../components/ui/ScrollProgress";
-import LanguageSuggestionBanner from "../components/ui/LanguageSuggestionBanner";
-import MetallicBackground from "../components/ui/backgrounds/MetallicBackground";
 import "./ServicesRates.css";
 
 const ServicesRates = () => {
@@ -21,7 +15,6 @@ const ServicesRates = () => {
     {
       key: "ecommerce",
       icon: ShoppingCart,
-      price: "€400",
       examples: [
         "Product catalog with cart",
         "Payment integration (Stripe/PayPal)",
@@ -31,7 +24,6 @@ const ServicesRates = () => {
     {
       key: "booking",
       icon: Zap,
-      price: "€200",
       examples: [
         "Appointment scheduling",
         "Calendar integration",
@@ -41,7 +33,6 @@ const ServicesRates = () => {
     {
       key: "multilingual",
       icon: Globe,
-      price: "€150/language",
       examples: [
         "Full site translation",
         "Language switcher",
@@ -51,7 +42,6 @@ const ServicesRates = () => {
     {
       key: "customFeature",
       icon: Wrench,
-      price: "Custom quote",
       examples: [
         "User authentication & login",
         "Custom integrations",
@@ -64,13 +54,11 @@ const ServicesRates = () => {
     {
       key: "contentUpdate",
       icon: Palette,
-      price: "€50-100",
       examples: ["Text changes", "Image replacements", "Contact info updates"],
     },
     {
       key: "designTweaks",
       icon: Palette,
-      price: "€100-200",
       examples: [
         "Color scheme changes",
         "Layout adjustments",
@@ -80,30 +68,64 @@ const ServicesRates = () => {
     {
       key: "newSection",
       icon: Wrench,
-      price: "€150-300",
       examples: ["New page section", "Additional page", "FAQ section"],
     },
     {
       key: "security",
       icon: Lock,
-      price: "Included",
       examples: ["SSL certificates", "Security updates", "Backup management"],
     },
   ];
 
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    name: t("servicesRates.title"),
+    description: t("servicesRates.subtitle"),
+    provider: {
+      "@type": "LocalBusiness",
+      name: "AlecsDesign",
+    },
+    areaServed: "Worldwide",
+    hasOfferCatalog: {
+      "@type": "OfferCatalog",
+      name: "Web Development Services",
+      itemListElement: [
+        ...addons.map((addon) => ({
+          "@type": "Offer",
+          itemOffered: {
+            "@type": "Service",
+            name: t(`servicesRates.addons.items.${addon.key}.name`),
+            description: t(
+              `servicesRates.addons.items.${addon.key}.description`
+            ),
+          },
+        })),
+        ...modifications.map((mod) => ({
+          "@type": "Offer",
+          itemOffered: {
+            "@type": "Service",
+            name: t(`servicesRates.modifications.items.${mod.key}.name`),
+            description: t(
+              `servicesRates.modifications.items.${mod.key}.description`
+            ),
+          },
+        })),
+      ],
+    },
+  };
+
   return (
     <>
-      <MetallicBackground />
-      <LanguageSuggestionBanner />
-      <Header />
       <SEO
         title={t("servicesRates.seo.title")}
         description={t("servicesRates.seo.description")}
         keywords={t("servicesRates.seo.keywords")}
         ogType="website"
+        jsonLd={jsonLd}
       />
 
-      <main className="services-rates-page" role="main">
+      <div className="services-rates-page">
         <div className="services-rates-container">
           {/* Hero Section */}
           <div className="services-hero" data-aos="fade-up">
@@ -136,13 +158,14 @@ const ServicesRates = () => {
                     data-aos="fade-up"
                     data-aos-delay={150 + index * 50}
                   >
-                    <div className="service-icon">
-                      <Icon size={24} strokeWidth={2} />
+                    <div className="service-header">
+                      <div className="service-icon">
+                        <Icon size={24} strokeWidth={2} />
+                      </div>
+                      <h3 className="service-name">
+                        {t(`servicesRates.addons.items.${addon.key}.name`)}
+                      </h3>
                     </div>
-                    <h3 className="service-name">
-                      {t(`servicesRates.addons.items.${addon.key}.name`)}
-                    </h3>
-                    <p className="service-price">{addon.price}</p>
                     <p className="service-description">
                       {t(`servicesRates.addons.items.${addon.key}.description`)}
                     </p>
@@ -178,13 +201,14 @@ const ServicesRates = () => {
                     data-aos="fade-up"
                     data-aos-delay={150 + index * 50}
                   >
-                    <div className="service-icon">
-                      <Icon size={24} strokeWidth={2} />
+                    <div className="service-header">
+                      <div className="service-icon">
+                        <Icon size={24} strokeWidth={2} />
+                      </div>
+                      <h3 className="service-name">
+                        {t(`servicesRates.modifications.items.${mod.key}.name`)}
+                      </h3>
                     </div>
-                    <h3 className="service-name">
-                      {t(`servicesRates.modifications.items.${mod.key}.name`)}
-                    </h3>
-                    <p className="service-price">{mod.price}</p>
                     <p className="service-description">
                       {t(
                         `servicesRates.modifications.items.${mod.key}.description`
@@ -206,11 +230,7 @@ const ServicesRates = () => {
             <p className="note-text">{t("servicesRates.note")}</p>
           </div>
         </div>
-      </main>
-
-      <Footer />
-      <CookieBanner />
-      <ScrollProgress />
+      </div>
     </>
   );
 };

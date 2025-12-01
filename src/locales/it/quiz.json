@@ -58,6 +58,9 @@
       "finish": "Ottieni la Mia Stima",
       "restart": "Ricomincia"
     },
+    "ui": {
+      "confirm": "Conferma Selezione"
+    },
     "questions": {
       "q1": {
         "id": "websiteType",
@@ -575,6 +578,39 @@
       "title": "La Tua Stima Progetto",
       "subtitle": "In base alle tue risposte, ecco cosa consiglio",
       "disclaimer": "Questa è una stima automatica. Il prezzo finale può variare in base ai requisiti specifici discussi in consulenza.",
+      "modelFit": "Adattamento Modello",
+      "complexityScore": "Punteggio Complessità",
+      "sentToTeam": "Inviato al team",
+      "share": "Condividi",
+      "copied": "Copiato!",
+      "recommendedPlan": "Piano Consigliato",
+      "timelineLabel": "Tempistica:",
+      "estimatedRange": "Range Stimato",
+      "perMonth": "/ mese",
+      "oneTime": "una tantum",
+      "whatYouGet": "Cosa ottieni",
+      "whyThisFits": "Perché è adatto",
+      "complexityLevels": {
+        "low": "Semplice & Veloce",
+        "mid": "Dinamico & Robusto",
+        "high": "Complesso & Scalabile"
+      },
+      "modelLabels": {
+        "managed": "Gestito (Abbonamento)",
+        "owned": "Proprietà (Una Tantum)"
+      },
+      "modelDescriptions": {
+        "managed": "In base alla tua preferenza per il supporto continuo e costi iniziali inferiori, si consiglia un modello in abbonamento.",
+        "owned": "In base alla tua preferenza per l'indipendenza e il controllo a lungo termine, si consiglia un modello di acquisto una tantum."
+      },
+      "emailForm": {
+        "title": "Inviaci i Risultati",
+        "description": "Inserisci la tua email e riceveremo il progetto del tuo sito per iniziare la conversazione.",
+        "success": "Inviato con successo! Ti contatteremo.",
+        "error": "Invio fallito. Riprova per favore.",
+        "alertError": "Impossibile inviare l'email: ",
+        "alertConnectionError": "Impossibile inviare l'email. Controlla la tua connessione e riprova."
+      },
       "sections": {
         "overview": {
           "title": "Panoramica Progetto",

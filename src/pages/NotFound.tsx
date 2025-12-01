@@ -2,12 +2,7 @@ import { useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import { useNavigate } from "react-router-dom";
 import { Home, ArrowLeft, Search } from "lucide-react";
-import Header from "../components/layout/Header";
-import Footer from "../components/layout/Footer";
-import CookieBanner from "../components/ui/CookieBanner";
-import ScrollProgress from "../components/ui/ScrollProgress";
-import LanguageSuggestionBanner from "../components/ui/LanguageSuggestionBanner";
-import MetallicBackground from "../components/ui/backgrounds/MetallicBackground";
+import { SEO } from "../utils/seo";
 import "./NotFound.css";
 
 const NotFound = () => {
@@ -27,59 +22,54 @@ const NotFound = () => {
   };
 
   return (
-    <>
-      <MetallicBackground />
-      <LanguageSuggestionBanner />
-      <Header />
-      <div className="notfound-page" style={{ paddingTop: "80px" }}>
-        <div className="notfound-background">
-          <div className="notfound-circle circle-1"></div>
-          <div className="notfound-circle circle-2"></div>
-          <div className="notfound-circle circle-3"></div>
+    <div className="notfound-page">
+      <SEO
+        title="404 - Page Not Found | AlecsDesign"
+        description="The page you are looking for does not exist."
+        noindex={true}
+      />
+      <div className="notfound-background">
+        <div className="notfound-circle circle-1"></div>
+        <div className="notfound-circle circle-2"></div>
+        <div className="notfound-circle circle-3"></div>
+      </div>
+
+      <div className="notfound-container">
+        <div className="notfound-icon-wrapper">
+          <Search className="notfound-icon" size={80} />
         </div>
 
-        <div className="notfound-container">
-          <div className="notfound-icon-wrapper">
-            <Search className="notfound-icon" size={80} />
-          </div>
+        <h1 className="notfound-title">404</h1>
+        <h2 className="notfound-subtitle">{t("notFound.title")}</h2>
+        <p className="notfound-description">{t("notFound.description")}</p>
 
-          <h1 className="notfound-title">404</h1>
-          <h2 className="notfound-subtitle">{t("notFound.title")}</h2>
-          <p className="notfound-description">{t("notFound.description")}</p>
+        <div className="notfound-actions">
+          <button
+            onClick={handleGoBack}
+            className="notfound-btn notfound-btn-secondary"
+          >
+            <ArrowLeft size={20} />
+            <span>{t("notFound.goBack")}</span>
+          </button>
+          <button
+            onClick={handleGoHome}
+            className="notfound-btn notfound-btn-primary"
+          >
+            <Home size={20} />
+            <span>{t("notFound.goHome")}</span>
+          </button>
+        </div>
 
-          <div className="notfound-actions">
-            <button
-              onClick={handleGoBack}
-              className="notfound-btn notfound-btn-secondary"
-            >
-              <ArrowLeft size={20} />
-              <span>{t("notFound.goBack")}</span>
-            </button>
-            <button
-              onClick={handleGoHome}
-              className="notfound-btn notfound-btn-primary"
-            >
-              <Home size={20} />
-              <span>{t("notFound.goHome")}</span>
-            </button>
-          </div>
-
-          <div className="notfound-suggestions">
-            <p className="suggestions-title">
-              {t("notFound.suggestions.title")}
-            </p>
-            <ul className="suggestions-list">
-              <li>{t("notFound.suggestions.item1")}</li>
-              <li>{t("notFound.suggestions.item2")}</li>
-              <li>{t("notFound.suggestions.item3")}</li>
-            </ul>
-          </div>
+        <div className="notfound-suggestions">
+          <p className="suggestions-title">{t("notFound.suggestions.title")}</p>
+          <ul className="suggestions-list">
+            <li>{t("notFound.suggestions.item1")}</li>
+            <li>{t("notFound.suggestions.item2")}</li>
+            <li>{t("notFound.suggestions.item3")}</li>
+          </ul>
         </div>
       </div>
-      <Footer />
-      <CookieBanner />
-      <ScrollProgress />
-    </>
+    </div>
   );
 };
 

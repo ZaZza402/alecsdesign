@@ -1,0 +1,44 @@
+{
+  "title": "Portfolio",
+  "subtitle": "I miei <0>progetti recenti</0> e la <0>tecnologia</0> utilizzata.",
+  "visitWebsite": "Visita il Sito",
+  "techStack": "Stack Tecnologico",
+  "projects": {
+    "puntomigrare": {
+      "title": "Punto Migrare",
+      "description": "Una piattaforma completa per un centro di assistenza immigrazione. Il sito è progettato per organizzare informazioni burocratiche complesse in un'interfaccia accessibile e intuitiva. Dispone di moduli personalizzati per le richieste dei clienti e interazioni modali per fornire un rapido accesso ai servizi essenziali.",
+      "stack": [
+        "JavaScript",
+        "HTML5",
+        "CSS3",
+        "Moduli Personalizzati",
+        "Modali"
+      ]
+    },
+    "psychologist": {
+      "title": "Portfolio Psicologo",
+      "description": "Una presenza digitale serena e professionale per una psicologa clinica. Il design si concentra sulla costruzione della fiducia attraverso una tavolozza di colori rilassanti e una tipografia chiara. Include sezioni per i servizi di terapia, il background professionale e un metodo di contatto facile da usare.",
+      "stack": ["React", "TypeScript", "Tailwind CSS", "Framer Motion"]
+    },
+    "sartoria": {
+      "title": "Sartoria Vio",
+      "description": "Un'elegante vetrina per una sartoria su misura a Roma. Il sito web riflette la precisione e l'arte del mestiere, utilizzando immagini di alta qualità e un layout sofisticato. Serve come portfolio digitale per i migliori lavori del sarto.",
+      "stack": ["React", "TypeScript", "Tailwind CSS", "Responsive Design"]
+    },
+    "restaurant": {
+      "title": "Ristorante 13",
+      "description": "Un sito web vivace per un moderno ristorante romano. Le caratteristiche principali includono un menu digitale interattivo, una galleria fotografica dei piatti d'autore e un'integrazione perfetta per la prenotazione dei tavoli. L'approccio mobile-first assicura che i clienti possano visualizzare facilmente il menu sui loro telefoni.",
+      "stack": ["React", "TypeScript", "Tailwind CSS", "Menu Interattivo"]
+    },
+    "ctx": {
+      "title": "CTX Fintech Template",
+      "description": "Un modello di dashboard fintech all'avanguardia progettato per le moderne applicazioni finanziarie. Dimostra componenti UI complessi, layout di visualizzazione dei dati e un'estetica elegante in modalità scura adatta per piattaforme di trading o portafogli crittografici.",
+      "stack": ["React", "TypeScript", "Tailwind CSS", "Visualizzazione Dati"]
+    },
+    "velvet": {
+      "title": "Velvet Shaker",
+      "description": "Un sito web elegante e suggestivo per un cocktail bar premium. Il design utilizza immagini ricche e animazioni fluide per catturare l'atmosfera del locale. Include una vetrina del menu dei drink e informazioni sugli eventi.",
+      "stack": ["React", "TypeScript", "Tailwind CSS", "GSAP"]
+    }
+  }
+}

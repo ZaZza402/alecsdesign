@@ -1,17 +1,17 @@
 {
   "title": "Perché ti conviene",
-  "subtitle": "Per la tua attività e per il tuo budget",
+  "subtitle": "Soluzioni pensate per far crescere il tuo business",
   "pillar1": {
-    "title": "Investimento Iniziale Minimo",
-    "description": "Solo €150 di setup + €39/mese invece di migliaia di euro subito. Costa meno di un abbonamento in palestra. Inizia alla grande senza svuotare la cassa."
+    "title": "Efficienza dell'Investimento",
+    "description": "Evita i costi gonfiati delle grandi agenzie o i template economici che si rompono. Che tu scelga un piano gestito o un progetto su misura, il tuo budget viene investito in codice di qualità e valore a lungo termine."
   },
   "pillar2": {
-    "title": "Zero Stress Tecnico",
-    "description": "Dimentica hosting, DNS, certificati SSL o Google Console. Configuro tutto io e mantengo il sito attivo 24/7. Tu mi mandi i testi, io penso a tutto il resto.",
-    "explainer": "Dominio, hosting, sicurezza, SEO e analytics – tutto incluso."
+    "title": "Il Tuo Partner Tecnico",
+    "description": "Agisco come il tuo dipartimento digitale interno. Dalle configurazioni DNS alla sicurezza e hosting, gestisco l'infrastruttura 24/7. Tu ti occupi del business, io mi assicuro che tutto funzioni.",
+    "explainer": "Hosting, sicurezza, architettura SEO e analytics – tutto gestito da me."
   },
   "pillar3": {
-    "title": "Cresce con la Tua Attività",
-    "description": "Parti con un sito essenziale. Quando sarai pronto per vendere online o aggiungere funzionalità avanzate, le integreremo senza dover rifare il sito da capo."
+    "title": "Scalabilità Senza Limiti",
+    "description": "Partiamo da fondamenta solide e veloci. Poiché non utilizzo costruttori di siti limitati, aggiungere e-commerce, prenotazioni o app personalizzate in futuro è semplice. Non dovrai mai rifare il sito da zero."
   }
 }

@@ -1,0 +1,313 @@
+.project-calculator {
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e2e8f0;
+  overflow: hidden;
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  min-height: auto; /* Removed fixed height */
+  width: 100%;
+}
+
+/* Header Area */
+.calculator-header {
+  background: #f8fafc;
+  padding: 1rem 1.5rem; /* Reduced padding */
+  border-bottom: 1px solid #e2e8f0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.calculator-title {
+  font-size: 1.125rem; /* Slightly smaller */
+  font-weight: 700;
+  color: #0f172a;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.calculator-title svg {
+  color: #000000;
+}
+
+.calculator-progress {
+  font-size: 0.875rem;
+  color: #64748b;
+  font-weight: 500;
+}
+
+/* Main Content Area */
+.calculator-content {
+  flex: 1;
+  padding: 1.5rem; /* Reduced padding */
+  display: flex;
+  flex-direction: column;
+}
+
+/* Complexity Meter */
+.complexity-meter-container {
+  margin-bottom: 1.5rem; /* Reduced margin */
+  background: #f1f5f9;
+  border-radius: 12px;
+  padding: 0.75rem 1rem; /* Compact padding */
+  border: 1px solid #e2e8f0;
+}
+
+.meter-label {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #475569;
+}
+
+.meter-track {
+  height: 6px; /* Thinner track */
+  background: #e2e8f0;
+  border-radius: 3px;
+  overflow: hidden;
+  position: relative;
+}
+
+.meter-fill {
+  height: 100%;
+  border-radius: 3px;
+  transition: width 0.6s cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 0.6s ease;
+}
+
+.meter-markers {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.25rem;
+  font-size: 0.625rem;
+  color: #94a3b8;
+  font-weight: 500;
+}
+
+/* Question Area */
+.question-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Prevent stretching */
+}
+
+.question-text {
+  font-size: 1.25rem; /* Smaller font */
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 1rem; /* Reduced margin */
+  line-height: 1.2; /* Tighter line height */
+}
+
+/* Options Grid */
+.options-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 0.75rem; /* Reduced gap */
+  margin-bottom: 1.5rem; /* Reduced margin */
+}
+
+.calc-option {
+  background: #ffffff;
+  border: 2px solid #e2e8f0;
+  border-radius: 10px;
+  padding: 1rem; /* Reduced padding */
+  text-align: left;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.calc-option:hover {
+  border-color: #cbd5e1;
+  background: #f8fafc;
+}
+
+.calc-option:active {
+  transform: scale(0.99);
+}
+
+.calc-option.selected {
+  border-color: #000000;
+  background: #f8fafc;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.option-check {
+  position: absolute;
+  top: 0.75rem;
+  right: 0.75rem;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  border: 2px solid #cbd5e1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+}
+
+.calc-option.selected .option-check {
+  background: #000000;
+  border-color: #000000;
+  color: #ffffff;
+}
+
+.option-label {
+  font-weight: 600;
+  color: #0f172a;
+  font-size: 0.9375rem; /* Slightly smaller */
+  padding-right: 1.5rem;
+}
+
+.option-desc {
+  font-size: 0.8rem;
+  color: #64748b;
+  margin-top: 0.25rem;
+  line-height: 1.4;
+  display: block;
+}
+
+.calc-option:hover .option-desc {
+  color: #475569;
+}
+
+.calc-option.selected .option-desc {
+  color: #475569;
+}
+
+.option-impact {
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #64748b;
+}
+
+/* Navigation */
+.calculator-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: auto;
+  padding-top: 1.5rem;
+  border-top: 1px solid #f1f5f9;
+}
+
+.nav-btn {
+  padding: 0.625rem 1.25rem; /* Smaller buttons */
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 0.875rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  user-select: none;
+}
+
+.nav-btn-back {
+  background: transparent;
+  color: #64748b;
+  border: 1px solid transparent;
+}
+
+.nav-btn-back:hover:not(:disabled) {
+  color: #0f172a;
+  background: #f1f5f9;
+}
+
+.nav-btn-back:disabled {
+  opacity: 0;
+  cursor: default;
+}
+
+.nav-btn-next {
+  background: #000000;
+  color: #ffffff;
+  border: 1px solid #000000;
+}
+
+.nav-btn-next:hover:not(:disabled) {
+  background: #1f2937;
+  transform: translateY(-1px);
+}
+
+.nav-btn-next:disabled {
+  background: #e2e8f0;
+  border-color: #e2e8f0;
+  color: #94a3b8;
+  cursor: not-allowed;
+  transform: none;
+}
+
+/* Mobile Responsive */
+@media (max-width: 640px) {
+  .project-calculator {
+    border-radius: 0;
+    border: none;
+    box-shadow: none;
+    min-height: auto;
+    height: auto;
+  }
+
+  .calculator-header {
+    padding: 0.75rem 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background: rgba(248, 250, 252, 0.95);
+    backdrop-filter: blur(8px);
+  }
+
+  .calculator-content {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .question-text {
+    font-size: 1.125rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .options-grid {
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .calc-option {
+    padding: 0.75rem;
+    min-height: auto;
+  }
+
+  .complexity-meter-container {
+    margin-bottom: 1rem;
+    padding: 0.5rem 0.75rem;
+  }
+
+  .calculator-nav {
+    padding-top: 1rem;
+    margin-top: 0;
+    position: static;
+    background: transparent;
+    border-top: 1px solid #f1f5f9;
+    padding-bottom: 2rem; /* Add some bottom padding for safe area */
+  }
+}

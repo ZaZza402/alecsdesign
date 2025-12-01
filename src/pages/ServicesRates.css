@@ -1,16 +1,24 @@
-/* Services Rates Page - Editorial Style */
+/* Services Rates Page - EMERGENCY FIX */
+
+/* Main Page Wrapper */
 .services-rates-page {
+  width: 100%;
   min-height: 100vh;
   background: linear-gradient(135deg, #f8fafc 0%, #ffffff 100%);
-  padding-top: 120px; /* Extra padding for header clearance */
   padding-bottom: 4rem;
-  overflow-x: hidden;
+  position: relative;
+  display: block;
+  overflow: visible !important;
 }
 
+/* Container */
 .services-rates-container {
+  width: 100%;
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 2rem;
+  display: block;
+  overflow: visible !important;
 }
 
 /* Hero Section */
@@ -18,6 +26,7 @@
   text-align: center;
   margin-bottom: 5rem;
   padding: 0 1rem;
+  position: relative;
 }
 
 .services-title {
@@ -35,12 +44,16 @@
   line-height: 1.6;
   max-width: 700px;
   margin: 0 auto;
-  text-align: center;
 }
 
 /* Section Structure */
 .services-section {
   margin-bottom: 5rem;
+  width: 100%;
+  position: relative;
+  display: block;
+  height: auto !important;
+  overflow: visible !important;
 }
 
 .section-header {
@@ -67,10 +80,11 @@
 /* Services Grid */
 .services-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 2rem;
-  margin-top: 2rem;
-  overflow: visible; /* Prevent internal scrolling */
+  grid-template-columns: repeat(1, 1fr);
+  gap: 3rem; /* Increased gap */
+  width: 100%;
+  overflow: visible !important;
+  height: auto !important;
 }
 
 @media (min-width: 768px) {
@@ -79,23 +93,30 @@
   }
 }
 
-@media (min-width: 1024px) {
-  .services-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 2.5rem;
-  }
-}
-
-/* Service Card */
+/* Service Card - Compact Layout */
 .service-card {
   background: #ffffff;
   border: 1px solid #e2e8f0;
   border-radius: 12px;
-  padding: 2rem;
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  padding: 2rem; /* Reduced padding for compactness */
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
   position: relative;
-  overflow: visible; /* Allow content to flow naturally */
-  height: auto; /* Let content determine height */
+
+  /* FORCE HEIGHT TO FIT CONTENT */
+  height: auto !important;
+  min-height: 0 !important;
+  max-height: none !important;
+
+  /* FORCE NO SCROLLBARS */
+  overflow: visible !important;
+
+  display: block;
+}
+
+.service-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+  border-color: #f35422;
 }
 
 .service-card::before {
@@ -107,29 +128,33 @@
   height: 0;
   background: linear-gradient(180deg, #f35422 0%, #ff6b3d 100%);
   transition: height 0.3s ease;
-}
-
-.service-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
-  border-color: #f35422;
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
 }
 
 .service-card:hover::before {
   height: 100%;
 }
 
+/* Header container for Icon + Title integration */
+.service-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
 .service-icon {
-  width: 48px;
-  height: 48px;
-  border-radius: 10px;
+  width: 40px; /* Slightly smaller */
+  height: 40px;
+  border-radius: 8px;
   background: linear-gradient(135deg, #fff5f2 0%, #ffe8e1 100%);
   display: flex;
   align-items: center;
   justify-content: center;
   color: #f35422;
-  margin-bottom: 1.5rem;
   transition: transform 0.3s ease;
+  flex-shrink: 0;
 }
 
 .service-card:hover .service-icon {
@@ -137,32 +162,25 @@
 }
 
 .service-name {
-  font-size: 1.375rem;
+  font-size: 1.25rem; /* Slightly smaller */
   font-weight: 700;
   color: #1e293b;
-  margin-bottom: 0.75rem;
-  line-height: 1.3;
-}
-
-.service-price {
-  font-size: 1.5rem;
-  font-weight: 800;
-  color: #f35422;
-  margin-bottom: 1rem;
+  line-height: 1.2;
+  margin: 0; /* Reset margin */
 }
 
 .service-description {
-  font-size: 1rem;
+  font-size: 0.95rem;
   color: #64748b;
-  line-height: 1.6;
-  margin-bottom: 1.5rem;
-}
-
-/* Service Examples List */
+  line-height: 1.5;
+  margin-bottom: 1rem; /* Reduced margin */
+  display: block;
+} /* Service Examples List */
 .service-examples {
   list-style: none;
   padding: 0;
   margin: 0;
+  display: block;
 }
 
 .service-examples li {
@@ -192,9 +210,11 @@
   background: linear-gradient(135deg, #fff5f2 0%, #ffe8e1 100%);
   border: 2px solid #f35422;
   border-radius: 12px;
-  padding: 2rem;
+  padding: 3rem;
   margin-top: 4rem;
   text-align: center;
+  height: auto !important;
+  overflow: visible !important;
 }
 
 .note-text {
@@ -203,24 +223,16 @@
   line-height: 1.7;
   margin: 0 auto;
   font-weight: 500;
-  text-align: center;
   max-width: 800px;
 }
 
 /* Mobile Adjustments */
 @media (max-width: 767px) {
-  .services-rates-page {
-    padding-top: 100px; /* Adjusted for mobile header */
-  }
-
   .services-rates-container {
     padding: 0 1.5rem;
   }
 
-  .services-hero {
-    margin-bottom: 3rem;
-  }
-
+  .services-hero,
   .services-section {
     margin-bottom: 3rem;
   }
@@ -230,45 +242,6 @@
   }
 
   .service-card {
-    padding: 1.5rem;
+    padding: 2rem; /* Slightly less padding on mobile but still generous */
   }
-
-  .service-name {
-    font-size: 1.25rem;
-  }
-
-  .service-price {
-    font-size: 1.375rem;
-  }
-
-  .services-note {
-    padding: 1.5rem;
-  }
-
-  .note-text {
-    font-size: 1rem;
-  }
-}
-
-/* Tablet Adjustments */
-@media (min-width: 768px) and (max-width: 1023px) {
-  .services-rates-page {
-    padding-top: 110px;
-  }
-}
-
-/* Animation Support */
-[data-aos] {
-  pointer-events: auto;
-}
-
-/* Prevent scroll jump during animations */
-.services-grid [data-aos]:not(.aos-animate) {
-  opacity: 0;
-  transform: translateY(30px);
-}
-
-.services-grid [data-aos].aos-animate {
-  opacity: 1;
-  transform: translateY(0);
 }

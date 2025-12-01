@@ -86,7 +86,7 @@ const HeroSection: React.FC = () => {
   const handleWhatsAppClick = () => {
     trackWhatsAppClick("Hero Section");
     trackCTAClick("WhatsApp Contact", "Hero Section");
-    window.open("https://wa.me/380150307", "_blank");
+    window.open("https://wa.me/3801503074", "_blank");
   };
 
   return (

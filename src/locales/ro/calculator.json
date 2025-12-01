@@ -1,0 +1,163 @@
+{
+  "calculator": {
+    "questions": {
+      "q1": {
+        "question": "Care este rolul principal al acestui site?",
+        "options": {
+          "opt1": {
+            "label": "Informare / Validare",
+            "desc": "Stabilește credibilitate și oferă informații esențiale."
+          },
+          "opt2": {
+            "label": "Marketing / Generare Lead-uri",
+            "desc": "Atrage clienți noi și capturează lead-uri eficient."
+          },
+          "opt3": {
+            "label": "Vânzări / Utilitar / Aplicație",
+            "desc": "Vinde produse direct sau oferă instrumente complexe."
+          }
+        }
+      },
+      "q2": {
+        "question": "Cum gestionezi partea 'Tech' (DNS, Hosting, Update)?",
+        "options": {
+          "opt1": {
+            "label": "Am echipă IT / Programez",
+            "desc": "Tu gestionezi detaliile tehnice; noi livrăm codul."
+          },
+          "opt2": {
+            "label": "Mă descurc cu un panou",
+            "desc": "Panou de administrare ușor pentru a gestiona conținutul."
+          },
+          "opt3": {
+            "label": "Vreau să se ocupe altcineva",
+            "desc": "Serviciu complet - gestionăm hosting, actualizări și mentenanță."
+          }
+        }
+      },
+      "q3": {
+        "question": "Cât de des se va schimba conținutul?",
+        "options": {
+          "opt1": {
+            "label": "Rar (Informații statice)",
+            "desc": "Setează și uită. Perfect pentru site-uri de prezentare."
+          },
+          "opt2": {
+            "label": "Lunar (Blog/Proiecte)",
+            "desc": "Actualizări regulate pentru a menține audiența implicată."
+          },
+          "opt3": {
+            "label": "Zilnic (Produse/Utilizatori)",
+            "desc": "Actualizări frecvente pentru afaceri dinamice."
+          }
+        }
+      },
+      "q4": {
+        "question": "Ai nevoie de funcționalități specifice?",
+        "options": {
+          "opt1": {
+            "label": "Niciuna / Doar formular contact",
+            "desc": "Păstrează totul simplu și concentrat."
+          },
+          "opt2": {
+            "label": "Suport multilingv",
+            "desc": "Ajunge la o audiență internațională mai largă."
+          },
+          "opt3": {
+            "label": "Sistem de rezervări / Calendar",
+            "desc": "Permite clienților să programeze întâlniri online."
+          },
+          "opt4": {
+            "label": "Procesare plăți / Magazin online",
+            "desc": "Acceptă plăți în siguranță pe site-ul tău."
+          }
+        }
+      },
+      "q5": {
+        "question": "Preferință Financiară",
+        "options": {
+          "opt1": {
+            "label": "Investiție unică",
+            "desc": "Plătește o dată, deține-l pentru totdeauna."
+          },
+          "opt2": {
+            "label": "Abonament lunar",
+            "desc": "Cost inițial mai mic, include suport continuu."
+          }
+        }
+      }
+    },
+    "results": {
+      "managed": {
+        "title": "Parteneriat Gestionat",
+        "desc": "Cauți liniște și performanță."
+      },
+      "owned": {
+        "title": "Deținere Proiect",
+        "desc": "Cauți control și independență."
+      },
+      "tiers": {
+        "low": "Soluție Launchpad",
+        "mid": "Soluție Dinamică",
+        "high": "Soluție Platformă"
+      },
+      "details": {
+        "low": {
+          "priceRange": "€500 - €900",
+          "timeline": "1 Săptămână",
+          "features": [
+            "O Singură Pagină / 3 Pagini",
+            "Formular de Contact",
+            "SEO De Bază",
+            "Responsive pe Mobil"
+          ],
+          "bestFor": [
+            "Portofolii Personale",
+            "Landing Pages",
+            "Afaceri Locale Mici"
+          ]
+        },
+        "mid": {
+          "priceRange": "€1,000 - €2,500",
+          "timeline": "2-4 Săptămâni",
+          "features": [
+            "Integrare CMS",
+            "Secțiune Blog / Știri",
+            "SEO Avansat",
+            "Panou de Analiză"
+          ],
+          "bestFor": [
+            "Afaceri în Creștere",
+            "Creatori de Conținut",
+            "Prestatori de Servicii"
+          ]
+        },
+        "high": {
+          "priceRange": "€3,000+",
+          "timeline": "1-2 Luni",
+          "features": [
+            "Funcționalități Personalizate",
+            "Conturi Utilizator",
+            "Integrări API",
+            "Performanță Ridicată"
+          ],
+          "bestFor": ["E-commerce", "Produse SaaS", "Organizații Mari"]
+        }
+      }
+    },
+    "ui": {
+      "title": "Calculator Proiect",
+      "step": "Pasul",
+      "of": "din",
+      "back": "Înapoi",
+      "next": "Următorul Pas",
+      "calculate": "Calculează Rezultatul",
+      "analyzing": "Analizăm nevoile tale...",
+      "complexity": "Complexitate Proiect",
+      "simple": "Simplu",
+      "dynamic": "Dinamic",
+      "complex": "Complex",
+      "confirm": "Confirmă Selecția"
+    }
+  }
+}

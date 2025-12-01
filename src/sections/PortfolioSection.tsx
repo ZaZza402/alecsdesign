@@ -1,98 +1,187 @@
-import { useEffect } from "react";
+import { useState } from "react";
 import { useTranslation } from "react-i18next";
-import { useInView } from "react-intersection-observer";
-import { ExternalLink } from "lucide-react";
-import { trackSectionView } from "../utils/analytics";
+import { useNavigate } from "react-router-dom";
+import Modal from "react-modal";
+import { X, ExternalLink, ChevronRight } from "lucide-react";
 import "./PortfolioSection.css";
+
+// Bind modal to appElement for accessibility
+Modal.setAppElement("#root");
 
 interface Project {
   id: string;
   url: string;
   image: string;
-  category: string;
-  techStack: string;
+  title: string;
+  description: string;
+  canPreview: boolean;
 }
 
 const PortfolioSection = () => {
-  const { t } = useTranslation();
-  const { ref, inView } = useInView({
-    triggerOnce: true,
-    threshold: 0.1,
-  });
+  const { t, i18n } = useTranslation();
+  const navigate = useNavigate();
+  const [modalIsOpen, setModalIsOpen] = useState(false);
+  const [currentUrl, setCurrentUrl] = useState("");
+  const [isLoading, setIsLoading] = useState(true);
 
-  // Track section view
-  useEffect(() => {
-    if (inView) {
-      trackSectionView("Portfolio Section");
+  const projects: Project[] = [
+    {
+      id: "immigration-agency",
+      url: "https://www.puntomigrare.it",
+      image: "/portfolio/website-puntomigrare-mockup.webp",
+      title: "Punto Migrare",
+      description: t("portfolio.projects.immigration-agency.description"),
+      canPreview: true,
+    },
+    {
+      id: "psychologist",
+      url: "https://www.popescumaria.ro",
+      image: "/portfolio/website-psiholog-mockup.webp",
+      title: "Psiholog Portfolio",
+      description: t("portfolio.projects.psychologist.description"),
+      canPreview: false,
+    },
+    {
+      id: "sartoria",
+      url: "https://sartoria-viorel.vercel.app",
+      image: "/portfolio/website-sartoria-mockup.webp",
+      title: "Sartoria Vio",
+      description: t("portfolio.projects.sartoria.description"),
+      canPreview: false,
+    },
+    {
+      id: "restaurant",
+      url: "https://ristorante13.alecsdesign.xyz",
+      image: "/portfolio/website-restaurant-mockup.webp",
+      title: "Ristorante 13",
+      description: t("portfolio.projects.restaurant.description"),
+      canPreview: false,
+    },
+  ];
+
+  const openPreview = (project: Project, e: React.MouseEvent) => {
+    if (!project.canPreview) {
+      // Allow default behavior (open in new tab) if preview is not supported
+      return;
     }
-  }, [inView]);
+    e.preventDefault();
+    setCurrentUrl(project.url);
+    setModalIsOpen(true);
+    setIsLoading(true);
+    document.body.style.overflow = "hidden"; // Prevent background scrolling
+  };
 
-  const projects = t("portfolio.projects", {
-    returnObjects: true,
-  }) as Project[];
+  const closePreview = () => {
+    setModalIsOpen(false);
+    setCurrentUrl("");
+    document.body.style.overflow = "unset";
+  };
 
-  // Reorder: velvet-shaker (bar) → immigration-agency (services) → psychologist
-  const reorderedProjects = [
-    projects.find((p) => p.id === "velvet-shaker"),
-    projects.find((p) => p.id === "immigration-agency"),
-    projects.find((p) => p.id === "psychologist"),
-  ].filter(Boolean) as Project[];
+  const handleIframeLoad = () => {
+    setIsLoading(false);
+  };
 
   return (
-    <section id="portfolio" className="portfolio-section" ref={ref}>
-      <div className={`portfolio-container ${inView ? "animate-in" : ""}`}>
-        <div className="portfolio-header">
-          <h2 className="portfolio-title">{t("portfolio.title")}</h2>
-          <p className="portfolio-subtitle">{t("portfolio.subtitle")}</p>
-        </div>
-
-        <div className="projects-grid">
-          {reorderedProjects.map((project, index) => (
-            <div
-              key={project.id}
-              className="project-card"
-              data-aos="fade-up"
-              data-aos-delay={index * 100}
-              data-aos-duration="600"
-            >
-              <div className="project-image-wrapper">
-                <img
-                  src={project.image}
-                  alt={project.category}
-                  className="project-image"
-                  loading="lazy"
-                />
-              </div>
-
-              <div className="project-overlay">
-                <div className="project-info">
-                  <h3 className="project-title">{project.category}</h3>
-                  <p className="project-tech">{project.techStack}</p>
-                </div>
-                <a
-                  href={project.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="project-visit-link"
-                >
-                  <ExternalLink size={20} />
-                  {t("portfolio.visitLive")}
-                </a>
-              </div>
+    <section className="portfolio-section" id="portfolio">
+      <div className="portfolio-container">
+        {projects.map((project, index) => (
+          <div
+            key={project.id}
+            className={`portfolio-item ${index % 2 !== 0 ? "reverse" : ""}`}
+          >
+            <div className="portfolio-image-container">
+              <img
+                src={project.image}
+                alt={project.title}
+                className="portfolio-image"
+                loading="lazy"
+              />
             </div>
-          ))}
-        </div>
+            <div className="portfolio-content">
+              <h3 className="portfolio-logo">{project.title}</h3>
+              <p className="portfolio-description">{project.description}</p>
+              <a
+                href={project.url}
+                target={project.canPreview ? "_self" : "_blank"}
+                rel={project.canPreview ? "" : "noopener noreferrer"}
+                onClick={(e) => openPreview(project, e)}
+                className="portfolio-cta"
+              >
+                {t("portfolio.visitWebsite")} <ChevronRight size={16} />
+              </a>
+            </div>
+          </div>
+        ))}
 
-        <div className="portfolio-cta-section">
-          <h3 className="portfolio-cta-title">{t("portfolio.cta.title")}</h3>
-          <p className="portfolio-cta-subtitle">
-            {t("portfolio.cta.subtitle")}
-          </p>
-          <a href="#contact" className="portfolio-cta-button">
-            {t("portfolio.cta.button")}
-          </a>
+        <div className="portfolio-footer">
+          <button
+            onClick={() => {
+              const lang = i18n.language;
+              const route = lang === "en" ? "/portfolio" : `/${lang}/portfolio`;
+              navigate(route);
+              window.scrollTo(0, 0);
+            }}
+            className="view-all-btn"
+          >
+            {t("portfolio.viewAllProjects")}
+          </button>
         </div>
       </div>
+
+      <Modal
+        isOpen={modalIsOpen}
+        onRequestClose={closePreview}
+        contentLabel="Website Preview"
+        className="preview-modal"
+        overlayClassName="preview-overlay"
+        closeTimeoutMS={300}
+      >
+        <div className="browser-frame">
+          <div className="browser-header">
+            <div className="browser-controls">
+              <span className="control red"></span>
+              <span className="control yellow"></span>
+              <span className="control green"></span>
+            </div>
+            <div className="browser-address-bar">
+              <span className="lock-icon">🔒</span>
+              <span className="address-url">{currentUrl}</span>
+            </div>
+            <div className="browser-actions">
+              <a
+                href={currentUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="open-external"
+                title="Open in new tab"
+              >
+                <ExternalLink size={18} />
+              </a>
+              <button
+                onClick={closePreview}
+                className="close-preview"
+                title="Close preview"
+              >
+                <X size={20} />
+              </button>
+            </div>
+          </div>
+          <div className="browser-content">
+            {isLoading && (
+              <div className="preview-loader">
+                <div className="spinner"></div>
+                <p>Loading preview...</p>
+              </div>
+            )}
+            <iframe
+              src={currentUrl}
+              title="Website Preview"
+              className="preview-iframe"
+              onLoad={handleIframeLoad}
+            />
+          </div>
+        </div>
+      </Modal>
     </section>
   );
 };

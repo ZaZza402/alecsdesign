@@ -575,6 +575,39 @@
       "title": "Estimarea Proiectului Tău",
       "subtitle": "Pe baza răspunsurilor tale, iată ce recomand",
       "disclaimer": "Aceasta este o estimare automată. Prețul final poate varia în funcție de cerințele specifice discutate în consultare.",
+      "modelFit": "Potrivire Model",
+      "complexityScore": "Scor Complexitate",
+      "sentToTeam": "Trimis la echipă",
+      "share": "Distribuie",
+      "copied": "Copiat!",
+      "recommendedPlan": "Plan Recomandat",
+      "timelineLabel": "Termen:",
+      "estimatedRange": "Interval Estimat",
+      "perMonth": "/ lună",
+      "oneTime": "o singură dată",
+      "whatYouGet": "Ce primești",
+      "whyThisFits": "De ce se potrivește",
+      "complexityLevels": {
+        "low": "Simplu & Rapid",
+        "mid": "Dinamic & Robust",
+        "high": "Complex & Scalabil"
+      },
+      "modelLabels": {
+        "managed": "Gestionat (Abonament)",
+        "owned": "Deținut (O singură dată)"
+      },
+      "modelDescriptions": {
+        "managed": "Pe baza preferinței tale pentru suport continuu și costuri inițiale mai mici, se recomandă un model de abonament.",
+        "owned": "Pe baza preferinței tale pentru independență și control pe termen lung, se recomandă un model de achiziție unică."
+      },
+      "emailForm": {
+        "title": "Trimite-ne Rezultatele",
+        "description": "Introdu adresa ta de email și vom primi planul proiectului tău pentru a începe conversația.",
+        "success": "Trimis cu succes! Te vom contacta.",
+        "error": "Trimitere eșuată. Te rugăm să încerci din nou.",
+        "alertError": "Nu s-a putut trimite emailul: ",
+        "alertConnectionError": "Nu s-a putut trimite emailul. Verifică conexiunea și încearcă din nou."
+      },
       "sections": {
         "overview": {
           "title": "Prezentare Proiect",

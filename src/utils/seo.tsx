@@ -15,6 +15,7 @@ interface SEOProps {
   };
   canonical?: string;
   noindex?: boolean;
+  jsonLd?: object;
 }
 
 // Map language codes to Open Graph locale codes
@@ -33,6 +34,7 @@ export const SEO = ({
   article,
   canonical,
   noindex = false,
+  jsonLd,
 }: SEOProps) => {
   const { i18n } = useTranslation();
   const currentLang = i18n.language || "en";
@@ -187,7 +189,7 @@ export const SEO = ({
     currentLang,
   ]);
 
-  return null;
+  return jsonLd ? <StructuredData data={jsonLd} /> : null;
 };
 
 // Structured Data Schemas
@@ -231,7 +233,6 @@ export const generateLocalBusinessSchema = () => {
         name: "Europe",
       },
     ],
-    priceRange: "€150 - €2000+",
     openingHours: "Mo-Fr 09:00-18:00",
     sameAs: [
       "https://www.facebook.com/ax.m826/",

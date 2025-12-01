@@ -1,17 +1,17 @@
 {
-  "title": "Why this makes sense",
-  "subtitle": "For small businesses and for you",
+  "title": "Why Partner With Me?",
+  "subtitle": "Built for growth, designed for peace of mind",
   "pillar1": {
-    "title": "Minimal Upfront Investment",
-    "description": "Pay just €150 setup + €39/month instead of thousands upfront. Preserve your capital for marketing and growth while still getting a premium website."
+    "title": "Smart Capital Efficiency",
+    "description": "Avoid the trap of rigid agency fees or cheap templates that break. Whether you choose a managed plan or a custom build, your investment goes directly into high-quality code and long-term asset value."
   },
   "pillar2": {
-    "title": "I Handle All The Technical Stuff",
-    "description": "Forget about hosting, DNS, SSL certificates, or Google Console. I set up everything and keep it running 24/7. You just send me content and I make it live.",
-    "explainer": "Domain, hosting, security, SEO, analytics – all included in your subscription."
+    "title": "Your Dedicated Tech Partner",
+    "description": "I act as your internal digital department. From complex DNS configurations to security protocols and hosting, I handle the infrastructure 24/7 so you can focus entirely on running your business.",
+    "explainer": "Hosting, security, SEO architecture, and analytics – fully managed."
   },
   "pillar3": {
-    "title": "Scales With Your Business",
-    "description": "Start with a solid foundation. When you're ready for e-commerce, booking systems, or custom features, we simply add them. No need to rebuild from scratch."
+    "title": "Built to Scale Without Limits",
+    "description": "We start with a solid, high-performance foundation. Because we don't use restrictive site builders, adding e-commerce, booking systems, or custom apps later is seamless. No rebuilding required."
   }
 }

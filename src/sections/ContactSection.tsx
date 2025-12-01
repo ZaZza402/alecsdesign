@@ -65,6 +65,15 @@ const ContactSection = () => {
 
   const onSubmit = async (data: ContactFormData) => {
     try {
+      // Simulate API call in development
+      if (import.meta.env.DEV) {
+        await new Promise((resolve) => setTimeout(resolve, 1500));
+        console.log("Form submitted (DEV mode):", data);
+        showToast("success", t("contact.successMessage"));
+        reset();
+        return;
+      }
+
       // Send form data to serverless function
       const response = await fetch("/api/contact", {
         method: "POST",
@@ -185,6 +194,7 @@ const ContactSection = () => {
               <input
                 type="text"
                 id="name"
+                autoComplete="name"
                 className={`form-input ${errors.name ? "error" : ""}`}
                 {...register("name", {
                   required: t("contact.form.nameRequired"),
@@ -203,6 +213,7 @@ const ContactSection = () => {
               <input
                 type="text"
                 id="contact"
+                autoComplete="email"
                 className={`form-input ${errors.contact ? "error" : ""}`}
                 {...register("contact", {
                   required: t("contact.form.contactRequired"),
@@ -221,6 +232,7 @@ const ContactSection = () => {
             </label>
             <textarea
               id="business"
+              autoComplete="organization"
               rows={3}
               className={`form-textarea ${errors.business ? "error" : ""}`}
               {...register("business", {
