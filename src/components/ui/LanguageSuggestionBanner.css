@@ -97,7 +97,7 @@
     max-width: none;
     transform: translateY(150%);
   }
-  
+
   .language-banner.slide-in {
     transform: translateY(0);
   }

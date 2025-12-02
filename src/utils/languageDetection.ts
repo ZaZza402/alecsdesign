@@ -67,18 +67,18 @@ function getBrowserLanguage(): SupportedLanguage | null {
   try {
     const nav = navigator as Navigator & { userLanguage?: string };
     const browserLang = navigator.language || nav.userLanguage || "";
-    
+
     // Check exact match first
     if (BROWSER_LANG_MAP[browserLang]) {
       return BROWSER_LANG_MAP[browserLang];
     }
 
     // Check for language code prefix (e.g. "en-AU" -> "en")
-    const langPrefix = browserLang.split('-')[0];
+    const langPrefix = browserLang.split("-")[0];
     if (SUPPORTED_LANGUAGES.includes(langPrefix as SupportedLanguage)) {
       return langPrefix as SupportedLanguage;
     }
-    
+
     return null;
   } catch (error) {
     console.warn("Could not detect browser language:", error);

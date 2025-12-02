@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { createPortal } from "react-dom";
 import { useTranslation } from "react-i18next";
 import { X } from "lucide-react";
 import {
@@ -63,7 +64,9 @@ const LanguageSuggestionBanner = () => {
 
   const langInfo = languageNames[suggestedLang as keyof typeof languageNames];
 
-  return (
+  // Use a portal to render directly into the body, avoiding any parent stacking contexts
+  // that might break position: fixed (e.g. transforms, filters)
+  return createPortal(
     <div className={`language-banner ${isVisible ? "slide-in" : ""}`}>
       <div className="language-banner-content">
         <p className="language-banner-text">{langInfo.prompt}</p>
@@ -80,7 +83,8 @@ const LanguageSuggestionBanner = () => {
           </button>
         </div>
       </div>
-    </div>
+    </div>,
+    document.body
   );
 };
 
