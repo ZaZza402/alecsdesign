@@ -285,12 +285,18 @@
   flex: 1;
   position: relative;
   background: #ffffff;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  overscroll-behavior: contain;
 }
 
 .preview-iframe {
   width: 100%;
   height: 100%;
   border: none;
+  display: block;
+  /* Ensure iframe receives pointer events */
+  pointer-events: auto;
 }
 
 .preview-loader {

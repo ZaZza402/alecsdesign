@@ -47,7 +47,7 @@ const PortfolioSection = () => {
       image: "/portfolio-assets/website-sartoria-mockup.webp",
       title: "Sartoria Vio",
       description: t("portfolio.projects.sartoria.description"),
-      canPreview: false,
+      canPreview: true,
     },
     {
       id: "restaurant",
@@ -55,7 +55,7 @@ const PortfolioSection = () => {
       image: "/portfolio-assets/website-restaurant-mockup.webp",
       title: "Ristorante 13",
       description: t("portfolio.projects.restaurant.description"),
-      canPreview: false,
+      canPreview: true,
     },
   ];
 
@@ -158,12 +158,14 @@ const PortfolioSection = () => {
                 <p>Loading preview...</p>
               </div>
             )}
-            <iframe
-              src={currentUrl}
-              title="Website Preview"
-              className="preview-iframe"
-              onLoad={handleIframeLoad}
-            />
+            {currentUrl && (
+              <iframe
+                src={currentUrl}
+                title="Website Preview"
+                className="preview-iframe"
+                onLoad={handleIframeLoad}
+              />
+            )}
           </div>
         </div>
       </Modal>
