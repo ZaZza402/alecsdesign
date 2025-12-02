@@ -1,17 +1,26 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { useTranslation, Trans } from "react-i18next";
-import { ExternalLink } from "lucide-react";
+import { ExternalLink, X } from "lucide-react";
+import Modal from "react-modal";
 import { SEO } from "../utils/seo";
 import "./PortfolioPage.css";
+
+// Bind modal to app element
+Modal.setAppElement("#root");
 
 interface Project {
   id: string;
   image: string;
   url: string;
+  canPreview: boolean;
 }
 
 const PortfolioPage = () => {
   const { t } = useTranslation();
+  const [modalIsOpen, setModalIsOpen] = useState(false);
+  const [currentUrl, setCurrentUrl] = useState("");
+  const [currentTitle, setCurrentTitle] = useState("");
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -22,31 +31,37 @@ const PortfolioPage = () => {
       id: "puntomigrare",
       image: "/portfolio-assets/website-puntomigrare-mockup.webp",
       url: "https://www.puntomigrare.it",
+      canPreview: true,
     },
     {
       id: "psychologist",
       image: "/portfolio-assets/website-psiholog-mockup.webp",
       url: "https://www.popescumaria.ro",
+      canPreview: false, // Blocked by X-Frame-Options
     },
     {
       id: "sartoria",
       image: "/portfolio-assets/website-sartoria-mockup.webp",
       url: "https://sartoria-viorel.vercel.app",
+      canPreview: true,
     },
     {
       id: "restaurant",
       image: "/portfolio-assets/website-restaurant-mockup.webp",
       url: "https://ristorante13.alecsdesign.xyz",
+      canPreview: true,
     },
     {
       id: "ctx",
       image: "/portfolio-assets/website-fintech-template-mockup.webp",
       url: "https://ctx.alecsdesign.xyz",
+      canPreview: true,
     },
     {
       id: "velvet",
       image: "/portfolio-assets/website-bar-velvet-mockup.webp",
       url: "https://velvet-shaker.alecsdesign.xyz",
+      canPreview: false,
     },
   ];
 
@@ -62,6 +77,30 @@ const PortfolioPage = () => {
       description: t(`portfolioPage.projects.${project.id}.description`),
       url: project.url,
     })),
+  };
+
+  const openPreview = (
+    e: React.MouseEvent,
+    url: string,
+    title: string,
+    canPreview: boolean
+  ) => {
+    if (!canPreview) return;
+    e.preventDefault();
+    setCurrentUrl(url);
+    setCurrentTitle(title);
+    setIsLoading(true);
+    setModalIsOpen(true);
+  };
+
+  const closePreview = () => {
+    setModalIsOpen(false);
+    setCurrentUrl("");
+    setCurrentTitle("");
+  };
+
+  const handleIframeLoad = () => {
+    setIsLoading(false);
   };
 
   return (
@@ -127,6 +166,14 @@ const PortfolioPage = () => {
                       target="_blank"
                       rel="noopener noreferrer"
                       className="visit-site-btn"
+                      onClick={(e) =>
+                        openPreview(
+                          e,
+                          project.url,
+                          t(`portfolioPage.projects.${project.id}.title`),
+                          project.canPreview
+                        )
+                      }
                     >
                       {t("portfolioPage.visitWebsite")}{" "}
                       <ExternalLink size={16} />
@@ -138,6 +185,49 @@ const PortfolioPage = () => {
           })}
         </div>
       </div>
+
+      <Modal
+        isOpen={modalIsOpen}
+        onRequestClose={closePreview}
+        contentLabel="Website Preview"
+        className="preview-modal"
+        overlayClassName="preview-overlay"
+        closeTimeoutMS={300}
+      >
+        <div className="browser-frame">
+          <div className="browser-header">
+            <div className="browser-actions">
+              <button
+                onClick={closePreview}
+                className="close-preview"
+                aria-label="Close preview"
+              >
+                <X size={20} />
+              </button>
+            </div>
+            <div className="browser-title">{currentTitle}</div>
+            <div style={{ width: 36 }}></div> {/* Spacer for centering */}
+          </div>
+          <div className="browser-content">
+            {isLoading && (
+              <div className="preview-loader">
+                <div className="spinner"></div>
+                <p>Loading preview...</p>
+              </div>
+            )}
+            {currentUrl && (
+              <iframe
+                src={currentUrl}
+                className="preview-iframe"
+                title="Website Preview"
+                onLoad={handleIframeLoad}
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                sandbox="allow-same-origin allow-scripts allow-forms allow-popups"
+              />
+            )}
+          </div>
+        </div>
+      </Modal>
     </div>
   );
 };

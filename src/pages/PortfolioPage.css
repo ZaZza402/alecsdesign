@@ -161,3 +161,157 @@
     height: 200px;
   }
 }
+
+/* Modal Styles */
+.preview-overlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.85);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 1rem;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.preview-overlay.ReactModal__Overlay--after-open {
+  opacity: 1;
+}
+
+.preview-overlay.ReactModal__Overlay--before-close {
+  opacity: 0;
+}
+
+.preview-modal {
+  width: 100%;
+  max-width: 1200px;
+  height: 85vh;
+  /* Ensure modal fits within viewport with margin */
+  max-height: calc(100vh - 2rem);
+  background: transparent;
+  border: none;
+  outline: none;
+  transform: scale(0.95);
+  transition: transform 0.3s ease;
+  /* Center in viewport */
+  margin: auto;
+}
+
+.preview-modal.ReactModal__Content--after-open {
+  transform: scale(1);
+}
+
+.preview-modal.ReactModal__Content--before-close {
+  transform: scale(0.95);
+}
+
+/* Browser Frame Styles */
+.browser-frame {
+  background: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+}
+
+.browser-header {
+  background: #f1f5f9;
+  padding: 0.5rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #e2e8f0;
+  height: 48px;
+}
+
+.browser-title {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #64748b;
+}
+
+.browser-actions {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.close-preview {
+  padding: 0.5rem;
+  border-radius: 6px;
+  color: #64748b;
+  transition: all 0.2s;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.close-preview:hover {
+  background: #fee2e2;
+  color: #ef4444;
+}
+
+.browser-content {
+  flex: 1;
+  position: relative;
+  background: #ffffff;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  overscroll-behavior: contain;
+}
+
+.preview-iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  display: block;
+  /* Ensure iframe receives pointer events */
+  pointer-events: auto;
+}
+
+.preview-loader {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #ffffff;
+  z-index: 10;
+  gap: 1rem;
+  color: #64748b;
+}
+
+.spinner {
+  width: 40px;
+  height: 40px;
+  border: 3px solid #e2e8f0;
+  border-top-color: #f35422;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 768px) {
+  .preview-overlay {
+    padding: 0.5rem;
+  }
+
+  .preview-modal {
+    height: 90vh;
+    max-height: calc(100vh - 1rem);
+    width: 100%;
+  }
+}
