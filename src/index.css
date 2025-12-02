@@ -234,8 +234,6 @@ section {
   /* Remove z-index to let mobile menu stack naturally above */
 }
 
-
-
 @layer base {
   * {
     @apply border-border;

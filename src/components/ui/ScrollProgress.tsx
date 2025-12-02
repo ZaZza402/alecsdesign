@@ -70,12 +70,8 @@ const ScrollProgress = () => {
 
   const openWhatsApp = () => {
     setShowOptions(false);
-    const whatsappUrl = `https://wa.me/380150${String.fromCharCode(
-      51,
-      48,
-      55,
-      52
-    )}`;
+    // Matches footer format: +39 380 150 3074
+    const whatsappUrl = `https://wa.me/393801503074`;
     window.open(whatsappUrl, "_blank");
   };
 
