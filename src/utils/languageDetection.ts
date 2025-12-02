@@ -67,7 +67,19 @@ function getBrowserLanguage(): SupportedLanguage | null {
   try {
     const nav = navigator as Navigator & { userLanguage?: string };
     const browserLang = navigator.language || nav.userLanguage || "";
-    return BROWSER_LANG_MAP[browserLang] || null;
+    
+    // Check exact match first
+    if (BROWSER_LANG_MAP[browserLang]) {
+      return BROWSER_LANG_MAP[browserLang];
+    }
+
+    // Check for language code prefix (e.g. "en-AU" -> "en")
+    const langPrefix = browserLang.split('-')[0];
+    if (SUPPORTED_LANGUAGES.includes(langPrefix as SupportedLanguage)) {
+      return langPrefix as SupportedLanguage;
+    }
+    
+    return null;
   } catch (error) {
     console.warn("Could not detect browser language:", error);
     return null;
@@ -134,14 +146,14 @@ export async function detectUserLanguage(): Promise<SupportedLanguage> {
   // 2. Check browser language settings
   const browserLang = getBrowserLanguage();
   if (browserLang) {
-    saveLanguagePreference(browserLang); // Save for next time
+    // Don't auto-save, let user confirm via banner
     return browserLang;
   }
 
   // 3. Try to detect from geographic location
   const geoLang = await getCountryFromGeoAPI();
   if (geoLang) {
-    saveLanguagePreference(geoLang); // Save for next time
+    // Don't auto-save, let user confirm via banner
     return geoLang;
   }
 

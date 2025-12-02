@@ -1,7 +1,11 @@
 import { useState, useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import { X } from "lucide-react";
-import { detectUserLanguage } from "../../utils/languageDetection";
+import {
+  detectUserLanguage,
+  saveLanguagePreference,
+  type SupportedLanguage,
+} from "../../utils/languageDetection";
 import "./LanguageSuggestionBanner.css";
 
 const LanguageSuggestionBanner = () => {
@@ -17,8 +21,8 @@ const LanguageSuggestionBanner = () => {
   };
 
   useEffect(() => {
-    // Check if user already dismissed the banner in this session
-    const dismissed = sessionStorage.getItem("language-banner-dismissed");
+    // Check if user already dismissed the banner (persistent)
+    const dismissed = localStorage.getItem("language-banner-dismissed");
     if (dismissed) {
       setIsDismissed(true);
       return;
@@ -29,16 +33,18 @@ const LanguageSuggestionBanner = () => {
       const currentLang = i18n.language;
 
       // Only show banner if detected language differs from current
-      if (detectedLang !== currentLang && !dismissed) {
+      if (detectedLang !== currentLang) {
         setSuggestedLang(detectedLang);
         // Delay showing banner slightly for better UX
-        setTimeout(() => setIsVisible(true), 1500);
+        setTimeout(() => setIsVisible(true), 2000);
       }
     });
   }, [i18n.language]);
 
   const handleSwitch = () => {
     if (suggestedLang) {
+      // Save preference so we don't ask again and auto-redirect next time
+      saveLanguagePreference(suggestedLang as SupportedLanguage);
       // Update URL to new language
       window.location.href = `/${suggestedLang}`;
     }
@@ -47,7 +53,8 @@ const LanguageSuggestionBanner = () => {
   const handleDismiss = () => {
     setIsVisible(false);
     setIsDismissed(true);
-    sessionStorage.setItem("language-banner-dismissed", "true");
+    // Save dismissal so we don't annoy the user again
+    localStorage.setItem("language-banner-dismissed", "true");
   };
 
   if (!isVisible || !suggestedLang || isDismissed) {
@@ -69,7 +76,7 @@ const LanguageSuggestionBanner = () => {
             className="language-banner-dismiss"
             aria-label="Dismiss"
           >
-            <X size={18} />
+            <X size={16} />
           </button>
         </div>
       </div>
