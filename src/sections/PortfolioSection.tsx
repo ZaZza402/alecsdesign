@@ -2,7 +2,7 @@ import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { useNavigate } from "react-router-dom";
 import Modal from "react-modal";
-import { X, ExternalLink, ChevronRight } from "lucide-react";
+import { X, ChevronRight } from "lucide-react";
 import "./PortfolioSection.css";
 
 // Bind modal to appElement for accessibility
@@ -138,25 +138,10 @@ const PortfolioSection = () => {
       >
         <div className="browser-frame">
           <div className="browser-header">
-            <div className="browser-controls">
-              <span className="control red"></span>
-              <span className="control yellow"></span>
-              <span className="control green"></span>
-            </div>
-            <div className="browser-address-bar">
-              <span className="lock-icon">🔒</span>
-              <span className="address-url">{currentUrl}</span>
+            <div className="browser-title">
+              {projects.find((p) => p.url === currentUrl)?.title || "Preview"}
             </div>
             <div className="browser-actions">
-              <a
-                href={currentUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="open-external"
-                title="Open in new tab"
-              >
-                <ExternalLink size={18} />
-              </a>
               <button
                 onClick={closePreview}
                 className="close-preview"
