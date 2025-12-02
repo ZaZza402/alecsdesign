@@ -1,8 +1,20 @@
 .portfolio-section {
   padding: 4rem 1.5rem;
-  background: #ffffff; /* Match Hero section background */
+  /* Create overlap with Hero section for continuity */
+  margin-top: -250px;
+  padding-top: calc(4rem + 250px);
+  /* Fade in background from transparent to white */
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.5) 100px,
+    #ffffff 250px
+  );
   position: relative;
   overflow: hidden;
+  z-index: 5;
+  /* Allow clicks to pass through the transparent top area to Hero elements */
+  pointer-events: none;
 }
 
 .portfolio-container {
@@ -11,6 +23,8 @@
   display: flex;
   flex-direction: column;
   gap: 6rem;
+  /* Re-enable pointer events for the content */
+  pointer-events: auto;
 }
 
 /* Portfolio Item - Z Pattern */
