@@ -8,6 +8,7 @@ import DifferenceSection from "./sections/DifferenceSection";
 import HowItWorksSection from "./sections/HowItWorksSection";
 import LanguageSuggestionBanner from "./components/ui/LanguageSuggestionBanner";
 import LoadingSkeleton from "./components/ui/LoadingSkeleton";
+import { BackgroundPaths } from "./components/ui/background-paths";
 
 // Lazy load pages and sections
 const PricingSection = lazy(() => import("./sections/PricingSection"));
@@ -44,7 +45,8 @@ const HomePage = () => {
         keywords={t("seo.keywords")}
         ogType="website"
       />
-      <main role="main" style={{ paddingTop: "80px" }}>
+      <main role="main" style={{ paddingTop: "80px", position: "relative" }}>
+        <BackgroundPaths className="!h-[140vh] !absolute !top-[-80px]" />
         <section id="home" aria-labelledby="hero-heading">
           <HeroSection />
         </section>

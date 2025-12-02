@@ -49,9 +49,11 @@ function FloatingPaths({ position }: { position: number }) {
   );
 }
 
-export function BackgroundPaths() {
+export function BackgroundPaths({ className = "" }: { className?: string }) {
   return (
-    <div className="absolute inset-0 w-full h-full overflow-hidden bg-white dark:bg-neutral-950 -z-10">
+    <div
+      className={`absolute inset-0 w-full h-full overflow-hidden bg-white dark:bg-neutral-950 -z-10 ${className}`}
+    >
       <FloatingPaths position={1} />
       <FloatingPaths position={-1} />
     </div>
