@@ -16,6 +16,7 @@ import {
   trackEmailClick,
   trackWhatsAppClick,
 } from "../utils/analytics";
+import { SEO } from "../utils/seo";
 import "./ContactPage.css";
 
 interface ContactFormData {
@@ -102,6 +103,11 @@ const ContactPage = () => {
 
   return (
     <div className="contact-page">
+      <SEO
+        title={`${t("contact.title")} | AlecsDesign`}
+        description={t("contact.subtitle")}
+        keywords="contact web developer rome, web design quote, hire react developer, website consultation"
+      />
       {/* Toast Notification */}
       {toast && (
         <div className={`toast-notification toast-${toast.type}`}>

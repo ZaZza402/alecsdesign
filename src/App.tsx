@@ -38,6 +38,12 @@ const HomePage = () => {
   const { t } = useTranslation();
   return (
     <>
+      <SEO
+        title={t("seo.title")}
+        description={t("seo.description")}
+        keywords={t("seo.keywords")}
+        ogType="website"
+      />
       <main role="main" style={{ paddingTop: "80px" }}>
         <section id="home" aria-labelledby="hero-heading">
           <HeroSection />
@@ -74,21 +80,11 @@ const HomePage = () => {
 };
 
 export default function App() {
-  const { t } = useTranslation();
-
   return (
     <div
       className="min-h-screen relative"
       style={{ maxWidth: "100vw", overflowX: "hidden" }}
     >
-      {/* SEO Meta Tags */}
-      <SEO
-        title={t("seo.title")}
-        description={t("seo.description")}
-        keywords={t("seo.keywords")}
-        ogType="website"
-      />
-
       {/* Structured Data */}
       <StructuredData data={generateLocalBusinessSchema()} />
       <StructuredData data={generateWebsiteSchema()} />

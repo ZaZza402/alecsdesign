@@ -4,6 +4,7 @@ import { useLocation, useNavigate, Link } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import { Share2, Mail, Send, Check } from "lucide-react";
 import { trackCTAClick, trackEvent } from "../utils/analytics";
+import { SEO } from "../utils/seo";
 import "./QuizPage.css";
 
 interface CalculatorResultState {
@@ -170,6 +171,11 @@ const QuizResults = () => {
 
   return (
     <div className="quiz-results-page">
+      <SEO
+        title={`${resultData.title} | AlecsDesign`}
+        description={resultData.description}
+        noindex={true} // Don't index results pages as they are dynamic/personal
+      />
       <div className="quiz-results-container">
         {/* Header */}
         <motion.div
