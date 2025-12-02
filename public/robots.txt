@@ -3,6 +3,7 @@ User-agent: *
 Allow: /
 
 # Sitemaps
+Sitemap: https://www.alecsdesign.xyz/sitemap-comprehensive.xml
 Sitemap: https://www.alecsdesign.xyz/sitemap.xml
 Sitemap: https://www.alecsdesign.xyz/sitemap-2025.xml
 Sitemap: https://www.alecsdesign.xyz/sitemap-backup.xml

@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <!-- ========================================== -->
+  <!-- HOME PAGES -->
+  <!-- ========================================== -->
+  
+  <!-- Root (English Default) -->
+  <url>
+    <loc>https://www.alecsdesign.xyz/</loc>
+    <lastmod>2025-12-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.alecsdesign.xyz/en" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.alecsdesign.xyz/it" />
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.alecsdesign.xyz/ro" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.alecsdesign.xyz/" />
+  </url>
+
+  <!-- English Explicit -->
+  <url>
+    <loc>https://www.alecsdesign.xyz/en</loc>
+    <lastmod>2025-12-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.alecsdesign.xyz/en" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.alecsdesign.xyz/it" />
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.alecsdesign.xyz/ro" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.alecsdesign.xyz/" />
+  </url>
+
+  <!-- Italian -->
+  <url>
+    <loc>https://www.alecsdesign.xyz/it</loc>
+    <lastmod>2025-12-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.alecsdesign.xyz/en" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.alecsdesign.xyz/it" />
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.alecsdesign.xyz/ro" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.alecsdesign.xyz/" />
+  </url>
+
+  <!-- Romanian -->
+  <url>
+    <loc>https://www.alecsdesign.xyz/ro</loc>
+    <lastmod>2025-12-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.alecsdesign.xyz/en" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.alecsdesign.xyz/it" />
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.alecsdesign.xyz/ro" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.alecsdesign.xyz/" />
+  </url>
+
+  <!-- ========================================== -->
+  <!-- QUIZ PAGES -->
+  <!-- ========================================== -->
+
+  <url>
+    <loc>https://www.alecsdesign.xyz/quiz</loc>
+    <lastmod>2025-12-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.alecsdesign.xyz/en/quiz" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.alecsdesign.xyz/it/quiz" />
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.alecsdesign.xyz/ro/quiz" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.alecsdesign.xyz/quiz" />
+  </url>
+
+  <url>
+    <loc>https://www.alecsdesign.xyz/en/quiz</loc>
+    <lastmod>2025-12-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.alecsdesign.xyz/en/quiz" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.alecsdesign.xyz/it/quiz" />
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.alecsdesign.xyz/ro/quiz" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.alecsdesign.xyz/quiz" />
+  </url>
+
+  <url>
+    <loc>https://www.alecsdesign.xyz/it/quiz</loc>
+    <lastmod>2025-12-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.alecsdesign.xyz/en/quiz" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.alecsdesign.xyz/it/quiz" />
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.alecsdesign.xyz/ro/quiz" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.alecsdesign.xyz/quiz" />
+  </url>
+
+  <url>
+    <loc>https://www.alecsdesign.xyz/ro/quiz</loc>
+    <lastmod>2025-12-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.alecsdesign.xyz/en/quiz" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.alecsdesign.xyz/it/quiz" />
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.alecsdesign.xyz/ro/quiz" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.alecsdesign.xyz/quiz" />
+  </url>
+
+  <!-- ========================================== -->
+  <!-- PORTFOLIO PAGES -->
+  <!-- ========================================== -->
+
+  <url>
+    <loc>https://www.alecsdesign.xyz/portfolio</loc>
+    <lastmod>2025-12-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.alecsdesign.xyz/en/portfolio" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.alecsdesign.xyz/it/portfolio" />
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.alecsdesign.xyz/ro/portfolio" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.alecsdesign.xyz/portfolio" />
+  </url>
+
+  <url>
+    <loc>https://www.alecsdesign.xyz/en/portfolio</loc>
+    <lastmod>2025-12-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.alecsdesign.xyz/en/portfolio" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.alecsdesign.xyz/it/portfolio" />
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.alecsdesign.xyz/ro/portfolio" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.alecsdesign.xyz/portfolio" />
+  </url>
+
+  <url>
+    <loc>https://www.alecsdesign.xyz/it/portfolio</loc>
+    <lastmod>2025-12-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.alecsdesign.xyz/en/portfolio" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.alecsdesign.xyz/it/portfolio" />
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.alecsdesign.xyz/ro/portfolio" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.alecsdesign.xyz/portfolio" />
+  </url>
+
+  <url>
+    <loc>https://www.alecsdesign.xyz/ro/portfolio</loc>
+    <lastmod>2025-12-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.alecsdesign.xyz/en/portfolio" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.alecsdesign.xyz/it/portfolio" />
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.alecsdesign.xyz/ro/portfolio" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.alecsdesign.xyz/portfolio" />
+  </url>
+
+  <!-- ========================================== -->
+  <!-- SERVICES & RATES PAGES -->
+  <!-- ========================================== -->
+
+  <url>
+    <loc>https://www.alecsdesign.xyz/services-rates</loc>
+    <lastmod>2025-12-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.alecsdesign.xyz/en/services-rates" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.alecsdesign.xyz/it/services-rates" />
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.alecsdesign.xyz/ro/services-rates" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.alecsdesign.xyz/services-rates" />
+  </url>
+
+  <url>
+    <loc>https://www.alecsdesign.xyz/en/services-rates</loc>
+    <lastmod>2025-12-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.alecsdesign.xyz/en/services-rates" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.alecsdesign.xyz/it/services-rates" />
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.alecsdesign.xyz/ro/services-rates" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.alecsdesign.xyz/services-rates" />
+  </url>
+
+  <url>
+    <loc>https://www.alecsdesign.xyz/it/services-rates</loc>
+    <lastmod>2025-12-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.alecsdesign.xyz/en/services-rates" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.alecsdesign.xyz/it/services-rates" />
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.alecsdesign.xyz/ro/services-rates" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.alecsdesign.xyz/services-rates" />
+  </url>
+
+  <url>
+    <loc>https://www.alecsdesign.xyz/ro/services-rates</loc>
+    <lastmod>2025-12-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.alecsdesign.xyz/en/services-rates" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.alecsdesign.xyz/it/services-rates" />
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.alecsdesign.xyz/ro/services-rates" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.alecsdesign.xyz/services-rates" />
+  </url>
+
+  <!-- ========================================== -->
+  <!-- CONTACT PAGES -->
+  <!-- ========================================== -->
+
+  <url>
+    <loc>https://www.alecsdesign.xyz/contact</loc>
+    <lastmod>2025-12-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.alecsdesign.xyz/en/contact" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.alecsdesign.xyz/it/contact" />
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.alecsdesign.xyz/ro/contact" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.alecsdesign.xyz/contact" />
+  </url>
+
+  <url>
+    <loc>https://www.alecsdesign.xyz/en/contact</loc>
+    <lastmod>2025-12-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.alecsdesign.xyz/en/contact" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.alecsdesign.xyz/it/contact" />
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.alecsdesign.xyz/ro/contact" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.alecsdesign.xyz/contact" />
+  </url>
+
+  <url>
+    <loc>https://www.alecsdesign.xyz/it/contact</loc>
+    <lastmod>2025-12-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.alecsdesign.xyz/en/contact" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.alecsdesign.xyz/it/contact" />
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.alecsdesign.xyz/ro/contact" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.alecsdesign.xyz/contact" />
+  </url>
+
+  <url>
+    <loc>https://www.alecsdesign.xyz/ro/contact</loc>
+    <lastmod>2025-12-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.alecsdesign.xyz/en/contact" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.alecsdesign.xyz/it/contact" />
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.alecsdesign.xyz/ro/contact" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.alecsdesign.xyz/contact" />
+  </url>
+
+  <!-- ========================================== -->
+  <!-- LEGAL PAGES -->
+  <!-- ========================================== -->
+
+  <!-- Privacy Policy -->
+  <url>
+    <loc>https://www.alecsdesign.xyz/privacy-policy</loc>
+    <lastmod>2025-12-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.alecsdesign.xyz/en/privacy-policy" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.alecsdesign.xyz/it/privacy-policy" />
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.alecsdesign.xyz/ro/privacy-policy" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.alecsdesign.xyz/privacy-policy" />
+  </url>
+
+  <url>
+    <loc>https://www.alecsdesign.xyz/en/privacy-policy</loc>
+    <lastmod>2025-12-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.alecsdesign.xyz/en/privacy-policy" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.alecsdesign.xyz/it/privacy-policy" />
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.alecsdesign.xyz/ro/privacy-policy" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.alecsdesign.xyz/privacy-policy" />
+  </url>
+
+  <url>
+    <loc>https://www.alecsdesign.xyz/it/privacy-policy</loc>
+    <lastmod>2025-12-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.alecsdesign.xyz/en/privacy-policy" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.alecsdesign.xyz/it/privacy-policy" />
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.alecsdesign.xyz/ro/privacy-policy" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.alecsdesign.xyz/privacy-policy" />
+  </url>
+
+  <url>
+    <loc>https://www.alecsdesign.xyz/ro/privacy-policy</loc>
+    <lastmod>2025-12-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.alecsdesign.xyz/en/privacy-policy" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.alecsdesign.xyz/it/privacy-policy" />
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.alecsdesign.xyz/ro/privacy-policy" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.alecsdesign.xyz/privacy-policy" />
+  </url>
+
+  <!-- Terms & Conditions -->
+  <url>
+    <loc>https://www.alecsdesign.xyz/terms-conditions</loc>
+    <lastmod>2025-12-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.alecsdesign.xyz/en/terms-conditions" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.alecsdesign.xyz/it/terms-conditions" />
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.alecsdesign.xyz/ro/terms-conditions" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.alecsdesign.xyz/terms-conditions" />
+  </url>
+
+  <url>
+    <loc>https://www.alecsdesign.xyz/en/terms-conditions</loc>
+    <lastmod>2025-12-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.alecsdesign.xyz/en/terms-conditions" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.alecsdesign.xyz/it/terms-conditions" />
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.alecsdesign.xyz/ro/terms-conditions" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.alecsdesign.xyz/terms-conditions" />
+  </url>
+
+  <url>
+    <loc>https://www.alecsdesign.xyz/it/terms-conditions</loc>
+    <lastmod>2025-12-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.alecsdesign.xyz/en/terms-conditions" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.alecsdesign.xyz/it/terms-conditions" />
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.alecsdesign.xyz/ro/terms-conditions" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.alecsdesign.xyz/terms-conditions" />
+  </url>
+
+  <url>
+    <loc>https://www.alecsdesign.xyz/ro/terms-conditions</loc>
+    <lastmod>2025-12-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.alecsdesign.xyz/en/terms-conditions" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.alecsdesign.xyz/it/terms-conditions" />
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.alecsdesign.xyz/ro/terms-conditions" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.alecsdesign.xyz/terms-conditions" />
+  </url>
+
+  <!-- Cookie Policy -->
+  <url>
+    <loc>https://www.alecsdesign.xyz/cookie-policy</loc>
+    <lastmod>2025-12-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.alecsdesign.xyz/en/cookie-policy" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.alecsdesign.xyz/it/cookie-policy" />
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.alecsdesign.xyz/ro/cookie-policy" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.alecsdesign.xyz/cookie-policy" />
+  </url>
+
+  <url>
+    <loc>https://www.alecsdesign.xyz/en/cookie-policy</loc>
+    <lastmod>2025-12-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.alecsdesign.xyz/en/cookie-policy" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.alecsdesign.xyz/it/cookie-policy" />
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.alecsdesign.xyz/ro/cookie-policy" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.alecsdesign.xyz/cookie-policy" />
+  </url>
+
+  <url>
+    <loc>https://www.alecsdesign.xyz/it/cookie-policy</loc>
+    <lastmod>2025-12-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.alecsdesign.xyz/en/cookie-policy" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.alecsdesign.xyz/it/cookie-policy" />
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.alecsdesign.xyz/ro/cookie-policy" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.alecsdesign.xyz/cookie-policy" />
+  </url>
+
+  <url>
+    <loc>https://www.alecsdesign.xyz/ro/cookie-policy</loc>
+    <lastmod>2025-12-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.alecsdesign.xyz/en/cookie-policy" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.alecsdesign.xyz/it/cookie-policy" />
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.alecsdesign.xyz/ro/cookie-policy" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.alecsdesign.xyz/cookie-policy" />
+  </url>
+
+</urlset>
