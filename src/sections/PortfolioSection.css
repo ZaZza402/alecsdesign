@@ -1,5 +1,5 @@
 .portfolio-section {
-  padding: 4rem 1.5rem;
+  padding: 2rem 1.5rem;
   /* Create overlap with Hero section for continuity */
   margin-top: -250px;
   padding-top: calc(4rem + 250px);
@@ -136,7 +136,11 @@
 /* Mobile Optimization - 1 Column Layout */
 @media (max-width: 768px) {
   .portfolio-container {
-    gap: 4rem;
+    gap: 2rem;
+  }
+
+  .portfolio-footer {
+    margin-top: 0;
   }
 
   .portfolio-item,
