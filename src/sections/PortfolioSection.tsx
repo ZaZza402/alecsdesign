@@ -28,7 +28,7 @@ const PortfolioSection = () => {
     {
       id: "immigration-agency",
       url: "https://www.puntomigrare.it",
-      image: "/portfolio/website-puntomigrare-mockup.webp",
+      image: "/portfolio-assets/website-puntomigrare-mockup.webp",
       title: "Punto Migrare",
       description: t("portfolio.projects.immigration-agency.description"),
       canPreview: true,
@@ -36,7 +36,7 @@ const PortfolioSection = () => {
     {
       id: "psychologist",
       url: "https://www.popescumaria.ro",
-      image: "/portfolio/website-psiholog-mockup.webp",
+      image: "/portfolio-assets/website-psiholog-mockup.webp",
       title: "Psiholog Portfolio",
       description: t("portfolio.projects.psychologist.description"),
       canPreview: false,
@@ -44,7 +44,7 @@ const PortfolioSection = () => {
     {
       id: "sartoria",
       url: "https://sartoria-viorel.vercel.app",
-      image: "/portfolio/website-sartoria-mockup.webp",
+      image: "/portfolio-assets/website-sartoria-mockup.webp",
       title: "Sartoria Vio",
       description: t("portfolio.projects.sartoria.description"),
       canPreview: false,
@@ -52,7 +52,7 @@ const PortfolioSection = () => {
     {
       id: "restaurant",
       url: "https://ristorante13.alecsdesign.xyz",
-      image: "/portfolio/website-restaurant-mockup.webp",
+      image: "/portfolio-assets/website-restaurant-mockup.webp",
       title: "Ristorante 13",
       description: t("portfolio.projects.restaurant.description"),
       canPreview: false,

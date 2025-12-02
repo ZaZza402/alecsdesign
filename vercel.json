@@ -21,7 +21,7 @@
       "destination": "/api/index"
     },
     {
-      "source": "/:path((?!sitemap.*\\.xml|sitemap-.*\\.xml|robots\\.txt|api|logo|portfolio).*)",
+      "source": "/:path((?!sitemap.*\\.xml|sitemap-.*\\.xml|robots\\.txt|api|logo).*)",
       "destination": "/api/index"
     }
   ],

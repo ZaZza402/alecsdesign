@@ -20,32 +20,32 @@ const PortfolioPage = () => {
   const projects: Project[] = [
     {
       id: "puntomigrare",
-      image: "/portfolio/website-puntomigrare-mockup.webp",
+      image: "/portfolio-assets/website-puntomigrare-mockup.webp",
       url: "https://www.puntomigrare.it",
     },
     {
       id: "psychologist",
-      image: "/portfolio/website-psiholog-mockup.webp",
+      image: "/portfolio-assets/website-psiholog-mockup.webp",
       url: "https://www.popescumaria.ro",
     },
     {
       id: "sartoria",
-      image: "/portfolio/website-sartoria-mockup.webp",
+      image: "/portfolio-assets/website-sartoria-mockup.webp",
       url: "https://sartoria-viorel.vercel.app",
     },
     {
       id: "restaurant",
-      image: "/portfolio/website-restaurant-mockup.webp",
+      image: "/portfolio-assets/website-restaurant-mockup.webp",
       url: "https://ristorante13.alecsdesign.xyz",
     },
     {
       id: "ctx",
-      image: "/portfolio/website-fintech-template-mockup.webp",
+      image: "/portfolio-assets/website-fintech-template-mockup.webp",
       url: "https://ctx.alecsdesign.xyz",
     },
     {
       id: "velvet",
-      image: "/portfolio/website-bar-velvet-mockup.webp",
+      image: "/portfolio-assets/website-bar-velvet-mockup.webp",
       url: "https://velvet-shaker.alecsdesign.xyz",
     },
   ];
