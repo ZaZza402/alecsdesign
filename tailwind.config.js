@@ -1,64 +1,92 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
+    darkMode: ["class"],
+    content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
-    extend: {
-      fontFamily: {
-        sans: ["Inter", "sans-serif"],
-      },
-      colors: {
-        // Primary Color - Single bold accent (professional blue)
-        primary: {
-          DEFAULT: "#000", // Professional blue (main accent)
-          light: "#f35422", // Lighter variant
-          dark: "#000", // Darker variant
-          50: "#EFF6FF",
-          100: "#DBEAFE",
-          600: "#000", // Main color
-          700: "#000",
-        },
-        // Secondary Colors - Neutral palette
-        secondary: {
-          light: "#F8FAFC", // Very light background
-          DEFAULT: "#F1F5F9", // Light gray background
-          dark: "#0F172A", // Deep dark for contrast
-        },
-        // Background hierarchy - cleaner
-        background: {
-          main: "#FFFFFF", // Pure white
-          alt: "#F8FAFC", // Subtle gray (not blue-tinted)
-          accent: "#EFF6FF", // Very subtle blue tint when needed
-        },
-        // Text colors - Strong hierarchy
-        text: {
-          primary: "#0F172A", // Almost black
-          secondary: "#475569", // Medium gray
-          light: "#64748B", // Light gray
-          muted: "#94A3B8", // Very light gray
-        },
-        // Border colors - subtle
-        border: {
-          light: "#E2E8F0", // Light gray border
-          DEFAULT: "#CBD5E1", // Default border
-          dark: "#94A3B8", // Darker border
-        },
-      },
-      animation: {
-        "gradient-text": "gradient-text 5s ease infinite",
-      },
-      keyframes: {
-        "gradient-text": {
-          "0%, 100%": {
-            "background-size": "200% 200%",
-            "background-position": "left center",
-          },
-          "50%": {
-            "background-size": "200% 200%",
-            "background-position": "right center",
-          },
-        },
-      },
-    },
+  	extend: {
+  		fontFamily: {
+  			sans: [
+  				'Inter',
+  				'sans-serif'
+  			]
+  		},
+  		colors: {
+  			primary: {
+  				'50': '#EFF6FF',
+  				'100': '#DBEAFE',
+  				'600': '#000',
+  				'700': '#000',
+  				DEFAULT: 'hsl(var(--primary))',
+  				light: '#f35422',
+  				dark: '#000',
+  				foreground: 'hsl(var(--primary-foreground))'
+  			},
+  			secondary: {
+  				light: '#F8FAFC',
+  				DEFAULT: 'hsl(var(--secondary))',
+  				dark: '#0F172A',
+  				foreground: 'hsl(var(--secondary-foreground))'
+  			},
+  			background: 'hsl(var(--background))',
+  			text: {
+  				primary: '#0F172A',
+  				secondary: '#475569',
+  				light: '#64748B',
+  				muted: '#94A3B8'
+  			},
+  			border: 'hsl(var(--border))',
+  			foreground: 'hsl(var(--foreground))',
+  			card: {
+  				DEFAULT: 'hsl(var(--card))',
+  				foreground: 'hsl(var(--card-foreground))'
+  			},
+  			popover: {
+  				DEFAULT: 'hsl(var(--popover))',
+  				foreground: 'hsl(var(--popover-foreground))'
+  			},
+  			muted: {
+  				DEFAULT: 'hsl(var(--muted))',
+  				foreground: 'hsl(var(--muted-foreground))'
+  			},
+  			accent: {
+  				DEFAULT: 'hsl(var(--accent))',
+  				foreground: 'hsl(var(--accent-foreground))'
+  			},
+  			destructive: {
+  				DEFAULT: 'hsl(var(--destructive))',
+  				foreground: 'hsl(var(--destructive-foreground))'
+  			},
+  			input: 'hsl(var(--input))',
+  			ring: 'hsl(var(--ring))',
+  			chart: {
+  				'1': 'hsl(var(--chart-1))',
+  				'2': 'hsl(var(--chart-2))',
+  				'3': 'hsl(var(--chart-3))',
+  				'4': 'hsl(var(--chart-4))',
+  				'5': 'hsl(var(--chart-5))'
+  			}
+  		},
+  		animation: {
+  			'gradient-text': 'gradient-text 5s ease infinite'
+  		},
+  		keyframes: {
+  			'gradient-text': {
+  				'0%, 100%': {
+  					'background-size': '200% 200%',
+  					'background-position': 'left center'
+  				},
+  				'50%': {
+  					'background-size': '200% 200%',
+  					'background-position': 'right center'
+  				}
+  			}
+  		},
+  		borderRadius: {
+  			lg: 'var(--radius)',
+  			md: 'calc(var(--radius) - 2px)',
+  			sm: 'calc(var(--radius) - 4px)'
+  		}
+  	}
   },
-  plugins: [],
+  plugins: [require("tailwindcss-animate")],
 };

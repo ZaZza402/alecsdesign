@@ -25,7 +25,6 @@ import Header from "./components/layout/Header";
 import Footer from "./components/layout/Footer";
 import CookieBanner from "./components/ui/CookieBanner";
 import ScrollProgress from "./components/ui/ScrollProgress";
-import MetallicBackground from "./components/ui/backgrounds/MetallicBackground";
 
 // Initialize AOS
 AOS.init({
@@ -80,7 +79,6 @@ function AppRoutes() {
   return (
     <>
       <Header />
-      <MetallicBackground />
       <AnimatePresence mode="wait">
         <Routes location={location} key={location.pathname}>
           {/* Root domain serves English by default for SEO */}
