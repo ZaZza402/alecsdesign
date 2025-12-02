@@ -202,7 +202,7 @@ export const generateLocalBusinessSchema = () => {
     description:
       "Professional web development services specializing in modern React applications, e-commerce solutions, and custom web design for small businesses.",
     url: "https://www.alecsdesign.xyz",
-    telephone: "+380 150 3074",
+    telephone: "+39 380 150 3074",
     email: "mka.alecs@gmail.com",
     address: {
       "@type": "PostalAddress",
@@ -237,7 +237,7 @@ export const generateLocalBusinessSchema = () => {
     sameAs: [
       "https://www.facebook.com/ax.m826/",
       "https://www.instagram.com/alex.zm8/",
-      "https://wa.me/3801503074",
+      "https://wa.me/393801503074",
     ],
     hasOfferCatalog: {
       "@type": "OfferCatalog",

@@ -133,7 +133,7 @@ EMAIL_PASS=gogvabmmugbjugg  # Gmail App Password
   "@type": "LocalBusiness",
   "name": "alecsdesign",
   "address": "Rome, Lazio, Italy",
-  "telephone": "+380 150 3074",
+  "telephone": "+39 380 150 3074",
   "email": "mka.alecs@gmail.com",
   "priceRange": "€150 - €2000+"
 }

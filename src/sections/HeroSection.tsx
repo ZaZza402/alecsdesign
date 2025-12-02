@@ -1,13 +1,15 @@
 import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useTranslation } from "react-i18next";
+import { useNavigate } from "react-router-dom";
 import { Hand } from "lucide-react";
 import IconScrollBar from "../components/ui/IconScrollBar";
-import { trackCTAClick, trackWhatsAppClick } from "../utils/analytics";
+import { trackCTAClick } from "../utils/analytics";
 import "./HeroSection.css";
 
 const HeroSection: React.FC = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+  const navigate = useNavigate();
   const [currentWordIndex, setCurrentWordIndex] = useState(0);
 
   // Shorter rotating words for single line display
@@ -83,10 +85,12 @@ const HeroSection: React.FC = () => {
     howItWorksSection?.scrollIntoView({ behavior: "smooth" });
   };
 
-  const handleWhatsAppClick = () => {
-    trackWhatsAppClick("Hero Section");
-    trackCTAClick("WhatsApp Contact", "Hero Section");
-    window.open("https://wa.me/3801503074", "_blank");
+  const handleCalculatorClick = () => {
+    trackCTAClick("Project Calculator", "Hero Section");
+    const lang = i18n.language;
+    const route = lang === "en" ? "/quiz" : `/${lang}/quiz`;
+    navigate(route);
+    window.scrollTo(0, 0);
   };
 
   return (
@@ -179,14 +183,14 @@ const HeroSection: React.FC = () => {
             variants={descriptionVariants}
           >
             <button
-              onClick={handleHowItWorksClick}
+              onClick={handleCalculatorClick}
               className="hero-cta-button hero-cta-button--primary"
             >
               <span>{t("hero.ctaPrimary")}</span>
             </button>
 
             <button
-              onClick={handleWhatsAppClick}
+              onClick={handleHowItWorksClick}
               className="hero-cta-button hero-cta-button--secondary"
             >
               <span>{t("hero.ctaSecondary")}</span>

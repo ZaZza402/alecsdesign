@@ -92,12 +92,12 @@ const ContactPage = () => {
   };
 
   const getPhone = () => {
-    const parts = ["380", "150", "3074"];
-    return `+${parts[0]} ${parts[1]} ${parts[2]}`;
+    const parts = ["39", "380", "150", "3074"];
+    return `+${parts[0]} ${parts[1]} ${parts[2]} ${parts[3]}`;
   };
 
   const getWhatsApp = () => {
-    return `https://wa.me/380150${String.fromCharCode(51, 48, 55, 52)}`;
+    return `https://wa.me/393801503074`;
   };
 
   return (
