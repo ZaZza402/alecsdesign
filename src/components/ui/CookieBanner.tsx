@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { createPortal } from "react-dom";
 import { useTranslation } from "react-i18next";
 import { useNavigate } from "react-router-dom";
 import { Cookie, X } from "lucide-react";
@@ -40,7 +41,7 @@ const CookieBanner = () => {
 
   if (!isVisible) return null;
 
-  return (
+  return createPortal(
     <div className={`cookie-banner ${isVisible ? "show" : ""}`}>
       <div className="cookie-content">
         <div className="cookie-icon">
@@ -78,7 +79,8 @@ const CookieBanner = () => {
       >
         <X size={20} />
       </button>
-    </div>
+    </div>,
+    document.body
   );
 };
 
