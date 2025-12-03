@@ -128,7 +128,15 @@ const Footer = () => {
             <h3 className="footer-heading">{t("footer.quickLinks.title")}</h3>
             <ul className="footer-links">
               <li>
-                <a href="#difference">{t("footer.quickLinks.about")}</a>
+                <button
+                  onClick={() => {
+                    trackButtonClick("About", "Footer Quick Links");
+                    navigate(getLocalizedRoute("/about"));
+                    window.scrollTo(0, 0);
+                  }}
+                >
+                  {t("footer.quickLinks.about")}
+                </button>
               </li>
               <li>
                 <button

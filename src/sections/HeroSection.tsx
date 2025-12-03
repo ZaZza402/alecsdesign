@@ -99,61 +99,64 @@ const HeroSection: React.FC = () => {
       <div className="hero-section__content">
         {/* Left Column - Main Content */}
         <div className="hero-section__left">
+          {/* 1. Main Headline: Premium Websites + Rotating Words */}
           <motion.div
             initial="hidden"
             animate="visible"
             variants={titleVariants}
+            className="hero-section__main-block"
           >
-            <h1 className="hero-section__title">
-              <span className="hero-section__greeting">
-                <span className="hero-section__greeting-text">
-                  {t("hero.greeting")}
-                </span>
+            <span className="hero-section__static-text">{t("hero.title")}</span>
+            <div
+              className="hero-section__highlight-container"
+              aria-live="polite"
+            >
+              <AnimatePresence mode="wait">
                 <motion.span
-                  className="hero-section__hand-wave"
-                  animate={{
-                    rotate: [0, 14, -8, 14, -4, 10, 0, 0],
-                  }}
-                  transition={{
-                    duration: 2,
-                    repeat: Infinity,
-                    ease: "linear",
-                  }}
-                  style={{
-                    display: "inline-block",
-                    transformOrigin: "70% 70%",
-                  }}
+                  key={currentWordIndex}
+                  className="hero-section__highlight"
+                  variants={wordVariants}
+                  initial="enter"
+                  animate="center"
+                  exit="exit"
                 >
-                  <Hand size={28} strokeWidth={2.5} />
+                  {rotatingWords[currentWordIndex]}
                 </motion.span>
-              </span>
-              <span className="hero-section__name">{t("hero.name")}</span>
-            </h1>
+              </AnimatePresence>
+            </div>
           </motion.div>
 
-          <motion.p
-            className="hero-section__subtitle-label"
+          {/* 2. Secondary: Greeting + Name */}
+          <motion.div
+            className="hero-section__greeting-container"
             initial="hidden"
             animate="visible"
             variants={subtitleVariants}
           >
-            {t("hero.title")}
-          </motion.p>
-
-          <div className="hero-section__highlight-container" aria-live="polite">
-            <AnimatePresence mode="wait">
+            <span className="hero-section__greeting">
+              <span className="hero-section__greeting-text">
+                {t("hero.greeting")}
+              </span>
               <motion.span
-                key={currentWordIndex}
-                className="hero-section__highlight"
-                variants={wordVariants}
-                initial="enter"
-                animate="center"
-                exit="exit"
+                className="hero-section__hand-wave"
+                animate={{
+                  rotate: [0, 14, -8, 14, -4, 10, 0, 0],
+                }}
+                transition={{
+                  duration: 2,
+                  repeat: Infinity,
+                  ease: "linear",
+                }}
+                style={{
+                  display: "inline-block",
+                  transformOrigin: "70% 70%",
+                }}
               >
-                {rotatingWords[currentWordIndex]}
+                <Hand size={24} strokeWidth={2.5} />
               </motion.span>
-            </AnimatePresence>
-          </div>
+            </span>
+            <span className="hero-section__name">{t("hero.name")}</span>
+          </motion.div>
 
           <motion.p
             className="hero-section__description"

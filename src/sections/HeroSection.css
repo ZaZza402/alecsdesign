@@ -67,41 +67,60 @@
     width: auto;
   }
 }
-.hero-section__title {
-  font-size: 2rem;
-  font-weight: 800;
-  line-height: 1.3;
-  margin-bottom: 1rem;
+/* Main Headline Block (Premium Websites + Rotating Words) */
+.hero-section__main-block {
   display: flex;
   flex-direction: column;
-  gap: 0.375rem;
-  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+  width: 100%; /* Ensure full width for containment */
+}
+
+.hero-section__static-text {
+  font-size: 2rem;
+  font-weight: 800;
+  line-height: 1.2;
+  color: #0f172a;
   text-shadow: 0 2px 10px rgba(255, 255, 255, 0.9),
     0 0 20px rgba(255, 255, 255, 0.8);
 }
 
-@media (max-width: 768px) {
-  .hero-section__title {
-    font-size: 2.25rem;
-    align-items: flex-start;
-    margin-bottom: 1rem;
-    font-weight: 900;
-    line-height: 1.15;
-  }
+.hero-section__highlight-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* Always left align */
+  min-height: 2.5rem;
+  margin: 0;
+  max-width: 100%; /* Prevent container overflow */
 }
 
-@media (min-width: 1025px) {
-  .hero-section__title {
-    align-items: flex-start;
-  }
+.hero-section__highlight {
+  display: inline-block;
+  font-weight: 800;
+  font-size: 2rem; /* Match static text size */
+  color: #f35422;
+  white-space: nowrap;
+  text-shadow: 0 2px 10px rgba(255, 255, 255, 0.9),
+    0 0 20px rgba(255, 255, 255, 0.8);
 }
 
-/* Greeting section with hand wave */
+/* Secondary: Greeting + Name (Hi, I'm Alex) */
+.hero-section__greeting-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.25rem;
+  margin-bottom: 1rem;
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #334155;
+}
+
 .hero-section__greeting {
   display: inline-flex;
   align-items: center;
-  gap: 0.75rem;
-  color: #f35422; /* Orange accent */
+  gap: 0.5rem;
+  color: #334155; /* Darker color for intro text */
 }
 
 .hero-section__hand-wave {
@@ -109,7 +128,67 @@
   flex-shrink: 0;
 }
 
-/* Smooth linear waving animation */
+.hero-section__name {
+  display: inline-block;
+  color: #f35422;
+  font-weight: 700;
+}
+
+/* Responsive Typography */
+@media (max-width: 768px) {
+  .hero-section__static-text {
+    /* Slightly larger than highlight */
+    font-size: clamp(1.35rem, 6.5vw, 2rem);
+    line-height: 1.2;
+  }
+
+  .hero-section__highlight {
+    /* Use clamp to fit long Italian words on small screens (320px-375px) */
+    font-size: clamp(1.15rem, 5.5vw, 1.75rem);
+    line-height: 1.2;
+  }
+
+  .hero-section__greeting-container {
+    font-size: 1rem;
+  }
+
+  .hero-section__main-block {
+    align-items: flex-start; /* Left align on mobile too */
+    text-align: left;
+  }
+
+  .hero-section__highlight-container {
+    justify-content: flex-start;
+    min-height: 2rem; /* Adjust height for smaller text */
+  }
+}
+@media (min-width: 768px) {
+  .hero-section__static-text {
+    font-size: 2.25rem;
+  }
+
+  .hero-section__highlight {
+    font-size: 2rem;
+  }
+
+  .hero-section__greeting-container {
+    font-size: 1.25rem;
+  }
+}
+
+@media (min-width: 1025px) {
+  .hero-section__static-text {
+    font-size: 3rem; /* Even bigger on desktop */
+  }
+
+  .hero-section__highlight {
+    font-size: 2.5rem; /* Even bigger on desktop */
+  }
+
+  .hero-section__greeting-container {
+    font-size: 1.375rem;
+  }
+} /* Smooth linear waving animation */
 @keyframes smoothWave {
   0% {
     transform: rotate(0deg);
@@ -141,13 +220,6 @@
   display: inline-block;
 }
 
-/* I'm Alex - single color, no distracting animation */
-.hero-section__name {
-  display: inline-block;
-  color: #f35422;
-  font-weight: 900;
-}
-
 @keyframes subtlePulse {
   0%,
   100% {
@@ -158,28 +230,11 @@
   }
 }
 
-.hero-section__subtitle-label {
-  font-size: 1.125rem;
-  line-height: 1.4;
-  color: #334155;
-  margin: 0 auto 0.75rem;
-  font-weight: 600;
-  text-shadow: 0 1px 5px rgba(255, 255, 255, 0.9),
-    0 0 10px rgba(255, 255, 255, 0.8);
-}
-
-@media (max-width: 768px) {
-  .hero-section__subtitle-label {
-    font-size: 1rem;
-    margin: 0.5rem 0;
-  }
-}
-
 .hero-section__description {
   font-size: 1rem;
   line-height: 1.7;
   color: #475569;
-  margin: 1rem auto 0.75rem;
+  margin: 1rem 0 0.75rem; /* Left align margin */
   max-width: 600px;
   text-shadow: 0 1px 5px rgba(255, 255, 255, 0.9),
     0 0 10px rgba(255, 255, 255, 0.8);
@@ -198,7 +253,7 @@
   font-size: 1rem;
   line-height: 1.4;
   color: #f35422;
-  margin: 0 auto 1.75rem;
+  margin: 0 0 1.75rem; /* Left align margin */
   font-weight: 700;
   font-style: italic;
   letter-spacing: 0.025em;
@@ -208,54 +263,6 @@
   .hero-section__subtitle {
     font-size: 0.9375rem;
     margin: 0.5rem 0 1rem 0;
-  }
-}
-
-/* Desktop: left align text */
-@media (min-width: 1025px) {
-  .hero-section__subtitle-label,
-  .hero-section__description,
-  .hero-section__subtitle {
-    margin-left: 0;
-    margin-right: 0;
-  }
-}
-
-.hero-section__highlight-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 2.5rem;
-  margin: 0.75rem 0;
-}
-
-@media (max-width: 768px) {
-  .hero-section__highlight-container {
-    justify-content: flex-start;
-    min-height: 2rem;
-    margin: 0.5rem 0;
-  }
-}
-
-@media (min-width: 1025px) {
-  .hero-section__highlight-container {
-    justify-content: flex-start;
-  }
-}
-
-.hero-section__highlight {
-  display: inline-block;
-  font-weight: 700;
-  font-size: 1.5rem;
-  color: #f35422;
-  white-space: nowrap;
-  text-shadow: 0 2px 10px rgba(255, 255, 255, 0.9),
-    0 0 20px rgba(255, 255, 255, 0.8);
-}
-
-@media (max-width: 768px) {
-  .hero-section__highlight {
-    font-size: 1.25rem;
   }
 }
 
@@ -339,43 +346,6 @@
 
 .hero-cta-button--secondary:active {
   transform: translateY(0);
-}
-
-/* Responsive Typography */
-@media (min-width: 768px) {
-  .hero-section__title {
-    font-size: 2.5rem;
-  }
-
-  .hero-section__subtitle-label {
-    font-size: 1.25rem;
-  }
-
-  .hero-section__description {
-    font-size: 1.0625rem;
-  }
-
-  .hero-section__highlight {
-    font-size: 1.625rem;
-  }
-}
-
-@media (min-width: 1025px) {
-  .hero-section__title {
-    font-size: 2.75rem;
-  }
-
-  .hero-section__subtitle-label {
-    font-size: 1.375rem;
-  }
-
-  .hero-section__description {
-    font-size: 1.125rem;
-  }
-
-  .hero-section__highlight {
-    font-size: 1.75rem;
-  }
 }
 
 @media (max-width: 767px) {

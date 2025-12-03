@@ -26,6 +26,7 @@ const NotFound = lazy(() => import("./pages/NotFound"));
 const PortfolioPage = lazy(() => import("./pages/PortfolioPage"));
 const ServicesRates = lazy(() => import("./pages/ServicesRates"));
 const ContactPage = lazy(() => import("./pages/ContactPage"));
+const AboutPage = lazy(() => import("./pages/AboutPage"));
 
 import {
   SEO,
@@ -134,6 +135,14 @@ export default function App() {
           element={
             <Suspense fallback={<LoadingSkeleton />}>
               <ContactPage />
+            </Suspense>
+          }
+        />
+        <Route
+          path="about"
+          element={
+            <Suspense fallback={<LoadingSkeleton />}>
+              <AboutPage />
             </Suspense>
           }
         />

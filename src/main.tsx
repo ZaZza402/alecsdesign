@@ -18,6 +18,7 @@ const QuizPage = lazy(() => import("./pages/QuizPage.tsx"));
 const QuizResults = lazy(() => import("./pages/QuizResults.tsx"));
 const PortfolioPage = lazy(() => import("./pages/PortfolioPage.tsx"));
 const ContactPage = lazy(() => import("./pages/ContactPage.tsx"));
+const AboutPage = lazy(() => import("./pages/AboutPage.tsx"));
 
 import ScrollToTop from "./components/ui/ScrollToTop";
 import PageTransition from "./components/ui/PageTransition";
@@ -154,6 +155,14 @@ function AppRoutes() {
               </PageWrapper>
             }
           />
+          <Route
+            path="/about"
+            element={
+              <PageWrapper lang="en">
+                <AboutPage />
+              </PageWrapper>
+            }
+          />
 
           {/* Legacy /en routes - Keep for backward compatibility */}
           <Route
@@ -217,6 +226,14 @@ function AppRoutes() {
             element={
               <PageWrapper lang="en">
                 <ContactPage />
+              </PageWrapper>
+            }
+          />
+          <Route
+            path="/en/about"
+            element={
+              <PageWrapper lang="en">
+                <AboutPage />
               </PageWrapper>
             }
           />
@@ -286,6 +303,14 @@ function AppRoutes() {
               </PageWrapper>
             }
           />
+          <Route
+            path="/it/about"
+            element={
+              <PageWrapper lang="it">
+                <AboutPage />
+              </PageWrapper>
+            }
+          />
 
           {/* Legal pages - Romanian */}
           <Route
@@ -349,6 +374,14 @@ function AppRoutes() {
             element={
               <PageWrapper lang="ro">
                 <ContactPage />
+              </PageWrapper>
+            }
+          />
+          <Route
+            path="/ro/about"
+            element={
+              <PageWrapper lang="ro">
+                <AboutPage />
               </PageWrapper>
             }
           />

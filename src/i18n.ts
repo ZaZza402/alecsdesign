@@ -15,6 +15,7 @@ import enServicesRates from "./locales/en/pages/servicesRates.json";
 import enNotFound from "./locales/en/pages/notFound.json";
 import enLegal from "./locales/en/pages/legal.json";
 import enPortfolioPage from "./locales/en/pages/portfolioPage.json";
+import enAbout from "./locales/en/pages/about.json";
 
 // Import English translations - Components
 import enNav from "./locales/en/components/nav.json";
@@ -37,6 +38,7 @@ import itServicesRates from "./locales/it/pages/servicesRates.json";
 import itNotFound from "./locales/it/pages/notFound.json";
 import itLegal from "./locales/it/pages/legal.json";
 import itPortfolioPage from "./locales/it/pages/portfolioPage.json";
+import itAbout from "./locales/it/pages/about.json";
 
 // Import Italian translations - Components
 import itNav from "./locales/it/components/nav.json";
@@ -59,6 +61,7 @@ import roServicesRates from "./locales/ro/pages/servicesRates.json";
 import roNotFound from "./locales/ro/pages/notFound.json";
 import roLegal from "./locales/ro/pages/legal.json";
 import roPortfolioPage from "./locales/ro/pages/portfolioPage.json";
+import roAbout from "./locales/ro/pages/about.json";
 
 // Import Romanian translations - Components
 import roNav from "./locales/ro/components/nav.json";
@@ -110,6 +113,7 @@ i18n
           notFound: enNotFound,
           legal: enLegal,
           portfolioPage: enPortfolioPage,
+          about: enAbout,
           // Components
           nav: enNav,
           footer: enFooter,
@@ -137,6 +141,7 @@ i18n
           notFound: itNotFound,
           legal: itLegal,
           portfolioPage: itPortfolioPage,
+          about: itAbout,
           // Components
           nav: itNav,
           footer: itFooter,
@@ -164,6 +169,7 @@ i18n
           notFound: roNotFound,
           legal: roLegal,
           portfolioPage: roPortfolioPage,
+          about: roAbout,
           // Components
           nav: roNav,
           footer: roFooter,
