@@ -42,7 +42,7 @@ const PortfolioPage = () => {
     {
       id: "sartoria",
       image: "/portfolio-assets/website-sartoria-mockup.webp",
-      url: "https://sartoria-viorel.vercel.app",
+      url: "https://www.sartoriaviorel.it",
       canPreview: true,
     },
     {
