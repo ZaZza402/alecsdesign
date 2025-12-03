@@ -79,10 +79,13 @@
 .hero-section__static-text {
   font-size: 2rem;
   font-weight: 800;
-  line-height: 1.2;
-  color: #0f172a;
-  text-shadow: 0 2px 10px rgba(255, 255, 255, 0.9),
-    0 0 20px rgba(255, 255, 255, 0.8);
+  line-height: 1.1;
+  background: linear-gradient(90deg, #000, #7c3aed);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  padding-bottom: 0.1em; /* Prevent descender clipping */
 }
 
 .hero-section__highlight-container {
@@ -137,9 +140,9 @@
 /* Responsive Typography */
 @media (max-width: 768px) {
   .hero-section__static-text {
-    /* Slightly larger than highlight */
-    font-size: clamp(1.35rem, 6.5vw, 2rem);
-    line-height: 1.2;
+    /* Significantly larger than highlight */
+    font-size: clamp(2.5rem, 10vw, 4rem);
+    line-height: 1.1;
   }
 
   .hero-section__highlight {
@@ -164,7 +167,7 @@
 }
 @media (min-width: 768px) {
   .hero-section__static-text {
-    font-size: 2.25rem;
+    font-size: 4.5rem;
   }
 
   .hero-section__highlight {
@@ -178,7 +181,7 @@
 
 @media (min-width: 1025px) {
   .hero-section__static-text {
-    font-size: 3rem; /* Even bigger on desktop */
+    font-size: 6rem; /* Massive on desktop */
   }
 
   .hero-section__highlight {
