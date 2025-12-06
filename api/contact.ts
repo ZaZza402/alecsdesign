@@ -17,36 +17,40 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
 
     // Check if environment variables are set
     if (!process.env.EMAIL_USER || !process.env.EMAIL_PASS) {
-      console.error("Missing environment variables:", {
-        hasUser: !!process.env.EMAIL_USER,
-        hasPass: !!process.env.EMAIL_PASS,
-      });
+      console.error("Missing environment variables");
       return res.status(500).json({
         error: "Server configuration error",
         details: "Email credentials not configured",
       });
     }
 
-    // Create transporter using environment variables or default to Namecheap
-    const host = process.env.EMAIL_HOST || "mail.privateemail.com";
+    // Clean and validate credentials
+    const emailUser = process.env.EMAIL_USER.trim();
+    const emailPass = process.env.EMAIL_PASS.trim();
+    const host = (process.env.EMAIL_HOST || "mail.privateemail.com").trim();
     const port = parseInt(process.env.EMAIL_PORT || "465");
     const secure = port === 465;
+
+    console.log(`Attempting to send email with: Host=${host}, Port=${port}, User=${emailUser}, Secure=${secure}`);
 
     const transporter = nodemailer.createTransport({
       host,
       port,
       secure,
       auth: {
-        user: process.env.EMAIL_USER,
-        pass: process.env.EMAIL_PASS,
+        user: emailUser,
+        pass: emailPass,
       },
+      // Add debug logging for Vercel logs
+      logger: true,
+      debug: true,
     });
 
     // Email content
     const mailOptions = {
-      from: process.env.EMAIL_USER,
+      from: emailUser, // Must match the authenticated user
       to: "start@alecsdesign.xyz",
-      replyTo: contact,
+      replyTo: contact, // Allows you to reply directly to the user
       subject: `New Contact Form Submission from ${name}`,
       html: `
         <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
