@@ -28,13 +28,13 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
     const emailUser = process.env.EMAIL_USER.trim();
     const emailPass = process.env.EMAIL_PASS.trim();
     // Create transporter using environment variables or default to Namecheap
-    // Default to port 587 (STARTTLS) which is often more reliable for Namecheap/Vercel
+    // We default to Port 465 (SSL/TLS) as it is the standard for Namecheap Private Email
     const host = (process.env.EMAIL_HOST || "mail.privateemail.com").trim();
-    const port = parseInt(process.env.EMAIL_PORT || "587");
-    const secure = port === 465; // true for 465, false for other ports
+    const port = parseInt(process.env.EMAIL_PORT || "465");
+    const secure = port === 465; // true for 465 (SSL), false for 587 (STARTTLS)
 
     console.log(
-      `Attempting to send email with: Host=${host}, Port=${port}, User=${emailUser}, Secure=${secure}`
+      `Configuration: Host=${host}, Port=${port}, User=${emailUser}, Secure=${secure}, PassLength=${emailPass.length}`
     );
 
     const transporter = nodemailer.createTransport({
@@ -45,12 +45,11 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
         user: emailUser,
         pass: emailPass,
       },
-      // Explicitly define TLS settings to avoid common handshake errors
+      // specific TLS settings to ensure compatibility
       tls: {
-        rejectUnauthorized: true,
-        minVersion: "TLSv1.2",
+        // ciphers: 'SSLv3', // Sometimes needed for older servers, but Namecheap should be modern
+        rejectUnauthorized: true, 
       },
-      // Add debug logging for Vercel logs
       logger: true,
       debug: true,
     });
