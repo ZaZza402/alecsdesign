@@ -27,11 +27,15 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
     // Clean and validate credentials
     const emailUser = process.env.EMAIL_USER.trim();
     const emailPass = process.env.EMAIL_PASS.trim();
+    // Create transporter using environment variables or default to Namecheap
+    // Default to port 587 (STARTTLS) which is often more reliable for Namecheap/Vercel
     const host = (process.env.EMAIL_HOST || "mail.privateemail.com").trim();
-    const port = parseInt(process.env.EMAIL_PORT || "465");
-    const secure = port === 465;
+    const port = parseInt(process.env.EMAIL_PORT || "587");
+    const secure = port === 465; // true for 465, false for other ports
 
-    console.log(`Attempting to send email with: Host=${host}, Port=${port}, User=${emailUser}, Secure=${secure}`);
+    console.log(
+      `Attempting to send email with: Host=${host}, Port=${port}, User=${emailUser}, Secure=${secure}`
+    );
 
     const transporter = nodemailer.createTransport({
       host,
@@ -40,6 +44,11 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
       auth: {
         user: emailUser,
         pass: emailPass,
+      },
+      // Explicitly define TLS settings to avoid common handshake errors
+      tls: {
+        rejectUnauthorized: true,
+        minVersion: "TLSv1.2",
       },
       // Add debug logging for Vercel logs
       logger: true,
@@ -117,8 +126,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
       // Check for specific auth errors
       if (errorDetails.includes("Invalid login")) {
         errorMessage = "Email authentication failed";
-        errorDetails =
-          "Invalid credentials. Please check your email password.";
+        errorDetails = "Invalid credentials. Please check your email password.";
       } else if (errorDetails.includes("Username and Password not accepted")) {
         errorMessage = "Authentication failed";
         errorDetails =

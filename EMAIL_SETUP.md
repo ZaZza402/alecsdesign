@@ -5,6 +5,7 @@ The contact form uses SMTP to send emails via a Vercel serverless function. It i
 ## 1. Get Your Email Credentials
 
 If you are using Namecheap Private Email:
+
 1. Log in to your Namecheap Private Email webmail or dashboard.
 2. Ensure you have your email address (e.g., `start@alecsdesign.xyz`) and your password.
 3. Note the SMTP settings (usually `mail.privateemail.com`, Port 465, SSL/TLS).
@@ -17,16 +18,19 @@ If you are using Namecheap Private Email:
 4. Add/Update these variables:
 
    **Variable 1:**
+
    - Name: `EMAIL_USER`
    - Value: `start@alecsdesign.xyz` (or your chosen email)
    - Environment: Production, Preview, Development (check all)
 
    **Variable 2:**
+
    - Name: `EMAIL_PASS`
    - Value: [Your email password]
    - Environment: Production, Preview, Development (check all)
 
    **Optional Variables (if not using Namecheap defaults):**
+
    - `EMAIL_HOST`: Your SMTP host (default: `mail.privateemail.com`)
    - `EMAIL_PORT`: Your SMTP port (default: `465`)
 
@@ -35,12 +39,14 @@ If you are using Namecheap Private Email:
 ## 3. Redeploy
 
 After adding environment variables, redeploy your site:
+
 - Either push a new commit to trigger automatic deployment
 - Or use the "Redeploy" button in Vercel dashboard
 
 ## 4. Test the Form
 
 Once deployed:
+
 1. Go to your contact page
 2. Fill out the form
 3. Submit
