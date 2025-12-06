@@ -88,7 +88,7 @@ const ContactPage = () => {
 
   // Contact Info Helpers
   const getEmail = () => {
-    const parts = ["mka.alecs", "gmail", "com"];
+    const parts = ["start", "alecsdesign", "xyz"];
     return `${parts[0]}@${parts[1]}.${parts[2]}`;
   };
 

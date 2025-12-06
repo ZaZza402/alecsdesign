@@ -1,83 +1,75 @@
 # Email Setup Instructions
 
-The contact form uses Gmail to send emails via a Vercel serverless function. Follow these steps to configure it:
+The contact form uses SMTP to send emails via a Vercel serverless function. It is pre-configured for Namecheap Private Email but can work with any SMTP provider.
 
-## 1. Generate Gmail App Password
+## 1. Get Your Email Credentials
 
-Since you're using Gmail (`mka.alecs@gmail.com`), you need to create an App Password:
-
-1. Go to your Google Account: https://myaccount.google.com/
-2. Click on **Security** in the left sidebar
-3. Enable **2-Step Verification** if not already enabled
-4. Go back to Security, scroll to "How you sign in to Google"
-5. Click on **App passwords**
-6. Select "Mail" as the app and "Other" as the device
-7. Name it "Alecsdesign Contact Form"
-8. Click **Generate**
-9. Copy the 16-character password (it will look like: `xxxx xxxx xxxx xxxx`)
+If you are using Namecheap Private Email:
+1. Log in to your Namecheap Private Email webmail or dashboard.
+2. Ensure you have your email address (e.g., `start@alecsdesign.xyz`) and your password.
+3. Note the SMTP settings (usually `mail.privateemail.com`, Port 465, SSL/TLS).
 
 ## 2. Set Environment Variables in Vercel
 
 1. Go to your Vercel project dashboard: https://vercel.com/
 2. Select your project (`alecsdesign`)
 3. Go to **Settings** → **Environment Variables**
-4. Add these two variables:
+4. Add/Update these variables:
 
    **Variable 1:**
-
    - Name: `EMAIL_USER`
-   - Value: `mka.alecs@gmail.com`
+   - Value: `start@alecsdesign.xyz` (or your chosen email)
    - Environment: Production, Preview, Development (check all)
 
    **Variable 2:**
-
    - Name: `EMAIL_PASS`
-   - Value: [paste the 16-character app password you generated]
+   - Value: [Your email password]
    - Environment: Production, Preview, Development (check all)
+
+   **Optional Variables (if not using Namecheap defaults):**
+   - `EMAIL_HOST`: Your SMTP host (default: `mail.privateemail.com`)
+   - `EMAIL_PORT`: Your SMTP port (default: `465`)
 
 5. Click **Save**
 
 ## 3. Redeploy
 
 After adding environment variables, redeploy your site:
-
 - Either push a new commit to trigger automatic deployment
 - Or use the "Redeploy" button in Vercel dashboard
 
 ## 4. Test the Form
 
 Once deployed:
-
-1. Go to your live site: https://alecsdesign.xyz
-2. Navigate to the Contact section
-3. Fill out and submit the form
-4. Check your email at `mka.alecs@gmail.com`
+1. Go to your contact page
+2. Fill out the form
+3. Submit
+4. Check your email at `start@alecsdesign.xyz` (or wherever you forward it)
 
 ## Local Development (Optional)
 
 To test locally:
 
-1. Create a `.env.local` file in the root directory
+1. Create a `.env` file in the root directory (or `.env.local`)
 2. Add:
    ```
-   EMAIL_USER=mka.alecs@gmail.com
-   EMAIL_PASS=your-app-password-here
+   EMAIL_USER=start@alecsdesign.xyz
+   EMAIL_PASS=your-password-here
    ```
 3. Run `npm run dev`
 
-**Note:** Never commit `.env.local` to git - it's already in `.gitignore`
+**Note:** Never commit `.env` files to git.
 
 ## Troubleshooting
 
-- **"Failed to send email"**: Check that environment variables are set correctly in Vercel
-- **"Invalid credentials"**: Regenerate the Gmail App Password
-- **"Less secure app access"**: Use App Password instead of regular password
-- **Not receiving emails**: Check spam folder, verify `EMAIL_USER` is correct
+- **"Failed to send email"**: Check that environment variables are set correctly in Vercel.
+- **"Invalid credentials"**: Verify your email password.
+- **Not receiving emails**: Check spam folder, verify `EMAIL_USER` is correct.
 
 ## How It Works
 
 1. User fills out the contact form
 2. Form data is sent to `/api/contact` (Vercel serverless function)
-3. The function uses Nodemailer to send email via Gmail SMTP
-4. Email is sent to `mka.alecs@gmail.com`
+3. The function uses Nodemailer to send email via SMTP (Namecheap)
+4. Email is sent to `start@alecsdesign.xyz`
 5. User receives success/error message

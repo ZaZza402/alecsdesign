@@ -31,7 +31,7 @@ const Footer = () => {
 
   // Obfuscated contact info to prevent crawler harvesting
   const getEmail = () => {
-    const parts = ["mka.alecs", "gmail", "com"];
+    const parts = ["start", "alecsdesign", "xyz"];
     return `${parts[0]}@${parts[1]}.${parts[2]}`;
   };
 

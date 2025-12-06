@@ -88,8 +88,8 @@ The contact form API is properly configured:
 ### Required Environment Variables (in Vercel):
 
 ```
-EMAIL_USER=mka.alecs@gmail.com
-EMAIL_PASS=gogvabmmugbjugg  # Gmail App Password
+EMAIL_USER=start@alecsdesign.xyz
+EMAIL_PASS=your_password_here
 ```
 
 ### Features:
@@ -106,7 +106,7 @@ EMAIL_PASS=gogvabmmugbjugg  # Gmail App Password
 1. Go to your website's contact section
 2. Fill out all required fields
 3. Submit the form
-4. You should receive an email at `mka.alecs@gmail.com`
+4. You should receive an email at `start@alecsdesign.xyz`
 5. Check Google Analytics for "form_submit_success" event
 
 ## 4. SEO Enhancements
@@ -134,7 +134,7 @@ EMAIL_PASS=gogvabmmugbjugg  # Gmail App Password
   "name": "alecsdesign",
   "address": "Rome, Lazio, Italy",
   "telephone": "+39 380 150 3074",
-  "email": "mka.alecs@gmail.com",
+  "email": "start@alecsdesign.xyz",
   "priceRange": "€150 - €2000+"
 }
 ```
@@ -223,7 +223,7 @@ Track:
 
 ### Daily Checks:
 
-- [ ] Monitor form submissions in Gmail
+- [ ] Monitor form submissions in your email
 - [ ] Check GA4 Realtime for live traffic
 - [ ] Review any error events
 

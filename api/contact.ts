@@ -27,24 +27,26 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
       });
     }
 
-    // Create transporter using Gmail with explicit SMTP settings
+    // Create transporter using environment variables or default to Namecheap
+    const host = process.env.EMAIL_HOST || "mail.privateemail.com";
+    const port = parseInt(process.env.EMAIL_PORT || "465");
+    const secure = port === 465;
+
     const transporter = nodemailer.createTransport({
-      host: "smtp.gmail.com",
-      port: 587,
-      secure: false, // use TLS
+      host,
+      port,
+      secure,
       auth: {
         user: process.env.EMAIL_USER,
         pass: process.env.EMAIL_PASS,
-      },
-      tls: {
-        rejectUnauthorized: true,
       },
     });
 
     // Email content
     const mailOptions = {
       from: process.env.EMAIL_USER,
-      to: "mka.alecs@gmail.com",
+      to: "start@alecsdesign.xyz",
+      replyTo: contact,
       subject: `New Contact Form Submission from ${name}`,
       html: `
         <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
@@ -108,15 +110,15 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
     if (error instanceof Error) {
       errorDetails = error.message;
 
-      // Check for specific Gmail auth errors
+      // Check for specific auth errors
       if (errorDetails.includes("Invalid login")) {
         errorMessage = "Email authentication failed";
         errorDetails =
-          "Invalid Gmail credentials. Please check your app password.";
+          "Invalid credentials. Please check your email password.";
       } else if (errorDetails.includes("Username and Password not accepted")) {
-        errorMessage = "Gmail authentication failed";
+        errorMessage = "Authentication failed";
         errorDetails =
-          "Gmail rejected the credentials. Make sure you're using an App Password, not your regular password.";
+          "The email server rejected the credentials. Please verify your password.";
       }
     }
 

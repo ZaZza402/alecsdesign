@@ -203,7 +203,7 @@ export const generateLocalBusinessSchema = () => {
       "Professional web development services specializing in modern React applications, e-commerce solutions, and custom web design for small businesses.",
     url: "https://www.alecsdesign.xyz",
     telephone: "+39 380 150 3074",
-    email: "mka.alecs@gmail.com",
+    email: "start@alecsdesign.xyz",
     address: {
       "@type": "PostalAddress",
       addressLocality: "Rome",
