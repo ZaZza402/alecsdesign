@@ -31,7 +31,7 @@
   padding: 2.5rem;
   background: linear-gradient(135deg, #fafafa 0%, #f5f5f5 100%);
   border-radius: 12px;
-  border-left: 4px solid #FF5722;
+  border-left: 4px solid #ff5722;
 }
 
 .article-heading {
@@ -61,7 +61,7 @@
   font-style: italic;
   padding: 1rem 1.5rem;
   background: rgba(255, 87, 34, 0.08);
-  border-left: 3px solid #FF5722;
+  border-left: 3px solid #ff5722;
   border-radius: 4px;
   margin: 1.5rem 0;
 }
@@ -94,7 +94,7 @@
 }
 
 .webapp-card {
-  border-color: #FF5722;
+  border-color: #ff5722;
   background: linear-gradient(135deg, #fff5f3 0%, #ffe8e3 100%);
 }
 
@@ -124,9 +124,11 @@
   content: "•";
   position: absolute;
   left: 0;
-  color: #FF5722;
+  top: 0;
+  color: #ff5722;
   font-weight: bold;
   font-size: 1.2rem;
+  line-height: 1.6;
 }
 
 .article-closing {
@@ -170,12 +172,12 @@
 .portfolio-card:hover {
   transform: translateY(-4px);
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
-  border-color: #FF5722;
+  border-color: #ff5722;
 }
 
 .portfolio-card-image-container {
   width: 100%;
-  height: 180px;
+  height: 220px;
   overflow: hidden;
   background-color: #f8fafc;
   position: relative;
@@ -184,7 +186,8 @@
 .portfolio-card-image {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
+  object-position: center;
   transition: transform 0.4s ease;
 }
 
@@ -270,7 +273,7 @@
 }
 
 .visit-site-btn:hover {
-  background-color: #FF5722;
+  background-color: #ff5722;
   transform: translateY(-1px);
 }
 
@@ -333,7 +336,7 @@
   }
 
   .portfolio-card-image-container {
-    height: 160px;
+    height: 200px;
   }
 
   .portfolio-card-content {

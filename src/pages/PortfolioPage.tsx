@@ -131,8 +131,10 @@ const PortfolioPage = () => {
 
         {/* Educational Article Section */}
         <article className="portfolio-intro-article">
-          <h2 className="article-heading">{t("portfolioPage.intro.heading")}</h2>
-          
+          <h2 className="article-heading">
+            {t("portfolioPage.intro.heading")}
+          </h2>
+
           <div className="article-content">
             <p
               className="article-paragraph"
