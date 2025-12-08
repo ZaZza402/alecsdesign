@@ -3,6 +3,32 @@
   "subtitle": "My <0>recent projects</0> and the <0>tech</0> behind them.",
   "visitWebsite": "Visit Live Site",
   "techStack": "Tech Stack",
+  "intro": {
+    "heading": "Why Web Apps Matter in 2026",
+    "paragraph1": "You've heard the terms thrown around—<strong>website</strong>, <strong>web app</strong>—but what's the real difference, and why should you care?",
+    "paragraph2": "A traditional website is like a digital brochure: it displays information, looks pretty, and sits there waiting for visitors. It's static. Built with basic HTML, CSS, and maybe a sprinkle of JavaScript, it does one job—show content.",
+    "paragraph3": "A <strong>web application</strong>, on the other hand, is dynamic, interactive, and <em>alive</em>. It doesn't just show you a menu—it lets you filter dishes by dietary preference, calculates your order total in real-time, and remembers your favorite items. It doesn't just display contact info—it validates your form inputs, prevents errors before you hit send, and provides instant feedback.",
+    "paragraph4": "Think of the difference this way: a website is a poster on a wall. A web app is a conversation.",
+    "comparisonHeading": "The Practical Difference",
+    "websiteLabel": "Traditional Website",
+    "websitePoints": [
+      "Loads an entire new page on every click",
+      "Slow, clunky user experience",
+      "Built with basic tools (HTML/CSS/jQuery)",
+      "Hard to scale or add features later",
+      "Feels dated in 2026"
+    ],
+    "webappLabel": "Modern Web App",
+    "webappPoints": [
+      "Instant updates without page reloads",
+      "Fast, app-like feel (like using Instagram or Gmail)",
+      "Built with React, TypeScript, modern frameworks",
+      "Easy to expand—add e-commerce, dashboards, integrations",
+      "Future-proof and scalable"
+    ],
+    "closingHeading": "What This Means for Your Business",
+    "closingText": "In 2026, your customers expect speed, interactivity, and seamless experiences. They won't wait 3 seconds for a page to load. They won't tolerate clunky forms or outdated interfaces. A web app doesn't just look modern—it <em>performs</em> modern. It's not about following trends; it's about meeting expectations. Every project below is built as a <strong>web application</strong>—fast, scalable, and ready for whatever comes next."
+  },
   "projects": {
     "puntomigrare": {
       "title": "Punto Migrare",

@@ -3,6 +3,32 @@
   "subtitle": "<0>Proiectele mele recente</0> și <0>tehnologia</0> din spate.",
   "visitWebsite": "Vizitează Site-ul",
   "techStack": "Tehnologii Folosite",
+  "intro": {
+    "heading": "De Ce Contează Aplicațiile Web în 2026",
+    "paragraph1": "Ai auzit termenii folosiți—<strong>site web</strong>, <strong>aplicație web</strong>—dar care e diferența reală, și de ce ar trebui să îți pese?",
+    "paragraph2": "Un site web tradițional e ca o broșură digitală: afișează informații, arată bine, și stă acolo așteptând vizitatori. E static. Construit cu HTML, CSS de bază și poate un pic de JavaScript, face o singură treabă—arată conținut.",
+    "paragraph3": "O <strong>aplicație web</strong>, pe de altă parte, e dinamică, interactivă și <em>vie</em>. Nu îți arată doar un meniu—îți permite să filtrezi mâncărurile după preferințe dietetice, calculează totalul comenzii în timp real, și își amintește articolele tale favorite. Nu doar afișează informații de contact—validează datele din formular, previne erori înainte să apeși trimite, și oferă feedback instant.",
+    "paragraph4": "Gândește-te la diferență așa: un site web e un poster pe perete. O aplicație web e o conversație.",
+    "comparisonHeading": "Diferența Practică",
+    "websiteLabel": "Site Web Tradițional",
+    "websitePoints": [
+      "Încarcă o pagină nouă la fiecare clic",
+      "Experiență lentă și stângace",
+      "Construit cu unelte de bază (HTML/CSS/jQuery)",
+      "Greu de scalat sau adăugat funcții mai târziu",
+      "Pare depășit în 2026"
+    ],
+    "webappLabel": "Aplicație Web Modernă",
+    "webappPoints": [
+      "Actualizări instant fără reîncărcare",
+      "Senzație rapidă, ca o aplicație (ca Instagram sau Gmail)",
+      "Construită cu React, TypeScript, framework-uri moderne",
+      "Ușor de extins—adaugă e-commerce, dashboard-uri, integrări",
+      "Rezistentă în timp și scalabilă"
+    ],
+    "closingHeading": "Ce Înseamnă Asta Pentru Afacerea Ta",
+    "closingText": "În 2026, clienții tăi se așteaptă la viteză, interactivitate și experiențe fluide. Nu vor aștepta 3 secunde ca o pagină să se încarce. Nu vor tolera formulare greoaie sau interfețe depășite. O aplicație web nu doar arată modern—<em>funcționează</em> modern. Nu e vorba de a urma tendințe; e vorba de a îndeplini așteptări. Fiecare proiect de mai jos e construit ca <strong>aplicație web</strong>—rapidă, scalabilă și pregătită pentru orice urmează."
+  },
   "projects": {
     "puntomigrare": {
       "title": "Punto Migrare",

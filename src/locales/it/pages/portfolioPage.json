@@ -3,6 +3,32 @@
   "subtitle": "I miei <0>progetti recenti</0> e la <0>tecnologia</0> utilizzata.",
   "visitWebsite": "Visita il Sito",
   "techStack": "Stack Tecnologico",
+  "intro": {
+    "heading": "Perché le Applicazioni Web Contano nel 2026",
+    "paragraph1": "Hai sentito i termini in giro—<strong>sito web</strong>, <strong>applicazione web</strong>—ma qual è la vera differenza, e perché dovrebbe interessarti?",
+    "paragraph2": "Un sito web tradizionale è come una brochure digitale: mostra informazioni, ha un bell'aspetto, e sta lì ad aspettare i visitatori. È statico. Costruito con HTML, CSS di base e forse un pizzico di JavaScript, fa un solo lavoro—mostrare contenuti.",
+    "paragraph3": "Un'<strong>applicazione web</strong>, invece, è dinamica, interattiva e <em>viva</em>. Non ti mostra solo un menu—ti permette di filtrare i piatti per preferenza alimentare, calcola il totale dell'ordine in tempo reale, e ricorda i tuoi articoli preferiti. Non mostra solo le info di contatto—valida i dati del modulo, previene errori prima dell'invio, e fornisce feedback immediato.",
+    "paragraph4": "Pensa alla differenza in questo modo: un sito web è un poster sul muro. Un'app web è una conversazione.",
+    "comparisonHeading": "La Differenza Pratica",
+    "websiteLabel": "Sito Web Tradizionale",
+    "websitePoints": [
+      "Carica un'intera pagina nuova ad ogni clic",
+      "Esperienza utente lenta e goffa",
+      "Costruito con strumenti base (HTML/CSS/jQuery)",
+      "Difficile scalare o aggiungere funzioni dopo",
+      "Sembra datato nel 2026"
+    ],
+    "webappLabel": "Applicazione Web Moderna",
+    "webappPoints": [
+      "Aggiornamenti istantanei senza ricaricare la pagina",
+      "Sensazione veloce, come un'app (tipo Instagram o Gmail)",
+      "Costruita con React, TypeScript, framework moderni",
+      "Facile da espandere—aggiungi e-commerce, dashboard, integrazioni",
+      "A prova di futuro e scalabile"
+    ],
+    "closingHeading": "Cosa Significa Questo per la Tua Azienda",
+    "closingText": "Nel 2026, i tuoi clienti si aspettano velocità, interattività ed esperienze fluide. Non aspetteranno 3 secondi per caricare una pagina. Non tollereranno form goffi o interfacce datate. Un'app web non sembra solo moderna—<em>funziona</em> in modo moderno. Non si tratta di seguire le mode; si tratta di soddisfare le aspettative. Ogni progetto qui sotto è costruito come <strong>applicazione web</strong>—veloce, scalabile e pronta per qualsiasi cosa verrà."
+  },
   "projects": {
     "puntomigrare": {
       "title": "Punto Migrare",

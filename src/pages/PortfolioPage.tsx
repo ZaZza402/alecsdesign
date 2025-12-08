@@ -26,6 +26,14 @@ const PortfolioPage = () => {
     window.scrollTo(0, 0);
   }, []);
 
+  // Get intro text arrays from translation
+  const websitePoints = t("portfolioPage.intro.websitePoints", {
+    returnObjects: true,
+  }) as string[];
+  const webappPoints = t("portfolioPage.intro.webappPoints", {
+    returnObjects: true,
+  }) as string[];
+
   const projects: Project[] = [
     {
       id: "puntomigrare",
@@ -120,6 +128,80 @@ const PortfolioPage = () => {
             />
           </h1>
         </div>
+
+        {/* Educational Article Section */}
+        <article className="portfolio-intro-article">
+          <h2 className="article-heading">{t("portfolioPage.intro.heading")}</h2>
+          
+          <div className="article-content">
+            <p
+              className="article-paragraph"
+              dangerouslySetInnerHTML={{
+                __html: t("portfolioPage.intro.paragraph1"),
+              }}
+            />
+            <p
+              className="article-paragraph"
+              dangerouslySetInnerHTML={{
+                __html: t("portfolioPage.intro.paragraph2"),
+              }}
+            />
+            <p
+              className="article-paragraph"
+              dangerouslySetInnerHTML={{
+                __html: t("portfolioPage.intro.paragraph3"),
+              }}
+            />
+            <p
+              className="article-callout"
+              dangerouslySetInnerHTML={{
+                __html: t("portfolioPage.intro.paragraph4"),
+              }}
+            />
+          </div>
+
+          <h3 className="comparison-heading">
+            {t("portfolioPage.intro.comparisonHeading")}
+          </h3>
+
+          <div className="comparison-grid">
+            <div className="comparison-card website-card">
+              <h4 className="comparison-title">
+                {t("portfolioPage.intro.websiteLabel")}
+              </h4>
+              <ul className="comparison-list">
+                {Array.isArray(websitePoints) &&
+                  websitePoints.map((point, index) => (
+                    <li key={index}>{point}</li>
+                  ))}
+              </ul>
+            </div>
+
+            <div className="comparison-card webapp-card">
+              <h4 className="comparison-title">
+                {t("portfolioPage.intro.webappLabel")}
+              </h4>
+              <ul className="comparison-list">
+                {Array.isArray(webappPoints) &&
+                  webappPoints.map((point, index) => (
+                    <li key={index}>{point}</li>
+                  ))}
+              </ul>
+            </div>
+          </div>
+
+          <div className="article-closing">
+            <h3 className="closing-heading">
+              {t("portfolioPage.intro.closingHeading")}
+            </h3>
+            <p
+              className="closing-text"
+              dangerouslySetInnerHTML={{
+                __html: t("portfolioPage.intro.closingText"),
+              }}
+            />
+          </div>
+        </article>
 
         <div className="portfolio-grid">
           {projects.map((project) => {
