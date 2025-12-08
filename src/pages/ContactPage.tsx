@@ -141,7 +141,7 @@ const ContactPage = () => {
                 <Mail size={24} />
               </div>
               <div className="contact-method-content">
-                <h3>Email Us</h3>
+                <h3>{t("contact.methods.emailUs")}</h3>
                 <a
                   href={`mailto:${getEmail()}`}
                   onClick={() => trackEmailClick("Contact Page")}
@@ -156,7 +156,7 @@ const ContactPage = () => {
                 <Phone size={24} />
               </div>
               <div className="contact-method-content">
-                <h3>Call Us</h3>
+                <h3>{t("contact.methods.callUs")}</h3>
                 <a
                   href={`tel:${getPhone().replace(/\s/g, "")}`}
                   onClick={() => trackButtonClick("Phone Call", "Contact Page")}
@@ -168,17 +168,17 @@ const ContactPage = () => {
 
             <div className="contact-method-item">
               <div className="contact-icon-box">
-                <MessageCircle size={24} />
+                <MessageCircle size={28} />
               </div>
               <div className="contact-method-content">
-                <h3>WhatsApp</h3>
+                <h3>{t("contact.methods.whatsapp")}</h3>
                 <a
                   href={getWhatsApp()}
                   target="_blank"
                   rel="noopener noreferrer"
                   onClick={() => trackWhatsAppClick("Contact Page")}
                 >
-                  Chat on WhatsApp
+                  {t("contact.methods.chatOnWhatsApp")}
                 </a>
               </div>
             </div>
@@ -188,7 +188,7 @@ const ContactPage = () => {
                 <MapPin size={24} />
               </div>
               <div className="contact-method-content">
-                <h3>Location</h3>
+                <h3>{t("contact.methods.location")}</h3>
                 <p>{t("footer.company.location")}</p>
               </div>
             </div>
@@ -198,9 +198,9 @@ const ContactPage = () => {
         {/* Right Column: Form */}
         <div className="contact-form-column">
           <div className="contact-form-header">
-            <h2>Send a Message</h2>
+            <h2>{t("contact.methods.sendMessage")}</h2>
             <p className="text-slate-500">
-              Fill out the form below and we'll get back to you within 24 hours.
+              {t("contact.methods.sendMessageDesc")}
             </p>
           </div>
 
@@ -214,7 +214,7 @@ const ContactPage = () => {
                   type="text"
                   id="name"
                   autoComplete="name"
-                  placeholder="John Doe"
+                  placeholder={t("contact.form.namePlaceholder")}
                   className={`form-input ${errors.name ? "error" : ""}`}
                   {...register("name", {
                     required: t("contact.form.nameRequired"),
@@ -236,7 +236,7 @@ const ContactPage = () => {
                   type="text"
                   id="contact"
                   autoComplete="email"
-                  placeholder="email@example.com"
+                  placeholder={t("contact.form.contactPlaceholder")}
                   className={`form-input ${errors.contact ? "error" : ""}`}
                   {...register("contact", {
                     required: t("contact.form.contactRequired"),
@@ -258,8 +258,8 @@ const ContactPage = () => {
               <textarea
                 id="business"
                 autoComplete="organization"
-                rows={2}
-                placeholder="My Awesome Company"
+                rows={3}
+                placeholder={t("contact.form.businessPlaceholder")}
                 className={`form-textarea ${errors.business ? "error" : ""}`}
                 {...register("business", {
                   required: t("contact.form.businessRequired"),
@@ -347,7 +347,7 @@ const ContactPage = () => {
               <textarea
                 id="message"
                 rows={4}
-                placeholder="Tell us a bit more about your project..."
+                placeholder={t("contact.form.messagePlaceholder")}
                 className="form-textarea"
                 {...register("message")}
               />

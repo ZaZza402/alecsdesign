@@ -8,6 +8,15 @@
   "whatsappStatus": "WhatsApp:",
   "whatsappAvailable": "Online Ora",
   "whatsappOffline": "Offline (Torno alle 9:00)",
+  "methods": {
+    "emailUs": "Inviaci un'Email",
+    "callUs": "Chiamaci",
+    "whatsapp": "WhatsApp",
+    "chatOnWhatsApp": "Chatta su WhatsApp",
+    "location": "Posizione",
+    "sendMessage": "Invia un Messaggio",
+    "sendMessageDesc": "Compila il modulo qui sotto e ti risponderemo entro 24 ore."
+  },
   "form": {
     "name": "Nome",
     "namePlaceholder": "Il tuo nome completo",

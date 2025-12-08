@@ -8,6 +8,15 @@
   "whatsappOffline": "Offline (Back at 9 AM)",
   "successMessage": "Thanks! I've received your details and will be in touch shortly.",
   "errorMessage": "Message failed. Please email me directly or try WhatsApp.",
+  "methods": {
+    "emailUs": "Email Us",
+    "callUs": "Call Us",
+    "whatsapp": "WhatsApp",
+    "chatOnWhatsApp": "Chat on WhatsApp",
+    "location": "Location",
+    "sendMessage": "Send a Message",
+    "sendMessageDesc": "Fill out the form below and we'll get back to you within 24 hours."
+  },
   "form": {
     "name": "Name",
     "namePlaceholder": "Your full name",

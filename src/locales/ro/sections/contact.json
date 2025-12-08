@@ -8,6 +8,15 @@
   "whatsappStatus": "WhatsApp:",
   "whatsappAvailable": "Online Acum",
   "whatsappOffline": "Offline (Revin la 9:00)",
+  "methods": {
+    "emailUs": "Trimite-ne Email",
+    "callUs": "Sună-ne",
+    "whatsapp": "WhatsApp",
+    "chatOnWhatsApp": "Chat pe WhatsApp",
+    "location": "Locație",
+    "sendMessage": "Trimite un Mesaj",
+    "sendMessageDesc": "Completează formularul de mai jos și te vom contacta în 24 de ore."
+  },
   "form": {
     "name": "Nume",
     "namePlaceholder": "Numele tău complet",
