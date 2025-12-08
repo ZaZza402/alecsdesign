@@ -48,7 +48,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
       // specific TLS settings to ensure compatibility
       tls: {
         // ciphers: 'SSLv3', // Sometimes needed for older servers, but Namecheap should be modern
-        rejectUnauthorized: true, 
+        rejectUnauthorized: true,
       },
       logger: true,
       debug: true,

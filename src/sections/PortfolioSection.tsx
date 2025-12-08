@@ -113,6 +113,10 @@ const PortfolioSection = () => {
           </div>
         ))}
 
+        <div className="portfolio-tech-notice">
+          <p>{t("portfolio.techNote")}</p>
+        </div>
+
         <div className="portfolio-footer">
           <button
             onClick={() => {

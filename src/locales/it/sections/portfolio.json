@@ -3,6 +3,7 @@
   "subtitle": "Una vetrina di esperienze digitali recenti realizzate con precisione.",
   "visitWebsite": "Visita il Sito",
   "viewAllProjects": "Vedi Tutti i Progetti",
+  "techNote": "Costruiti con React, Vite, TypeScript e Tailwind — Non sono semplici siti, sono applicazioni web.",
   "projects": {
     "immigration-agency": {
       "description": "Una piattaforma professionale per un centro di assistenza immigrazione (CAF). Progettata per semplificare processi burocratici complessi e fornire informazioni chiare e accessibili."
