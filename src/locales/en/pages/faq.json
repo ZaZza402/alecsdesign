@@ -1,0 +1,264 @@
+{
+  "title": "Frequently Asked Questions",
+  "subtitle": "Find answers to common questions about web app development, pricing, timelines, and our process.",
+  "metaTitle": "FAQ - Web App Development Questions Answered | AlecsDesign",
+  "metaDescription": "Get answers to common questions about custom web app development, pricing, timelines, technology stack, maintenance, and ROI. Expert insights for your next project.",
+  "metaKeywords": "web app development FAQ, custom web application cost, web development timeline, React development, web app pricing, website maintenance cost, web development process, ROI web applications, technology stack",
+  "searchPlaceholder": "Search for answers...",
+  "noResults": "No matching questions found.",
+  "resultsFound": "results found",
+  "noQuestions": "No questions available.",
+  "tryDifferentKeywords": "Try using different keywords or browse all questions below.",
+  "stillNeedHelp": "Still Need Help?",
+  "contactPrompt": "Can't find the answer you're looking for? Get in touch with us directly.",
+  "contactButton": "Contact Us",
+  "questions": [
+    {
+      "question": "What's the difference between a website and a web app?",
+      "answer": "A <strong>website</strong> is primarily informational - it displays content like text, images, and videos (think blogs, portfolios). A <strong>web app</strong> is interactive and functional - it processes data, responds to user input, and performs tasks (think Gmail, Trello, online banking). Web apps use modern frameworks like React for dynamic functionality, offline capabilities, and app-like experiences. In 2025, most businesses benefit from web apps rather than static websites.",
+      "category": "general",
+      "keywords": [
+        "website vs web app",
+        "difference website web application",
+        "what is web app",
+        "interactive website"
+      ]
+    },
+    {
+      "question": "How much does a custom web app cost?",
+      "answer": "Custom web app costs vary based on complexity. A <strong>basic landing page with forms</strong> starts around €800-1,500. An <strong>interactive business web app</strong> (user authentication, database, admin panel) ranges from €2,500-6,000. <strong>Complex platforms</strong> with advanced features (real-time updates, API integrations, payment processing) start at €6,000+. We offer transparent pricing and detailed quotes after understanding your specific requirements. Use our project calculator for an instant estimate.",
+      "category": "pricing",
+      "keywords": [
+        "web app cost",
+        "how much website",
+        "custom web development price",
+        "web application pricing",
+        "development cost estimate"
+      ]
+    },
+    {
+      "question": "How long does it take to build a web app?",
+      "answer": "<strong>Simple landing pages:</strong> 1-2 weeks. <strong>Standard business web apps:</strong> 3-6 weeks. <strong>Complex platforms:</strong> 8-12+ weeks. Timeline depends on project scope, features, content readiness, and revision rounds. We provide detailed project timelines during consultation and keep you updated throughout development with regular milestone check-ins.",
+      "category": "timeline",
+      "keywords": [
+        "web app development time",
+        "how long build website",
+        "development timeline",
+        "project duration",
+        "website delivery time"
+      ]
+    },
+    {
+      "question": "What technology stack do you use?",
+      "answer": "We build with modern, industry-standard technologies: <strong>React</strong> (frontend framework for dynamic UIs), <strong>TypeScript</strong> (type-safe JavaScript), <strong>Vite</strong> (fast build tool), <strong>Tailwind CSS</strong> (utility-first styling), <strong>Node.js</strong> (backend), and various databases (PostgreSQL, MongoDB). This stack ensures fast performance, easy maintenance, scalability, and excellent SEO. All projects are hosted on reliable platforms like Vercel or Netlify with automatic deployments.",
+      "category": "technology",
+      "keywords": [
+        "React development",
+        "TypeScript web app",
+        "modern web stack",
+        "Vite framework",
+        "Tailwind CSS",
+        "technology stack"
+      ]
+    },
+    {
+      "question": "Do you provide ongoing maintenance and support?",
+      "answer": "Yes! We offer <strong>monthly maintenance packages</strong> starting at €150/month including: security updates, bug fixes, content updates, performance monitoring, backup management, and priority support. We also provide <strong>pay-as-you-go support</strong> at €80/hour for occasional updates. Every project includes a 30-day post-launch support period to ensure everything runs smoothly.",
+      "category": "maintenance",
+      "keywords": [
+        "website maintenance cost",
+        "web app support",
+        "ongoing maintenance",
+        "monthly support package",
+        "website updates"
+      ]
+    },
+    {
+      "question": "Can you redesign my existing website into a modern web app?",
+      "answer": "Absolutely! We specialize in <strong>website modernization</strong>. We'll analyze your current site, identify outdated technologies, and rebuild it as a modern web app with improved performance, mobile responsiveness, better SEO, and enhanced user experience. We can migrate existing content, preserve your brand identity, and add new interactive features. Redesign projects typically take 4-8 weeks depending on complexity.",
+      "category": "services",
+      "keywords": [
+        "website redesign",
+        "modernize website",
+        "rebuild website",
+        "website to web app",
+        "website upgrade"
+      ]
+    },
+    {
+      "question": "Will my web app be mobile-friendly and responsive?",
+      "answer": "<strong>100% yes.</strong> Every project we build is fully responsive and mobile-optimized from day one. With over 60% of web traffic coming from mobile devices, we follow a mobile-first design approach. Your web app will work flawlessly on smartphones, tablets, laptops, and desktops with fast loading times and intuitive touch interactions.",
+      "category": "design",
+      "keywords": [
+        "mobile friendly",
+        "responsive design",
+        "mobile optimization",
+        "mobile first",
+        "cross device compatibility"
+      ]
+    },
+    {
+      "question": "How do you handle SEO for web apps?",
+      "answer": "SEO is built into every project. We implement: <strong>semantic HTML</strong> (proper heading hierarchy, meta tags), <strong>performance optimization</strong> (fast loading speeds, image optimization), <strong>structured data</strong> (schema markup for rich results), <strong>clean URLs</strong>, <strong>XML sitemaps</strong>, <strong>Open Graph tags</strong> (social media sharing), and <strong>accessibility standards</strong>. We also provide SEO-friendly content architecture and ensure Google can properly crawl and index your web app.",
+      "category": "seo",
+      "keywords": [
+        "web app SEO",
+        "React SEO",
+        "search engine optimization",
+        "Google indexing",
+        "SEO friendly web app",
+        "structured data"
+      ]
+    },
+    {
+      "question": "What's included in a typical web app project?",
+      "answer": "A complete project includes: <strong>initial consultation</strong> (requirements gathering), <strong>custom design mockups</strong>, <strong>frontend development</strong> (React + TypeScript), <strong>backend setup</strong> (if needed), <strong>database integration</strong>, <strong>responsive design</strong>, <strong>SEO optimization</strong>, <strong>performance tuning</strong>, <strong>security implementation</strong>, <strong>testing</strong> (cross-browser, mobile), <strong>deployment</strong>, <strong>domain/hosting setup</strong>, <strong>analytics integration</strong>, <strong>training</strong>, and <strong>30-day support</strong>. You get complete ownership of all code and assets.",
+      "category": "services",
+      "keywords": [
+        "web development services",
+        "what's included",
+        "project deliverables",
+        "web app features",
+        "development package"
+      ]
+    },
+    {
+      "question": "Do I need to provide content and images?",
+      "answer": "Ideally, yes - you know your business best! However, we can help. We provide <strong>content strategy guidance</strong>, suggest structure and messaging, and can write professional copy for an additional fee. For images, we can source high-quality stock photos or work with your provided materials. The more content you provide upfront, the faster we can complete your project.",
+      "category": "process",
+      "keywords": [
+        "website content",
+        "provide images",
+        "copywriting",
+        "content creation",
+        "stock photos"
+      ]
+    },
+    {
+      "question": "Can you integrate third-party services (payments, CRM, analytics)?",
+      "answer": "Yes! We regularly integrate: <strong>payment gateways</strong> (Stripe, PayPal), <strong>CRM systems</strong> (HubSpot, Salesforce), <strong>analytics</strong> (Google Analytics, Plausible), <strong>email services</strong> (Mailchimp, SendGrid), <strong>booking systems</strong>, <strong>social media APIs</strong>, <strong>maps</strong> (Google Maps), and more. We'll recommend the best solutions for your needs and handle all technical integration work.",
+      "category": "technology",
+      "keywords": [
+        "API integration",
+        "payment gateway",
+        "Stripe integration",
+        "CRM integration",
+        "third party services",
+        "Google Analytics"
+      ]
+    },
+    {
+      "question": "What if I need changes after the project is completed?",
+      "answer": "You have options! First <strong>30 days:</strong> minor tweaks and bug fixes included free. <strong>After 30 days:</strong> purchase a monthly maintenance package (€150/month) or pay-as-you-go support (€80/hour). We'll provide full documentation and training so you can make simple content updates yourself. For major feature additions, we'll scope and quote a mini-project.",
+      "category": "support",
+      "keywords": [
+        "post launch changes",
+        "website updates",
+        "modification cost",
+        "after completion support",
+        "change request"
+      ]
+    },
+    {
+      "question": "Will I own the website code and can I host it anywhere?",
+      "answer": "<strong>You own everything.</strong> You get full ownership of all source code, designs, assets, and content. The code is delivered via GitHub and you can host it on any platform you choose (Vercel, Netlify, AWS, your own server). No vendor lock-in, no hidden fees, no recurring licensing costs. It's yours to keep, modify, or migrate as you wish.",
+      "category": "ownership",
+      "keywords": [
+        "website ownership",
+        "source code ownership",
+        "hosting flexibility",
+        "code ownership",
+        "vendor lock-in"
+      ]
+    },
+    {
+      "question": "Do you work with clients internationally?",
+      "answer": "Yes! We work with clients across Europe and globally. Communication happens via email, WhatsApp, and video calls (Zoom/Google Meet). We're fluent in English, Italian, and Romanian. Time zone differences are rarely an issue - we're flexible with meeting times and provide regular async updates. Payment accepted via bank transfer, PayPal, or Stripe.",
+      "category": "business",
+      "keywords": [
+        "international clients",
+        "remote work",
+        "global clients",
+        "work from anywhere",
+        "language support"
+      ]
+    },
+    {
+      "question": "What's the ROI on a professional web app?",
+      "answer": "A well-built web app typically pays for itself within <strong>3-12 months</strong> through: increased credibility and trust (professional appearance), higher conversion rates (optimized user flows), reduced bounce rates (fast, mobile-friendly), better SEO rankings (more organic traffic), automated processes (save staff time), and 24/7 availability. Clients report 2-5x increases in qualified leads after launching modern web apps compared to outdated websites.",
+      "category": "business",
+      "keywords": [
+        "web app ROI",
+        "return on investment",
+        "website value",
+        "business benefits",
+        "conversion rate",
+        "lead generation"
+      ]
+    },
+    {
+      "question": "Can you help with domain registration and hosting setup?",
+      "answer": "Absolutely! We'll guide you through <strong>domain registration</strong> (Namecheap, GoDaddy) or work with your existing domain. We handle all <strong>hosting setup</strong> on platforms like Vercel (recommended for React apps), Netlify, or your preferred host. We configure DNS, SSL certificates (HTTPS), custom email addresses, and ensure everything is secure and optimized. Full setup assistance included in every project.",
+      "category": "technical",
+      "keywords": [
+        "domain registration",
+        "hosting setup",
+        "DNS configuration",
+        "SSL certificate",
+        "custom email",
+        "web hosting"
+      ]
+    },
+    {
+      "question": "What happens if my website goes down or has issues?",
+      "answer": "We use <strong>reliable hosting platforms</strong> with 99.9% uptime guarantees. If issues occur: <strong>clients with maintenance packages</strong> get priority support and we'll resolve problems immediately. <strong>Without a package:</strong> contact us and we'll diagnose the issue - hosting problems are usually provider-side and resolved quickly. We provide uptime monitoring recommendations and can set up automatic alerts for critical issues.",
+      "category": "support",
+      "keywords": [
+        "website downtime",
+        "site issues",
+        "technical support",
+        "emergency support",
+        "uptime monitoring",
+        "website problems"
+      ]
+    },
+    {
+      "question": "Do you sign NDAs or confidentiality agreements?",
+      "answer": "Yes, we're happy to sign <strong>NDAs (Non-Disclosure Agreements)</strong> before discussing sensitive project details. We respect your confidentiality and intellectual property. All client information, business strategies, and project details are kept strictly confidential. We can work with your standard NDA or provide our template.",
+      "category": "business",
+      "keywords": [
+        "NDA",
+        "confidentiality agreement",
+        "non disclosure",
+        "privacy",
+        "intellectual property"
+      ]
+    },
+    {
+      "question": "Can you work with my existing brand guidelines?",
+      "answer": "Definitely! If you have established <strong>brand guidelines</strong> (colors, fonts, logo usage, tone of voice), we'll follow them precisely to ensure brand consistency. If you don't have formal guidelines, we can work with your logo and preferences to create a cohesive design that matches your brand identity. We can also develop basic brand guidelines as part of the project if needed.",
+      "category": "design",
+      "keywords": [
+        "brand guidelines",
+        "brand consistency",
+        "corporate identity",
+        "design standards",
+        "brand colors",
+        "style guide"
+      ]
+    },
+    {
+      "question": "What payment terms do you offer?",
+      "answer": "Standard payment structure: <strong>50% deposit</strong> to start work (secures your spot, covers initial development), <strong>50% upon completion</strong> before launch. For larger projects (€5,000+), we offer milestone-based payments (e.g., 33% deposit, 33% at midpoint, 34% at launch). We accept bank transfer, PayPal, and Stripe. All projects include a detailed contract outlining deliverables, timelines, and payment terms.",
+      "category": "business",
+      "keywords": [
+        "payment terms",
+        "deposit",
+        "project payment",
+        "payment methods",
+        "contract terms",
+        "invoicing"
+      ]
+    }
+  ]
+}

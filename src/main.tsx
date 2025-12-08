@@ -2,6 +2,7 @@ import { StrictMode, useEffect, lazy, Suspense } from "react";
 import { createRoot } from "react-dom/client";
 import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
 import { AnimatePresence } from "framer-motion";
+import { HelmetProvider } from "react-helmet-async";
 import "./index.css";
 import "aos/dist/aos.css"; // Import AOS styles
 import AOS from "aos";
@@ -429,11 +430,13 @@ function AppRoutes() {
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
-    <BrowserRouter>
-      <ScrollToTop />
-      <AppRoutes />
-      <CookieBanner />
-      <ScrollProgress />
-    </BrowserRouter>
+    <HelmetProvider>
+      <BrowserRouter>
+        <ScrollToTop />
+        <AppRoutes />
+        <CookieBanner />
+        <ScrollProgress />
+      </BrowserRouter>
+    </HelmetProvider>
   </StrictMode>
 );

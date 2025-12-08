@@ -155,6 +155,18 @@ const Footer = () => {
               <li>
                 <button
                   onClick={() => {
+                    trackButtonClick("FAQ", "Footer Quick Links");
+                    const lang = i18n.language || "en";
+                    navigate(`/${lang}/faq`);
+                    window.scrollTo(0, 0);
+                  }}
+                >
+                  {t("nav.faq")}
+                </button>
+              </li>
+              <li>
+                <button
+                  onClick={() => {
                     trackButtonClick("Services & Rates", "Footer Quick Links");
                     navigate(getLocalizedRoute("/services-rates"));
                   }}

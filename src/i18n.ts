@@ -16,6 +16,7 @@ import enNotFound from "./locales/en/pages/notFound.json";
 import enLegal from "./locales/en/pages/legal.json";
 import enPortfolioPage from "./locales/en/pages/portfolioPage.json";
 import enAbout from "./locales/en/pages/about.json";
+import enFaq from "./locales/en/pages/faq.json";
 
 // Import English translations - Components
 import enNav from "./locales/en/components/nav.json";
@@ -39,6 +40,7 @@ import itNotFound from "./locales/it/pages/notFound.json";
 import itLegal from "./locales/it/pages/legal.json";
 import itPortfolioPage from "./locales/it/pages/portfolioPage.json";
 import itAbout from "./locales/it/pages/about.json";
+import itFaq from "./locales/it/pages/faq.json";
 
 // Import Italian translations - Components
 import itNav from "./locales/it/components/nav.json";
@@ -62,6 +64,7 @@ import roNotFound from "./locales/ro/pages/notFound.json";
 import roLegal from "./locales/ro/pages/legal.json";
 import roPortfolioPage from "./locales/ro/pages/portfolioPage.json";
 import roAbout from "./locales/ro/pages/about.json";
+import roFaq from "./locales/ro/pages/faq.json";
 
 // Import Romanian translations - Components
 import roNav from "./locales/ro/components/nav.json";
@@ -114,6 +117,7 @@ i18n
           legal: enLegal,
           portfolioPage: enPortfolioPage,
           about: enAbout,
+          faq: enFaq,
           // Components
           nav: enNav,
           footer: enFooter,
@@ -142,6 +146,7 @@ i18n
           legal: itLegal,
           portfolioPage: itPortfolioPage,
           about: itAbout,
+          faq: itFaq,
           // Components
           nav: itNav,
           footer: itFooter,
@@ -170,6 +175,7 @@ i18n
           legal: roLegal,
           portfolioPage: roPortfolioPage,
           about: roAbout,
+          faq: roFaq,
           // Components
           nav: roNav,
           footer: roFooter,

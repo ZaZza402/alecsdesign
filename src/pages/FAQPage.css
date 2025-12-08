@@ -1,0 +1,192 @@
+/* FAQ Page Styles */
+.faq-page {
+  min-height: 100vh;
+  background: transparent;
+  padding: 4rem 1.5rem;
+}
+
+.faq-page-container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* Header Section */
+.faq-header {
+  text-align: center;
+  margin-bottom: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.faq-icon-box {
+  width: 80px;
+  height: 80px;
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 10px 30px -5px rgba(15, 23, 42, 0.3);
+  animation: fadeInScale 0.5s ease-out;
+}
+
+.faq-page-title {
+  font-size: 3.5rem;
+  font-weight: 800;
+  color: #0f172a;
+  margin-bottom: 1rem;
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+  background: linear-gradient(135deg, #0f172a 0%, #334155 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: fadeInUp 0.6s ease-out 0.1s backwards;
+}
+
+.faq-page-subtitle {
+  font-size: 1.25rem;
+  color: #64748b;
+  max-width: 600px;
+  line-height: 1.6;
+  font-weight: 500;
+  animation: fadeInUp 0.6s ease-out 0.2s backwards;
+}
+
+/* Help Section */
+.faq-help-section {
+  margin-top: 5rem;
+  padding: 3rem;
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 24px;
+  text-align: center;
+  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.1);
+}
+
+.faq-help-section h3 {
+  font-size: 1.75rem;
+  font-weight: 800;
+  color: #0f172a;
+  margin-bottom: 0.75rem;
+  letter-spacing: -0.02em;
+}
+
+.faq-help-section p {
+  font-size: 1.125rem;
+  color: #64748b;
+  margin-bottom: 2rem;
+  font-weight: 500;
+  line-height: 1.6;
+}
+
+.faq-contact-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1rem 2rem;
+  background: #0f172a;
+  color: #ffffff;
+  border: none;
+  border-radius: 12px;
+  font-size: 1.125rem;
+  font-weight: 700;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 10px 20px -10px rgba(15, 23, 42, 0.5);
+}
+
+.faq-contact-button:hover {
+  background: #1e293b;
+  transform: translateY(-2px);
+  box-shadow: 0 15px 30px -10px rgba(15, 23, 42, 0.6);
+}
+
+.faq-contact-button:active {
+  transform: translateY(0);
+}
+
+/* Animations */
+@keyframes fadeInScale {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .faq-page {
+    padding: 3rem 1rem;
+  }
+
+  .faq-header {
+    margin-bottom: 3rem;
+  }
+
+  .faq-icon-box {
+    width: 64px;
+    height: 64px;
+    margin-bottom: 1rem;
+  }
+
+  .faq-icon-box svg {
+    width: 36px;
+    height: 36px;
+  }
+
+  .faq-page-title {
+    font-size: 2.5rem;
+  }
+
+  .faq-page-subtitle {
+    font-size: 1.125rem;
+  }
+
+  .faq-help-section {
+    margin-top: 3rem;
+    padding: 2rem 1.5rem;
+  }
+
+  .faq-help-section h3 {
+    font-size: 1.5rem;
+  }
+
+  .faq-help-section p {
+    font-size: 1rem;
+  }
+
+  .faq-contact-button {
+    font-size: 1rem;
+    padding: 0.875rem 1.75rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .faq-page-title {
+    font-size: 2rem;
+  }
+
+  .faq-page-subtitle {
+    font-size: 1rem;
+  }
+}

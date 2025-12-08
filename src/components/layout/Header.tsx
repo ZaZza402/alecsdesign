@@ -19,9 +19,17 @@ const Header = () => {
     { id: "how-it-works", label: t("nav.howItWorks"), href: "#how-it-works" },
     { id: "difference", label: t("nav.difference"), href: "#difference" },
     { id: "pricing", label: t("nav.pricing"), href: "#pricing" },
-    { id: "portfolio", label: t("nav.portfolio"), href: "/portfolio" },
-    { id: "faq", label: t("nav.faq"), href: "#faq" },
-    { id: "contact", label: t("nav.contact"), href: "/contact" },
+    {
+      id: "portfolio",
+      label: t("nav.portfolio"),
+      href: `/${i18n.language}/portfolio`,
+    },
+    { id: "faq", label: t("nav.faq"), href: `/${i18n.language}/faq` },
+    {
+      id: "contact",
+      label: t("nav.contact"),
+      href: `/${i18n.language}/contact`,
+    },
   ];
 
   // Handle scroll to add shadow
@@ -36,7 +44,6 @@ const Header = () => {
         "difference",
         "pricing",
         "portfolio",
-        "faq",
         "contact",
       ];
       const scrollPosition = window.scrollY + 100;
@@ -87,9 +94,7 @@ const Header = () => {
 
     // Handle page navigation (not anchor links)
     if (!href.startsWith("#")) {
-      const lang = i18n.language;
-      const route = lang === "en" ? href : `/${lang}${href}`;
-      navigate(route);
+      navigate(href);
       window.scrollTo(0, 0);
       return;
     }
@@ -142,18 +147,21 @@ const Header = () => {
 
         {/* Desktop Navigation */}
         <nav className="header-nav desktop-nav">
-          {navItems.map((item) => (
-            <a
-              key={item.id}
-              href={item.href}
-              className={`nav-link ${
-                activeSection === item.id ? "active" : ""
-              }`}
-              onClick={(e) => handleNavClick(e, item.href)}
-            >
-              {item.label}
-            </a>
-          ))}
+          {navItems.map((item) => {
+            const isActive = item.href.startsWith("#")
+              ? activeSection === item.id
+              : location.pathname.includes(item.href);
+            return (
+              <a
+                key={item.id}
+                href={item.href}
+                className={`nav-link ${isActive ? "active" : ""}`}
+                onClick={(e) => handleNavClick(e, item.href)}
+              >
+                {item.label}
+              </a>
+            );
+          })}
         </nav>
 
         {/* Language Switcher - visible on all screen sizes */}
@@ -178,18 +186,21 @@ const Header = () => {
       {createPortal(
         <div className={`mobile-menu ${isMenuOpen ? "open" : ""}`}>
           <nav className="mobile-nav">
-            {navItems.map((item) => (
-              <a
-                key={item.id}
-                href={item.href}
-                className={`mobile-nav-link ${
-                  activeSection === item.id ? "active" : ""
-                }`}
-                onClick={(e) => handleNavClick(e, item.href)}
-              >
-                {item.label}
-              </a>
-            ))}
+            {navItems.map((item) => {
+              const isActive = item.href.startsWith("#")
+                ? activeSection === item.id
+                : location.pathname.includes(item.href);
+              return (
+                <a
+                  key={item.id}
+                  href={item.href}
+                  className={`mobile-nav-link ${isActive ? "active" : ""}`}
+                  onClick={(e) => handleNavClick(e, item.href)}
+                >
+                  {item.label}
+                </a>
+              );
+            })}
           </nav>
         </div>,
         document.body
