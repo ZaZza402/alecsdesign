@@ -1,263 +1,150 @@
-{
+﻿{
   "title": "Întrebări Frecvente",
-  "subtitle": "Găsește răspunsuri la întrebările comune despre dezvoltarea de aplicații web, prețuri, termene și procesul nostru.",
-  "metaTitle": "FAQ - Întrebări despre Dezvoltarea Web Răspunsuri | AlecsDesign",
-  "metaDescription": "Răspunsuri la întrebările comune despre dezvoltarea personalizată de aplicații web, prețuri, termene, tehnologii, întreținere și ROI. Consultanță expertă pentru următorul tău proiect.",
-  "metaKeywords": "FAQ dezvoltare web app, cost aplicație web personalizată, termene dezvoltare web, dezvoltare React, prețuri web app, cost întreținere site, proces dezvoltare web, ROI aplicații web, stack tehnologic",
+  "subtitle": "Răspunsuri clare despre procesul meu de dezvoltare, prețuri și cum te pot ajuta să construiești următorul tău proiect.",
+  "metaTitle": "FAQ - Dezvoltare Web Freelance | AlecsDesign",
+  "metaDescription": "Întrebări comune despre dezvoltarea aplicațiilor web personalizate, proiecte Next.js, prețuri și termene. Răspunsuri directe de la un dezvoltator freelance specializat.",
+  "metaKeywords": "dezvoltator web freelance, cost aplicație web personalizată, dezvoltator Next.js, react freelancer, prețuri dezvoltare web, site vs aplicație web, AlecsDesign FAQ",
   "searchPlaceholder": "Caută răspunsuri...",
-  "noResults": "Nicio întrebare găsită.",
+  "noResults": "Nu s-au găsit întrebări potrivite.",
   "resultsFound": "rezultate găsite",
-  "noQuestions": "Nicio întrebare disponibilă.",
-  "tryDifferentKeywords": "Încearcă să folosești alte cuvinte cheie sau navighează toate întrebările de mai jos.",
+  "noQuestions": "Nu există întrebări disponibile.",
+  "tryDifferentKeywords": "Încearcă să folosești cuvinte cheie diferite sau răsfoiește toate întrebările de mai jos.",
   "stillNeedHelp": "Mai Ai Nevoie de Ajutor?",
-  "contactPrompt": "Nu găsești răspunsul pe care îl cauți? Contactează-ne direct.",
-  "contactButton": "Contactează-ne",
+  "contactPrompt": "Ai o întrebare specifică despre proiectul tău? Scrie-mi direct.",
+  "contactButton": "Contactează-mă",
   "questions": [
     {
-      "question": "Care este diferența între un site web și o aplicație web?",
-      "answer": "Un <strong>site web</strong> este în principal informațional - afișează conținut ca text, imagini și videoclipuri (ca bloguri, portofolii). O <strong>aplicație web</strong> este interactivă și funcțională - procesează date, răspunde la input-ul utilizatorului și îndeplinește sarcini (ca Gmail, Trello, banking online). Aplicațiile web folosesc framework-uri moderne ca React pentru funcționalitate dinamică, capabilități offline și experiențe asemănătoare aplicațiilor. În 2025, majoritatea afacerilor beneficiază de aplicații web mai degrabă decât de site-uri statice.",
+      "question": "Ești o agenție sau un freelancer?",
+      "answer": "Sunt un <strong>dezvoltator freelance specializat</strong>. Când lucrezi cu mine, comunici direct cu persoana care scrie codul tău, nu cu un project manager. Acest lucru înseamnă cicluri de feedback mai rapide, costuri mai mici (fără costuri suplimentare de agenție) și un angajament personal pentru succesul proiectului tău. Mă ocup de întregul stack: de la interfața vizuală până la logica bazei de date.",
+      "category": "business",
+      "keywords": [
+        "freelancer vs agenție",
+        "cine ești",
+        "dezvoltator independent",
+        "persoană de contact"
+      ]
+    },
+    {
+      "question": "Care este diferența dintre un Site Web și o Aplicație Web?",
+      "answer": "Gândește-te la un <strong>site web</strong> ca la o broșură digitalăoferă informații (ca meniul unui restaurant). O <strong>aplicație web</strong> este un instrument<em>face</em> lucruri (ca un Calculator Fiscal, un Sistem de Rezervări sau un Dashboard). Mă specializez în construirea de Aplicații Web de înaltă performanță folosind <strong>React și Next.js</strong>, care se comportă ca aplicații mobile dar rulează în browser.",
       "category": "general",
       "keywords": [
-        "site web vs web app",
-        "diferență site web aplicație web",
-        "ce este web app",
-        "site interactiv"
+        "site web vs aplicație web",
+        "site interactiv",
+        "ce construiești",
+        "definiție aplicație web"
       ]
     },
     {
-      "question": "Cât costă o aplicație web personalizată?",
-      "answer": "Costurile aplicațiilor web personalizate variază în funcție de complexitate. O <strong>landing page de bază cu formulare</strong> pornește de la circa €800-1.500. O <strong>aplicație web de business interactivă</strong> (autentificare utilizator, bază de date, panou admin) variază de la €2.500 la €6.000. <strong>Platforme complexe</strong> cu funcționalități avansate (actualizări în timp real, integrări API, procesare plăți) pornesc de la €6.000+. Oferim prețuri transparente și oferte detaliate după ce înțelegem cerințele tale specifice. Folosește calculatorul nostru de proiect pentru o estimare instantanee.",
-      "category": "prețuri",
+      "question": "Cât costă un proiect?",
+      "answer": "Fiind freelancer, tarifele mele sunt de obicei <strong>cu 30-40% mai mici decât agențiile</strong> pentru aceeași calitate a codului. Un site informațional standard începe de la aproximativ <strong>800</strong>. Aplicațiile Web personalizate (precum calculatoare, dashboard-uri sau instrumente SaaS) variază de obicei între <strong>2.000 și 5.000</strong> în funcție de logica necesară. Ofer o ofertă de preț fix în avans, fără surprize.",
+      "category": "pricing",
       "keywords": [
-        "cost web app",
-        "cât costă site",
-        "preț dezvoltare web personalizată",
-        "prețuri aplicație web",
-        "estimare costuri dezvoltare"
+        "cost aplicație web",
+        "tarife freelance",
+        "preț dezvoltare personalizată",
+        "cât costă un site web"
       ]
     },
     {
-      "question": "Cât timp durează să construiești o aplicație web?",
-      "answer": "<strong>Landing page-uri simple:</strong> 1-2 săptămâni. <strong>Aplicații web de business standard:</strong> 3-6 săptămâni. <strong>Platforme complexe:</strong> 8-12+ săptămâni. Termenul depinde de scopul proiectului, funcționalități, disponibilitatea conținutului și runde de revizuire. Oferim termene detaliate în timpul consultației și te ținem la curent pe parcursul dezvoltării cu verificări regulate ale etapelor.",
-      "category": "termene",
+      "question": "Cât durează construirea?",
+      "answer": "Pentru că nu am birocrație corporatistă, mă mișc rapid. Un proiect standard durează <strong>2-4 săptămâni</strong>. Aplicații complexe (precum Simulatorul ISEE) pot dura <strong>4-8 săptămâni</strong> pentru a asigura că matematica și logica sunt perfecte. Îți voi da o estimare realistă în timpul primului nostru apel și te voi actualiza săptămânal.",
+      "category": "timeline",
       "keywords": [
-        "timp dezvoltare web app",
-        "cât timp construire site",
-        "timeline dezvoltare",
+        "timp dezvoltare",
+        "timp de livrare",
         "durată proiect",
-        "timp livrare site"
+        "cât durează să construiești"
       ]
     },
     {
-      "question": "Ce stack tehnologic folosiți?",
-      "answer": "Construim cu tehnologii moderne, standard în industrie: <strong>React</strong> (framework frontend pentru UI-uri dinamice), <strong>TypeScript</strong> (JavaScript type-safe), <strong>Vite</strong> (instrument de build rapid), <strong>Tailwind CSS</strong> (styling utility-first), <strong>Node.js</strong> (backend), și diverse baze de date (PostgreSQL, MongoDB). Acest stack asigură performanță rapidă, întreținere ușoară, scalabilitate și SEO excelent. Toate proiectele sunt gazduite pe platforme fiabile ca Vercel sau Netlify cu deployment-uri automate.",
-      "category": "tehnologie",
+      "question": "Ce tehnologie folosești?",
+      "answer": "Nu folosesc template-uri WordPress depășite. Construiesc cu stack-ul modern folosit de companiile tehnologice de top: <strong>React & Next.js</strong> pentru interfață, <strong>TypeScript</strong> pentru logică fără bug-uri, și <strong>Tailwind CSS</strong> pentru design pixel-perfect. Acest lucru asigură că site-ul tău este incredibil de rapid, sigur și pregătit pentru viitor.",
+      "category": "technology",
       "keywords": [
-        "dezvoltare React",
-        "web app TypeScript",
-        "stack web modern",
-        "framework Vite",
-        "Tailwind CSS",
-        "stack tehnologic"
+        "stack tehnologic",
+        "dezvoltator Next.js",
+        "React freelancer",
+        "TypeScript",
+        "Tailwind CSS"
       ]
     },
     {
-      "question": "Oferiți întreținere și suport continuu?",
-      "answer": "Da! Oferim <strong>pachete de întreținere lunară</strong> începând de la €150/lună incluzând: actualizări de securitate, remedieri bug-uri, actualizări conținut, monitorizare performanță, management backup-uri și suport prioritar. Oferim și <strong>suport pay-as-you-go</strong> la €80/oră pentru actualizări ocazionale. Fiecare proiect include o perioadă de suport post-lansare de 30 de zile pentru a ne asigura că totul funcționează perfect.",
-      "category": "întreținere",
-      "keywords": [
-        "cost întreținere site",
-        "suport web app",
-        "întreținere continuă",
-        "pachet suport lunar",
-        "actualizări site"
-      ]
-    },
-    {
-      "question": "Puteți redesigna site-ul meu existent într-o aplicație web modernă?",
-      "answer": "Absolut! Ne specializăm în <strong>modernizarea site-urilor web</strong>. Vom analiza site-ul tău actual, vom identifica tehnologii învechite și îl vom reconstrui ca o aplicație web modernă cu performanță îmbunătățită, responsive mobile, SEO mai bun și experiență utilizator îmbunătățită. Putem migra conținutul existent, păstra identitatea ta de brand și adăuga noi funcționalități interactive. Proiectele de redesign durează de obicei 4-8 săptămâni în funcție de complexitate.",
-      "category": "servicii",
+      "question": "Poți moderniza vechiul meu site web?",
+      "answer": "Absolut. Mă specializez în a lua site-uri web vechi, lente și a le reconstrui în Aplicații Web moderne. De exemplu, dacă ai un formular PDF pe site-ul tău pe care clienții trebuie să-l printeze și semneze, pot transforma asta într-un <strong>Wizard Interactiv</strong> digital care calculează rezultatele instantaneu și generează un PDF automat.",
+      "category": "services",
       "keywords": [
         "redesign site web",
         "modernizare site",
-        "reconstruire site",
-        "site web la web app",
-        "upgrade site"
+        "transformare digitală",
+        "formulare interactive"
       ]
     },
     {
-      "question": "Aplicația mea web va fi mobile-friendly și responsive?",
-      "answer": "<strong>100% da.</strong> Fiecare proiect pe care îl construim este complet responsive și optimizat pentru mobil din prima zi. Cu peste 60% din traficul web provenind de pe dispozitive mobile, urmăm o abordare de design mobile-first. Aplicația ta web va funcționa impecabil pe smartphone-uri, tablete, laptop-uri și desktop-uri cu timpi de încărcare rapizi și interacțiuni touch intuitive.",
-      "category": "design",
+      "question": "Oferi mentenanță după lansare?",
+      "answer": "Da, dar nu te blochez în contracte scumpe. Ofer o <strong>garanție de 30 de zile</strong> unde rezolv orice bug-uri gratuit. După aceea, mă poți angaja pe bază orară pentru actualizări, sau poți plăti un mic abonament lunar (50-100) dacă vrei să gestionez actualizări de hosting și verificări tehnice regulate.",
+      "category": "support",
       "keywords": [
-        "mobile friendly",
-        "design responsive",
-        "optimizare mobile",
-        "mobile first",
-        "compatibilitate cross device"
+        "mentenanță site web",
+        "cost suport",
+        "suport post lansare",
+        "garanție"
       ]
     },
     {
-      "question": "Cum gestionați SEO pentru aplicațiile web?",
-      "answer": "SEO-ul este integrat în fiecare proiect. Implementăm: <strong>HTML semantic</strong> (ierarhie corectă de titluri, meta tag-uri), <strong>optimizare performanță</strong> (viteze rapide de încărcare, optimizare imagini), <strong>date structurate</strong> (markup schema pentru rezultate bogate), <strong>URL-uri curate</strong>, <strong>hărți XML</strong>, <strong>tag-uri Open Graph</strong> (partajare social media) și <strong>standarde de accesibilitate</strong>. Oferim și arhitectură de conținut SEO-friendly și ne asigurăm că Google poate indexa și scanează corect aplicația ta web.",
-      "category": "seo",
+      "question": "Voi deține codul?",
+      "answer": "<strong>100% Da.</strong> Spre deosebire de website builder-ele (Wix, Squarespace) unde închiriezi site-ul, aici deții activul. Livrez codul sursă prin GitHub. Ești liber să-l găzduiești oriunde, să-l modifici sau să-l duci la alt dezvoltator în viitor. Fără vendor lock-in.",
+      "category": "ownership",
       "keywords": [
-        "SEO web app",
-        "SEO React",
-        "optimizare motoare căutare",
-        "indexare Google",
-        "web app SEO friendly",
-        "date structurate"
-      ]
-    },
-    {
-      "question": "Ce este inclus într-un proiect tipic de aplicație web?",
-      "answer": "Un proiect complet include: <strong>consultație inițială</strong> (colectare cerințe), <strong>mockup-uri design personalizate</strong>, <strong>dezvoltare frontend</strong> (React + TypeScript), <strong>setup backend</strong> (dacă e necesar), <strong>integrare bază de date</strong>, <strong>design responsive</strong>, <strong>optimizare SEO</strong>, <strong>tuning performanță</strong>, <strong>implementare securitate</strong>, <strong>testare</strong> (cross-browser, mobile), <strong>deployment</strong>, <strong>setup domeniu/hosting</strong>, <strong>integrare analytics</strong>, <strong>training</strong> și <strong>suport 30 zile</strong>. Obții proprietatea completă asupra întregului cod și asset-uri.",
-      "category": "servicii",
-      "keywords": [
-        "servicii dezvoltare web",
-        "ce este inclus",
-        "livrabile proiect",
-        "funcționalități web app",
-        "pachet dezvoltare"
-      ]
-    },
-    {
-      "question": "Trebuie să furnizez conținut și imagini?",
-      "answer": "Ideal, da - tu cunoști cel mai bine afacerea ta! Totuși, putem ajuta. Oferim <strong>ghidare strategie conținut</strong>, sugerăm structură și mesaje, și putem scrie texte profesionale cu o taxă suplimentară. Pentru imagini, putem procura fotografii stock de înaltă calitate sau lucra cu materialele tale furnizate. Cu cât furnizezi mai mult conținut în avans, cu atât mai repede putem finaliza proiectul.",
-      "category": "proces",
-      "keywords": [
-        "conținut site web",
-        "furnizare imagini",
-        "copywriting",
-        "creare conținut",
-        "fotografii stock"
-      ]
-    },
-    {
-      "question": "Puteți integra servicii terțe (plăți, CRM, analytics)?",
-      "answer": "Da! Integrăm regulat: <strong>gateway-uri de plată</strong> (Stripe, PayPal), <strong>sisteme CRM</strong> (HubSpot, Salesforce), <strong>analytics</strong> (Google Analytics, Plausible), <strong>servicii email</strong> (Mailchimp, SendGrid), <strong>sisteme de rezervare</strong>, <strong>API-uri social media</strong>, <strong>hărți</strong> (Google Maps) și altele. Vom recomanda cele mai bune soluții pentru nevoile tale și vom gestiona toată munca de integrare tehnică.",
-      "category": "tehnologie",
-      "keywords": [
-        "integrare API",
-        "gateway plată",
-        "integrare Stripe",
-        "integrare CRM",
-        "servicii terțe",
-        "Google Analytics"
-      ]
-    },
-    {
-      "question": "Ce se întâmplă dacă am nevoie de modificări după finalizarea proiectului?",
-      "answer": "Ai opțiuni! Prime <strong>30 de zile:</strong> ajustări minore și remedieri bug-uri incluse gratuit. <strong>După 30 de zile:</strong> achiziționează un pachet de întreținere lunară (€150/lună) sau suport pay-as-you-go (€80/oră). Vom furniza documentație completă și training astfel încât să poți face singur actualizări simple de conținut. Pentru adăugări majore de funcționalități, vom defini domeniul și vom face o ofertă pentru un mini-proiect.",
-      "category": "suport",
-      "keywords": [
-        "modificări post lansare",
-        "actualizări site",
-        "cost modificări",
-        "suport post finalizare",
-        "cerere modificări"
-      ]
-    },
-    {
-      "question": "Voi fi proprietarul codului site-ului și pot să-l găzduiesc oriunde?",
-      "answer": "<strong>Tu deții totul.</strong> Obții proprietatea completă asupra întregului cod sursă, design-uri, asset-uri și conținut. Codul este livrat prin GitHub și îl poți găzdui pe orice platformă alegi (Vercel, Netlify, AWS, serverul tău). Fără vendor lock-in, fără costuri ascunse, fără costuri recurente de licențiere. Este al tău să păstrezi, modifici sau migrezi cum dorești.",
-      "category": "proprietate",
-      "keywords": [
-        "proprietate site web",
-        "proprietate cod sursă",
-        "flexibilitate hosting",
         "proprietate cod",
+        "proprietate intelectuală",
+        "acces GitHub",
         "vendor lock-in"
       ]
     },
     {
-      "question": "Lucrați cu clienți internaționali?",
-      "answer": "Da! Lucrăm cu clienți din toată Europa și la nivel global. Comunicarea se face prin email, WhatsApp și apeluri video (Zoom/Google Meet). Vorbim fluent engleză, italiană și română. Diferențele de fus orar sunt rar o problemă - suntem flexibili cu orele de întâlnire și oferim actualizări async regulate. Plată acceptată prin transfer bancar, PayPal sau Stripe.",
+      "question": "Lucrezi cu clienți internaționali?",
+      "answer": "Da. Lucrez remote cu clienți din toată Europa. Vorbesc fluent <strong>Engleză, Italiană și Română</strong>, deci putem comunica în limba cu care te simți cel mai confortabil. Putem gestiona întâlnirile prin Google Meet sau Zoom.",
       "category": "business",
       "keywords": [
         "clienți internaționali",
-        "muncă la distanță",
-        "clienți globali",
-        "muncă de oriunde",
-        "suport lingvistic"
+        "limbi vorbite",
+        "dezvoltator remote",
+        "dezvoltator italian",
+        "dezvoltator român"
       ]
     },
     {
-      "question": "Care este ROI-ul unei aplicații web profesionale?",
-      "answer": "O aplicație web bine construită se amortizează de obicei în <strong>3-12 luni</strong> prin: credibilitate și încredere crescute (aspect profesional), rate de conversie mai mari (fluxuri utilizator optimizate), rate de respingere reduse (rapid, mobile-friendly), rankinguri SEO mai bune (mai mult trafic organic), procese automatizate (economisire timp personal) și disponibilitate 24/7. Clienții raportează creșteri de 2-5x în lead-uri calificate după lansarea de aplicații web moderne comparativ cu site-uri învechite.",
+      "question": "Cum funcționează plata?",
+      "answer": "Împart plățile pentru a fi corect pentru amândoi: <strong>50% în avans</strong> pentru a-mi rezerva timpul și a începe dezvoltarea, și restul de <strong>50% la finalizare</strong> când ești mulțumit de rezultat și gata de lansare. Accept Transfer Bancar, PayPal sau Stripe.",
       "category": "business",
       "keywords": [
-        "ROI web app",
-        "rentabilitate investiție",
-        "valoare site web",
-        "beneficii business",
-        "rată conversie",
-        "generare lead-uri"
-      ]
-    },
-    {
-      "question": "Puteți ajuta cu înregistrarea domeniului și setup-ul hosting-ului?",
-      "answer": "Absolut! Te vom ghida prin <strong>înregistrarea domeniului</strong> (Namecheap, GoDaddy) sau vom lucra cu domeniul tău existent. Gestionăm tot <strong>setup-ul hosting</strong> pe platforme ca Vercel (recomandat pentru aplicații React), Netlify, sau host-ul tău preferat. Configurăm DNS, certificate SSL (HTTPS), adrese email personalizate și ne asigurăm că totul este securizat și optimizat. Asistență completă setup inclusă în fiecare proiect.",
-      "category": "tehnic",
-      "keywords": [
-        "înregistrare domeniu",
-        "setup hosting",
-        "configurare DNS",
-        "certificat SSL",
-        "email personalizat",
-        "web hosting"
-      ]
-    },
-    {
-      "question": "Ce se întâmplă dacă site-ul meu pică sau are probleme?",
-      "answer": "Folosim <strong>platforme de hosting fiabile</strong> cu garanții de uptime de 99,9%. Dacă apar probleme: <strong>clienții cu pachete de întreținere</strong> primesc suport prioritar și vom rezolva problemele imediat. <strong>Fără pachet:</strong> contactează-ne și vom diagnostica problema - problemele de hosting sunt de obicei de partea furnizorului și rezolvate rapid. Oferim recomandări pentru monitorizare uptime și putem configura alerte automate pentru probleme critice.",
-      "category": "suport",
-      "keywords": [
-        "downtime site",
-        "probleme site",
-        "suport tehnic",
-        "suport urgență",
-        "monitorizare uptime",
-        "probleme site web"
-      ]
-    },
-    {
-      "question": "Semnați NDA-uri sau acorduri de confidențialitate?",
-      "answer": "Da, suntem bucuroși să semnăm <strong>NDA-uri (Acorduri de Non-Divulgare)</strong> înainte de a discuta detalii sensibile ale proiectului. Respectăm confidențialitatea și proprietatea ta intelectuală. Toate informațiile clienților, strategiile de business și detaliile proiectului sunt păstrate strict confidențiale. Putem lucra cu NDA-ul tău standard sau furniza șablonul nostru.",
-      "category": "business",
-      "keywords": [
-        "NDA",
-        "acord confidențialitate",
-        "non divulgare",
-        "confidențialitate",
-        "proprietate intelectuală"
-      ]
-    },
-    {
-      "question": "Puteți lucra cu ghidurile mele de brand existente?",
-      "answer": "Cu siguranță! Dacă ai <strong>ghiduri de brand</strong> stabilite (culori, fonturi, utilizare logo, ton de voce), le vom urma precis pentru a asigura consistența brand-ului. Dacă nu ai ghiduri formale, putem lucra cu logo-ul și preferințele tale pentru a crea un design coerent care se potrivește identității tale de brand. Putem dezvolta și ghiduri de brand de bază ca parte a proiectului dacă este necesar.",
-      "category": "design",
-      "keywords": [
-        "ghiduri brand",
-        "consistență brand",
-        "identitate corporativă",
-        "standarde design",
-        "culori brand",
-        "ghid stil"
-      ]
-    },
-    {
-      "question": "Ce termene de plată oferiți?",
-      "answer": "Structură de plată standard: <strong>50% avans</strong> pentru a începe lucrul (asigură locul tău, acoperă dezvoltarea inițială), <strong>50% la finalizare</strong> înainte de lansare. Pentru proiecte mai mari (€5.000+), oferim plăți bazate pe etape (ex. 33% avans, 33% la jumătate, 34% la lansare). Acceptăm transfer bancar, PayPal și Stripe. Toate proiectele includ un contract detaliat care prezintă livrabile, termene și termene de plată.",
-      "category": "business",
-      "keywords": [
-        "termene plată",
+        "termeni de plată",
         "avans",
-        "plată proiect",
-        "metode plată",
-        "termeni contract",
-        "facturare"
+        "etape",
+        "metode de plată"
+      ]
+    },
+    {
+      "question": "Poți gestiona SEO și Hosting?",
+      "answer": "Da. Construiesc site-uri cu <strong>SEO Tehnic</strong> în minte (folosind Next.js Server Side Rendering) astfel încât Google să le poată citi ușor. De asemenea, gestionez deployment-ul pe platforme precum <strong>Vercel</strong>, conectez domeniul tău și configurez certificatul SSL (HTTPS) astfel încât site-ul tău să fie sigur din prima zi.",
+      "category": "technical",
+      "keywords": [
+        "servicii SEO",
+        "configurare hosting",
+        "deployment Vercel",
+        "clasament Google"
+      ]
+    },
+    {
+      "question": "Ce trebuie să ofer pentru a începe?",
+      "answer": "Doar ideea și obiectivele tale! Dacă ai text și imagini, e grozav. Dacă nu, te pot ajuta să structurezi conținutul. Dacă ai un design specific în minte, îl pot construi. Dacă nu ai, pot proiecta o interfață curată și modernă pentru tine.",
+      "category": "process",
+      "keywords": [
+        "cum să începi",
+        "cerințe",
+        "resurse de design",
+        "creare conținut"
       ]
     }
   ]

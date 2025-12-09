@@ -1,263 +1,150 @@
-{
+﻿{
   "title": "Domande Frequenti",
-  "subtitle": "Trova risposte alle domande più comuni sullo sviluppo di applicazioni web, prezzi, tempistiche e il nostro processo.",
-  "metaTitle": "FAQ - Domande sullo Sviluppo Web Risposte | AlecsDesign",
-  "metaDescription": "Risposte alle domande più comuni sullo sviluppo di applicazioni web personalizzate, prezzi, tempistiche, tecnologie, manutenzione e ROI. Consulenza esperta per il tuo prossimo progetto.",
-  "metaKeywords": "FAQ sviluppo web app, costo applicazione web personalizzata, tempistiche sviluppo web, sviluppo React, prezzi web app, costo manutenzione sito, processo sviluppo web, ROI applicazioni web, stack tecnologico",
+  "subtitle": "Risposte chiare sul mio processo di sviluppo, prezzi e come posso aiutarti a realizzare il tuo prossimo progetto.",
+  "metaTitle": "FAQ - Sviluppo Web Freelance | AlecsDesign",
+  "metaDescription": "Domande comuni sullo sviluppo di applicazioni web personalizzate, progetti Next.js, prezzi e tempistiche. Risposte dirette da uno sviluppatore freelance specializzato.",
+  "metaKeywords": "sviluppatore web freelance, costo app web personalizzata, sviluppatore Next.js, react freelancer, prezzi sviluppo web, sito vs app web, AlecsDesign FAQ",
   "searchPlaceholder": "Cerca risposte...",
   "noResults": "Nessuna domanda corrispondente trovata.",
   "resultsFound": "risultati trovati",
   "noQuestions": "Nessuna domanda disponibile.",
-  "tryDifferentKeywords": "Prova a usare parole chiave diverse o sfoglia tutte le domande qui sotto.",
+  "tryDifferentKeywords": "Prova a usare parole chiave diverse o scorri tutte le domande qui sotto.",
   "stillNeedHelp": "Hai Ancora Bisogno di Aiuto?",
-  "contactPrompt": "Non trovi la risposta che cerchi? Contattaci direttamente.",
-  "contactButton": "Contattaci",
+  "contactPrompt": "Hai una domanda specifica sul tuo progetto? Scrivimi direttamente.",
+  "contactButton": "Contattami",
   "questions": [
     {
-      "question": "Qual è la differenza tra un sito web e una web app?",
-      "answer": "Un <strong>sito web</strong> è principalmente informativo - mostra contenuti come testo, immagini e video (come blog, portfolio). Una <strong>web app</strong> è interattiva e funzionale - elabora dati, risponde all'input dell'utente ed esegue compiti (come Gmail, Trello, online banking). Le web app utilizzano framework moderni come React per funzionalità dinamiche, capacità offline ed esperienze simili alle app. Nel 2025, la maggior parte delle aziende beneficia di web app piuttosto che di siti statici.",
-      "category": "generale",
+      "question": "Sei un''agenzia o un freelancer?",
+      "answer": "Sono uno <strong>sviluppatore freelance specializzato</strong>. Quando lavori con me, comunichi direttamente con la persona che scrive il tuo codice, non con un project manager. Questo significa cicli di feedback più veloci, costi inferiori (nessun costo aggiuntivo di agenzia) e un impegno personale per il successo del tuo progetto. Gestisco l''intero stack: dall''interfaccia visiva alla logica del database.",
+      "category": "business",
+      "keywords": [
+        "freelancer vs agenzia",
+        "chi sei",
+        "sviluppatore indipendente",
+        "persona di contatto"
+      ]
+    },
+    {
+      "question": "Qual è la differenza tra un Sito Web e una Web App?",
+      "answer": "Pensa a un <strong>sito web</strong> come a una brochure digitalefornisce informazioni (come il menu di un ristorante). Una <strong>web app</strong> è uno strumento<em>fa</em> cose (come un Calcolatore Fiscale, un Sistema di Prenotazione o una Dashboard). Mi specializzo nella realizzazione di Web App ad alte prestazioni usando <strong>React e Next.js</strong>, che si comportano come app mobile ma funzionano nel tuo browser.",
+      "category": "general",
       "keywords": [
         "sito web vs web app",
-        "differenza sito web applicazione web",
-        "cos'è web app",
-        "sito interattivo"
+        "sito interattivo",
+        "cosa costruisci",
+        "definizione applicazione web"
       ]
     },
     {
-      "question": "Quanto costa una web app personalizzata?",
-      "answer": "I costi delle web app personalizzate variano in base alla complessità. Una <strong>landing page base con moduli</strong> parte da circa €800-1.500. Una <strong>web app aziendale interattiva</strong> (autenticazione utente, database, pannello admin) va da €2.500 a €6.000. <strong>Piattaforme complesse</strong> con funzionalità avanzate (aggiornamenti in tempo reale, integrazioni API, elaborazione pagamenti) partono da €6.000+. Offriamo prezzi trasparenti e preventivi dettagliati dopo aver compreso le tue esigenze specifiche. Usa il nostro calcolatore di progetto per una stima immediata.",
-      "category": "prezzi",
+      "question": "Quanto costa un progetto?",
+      "answer": "Essendo freelancer, le mie tariffe sono tipicamente <strong>30-40% inferiori alle agenzie</strong> per la stessa qualità di codice. Un sito informativo standard parte da circa <strong>800</strong>. Le Web App personalizzate (come calcolatori, dashboard o strumenti SaaS) variano tipicamente da <strong>2.000 a 5.000</strong> a seconda della logica richiesta. Fornisco un preventivo a prezzo fisso in anticipo, senza sorprese.",
+      "category": "pricing",
       "keywords": [
-        "costo web app",
-        "quanto costa sito",
-        "prezzo sviluppo web personalizzato",
-        "prezzi applicazione web",
-        "stima costi sviluppo"
+        "costo app web",
+        "tariffe freelance",
+        "prezzo sviluppo personalizzato",
+        "quanto costa un sito web"
       ]
     },
     {
-      "question": "Quanto tempo ci vuole per costruire una web app?",
-      "answer": "<strong>Landing page semplici:</strong> 1-2 settimane. <strong>Web app aziendali standard:</strong> 3-6 settimane. <strong>Piattaforme complesse:</strong> 8-12+ settimane. I tempi dipendono dall'ambito del progetto, funzionalità, disponibilità dei contenuti e round di revisione. Forniamo tempistiche dettagliate durante la consulenza e ti teniamo aggiornato durante lo sviluppo con controlli regolari delle milestone.",
-      "category": "tempistiche",
+      "question": "Quanto tempo ci vuole per realizzarlo?",
+      "answer": "Poiché non ho burocrazia aziendale, lavoro velocemente. Un progetto standard richiede <strong>2-4 settimane</strong>. Applicazioni complesse (come il Simulatore ISEE) possono richiedere <strong>4-8 settimane</strong> per garantire che matematica e logica siano perfetti. Ti darò una tempistica realistica durante la nostra prima chiamata e ti aggiornerò settimanalmente.",
+      "category": "timeline",
       "keywords": [
-        "tempo sviluppo web app",
-        "quanto tempo costruire sito",
-        "timeline sviluppo",
+        "tempistiche sviluppo",
+        "tempi di consegna",
         "durata progetto",
-        "tempo consegna sito"
+        "quanto tempo per costruire"
       ]
     },
     {
-      "question": "Quale stack tecnologico utilizzate?",
-      "answer": "Costruiamo con tecnologie moderne e standard del settore: <strong>React</strong> (framework frontend per UI dinamiche), <strong>TypeScript</strong> (JavaScript type-safe), <strong>Vite</strong> (strumento di build veloce), <strong>Tailwind CSS</strong> (styling utility-first), <strong>Node.js</strong> (backend), e vari database (PostgreSQL, MongoDB). Questo stack garantisce prestazioni veloci, facile manutenzione, scalabilità ed eccellente SEO. Tutti i progetti sono ospitati su piattaforme affidabili come Vercel o Netlify con deployment automatici.",
-      "category": "tecnologia",
+      "question": "Quale tecnologia usi?",
+      "answer": "Non uso template WordPress obsoleti. Costruisco con lo stack moderno usato dalle principali aziende tecnologiche: <strong>React & Next.js</strong> per l''interfaccia, <strong>TypeScript</strong> per una logica priva di bug, e <strong>Tailwind CSS</strong> per un design pixel-perfect. Questo garantisce che il tuo sito sia incredibilmente veloce, sicuro e pronto per il futuro.",
+      "category": "technology",
       "keywords": [
-        "sviluppo React",
-        "web app TypeScript",
-        "stack web moderno",
-        "framework Vite",
-        "Tailwind CSS",
-        "stack tecnologico"
+        "stack tecnologico",
+        "sviluppatore Next.js",
+        "React freelancer",
+        "TypeScript",
+        "Tailwind CSS"
       ]
     },
     {
-      "question": "Fornite manutenzione e supporto continui?",
-      "answer": "Sì! Offriamo <strong>pacchetti di manutenzione mensile</strong> a partire da €150/mese che includono: aggiornamenti di sicurezza, correzione bug, aggiornamenti contenuti, monitoraggio prestazioni, gestione backup e supporto prioritario. Forniamo anche <strong>supporto pay-as-you-go</strong> a €80/ora per aggiornamenti occasionali. Ogni progetto include un periodo di supporto post-lancio di 30 giorni per garantire che tutto funzioni perfettamente.",
-      "category": "manutenzione",
+      "question": "Puoi modernizzare il mio vecchio sito web?",
+      "answer": "Assolutamente. Mi specializzo nel prendere vecchi siti web lenti e ricostruirli in moderne Web App. Ad esempio, se hai un modulo PDF sul tuo sito che i clienti devono stampare e firmare, posso trasformarlo in un <strong>Wizard Interattivo</strong> digitale che calcola i risultati istantaneamente e genera un PDF automaticamente.",
+      "category": "services",
       "keywords": [
-        "costo manutenzione sito",
-        "supporto web app",
-        "manutenzione continua",
-        "pacchetto supporto mensile",
-        "aggiornamenti sito"
-      ]
-    },
-    {
-      "question": "Potete ridisegnare il mio sito web esistente in una web app moderna?",
-      "answer": "Assolutamente! Siamo specializzati nella <strong>modernizzazione di siti web</strong>. Analizzeremo il tuo sito attuale, identificheremo tecnologie obsolete e lo ricostruiremo come una web app moderna con prestazioni migliorate, responsive mobile, SEO migliore ed esperienza utente potenziata. Possiamo migrare contenuti esistenti, preservare la tua brand identity e aggiungere nuove funzionalità interattive. I progetti di redesign richiedono tipicamente 4-8 settimane a seconda della complessità.",
-      "category": "servizi",
-      "keywords": [
-        "redesign sito web",
+        "ridisegno sito web",
         "modernizzare sito",
-        "ricostruire sito",
-        "sito web a web app",
-        "aggiornamento sito"
+        "trasformazione digitale",
+        "moduli interattivi"
       ]
     },
     {
-      "question": "La mia web app sarà mobile-friendly e responsive?",
-      "answer": "<strong>Sì al 100%.</strong> Ogni progetto che costruiamo è completamente responsive e ottimizzato per mobile dal primo giorno. Con oltre il 60% del traffico web proveniente da dispositivi mobili, seguiamo un approccio di design mobile-first. La tua web app funzionerà perfettamente su smartphone, tablet, laptop e desktop con tempi di caricamento veloci e interazioni touch intuitive.",
-      "category": "design",
+      "question": "Offri manutenzione dopo il lancio?",
+      "answer": "Sì, ma non ti vincolo a contratti costosi. Offro una <strong>garanzia di 30 giorni</strong> dove correggo eventuali bug gratuitamente. Dopo di che, puoi assumermi su base oraria per aggiornamenti, oppure pagare un piccolo abbonamento mensile (50-100) se vuoi che gestisca aggiornamenti di hosting e controlli tecnici regolarmente.",
+      "category": "support",
       "keywords": [
-        "mobile friendly",
-        "design responsive",
-        "ottimizzazione mobile",
-        "mobile first",
-        "compatibilità multi dispositivo"
+        "manutenzione sito web",
+        "costo supporto",
+        "supporto post lancio",
+        "garanzia"
       ]
     },
     {
-      "question": "Come gestite la SEO per le web app?",
-      "answer": "La SEO è integrata in ogni progetto. Implementiamo: <strong>HTML semantico</strong> (gerarchia corretta dei titoli, meta tag), <strong>ottimizzazione prestazioni</strong> (velocità di caricamento rapide, ottimizzazione immagini), <strong>dati strutturati</strong> (markup schema per risultati ricchi), <strong>URL puliti</strong>, <strong>sitemap XML</strong>, <strong>tag Open Graph</strong> (condivisione social media) e <strong>standard di accessibilità</strong>. Forniamo anche architettura dei contenuti SEO-friendly e garantiamo che Google possa correttamente scansionare e indicizzare la tua web app.",
-      "category": "seo",
+      "question": "Sarò proprietario del codice?",
+      "answer": "<strong>100% Sì.</strong> A differenza dei website builder (Wix, Squarespace) dove affitti il tuo sito, qui possiedi la risorsa. Consegno il codice sorgente tramite GitHub. Sei libero di ospitarlo ovunque, modificarlo o portarlo a un altro sviluppatore in futuro. Nessun vendor lock-in.",
+      "category": "ownership",
       "keywords": [
-        "SEO web app",
-        "SEO React",
-        "ottimizzazione motori ricerca",
-        "indicizzazione Google",
-        "web app SEO friendly",
-        "dati strutturati"
-      ]
-    },
-    {
-      "question": "Cosa è incluso in un tipico progetto web app?",
-      "answer": "Un progetto completo include: <strong>consulenza iniziale</strong> (raccolta requisiti), <strong>mockup design personalizzati</strong>, <strong>sviluppo frontend</strong> (React + TypeScript), <strong>setup backend</strong> (se necessario), <strong>integrazione database</strong>, <strong>design responsive</strong>, <strong>ottimizzazione SEO</strong>, <strong>tuning prestazioni</strong>, <strong>implementazione sicurezza</strong>, <strong>testing</strong> (cross-browser, mobile), <strong>deployment</strong>, <strong>setup dominio/hosting</strong>, <strong>integrazione analytics</strong>, <strong>formazione</strong> e <strong>supporto 30 giorni</strong>. Ottieni la proprietà completa di tutto il codice e gli asset.",
-      "category": "servizi",
-      "keywords": [
-        "servizi sviluppo web",
-        "cosa è incluso",
-        "deliverable progetto",
-        "funzionalità web app",
-        "pacchetto sviluppo"
-      ]
-    },
-    {
-      "question": "Devo fornire contenuti e immagini?",
-      "answer": "Idealmente sì - tu conosci meglio la tua attività! Tuttavia, possiamo aiutare. Forniamo <strong>guida strategia contenuti</strong>, suggeriamo struttura e messaggi, e possiamo scrivere testi professionali con un costo aggiuntivo. Per le immagini, possiamo procurare foto stock di alta qualità o lavorare con i tuoi materiali. Più contenuti fornisci in anticipo, più velocemente possiamo completare il progetto.",
-      "category": "processo",
-      "keywords": [
-        "contenuti sito web",
-        "fornire immagini",
-        "copywriting",
-        "creazione contenuti",
-        "foto stock"
-      ]
-    },
-    {
-      "question": "Potete integrare servizi di terze parti (pagamenti, CRM, analytics)?",
-      "answer": "Sì! Integriamo regolarmente: <strong>gateway di pagamento</strong> (Stripe, PayPal), <strong>sistemi CRM</strong> (HubSpot, Salesforce), <strong>analytics</strong> (Google Analytics, Plausible), <strong>servizi email</strong> (Mailchimp, SendGrid), <strong>sistemi di prenotazione</strong>, <strong>API social media</strong>, <strong>mappe</strong> (Google Maps) e altro. Raccomanderemo le migliori soluzioni per le tue esigenze e gestiremo tutto il lavoro di integrazione tecnica.",
-      "category": "tecnologia",
-      "keywords": [
-        "integrazione API",
-        "gateway pagamento",
-        "integrazione Stripe",
-        "integrazione CRM",
-        "servizi terze parti",
-        "Google Analytics"
-      ]
-    },
-    {
-      "question": "E se ho bisogno di modifiche dopo il completamento del progetto?",
-      "answer": "Hai opzioni! Primi <strong>30 giorni:</strong> piccole modifiche e correzioni bug incluse gratuitamente. <strong>Dopo 30 giorni:</strong> acquista un pacchetto di manutenzione mensile (€150/mese) o supporto pay-as-you-go (€80/ora). Forniremo documentazione completa e formazione così puoi fare semplici aggiornamenti di contenuto da solo. Per aggiunte di funzionalità importanti, definiremo l'ambito e faremo un preventivo per un mini-progetto.",
-      "category": "supporto",
-      "keywords": [
-        "modifiche post lancio",
-        "aggiornamenti sito",
-        "costo modifiche",
-        "supporto post completamento",
-        "richiesta modifiche"
-      ]
-    },
-    {
-      "question": "Sarò proprietario del codice del sito e posso ospitarlo ovunque?",
-      "answer": "<strong>Tu possiedi tutto.</strong> Ottieni la piena proprietà di tutto il codice sorgente, design, asset e contenuti. Il codice viene consegnato tramite GitHub e puoi ospitarlo su qualsiasi piattaforma tu scelga (Vercel, Netlify, AWS, tuo server). Nessun vendor lock-in, nessun costo nascosto, nessun costo di licenza ricorrente. È tuo da tenere, modificare o migrare come desideri.",
-      "category": "proprietà",
-      "keywords": [
-        "proprietà sito web",
-        "proprietà codice sorgente",
-        "flessibilità hosting",
         "proprietà codice",
+        "proprietà intellettuale",
+        "accesso GitHub",
         "vendor lock-in"
       ]
     },
     {
-      "question": "Lavorate con clienti internazionali?",
-      "answer": "Sì! Lavoriamo con clienti in tutta Europa e a livello globale. La comunicazione avviene via email, WhatsApp e videochiamate (Zoom/Google Meet). Parliamo fluentemente inglese, italiano e rumeno. Le differenze di fuso orario raramente sono un problema - siamo flessibili con gli orari delle riunioni e forniamo aggiornamenti asincroni regolari. Pagamento accettato tramite bonifico bancario, PayPal o Stripe.",
+      "question": "Lavori con clienti internazionali?",
+      "answer": "Sì. Lavoro da remoto con clienti in tutta Europa. Parlo fluentemente <strong>Inglese, Italiano e Rumeno</strong>, quindi possiamo comunicare nella lingua con cui ti senti più a tuo agio. Possiamo gestire le riunioni tramite Google Meet o Zoom.",
       "category": "business",
       "keywords": [
         "clienti internazionali",
-        "lavoro remoto",
-        "clienti globali",
-        "lavoro da qualsiasi posto",
-        "supporto linguistico"
+        "lingue parlate",
+        "sviluppatore remoto",
+        "sviluppatore italiano",
+        "sviluppatore rumeno"
       ]
     },
     {
-      "question": "Qual è il ROI di una web app professionale?",
-      "answer": "Una web app ben costruita si ripaga tipicamente entro <strong>3-12 mesi</strong> attraverso: maggiore credibilità e fiducia (aspetto professionale), tassi di conversione più alti (flussi utente ottimizzati), tassi di rimbalzo ridotti (veloce, mobile-friendly), migliori ranking SEO (più traffico organico), processi automatizzati (risparmio tempo staff) e disponibilità 24/7. I clienti riportano aumenti di 2-5x nei lead qualificati dopo il lancio di web app moderne rispetto a siti obsoleti.",
+      "question": "Come funziona il pagamento?",
+      "answer": "Divido i pagamenti per mantenerlo equo per entrambi: <strong>50% in anticipo</strong> per prenotare il mio tempo e iniziare lo sviluppo, e il restante <strong>50% al completamento</strong> quando sei soddisfatto del risultato e pronto per il lancio. Accetto Bonifico Bancario, PayPal o Stripe.",
       "category": "business",
       "keywords": [
-        "ROI web app",
-        "ritorno investimento",
-        "valore sito web",
-        "benefici business",
-        "tasso conversione",
-        "generazione lead"
-      ]
-    },
-    {
-      "question": "Potete aiutare con la registrazione del dominio e il setup hosting?",
-      "answer": "Assolutamente! Ti guideremo attraverso la <strong>registrazione del dominio</strong> (Namecheap, GoDaddy) o lavoreremo con il tuo dominio esistente. Gestiamo tutto il <strong>setup hosting</strong> su piattaforme come Vercel (raccomandato per app React), Netlify, o il tuo host preferito. Configuriamo DNS, certificati SSL (HTTPS), indirizzi email personalizzati e garantiamo che tutto sia sicuro e ottimizzato. Assistenza setup completa inclusa in ogni progetto.",
-      "category": "tecnico",
-      "keywords": [
-        "registrazione dominio",
-        "setup hosting",
-        "configurazione DNS",
-        "certificato SSL",
-        "email personalizzata",
-        "web hosting"
-      ]
-    },
-    {
-      "question": "Cosa succede se il mio sito va offline o ha problemi?",
-      "answer": "Utilizziamo <strong>piattaforme di hosting affidabili</strong> con garanzie di uptime del 99,9%. Se si verificano problemi: <strong>clienti con pacchetti di manutenzione</strong> ottengono supporto prioritario e risolveremo i problemi immediatamente. <strong>Senza pacchetto:</strong> contattaci e diagnosticheremo il problema - i problemi di hosting sono solitamente lato provider e risolti rapidamente. Forniamo raccomandazioni per il monitoraggio uptime e possiamo configurare avvisi automatici per problemi critici.",
-      "category": "supporto",
-      "keywords": [
-        "downtime sito",
-        "problemi sito",
-        "supporto tecnico",
-        "supporto emergenza",
-        "monitoraggio uptime",
-        "problemi sito web"
-      ]
-    },
-    {
-      "question": "Firmate NDA o accordi di riservatezza?",
-      "answer": "Sì, siamo felici di firmare <strong>NDA (Accordi di Non Divulgazione)</strong> prima di discutere dettagli sensibili del progetto. Rispettiamo la tua riservatezza e proprietà intellettuale. Tutte le informazioni dei clienti, strategie aziendali e dettagli del progetto sono mantenuti strettamente confidenziali. Possiamo lavorare con il tuo NDA standard o fornire il nostro modello.",
-      "category": "business",
-      "keywords": [
-        "NDA",
-        "accordo riservatezza",
-        "non divulgazione",
-        "privacy",
-        "proprietà intellettuale"
-      ]
-    },
-    {
-      "question": "Potete lavorare con le mie linee guida brand esistenti?",
-      "answer": "Decisamente! Se hai <strong>linee guida brand</strong> stabilite (colori, font, uso logo, tono di voce), le seguiremo precisamente per garantire coerenza del brand. Se non hai linee guida formali, possiamo lavorare con il tuo logo e preferenze per creare un design coeso che corrisponda alla tua brand identity. Possiamo anche sviluppare linee guida brand di base come parte del progetto se necessario.",
-      "category": "design",
-      "keywords": [
-        "linee guida brand",
-        "coerenza brand",
-        "identità aziendale",
-        "standard design",
-        "colori brand",
-        "guida stile"
-      ]
-    },
-    {
-      "question": "Quali termini di pagamento offrite?",
-      "answer": "Struttura di pagamento standard: <strong>50% acconto</strong> per iniziare il lavoro (assicura il tuo posto, copre lo sviluppo iniziale), <strong>50% al completamento</strong> prima del lancio. Per progetti più grandi (€5.000+), offriamo pagamenti basati su milestone (es. 33% acconto, 33% a metà, 34% al lancio). Accettiamo bonifico bancario, PayPal e Stripe. Tutti i progetti includono un contratto dettagliato che delinea deliverable, tempistiche e termini di pagamento.",
-      "category": "business",
-      "keywords": [
-        "termini pagamento",
+        "termini di pagamento",
         "acconto",
-        "pagamento progetto",
-        "metodi pagamento",
-        "termini contrattuali",
-        "fatturazione"
+        "milestone",
+        "metodi di pagamento"
+      ]
+    },
+    {
+      "question": "Puoi gestire SEO e Hosting?",
+      "answer": "Sì. Costruisco siti con <strong>SEO Tecnico</strong> in mente (usando Next.js Server Side Rendering) così Google può leggerli facilmente. Gestisco anche il deployment su piattaforme come <strong>Vercel</strong>, collego il tuo dominio e configuro il certificato SSL (HTTPS) in modo che il tuo sito sia sicuro fin dal primo giorno.",
+      "category": "technical",
+      "keywords": [
+        "servizi SEO",
+        "configurazione hosting",
+        "deployment Vercel",
+        "posizionamento Google"
+      ]
+    },
+    {
+      "question": "Cosa devo fornire per iniziare?",
+      "answer": "Solo la tua idea e i tuoi obiettivi! Se hai testi e immagini, ottimo. In caso contrario, posso aiutarti a strutturare il contenuto. Se hai un design specifico in mente, posso realizzarlo. Se non ce l''hai, posso progettare un''interfaccia pulita e moderna per te.",
+      "category": "process",
+      "keywords": [
+        "come iniziare",
+        "requisiti",
+        "risorse di design",
+        "creazione contenuti"
       ]
     }
   ]
