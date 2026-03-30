@@ -29,11 +29,6 @@
   margin: 0 auto;
   z-index: 2;
   width: 100%;
-  /* Subtle frosted panel for depth against the blobs */
-  background: rgba(255, 255, 255, 0.55);
-  backdrop-filter: blur(2px);
-  -webkit-backdrop-filter: blur(2px);
-  border-radius: 24px;
 }
 
 @media (max-width: 768px) {
