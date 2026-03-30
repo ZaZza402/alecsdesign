@@ -40,7 +40,7 @@ const HomePage = () => {
         keywords={t("seo.keywords")}
         ogType="website"
       />
-      <main role="main" style={{ paddingTop: "80px" }}>
+      <main role="main">
         {/* Blobs scoped to hero + comparison only */}
         <div className="hero-bg-scope">
           <BackgroundPaths />
