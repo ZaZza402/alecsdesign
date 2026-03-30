@@ -1,0 +1,46 @@
+{
+  "title": "Il solito modo vs. il mio",
+  "subtitle": "Cosa stai davvero comprando.",
+  "colOthers": "Il solito modo",
+  "colMine": "Con me",
+  "speed": {
+    "label": "Velocit\u00e0",
+    "them": "3\u20136 secondi",
+    "me": "Sotto i 2 secondi"
+  },
+  "google": {
+    "label": "Google",
+    "them": "Difficile trovarti",
+    "me": "Posizionato dal giorno 1"
+  },
+  "ai": {
+    "label": "Assistenti AI",
+    "them": "L\u2019AI non ti trova",
+    "me": "L\u2019AI ti consiglia"
+  },
+  "mobile": {
+    "label": "Mobile",
+    "them": "Problemi su smartphone",
+    "me": "Perfetto su ogni schermo"
+  },
+  "ownership": {
+    "label": "Propriet\u00e0",
+    "them": "Stai affittando",
+    "me": "Il codice \u00e8 tuo. Sempre."
+  },
+  "timeline": {
+    "label": "Tempi",
+    "them": "Mesi di attesa",
+    "me": "Online entro 2 settimane"
+  },
+  "design": {
+    "label": "Design",
+    "them": "Template col tuo logo",
+    "me": "Creato solo per te"
+  },
+  "support": {
+    "label": "Supporto",
+    "them": "Apri un ticket. Aspetta.",
+    "me": "Mi scrivi direttamente"
+  }
+}

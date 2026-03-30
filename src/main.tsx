@@ -13,10 +13,7 @@ import LoadingSkeleton from "./components/ui/LoadingSkeleton";
 const PrivacyPolicy = lazy(() => import("./pages/PrivacyPolicy.tsx"));
 const TermsConditions = lazy(() => import("./pages/TermsConditions.tsx"));
 const CookiePolicy = lazy(() => import("./pages/CookiePolicy.tsx"));
-const ServicesRates = lazy(() => import("./pages/ServicesRates.tsx"));
 const NotFound = lazy(() => import("./pages/NotFound.tsx"));
-const QuizPage = lazy(() => import("./pages/QuizPage.tsx"));
-const QuizResults = lazy(() => import("./pages/QuizResults.tsx"));
 const PortfolioPage = lazy(() => import("./pages/PortfolioPage.tsx"));
 const ContactPage = lazy(() => import("./pages/ContactPage.tsx"));
 const AboutPage = lazy(() => import("./pages/AboutPage.tsx"));
@@ -37,6 +34,7 @@ AOS.init({
 });
 
 // Language wrapper component
+// eslint-disable-next-line react-refresh/only-export-components
 function LanguageWrapper({ lang }: { lang: string }) {
   // Set language when route changes - use useEffect to avoid setState during render
   useEffect(() => {
@@ -53,6 +51,7 @@ function LanguageWrapper({ lang }: { lang: string }) {
 }
 
 // Page wrapper - sets language for separate pages
+// eslint-disable-next-line react-refresh/only-export-components
 function PageWrapper({
   lang,
   children,
@@ -76,6 +75,7 @@ function PageWrapper({
   );
 }
 
+// eslint-disable-next-line react-refresh/only-export-components
 function AppRoutes() {
   const location = useLocation();
   return (
@@ -113,30 +113,6 @@ function AppRoutes() {
             element={
               <PageWrapper lang="en">
                 <CookiePolicy />
-              </PageWrapper>
-            }
-          />
-          <Route
-            path="/services-rates"
-            element={
-              <PageWrapper lang="en">
-                <ServicesRates />
-              </PageWrapper>
-            }
-          />
-          <Route
-            path="/quiz"
-            element={
-              <PageWrapper lang="en">
-                <QuizPage />
-              </PageWrapper>
-            }
-          />
-          <Route
-            path="/quiz/results"
-            element={
-              <PageWrapper lang="en">
-                <QuizResults />
               </PageWrapper>
             }
           />
@@ -191,30 +167,6 @@ function AppRoutes() {
             }
           />
           <Route
-            path="/en/services-rates"
-            element={
-              <PageWrapper lang="en">
-                <ServicesRates />
-              </PageWrapper>
-            }
-          />
-          <Route
-            path="/en/quiz"
-            element={
-              <PageWrapper lang="en">
-                <QuizPage />
-              </PageWrapper>
-            }
-          />
-          <Route
-            path="/en/quiz/results"
-            element={
-              <PageWrapper lang="en">
-                <QuizResults />
-              </PageWrapper>
-            }
-          />
-          <Route
             path="/en/portfolio"
             element={
               <PageWrapper lang="en">
@@ -265,30 +217,6 @@ function AppRoutes() {
             }
           />
           <Route
-            path="/it/services-rates"
-            element={
-              <PageWrapper lang="it">
-                <ServicesRates />
-              </PageWrapper>
-            }
-          />
-          <Route
-            path="/it/quiz"
-            element={
-              <PageWrapper lang="it">
-                <QuizPage />
-              </PageWrapper>
-            }
-          />
-          <Route
-            path="/it/quiz/results"
-            element={
-              <PageWrapper lang="it">
-                <QuizResults />
-              </PageWrapper>
-            }
-          />
-          <Route
             path="/it/portfolio"
             element={
               <PageWrapper lang="it">
@@ -335,30 +263,6 @@ function AppRoutes() {
             element={
               <PageWrapper lang="ro">
                 <CookiePolicy />
-              </PageWrapper>
-            }
-          />
-          <Route
-            path="/ro/services-rates"
-            element={
-              <PageWrapper lang="ro">
-                <ServicesRates />
-              </PageWrapper>
-            }
-          />
-          <Route
-            path="/ro/quiz"
-            element={
-              <PageWrapper lang="ro">
-                <QuizPage />
-              </PageWrapper>
-            }
-          />
-          <Route
-            path="/ro/quiz/results"
-            element={
-              <PageWrapper lang="ro">
-                <QuizResults />
               </PageWrapper>
             }
           />
@@ -438,5 +342,5 @@ createRoot(document.getElementById("root")!).render(
         <ScrollProgress />
       </BrowserRouter>
     </HelmetProvider>
-  </StrictMode>
+  </StrictMode>,
 );

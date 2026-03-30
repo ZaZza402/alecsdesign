@@ -1,21 +1,20 @@
 {
   "title": "Selected Works",
-  "subtitle": "A showcase of recent digital experiences crafted with precision.",
+  "subtitle": "Real websites built for real businesses.",
   "visitWebsite": "Visit Website",
   "viewAllProjects": "View All Projects",
-  "techNote": "Built with React, Vite, TypeScript & Tailwind — These aren't just websites, they're web applications.",
   "projects": {
     "immigration-agency": {
-      "description": "A professional platform for an immigration assistance center (CAF). Designed to simplify complex bureaucratic processes and provide clear, accessible information to users navigating immigration services."
+      "description": "A professional website for an immigration assistance centre. Clear, accessible, and easy to navigate for any client."
     },
     "psychologist": {
-      "description": "A serene and trustworthy digital space for a clinical psychologist. The design prioritizes user comfort, privacy, and easy access to appointment scheduling."
+      "description": "A calm, trustworthy website for a clinical psychologist. Makes it easy for clients to book appointments."
     },
     "sartoria": {
-      "description": "An elegant digital showcase for a bespoke tailoring service in Rome. The site reflects the craftsmanship and attention to detail that defines the brand."
+      "description": "An elegant website for a bespoke tailoring studio in Rome. Reflects the quality and craftsmanship of the brand."
     },
     "restaurant": {
-      "description": "A vibrant and appetizing website for a Roman restaurant. Features an interactive menu, gallery, and seamless reservation integration to drive bookings."
+      "description": "A vibrant website for a Roman restaurant with online menu, photo gallery, and table reservations."
     }
   }
 }

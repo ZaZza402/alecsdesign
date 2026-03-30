@@ -16,9 +16,6 @@ const Header = () => {
 
   const navItems = [
     { id: "home", label: t("nav.home"), href: "#home" },
-    { id: "how-it-works", label: t("nav.howItWorks"), href: "#how-it-works" },
-    { id: "difference", label: t("nav.difference"), href: "#difference" },
-    { id: "pricing", label: t("nav.pricing"), href: "#pricing" },
     {
       id: "portfolio",
       label: t("nav.portfolio"),
@@ -40,10 +37,9 @@ const Header = () => {
       // Track active section
       const sections = [
         "home",
-        "how-it-works",
-        "difference",
-        "pricing",
         "portfolio",
+        "services",
+        "how-it-works",
         "contact",
       ];
       const scrollPosition = window.scrollY + 100;
@@ -87,7 +83,7 @@ const Header = () => {
 
   const handleNavClick = (
     e: React.MouseEvent<HTMLAnchorElement>,
-    href: string
+    href: string,
   ) => {
     e.preventDefault();
     setIsMenuOpen(false);
@@ -203,7 +199,7 @@ const Header = () => {
             })}
           </nav>
         </div>,
-        document.body
+        document.body,
       )}
     </header>
   );

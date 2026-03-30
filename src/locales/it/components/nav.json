@@ -1,10 +1,6 @@
 {
   "home": "Home",
-  "howItWorks": "Come Funziona",
-  "difference": "Perché",
-  "portfolio": "Portfolio",
-  "pricing": "Soluzioni",
+  "portfolio": "Lavori",
   "faq": "FAQ",
-  "contact": "Contatti",
-  "servicesRates": "Add-on"
+  "contact": "Contatti"
 }

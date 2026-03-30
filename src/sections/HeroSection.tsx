@@ -1,208 +1,137 @@
-import React, { useState, useEffect } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import React from "react";
+import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
-import { useNavigate } from "react-router-dom";
-import { Hand } from "lucide-react";
-import IconScrollBar from "../components/ui/IconScrollBar";
+import { Check } from "lucide-react";
+import LogoLoop from "../components/ui/LogoLoop";
 import { trackCTAClick } from "../utils/analytics";
 import "./HeroSection.css";
 
 const HeroSection: React.FC = () => {
-  const { t, i18n } = useTranslation();
-  const navigate = useNavigate();
-  const [currentWordIndex, setCurrentWordIndex] = useState(0);
+  const { t } = useTranslation();
 
-  // Shorter rotating words for single line display
-  const rotatingWords = [t("hero.word1"), t("hero.word2"), t("hero.word3")];
-
-  // Rotate words every 3 seconds
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentWordIndex((prev) => (prev + 1) % rotatingWords.length);
-    }, 3000);
-
-    return () => clearInterval(interval);
-  }, [rotatingWords.length]);
-
-  // Simplified animation variants for better performance
-  const titleVariants = {
+  const containerVariants = {
     hidden: { opacity: 0, y: 20 },
     visible: {
       opacity: 1,
       y: 0,
-      transition: {
-        duration: 0.6,
-      },
+      transition: { duration: 0.6 },
     },
   };
 
-  const subtitleVariants = {
+  const fadeIn = {
     hidden: { opacity: 0 },
-    visible: {
+    visible: (delay: number) => ({
       opacity: 1,
-      transition: {
-        duration: 0.5,
-        delay: 0.2,
-      },
-    },
+      transition: { duration: 0.5, delay },
+    }),
   };
 
-  const descriptionVariants = {
-    hidden: { opacity: 0 },
-    visible: {
-      opacity: 1,
-      transition: {
-        duration: 0.5,
-        delay: 0.3,
-      },
-    },
+  const handleWhatsAppClick = () => {
+    trackCTAClick("WhatsApp", "Hero Section");
+    window.open("https://wa.me/393801503074", "_blank", "noopener,noreferrer");
   };
 
-  const wordVariants = {
-    enter: {
-      y: 15,
-      opacity: 0,
-    },
-    center: {
-      y: 0,
-      opacity: 1,
-      transition: {
-        duration: 0.4,
-      },
-    },
-    exit: {
-      y: -15,
-      opacity: 0,
-      transition: {
-        duration: 0.3,
-      },
-    },
-  };
-
-  const handleHowItWorksClick = () => {
-    trackCTAClick("How It Works", "Hero Section");
-    const howItWorksSection = document.getElementById("how-it-works");
-    howItWorksSection?.scrollIntoView({ behavior: "smooth" });
-  };
-
-  const handleCalculatorClick = () => {
-    trackCTAClick("Project Calculator", "Hero Section");
-    const lang = i18n.language;
-    const route = lang === "en" ? "/quiz" : `/${lang}/quiz`;
-    navigate(route);
-    window.scrollTo(0, 0);
+  const handleSeeWorkClick = () => {
+    trackCTAClick("See My Work", "Hero Section");
+    const portfolioSection = document.getElementById("portfolio");
+    portfolioSection?.scrollIntoView({ behavior: "smooth" });
   };
 
   return (
     <section id="home" className="hero-section" aria-label="Hero section">
-      {/* Hero Content */}
       <div className="hero-section__content">
-        {/* Left Column - Main Content */}
-        <div className="hero-section__left">
-          {/* 1. Main Headline: Premium Websites + Rotating Words */}
-          <motion.div
-            initial="hidden"
-            animate="visible"
-            variants={titleVariants}
-            className="hero-section__main-block"
-          >
-            <span className="hero-section__static-text">{t("hero.title")}</span>
-            <div
-              className="hero-section__highlight-container"
-              aria-live="polite"
-            >
-              <AnimatePresence mode="wait">
-                <motion.span
-                  key={currentWordIndex}
-                  className="hero-section__highlight"
-                  variants={wordVariants}
-                  initial="enter"
-                  animate="center"
-                  exit="exit"
-                >
-                  {rotatingWords[currentWordIndex]}
-                </motion.span>
-              </AnimatePresence>
-            </div>
-          </motion.div>
-
-          {/* 2. Secondary: Greeting + Name */}
-          <motion.div
-            className="hero-section__greeting-container"
-            initial="hidden"
-            animate="visible"
-            variants={subtitleVariants}
-          >
-            <span className="hero-section__greeting">
-              <span className="hero-section__greeting-text">
-                {t("hero.greeting")}
-              </span>
-              <motion.span
-                className="hero-section__hand-wave"
-                animate={{
-                  rotate: [0, 14, -8, 14, -4, 10, 0, 0],
-                }}
-                transition={{
-                  duration: 2,
-                  repeat: Infinity,
-                  ease: "linear",
-                }}
-                style={{
-                  display: "inline-block",
-                  transformOrigin: "70% 70%",
-                }}
-              >
-                <Hand size={24} strokeWidth={2.5} />
-              </motion.span>
+        <motion.div
+          initial="hidden"
+          animate="visible"
+          variants={containerVariants}
+          className="hero-section__headline-block"
+        >
+          <h1 className="hero-section__title">
+            {t("hero.title")}{" "}
+            <span className="hero-section__accent">
+              {t("hero.titleAccent")}
             </span>
-            <span className="hero-section__name">{t("hero.name")}</span>
-          </motion.div>
+          </h1>
+        </motion.div>
 
-          <motion.p
-            className="hero-section__description"
-            initial="hidden"
-            animate="visible"
-            variants={descriptionVariants}
+        <motion.p
+          className="hero-section__subline"
+          initial="hidden"
+          animate="visible"
+          custom={0.2}
+          variants={fadeIn}
+        >
+          {t("hero.subline")}
+        </motion.p>
+
+        <motion.ul
+          className="hero-section__perks"
+          initial="hidden"
+          animate="visible"
+          custom={0.35}
+          variants={fadeIn}
+        >
+          {[t("hero.stat1"), t("hero.stat2"), t("hero.stat3")].map(
+            (stat, i) => (
+              <li key={i} className="hero-section__perk">
+                <Check
+                  size={15}
+                  className="hero-section__perk-icon"
+                  aria-hidden="true"
+                />
+                <span>{stat}</span>
+              </li>
+            ),
+          )}
+        </motion.ul>
+
+        <motion.div
+          className="hero-section__cta"
+          initial="hidden"
+          animate="visible"
+          custom={0.5}
+          variants={fadeIn}
+        >
+          <button
+            onClick={handleWhatsAppClick}
+            className="hero-cta-button hero-cta-button--primary"
+            aria-label="Message Alex on WhatsApp"
           >
-            {t("hero.description")}
-          </motion.p>
+            <span>{t("hero.ctaPrimary")}</span>
+          </button>
 
-          <motion.p
-            className="hero-section__subtitle"
-            initial="hidden"
-            animate="visible"
-            variants={descriptionVariants}
+          <button
+            onClick={handleSeeWorkClick}
+            className="hero-cta-button hero-cta-button--secondary"
           >
-            {t("hero.subtitle")}
-          </motion.p>
-        </div>
-
-        {/* Right Column - CTA Buttons on desktop */}
-        <div className="hero-section__right">
-          <motion.div
-            className="hero-section__cta"
-            initial="hidden"
-            animate="visible"
-            variants={descriptionVariants}
-          >
-            <button
-              onClick={handleCalculatorClick}
-              className="hero-cta-button hero-cta-button--primary"
-            >
-              <span>{t("hero.ctaPrimary")}</span>
-            </button>
-
-            <button
-              onClick={handleHowItWorksClick}
-              className="hero-cta-button hero-cta-button--secondary"
-            >
-              <span>{t("hero.ctaSecondary")}</span>
-            </button>
-          </motion.div>
-        </div>
+            <span>{t("hero.ctaSecondary")}</span>
+          </button>
+        </motion.div>
       </div>
-      {/* Interactive Icon Scroll Bar Divider */}
-      <IconScrollBar />
+      <div className="hero-section__logoloop">
+        <LogoLoop
+          logos={[
+            { src: "/Stack Icons/React.svg", alt: "React" },
+            { src: "/Stack Icons/TypeScript.svg", alt: "TypeScript" },
+            { src: "/Stack Icons/Next.js.svg", alt: "Next.js" },
+            { src: "/Stack Icons/JavaScript.svg", alt: "JavaScript" },
+            { src: "/Stack Icons/Tailwind CSS.svg", alt: "Tailwind CSS" },
+            { src: "/Stack Icons/HTML5.svg", alt: "HTML5" },
+            { src: "/Stack Icons/GitHub Actions.svg", alt: "GitHub Actions" },
+            { src: "/Stack Icons/Webpack.svg", alt: "Webpack" },
+            { src: "/Stack Icons/Powershell.svg", alt: "PowerShell" },
+          ]}
+          speed={80}
+          direction="left"
+          logoHeight={36}
+          gap={48}
+          hoverSpeed={20}
+          scaleOnHover
+          fadeOut
+          fadeOutColor="#ffffff"
+          ariaLabel="Technologies I work with"
+        />
+      </div>
     </section>
   );
 };

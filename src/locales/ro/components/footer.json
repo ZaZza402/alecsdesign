@@ -1,26 +1,22 @@
-﻿{
+{
   "company": {
     "title": "alecsdesign.xyz",
-    "description": "Construiesc soluții web care cresc alături de afacerea ta. Parteneriate digitale pe termen lung pentru antreprenori serioși.",
+    "description": "Site-uri web personalizate pentru afaceri care vor sa creasca online.",
     "location": "Italia"
   },
   "quickLinks": {
     "title": "Link-uri Rapide",
     "about": "Despre Mine",
-    "portfolio": "Portfolio",
-    "pricing": "Soluții",
-    "servicesRates": "Servicii și Tarife",
+    "portfolio": "Lucrari",
     "contact": "Contact"
   },
   "legal": {
     "title": "Legal",
-    "privacy": "Politica de Confidențialitate",
-    "terms": "Termeni și Condiții",
+    "privacy": "Politica de Confidentialitate",
+    "terms": "Termeni si Conditii",
     "cookies": "Politica Cookie-uri"
   },
-  "social": {
-    "title": "Urmărește-mă"
-  },
+  "social": { "title": "Urmareste-ma" },
   "copyright": "alecsdesign.xyz. Toate drepturile rezervate.",
-  "revealContact": "Arată Date Contact"
+  "revealContact": "Arată datele de contact"
 }

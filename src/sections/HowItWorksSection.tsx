@@ -4,12 +4,7 @@ import "./HowItWorksSection.css";
 const HowItWorksSection = () => {
   const { t } = useTranslation();
 
-  const steps = [
-    { key: "step1" },
-    { key: "step2" },
-    { key: "step3" },
-    { key: "step4" },
-  ];
+  const steps = [{ key: "step1" }, { key: "step2" }, { key: "step3" }];
 
   return (
     <section id="how-it-works" className="how-it-works-section">

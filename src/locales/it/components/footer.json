@@ -1,15 +1,13 @@
 {
   "company": {
     "title": "alecsdesign.xyz",
-    "description": "Costruisco soluzioni web che crescono insieme alla tua attività. Partnership digitali a lungo termine per imprenditori seri.",
+    "description": "Siti web su misura per attività che vogliono crescere online.",
     "location": "Italia"
   },
   "quickLinks": {
     "title": "Link Rapidi",
     "about": "Chi Sono",
-    "portfolio": "Portfolio",
-    "pricing": "Soluzioni",
-    "servicesRates": "Servizi e Tariffe",
+    "portfolio": "Lavori",
     "contact": "Contatti"
   },
   "legal": {

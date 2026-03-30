@@ -1,21 +1,20 @@
-﻿{
-  "title": "Lucrări Selectate",
-  "subtitle": "O prezentare a experiențelor digitale recente create cu precizie.",
-  "visitWebsite": "Vizitează Site-ul",
-  "viewAllProjects": "Vezi Toate Proiectele",
-  "techNote": "Construite cu React, Vite, TypeScript și Tailwind — Nu sunt doar site-uri, sunt aplicații web.",
+{
+  "title": "Lucrari Selectate",
+  "subtitle": "Site-uri reale construite pentru afaceri reale.",
+  "visitWebsite": "Viziteaza Site-ul",
+  "viewAllProjects": "Vezi Toate Lucrarile",
   "projects": {
     "immigration-agency": {
-      "description": "O platformă profesională pentru un centru de asistență imigrare (CAF). Proiectată pentru a simplifica procesele birocratice complexe și a oferi informații clare și accesibile."
+      "description": "Un site profesional pentru un centru de asistenta imigrare. Clar, accesibil si usor de navigat pentru orice client."
     },
     "psychologist": {
-      "description": "Un spațiu digital senin și de încredere pentru un psiholog clinic. Designul prioritizează confortul utilizatorului, confidențialitatea și accesul ușor la programări."
+      "description": "Un site calm si de incredere pentru un psiholog clinician. Face usor programarea unei consultatii."
     },
     "sartoria": {
-      "description": "O vitrină digitală elegantă pentru o croitorie la comandă în Roma. Site-ul reflectă măiestria și atenția la detalii care definesc brandul."
+      "description": "Un site elegant pentru un atelier de croitorie la comanda in Roma. Reflecta calitatea si atentia la detalii care definesc brandul."
     },
     "restaurant": {
-      "description": "Un site web vibrant și apetisant pentru un restaurant din Roma. Dispune de un meniu interactiv, galerie și integrare perfectă a rezervărilor."
+      "description": "Un site vibrant pentru un restaurant din Roma cu meniu online, galerie foto și rezervări la masă."
     }
   }
 }

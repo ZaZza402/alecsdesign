@@ -1,15 +1,13 @@
 {
   "company": {
     "title": "alecsdesign.xyz",
-    "description": "Building web solutions that grow with your business. Long-term digital partnerships for serious entrepreneurs.",
+    "description": "Custom websites for businesses who want to grow online.",
     "location": "Italy"
   },
   "quickLinks": {
     "title": "Quick Links",
     "about": "About",
-    "portfolio": "Portfolio",
-    "pricing": "Solutions",
-    "servicesRates": "Services & Rates",
+    "portfolio": "Work",
     "contact": "Contact"
   },
   "legal": {

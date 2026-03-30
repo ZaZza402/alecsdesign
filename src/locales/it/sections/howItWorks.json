@@ -1,20 +1,16 @@
 {
   "title": "Come Funziona",
-  "subtitle": "Dall'idea al sito online in 4 passaggi chiari",
+  "subtitle": "Tre semplici passaggi: dalla prima chiacchierata al sito online.",
   "step1": {
-    "title": "Strategia e Obiettivi",
-    "description": "Analizziamo i tuoi obiettivi di business, non solo le funzioni del sito. Ti consiglio la strada migliore: da una landing page veloce a una piattaforma complessa su misura."
+    "title": "Una chiamata gratuita",
+    "description": "Mi parli della tua attività. Ti faccio le domande giuste. Nessun impegno, nessun tecnicismo."
   },
   "step2": {
-    "title": "Design e Sviluppo",
-    "description": "Iniziamo con un design cucito sul tuo brand. Includiamo cicli di revisione per perfezionare l'estetica prima ancora di scrivere il codice, garantendo un risultato esattamente come lo immagini."
+    "title": "Progetto e costruisco il sito",
+    "description": "Prima vedi il design. Lo approvi insieme a me. Poi scrivo il codice."
   },
   "step3": {
-    "title": "Lancio Tecnico",
-    "description": "Mi occupo di tutta la parte difficile: configurazione dominio, certificati SSL, hosting e integrazione Analytics. Il tuo sito va online perfettamente funzionante senza stress per te."
-  },
-  "step4": {
-    "title": "Evoluzione e Supporto",
-    "description": "Finalizziamo la collaborazione in base al modello scelto. Posso consegnarti il 100% del codice e degli asset, oppure attiviamo la Partnership Gestita per garantirti aggiornamenti e sicurezza nel tempo."
+    "title": "Vai online — e il sito è tuo",
+    "description": "Il sito va live. Ricevi il codice, il dominio, tutto. È tuo per sempre."
   }
 }

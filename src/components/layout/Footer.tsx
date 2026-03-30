@@ -132,7 +132,6 @@ const Footer = () => {
                   onClick={() => {
                     trackButtonClick("About", "Footer Quick Links");
                     navigate(getLocalizedRoute("/about"));
-                    window.scrollTo(0, 0);
                   }}
                 >
                   {t("footer.quickLinks.about")}
@@ -143,14 +142,10 @@ const Footer = () => {
                   onClick={() => {
                     trackButtonClick("Portfolio", "Footer Quick Links");
                     navigate(getLocalizedRoute("/portfolio"));
-                    window.scrollTo(0, 0);
                   }}
                 >
                   {t("footer.quickLinks.portfolio")}
                 </button>
-              </li>
-              <li>
-                <a href="#pricing">{t("footer.quickLinks.pricing")}</a>
               </li>
               <li>
                 <button
@@ -158,7 +153,6 @@ const Footer = () => {
                     trackButtonClick("FAQ", "Footer Quick Links");
                     const lang = i18n.language || "en";
                     navigate(`/${lang}/faq`);
-                    window.scrollTo(0, 0);
                   }}
                 >
                   {t("nav.faq")}
@@ -167,19 +161,8 @@ const Footer = () => {
               <li>
                 <button
                   onClick={() => {
-                    trackButtonClick("Services & Rates", "Footer Quick Links");
-                    navigate(getLocalizedRoute("/services-rates"));
-                  }}
-                >
-                  {t("nav.servicesRates")}
-                </button>
-              </li>
-              <li>
-                <button
-                  onClick={() => {
                     trackButtonClick("Contact", "Footer Quick Links");
                     navigate(getLocalizedRoute("/contact"));
-                    window.scrollTo(0, 0);
                   }}
                 >
                   {t("footer.quickLinks.contact")}

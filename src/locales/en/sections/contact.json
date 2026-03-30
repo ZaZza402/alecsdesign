@@ -1,52 +1,52 @@
 {
-  "title": "Let's Build It",
-  "subtitle": "Don't wait. Book your free consultation and let's discuss your project today.",
+  "title": "Let's Talk",
+  "subtitle": "Book a free call or send a message. I reply within 24 hours.",
   "responseTime": "I typically reply:",
   "responseTimeValue": "within 24 hours",
   "whatsappStatus": "WhatsApp:",
   "whatsappAvailable": "Online Now",
   "whatsappOffline": "Offline (Back at 9 AM)",
-  "successMessage": "Thanks! I've received your details and will be in touch shortly.",
-  "errorMessage": "Message failed. Please email me directly or try WhatsApp.",
+  "successMessage": "Thanks! I've received your message and will be in touch shortly.",
+  "errorMessage": "Message failed. Please contact me directly on WhatsApp.",
   "methods": {
-    "emailUs": "Email Us",
-    "callUs": "Call Us",
+    "emailUs": "Email",
+    "callUs": "Call",
     "whatsapp": "WhatsApp",
     "chatOnWhatsApp": "Chat on WhatsApp",
     "location": "Location",
     "sendMessage": "Send a Message",
-    "sendMessageDesc": "Fill out the form below and we'll get back to you within 24 hours."
+    "sendMessageDesc": "Fill in the form and I'll get back to you within 24 hours."
   },
   "form": {
-    "name": "Name",
+    "name": "Your name",
     "namePlaceholder": "Your full name",
     "nameRequired": "Name is required",
-    "contact": "Email or Phone",
-    "contactPlaceholder": "bestway@to-reach.you",
+    "contact": "Email or phone",
+    "contactPlaceholder": "Best way to reach you",
     "contactRequired": "Email or phone is required",
     "business": "Tell me about your business",
-    "businessPlaceholder": "What do you do? What is your main goal for this website?",
+    "businessPlaceholder": "What do you do? What do you need the website for?",
     "businessRequired": "Please give me a brief overview",
     "needs": "What do you need?",
     "needsPlaceholder": "Select a project type...",
     "needsRequired": "Please select an option",
     "needsOptions": {
-      "newWebsite": "New Website From Scratch",
+      "newWebsite": "New Website",
       "redesign": "Redesign Existing Site",
-      "consultation": "Technical Consultation",
+      "consultation": "Free Consultation",
       "other": "Other / Not Sure"
     },
-    "preference": "How should I contact you?",
+    "preference": "Preferred contact method",
     "preferencePlaceholder": "Select...",
     "preferenceRequired": "Please select a preference",
     "preferenceOptions": {
       "email": "Email",
-      "phone": "Phone Call",
-      "whatsapp": "WhatsApp Message"
+      "phone": "Phone",
+      "whatsapp": "WhatsApp"
     },
-    "message": "Additional details (optional)",
-    "messagePlaceholder": "Any specific deadlines or features in mind?",
-    "submit": "Send Request",
+    "message": "Anything else? (optional)",
+    "messagePlaceholder": "Deadlines, budget, specific features...",
+    "submit": "Send Message",
     "sending": "Sending..."
   }
 }

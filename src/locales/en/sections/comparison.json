@@ -1,0 +1,46 @@
+{
+  "title": "The usual way vs. my way",
+  "subtitle": "What you're actually getting.",
+  "colOthers": "The usual way",
+  "colMine": "With me",
+  "speed": {
+    "label": "Load speed",
+    "them": "3–6 seconds",
+    "me": "Under 2 seconds"
+  },
+  "google": {
+    "label": "Google",
+    "them": "Hard to find",
+    "me": "Ranked from day one"
+  },
+  "ai": {
+    "label": "AI assistants",
+    "them": "Can't recommend you",
+    "me": "AI finds & suggests you"
+  },
+  "mobile": {
+    "label": "Mobile",
+    "them": "Breaks on phones",
+    "me": "Flawless on every screen"
+  },
+  "ownership": {
+    "label": "Ownership",
+    "them": "You're renting it",
+    "me": "Your code. Forever."
+  },
+  "timeline": {
+    "label": "Timeline",
+    "them": "Months of waiting",
+    "me": "Live in under 2 weeks"
+  },
+  "design": {
+    "label": "Design",
+    "them": "Template with your logo",
+    "me": "Built only for you"
+  },
+  "support": {
+    "label": "Support",
+    "them": "Open a ticket. Wait.",
+    "me": "Message me directly"
+  }
+}

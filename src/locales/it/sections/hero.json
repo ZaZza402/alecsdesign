@@ -1,14 +1,10 @@
 {
-  "greeting": "Ciao, sono Alex",
-  "name": "Sviluppatore Web",
-  "title": "Siti Web Premium,",
-  "word1": "Costruiti per Crescere",
-  "word2": "Progettati per la Velocità",
-  "word3": "Alle Tue Condizioni",
-  "description": "Il punto di incontro tra le grandi agenzie e il fai-da-te. Sviluppo asset digitali ad alte prestazioni su misura per i tuoi obiettivi—disponibili come servizio gestito o progetto indipendente.",
-  "subtitle": "Prestazioni enterprise. Modelli di collaborazione flessibili.",
-  "ctaPrimary": "Calcolatore Progetto Gratuito",
-  "ctaSecondary": "Scopri Come Funziona",
-  "ctaWhatsApp": "Scopri Come Funziona",
-  "ctaEmail": "Chatta su WhatsApp"
+  "title": "Siti web",
+  "titleAccent": "per la tua attivit\u00e0.",
+  "subline": "Veloci. Professionali. Tuoi al 100%.",
+  "stat1": "Prezzi onesti",
+  "stat2": "Pronti in meno di 2 settimane",
+  "stat3": "Il codice \u00e8 tuo",
+  "ctaPrimary": "Scrivimi su WhatsApp",
+  "ctaSecondary": "Guarda i miei lavori"
 }

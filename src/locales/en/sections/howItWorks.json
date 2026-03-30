@@ -1,20 +1,16 @@
 {
   "title": "How It Works",
-  "subtitle": "From concept to launch in 4 streamlined steps",
+  "subtitle": "Three simple steps from first chat to live website.",
   "step1": {
-    "title": "Discovery & Strategy",
-    "description": "We discuss your business goals, not just web features. I assess your needs and recommend the right approach—whether it's a simple launchpad or a complex custom platform."
+    "title": "We have a free call",
+    "description": "You tell me about your business. I ask the right questions. No commitment, no jargon."
   },
   "step2": {
-    "title": "Design & Development",
-    "description": "We start with a design tailored to your brand. You get dedicated revision rounds to perfect the look before I write a single line of high-performance code."
+    "title": "I design and build it",
+    "description": "You see the design first. We agree on it. Then I write the code."
   },
   "step3": {
-    "title": "Seamless Launch",
-    "description": "I handle the technical heavy lifting: domain configuration, SSL setup, hosting deployment, and Google Analytics integration. Your site goes live without you touching a server."
-  },
-  "step4": {
-    "title": "Evolution & Support",
-    "description": "We finalize our engagement based on your chosen model. Either I hand over full ownership of the code and assets, or we transition into a Managed Partnership for long-term peace of mind."
+    "title": "You launch — and you own it",
+    "description": "The site goes live. You get the code, the domain, everything. It's yours."
   }
 }

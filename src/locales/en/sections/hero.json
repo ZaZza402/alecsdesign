@@ -1,14 +1,10 @@
 {
-  "greeting": "Hi, I'm Alex",
-  "name": "Web Developer",
-  "title": "Premium Websites,",
-  "word1": "Built for Growth",
-  "word2": "Engineered for Speed",
-  "word3": "On Your Terms",
-  "description": "Bridging the gap between rigid agencies and DIY builders. I build high-performance digital assets tailored to your goals—available as a fully managed service or a standalone project.",
-  "subtitle": "Enterprise-grade performance. Flexible engagement models.",
-  "ctaPrimary": "Free Project Calculator",
-  "ctaSecondary": "See How It Works",
-  "ctaWhatsApp": "See How It Works",
-  "ctaEmail": "Chat on WhatsApp"
+  "title": "Websites",
+  "titleAccent": "for your business.",
+  "subline": "Fast. Professional. Fully yours.",
+  "stat1": "Fair prices",
+  "stat2": "Ready in under 2 weeks",
+  "stat3": "You own the code",
+  "ctaPrimary": "Message on WhatsApp",
+  "ctaSecondary": "See My Work"
 }

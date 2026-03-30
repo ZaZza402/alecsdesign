@@ -1,10 +1,6 @@
 {
   "home": "Home",
-  "difference": "Why",
-  "portfolio": "Portfolio",
-  "howItWorks": "How It Works",
-  "pricing": "Solutions",
+  "portfolio": "Work",
   "faq": "FAQ",
-  "contact": "Contact",
-  "servicesRates": "Add-ons"
+  "contact": "Contact"
 }

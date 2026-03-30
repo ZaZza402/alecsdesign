@@ -1,21 +1,20 @@
 {
   "title": "Lavori Selezionati",
-  "subtitle": "Una vetrina di esperienze digitali recenti realizzate con precisione.",
+  "subtitle": "Siti web reali costruiti per attività reali.",
   "visitWebsite": "Visita il Sito",
-  "viewAllProjects": "Vedi Tutti i Progetti",
-  "techNote": "Costruiti con React, Vite, TypeScript e Tailwind — Non sono semplici siti, sono applicazioni web.",
+  "viewAllProjects": "Vedi Tutti i Lavori",
   "projects": {
     "immigration-agency": {
-      "description": "Una piattaforma professionale per un centro di assistenza immigrazione (CAF). Progettata per semplificare processi burocratici complessi e fornire informazioni chiare e accessibili."
+      "description": "Un sito professionale per un centro di assistenza immigrazione. Chiaro, accessibile e semplice da navigare per qualsiasi cliente."
     },
     "psychologist": {
-      "description": "Uno spazio digitale sereno e affidabile per una psicologa clinica. Il design privilegia il comfort dell'utente, la privacy e un facile accesso alla prenotazione degli appuntamenti."
+      "description": "Un sito sereno e affidabile per una psicologa clinica. Facile prenotare un appuntamento, anche da mobile."
     },
     "sartoria": {
-      "description": "Un'elegante vetrina digitale per una sartoria su misura a Roma. Il sito riflette l'artigianalità e l'attenzione ai dettagli che definiscono il marchio."
+      "description": "Un sito elegante per una sartoria su misura a Roma. Riflette la qualità e la cura che definiscono il brand."
     },
     "restaurant": {
-      "description": "Un sito web vivace e invitante per un ristorante romano. Presenta un menu interattivo, una galleria e un'integrazione perfetta delle prenotazioni."
+      "description": "Un sito vivace per un ristorante romano con menu online, galleria foto e prenotazioni tavoli."
     }
   }
 }

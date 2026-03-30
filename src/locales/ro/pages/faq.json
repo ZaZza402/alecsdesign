@@ -37,7 +37,7 @@
     },
     {
       "question": "Cât costă un proiect?",
-      "answer": "Fiind freelancer, tarifele mele sunt de obicei <strong>cu 30-40% mai mici decât agențiile</strong> pentru aceeași calitate a codului. Un site informațional standard începe de la aproximativ <strong>800</strong>. Aplicațiile Web personalizate (precum calculatoare, dashboard-uri sau instrumente SaaS) variază de obicei între <strong>2.000 și 5.000</strong> în funcție de logica necesară. Ofer o ofertă de preț fix în avans, fără surprize.",
+      "answer": "Tarifele mele sunt de obicei <strong>cu 30-40% mai mici decât agențiile</strong> pentru aceeași calitate a muncii — pentru că plătești un dezvoltator, nu un account manager și o echipă de intermediari. Fiecare proiect primește o ofertă de preț fix după un apel gratuit. Nicio estimare vagă, nicio factură surpriză. Scrie-mi și îți dau un număr în aceeași zi.",
       "category": "pricing",
       "keywords": [
         "cost aplicație web",
@@ -118,12 +118,7 @@
       "question": "Cum funcționează plata?",
       "answer": "Împart plățile pentru a fi corect pentru amândoi: <strong>50% în avans</strong> pentru a-mi rezerva timpul și a începe dezvoltarea, și restul de <strong>50% la finalizare</strong> când ești mulțumit de rezultat și gata de lansare. Accept Transfer Bancar, PayPal sau Stripe.",
       "category": "business",
-      "keywords": [
-        "termeni de plată",
-        "avans",
-        "etape",
-        "metode de plată"
-      ]
+      "keywords": ["termeni de plată", "avans", "etape", "metode de plată"]
     },
     {
       "question": "Poți gestiona SEO și Hosting?",

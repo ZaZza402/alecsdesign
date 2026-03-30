@@ -1,20 +1,16 @@
-﻿{
-  "title": "Cum Funcționează",
-  "subtitle": "De la concept la lansare în 4 pași simpli",
+{
+  "title": "Cum Functioneaza",
+  "subtitle": "Trei pasi simpli: de la prima discutie pana la site-ul online.",
   "step1": {
-    "title": "Strategie și Obiective",
-    "description": "Discutăm obiectivele afacerii tale, nu doar funcții web. Analizez nevoile tale și recomand abordarea corectă—fie un landing page rapid, fie o platformă complexă personalizată."
+    "title": "Avem un apel gratuit",
+    "description": "Îmi spui despre afacerea ta. Îți pun întrebările potrivite. Niciun angajament, niciun jargon tehnic."
   },
   "step2": {
-    "title": "Design și Dezvoltare",
-    "description": "Începem cu un design creat pentru brandul tău. Ai incluse runde de revizuire pentru a perfecționa aspectul vizual înainte de a scrie o singură linie de cod."
+    "title": "Proiectez si construiesc",
+    "description": "Intai vezi designul. Il aprobam impreuna. Apoi scriu codul."
   },
   "step3": {
-    "title": "Lansare Tehnică",
-    "description": "Prelucrez toată partea grea: configurare domeniu, SSL, hosting și integrare Google Analytics. Site-ul tău devine activ și securizat fără ca tu să atingi un server."
-  },
-  "step4": {
-    "title": "Evoluție și Suport",
-    "description": "Finalizăm colaborarea în funcție de modelul ales. Fie îți predau complet codul și resursele, fie trecem la Parteneriatul Gestionat pentru a-ți asigura mentenanța și liniștea pe termen lung."
+    "title": "Lansezi - si site-ul e al tau",
+    "description": "Site-ul merge online. Primesti codul, domeniul, totul. Este al tau pentru totdeauna."
   }
 }

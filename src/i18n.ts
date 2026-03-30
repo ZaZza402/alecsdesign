@@ -3,15 +3,13 @@ import { initReactI18next } from "react-i18next";
 
 // Import English translations - Sections
 import enHero from "./locales/en/sections/hero.json";
-import enProblem from "./locales/en/sections/problem.json";
-import enDifference from "./locales/en/sections/difference.json";
 import enHowItWorks from "./locales/en/sections/howItWorks.json";
 import enPortfolio from "./locales/en/sections/portfolio.json";
-import enPricing from "./locales/en/sections/pricing.json";
+import enServices from "./locales/en/sections/services.json";
 import enContact from "./locales/en/sections/contact.json";
+import enComparison from "./locales/en/sections/comparison.json";
 
 // Import English translations - Pages
-import enServicesRates from "./locales/en/pages/servicesRates.json";
 import enNotFound from "./locales/en/pages/notFound.json";
 import enLegal from "./locales/en/pages/legal.json";
 import enPortfolioPage from "./locales/en/pages/portfolioPage.json";
@@ -27,15 +25,13 @@ import enSeo from "./locales/en/components/seo.json";
 
 // Import Italian translations - Sections
 import itHero from "./locales/it/sections/hero.json";
-import itProblem from "./locales/it/sections/problem.json";
-import itDifference from "./locales/it/sections/difference.json";
 import itHowItWorks from "./locales/it/sections/howItWorks.json";
 import itPortfolio from "./locales/it/sections/portfolio.json";
-import itPricing from "./locales/it/sections/pricing.json";
+import itServices from "./locales/it/sections/services.json";
 import itContact from "./locales/it/sections/contact.json";
+import itComparison from "./locales/it/sections/comparison.json";
 
 // Import Italian translations - Pages
-import itServicesRates from "./locales/it/pages/servicesRates.json";
 import itNotFound from "./locales/it/pages/notFound.json";
 import itLegal from "./locales/it/pages/legal.json";
 import itPortfolioPage from "./locales/it/pages/portfolioPage.json";
@@ -51,15 +47,13 @@ import itSeo from "./locales/it/components/seo.json";
 
 // Import Romanian translations - Sections
 import roHero from "./locales/ro/sections/hero.json";
-import roProblem from "./locales/ro/sections/problem.json";
-import roDifference from "./locales/ro/sections/difference.json";
 import roHowItWorks from "./locales/ro/sections/howItWorks.json";
 import roPortfolio from "./locales/ro/sections/portfolio.json";
-import roPricing from "./locales/ro/sections/pricing.json";
+import roServices from "./locales/ro/sections/services.json";
 import roContact from "./locales/ro/sections/contact.json";
+import roComparison from "./locales/ro/sections/comparison.json";
 
 // Import Romanian translations - Pages
-import roServicesRates from "./locales/ro/pages/servicesRates.json";
 import roNotFound from "./locales/ro/pages/notFound.json";
 import roLegal from "./locales/ro/pages/legal.json";
 import roPortfolioPage from "./locales/ro/pages/portfolioPage.json";
@@ -72,11 +66,6 @@ import roFooter from "./locales/ro/components/footer.json";
 import roCookies from "./locales/ro/components/cookies.json";
 import roCommon from "./locales/ro/components/common.json";
 import roSeo from "./locales/ro/components/seo.json";
-
-// Import quiz translations
-import itQuiz from "./locales/it/quiz.json";
-import enQuiz from "./locales/en/quiz.json";
-import roQuiz from "./locales/ro/quiz.json";
 
 // Import calculator translations
 import itCalculator from "./locales/it/calculator.json";
@@ -105,14 +94,12 @@ i18n
         translation: {
           // Sections
           hero: enHero,
-          problem: enProblem,
-          difference: enDifference,
           howItWorks: enHowItWorks,
           portfolio: enPortfolio,
-          pricing: enPricing,
+          services: enServices,
           contact: enContact,
+          comparison: enComparison,
           // Pages
-          servicesRates: enServicesRates,
           notFound: enNotFound,
           legal: enLegal,
           portfolioPage: enPortfolioPage,
@@ -125,7 +112,6 @@ i18n
           common: enCommon,
           seo: enSeo,
           // Other
-          ...enQuiz,
           ...enCalculator,
           ...enFloatingContact,
         },
@@ -134,14 +120,12 @@ i18n
         translation: {
           // Sections
           hero: itHero,
-          problem: itProblem,
-          difference: itDifference,
           howItWorks: itHowItWorks,
           portfolio: itPortfolio,
-          pricing: itPricing,
+          services: itServices,
           contact: itContact,
+          comparison: itComparison,
           // Pages
-          servicesRates: itServicesRates,
           notFound: itNotFound,
           legal: itLegal,
           portfolioPage: itPortfolioPage,
@@ -154,7 +138,6 @@ i18n
           common: itCommon,
           seo: itSeo,
           // Other
-          ...itQuiz,
           ...itCalculator,
           ...itFloatingContact,
         },
@@ -163,14 +146,12 @@ i18n
         translation: {
           // Sections
           hero: roHero,
-          problem: roProblem,
-          difference: roDifference,
           howItWorks: roHowItWorks,
           portfolio: roPortfolio,
-          pricing: roPricing,
+          services: roServices,
           contact: roContact,
+          comparison: roComparison,
           // Pages
-          servicesRates: roServicesRates,
           notFound: roNotFound,
           legal: roLegal,
           portfolioPage: roPortfolioPage,
@@ -183,7 +164,6 @@ i18n
           common: roCommon,
           seo: roSeo,
           // Other
-          ...roQuiz,
           ...roCalculator,
           ...roFloatingContact,
         },

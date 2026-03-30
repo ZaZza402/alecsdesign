@@ -37,7 +37,7 @@
     },
     {
       "question": "How much does a project cost?",
-      "answer": "Since I am a freelancer, my rates are typically <strong>30-40% lower than agencies</strong> for the same quality of code. A standard informational site starts around <strong>800</strong>. Custom Web Apps (like calculators, dashboards, or SaaS tools) typically range from <strong>2,000 to 5,000</strong> depending on the logic required. I provide a fixed-price quote upfront so there are no surprises.",
+      "answer": "My rates are typically <strong>30-40% lower than agencies</strong> for the same quality of work — because you're paying for a developer, not an account manager and a team of middlemen. Every project gets a fixed-price quote after a free call. No vague estimates, no surprise invoices. Message me and I'll give you a number the same day.",
       "category": "pricing",
       "keywords": [
         "web app cost",
@@ -118,12 +118,7 @@
       "question": "How does payment work?",
       "answer": "I split payments to keep it fair for both of us: <strong>50% upfront</strong> to book my time and start development, and the remaining <strong>50% upon completion</strong> when you are happy with the result and ready to launch. I accept Bank Transfer, PayPal, or Stripe.",
       "category": "business",
-      "keywords": [
-        "payment terms",
-        "deposit",
-        "milestones",
-        "payment methods"
-      ]
+      "keywords": ["payment terms", "deposit", "milestones", "payment methods"]
     },
     {
       "question": "Can you handle SEO and Hosting?",

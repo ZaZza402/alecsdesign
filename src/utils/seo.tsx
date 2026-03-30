@@ -193,6 +193,7 @@ export const SEO = ({
 };
 
 // Structured Data Schemas
+// eslint-disable-next-line react-refresh/only-export-components
 export const generateLocalBusinessSchema = () => {
   return {
     "@context": "https://schema.org",
@@ -274,6 +275,7 @@ export const generateLocalBusinessSchema = () => {
   };
 };
 
+// eslint-disable-next-line react-refresh/only-export-components
 export const generateWebsiteSchema = () => {
   return {
     "@context": "https://schema.org",
@@ -286,6 +288,7 @@ export const generateWebsiteSchema = () => {
   };
 };
 
+// eslint-disable-next-line react-refresh/only-export-components
 export const generateBreadcrumbSchema = (
   items: { name: string; url: string }[]
 ) => {

@@ -1,52 +1,52 @@
-﻿{
-  "title": "Hai Să Începem",
-  "subtitle": "Nu mai aștepta. Rezervă consultația gratuită și hai să discutăm despre viziunea ta.",
-  "successMessage": "Mulțumesc! Am primit detaliile și te voi contacta în scurt timp.",
-  "errorMessage": "Eroare la trimitere. Te rog contactează-mă direct pe email sau WhatsApp.",
-  "responseTime": "Răspund de obicei:",
-  "responseTimeValue": "în 24 de ore",
+{
+  "title": "Hai sa vorbim",
+  "subtitle": "Rezerva un apel gratuit sau trimite-mi un mesaj. Raspund in 24 de ore.",
+  "successMessage": "Multumesc! Am primit mesajul tau si te voi contacta in curand.",
+  "errorMessage": "Eroare la trimitere. Contacteaza-ma direct pe WhatsApp.",
+  "responseTime": "Raspund de obicei:",
+  "responseTimeValue": "in 24 de ore",
   "whatsappStatus": "WhatsApp:",
   "whatsappAvailable": "Online Acum",
   "whatsappOffline": "Offline (Revin la 9:00)",
   "methods": {
-    "emailUs": "Trimite-ne Email",
-    "callUs": "Sună-ne",
+    "emailUs": "Email",
+    "callUs": "Telefon",
     "whatsapp": "WhatsApp",
     "chatOnWhatsApp": "Chat pe WhatsApp",
-    "location": "Locație",
+    "location": "Locatie",
     "sendMessage": "Trimite un Mesaj",
-    "sendMessageDesc": "Completează formularul de mai jos și te vom contacta în 24 de ore."
+    "sendMessageDesc": "Completeaza formularul si revin in 24 de ore."
   },
   "form": {
-    "name": "Nume",
-    "namePlaceholder": "Numele tău complet",
+    "name": "Numele tau",
+    "namePlaceholder": "Nume si prenume",
     "nameRequired": "Numele este obligatoriu",
-    "contact": "Email sau Telefon",
-    "contactPlaceholder": "contact@exemplu.ro",
+    "contact": "Email sau telefon",
+    "contactPlaceholder": "Cum te contactez?",
     "contactRequired": "Email sau telefon obligatoriu",
     "business": "Spune-mi despre afacerea ta",
-    "businessPlaceholder": "Cu ce te ocupi? Care este obiectivul principal al site-ului?",
+    "businessPlaceholder": "Cu ce te ocupi? La ce iti trebuie site-ul?",
     "businessRequired": "Descrie scurt proiectul",
     "needs": "De ce ai nevoie?",
-    "needsPlaceholder": "Selectează tipul de proiect...",
-    "needsRequired": "Te rog selectează o opțiune",
+    "needsPlaceholder": "Selecteaza un tip de proiect...",
+    "needsRequired": "Selecteaza o optiune",
     "needsOptions": {
-      "newWebsite": "Site Nou de la Zero",
+      "newWebsite": "Site Web Nou",
       "redesign": "Redesign Site Existent",
-      "consultation": "Consultanță Tehnică",
-      "other": "Altceva / Nu sunt sigur"
+      "consultation": "Consultanta Gratuita",
+      "other": "Altceva / Nu stiu"
     },
-    "preference": "Cum preferi să fii contactat?",
-    "preferencePlaceholder": "Selectează...",
-    "preferenceRequired": "Te rog selectează o preferință",
+    "preference": "Metoda preferata de contact",
+    "preferencePlaceholder": "Selecteaza...",
+    "preferenceRequired": "Selecteaza o preferinta",
     "preferenceOptions": {
       "email": "Email",
-      "phone": "Apel Telefonic",
-      "whatsapp": "Mesaj WhatsApp"
+      "phone": "Telefon",
+      "whatsapp": "WhatsApp"
     },
-    "message": "Detalii suplimentare (opțional)",
-    "messagePlaceholder": "Ai un termen limită sau funcționalități specifice în minte?",
-    "submit": "Trimite Solicitarea",
+    "message": "Altceva? (optional)",
+    "messagePlaceholder": "Termene limita, buget, functionalitati specifice...",
+    "submit": "Trimite Mesajul",
     "sending": "Se trimite..."
   }
 }

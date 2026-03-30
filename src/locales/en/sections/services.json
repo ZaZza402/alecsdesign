@@ -1,0 +1,17 @@
+{
+  "title": "What I Build",
+  "subtitle": "Every project is different. Here's what most businesses come to me for.",
+  "website": {
+    "title": "A website for your business",
+    "description": "Fast, professional, found on Google. Makes a great first impression and works on every device."
+  },
+  "bookings": {
+    "title": "Bookings and online payments",
+    "description": "Let clients book appointments or pay you directly from your website — without calling or emailing."
+  },
+  "custom": {
+    "title": "Custom features",
+    "description": "Client portals, dashboards, AI chat, multilingual content — built for the way your business actually works."
+  },
+  "cta": "Ask me about your project"
+}
