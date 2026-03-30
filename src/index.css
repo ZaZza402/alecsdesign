@@ -248,12 +248,16 @@ section {
 }
 
 /* ── Mesh gradient background ─────────────────────────────────── */
+.hero-bg-scope {
+  position: relative;
+  overflow: hidden;
+}
+
 .bg-mesh {
-  position: fixed;
+  position: absolute;
   inset: 0;
   z-index: 0;
   pointer-events: none;
-  overflow: hidden;
 }
 
 .bg-mesh__blob {

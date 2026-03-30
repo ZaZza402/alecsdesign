@@ -41,10 +41,14 @@ const HomePage = () => {
         ogType="website"
       />
       <main role="main" style={{ paddingTop: "80px" }}>
-        <section id="home" aria-labelledby="hero-heading">
-          <HeroSection />
-        </section>
-        <ComparisonSection />
+        {/* Blobs scoped to hero + comparison only */}
+        <div className="hero-bg-scope">
+          <BackgroundPaths />
+          <section id="home" aria-labelledby="hero-heading">
+            <HeroSection />
+          </section>
+          <ComparisonSection />
+        </div>
         <Suspense fallback={<LoadingSkeleton />}>
           <section id="portfolio" aria-labelledby="portfolio-heading">
             <PortfolioSection key={`portfolio-${t("nav.portfolio")}`} />
@@ -76,9 +80,6 @@ export default function App() {
       {/* Structured Data */}
       <StructuredData data={generateLocalBusinessSchema()} />
       <StructuredData data={generateWebsiteSchema()} />
-
-      {/* Fixed background — must be outside any position:relative stacking context */}
-      <BackgroundPaths />
 
       {/* Language suggestion banner */}
       <LanguageSuggestionBanner />
