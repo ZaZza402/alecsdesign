@@ -1,7 +1,7 @@
 {
-  "title": "Il solito modo vs. il mio",
-  "subtitle": "Cosa stai davvero comprando.",
-  "colOthers": "Il solito modo",
+  "title": "Come fanno gli altri. Come lo faccio io.",
+  "subtitle": "Quello che ottieni davvero.",
+  "colOthers": "Gli altri",
   "colMine": "Con me",
   "speed": {
     "label": "Velocit\u00e0",
@@ -10,17 +10,17 @@
   },
   "google": {
     "label": "Google",
-    "them": "Difficile trovarti",
+    "them": "Quasi introvabile",
     "me": "Posizionato dal giorno 1"
   },
   "ai": {
-    "label": "Assistenti AI",
+    "label": "AI",
     "them": "L\u2019AI non ti trova",
     "me": "L\u2019AI ti consiglia"
   },
   "mobile": {
     "label": "Mobile",
-    "them": "Problemi su smartphone",
+    "them": "Si rompe sullo smartphone",
     "me": "Perfetto su ogni schermo"
   },
   "ownership": {

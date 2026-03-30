@@ -1,17 +1,17 @@
 {
-  "title": "Cosa Costruisco",
-  "subtitle": "Ogni progetto è diverso. Ecco le soluzioni che costruisco più spesso per i miei clienti.",
+  "title": "Cosa Realizzo",
+  "subtitle": "Ogni lavoro è diverso. Queste sono le richieste più comuni.",
   "website": {
     "title": "Un sito per la tua attività",
-    "description": "Veloce, professionale, trovabile su Google. Fa una grande prima impressione e funziona su ogni dispositivo."
+    "description": "Veloce, professionale, trovabile su Google. Ottima prima impressione su ogni dispositivo."
   },
   "bookings": {
     "title": "Prenotazioni e pagamenti online",
-    "description": "Fai prenotare appuntamenti o pagare direttamente dal tuo sito — senza telefonate o email."
+    "description": "I tuoi clienti prenotano o pagano direttamente dal sito — senza telefonate o email."
   },
   "custom": {
-    "title": "Funzionalità personalizzate",
-    "description": "Aree clienti, dashboard, chat AI, contenuti multilingua — costruiti per il modo in cui lavora la tua attività."
+    "title": "Funzionalità su misura",
+    "description": "Aree clienti, dashboard, chat AI, contenuti multilingua — costruiti come lavora la tua attività."
   },
   "cta": "Parlami del tuo progetto"
 }

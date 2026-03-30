@@ -338,3 +338,34 @@ section {
     animation: none !important;
   }
 }
+
+/* ── Language-adaptive typography ─────────────────────────────
+   Italian and Romanian words tend to be longer. These rules
+   gently scale down specific text nodes so layouts stay intact
+   without any copy feeling squished.
+────────────────────────────────────────────────────────────── */
+
+/* Hero subline ("Veloci. Professionali. Tuoi al 100%.") */
+:lang(it) .hero-section__subline,
+:lang(ro) .hero-section__subline {
+  font-size: clamp(0.975rem, 2.2vw, 1.25rem);
+}
+
+/* Hero stat badges */
+:lang(it) .hero-section__perk span,
+:lang(ro) .hero-section__perk span {
+  font-size: 0.875rem;
+}
+
+/* Section subtitles — howItWorks and services */
+:lang(ro) .how-it-works-subtitle,
+:lang(ro) .services-section__subtitle {
+  font-size: 0.9375rem;
+}
+
+/* CTA buttons — allow slightly tighter padding so text never wraps */
+:lang(it) .hero-cta-button,
+:lang(ro) .hero-cta-button {
+  padding-left: 1.4rem;
+  padding-right: 1.4rem;
+}

@@ -1,16 +1,16 @@
 {
-  "title": "Cum Functioneaza",
-  "subtitle": "Trei pasi simpli: de la prima discutie pana la site-ul online.",
+  "title": "Cum Funcționează",
+  "subtitle": "Trei pași, de la prima discuție până la site-ul tău online.",
   "step1": {
-    "title": "Avem un apel gratuit",
-    "description": "Îmi spui despre afacerea ta. Îți pun întrebările potrivite. Niciun angajament, niciun jargon tehnic."
+    "title": "Un apel gratuit",
+    "description": "Îmi spui despre afacerea ta. Îți pun întrebările potrivite. Niciun angajament, niciun jargon."
   },
   "step2": {
-    "title": "Proiectez si construiesc",
-    "description": "Intai vezi designul. Il aprobam impreuna. Apoi scriu codul."
+    "title": "Proiectez și construiesc",
+    "description": "Întâi vezi designul. Îl aprobăm împreună. Apoi scriu codul."
   },
   "step3": {
-    "title": "Lansezi - si site-ul e al tau",
-    "description": "Site-ul merge online. Primesti codul, domeniul, totul. Este al tau pentru totdeauna."
+    "title": "Lansezi — și site-ul e al tău",
+    "description": "Site-ul merge online. Primești codul, domeniul, totul. E al tău, pentru totdeauna."
   }
 }

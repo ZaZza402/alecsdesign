@@ -1,16 +1,16 @@
 {
   "title": "Come Funziona",
-  "subtitle": "Tre semplici passaggi: dalla prima chiacchierata al sito online.",
+  "subtitle": "Tre step, dalla prima chiacchierata al sito online.",
   "step1": {
     "title": "Una chiamata gratuita",
     "description": "Mi parli della tua attività. Ti faccio le domande giuste. Nessun impegno, nessun tecnicismo."
   },
   "step2": {
-    "title": "Progetto e costruisco il sito",
-    "description": "Prima vedi il design. Lo approvi insieme a me. Poi scrivo il codice."
+    "title": "Disegno e costruisco il sito",
+    "description": "Prima vedi il design. Lo approvi. Poi scrivo il codice."
   },
   "step3": {
     "title": "Vai online — e il sito è tuo",
-    "description": "Il sito va live. Ricevi il codice, il dominio, tutto. È tuo per sempre."
+    "description": "Il sito va live. Ricevi il codice, il dominio, tutto. È tuo, per sempre."
   }
 }

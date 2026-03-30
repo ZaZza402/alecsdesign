@@ -1,17 +1,17 @@
-﻿{
-  "title": "Ce Construiesc",
-  "subtitle": "Fiecare proiect este diferit. Iată ce cer cel mai des clienții mei.",
+{
+  "title": "Ce Realizez",
+  "subtitle": "Fiecare proiect e altfel. Astea sunt cele mai frecvente cereri.",
   "website": {
     "title": "Un site pentru afacerea ta",
-    "description": "Rapid, profesional, gasibil pe Google. Creeaza o prima impresie excelenta si functioneaza pe orice dispozitiv."
+    "description": "Rapid, profesional, ușor de găsit pe Google. Impresie bună din prima, pe orice dispozitiv."
   },
   "bookings": {
-    "title": "Rezervari si plati online",
-    "description": "Fa clientii sa rezerve programari sau sa plateasca direct de pe site — fara apeluri telefonice sau email-uri."
+    "title": "Rezervări și plăți online",
+    "description": "Clienții tăi rezervă sau plătesc direct de pe site — fără apeluri sau emailuri."
   },
   "custom": {
-    "title": "Functionalitati personalizate",
-    "description": "Zone pentru clienti, dashboard-uri, chat AI, continut multilingv — construite pentru modul in care lucreaza afacerea ta."
+    "title": "Funcționalități personalizate",
+    "description": "Zone pentru clienți, dashboard-uri, chat AI, conținut multilingv — construite pe cum lucrezi tu."
   },
   "cta": "Spune-mi despre proiectul tău"
 }

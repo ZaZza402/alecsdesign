@@ -1,22 +1,24 @@
 {
   "company": {
     "title": "alecsdesign.xyz",
-    "description": "Site-uri web personalizate pentru afaceri care vor sa creasca online.",
+    "description": "Site-uri web personalizate pentru afaceri care vor să crească online.",
     "location": "Italia"
   },
   "quickLinks": {
-    "title": "Link-uri Rapide",
-    "about": "Despre Mine",
-    "portfolio": "Lucrari",
+    "title": "Link-uri rapide",
+    "about": "Despre mine",
+    "portfolio": "Lucrări",
     "contact": "Contact"
   },
   "legal": {
     "title": "Legal",
-    "privacy": "Politica de Confidentialitate",
-    "terms": "Termeni si Conditii",
-    "cookies": "Politica Cookie-uri"
+    "privacy": "Politică de confidențialitate",
+    "terms": "Termeni și condiții",
+    "cookies": "Politică cookie-uri"
   },
-  "social": { "title": "Urmareste-ma" },
+  "social": {
+    "title": "Urmărește-mă"
+  },
   "copyright": "alecsdesign.xyz. Toate drepturile rezervate.",
   "revealContact": "Arată datele de contact"
 }

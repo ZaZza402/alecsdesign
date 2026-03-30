@@ -1,20 +1,20 @@
 {
-  "title": "Lucrari Selectate",
-  "subtitle": "Proiecte lansate, construite pentru clienți reali.",
-  "visitWebsite": "Viziteaza Site-ul",
-  "viewAllProjects": "Vezi Toate Lucrarile",
+  "title": "Lucrări Selectate",
+  "subtitle": "Proiecte live, realizate pentru clienți reali.",
+  "visitWebsite": "Vizitează site-ul",
+  "viewAllProjects": "Vezi toate lucrările",
   "projects": {
     "immigration-agency": {
-      "description": "Un site profesional pentru un centru de asistenta imigrare. Clar, accesibil si usor de navigat pentru orice client."
+      "description": "Un site profesional pentru un centru de asistență pentru imigrare. Clar, accesibil și ușor de navigat."
     },
     "psychologist": {
-      "description": "Un site calm si de incredere pentru un psiholog clinician. Face usor programarea unei consultatii."
+      "description": "Un site calm și de încredere pentru o psihologă clinică. Ușor de programat o consultație, inclusiv de pe mobil."
     },
     "sartoria": {
-      "description": "Un site elegant pentru un atelier de croitorie la comanda in Roma. Reflecta calitatea si atentia la detalii care definesc brandul."
+      "description": "Un site elegant pentru un atelier de croitorie la comandă în Roma. Reflectă calitatea și atenția la detalii a brandului."
     },
     "restaurant": {
-      "description": "Un site vibrant pentru un restaurant din Roma cu meniu online, galerie foto și rezervări la masă."
+      "description": "Un site dinamic pentru un restaurant din Roma, cu meniu online, galerie foto și rezervări la masă."
     }
   }
 }
