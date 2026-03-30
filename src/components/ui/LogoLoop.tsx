@@ -58,20 +58,23 @@ const LogoLoopComponent: React.FC<LogoLoopProps> = ({
   const positionRef = useRef<number>(0);
   const rafRef = useRef<number | null>(null);
   const isHoveringRef = useRef<boolean>(false);
-  const [copyCount, setCopyCount] = useState(2);
+  const [copyCount, setCopyCount] = useState(3);
 
-  const singleWidth = useMemo(() => {
-    if (!trackRef.current) return 0;
+  // singleWidth stored as a ref — updating it does NOT restart the RAF loop
+  const singleWidthRef = useRef<number>(0);
+
+  // Recompute singleWidth after the DOM updates for the current copyCount
+  useEffect(() => {
+    if (!trackRef.current) return;
     const children = Array.from(trackRef.current.children) as HTMLElement[];
-    const singleSetCount = children.length / copyCount;
+    if (children.length === 0 || copyCount === 0) return;
+    const perSet = Math.round(children.length / copyCount);
     let width = 0;
-    for (let i = 0; i < singleSetCount; i++) {
+    for (let i = 0; i < perSet; i++) {
       const child = children[i];
-      if (child) {
-        width += child.offsetWidth + gap;
-      }
+      if (child) width += child.offsetWidth + gap;
     }
-    return width;
+    singleWidthRef.current = width;
   }, [copyCount, gap]);
 
   const updateCopyCount = useCallback(() => {
@@ -95,6 +98,7 @@ const LogoLoopComponent: React.FC<LogoLoopProps> = ({
     return () => observer.disconnect();
   }, [updateCopyCount]);
 
+  // RAF loop — stable deps, never restarts due to copyCount/singleWidth changes
   useEffect(() => {
     let lastTime: number | null = null;
     const dir = direction === "left" ? -1 : 1;
@@ -103,7 +107,8 @@ const LogoLoopComponent: React.FC<LogoLoopProps> = ({
       if (lastTime === null) {
         lastTime = timestamp;
       }
-      const delta = timestamp - lastTime;
+      // Clamp delta to 50ms so a hidden tab resuming doesn't cause a jump
+      const delta = Math.min(timestamp - lastTime, 50);
       lastTime = timestamp;
 
       const currentSpeed =
@@ -115,13 +120,14 @@ const LogoLoopComponent: React.FC<LogoLoopProps> = ({
 
       positionRef.current += dir * currentSpeed * (delta / 1000);
 
+      const sw = singleWidthRef.current || 1;
+      if (positionRef.current <= -sw) {
+        positionRef.current += sw;
+      } else if (positionRef.current >= 0 && dir > 0) {
+        positionRef.current -= sw;
+      }
+
       if (trackRef.current) {
-        const sw = singleWidth || 1;
-        if (positionRef.current <= -sw) {
-          positionRef.current += sw;
-        } else if (positionRef.current >= 0 && direction === "right") {
-          positionRef.current -= sw;
-        }
         trackRef.current.style.transform = `translateX(${positionRef.current}px)`;
       }
 
@@ -132,7 +138,7 @@ const LogoLoopComponent: React.FC<LogoLoopProps> = ({
     return () => {
       if (rafRef.current !== null) cancelAnimationFrame(rafRef.current);
     };
-  }, [direction, speed, hoverSpeed, pauseOnHover, singleWidth]);
+  }, [direction, speed, hoverSpeed, pauseOnHover]); // singleWidth intentionally excluded
 
   const allLogos = useMemo(() => {
     const copies = [];
