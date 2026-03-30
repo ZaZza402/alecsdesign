@@ -40,8 +40,7 @@ const HomePage = () => {
         keywords={t("seo.keywords")}
         ogType="website"
       />
-      <main role="main" style={{ paddingTop: "80px", position: "relative" }}>
-        <BackgroundPaths />
+      <main role="main" style={{ paddingTop: "80px" }}>
         <section id="home" aria-labelledby="hero-heading">
           <HeroSection />
         </section>
@@ -77,6 +76,9 @@ export default function App() {
       {/* Structured Data */}
       <StructuredData data={generateLocalBusinessSchema()} />
       <StructuredData data={generateWebsiteSchema()} />
+
+      {/* Fixed background — must be outside any position:relative stacking context */}
+      <BackgroundPaths />
 
       {/* Language suggestion banner */}
       <LanguageSuggestionBanner />
