@@ -21,23 +21,21 @@ const LanguageSwitcher: React.FC = () => {
     languages.find((lang) => lang.code === i18n.language) || languages[0];
 
   const handleLanguageChange = (langCode: string) => {
-    // Save language preference
     saveLanguagePreference(langCode as "en" | "it" | "ro");
 
-    // Get the current path without the language prefix
+    // Switch i18n content immediately (no remount, no scroll reset)
+    i18n.changeLanguage(langCode);
+
+    // Update URL to reflect new language (replace so back button isn't polluted)
     const pathParts = location.pathname.split("/").filter(Boolean);
-    // Remove the first part if it's a language code
     if (pathParts.length > 0 && ["en", "it", "ro"].includes(pathParts[0])) {
       pathParts.shift();
     }
-
-    // Reconstruct the path with new language
     const newPath = `/${langCode}${
       pathParts.length > 0 ? "/" + pathParts.join("/") : ""
     }${location.hash}`;
+    navigate(newPath, { replace: true });
 
-    // Navigate to new language path
-    navigate(newPath);
     setIsOpen(false);
   };
 
