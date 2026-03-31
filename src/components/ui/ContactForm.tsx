@@ -11,7 +11,6 @@ import {
   MessageSquare,
   ArrowRight,
   ArrowLeft,
-  Send,
   CheckCircle,
   Check,
 } from "lucide-react";
@@ -89,8 +88,7 @@ const ContactForm = () => {
   };
 
   const canProceedStep2 =
-    data.name.trim() !== "" &&
-    data.business.trim() !== "";
+    data.name.trim() !== "" && data.business.trim() !== "";
 
   const handleSubmit = async () => {
     setIsSubmitting(true);
@@ -298,7 +296,11 @@ const ContactForm = () => {
                         type="button"
                         className={`cf__pref-btn ${data.preference === opt.value ? "selected" : ""}`}
                         onClick={() =>
-                          setData((d) => ({ ...d, preference: opt.value, contactDetail: "" }))
+                          setData((d) => ({
+                            ...d,
+                            preference: opt.value,
+                            contactDetail: "",
+                          }))
                         }
                       >
                         <Icon size={15} aria-hidden="true" />
@@ -312,9 +314,21 @@ const ContactForm = () => {
                     <motion.div
                       className="cf__field cf__field--contact-detail"
                       initial={{ opacity: 0, height: 0, marginTop: 0 }}
-                      animate={{ opacity: 1, height: "auto", marginTop: "1rem" }}
+                      animate={{
+                        opacity: 1,
+                        height: "auto",
+                        marginTop: "1rem",
+                      }}
                       exit={{ opacity: 0, height: 0, marginTop: 0 }}
-                      transition={{ duration: 0.22, ease: [0.22, 1, 0.36, 1] as [number, number, number, number] }}
+                      transition={{
+                        duration: 0.22,
+                        ease: [0.22, 1, 0.36, 1] as [
+                          number,
+                          number,
+                          number,
+                          number,
+                        ],
+                      }}
                     >
                       <input
                         type={data.preference === "email" ? "email" : "tel"}
@@ -328,9 +342,14 @@ const ContactForm = () => {
                         }
                         value={data.contactDetail}
                         onChange={(e) =>
-                          setData((d) => ({ ...d, contactDetail: e.target.value }))
+                          setData((d) => ({
+                            ...d,
+                            contactDetail: e.target.value,
+                          }))
                         }
-                        autoComplete={data.preference === "email" ? "email" : "tel"}
+                        autoComplete={
+                          data.preference === "email" ? "email" : "tel"
+                        }
                         // eslint-disable-next-line jsx-a11y/no-autofocus
                         autoFocus
                       />
@@ -362,16 +381,15 @@ const ContactForm = () => {
                     type="button"
                     className="cf__btn-submit"
                     onClick={handleSubmit}
-                    disabled={isSubmitting || !data.preference || !data.contactDetail.trim()}
+                    disabled={
+                      isSubmitting ||
+                      !data.preference ||
+                      !data.contactDetail.trim()
+                    }
                   >
-                    {isSubmitting ? (
-                      t("contact.form.sending")
-                    ) : (
-                      <>
-                        <Send size={16} aria-hidden="true" />
-                        {t("contact.form.submit")}
-                      </>
-                    )}
+                    {isSubmitting
+                      ? t("contact.form.sending")
+                      : t("contact.form.submit")}
                   </button>
                 </div>
               </>

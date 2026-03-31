@@ -46,7 +46,7 @@
     },
     "message": "Anything else? (optional)",
     "messagePlaceholder": "Deadlines, budget, specific features...",
-    "submit": "Send Message",
+    "submit": "Send",
     "sending": "Sending..."
   },
   "steps": {
