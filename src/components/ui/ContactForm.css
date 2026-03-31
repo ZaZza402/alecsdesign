@@ -148,6 +148,11 @@
   margin-bottom: 0.875rem;
 }
 
+.cf__field--contact-detail {
+  overflow: hidden;
+  margin-bottom: 0;
+}
+
 .cf__input,
 .cf__textarea {
   width: 100%;

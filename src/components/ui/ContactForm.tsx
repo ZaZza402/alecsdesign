@@ -20,9 +20,9 @@ import "./ContactForm.css";
 interface FormData {
   needs: string;
   name: string;
-  contact: string;
   business: string;
   preference: string;
+  contactDetail: string;
   message: string;
 }
 
@@ -36,9 +36,9 @@ const ContactForm = () => {
   const [data, setData] = useState<FormData>({
     needs: "",
     name: "",
-    contact: "",
     business: "",
     preference: "",
+    contactDetail: "",
     message: "",
   });
 
@@ -90,7 +90,6 @@ const ContactForm = () => {
 
   const canProceedStep2 =
     data.name.trim() !== "" &&
-    data.contact.trim() !== "" &&
     data.business.trim() !== "";
 
   const handleSubmit = async () => {
@@ -111,16 +110,27 @@ const ContactForm = () => {
 
       if (!response.ok) throw new Error("failed");
 
-      if (typeof window !== "undefined" && (window as typeof window & { gtag?: Function }).gtag) {
-        (window as typeof window & { gtag: Function }).gtag("event", "form_submit_success", {
-          event_category: "Form",
-          event_label: "Contact Form",
-          value: 1,
-        });
-        (window as typeof window & { gtag: Function }).gtag("event", "generate_lead", {
-          currency: "EUR",
-          value: 500,
-        });
+      if (
+        typeof window !== "undefined" &&
+        (window as typeof window & { gtag?: Function }).gtag
+      ) {
+        (window as typeof window & { gtag: Function }).gtag(
+          "event",
+          "form_submit_success",
+          {
+            event_category: "Form",
+            event_label: "Contact Form",
+            value: 1,
+          },
+        );
+        (window as typeof window & { gtag: Function }).gtag(
+          "event",
+          "generate_lead",
+          {
+            currency: "EUR",
+            value: 500,
+          },
+        );
       }
 
       setSubmitted(true);
@@ -136,7 +146,10 @@ const ContactForm = () => {
     center: { x: 0, opacity: 1 },
     exit: (dir: number) => ({ x: dir > 0 ? -50 : 50, opacity: 0 }),
   };
-  const transition = { duration: 0.22, ease: [0.22, 1, 0.36, 1] as [number, number, number, number] };
+  const transition = {
+    duration: 0.22,
+    ease: [0.22, 1, 0.36, 1] as [number, number, number, number],
+  };
 
   if (submitted) {
     return (
@@ -175,7 +188,7 @@ const ContactForm = () => {
               <div
                 key={`line-${n}`}
                 className={`cf__step-line ${n < step ? "done" : ""}`}
-              />
+              />,
             );
           return els;
         })}
@@ -239,18 +252,6 @@ const ContactForm = () => {
                   />
                 </div>
                 <div className="cf__field">
-                  <input
-                    type="text"
-                    className="cf__input"
-                    placeholder={t("contact.form.contactPlaceholder")}
-                    value={data.contact}
-                    onChange={(e) =>
-                      setData((d) => ({ ...d, contact: e.target.value }))
-                    }
-                    autoComplete="email"
-                  />
-                </div>
-                <div className="cf__field">
                   <textarea
                     className="cf__textarea"
                     rows={3}
@@ -297,7 +298,7 @@ const ContactForm = () => {
                         type="button"
                         className={`cf__pref-btn ${data.preference === opt.value ? "selected" : ""}`}
                         onClick={() =>
-                          setData((d) => ({ ...d, preference: opt.value }))
+                          setData((d) => ({ ...d, preference: opt.value, contactDetail: "" }))
                         }
                       >
                         <Icon size={15} aria-hidden="true" />
@@ -306,6 +307,36 @@ const ContactForm = () => {
                     );
                   })}
                 </div>
+                <AnimatePresence>
+                  {data.preference && (
+                    <motion.div
+                      className="cf__field cf__field--contact-detail"
+                      initial={{ opacity: 0, height: 0, marginTop: 0 }}
+                      animate={{ opacity: 1, height: "auto", marginTop: "1rem" }}
+                      exit={{ opacity: 0, height: 0, marginTop: 0 }}
+                      transition={{ duration: 0.22, ease: [0.22, 1, 0.36, 1] as [number, number, number, number] }}
+                    >
+                      <input
+                        type={data.preference === "email" ? "email" : "tel"}
+                        className="cf__input"
+                        placeholder={
+                          data.preference === "email"
+                            ? "your@email.com"
+                            : data.preference === "whatsapp"
+                              ? "WhatsApp: +39 333 123 4567"
+                              : "+39 06 123 4567"
+                        }
+                        value={data.contactDetail}
+                        onChange={(e) =>
+                          setData((d) => ({ ...d, contactDetail: e.target.value }))
+                        }
+                        autoComplete={data.preference === "email" ? "email" : "tel"}
+                        // eslint-disable-next-line jsx-a11y/no-autofocus
+                        autoFocus
+                      />
+                    </motion.div>
+                  )}
+                </AnimatePresence>
                 <div className="cf__field">
                   <textarea
                     className="cf__textarea"
@@ -331,7 +362,7 @@ const ContactForm = () => {
                     type="button"
                     className="cf__btn-submit"
                     onClick={handleSubmit}
-                    disabled={isSubmitting || !data.preference}
+                    disabled={isSubmitting || !data.preference || !data.contactDetail.trim()}
                   >
                     {isSubmitting ? (
                       t("contact.form.sending")
