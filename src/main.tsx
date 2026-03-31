@@ -18,7 +18,6 @@ const PortfolioPage = lazy(() => import("./pages/PortfolioPage.tsx"));
 const ContactPage = lazy(() => import("./pages/ContactPage.tsx"));
 const AboutPage = lazy(() => import("./pages/AboutPage.tsx"));
 
-import ScrollToTop from "./components/ui/ScrollToTop";
 import PageTransition from "./components/ui/PageTransition";
 import Header from "./components/layout/Header";
 import Footer from "./components/layout/Footer";
@@ -75,6 +74,13 @@ function PageWrapper({
   );
 }
 
+const LANGS = ["en", "it", "ro"];
+function routeKey(path: string): string {
+  const parts = path.split("/").filter(Boolean);
+  if (parts.length > 0 && LANGS.includes(parts[0])) parts.shift();
+  return "/" + parts.join("/");
+}
+
 // eslint-disable-next-line react-refresh/only-export-components
 function AppRoutes() {
   const location = useLocation();
@@ -82,7 +88,7 @@ function AppRoutes() {
     <>
       <Header />
       <AnimatePresence mode="wait">
-        <Routes location={location} key={location.pathname}>
+        <Routes location={location} key={routeKey(location.pathname)}>
           {/* Root domain serves English by default for SEO */}
           <Route path="/" element={<LanguageWrapper lang="en" />} />
 
@@ -336,7 +342,6 @@ createRoot(document.getElementById("root")!).render(
   <StrictMode>
     <HelmetProvider>
       <BrowserRouter>
-        <ScrollToTop />
         <AppRoutes />
         <CookieBanner />
         <ScrollProgress />
