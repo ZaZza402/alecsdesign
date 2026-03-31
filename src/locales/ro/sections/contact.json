@@ -48,5 +48,12 @@
     "messagePlaceholder": "Termene limită, buget, funcționalități specifice...",
     "submit": "Trimite mesajul",
     "sending": "Se trimite..."
+  },
+  "steps": {
+    "step1Title": "De ce ai nevoie?",
+    "step2Title": "Spune-mi despre tine",
+    "step3Title": "Mai un pas.",
+    "next": "Înainte",
+    "back": "Înapoi"
   }
 }

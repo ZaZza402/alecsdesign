@@ -48,5 +48,12 @@
     "messagePlaceholder": "Deadlines, budget, specific features...",
     "submit": "Send Message",
     "sending": "Sending..."
+  },
+  "steps": {
+    "step1Title": "What do you need?",
+    "step2Title": "Tell me about yourself",
+    "step3Title": "Almost there.",
+    "next": "Next",
+    "back": "Back"
   }
 }

@@ -1,0 +1,369 @@
+/* ─── ContactForm: 3-step wizard ─────────────────────────────────────── */
+
+.cf {
+  background: #fff;
+  border-radius: 20px;
+  box-shadow:
+    0 4px 6px -1px rgba(0, 0, 0, 0.06),
+    0 12px 32px -8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 100%;
+}
+
+/* ── Progress bar ─────────────────────────────────────────────────────── */
+
+.cf__progress {
+  height: 3px;
+  background: #f1f5f9;
+}
+
+.cf__progress-bar {
+  height: 100%;
+  background: #f35422;
+  transition: width 0.45s cubic-bezier(0.65, 0.05, 0.36, 1);
+}
+
+/* ── Step dots + connector lines ──────────────────────────────────────── */
+
+.cf__steps {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem 2rem 0.25rem;
+}
+
+.cf__step-dot {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 2px solid #e2e8f0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #94a3b8;
+  flex-shrink: 0;
+  background: #fff;
+  transition:
+    border-color 0.3s ease,
+    background 0.3s ease,
+    color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.cf__step-dot.active {
+  border-color: #f35422;
+  color: #f35422;
+  background: rgba(243, 84, 34, 0.06);
+  box-shadow: 0 0 0 4px rgba(243, 84, 34, 0.1);
+}
+
+.cf__step-dot.done {
+  border-color: #f35422;
+  background: #f35422;
+  color: #fff;
+}
+
+.cf__step-line {
+  flex: 1;
+  max-width: 60px;
+  height: 2px;
+  background: #e2e8f0;
+  transition: background 0.3s ease;
+}
+
+.cf__step-line.done {
+  background: #f35422;
+}
+
+/* ── Panel wrapper (overflow:hidden for slide) ────────────────────────── */
+
+.cf__panels-wrap {
+  overflow: hidden;
+}
+
+.cf__panel {
+  padding: 1.75rem 2rem 2.25rem;
+}
+
+.cf__title {
+  font-size: 1.1875rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin: 0 0 1.375rem;
+  letter-spacing: -0.02em;
+}
+
+/* ── Step 1: option cards ─────────────────────────────────────────────── */
+
+.cf__options {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.75rem;
+}
+
+.cf__option {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.625rem;
+  padding: 1.25rem 0.875rem;
+  border: 2px solid #e2e8f0;
+  border-radius: 14px;
+  background: #fff;
+  cursor: pointer;
+  color: #334155;
+  font-size: 0.9rem;
+  font-weight: 600;
+  font-family: inherit;
+  text-align: center;
+  line-height: 1.35;
+  transition:
+    border-color 0.2s ease,
+    color 0.2s ease,
+    background 0.2s ease,
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.cf__option:hover {
+  border-color: #f35422;
+  color: #f35422;
+  background: rgba(243, 84, 34, 0.04);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(243, 84, 34, 0.12);
+}
+
+.cf__option.selected {
+  border-color: #f35422;
+  background: rgba(243, 84, 34, 0.07);
+  color: #f35422;
+}
+
+/* ── Step 2 & 3: inputs ───────────────────────────────────────────────── */
+
+.cf__field {
+  margin-bottom: 0.875rem;
+}
+
+.cf__input,
+.cf__textarea {
+  width: 100%;
+  padding: 0.875rem 1.125rem;
+  border: 2px solid #e2e8f0;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-family: inherit;
+  font-weight: 500;
+  color: #0f172a;
+  background: #fff;
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+  box-sizing: border-box;
+}
+
+.cf__input::placeholder,
+.cf__textarea::placeholder {
+  color: #94a3b8;
+  font-weight: 400;
+}
+
+.cf__input:focus,
+.cf__textarea:focus {
+  outline: none;
+  border-color: #f35422;
+  box-shadow: 0 0 0 3px rgba(243, 84, 34, 0.1);
+}
+
+.cf__textarea {
+  resize: none;
+  display: block;
+}
+
+/* ── Step 3: contact preference pills ────────────────────────────────── */
+
+.cf__preference {
+  display: flex;
+  gap: 0.625rem;
+  margin-bottom: 1.125rem;
+  flex-wrap: wrap;
+}
+
+.cf__pref-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.625rem 1.125rem;
+  border: 2px solid #e2e8f0;
+  border-radius: 100px;
+  background: #fff;
+  color: #475569;
+  font-size: 0.9375rem;
+  font-weight: 600;
+  font-family: inherit;
+  cursor: pointer;
+  white-space: nowrap;
+  transition:
+    border-color 0.2s ease,
+    background 0.2s ease,
+    color 0.2s ease;
+}
+
+.cf__pref-btn:hover {
+  border-color: #f35422;
+  color: #f35422;
+}
+
+.cf__pref-btn.selected {
+  border-color: #f35422;
+  background: #f35422;
+  color: #fff;
+}
+
+/* ── Action row ───────────────────────────────────────────────────────── */
+
+.cf__actions {
+  display: flex;
+  gap: 0.75rem;
+  margin-top: 1.375rem;
+  align-items: center;
+}
+
+.cf__btn-back {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.375rem;
+  padding: 0.8125rem 1.25rem;
+  background: none;
+  border: 2px solid #e2e8f0;
+  border-radius: 12px;
+  color: #64748b;
+  font-size: 0.9375rem;
+  font-weight: 600;
+  font-family: inherit;
+  cursor: pointer;
+  white-space: nowrap;
+  flex-shrink: 0;
+  transition:
+    border-color 0.2s ease,
+    color 0.2s ease;
+}
+
+.cf__btn-back:hover {
+  border-color: #cbd5e1;
+  color: #334155;
+}
+
+.cf__btn-next,
+.cf__btn-submit {
+  flex: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.875rem 1.5rem;
+  background: #000;
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-weight: 700;
+  font-family: inherit;
+  cursor: pointer;
+  transition:
+    background 0.25s ease,
+    transform 0.2s ease,
+    box-shadow 0.25s ease;
+}
+
+.cf__btn-next:hover:not(:disabled),
+.cf__btn-submit:hover:not(:disabled) {
+  background: #f35422;
+  transform: translateY(-1px);
+  box-shadow: 0 6px 20px rgba(243, 84, 34, 0.3);
+}
+
+.cf__btn-next:disabled,
+.cf__btn-submit:disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+  transform: none;
+}
+
+/* ── Error ────────────────────────────────────────────────────────────── */
+
+.cf__error {
+  color: #f35422;
+  font-size: 0.875rem;
+  font-weight: 600;
+  margin: 0 0 0.75rem;
+}
+
+/* ── Success state ────────────────────────────────────────────────────── */
+
+.cf--success {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 2rem;
+  text-align: center;
+  gap: 1.125rem;
+  min-height: 280px;
+}
+
+.cf__success-icon {
+  width: 64px;
+  height: 64px;
+  background: rgba(243, 84, 34, 0.1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #f35422;
+}
+
+.cf--success h3 {
+  font-size: 1.1875rem;
+  font-weight: 700;
+  color: #0f172a;
+  max-width: 320px;
+  margin: 0;
+  line-height: 1.45;
+}
+
+/* ── Mobile ───────────────────────────────────────────────────────────── */
+
+@media (max-width: 480px) {
+  .cf__steps {
+    padding: 1.25rem 1.5rem 0.25rem;
+  }
+
+  .cf__step-dot {
+    width: 26px;
+    height: 26px;
+    font-size: 0.6875rem;
+  }
+
+  .cf__step-line {
+    max-width: 36px;
+  }
+
+  .cf__panel {
+    padding: 1.5rem 1.25rem 1.75rem;
+  }
+
+  .cf__option {
+    font-size: 0.8125rem;
+    padding: 1rem 0.625rem;
+    gap: 0.5rem;
+  }
+
+  .cf__pref-btn {
+    font-size: 0.875rem;
+    padding: 0.5625rem 0.875rem;
+  }
+}

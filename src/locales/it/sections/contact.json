@@ -48,5 +48,12 @@
     "messagePlaceholder": "Hai scadenze o funzionalità specifiche in mente?",
     "submit": "Invia Richiesta",
     "sending": "Invio in corso..."
+  },
+  "steps": {
+    "step1Title": "Di cosa hai bisogno?",
+    "step2Title": "Parlami di te",
+    "step3Title": "Ci siamo quasi.",
+    "next": "Avanti",
+    "back": "Indietro"
   }
 }
