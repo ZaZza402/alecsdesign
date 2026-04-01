@@ -565,27 +565,13 @@
     color: #475569;
   }
   .guide-author__cta {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: #25d366;
-    color: #fff;
-    padding: 0.75rem 1rem;
-    border-radius: 8px;
     font-size: 0.9375rem;
     font-weight: 600;
+    color: #f35422;
     text-decoration: none;
-    gap: 0.5rem;
-    width: 100%;
-    box-sizing: border-box;
   }
   .guide-author__cta:hover {
-    text-decoration: none;
-    background: #1fbd5a;
-  }
-  /* Kill the " →" suffix on mobile since it's inside a button */
-  .guide-author__cta::after {
-    content: none;
+    text-decoration: underline;
   }
 }
 

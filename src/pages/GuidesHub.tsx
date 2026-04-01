@@ -24,41 +24,6 @@ const GUIDE_SLUGS = {
 
 type Lang = keyof typeof GUIDE_SLUGS;
 
-interface HubStrings {
-  eyebrow: string;
-  title: string;
-  subtitle: string;
-  label: string;
-  readMore: string;
-}
-
-const HUB_STRINGS: Record<Lang, HubStrings> = {
-  en: {
-    eyebrow: "Free guides",
-    title: "Practical guides for small business owners",
-    subtitle:
-      "Straight answers to the questions most web developers won't explain clearly. No jargon, no sales pitch.",
-    label: "Guide",
-    readMore: "Read guide →",
-  },
-  it: {
-    eyebrow: "Guide gratuite",
-    title: "Guide pratiche per chi ha un'attività",
-    subtitle:
-      "Risposte chiare alle domande che i web developer di solito evitano. Senza tecnicismi, senza vendite.",
-    label: "Guida",
-    readMore: "Leggi la guida →",
-  },
-  ro: {
-    eyebrow: "Ghiduri gratuite",
-    title: "Ghiduri practice pentru antreprenori",
-    subtitle:
-      "Raspunsuri clare la intrebarile pe care developerii web de obicei le evita. Fara jargon, fara vanzari.",
-    label: "Ghid",
-    readMore: "Citeste ghidul →",
-  },
-};
-
 // Each guide's key data (will use the locale JSON already loaded in i18n)
 type GuideKey = "websiteCost" | "google" | "websiteNeeds";
 
@@ -73,7 +38,6 @@ interface GuideCardData {
 export default function GuidesHub({ lang }: { lang: string }) {
   const { t } = useTranslation();
   const l = (["en", "it", "ro"].includes(lang) ? lang : "en") as Lang;
-  const strings = HUB_STRINGS[l];
   const slugs = GUIDE_SLUGS[l];
 
   // Pull card data from already-loaded i18n resources
@@ -118,15 +82,15 @@ export default function GuidesHub({ lang }: { lang: string }) {
       />
 
       <div className="guides-hub">
-        <p className="guides-hub__eyebrow">{strings.eyebrow}</p>
-        <h1 className="guides-hub__title">{strings.title}</h1>
-        <p className="guides-hub__subtitle">{strings.subtitle}</p>
+        <p className="guides-hub__eyebrow">{t("guideUi.hub.eyebrow")}</p>
+        <h1 className="guides-hub__title">{t("guideUi.hub.title")}</h1>
+        <p className="guides-hub__subtitle">{t("guideUi.hub.subtitle")}</p>
 
         <div className="guides-hub__grid">
           {cards.map((card) => (
             <Link key={card.key} to={card.slug} className="guides-hub__card">
               <div className="guides-hub__card-body">
-                <span className="guides-hub__card-label">{strings.label}</span>
+                <span className="guides-hub__card-label">{t("guideUi.hub.cardLabel")}</span>
                 <h2 className="guides-hub__card-title">{card.title}</h2>
                 <p className="guides-hub__card-lead">
                   {card.lead.length > 120
@@ -138,7 +102,7 @@ export default function GuidesHub({ lang }: { lang: string }) {
                     {card.readingTime}
                   </span>
                   <span className="guides-hub__card-cta">
-                    {strings.readMore}
+                    {t("guideUi.hub.readMore")}
                   </span>
                 </div>
               </div>

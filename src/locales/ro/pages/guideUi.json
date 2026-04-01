@@ -1,0 +1,27 @@
+{
+  "hub": {
+    "eyebrow": "Ghiduri gratuite",
+    "title": "Ghiduri practice pentru antreprenori",
+    "subtitle": "Răspunsuri clare la întrebările pe care developerii web le evită de obicei. Fără jargon, fără vânzări.",
+    "cardLabel": "Ghid",
+    "readMore": "Citește ghidul →"
+  },
+  "meta": {
+    "byLine": "De Alex · alecsdesign.xyz"
+  },
+  "toc": {
+    "title": "Cuprins"
+  },
+  "cta": {
+    "heading": "Ai un proiect?",
+    "btn": "WhatsApp →"
+  },
+  "sidebar": {
+    "heading": "Ofertă gratuită",
+    "body": "Spune-mi ce ai nevoie. Îți răspund în câteva ore.",
+    "btn": "Scrie-mi pe WhatsApp"
+  },
+  "related": {
+    "label": "Ghid"
+  }
+}

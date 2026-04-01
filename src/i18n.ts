@@ -87,6 +87,9 @@ import itGuidesWebsiteNeeds from "./locales/it/pages/guides/websiteNeeds.json";
 import roGuidesWebsiteCost from "./locales/ro/pages/guides/websiteCost.json";
 import roGuidesGoogle from "./locales/ro/pages/guides/google.json";
 import roGuidesWebsiteNeeds from "./locales/ro/pages/guides/websiteNeeds.json";
+import enGuideUi from "./locales/en/pages/guideUi.json";
+import itGuideUi from "./locales/it/pages/guideUi.json";
+import roGuideUi from "./locales/ro/pages/guideUi.json";
 
 // Detect language from URL path (e.g., /en, /it, /ro)
 const getLanguageFromPath = () => {
@@ -131,6 +134,7 @@ i18n
             google: enGuidesGoogle,
             websiteNeeds: enGuidesWebsiteNeeds,
           },
+          guideUi: enGuideUi,
         },
       },
       it: {
@@ -163,6 +167,7 @@ i18n
             google: itGuidesGoogle,
             websiteNeeds: itGuidesWebsiteNeeds,
           },
+          guideUi: itGuideUi,
         },
       },
       ro: {
@@ -195,6 +200,7 @@ i18n
             google: roGuidesGoogle,
             websiteNeeds: roGuidesWebsiteNeeds,
           },
+          guideUi: roGuideUi,
         },
       },
     },

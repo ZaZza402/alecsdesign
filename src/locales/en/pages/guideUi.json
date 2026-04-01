@@ -1,0 +1,27 @@
+{
+  "hub": {
+    "eyebrow": "Free guides",
+    "title": "Practical guides for small business owners",
+    "subtitle": "Straight answers to the questions most web developers won't explain clearly. No jargon, no sales pitch.",
+    "cardLabel": "Guide",
+    "readMore": "Read guide →"
+  },
+  "meta": {
+    "byLine": "By Alex · alecsdesign.xyz"
+  },
+  "toc": {
+    "title": "Contents"
+  },
+  "cta": {
+    "heading": "Ready to talk?",
+    "btn": "WhatsApp →"
+  },
+  "sidebar": {
+    "heading": "Free quote",
+    "body": "Tell me what you need. I'll reply within a few hours.",
+    "btn": "Message on WhatsApp"
+  },
+  "related": {
+    "label": "Guide"
+  }
+}

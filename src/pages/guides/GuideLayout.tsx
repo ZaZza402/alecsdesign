@@ -113,13 +113,6 @@ export default function GuideLayout({
 
   const hubSlug = lang === "en" ? "/guide/" : `/${lang}/guide/`;
 
-  const ctaHeadings: Record<string, string> = {
-    en: "Ready to talk?",
-    it: "Hai un progetto?",
-    ro: "Ai un proiect?",
-  };
-  const ctaHeading = ctaHeadings[lang] ?? "Ready to talk?";
-
   // Build JSON-LD structured data
   const articleJsonLd = {
     "@context": "https://schema.org",
@@ -231,7 +224,7 @@ export default function GuideLayout({
         <div className="guide-meta">
           <span>{data.meta.readingTime}</span>
           <span className="guide-meta__dot" aria-hidden="true" />
-          <span>By Alex · alecsdesign.xyz</span>
+          <span>{t("guideUi.meta.byLine")}</span>
           <span className="guide-meta__dot" aria-hidden="true" />
           <span>{data.meta.published}</span>
         </div>
@@ -249,7 +242,7 @@ export default function GuideLayout({
             onClick={() => setMobileTocOpen(!mobileTocOpen)}
             aria-expanded={mobileTocOpen}
           >
-            <span>Contents</span>
+            <span>{t("guideUi.toc.title")}</span>
             <svg
               width="16"
               height="16"
@@ -344,7 +337,7 @@ export default function GuideLayout({
             <div className="guide-cta-block">
               <div className="guide-cta-block__text">
                 <p>
-                  <strong>{ctaHeading}</strong> {data.authorCta}
+                  <strong>{t("guideUi.cta.heading")}</strong> {data.authorCta}
                 </p>
               </div>
               <a
@@ -353,7 +346,7 @@ export default function GuideLayout({
                 rel="noopener noreferrer"
                 className="guide-cta-block__btn"
               >
-                WhatsApp →
+                {t("guideUi.cta.btn")}
               </a>
             </div>
 
@@ -387,7 +380,7 @@ export default function GuideLayout({
                       to={rel.slug}
                       className="guide-related__card"
                     >
-                      <p className="guide-related__card-label">Guide</p>
+                      <p className="guide-related__card-label">{t("guideUi.related.label")}</p>
                       <p className="guide-related__card-title">{rel.title}</p>
                     </Link>
                   ))}
@@ -399,7 +392,7 @@ export default function GuideLayout({
           {/* ── Sidebar ── */}
           <aside className="guide-sidebar" aria-label="Table of contents">
             <nav className="guide-toc">
-              <p className="guide-toc__heading">Contents</p>
+              <p className="guide-toc__heading">{t("guideUi.toc.title")}</p>
               <ul className="guide-toc__list">
                 {data.sections.map((section) => (
                   <li key={section.id}>
@@ -412,9 +405,9 @@ export default function GuideLayout({
             </nav>
 
             <div className="guide-sidebar-cta">
-              <p className="guide-sidebar-cta__heading">Free quote</p>
+              <p className="guide-sidebar-cta__heading">{t("guideUi.sidebar.heading")}</p>
               <p className="guide-sidebar-cta__body">
-                Tell me what you need. I'll reply within a few hours.
+                {t("guideUi.sidebar.body")}
               </p>
               <a
                 href="https://wa.me/393801503074"
@@ -422,7 +415,7 @@ export default function GuideLayout({
                 rel="noopener noreferrer"
                 className="guide-sidebar-cta__btn"
               >
-                Message on WhatsApp
+                {t("guideUi.sidebar.btn")}
               </a>
             </div>
           </aside>

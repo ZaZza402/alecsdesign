@@ -1,0 +1,27 @@
+{
+  "hub": {
+    "eyebrow": "Guide gratuite",
+    "title": "Guide pratiche per chi ha un'attività",
+    "subtitle": "Risposte chiare alle domande che i web developer di solito evitano. Senza tecnicismi, senza vendite.",
+    "cardLabel": "Guida",
+    "readMore": "Leggi la guida →"
+  },
+  "meta": {
+    "byLine": "Di Alex · alecsdesign.xyz"
+  },
+  "toc": {
+    "title": "Indice"
+  },
+  "cta": {
+    "heading": "Hai un progetto?",
+    "btn": "WhatsApp →"
+  },
+  "sidebar": {
+    "heading": "Preventivo gratuito",
+    "body": "Dimmi cosa ti serve. Ti rispondo entro poche ore.",
+    "btn": "Scrivimi su WhatsApp"
+  },
+  "related": {
+    "label": "Guida"
+  }
+}
