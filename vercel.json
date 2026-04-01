@@ -67,6 +67,12 @@
   ],
   "redirects": [
     {
+      "source": "/:path*",
+      "has": [{ "type": "host", "value": "alecsdesign.xyz" }],
+      "destination": "https://www.alecsdesign.xyz/:path*",
+      "permanent": true
+    },
+    {
       "source": "/en",
       "destination": "/",
       "permanent": true
@@ -86,7 +92,7 @@
         },
         {
           "key": "Cache-Control",
-          "value": "public, max-age=3600, must-revalidate"
+          "value": "no-cache, no-store, must-revalidate"
         }
       ]
     },
