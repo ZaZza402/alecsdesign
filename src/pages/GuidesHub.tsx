@@ -35,12 +35,18 @@ interface GuideCardData {
   readingTime: string;
 }
 
+// First two sentences from the lead
+function excerpt(text: string): string {
+  const m = text.match(/^.+?\. .+?\./);
+  if (m) return m[0];
+  return text;
+}
+
 export default function GuidesHub({ lang }: { lang: string }) {
   const { t } = useTranslation();
   const l = (["en", "it", "ro"].includes(lang) ? lang : "en") as Lang;
   const slugs = GUIDE_SLUGS[l];
 
-  // Pull card data from already-loaded i18n resources
   const cards = GUIDE_KEYS.map((key) => {
     const data = t(`guides.${key}`, {
       returnObjects: true,
@@ -82,30 +88,25 @@ export default function GuidesHub({ lang }: { lang: string }) {
       />
 
       <div className="guides-hub">
-        <p className="guides-hub__eyebrow">{t("guideUi.hub.eyebrow")}</p>
-        <h1 className="guides-hub__title">{t("guideUi.hub.title")}</h1>
-        <p className="guides-hub__subtitle">{t("guideUi.hub.subtitle")}</p>
+        <div className="guides-hub__header">
+          <p className="guides-hub__eyebrow">{t("guideUi.hub.eyebrow")}</p>
+          <h1 className="guides-hub__title">{t("guideUi.hub.title")}</h1>
+          <p className="guides-hub__subtitle">{t("guideUi.hub.subtitle")}</p>
+          <p className="guides-hub__byline">{t("guideUi.hub.byline")}</p>
+        </div>
 
-        <div className="guides-hub__grid">
-          {cards.map((card) => (
-            <Link key={card.key} to={card.slug} className="guides-hub__card">
-              <div className="guides-hub__card-body">
-                <h2 className="guides-hub__card-title">{card.title}</h2>
-                <p className="guides-hub__card-lead">
-                  {card.lead.length > 120
-                    ? card.lead.slice(0, 117) + "..."
-                    : card.lead}
-                </p>
-                <div className="guides-hub__card-footer">
-                  <span className="guides-hub__card-time">
-                    {card.readingTime}
-                  </span>
-                  <span className="guides-hub__card-cta">
-                    {t("guideUi.hub.readMore")}
-                  </span>
+        <div className="guides-hub__list">
+          {cards.map((card, i) => (
+            <Link key={card.key} to={card.slug} className="guides-hub__entry">
+              <span className="guides-hub__entry-num">0{i + 1}</span>
+              <div className="guides-hub__entry-body">
+                <h2 className="guides-hub__entry-title">{card.title}</h2>
+                <p className="guides-hub__entry-lead">{excerpt(card.lead)}</p>
+                <div className="guides-hub__entry-meta">
+                  <span className="guides-hub__entry-time">{card.readingTime}</span>
+                  <span className="guides-hub__entry-arrow">→</span>
                 </div>
               </div>
-              <span className="guides-hub__card-arrow">›</span>
             </Link>
           ))}
         </div>
