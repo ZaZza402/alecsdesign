@@ -1,26 +1,25 @@
 {
   "hub": {
-    "eyebrow": "Guide gratuite",
-    "title": "Guide pratiche per chi ha un'attività",
-    "subtitle": "Risposte chiare alle domande che i web developer di solito evitano. Senza tecnicismi, senza vendite.",
+    "eyebrow": "Guide",
+    "title": "Quello che il tuo web developer avrebbe dovuto spiegarti dall'inizio",
+    "subtitle": "Tre guide dirette su costi, Google e cosa serve davvero al tuo sito per portare clienti.",
     "cardLabel": "Guida",
-    "readMore": "Leggi la guida →",
-    "byline": "Di Alex — web designer per piccole imprese."
+    "readMore": "Leggi →"
   },
   "meta": {
-    "byLine": "Di Alex · alecsdesign.xyz"
+    "byLine": "Di Alex"
   },
   "toc": {
     "title": "Indice"
   },
   "cta": {
     "heading": "Hai un progetto?",
-    "body": "Dimmi cosa ti serve. Ti rispondo entro poche ore.",
-    "btn": "WhatsApp →"
+    "body": "Dimmi cosa stai costruendo. Ti rispondo in giornata.",
+    "btn": "Scrivimi su WhatsApp"
   },
   "sidebar": {
     "heading": "Preventivo gratuito",
-    "body": "Dimmi cosa ti serve. Ti rispondo entro poche ore.",
+    "body": "Dimmi cosa stai costruendo. Ti rispondo in giornata.",
     "btn": "Scrivimi su WhatsApp"
   },
   "related": {

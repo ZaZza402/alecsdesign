@@ -159,8 +159,6 @@
   font-weight: 700;
   color: #0f172a;
   margin: 0 0 1rem;
-  padding-bottom: 0.5rem;
-  border-bottom: 2px solid #f35422;
   display: block;
 }
 
@@ -185,69 +183,6 @@
   .guide-section__paras p {
     font-size: 1rem;
   }
-}
-
-/* Mobile TOC — hidden on desktop, visible on mobile */
-.guide-mobile-toc {
-  display: none;
-  border: 1px solid #e2e8f0;
-  border-radius: 10px;
-  margin-bottom: 2rem;
-  overflow: hidden;
-}
-
-@media (max-width: 900px) {
-  .guide-mobile-toc {
-    display: block;
-  }
-}
-
-.guide-mobile-toc__toggle {
-  width: 100%;
-  background: #f8fafc;
-  border: none;
-  padding: 0.875rem 1.25rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  font-size: 0.875rem;
-  font-weight: 700;
-  color: #0f172a;
-  cursor: pointer;
-  text-align: left;
-}
-
-.guide-mobile-toc__toggle svg {
-  flex-shrink: 0;
-  color: #64748b;
-  transition: transform 0.2s;
-}
-
-.guide-mobile-toc__chevron--open {
-  transform: rotate(180deg);
-}
-
-.guide-mobile-toc__list {
-  list-style: none;
-  padding: 0.5rem 0;
-  margin: 0;
-  border-top: 1px solid #e2e8f0;
-}
-
-.guide-mobile-toc__link {
-  display: block;
-  padding: 0.625rem 1.25rem;
-  font-size: 0.875rem;
-  color: #475569;
-  text-decoration: none;
-  transition:
-    color 0.15s,
-    background 0.15s;
-}
-
-.guide-mobile-toc__link:hover {
-  color: #f35422;
-  background: #fff5f2;
 }
 
 /* Cost table */
@@ -530,7 +465,7 @@
   text-decoration: underline;
 }
 
-/* Related guides */
+/* Related guides — editorial list */
 .guide-related {
   margin-top: 3rem;
   padding-top: 2rem;
@@ -538,18 +473,57 @@
 }
 
 .guide-related__heading {
-  font-size: 1rem;
+  font-size: 0.75rem;
   font-weight: 700;
-  color: #64748b;
   text-transform: uppercase;
   letter-spacing: 0.08em;
-  margin: 0 0 1.25rem;
+  color: #94a3b8;
+  margin: 0;
 }
 
-.guide-related__cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+.guide-related__list {
+  display: flex;
+  flex-direction: column;
+}
+
+.guide-related__item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   gap: 1rem;
+  padding: 1.125rem 0;
+  border-top: 1px solid #e2e8f0;
+  text-decoration: none;
+}
+
+.guide-related__item:last-child {
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.guide-related__item-title {
+  font-size: 0.9375rem;
+  font-weight: 600;
+  color: #0f172a;
+  line-height: 1.4;
+  transition: color 0.2s;
+}
+
+.guide-related__item:hover .guide-related__item-title {
+  color: #f35422;
+}
+
+.guide-related__item-arrow {
+  color: #cbd5e1;
+  flex-shrink: 0;
+  font-size: 1rem;
+  transition:
+    transform 0.2s,
+    color 0.2s;
+}
+
+.guide-related__item:hover .guide-related__item-arrow {
+  transform: translateX(5px);
+  color: #f35422;
 }
 
 @media (max-width: 640px) {
@@ -557,77 +531,6 @@
     margin-top: 2rem;
     padding-top: 1.5rem;
   }
-  .guide-related__cards {
-    grid-template-columns: 1fr;
-    gap: 0;
-    border: 1px solid #e2e8f0;
-    border-radius: 12px;
-    overflow: hidden;
-  }
-}
-
-.guide-related__card {
-  background: #fff;
-  border: 1px solid #e2e8f0;
-  border-radius: 10px;
-  padding: 1.25rem;
-  text-decoration: none;
-  transition:
-    border-color 0.2s,
-    box-shadow 0.2s;
-  display: block;
-}
-
-.guide-related__card:hover {
-  border-color: #f35422;
-  box-shadow: 0 4px 16px rgba(243, 84, 34, 0.1);
-}
-
-@media (max-width: 640px) {
-  .guide-related__card {
-    border: none;
-    border-bottom: 1px solid #e2e8f0;
-    border-radius: 0;
-    padding: 0.875rem 1rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 0.75rem;
-  }
-  .guide-related__card:last-child {
-    border-bottom: none;
-  }
-  .guide-related__card:hover {
-    background: #fff8f6;
-    box-shadow: none;
-  }
-  .guide-related__card-title {
-    flex: 1;
-    min-width: 0;
-  }
-  .guide-related__card::after {
-    content: "›";
-    color: #cbd5e1;
-    font-size: 1.25rem;
-    flex-shrink: 0;
-  }
-}
-
-.guide-related__card-label {
-  font-size: 0.75rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.06em;
-  color: #f35422;
-  margin: 0 0 0.5rem;
-}
-
-.guide-related__card-title {
-  font-size: 0.9375rem;
-  font-weight: 600;
-  color: #0f172a;
-  margin: 0;
-  line-height: 1.4;
 }
 
 /* Sidebar */

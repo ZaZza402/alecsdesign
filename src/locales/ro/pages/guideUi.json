@@ -1,26 +1,25 @@
 {
   "hub": {
-    "eyebrow": "Ghiduri gratuite",
-    "title": "Ghiduri practice pentru antreprenori",
-    "subtitle": "Răspunsuri clare la întrebările pe care developerii web le evită de obicei. Fără jargon, fără vânzări.",
+    "eyebrow": "Ghiduri",
+    "title": "Ce ar fi trebuit să-ți explice developerul web de la bun început",
+    "subtitle": "Trei ghiduri directe despre costuri, Google și ce trebuie să aibă site-ul tău ca să aducă clienți.",
     "cardLabel": "Ghid",
-    "readMore": "Citești ghidul →",
-    "byline": "De Alex — web designer pentru afaceri mici."
+    "readMore": "Citește →"
   },
   "meta": {
-    "byLine": "De Alex · alecsdesign.xyz"
+    "byLine": "De Alex"
   },
   "toc": {
     "title": "Cuprins"
   },
   "cta": {
     "heading": "Ai un proiect?",
-    "body": "Spune-mi ce ai nevoie. Îți răspund în câteva ore.",
-    "btn": "WhatsApp →"
+    "body": "Spune-mi ce construiești. Îți răspund în aceeași zi.",
+    "btn": "Scrie-mi pe WhatsApp"
   },
   "sidebar": {
     "heading": "Ofertă gratuită",
-    "body": "Spune-mi ce ai nevoie. Îți răspund în câteva ore.",
+    "body": "Spune-mi ce construiești. Îți răspund în aceeași zi.",
     "btn": "Scrie-mi pe WhatsApp"
   },
   "related": {

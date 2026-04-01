@@ -107,7 +107,6 @@ export default function GuideLayout({
   canonical,
 }: GuideLayoutProps) {
   const { t } = useTranslation();
-  const [mobileTocOpen, setMobileTocOpen] = useState(false);
 
   const data = t(`guides.${guideKey}`, { returnObjects: true }) as GuideData;
 
@@ -235,48 +234,6 @@ export default function GuideLayout({
         {/* Lead */}
         <p className="guide-lead">{data.lead}</p>
 
-        {/* Mobile TOC — collapsible, above article, hidden on desktop */}
-        <div className="guide-mobile-toc">
-          <button
-            className="guide-mobile-toc__toggle"
-            onClick={() => setMobileTocOpen(!mobileTocOpen)}
-            aria-expanded={mobileTocOpen}
-          >
-            <span>{t("guideUi.toc.title")}</span>
-            <svg
-              width="16"
-              height="16"
-              viewBox="0 0 20 20"
-              fill="none"
-              aria-hidden="true"
-              className={mobileTocOpen ? "guide-mobile-toc__chevron--open" : ""}
-            >
-              <path
-                d="M5 8l5 5 5-5"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              />
-            </svg>
-          </button>
-          {mobileTocOpen && (
-            <ul className="guide-mobile-toc__list">
-              {data.sections.map((section) => (
-                <li key={section.id}>
-                  <a
-                    href={`#${section.id}`}
-                    className="guide-mobile-toc__link"
-                    onClick={() => setMobileTocOpen(false)}
-                  >
-                    {section.heading}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          )}
-        </div>
-
         {/* Two-column body */}
         <div className="guide-body">
           {/* ── Article column ── */}
@@ -336,16 +293,6 @@ export default function GuideLayout({
             {/* Author quote */}
             <blockquote className="guide-author">
               <p className="guide-author__quote">{data.authorBio}</p>
-              <footer className="guide-author__footer">
-                <a
-                  href="https://wa.me/393801503074"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="guide-author__cta"
-                >
-                  {data.authorCta} →
-                </a>
-              </footer>
             </blockquote>
 
             {/* CTA block — single conversion point, after trust is established */}
@@ -370,17 +317,17 @@ export default function GuideLayout({
             {relatedGuides.length > 0 && (
               <div className="guide-related">
                 <p className="guide-related__heading">{data.related}</p>
-                <div className="guide-related__cards">
+                <div className="guide-related__list">
                   {relatedGuides.map((rel) => (
                     <Link
                       key={rel.slug}
                       to={rel.slug}
-                      className="guide-related__card"
+                      className="guide-related__item"
                     >
-                      <p className="guide-related__card-label">
-                        {t("guideUi.related.label")}
-                      </p>
-                      <p className="guide-related__card-title">{rel.title}</p>
+                      <span className="guide-related__item-title">
+                        {rel.title}
+                      </span>
+                      <span className="guide-related__item-arrow">→</span>
                     </Link>
                   ))}
                 </div>

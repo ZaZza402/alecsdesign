@@ -121,7 +121,9 @@
   font-size: 1rem;
   color: #cbd5e1;
   display: inline-block;
-  transition: transform 0.2s, color 0.2s;
+  transition:
+    transform 0.2s,
+    color 0.2s;
 }
 
 .guides-hub__entry:hover .guides-hub__entry-arrow {

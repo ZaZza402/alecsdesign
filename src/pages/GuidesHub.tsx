@@ -92,7 +92,6 @@ export default function GuidesHub({ lang }: { lang: string }) {
           <p className="guides-hub__eyebrow">{t("guideUi.hub.eyebrow")}</p>
           <h1 className="guides-hub__title">{t("guideUi.hub.title")}</h1>
           <p className="guides-hub__subtitle">{t("guideUi.hub.subtitle")}</p>
-          <p className="guides-hub__byline">{t("guideUi.hub.byline")}</p>
         </div>
 
         <div className="guides-hub__list">
@@ -103,7 +102,9 @@ export default function GuidesHub({ lang }: { lang: string }) {
                 <h2 className="guides-hub__entry-title">{card.title}</h2>
                 <p className="guides-hub__entry-lead">{excerpt(card.lead)}</p>
                 <div className="guides-hub__entry-meta">
-                  <span className="guides-hub__entry-time">{card.readingTime}</span>
+                  <span className="guides-hub__entry-time">
+                    {card.readingTime}
+                  </span>
                   <span className="guides-hub__entry-arrow">→</span>
                 </div>
               </div>

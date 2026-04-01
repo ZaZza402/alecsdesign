@@ -1,14 +1,13 @@
 {
   "hub": {
-    "eyebrow": "Free guides",
-    "title": "Practical guides for small business owners",
-    "subtitle": "Straight answers to the questions most web developers won't explain clearly. No jargon, no sales pitch.",
+    "eyebrow": "Guides",
+    "title": "What your web developer should have told you from the start",
+    "subtitle": "Three honest guides on website costs, Google rankings, and what your site actually needs to bring in clients.",
     "cardLabel": "Guide",
-    "readMore": "Read guide →",
-    "byline": "By Alex — web designer for small businesses."
+    "readMore": "Read →"
   },
   "meta": {
-    "byLine": "By Alex · alecsdesign.xyz"
+    "byLine": "By Alex"
   },
   "toc": {
     "title": "Contents"
