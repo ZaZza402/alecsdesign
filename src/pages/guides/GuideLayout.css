@@ -492,33 +492,6 @@
   margin-top: 2rem;
 }
 
-@media (max-width: 640px) {
-  .guide-author {
-    flex-direction: row;
-    align-items: flex-start;
-    gap: 0.875rem;
-    padding: 1rem;
-    border-radius: 12px;
-    border-left: 3px solid #f35422;
-    background: #f8fafc;
-    border-top: 1px solid #e2e8f0;
-    border-right: 1px solid #e2e8f0;
-    border-bottom: 1px solid #e2e8f0;
-  }
-  /* Show avatar on mobile — it's the "named person" trust signal */
-  .guide-author__avatar {
-    display: flex;
-    width: 40px;
-    height: 40px;
-    font-size: 1rem;
-    flex-shrink: 0;
-  }
-  /* On mobile, author box is trust only — CTA block below handles the ask */
-  .guide-author__cta {
-    display: none;
-  }
-}
-
 .guide-author__avatar {
   width: 48px;
   height: 48px;
@@ -566,22 +539,32 @@
 }
 
 @media (max-width: 640px) {
+  .guide-author {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 0.875rem;
+    padding: 1rem;
+    border-left: 3px solid #f35422;
+    border-top: 1px solid #e2e8f0;
+    border-right: 1px solid #e2e8f0;
+    border-bottom: 1px solid #e2e8f0;
+  }
+  .guide-author__avatar {
+    width: 40px;
+    height: 40px;
+    font-size: 1rem;
+    flex-shrink: 0;
+  }
   .guide-author__name {
     font-size: 1rem;
   }
   .guide-author__bio {
-    margin-bottom: 0.875rem;
+    margin-bottom: 0;
     font-size: 0.875rem;
-    color: #475569;
   }
+  /* Author box is trust only on mobile — the CTA block is the single ask */
   .guide-author__cta {
-    font-size: 0.9375rem;
-    font-weight: 600;
-    color: #f35422;
-    text-decoration: none;
-  }
-  .guide-author__cta:hover {
-    text-decoration: underline;
+    display: none;
   }
 }
 
