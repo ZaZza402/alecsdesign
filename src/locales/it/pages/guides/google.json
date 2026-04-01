@@ -1,0 +1,102 @@
+{
+  "meta": {
+    "title": "Come Farsi Trovare su Google Senza Pagare le Pubblicità",
+    "description": "Perché la maggior parte dei siti aziendali è invisibile su Google e cosa fare concretamente. Una guida di Alex, sviluppatore web a Roma.",
+    "readingTime": "5 min di lettura",
+    "published": "1 aprile 2026"
+  },
+  "breadcrumb": "Guide",
+  "title": "Come Farsi Trovare su Google Senza Pagare le Pubblicità",
+  "lead": "La maggior parte dei siti aziendali è invisibile su Google. Non perché il business sia scadente, ma perché il sito è stato costruito per stare bene, non per posizionarsi. Ecco cosa determina davvero se Google mostra il tuo sito alle persone che cercano quello che offri.",
+  "sections": [
+    {
+      "id": "perche-invisibili",
+      "heading": "Perché il 90% dei siti aziendali non si trova",
+      "paras": [
+        "Google non posiziona i siti in base a quanto sono belli. Li posiziona in base a quanto sembrano utili, veloci e affidabili.",
+        "La maggior parte dei siti costruiti con editor drag-and-drop impiega 4-6 secondi a caricare, non ha dati strutturati, non è ottimizzata per mobile e dà a Google quasi nulla da leggere. Sono online. Semplicemente non si posizionano.",
+        "Un sito costruito correttamente gestisce tutto questo fin dal primo giorno. Non c'è nessun trucco. Le fondamenta sono tecniche e quasi invisibili al visitatore."
+      ]
+    },
+    {
+      "id": "cosa-misura-google",
+      "heading": "Cosa misura Google nel 2026",
+      "paras": [
+        "Velocità di caricamento: Google usa i Core Web Vitals come segnale di ranking. Un sito che carica in meno di 2 secondi viene trattato diversamente da uno che ne impiega 5. Si misura su dispositivi reali, con connessioni reali.",
+        "Mobile: Google indicizza prima la versione mobile del tuo sito. Se si rompe su smartphone, il tuo ranking ne risente indipendentemente da come appare su desktop.",
+        "Segnali locali: per un'attività che serve una città o una regione specifica, il tuo indirizzo, numero di telefono e area di servizio devono essere coerenti e strutturati correttamente sul sito e su Google Business Profile.",
+        "Struttura del contenuto: Google legge la tua pagina per capire di cosa tratta. Titoli chiari, paragrafi leggibili e dati strutturati (schema markup) lo aiutano a classificare correttamente la tua attività.",
+        "Segnali di autorevolezza: link da altri siti credibili, un Google Business Profile completo e informazioni aziendali coerenti sul web contribuiscono tutti a quanto seriamente Google considera il tuo dominio."
+      ]
+    },
+    {
+      "id": "cinque-cose",
+      "heading": "Cinque cose che il tuo sito deve avere per posizionarsi",
+      "paras": [
+        "Caricamento rapido: sotto i 2 secondi su mobile, misurato con condizioni di rete reali. Dipende da come è costruito il sito, non da un plugin.",
+        "Layout mobile-first: progettato per uno schermo da 390px, non una versione ridotta del desktop.",
+        "Segnali locali chiari: la tua città nel tag del titolo, il tuo indirizzo nei dati strutturati, un Google Business Profile verificato collegato al sito.",
+        "Contenuto leggibile e strutturato: titoli di pagina chiari, gerarchia logica degli heading (H1, H2, H3) e contenuti che rispondono direttamente a quello che il visitatore cerca.",
+        "Google Search Console collegato al lancio: così Google inizia subito a indicizzare le tue pagine e puoi vedere quali ricerche portano visitatori."
+      ]
+    },
+    {
+      "id": "cosa-gestisce-automaticamente",
+      "heading": "Cosa gestisce automaticamente un sito fatto bene",
+      "paras": [
+        "Quando costruisco un sito, la base tecnica SEO è inclusa di default. Hosting veloce, meta tag corretti, sitemap inviata a Google, dati strutturati per la tua attività, layout mobile che funziona davvero.",
+        "Non dovresti dover installare un plugin SEO e indovinare le impostazioni. Questi non sono extra opzionali. Fanno parte del costruire il sito correttamente.",
+        "La parte dei contenuti dipende da te: cosa scrivi, quanto chiaramente descrivi i tuoi servizi e se pubblichi qualcosa che i tuoi potenziali clienti cercano. Quella parte nessuno sviluppatore può farla per te. Ma la base tecnica? È il mio lavoro."
+      ]
+    },
+    {
+      "id": "google-business",
+      "heading": "La cosa gratuita che la maggior parte delle attività ignora",
+      "paras": [
+        "Google Business Profile è gratuito e influisce direttamente sulla tua comparsa nei risultati locali e su Google Maps.",
+        "Configuralo, verifica il tuo indirizzo, aggiungi telefono e orari, carica foto reali e collegalo al tuo sito. Chiedi ad alcuni clienti soddisfatti una recensione. Solo questo può metterti sopra ai concorrenti che hanno solo un sito.",
+        "La maggior parte delle attività non lo ha mai configurato correttamente o lo ha fatto una volta e non lo ha più toccato. È un vantaggio facile da ottenere."
+      ]
+    }
+  ],
+  "faq": {
+    "heading": "Domande frequenti",
+    "items": [
+      {
+        "q": "I social media aiutano il posizionamento su Google?",
+        "a": "Indirettamente. I social non migliorano direttamente il ranking su Google. Ma portano traffico al sito, e i segnali di traffico contano. Un Google Business Profile solido e un sito costruito bene contano molto di più."
+      },
+      {
+        "q": "Quanto tempo ci vuole per posizionarsi?",
+        "a": "Un nuovo sito con una base SEO corretta viene indicizzato in pochi giorni. Comparire tra i primi risultati per ricerche competitive richiede 3-6 mesi di dati di traffico reali. Le parole chiave locali e di nicchia si posizionano più rapidamente."
+      },
+      {
+        "q": "Il nome di dominio influisce sul ranking?",
+        "a": "Poco. Un dominio che corrisponde al nome della tua attività è meglio di una stringa di parole a caso. I domini con parole chiave esatte un tempo aiutavano molto. Nel 2026 fanno poca differenza."
+      },
+      {
+        "q": "Devo pagare Google Ads per comparire su Google?",
+        "a": "No. Gli annunci a pagamento e i risultati organici sono separati. Un sito correttamente costruito e ottimizzato per la SEO può posizionarsi organicamente senza spendere nulla in pubblicità."
+      },
+      {
+        "q": "Un blog mi aiuta a posizionarmi?",
+        "a": "Solo se scrivi contenuti che le persone cercano davvero. Un blog pieno di notizie aziendali che nessuno cerca non fa nulla. Una guida che risponde a una domanda reale dei tuoi potenziali clienti può portare traffico costante per anni."
+      },
+      {
+        "q": "Cosa sono i dati strutturati e mi servono?",
+        "a": "I dati strutturati sono codice aggiunto al sito che dice a Google esattamente cos'è la tua attività: nome, indirizzo, telefono, servizi, recensioni. Li includo in ogni sito che costruisco."
+      },
+      {
+        "q": "Il mio concorrente ha un sito peggiore ma si posiziona meglio. Perché?",
+        "a": "Di solito uno di questi motivi: è online da più tempo e ha accumulato link nel tempo, ha più recensioni su Google, o il suo Google Business Profile è più completo. Nessuno di questi è un vantaggio permanente."
+      },
+      {
+        "q": "Posso fare la SEO da solo dopo il lancio?",
+        "a": "Assolutamente. Una volta che la base tecnica è a posto, la SEO più efficace nel tempo è pubblicare contenuti che rispondono a domande reali e tenere attivo il Google Business Profile. Non hai bisogno di un'agenzia per questo."
+      }
+    ]
+  },
+  "related": "Altre guide",
+  "authorBio": "Scritto da Alex, sviluppatore web con base a Roma. Ogni sito che costruisco include una base SEO completa fin dal primo giorno.",
+  "authorCta": "Richiedi un preventivo su WhatsApp"
+}

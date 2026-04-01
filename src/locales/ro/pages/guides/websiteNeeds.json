@@ -1,0 +1,103 @@
+{
+  "meta": {
+    "title": "Ce Trebuie Să Aibă Site-ul Afacerii Tale în 2026",
+    "description": "Majoritatea site-urilor de afaceri nu aduc clienți. Iată ce separă un site care funcționează de unul care există și atât. De Alex, dezvoltator web în Roma.",
+    "readingTime": "5 min citire",
+    "published": "1 aprilie 2026"
+  },
+  "breadcrumb": "Ghiduri",
+  "title": "Ce Trebuie Să Aibă Site-ul Tău în 2026",
+  "lead": "Majoritatea site-urilor de afaceri sunt broșuri online. Arată decent, au un formular de contact și nu fac aproape nimic pentru a aduce clienți noi. Iată ce separă un site care lucrează de unul care există și atât.",
+  "sections": [
+    {
+      "id": "adevarul-neplacut",
+      "heading": "Adevărul neplăcut despre majoritatea site-urilor de afaceri",
+      "paras": [
+        "Un site care există nu e același lucru cu un site care funcționează. Diferența nu e în design. E în intenție.",
+        "Un site care funcționează răspunde la întrebări, construiește încredere înainte să cineva ridice telefonul, se clasează pe Google pentru ca oamenii potriviți să îl găsească și face ușor să faci pasul următor. Majoritatea site-urilor nu fac niciunul din acestea bine.",
+        "Vestea bună: majoritatea lucrurilor care fac un site să funcționeze nu sunt complicate. Sunt decizii luate în timpul construirii, nu ceva ce adaugi după."
+      ]
+    },
+    {
+      "id": "sapte-lucruri",
+      "heading": "Șapte lucruri pe care site-ul tău trebuie să le aibă",
+      "paras": [
+        "Viteză: se încarcă în mai puțin de 2 secunde pe telefon. Dacă nu, majoritatea vizitatorilor pleacă înainte de a citi un singur cuvânt. Google penalizează site-urile lente în rezultatele de căutare.",
+        "Layout mobil: proiectat pentru telefon, nu adaptat de pe desktop. Peste 70% din vizitatorii tăi vor vedea site-ul pe un ecran de 6 inci.",
+        "Un pas următor clar: fiecare pagină trebuie să îndrepte vizitatorul spre o singură acțiune. Rezervă un apel. Trimite un mesaj. Vezi meniul. Un lucru, nu cinci.",
+        "Semnale de încredere: recenzii ale clienților, fotografii reale, o persoană cu un nume în spatele afacerii, o locație fizică. Răspund la întrebarea tăcută pe care fiecare vizitator o are.",
+        "Opțiuni de contact care funcționează: un număr de telefon pe care poți da click, un link WhatsApp, un email. Nu doar un formular de contact care dispare în spam.",
+        "Baza SEO: tag-uri de titlu, date structurate pentru afaceri locale, un Google Business Profile verificat și un sitemap. Nu e opțional. Asta e cum Google decide dacă site-ul tău există.",
+        "Proprietate: deții codul și domeniul. Nu un abonament, nu o chirie. Dacă vrei vreodată să muți, schimbi sau dai site-ul altcuiva, poți."
+      ]
+    },
+    {
+      "id": "cautarea-ai",
+      "heading": "Ce s-a schimbat cu căutarea AI",
+      "paras": [
+        "În 2026, o parte tot mai mare din oameni găsesc afaceri prin asistenți AI: ChatGPT, Perplexity, panoramicile AI ale Google. Aceste instrumente nu clasează paginile cum o făcea Google în 2015. Extrag răspunsuri din conținut structurat și autoritar.",
+        "Pentru ca site-ul tău să fie recomandat de un AI, trebuie să fie clar despre cine ești, ce faci, unde o faci și de ce ar trebui să aibă cineva încredere în tine. Limbajul de marketing vag nu ajută. Conținutul direct și factual ajută.",
+        "Datele structurate (schema markup) sunt deosebit de importante. Le spun sistemelor AI că site-ul tău reprezintă o afacere reală cu o adresă reală, număr de telefon și ofertă de servicii. Le includ pe fiecare site pe care îl construiesc."
+      ]
+    },
+    {
+      "id": "rezervari-plati",
+      "heading": "Rezervări și plăți online: așteptări în creștere",
+      "paras": [
+        "Pentru afacerile de servicii (clinici, saloane, restaurante, consultanți), rezervarea online a trecut de la un plus frumos la ceva ce clienții se așteaptă activ.",
+        "Un client care găsește site-ul tău la 23:00 ar trebui să poată rezerva o programare fără să te sune. Un client care vrea să plătească un avans ar trebui să poată face asta fără un transfer bancar.",
+        "Nu sunt funcționalități complexe. Sunt integrări: un calendar de rezervări legat de programul tău, un link de plată legat de contul tău. Construite o dată, rulează fără să le atingi."
+      ]
+    },
+    {
+      "id": "a-detine-vs-a-inchiria",
+      "heading": "A deține versus a închiria site-ul tău",
+      "paras": [
+        "Un site construit pe Squarespace, Wix sau o platformă similară este, tehnic vorbind, închiriat. Plătești lunar. Platforma controlează infrastructura. Dacă schimbă prețurile, funcționalitățile sau se închid, site-ul tău e afectat. Nu îl poți muta.",
+        "Un site custom îți dă codul, credențialele de hosting și tot ce ai nevoie pentru a-l muta oriunde, modifica cu orice dezvoltator sau preda altcuiva. Îți aparține.",
+        "Costul lunar pentru a menține online un site custom pe hosting modern e în jur de 15 euro pe an pentru domeniu. Atât.",
+        "Predau totul via GitHub la lansare: cod sursă, fișiere de design, acces la hosting. Complet documentat, complet al tău."
+      ]
+    }
+  ],
+  "faq": {
+    "heading": "Întrebări frecvente",
+    "items": [
+      {
+        "q": "WordPress sau custom? Care e mai bun pentru o afacere mică?",
+        "a": "WordPress e o alegere bună dacă trebuie să gestionezi mult conținut singur și ești confortabil cu el. Site-urile custom sunt mai rapide, mai simple de întreținut și mai puțin susceptibile să se strice din actualizări de plugin-uri. Pentru majoritatea afacerilor mici care nu au nevoie de modificări zilnice de conținut, un site custom este investiția mai bună pe termen lung."
+      },
+      {
+        "q": "Am nevoie de un blog?",
+        "a": "Nu neapărat. Un blog ajută dacă publici conținut pe care potențialii tăi clienți îl caută activ. Altfel e doar întreținere în plus. Trei articole ghid bine scrise și mereu actuale bat un blog neglijat cu 50 de postări generice."
+      },
+      {
+        "q": "Cât de des ar trebui să actualizez site-ul?",
+        "a": "Paginile principale (servicii, contact, despre noi) trebuie să reflecte întotdeauna oferta ta actuală. În rest, nu există o frecvență magică. Adaugă conținut util când ai ceva cu adevărat util de spus."
+      },
+      {
+        "q": "Am nevoie de un site dacă am deja Instagram?",
+        "a": "Da. Platformele social schimbă algoritmii, reduc acoperirea organică și uneori sunt blocate. Site-ul tău este singura prezență online pe care o controlezi complet. Instagram poate aduce trafic spre el. Nu îl poate înlocui."
+      },
+      {
+        "q": "Ce este un CTA și de ce contează?",
+        "a": "CTA înseamnă call to action: lucrul specific pe care vrei ca vizitatorul să îl facă după. Rezervă un apel. Trimite un mesaj. Vezi meniul. Un CTA clar pe fiecare pagină crește dramatic numărul de vizitatori care te contactează efectiv."
+      },
+      {
+        "q": "Cum știu dacă site-ul meu actual funcționează?",
+        "a": "Conectează-l la Google Search Console și Google Analytics, ambele gratuite. Search Console îți arată ce căutări aduc oameni pe site. Analytics îți arată ce fac odată ajunși. Dacă vizitele sunt mici sau rata de respingere e peste 80%, ceva nu funcționează."
+      },
+      {
+        "q": "Pot construi singur site-ul în loc să angajez pe cineva?",
+        "a": "Poți. Platforme ca Squarespace și Webflow fac asta posibil fără cunoștințe tehnice. Compromisul e timpul și plafonul: vei întâlni limitări mai repede decât te aștepți, iar rezultatele SEO și de performanță sunt rar comparabile cu o construcție custom."
+      },
+      {
+        "q": "Ce informații trebuie să pregătesc înainte să lucrez cu un dezvoltator?",
+        "a": "Serviciile și prețurile tale (sau cel puțin o gamă), o scurtă descriere a ce te diferențiază, zona sau orașul în care activezi, orice fotografii sau logo existente, și exemple de site-uri care îți plac. Asta e suficient pentru a începe."
+      }
+    ]
+  },
+  "related": "Mai multe ghiduri",
+  "authorBio": "Scris de Alex, dezvoltator web cu baza în Roma, Italia. Construiesc site-uri web care aduc cu adevărat clienți, nu care există și atât.",
+  "authorCta": "Cere o ofertă gratuită pe WhatsApp"
+}

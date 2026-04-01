@@ -266,4 +266,132 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.alecsdesign.xyz/en/faq" />
   </url>
 
+  <!-- Guides Hub -->
+  <url>
+    <loc>https://www.alecsdesign.xyz/guide/</loc>
+    <lastmod>2026-04-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.alecsdesign.xyz/guide/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.alecsdesign.xyz/it/guide/" />
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.alecsdesign.xyz/ro/guide/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.alecsdesign.xyz/guide/" />
+  </url>
+  <url>
+    <loc>https://www.alecsdesign.xyz/it/guide/</loc>
+    <lastmod>2026-04-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.alecsdesign.xyz/guide/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.alecsdesign.xyz/it/guide/" />
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.alecsdesign.xyz/ro/guide/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.alecsdesign.xyz/guide/" />
+  </url>
+  <url>
+    <loc>https://www.alecsdesign.xyz/ro/guide/</loc>
+    <lastmod>2026-04-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.alecsdesign.xyz/guide/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.alecsdesign.xyz/it/guide/" />
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.alecsdesign.xyz/ro/guide/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.alecsdesign.xyz/guide/" />
+  </url>
+
+  <!-- Guide: How Much Does a Website Cost -->
+  <url>
+    <loc>https://www.alecsdesign.xyz/guide/how-much-does-a-website-cost</loc>
+    <lastmod>2026-04-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.alecsdesign.xyz/guide/how-much-does-a-website-cost" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.alecsdesign.xyz/it/guide/quanto-costa-un-sito-web" />
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.alecsdesign.xyz/ro/guide/cat-costa-un-site-web" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.alecsdesign.xyz/guide/how-much-does-a-website-cost" />
+  </url>
+  <url>
+    <loc>https://www.alecsdesign.xyz/it/guide/quanto-costa-un-sito-web</loc>
+    <lastmod>2026-04-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.alecsdesign.xyz/guide/how-much-does-a-website-cost" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.alecsdesign.xyz/it/guide/quanto-costa-un-sito-web" />
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.alecsdesign.xyz/ro/guide/cat-costa-un-site-web" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.alecsdesign.xyz/guide/how-much-does-a-website-cost" />
+  </url>
+  <url>
+    <loc>https://www.alecsdesign.xyz/ro/guide/cat-costa-un-site-web</loc>
+    <lastmod>2026-04-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.alecsdesign.xyz/guide/how-much-does-a-website-cost" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.alecsdesign.xyz/it/guide/quanto-costa-un-sito-web" />
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.alecsdesign.xyz/ro/guide/cat-costa-un-site-web" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.alecsdesign.xyz/guide/how-much-does-a-website-cost" />
+  </url>
+
+  <!-- Guide: How to Get Found on Google -->
+  <url>
+    <loc>https://www.alecsdesign.xyz/guide/how-to-get-found-on-google</loc>
+    <lastmod>2026-04-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.alecsdesign.xyz/guide/how-to-get-found-on-google" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.alecsdesign.xyz/it/guide/come-farsi-trovare-su-google" />
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.alecsdesign.xyz/ro/guide/cum-sa-apari-pe-google" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.alecsdesign.xyz/guide/how-to-get-found-on-google" />
+  </url>
+  <url>
+    <loc>https://www.alecsdesign.xyz/it/guide/come-farsi-trovare-su-google</loc>
+    <lastmod>2026-04-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.alecsdesign.xyz/guide/how-to-get-found-on-google" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.alecsdesign.xyz/it/guide/come-farsi-trovare-su-google" />
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.alecsdesign.xyz/ro/guide/cum-sa-apari-pe-google" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.alecsdesign.xyz/guide/how-to-get-found-on-google" />
+  </url>
+  <url>
+    <loc>https://www.alecsdesign.xyz/ro/guide/cum-sa-apari-pe-google</loc>
+    <lastmod>2026-04-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.alecsdesign.xyz/guide/how-to-get-found-on-google" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.alecsdesign.xyz/it/guide/come-farsi-trovare-su-google" />
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.alecsdesign.xyz/ro/guide/cum-sa-apari-pe-google" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.alecsdesign.xyz/guide/how-to-get-found-on-google" />
+  </url>
+
+  <!-- Guide: What Your Website Needs -->
+  <url>
+    <loc>https://www.alecsdesign.xyz/guide/what-your-website-needs</loc>
+    <lastmod>2026-04-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.alecsdesign.xyz/guide/what-your-website-needs" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.alecsdesign.xyz/it/guide/cosa-deve-avere-il-sito-web" />
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.alecsdesign.xyz/ro/guide/ce-trebuie-sa-aiba-site-ul" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.alecsdesign.xyz/guide/what-your-website-needs" />
+  </url>
+  <url>
+    <loc>https://www.alecsdesign.xyz/it/guide/cosa-deve-avere-il-sito-web</loc>
+    <lastmod>2026-04-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.alecsdesign.xyz/guide/what-your-website-needs" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.alecsdesign.xyz/it/guide/cosa-deve-avere-il-sito-web" />
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.alecsdesign.xyz/ro/guide/ce-trebuie-sa-aiba-site-ul" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.alecsdesign.xyz/guide/what-your-website-needs" />
+  </url>
+  <url>
+    <loc>https://www.alecsdesign.xyz/ro/guide/ce-trebuie-sa-aiba-site-ul</loc>
+    <lastmod>2026-04-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.alecsdesign.xyz/guide/what-your-website-needs" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.alecsdesign.xyz/it/guide/cosa-deve-avere-il-sito-web" />
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.alecsdesign.xyz/ro/guide/ce-trebuie-sa-aiba-site-ul" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.alecsdesign.xyz/guide/what-your-website-needs" />
+  </url>
+
 </urlset>

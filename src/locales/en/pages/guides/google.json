@@ -1,0 +1,102 @@
+{
+  "meta": {
+    "title": "How to Get Found on Google Without Paying for Ads",
+    "description": "Why most business websites are invisible on Google, and what actually gets you found. A practical guide by Alex, web developer in Rome.",
+    "readingTime": "5 min read",
+    "published": "April 1, 2026"
+  },
+  "breadcrumb": "Guides",
+  "title": "How to Get Found on Google Without Paying for Ads",
+  "lead": "Most business websites are invisible on Google. Not because the business is bad, but because the website was built to look good, not to rank. Here is what actually determines whether Google shows your site to people who need what you offer.",
+  "sections": [
+    {
+      "id": "why-invisible",
+      "heading": "Why 90% of business websites are invisible",
+      "paras": [
+        "Google does not rank websites based on how nice they look. It ranks based on how useful, fast, and trustworthy they appear to be.",
+        "Most websites built with drag-and-drop tools load in 4 to 6 seconds, have no structured data, are not optimised for mobile, and give Google almost nothing to read. They exist online. They just do not rank.",
+        "A site built correctly handles most of this from day one. There is no trick to it. The fundamentals are technical, and they are mostly invisible to the visitor."
+      ]
+    },
+    {
+      "id": "what-google-measures",
+      "heading": "What Google actually measures in 2026",
+      "paras": [
+        "Load speed: Google uses Core Web Vitals as a ranking signal. A site that loads in under 2 seconds gets treated differently from one that takes 5. This is measured on real devices, on real connections.",
+        "Mobile experience: Google indexes the mobile version of your site first. If it breaks on a phone, your ranking suffers regardless of how it looks on a desktop.",
+        "Local signals: for a business serving a specific city or region, your address, phone number, and service area need to be consistent and structured correctly across your website and Google Business Profile.",
+        "Content structure: Google reads your page to understand what it is about. Clear headings, readable paragraphs, and structured data (schema markup) help it categorise your business accurately.",
+        "Trust signals: backlinks from other credible sites, a complete Google Business Profile, and consistent business information across the web all contribute to how seriously Google takes your domain."
+      ]
+    },
+    {
+      "id": "five-things",
+      "heading": "Five things your website needs to rank",
+      "paras": [
+        "Fast load time: under 2 seconds on mobile, measured with real network conditions. This comes from how the site is built, not from a plugin.",
+        "Mobile-first layout: designed for a 390px screen first, desktop second. Not a shrunken version of the desktop site.",
+        "Clear local signals: your city and country in your title tag, your address in structured data, and a verified Google Business Profile that links to your website.",
+        "Readable, structured content: clear page titles, logical heading structure (H1, H2, H3), and content that directly answers what a visitor is looking for.",
+        "Google Search Console connected at launch: so Google starts indexing your pages immediately and you can see which searches are bringing people to you."
+      ]
+    },
+    {
+      "id": "what-a-good-site-handles",
+      "heading": "What a properly built site handles automatically",
+      "paras": [
+        "When I build a site, the technical SEO foundation is included by default. Fast hosting, correct meta tags, a sitemap submitted to Google, structured data for your business, and mobile layout that actually works.",
+        "You should not have to install an SEO plugin and guess at settings. These are not optional add-ons. They are part of building the site correctly.",
+        "The content side is up to you: what you write, how clearly you describe your services, and whether you publish anything your potential clients are searching for. That part no developer can do for you. But the technical foundation? That is my job."
+      ]
+    },
+    {
+      "id": "google-business",
+      "heading": "The one free thing most businesses ignore",
+      "paras": [
+        "Google Business Profile is free and it directly affects whether you appear in local search results and Google Maps.",
+        "Set it up, verify your address, add your phone number and opening hours, upload real photos, and link it to your website. Ask a few satisfied clients for a review. This alone can put you above competitors who only have a website.",
+        "Most businesses either have not set it up or set it up once and never touched it again. That is an easy gap to close."
+      ]
+    }
+  ],
+  "faq": {
+    "heading": "Frequently asked questions",
+    "items": [
+      {
+        "q": "Does social media help with Google ranking?",
+        "a": "Indirectly. Social media does not directly improve your Google ranking. But it drives traffic to your site, and traffic signals matter. A strong Google Business Profile and a well-built website matter far more."
+      },
+      {
+        "q": "How long does it take to rank on Google?",
+        "a": "A new site with a proper SEO foundation gets indexed within days. Appearing in the top results for competitive searches takes 3 to 6 months of real traffic and engagement data. Local and niche keywords rank faster than generic ones."
+      },
+      {
+        "q": "Does my domain name affect my Google ranking?",
+        "a": "Slightly. A domain that matches your business name and is easy to remember is better than a random string of words. Exact-match keyword domains (like best-plumber-rome.com) used to help a lot. In 2026 they make almost no difference."
+      },
+      {
+        "q": "Do I need to pay for Google Ads to show up on Google?",
+        "a": "No. Paid ads and organic search results are separate. A properly built, SEO-optimised site can rank organically without spending anything on advertising. Ads give you immediate visibility. Organic ranking takes time but costs nothing per click."
+      },
+      {
+        "q": "Will adding a blog help me rank?",
+        "a": "Only if you write content people are actually searching for. A blog full of company news that nobody searches for does nothing. A guide that answers a real question your potential clients type into Google can bring in consistent traffic for years."
+      },
+      {
+        "q": "What is structured data and do I need it?",
+        "a": "Structured data is code added to your site that tells Google exactly what your business is: name, address, phone, services, reviews. It helps Google display your site correctly and can unlock rich results in search. I include it on every site I build."
+      },
+      {
+        "q": "My competitor has a worse website but ranks higher. Why?",
+        "a": "Usually one of three reasons: they have been online longer and built up backlinks over time, they have more Google reviews, or their Google Business Profile is more complete. None of these are permanent advantages. A well-built site with good content catches up."
+      },
+      {
+        "q": "Can I do my own SEO after the site is built?",
+        "a": "Absolutely. Once the technical foundation is in place, the most impactful ongoing SEO is publishing content that answers real questions and keeping your Google Business Profile active. You do not need an agency for this."
+      }
+    ]
+  },
+  "related": "More guides",
+  "authorBio": "Written by Alex, web developer based in Rome, Italy. Every site I build includes a full SEO foundation from day one.",
+  "authorCta": "Get a free quote on WhatsApp"
+}

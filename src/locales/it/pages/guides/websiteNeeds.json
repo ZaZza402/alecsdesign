@@ -1,0 +1,103 @@
+{
+  "meta": {
+    "title": "Cosa Deve Avere un Sito Web per una Piccola Impresa nel 2026",
+    "description": "La maggior parte dei siti aziendali non porta clienti. Ecco cosa separa un sito che funziona da uno che esiste e basta. Di Alex, sviluppatore web a Roma.",
+    "readingTime": "5 min di lettura",
+    "published": "1 aprile 2026"
+  },
+  "breadcrumb": "Guide",
+  "title": "Cosa Deve Avere il Tuo Sito Web nel 2026",
+  "lead": "La maggior parte dei siti aziendali è una brochure online. Ha un'estetica decente, un modulo di contatto, e non fa quasi nulla per portare nuovi clienti. Ecco cosa separa un sito che lavora da uno che esiste e basta.",
+  "sections": [
+    {
+      "id": "la-verita-scomoda",
+      "heading": "La verità scomoda sulla maggior parte dei siti aziendali",
+      "paras": [
+        "Un sito che esiste non è la stessa cosa di un sito che funziona. La differenza non è nel design. È nell'intenzione.",
+        "Un sito che funziona risponde alle domande, costruisce fiducia prima ancora che qualcuno chiami, si posiziona su Google così le persone giuste riescono a trovarlo, e rende facile fare il passo successivo. La maggior parte dei siti non fa nessuna di queste cose bene.",
+        "La buona notizia: la maggior parte di quello che fa funzionare un sito non è complicata. Sono decisioni prese durante la costruzione, non qualcosa che aggiungi dopo."
+      ]
+    },
+    {
+      "id": "sette-cose",
+      "heading": "Sette cose che il tuo sito deve avere",
+      "paras": [
+        "Velocità: si carica in meno di 2 secondi su smartphone. Se non lo fa, la maggior parte dei visitatori se ne va prima di leggere una parola. Google penalizza i siti lenti nei risultati di ricerca.",
+        "Layout mobile: progettato per il telefono, non adattato dal desktop. Oltre il 70% dei tuoi visitatori vedrà il sito su uno schermo da 6 pollici.",
+        "Un'azione chiara: ogni pagina deve guidare il visitatore verso una cosa sola. Prenota una chiamata. Manda un messaggio. Guarda il menu. Una cosa, non cinque.",
+        "Segnali di fiducia: recensioni di clienti, foto reali, una persona con un nome dietro all'attività, una sede fisica. Rispondono alla domanda silenziosa che ogni visitatore ha in testa.",
+        "Contatti che funzionano: un numero di telefono cliccabile, un link WhatsApp, un'email. Non solo un modulo di contatto che finisce nello spam.",
+        "Base SEO: tag del titolo, dati strutturati per l'attività locale, un Google Business Profile verificato e una sitemap. Non è opzionale. È come Google decide se il tuo sito esiste.",
+        "Proprietà: possiedi il codice e il dominio. Non un abbonamento, non un affitto. Se vuoi cambiare, spostare o passare il sito a qualcun altro, puoi farlo."
+      ]
+    },
+    {
+      "id": "ricerca-ai",
+      "heading": "Cosa è cambiato con la ricerca AI",
+      "paras": [
+        "Nel 2026, una parte crescente delle persone trova le attività tramite assistenti AI: ChatGPT, Perplexity, le panoramiche AI di Google. Questi strumenti non classificano le pagine come faceva Google nel 2015. Estraggono risposte da contenuti strutturati e autorevoli.",
+        "Perché il tuo sito venga consigliato da un AI, deve essere chiaro su chi sei, cosa fai, dove lo fai e perché dovrebbero fidarsi di te. Il linguaggio di marketing vago non aiuta. Il contenuto diretto e fattuale sì.",
+        "I dati strutturati (schema markup) sono particolarmente importanti. Dicono ai sistemi AI che il tuo sito rappresenta un'attività reale con indirizzo reale, numero di telefono e offerta di servizi. Li includo in ogni sito che costruisco."
+      ]
+    },
+    {
+      "id": "prenotazioni-pagamenti",
+      "heading": "Prenotazioni e pagamenti online: aspettative crescenti",
+      "paras": [
+        "Per le attività di servizi (studi medici, salon, ristoranti, consulenti), la prenotazione online è passata da un bel plus a qualcosa che i clienti si aspettano attivamente.",
+        "Un cliente che trova il tuo sito alle 23 dovrebbe poter prenotare un appuntamento senza chiamarti. Un cliente che vuole versare un acconto dovrebbe poterlo fare senza un bonifico bancario.",
+        "Non sono funzionalità complesse. Sono integrazioni: un calendario di prenotazione collegato ai tuoi orari, un link di pagamento collegato al tuo conto. Costruite una volta, girano senza che tu le tocchi."
+      ]
+    },
+    {
+      "id": "possedere-vs-affittare",
+      "heading": "Possedere il sito contro affittarlo",
+      "paras": [
+        "Un sito costruito su Squarespace, Wix o una piattaforma simile è, tecnicamente, in affitto. Paghi ogni mese. La piattaforma controlla l'infrastruttura. Se cambiano i prezzi, le funzionalità o chiudono, il tuo sito ne risente. Non puoi spostarlo.",
+        "Un sito custom ti dà il codice, le credenziali di hosting e tutto il necessario per spostarlo ovunque, modificarlo con qualsiasi sviluppatore o passarlo a qualcun altro. Ti appartiene.",
+        "Il costo mensile per tenere online un sito custom su hosting moderno è circa 15 euro l'anno per il dominio. Solo quello.",
+        "Consegno tutto via GitHub al lancio: codice sorgente, file di design, accesso all'hosting. Completamente documentato, completamente tuo."
+      ]
+    }
+  ],
+  "faq": {
+    "heading": "Domande frequenti",
+    "items": [
+      {
+        "q": "WordPress o sito custom? Qual è meglio per una piccola impresa?",
+        "a": "WordPress è una buona scelta se devi gestire molti contenuti e ti trovi a tuo agio con la piattaforma. I siti custom sono più veloci, più semplici da mantenere e meno soggetti a problemi causati da aggiornamenti di plugin. Per la maggior parte delle piccole imprese che non hanno bisogno di modifiche continue ai contenuti, il sito custom è l'investimento migliore a lungo termine."
+      },
+      {
+        "q": "Ho bisogno di un blog?",
+        "a": "Non necessariamente. Un blog aiuta se pubblichi contenuti che i tuoi potenziali clienti cercano attivamente. Altrimenti è solo manutenzione extra. Tre articoli guida ben scritti e sempre attuali battono un blog trascurato con 50 post generici."
+      },
+      {
+        "q": "Con quale frequenza devo aggiornare il sito?",
+        "a": "Le tue pagine principali (servizi, contatti, chi siamo) devono sempre riflettere la tua offerta attuale. Per il resto, non esiste una frequenza magica. Aggiungere contenuti utili quando hai qualcosa di davvero utile da dire è meglio che aggiornare per il gusto di farlo."
+      },
+      {
+        "q": "Ho bisogno di un sito se ho già Instagram?",
+        "a": "Sì. Le piattaforme social cambiano algoritmi, riducono la portata organica e a volte vengono bloccate. Il tuo sito è l'unica presenza online che controlli completamente. Instagram può portare traffico. Non può sostituirlo."
+      },
+      {
+        "q": "Cosa vuol dire CTA e perché è importante?",
+        "a": "CTA sta per call to action: la cosa specifica che vuoi che il visitatore faccia dopo. Prenota una chiamata. Manda un messaggio. Guarda il menu. Una CTA chiara su ogni pagina aumenta drasticamente il numero di visitatori che ti contattano davvero."
+      },
+      {
+        "q": "Come faccio a sapere se il mio sito attuale funziona?",
+        "a": "Collegalo a Google Search Console e Google Analytics, entrambi gratuiti. Search Console mostra quali ricerche portano visitatori al sito. Analytics mostra cosa fanno una volta arrivati. Se le visite sono basse o la frequenza di rimbalzo è sopra l'80%, qualcosa non funziona."
+      },
+      {
+        "q": "Posso costruire il sito da solo invece di assumere qualcuno?",
+        "a": "Puoi. Piattaforme come Squarespace e Webflow lo rendono possibile anche senza conoscenze tecniche. Il compromesso è il tempo e il limite tecnico: incontrerai vincoli prima del previsto, e i risultati in termini di SEO e prestazioni sono raramente paragonabili a un sito custom. Per un'attività in cui il sito è un canale primario per i clienti, assumere qualcuno si ripaga rapidamente."
+      },
+      {
+        "q": "Quali informazioni devo preparare prima di lavorare con uno sviluppatore?",
+        "a": "I tuoi servizi e i prezzi (o almeno una fascia), una breve descrizione di cosa ti distingue, la zona o città in cui operi, eventuali foto o un logo esistenti, ed esempi di siti che ti piacciono. Basta per iniziare. Il resto si definisce durante il progetto."
+      }
+    ]
+  },
+  "related": "Altre guide",
+  "authorBio": "Scritto da Alex, sviluppatore web con base a Roma. Costruisco siti web che portano davvero clienti, non che esistono e basta.",
+  "authorCta": "Richiedi un preventivo su WhatsApp"
+}

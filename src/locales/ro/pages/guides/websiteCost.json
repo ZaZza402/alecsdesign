@@ -1,0 +1,118 @@
+{
+  "meta": {
+    "title": "Cât Costă un Site Web? Un Calcul Corect pentru Afaceri Mici",
+    "description": "Prețuri reale, costuri ascunse și ce înseamnă cu adevărat să deții un site. Un ghid de Alex, dezvoltator web în Roma.",
+    "readingTime": "5 min citire",
+    "published": "1 aprilie 2026"
+  },
+  "breadcrumb": "Ghiduri",
+  "title": "Cât Costă un Site Web?",
+  "lead": "Un site profesional pentru o afacere mică costă de obicei între 500 și 5.000 de euro. Majoritatea ajung între 1.000 și 2.500 de euro. Cifrele astea singure nu îți spun aproape nimic. Acest ghid explică ce plătești cu adevărat, unde plătești probabil prea mult și ce costă să menții un site funcțional pe termen lung.",
+  "sections": [
+    {
+      "id": "de-ce-variaza-preturile",
+      "heading": "De ce variază prețurile atât de mult",
+      "paras": [
+        "Factorul principal este cine construiește și cum.",
+        "Un ofertă de 150 de euro înseamnă de obicei un template gata-făcut cu logo-ul tău inserat, găzduit pe o platformă pe care nu o deții. Arată a site. Nu se va poziționa pe Google. Nu va încărca rapid pe mobil. Și când oprești abonamentul lunar, dispare.",
+        "O ofertă de 10.000 de euro de la o agenție include adesea manageri de proiect, account manageri, ședințe săptămânale și workshop-uri de strategie de brand. Plătești structura lor, nu rezultatele tale.",
+        "Un freelancer construiește site-ul de la zero. Niciun template, niciun cost lunar la el, nimic inutil. Pentru majoritatea afacerilor mici, asta e exact ce le trebuie."
+      ]
+    },
+    {
+      "id": "ce-platesti-de-fapt",
+      "heading": "Ce plătești de fapt",
+      "paras": [
+        "Design: nu doar cum arată, ci cum ghidează vizitatorul spre contactare. Fiecare culoare, fiecare buton, fiecare titlu este o decizie care influențează dacă cineva te sună sau închide pagina.",
+        "Calitatea codului: un site rapid (sub 2 secunde) nu este o coincidență. Este cod curat, imagini optimizate, caching și un hosting configurat corect. Google măsoară viteza. Site-urile lente se clasează mai jos.",
+        "Baza SEO: tag-uri de titlu, meta descrieri, date structurate, sitemap, configurare Google Search Console. Nu îți garantează primul loc. Fără ele, ești practic invizibil.",
+        "Mobil: peste 70% din vizitatorii unui site de afaceri mici ajung de pe telefon. Un site care arată prost pe mobil pierde acei vizitatori în mai puțin de 3 secunde.",
+        "Proprietate: deții rezultatul, sau nu. Asta e partea pe care aproape toată lumea o ignoră și de care se căiesc mai târziu."
+      ]
+    },
+    {
+      "id": "costuri-ascunse",
+      "heading": "Costurile ascunse pe care nimeni nu le menționează",
+      "paras": [
+        "Domeniu: 10-15 euro pe an. Îl plătești indiferent de cine construiește site-ul.",
+        "Hosting: 5-25 euro pe lună în funcție de furnizor. Unii dezvoltatori îl gestionează pentru tine cu un adaos. Alții construiesc pe platforme ca Vercel unde hosting-ul de bază este gratuit.",
+        "Abonamente CMS: dacă site-ul e pe Squarespace sau Wix, plătești un abonament lunar (13-40 de euro) pentru totdeauna. Oprești plata, site-ul cade.",
+        "Taxe pentru modificări: unele agenții cer 50-150 de euro pentru a schimba un număr de telefon sau o fotografie. Întreabă direct înainte de a semna orice: cine poate face modificări și la ce preț?",
+        "Reînnoiri plugin-uri: site-urile WordPress depind adesea de plugin-uri plătite pentru SEO, rezervări și formulare. Fiecare se reînnoiește anual. Un site care costă 800 de euro să fie construit poate acumula 300 de euro pe an în taxe de plugin-uri în doi ani."
+      ]
+    },
+    {
+      "id": "codul-e-al-tau",
+      "heading": "Ce înseamnă cu adevărat că dești codul",
+      "paras": [
+        "Când construiesc un site, la lansare primești tot: codul sursă, domeniul, accesul la hosting și fișierele de design. Nu închiriezi nimic de la mine.",
+        "Poți schimba furnizorul de hosting fără să reconstruiești nimic. Poți angaja orice dezvoltator să facă modificări, nu doar pe mine. Nu există un cost lunar pentru a menține site-ul online. Dacă aș dispărea mâine, site-ul tău ar continua să funcționeze.",
+        "Așa ar trebui să funcționeze. Nu e standard în industrie, deci întreabă explicit înainte de a te angaja."
+      ]
+    },
+    {
+      "id": "cand-costa-mai-mult",
+      "heading": "Când costă mai mult?",
+      "paras": [
+        "Sisteme de rezervări cu plăți: integrarea unui procesator de plăți, logica calendarului și confirmările automate necesită semnificativ mai mult timp decât un site static.",
+        "Mai multe limbi: trei versiuni lingvistice înseamnă trei seturi de pagini, cu un sistem de detectare a limbii. Construiesc frecvent site-uri multilingve.",
+        "Animații personalizate: necesită timp să fie făcute bine.",
+        "E-commerce: un catalog de produse, coș și checkout este un proiect de cu totul altă scală.",
+        "Termene strânse: un turnaround de cinci zile e posibil dar costă mai mult decât două săptămâni.",
+        "Dacă niciunul dintre acestea nu se aplică, un site profesional de cinci pagini nu ar trebui să coste mai mult de 2.000 de euro."
+      ]
+    }
+  ],
+  "costTable": {
+    "heading": "Cât costă să menții un site după lansare?",
+    "intro": "Pentru un site custom pe infrastructură modernă de hosting:",
+    "headers": ["Element", "Cost anual"],
+    "rows": [
+      ["Domeniu", "~€12/an"],
+      ["Hosting (Vercel plan gratuit)", "€0"],
+      ["Certificat SSL", "€0 (inclus)"],
+      ["Timpul meu pentru modificări", "Pe oră, doar când ceri"]
+    ],
+    "note": "Majoritatea site-urilor pe care le construiesc costă sub 15 euro pe an să fie ținute online după lansare."
+  },
+  "faq": {
+    "heading": "Întrebări frecvente",
+    "items": [
+      {
+        "q": "Pot obține un site pentru mai puțin de 500 de euro?",
+        "a": "Da, dar cu așteptări clare. La acel preț primești un template, personalizare minimă și de obicei o platformă pentru care vei plăti lunar. E bine ca punct de plecare. Nu va aduce clienți."
+      },
+      {
+        "q": "Trebuie să plătesc lunar pentru un site?",
+        "a": "Nu neapărat. Site-urile pe platforme ca Squarespace și Wix necesită un abonament lunar. Un site custom pe infrastructură modernă nu. Întreabă-ți dezvoltatorul înainte ce abordare folosește."
+      },
+      {
+        "q": "Cât durează să construiești un site?",
+        "a": "Pentru un site standard de afaceri mici: una până la două săptămâni de când conținutul e gata până la lansare. Întârzierile vin aproape întotdeauna din așteptarea textelor, fotografiilor și feedback-ului, nu din dezvoltare."
+      },
+      {
+        "q": "Un site ieftin e vreodată alegerea potrivită?",
+        "a": "Pentru o afacere nou-înființată care are nevoie de ceva online imediat, da. Un site de 200 de euro pe Squarespace e mai bun decât nimic. Când ai clienți și ceva de spus, investește într-un site făcut cum trebuie."
+      },
+      {
+        "q": "Care e diferența dintre un freelancer și o agenție?",
+        "a": "Scară și overhead. O agenție angajează manageri de proiect, designeri, dezvoltatori și account manageri. Îi plătești pe toți. Un freelancer e persoana care construiește efectiv site-ul. Pentru o afacere mică, un freelancer bun oferă același rezultat la o fracțiune din cost."
+      },
+      {
+        "q": "Site-ul meu va apărea pe Google?",
+        "a": "Un site construit corect cu o bază SEO va fi indexat de Google în câteva zile de la lansare. Să te clasezi bine pentru căutări competitive necesită luni de date de trafic real. Oricine îți garantează primul loc te induce în eroare."
+      },
+      {
+        "q": "Am nevoie de un blog pentru a mă clasifica pe Google?",
+        "a": "Nu pentru numele afacerii tale sau căutările locale. Un blog ajută dacă publici conținut pe care potențialii tăi clienți îl caută activ. Pentru majoritatea afacerilor mici, trei articole ghid bine scrise bat un an de postări săptămânale generice."
+      },
+      {
+        "q": "Cum știu dacă prețul e corect?",
+        "a": "Cere o ofertă detaliată: design, dezvoltare, SEO, conținut și ce e inclus după lansare. Un dezvoltator care lucrează transparent ți-o dă fără ezitare. Prețurile vagi sunt de obicei semnul unei munci vage."
+      }
+    ]
+  },
+  "related": "Mai multe ghiduri",
+  "authorBio": "Scris de Alex, dezvoltator web cu baza în Roma, Italia. Construiesc site-uri web pentru afaceri mici din Italia și Europa.",
+  "authorCta": "Cere o ofertă gratuită pe WhatsApp"
+}

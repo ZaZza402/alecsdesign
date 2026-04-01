@@ -17,6 +17,10 @@ const NotFound = lazy(() => import("./pages/NotFound.tsx"));
 const PortfolioPage = lazy(() => import("./pages/PortfolioPage.tsx"));
 const ContactPage = lazy(() => import("./pages/ContactPage.tsx"));
 const AboutPage = lazy(() => import("./pages/AboutPage.tsx"));
+const GuidesHub = lazy(() => import("./pages/GuidesHub.tsx"));
+const WebsiteCostGuide = lazy(() => import("./pages/guides/WebsiteCostGuide.tsx"));
+const GoogleGuide = lazy(() => import("./pages/guides/GoogleGuide.tsx"));
+const WebsiteNeedsGuide = lazy(() => import("./pages/guides/WebsiteNeedsGuide.tsx"));
 
 import PageTransition from "./components/ui/PageTransition";
 import Header from "./components/layout/Header";
@@ -293,6 +297,138 @@ function AppRoutes() {
             element={
               <PageWrapper lang="ro">
                 <AboutPage />
+              </PageWrapper>
+            }
+          />
+
+          {/* Guides hub - EN (root) */}
+          <Route
+            path="/guide"
+            element={
+              <PageWrapper lang="en">
+                <GuidesHub lang="en" />
+              </PageWrapper>
+            }
+          />
+          <Route
+            path="/guide/"
+            element={
+              <PageWrapper lang="en">
+                <GuidesHub lang="en" />
+              </PageWrapper>
+            }
+          />
+
+          {/* Guide pages - EN */}
+          <Route
+            path="/guide/how-much-does-a-website-cost"
+            element={
+              <PageWrapper lang="en">
+                <WebsiteCostGuide lang="en" />
+              </PageWrapper>
+            }
+          />
+          <Route
+            path="/guide/how-to-get-found-on-google"
+            element={
+              <PageWrapper lang="en">
+                <GoogleGuide lang="en" />
+              </PageWrapper>
+            }
+          />
+          <Route
+            path="/guide/what-your-website-needs"
+            element={
+              <PageWrapper lang="en">
+                <WebsiteNeedsGuide lang="en" />
+              </PageWrapper>
+            }
+          />
+
+          {/* Guides hub - IT */}
+          <Route
+            path="/it/guide"
+            element={
+              <PageWrapper lang="it">
+                <GuidesHub lang="it" />
+              </PageWrapper>
+            }
+          />
+          <Route
+            path="/it/guide/"
+            element={
+              <PageWrapper lang="it">
+                <GuidesHub lang="it" />
+              </PageWrapper>
+            }
+          />
+
+          {/* Guide pages - IT */}
+          <Route
+            path="/it/guide/quanto-costa-un-sito-web"
+            element={
+              <PageWrapper lang="it">
+                <WebsiteCostGuide lang="it" />
+              </PageWrapper>
+            }
+          />
+          <Route
+            path="/it/guide/come-farsi-trovare-su-google"
+            element={
+              <PageWrapper lang="it">
+                <GoogleGuide lang="it" />
+              </PageWrapper>
+            }
+          />
+          <Route
+            path="/it/guide/cosa-deve-avere-il-sito-web"
+            element={
+              <PageWrapper lang="it">
+                <WebsiteNeedsGuide lang="it" />
+              </PageWrapper>
+            }
+          />
+
+          {/* Guides hub - RO */}
+          <Route
+            path="/ro/guide"
+            element={
+              <PageWrapper lang="ro">
+                <GuidesHub lang="ro" />
+              </PageWrapper>
+            }
+          />
+          <Route
+            path="/ro/guide/"
+            element={
+              <PageWrapper lang="ro">
+                <GuidesHub lang="ro" />
+              </PageWrapper>
+            }
+          />
+
+          {/* Guide pages - RO */}
+          <Route
+            path="/ro/guide/cat-costa-un-site-web"
+            element={
+              <PageWrapper lang="ro">
+                <WebsiteCostGuide lang="ro" />
+              </PageWrapper>
+            }
+          />
+          <Route
+            path="/ro/guide/cum-sa-apari-pe-google"
+            element={
+              <PageWrapper lang="ro">
+                <GoogleGuide lang="ro" />
+              </PageWrapper>
+            }
+          />
+          <Route
+            path="/ro/guide/ce-trebuie-sa-aiba-site-ul"
+            element={
+              <PageWrapper lang="ro">
+                <WebsiteNeedsGuide lang="ro" />
               </PageWrapper>
             }
           />

@@ -1,0 +1,118 @@
+{
+  "meta": {
+    "title": "Quanto Costa un Sito Web? Una Guida Onesta per le Piccole Imprese",
+    "description": "Prezzi reali, costi nascosti e cosa significa davvero possedere un sito. Una guida di Alex, sviluppatore web a Roma.",
+    "readingTime": "5 min di lettura",
+    "published": "1 aprile 2026"
+  },
+  "breadcrumb": "Guide",
+  "title": "Quanto Costa un Sito Web?",
+  "lead": "Un sito professionale per una piccola impresa costa di solito tra 500 e 5.000 euro. La maggior parte finisce tra 1.000 e 2.500 euro. Queste cifre da sole non ti dicono quasi nulla. Questa guida spiega cosa stai pagando davvero, dove probabilmente stai spendendo troppo, e cosa costa tenere un sito funzionante nel tempo.",
+  "sections": [
+    {
+      "id": "perche-i-prezzi-variano",
+      "heading": "Perché i prezzi variano così tanto",
+      "paras": [
+        "Il fattore principale è chi lo costruisce e come.",
+        "Un preventivo da 150 euro di solito significa un template pre-fatto con il tuo logo inserito, ospitato su una piattaforma che non possiedi. Sembra un sito. Non si posiziona su Google. Non carica bene su mobile. E quando smetti di pagare l'abbonamento mensile, sparisce.",
+        "Un preventivo da 10.000 euro di un'agenzia spesso include project manager, account manager, riunioni settimanali e workshop di brand strategy. Stai pagando la loro struttura, non i tuoi risultati.",
+        "Un freelance sviluppa il sito da zero. Nessun template, nessun costo mensile da lui, nessun gonfiamento. Per la maggior parte delle piccole imprese, è esattamente quello che serve."
+      ]
+    },
+    {
+      "id": "cosa-stai-pagando",
+      "heading": "Cosa stai pagando davvero",
+      "paras": [
+        "Design: non solo l'aspetto, ma come guida il visitatore verso il contatto. Ogni colore, ogni bottone, ogni titolo è una scelta che determina se qualcuno ti chiama o se chiude la pagina.",
+        "Qualità del codice: un sito veloce (meno di 2 secondi) non è un caso. È codice pulito, immagini ottimizzate, caching e un hosting configurato correttamente. Google misura la velocità. I siti lenti si posizionano peggio.",
+        "Base SEO: tag del titolo, meta descrizioni, dati strutturati, sitemap, configurazione di Google Search Console. Non garantiscono il primo posto. Senza di essi sei praticamente invisibile.",
+        "Mobile: oltre il 70% dei visitatori arriva da smartphone. Un sito che si vede male su mobile perde quei visitatori in meno di 3 secondi.",
+        "Proprietà: possiedi il risultato, oppure no. È la parte che quasi tutti ignorano e di cui si pentono dopo."
+      ]
+    },
+    {
+      "id": "costi-nascosti",
+      "heading": "I costi nascosti che nessuno ti dice",
+      "paras": [
+        "Dominio: 10-15 euro l'anno. Lo paghi indipendentemente da chi costruisce il sito.",
+        "Hosting: 5-25 euro al mese a seconda del provider. Alcuni sviluppatori lo gestiscono per te con un ricarico. Altri costruiscono su piattaforme come Vercel dove l'hosting base è gratuito.",
+        "Abbonamenti CMS: se il sito è su Squarespace o Wix, paghi un abbonamento mensile (13-40 euro) per sempre. Smetti di pagare, il sito va giù.",
+        "Tariffe per modifiche: alcune agenzie fanno pagare 50-150 euro per cambiare un numero di telefono o aggiornare una foto. Chiedi prima di firmare qualsiasi cosa: chi può fare le modifiche, e a quale prezzo?",
+        "Rinnovi dei plugin: i siti WordPress dipendono spesso da plugin a pagamento per SEO, prenotazioni e moduli. Ognuno si rinnova ogni anno. Un sito che costa 800 euro da costruire può accumulare 300 euro di plugin l'anno entro due anni."
+      ]
+    },
+    {
+      "id": "il-codice-e-tuo",
+      "heading": "Cosa significa davvero che il codice è tuo",
+      "paras": [
+        "Quando costruisco un sito, al momento del lancio ricevi tutto: il codice sorgente, il dominio, l'accesso all'hosting e i file di design. Non stai affittando nulla da me.",
+        "Puoi cambiare host senza ricostruire nulla. Puoi assumere qualsiasi sviluppatore per fare modifiche, non solo me. Non c'è un costo mensile per tenere il sito online. Se sparissi domani, il tuo sito continuerebbe a funzionare.",
+        "Così dovrebbe funzionare. Non è lo standard del settore, quindi chiedi esplicitamente prima di impegnarti."
+      ]
+    },
+    {
+      "id": "quando-costa-di-piu",
+      "heading": "Quando costa di più?",
+      "paras": [
+        "Prenotazioni con pagamenti: integrare un sistema di pagamento, la logica del calendario e le conferme automatiche richiede molto più tempo rispetto a un sito statico.",
+        "Più lingue: tre versioni linguistiche significano tre set di ogni pagina, con un sistema di rilevamento della lingua. Li costruisco spesso.",
+        "Animazioni personalizzate: ci vuole tempo per farle bene.",
+        "E-commerce: un catalogo prodotti, carrello e cassa sono un progetto di scala completamente diversa.",
+        "Scadenze strette: cinque giorni di turnaround sono possibili ma costano di più di due settimane.",
+        "Se nessuno di questi casi si applica a te, un sito professionale da cinque pagine non dovrebbe costare più di 2.000 euro."
+      ]
+    }
+  ],
+  "costTable": {
+    "heading": "Quanto costa tenere un sito online dopo il lancio?",
+    "intro": "Per un sito custom su infrastruttura hosting moderna:",
+    "headers": ["Voce", "Costo annuale"],
+    "rows": [
+      ["Dominio", "~€12/anno"],
+      ["Hosting (Vercel piano free)", "€0"],
+      ["Certificato SSL", "€0 (incluso)"],
+      ["Il mio tempo per modifiche", "Su richiesta, a ore"]
+    ],
+    "note": "La maggior parte dei siti che costruisco costano meno di 15 euro l'anno da mantenere attivi dopo il lancio."
+  },
+  "faq": {
+    "heading": "Domande frequenti",
+    "items": [
+      {
+        "q": "Si può avere un sito per meno di 500 euro?",
+        "a": "Sì, ma con aspettative chiare. A quel prezzo ottieni un template, personalizzazione minima e di solito una piattaforma che pagherai ogni mese. Va bene come punto di partenza. Non porterà clienti."
+      },
+      {
+        "q": "Devo pagare ogni mese per avere un sito?",
+        "a": "Non necessariamente. I siti su piattaforme come Squarespace e Wix richiedono un abbonamento mensile. Un sito custom su infrastruttura moderna no. Chiedi prima al tuo sviluppatore quale approccio usa."
+      },
+      {
+        "q": "Quanto tempo ci vuole per costruire un sito?",
+        "a": "Per un sito standard da piccola impresa: una o due settimane dal momento in cui i contenuti sono pronti fino al lancio. I ritardi vengono quasi sempre dall'attesa di testi, foto e feedback, non dallo sviluppo."
+      },
+      {
+        "q": "Un sito economico è mai la scelta giusta?",
+        "a": "Per un'attività appena nata che ha bisogno di qualcosa online subito, sì. Un sito da 200 euro su Squarespace è meglio di niente. Quando hai clienti e qualcosa da dire, investi in qualcosa di fatto bene."
+      },
+      {
+        "q": "Qual è la differenza tra un freelance e un'agenzia?",
+        "a": "Scala e struttura. Un'agenzia ha project manager, designer, sviluppatori e account. Li paghi tutti. Un freelance è la persona che costruisce direttamente il tuo sito. Per una piccola impresa, un buon freelance offre lo stesso risultato a una frazione del costo."
+      },
+      {
+        "q": "Il mio sito apparirà su Google?",
+        "a": "Un sito costruito correttamente con una base SEO viene indicizzato da Google entro pochi giorni dal lancio. Posizionarsi bene per ricerche competitive richiede mesi di dati di traffico reali. Chi ti garantisce il primo posto ti sta ingannando."
+      },
+      {
+        "q": "Ho bisogno di un blog per posizionarmi su Google?",
+        "a": "Non per il tuo nome commerciale o le ricerche locali. Un blog aiuta se pubblichi contenuti che i tuoi potenziali clienti cercano attivamente. Per la maggior parte delle piccole imprese, tre articoli guida ben scritti battono un anno di post settimanali generici."
+      },
+      {
+        "q": "Come faccio a sapere se il prezzo è giusto?",
+        "a": "Chiedi un preventivo dettagliato: design, sviluppo, SEO, contenuti e cosa è incluso dopo il lancio. Uno sviluppatore onesto te lo dà senza problemi. I preventivi vaghi sono quasi sempre il segnale di un lavoro vago."
+      }
+    ]
+  },
+  "related": "Altre guide",
+  "authorBio": "Scritto da Alex, sviluppatore web con base a Roma. Costruisco siti web per piccole imprese in Italia e in Europa.",
+  "authorCta": "Richiedi un preventivo su WhatsApp"
+}

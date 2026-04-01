@@ -108,7 +108,11 @@ const ContactForm = () => {
 
       if (!response.ok) throw new Error("failed");
 
-      type GTagFn = (cmd: string, action: string, params?: Record<string, unknown>) => void;
+      type GTagFn = (
+        cmd: string,
+        action: string,
+        params?: Record<string, unknown>,
+      ) => void;
       if (
         typeof window !== "undefined" &&
         (window as typeof window & { gtag?: GTagFn }).gtag

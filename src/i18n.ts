@@ -77,6 +77,17 @@ import itFloatingContact from "./locales/it/floatingContact.json";
 import enFloatingContact from "./locales/en/floatingContact.json";
 import roFloatingContact from "./locales/ro/floatingContact.json";
 
+// Import guide translations
+import enGuidesWebsiteCost from "./locales/en/pages/guides/websiteCost.json";
+import enGuidesGoogle from "./locales/en/pages/guides/google.json";
+import enGuidesWebsiteNeeds from "./locales/en/pages/guides/websiteNeeds.json";
+import itGuidesWebsiteCost from "./locales/it/pages/guides/websiteCost.json";
+import itGuidesGoogle from "./locales/it/pages/guides/google.json";
+import itGuidesWebsiteNeeds from "./locales/it/pages/guides/websiteNeeds.json";
+import roGuidesWebsiteCost from "./locales/ro/pages/guides/websiteCost.json";
+import roGuidesGoogle from "./locales/ro/pages/guides/google.json";
+import roGuidesWebsiteNeeds from "./locales/ro/pages/guides/websiteNeeds.json";
+
 // Detect language from URL path (e.g., /en, /it, /ro)
 const getLanguageFromPath = () => {
   const path = window.location.pathname;
@@ -114,6 +125,12 @@ i18n
           // Other
           ...enCalculator,
           ...enFloatingContact,
+          // Guides
+          guides: {
+            websiteCost: enGuidesWebsiteCost,
+            google: enGuidesGoogle,
+            websiteNeeds: enGuidesWebsiteNeeds,
+          },
         },
       },
       it: {
@@ -140,6 +157,12 @@ i18n
           // Other
           ...itCalculator,
           ...itFloatingContact,
+          // Guides
+          guides: {
+            websiteCost: itGuidesWebsiteCost,
+            google: itGuidesGoogle,
+            websiteNeeds: itGuidesWebsiteNeeds,
+          },
         },
       },
       ro: {
@@ -166,6 +189,12 @@ i18n
           // Other
           ...roCalculator,
           ...roFloatingContact,
+          // Guides
+          guides: {
+            websiteCost: roGuidesWebsiteCost,
+            google: roGuidesGoogle,
+            websiteNeeds: roGuidesWebsiteNeeds,
+          },
         },
       },
     },
