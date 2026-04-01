@@ -21,6 +21,11 @@ const Header = () => {
       label: t("nav.portfolio"),
       href: `/${i18n.language}/portfolio`,
     },
+    {
+      id: "guides",
+      label: t("nav.guides"),
+      href: i18n.language === "en" ? "/guide/" : `/${i18n.language}/guide/`,
+    },
     { id: "faq", label: t("nav.faq"), href: `/${i18n.language}/faq` },
     {
       id: "contact",

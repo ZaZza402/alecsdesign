@@ -87,10 +87,10 @@
     gap: 0.5rem;
   }
   /* Hide the dot separators and published date on mobile — keep only reading time + author */
-  .guide-meta span:nth-child(n+4) {
+  .guide-meta span:nth-child(n + 4) {
     display: none;
   }
-  .guide-meta__dot:nth-child(n+4) {
+  .guide-meta__dot:nth-child(n + 4) {
     display: none;
   }
 }
@@ -240,7 +240,9 @@
   font-size: 0.875rem;
   color: #475569;
   text-decoration: none;
-  transition: color 0.15s, background 0.15s;
+  transition:
+    color 0.15s,
+    background 0.15s;
 }
 
 .guide-mobile-toc__link:hover {

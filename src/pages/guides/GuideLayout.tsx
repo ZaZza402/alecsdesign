@@ -184,15 +184,40 @@ export default function GuideLayout({
       <div className="guide-layout">
         {/* Breadcrumb — full on desktop, back-link only on mobile */}
         <nav className="guide-breadcrumb" aria-label="breadcrumb">
-          <Link to={hubSlug} className="guide-breadcrumb__back" aria-label="Back to guides">
+          <Link
+            to={hubSlug}
+            className="guide-breadcrumb__back"
+            aria-label="Back to guides"
+          >
             ← {data.breadcrumb}
           </Link>
-          <span className="guide-breadcrumb__sep guide-breadcrumb__desktop" aria-hidden="true">›</span>
-          <Link to="/" className="guide-breadcrumb__desktop">alecsdesign</Link>
-          <span className="guide-breadcrumb__sep guide-breadcrumb__desktop" aria-hidden="true">›</span>
-          <Link to={hubSlug} className="guide-breadcrumb__desktop">{data.breadcrumb}</Link>
-          <span className="guide-breadcrumb__sep guide-breadcrumb__desktop" aria-hidden="true">›</span>
-          <span className="guide-breadcrumb__desktop guide-breadcrumb__current">{data.title}</span>
+          <span
+            className="guide-breadcrumb__sep guide-breadcrumb__desktop"
+            aria-hidden="true"
+          >
+            ›
+          </span>
+          <Link to="/" className="guide-breadcrumb__desktop">
+            alecsdesign
+          </Link>
+          <span
+            className="guide-breadcrumb__sep guide-breadcrumb__desktop"
+            aria-hidden="true"
+          >
+            ›
+          </span>
+          <Link to={hubSlug} className="guide-breadcrumb__desktop">
+            {data.breadcrumb}
+          </Link>
+          <span
+            className="guide-breadcrumb__sep guide-breadcrumb__desktop"
+            aria-hidden="true"
+          >
+            ›
+          </span>
+          <span className="guide-breadcrumb__desktop guide-breadcrumb__current">
+            {data.title}
+          </span>
         </nav>
 
         {/* Reading meta strip */}
@@ -218,9 +243,21 @@ export default function GuideLayout({
             aria-expanded={mobileTocOpen}
           >
             <span>Contents</span>
-            <svg width="16" height="16" viewBox="0 0 20 20" fill="none" aria-hidden="true"
-              className={mobileTocOpen ? "guide-mobile-toc__chevron--open" : ""}>
-              <path d="M5 8l5 5 5-5" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+            <svg
+              width="16"
+              height="16"
+              viewBox="0 0 20 20"
+              fill="none"
+              aria-hidden="true"
+              className={mobileTocOpen ? "guide-mobile-toc__chevron--open" : ""}
+            >
+              <path
+                d="M5 8l5 5 5-5"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              />
             </svg>
           </button>
           {mobileTocOpen && (

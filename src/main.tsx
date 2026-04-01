@@ -437,6 +437,24 @@ function AppRoutes() {
             }
           />
 
+          {/* Guide pages - EN aliases with /en/ prefix (fallback) */}
+          <Route
+            path="/en/guide"
+            element={<PageWrapper lang="en"><GuidesHub lang="en" /></PageWrapper>}
+          />
+          <Route
+            path="/en/guide/how-much-does-a-website-cost"
+            element={<PageWrapper lang="en"><WebsiteCostGuide lang="en" /></PageWrapper>}
+          />
+          <Route
+            path="/en/guide/how-to-get-found-on-google"
+            element={<PageWrapper lang="en"><GoogleGuide lang="en" /></PageWrapper>}
+          />
+          <Route
+            path="/en/guide/what-your-website-needs"
+            element={<PageWrapper lang="en"><WebsiteNeedsGuide lang="en" /></PageWrapper>}
+          />
+
           {/* 404 - Not Found pages */}
           <Route
             path="/en/404"

@@ -11,6 +11,20 @@ const languages = [
   { code: "ro", label: "RO", fullName: "Română" },
 ];
 
+// Cross-reference map so switching language on a guide page
+// takes you to the correct slug in the target language.
+const GUIDE_SLUG_MAP: Record<string, Record<string, string>> = {
+  "how-much-does-a-website-cost": { en: "how-much-does-a-website-cost", it: "quanto-costa-un-sito-web", ro: "cat-costa-un-site-web" },
+  "how-to-get-found-on-google":   { en: "how-to-get-found-on-google",   it: "come-farsi-trovare-su-google",  ro: "cum-sa-apari-pe-google" },
+  "what-your-website-needs":      { en: "what-your-website-needs",      it: "cosa-deve-avere-il-sito-web",   ro: "ce-trebuie-sa-aiba-site-ul" },
+  "quanto-costa-un-sito-web":     { en: "how-much-does-a-website-cost", it: "quanto-costa-un-sito-web", ro: "cat-costa-un-site-web" },
+  "come-farsi-trovare-su-google": { en: "how-to-get-found-on-google",   it: "come-farsi-trovare-su-google",  ro: "cum-sa-apari-pe-google" },
+  "cosa-deve-avere-il-sito-web":  { en: "what-your-website-needs",      it: "cosa-deve-avere-il-sito-web",   ro: "ce-trebuie-sa-aiba-site-ul" },
+  "cat-costa-un-site-web":        { en: "how-much-does-a-website-cost", it: "quanto-costa-un-sito-web", ro: "cat-costa-un-site-web" },
+  "cum-sa-apari-pe-google":       { en: "how-to-get-found-on-google",   it: "come-farsi-trovare-su-google",  ro: "cum-sa-apari-pe-google" },
+  "ce-trebuie-sa-aiba-site-ul":   { en: "what-your-website-needs",      it: "cosa-deve-avere-il-sito-web",   ro: "ce-trebuie-sa-aiba-site-ul" },
+};
+
 const LanguageSwitcher: React.FC = () => {
   const { i18n } = useTranslation();
   const navigate = useNavigate();
@@ -22,18 +36,36 @@ const LanguageSwitcher: React.FC = () => {
 
   const handleLanguageChange = (langCode: string) => {
     saveLanguagePreference(langCode as "en" | "it" | "ro");
-
-    // Switch i18n content immediately (no remount, no scroll reset)
     i18n.changeLanguage(langCode);
 
-    // Update URL to reflect new language (replace so back button isn't polluted)
     const pathParts = location.pathname.split("/").filter(Boolean);
     if (pathParts.length > 0 && ["en", "it", "ro"].includes(pathParts[0])) {
       pathParts.shift();
     }
-    const newPath = `/${langCode}${
-      pathParts.length > 0 ? "/" + pathParts.join("/") : ""
-    }${location.hash}`;
+
+    // Guide-aware navigation — map slugs to the correct target language
+    if (pathParts[0] === "guide") {
+      const currentSlug = pathParts[1];
+      if (currentSlug && GUIDE_SLUG_MAP[currentSlug]) {
+        const targetSlug = GUIDE_SLUG_MAP[currentSlug][langCode];
+        const targetPath = langCode === "en"
+          ? `/guide/${targetSlug}`
+          : `/${langCode}/guide/${targetSlug}`;
+        navigate(targetPath, { replace: true });
+      } else {
+        // On the hub page
+        const targetPath = langCode === "en" ? "/guide/" : `/${langCode}/guide/`;
+        navigate(targetPath, { replace: true });
+      }
+      setIsOpen(false);
+      return;
+    }
+
+    // Default: reconstruct path with new lang prefix
+    // EN routes have no /en/ prefix (use root paths)
+    const newPath = langCode === "en" && pathParts.length > 0
+      ? `/${pathParts.join("/")}${location.hash}`
+      : `/${langCode}${pathParts.length > 0 ? "/" + pathParts.join("/") : ""}${location.hash}`;
     navigate(newPath, { replace: true });
 
     setIsOpen(false);
