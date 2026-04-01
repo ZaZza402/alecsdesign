@@ -333,14 +333,12 @@ export default function GuideLayout({
               <FaqAccordion items={data.faq.items} />
             </div>
 
-            {/* Author box — trust signal: who wrote this, are they credible */}
-            <div className="guide-author">
-              <div className="guide-author__avatar" aria-hidden="true">
-                A
-              </div>
-              <div className="guide-author__info">
-                <p className="guide-author__name">Alex</p>
-                <p className="guide-author__bio">{data.authorBio}</p>
+            {/* Author quote */}
+            <blockquote className="guide-author">
+              <p className="guide-author__quote">{data.authorBio}</p>
+              <footer className="guide-author__footer">
+                <span className="guide-author__name">Alex</span>
+                <span className="guide-author__sep">·</span>
                 <a
                   href="https://wa.me/393801503074"
                   target="_blank"
@@ -349,8 +347,8 @@ export default function GuideLayout({
                 >
                   {data.authorCta} →
                 </a>
-              </div>
-            </div>
+              </footer>
+            </blockquote>
 
             {/* CTA block — single conversion point, after trust is established */}
             <div className="guide-cta-block">
