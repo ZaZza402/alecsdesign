@@ -150,6 +150,16 @@ const Footer = () => {
               <li>
                 <button
                   onClick={() => {
+                    trackButtonClick("Guides", "Footer Quick Links");
+                    navigate(getLocalizedRoute("/guide/"));
+                  }}
+                >
+                  {t("footer.quickLinks.guides")}
+                </button>
+              </li>
+              <li>
+                <button
+                  onClick={() => {
                     trackButtonClick("FAQ", "Footer Quick Links");
                     const lang = i18n.language || "en";
                     navigate(`/${lang}/faq`);

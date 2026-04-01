@@ -78,7 +78,9 @@ export default function GuidesHub({ lang }: { lang: string }) {
 
   // Pull card data from already-loaded i18n resources
   const cards = GUIDE_KEYS.map((key) => {
-    const data = t(`guides.${key}`, { returnObjects: true }) as GuideCardData & {
+    const data = t(`guides.${key}`, {
+      returnObjects: true,
+    }) as GuideCardData & {
       [k: string]: unknown;
     };
     return {
@@ -131,7 +133,9 @@ export default function GuidesHub({ lang }: { lang: string }) {
                   : card.lead}
               </p>
               <div className="guides-hub__card-footer">
-                <span className="guides-hub__card-time">{card.readingTime}</span>
+                <span className="guides-hub__card-time">
+                  {card.readingTime}
+                </span>
                 <span className="guides-hub__card-cta">{strings.readMore}</span>
               </div>
             </Link>

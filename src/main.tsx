@@ -18,9 +18,13 @@ const PortfolioPage = lazy(() => import("./pages/PortfolioPage.tsx"));
 const ContactPage = lazy(() => import("./pages/ContactPage.tsx"));
 const AboutPage = lazy(() => import("./pages/AboutPage.tsx"));
 const GuidesHub = lazy(() => import("./pages/GuidesHub.tsx"));
-const WebsiteCostGuide = lazy(() => import("./pages/guides/WebsiteCostGuide.tsx"));
+const WebsiteCostGuide = lazy(
+  () => import("./pages/guides/WebsiteCostGuide.tsx"),
+);
 const GoogleGuide = lazy(() => import("./pages/guides/GoogleGuide.tsx"));
-const WebsiteNeedsGuide = lazy(() => import("./pages/guides/WebsiteNeedsGuide.tsx"));
+const WebsiteNeedsGuide = lazy(
+  () => import("./pages/guides/WebsiteNeedsGuide.tsx"),
+);
 
 import PageTransition from "./components/ui/PageTransition";
 import Header from "./components/layout/Header";

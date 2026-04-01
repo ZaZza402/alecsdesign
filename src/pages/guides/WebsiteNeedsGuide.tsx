@@ -3,16 +3,34 @@ import GuideLayout from "./GuideLayout";
 
 const RELATED: Record<string, Array<{ slug: string; titleKey: string }>> = {
   en: [
-    { slug: "/guide/how-much-does-a-website-cost", titleKey: "guides.websiteCost.title" },
-    { slug: "/guide/how-to-get-found-on-google", titleKey: "guides.google.title" },
+    {
+      slug: "/guide/how-much-does-a-website-cost",
+      titleKey: "guides.websiteCost.title",
+    },
+    {
+      slug: "/guide/how-to-get-found-on-google",
+      titleKey: "guides.google.title",
+    },
   ],
   it: [
-    { slug: "/it/guide/quanto-costa-un-sito-web", titleKey: "guides.websiteCost.title" },
-    { slug: "/it/guide/come-farsi-trovare-su-google", titleKey: "guides.google.title" },
+    {
+      slug: "/it/guide/quanto-costa-un-sito-web",
+      titleKey: "guides.websiteCost.title",
+    },
+    {
+      slug: "/it/guide/come-farsi-trovare-su-google",
+      titleKey: "guides.google.title",
+    },
   ],
   ro: [
-    { slug: "/ro/guide/cat-costa-un-site-web", titleKey: "guides.websiteCost.title" },
-    { slug: "/ro/guide/cum-sa-apari-pe-google", titleKey: "guides.google.title" },
+    {
+      slug: "/ro/guide/cat-costa-un-site-web",
+      titleKey: "guides.websiteCost.title",
+    },
+    {
+      slug: "/ro/guide/cum-sa-apari-pe-google",
+      titleKey: "guides.google.title",
+    },
   ],
 };
 

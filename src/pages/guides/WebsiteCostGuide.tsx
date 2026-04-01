@@ -3,16 +3,34 @@ import GuideLayout from "./GuideLayout";
 
 const RELATED: Record<string, Array<{ slug: string; titleKey: string }>> = {
   en: [
-    { slug: "/guide/how-to-get-found-on-google", titleKey: "guides.google.title" },
-    { slug: "/guide/what-your-website-needs", titleKey: "guides.websiteNeeds.title" },
+    {
+      slug: "/guide/how-to-get-found-on-google",
+      titleKey: "guides.google.title",
+    },
+    {
+      slug: "/guide/what-your-website-needs",
+      titleKey: "guides.websiteNeeds.title",
+    },
   ],
   it: [
-    { slug: "/it/guide/come-farsi-trovare-su-google", titleKey: "guides.google.title" },
-    { slug: "/it/guide/cosa-deve-avere-il-sito-web", titleKey: "guides.websiteNeeds.title" },
+    {
+      slug: "/it/guide/come-farsi-trovare-su-google",
+      titleKey: "guides.google.title",
+    },
+    {
+      slug: "/it/guide/cosa-deve-avere-il-sito-web",
+      titleKey: "guides.websiteNeeds.title",
+    },
   ],
   ro: [
-    { slug: "/ro/guide/cum-sa-apari-pe-google", titleKey: "guides.google.title" },
-    { slug: "/ro/guide/ce-trebuie-sa-aiba-site-ul", titleKey: "guides.websiteNeeds.title" },
+    {
+      slug: "/ro/guide/cum-sa-apari-pe-google",
+      titleKey: "guides.google.title",
+    },
+    {
+      slug: "/ro/guide/ce-trebuie-sa-aiba-site-ul",
+      titleKey: "guides.websiteNeeds.title",
+    },
   ],
 };
 

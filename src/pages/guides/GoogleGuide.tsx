@@ -3,16 +3,34 @@ import GuideLayout from "./GuideLayout";
 
 const RELATED: Record<string, Array<{ slug: string; titleKey: string }>> = {
   en: [
-    { slug: "/guide/how-much-does-a-website-cost", titleKey: "guides.websiteCost.title" },
-    { slug: "/guide/what-your-website-needs", titleKey: "guides.websiteNeeds.title" },
+    {
+      slug: "/guide/how-much-does-a-website-cost",
+      titleKey: "guides.websiteCost.title",
+    },
+    {
+      slug: "/guide/what-your-website-needs",
+      titleKey: "guides.websiteNeeds.title",
+    },
   ],
   it: [
-    { slug: "/it/guide/quanto-costa-un-sito-web", titleKey: "guides.websiteCost.title" },
-    { slug: "/it/guide/cosa-deve-avere-il-sito-web", titleKey: "guides.websiteNeeds.title" },
+    {
+      slug: "/it/guide/quanto-costa-un-sito-web",
+      titleKey: "guides.websiteCost.title",
+    },
+    {
+      slug: "/it/guide/cosa-deve-avere-il-sito-web",
+      titleKey: "guides.websiteNeeds.title",
+    },
   ],
   ro: [
-    { slug: "/ro/guide/cat-costa-un-site-web", titleKey: "guides.websiteCost.title" },
-    { slug: "/ro/guide/ce-trebuie-sa-aiba-site-ul", titleKey: "guides.websiteNeeds.title" },
+    {
+      slug: "/ro/guide/cat-costa-un-site-web",
+      titleKey: "guides.websiteCost.title",
+    },
+    {
+      slug: "/ro/guide/ce-trebuie-sa-aiba-site-ul",
+      titleKey: "guides.websiteNeeds.title",
+    },
   ],
 };
 

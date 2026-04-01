@@ -107,6 +107,7 @@ export default function GuideLayout({
   canonical,
 }: GuideLayoutProps) {
   const { t } = useTranslation();
+  const [mobileTocOpen, setMobileTocOpen] = useState(false);
 
   const data = t(`guides.${guideKey}`, { returnObjects: true }) as GuideData;
 
@@ -175,17 +176,23 @@ export default function GuideLayout({
         ogType="article"
         canonical={canonical}
         article={{ publishedTime: data.meta.published, author: "Alex" }}
-        jsonLd={[articleJsonLd, faqJsonLd, breadcrumbJsonLd] as unknown as object}
+        jsonLd={
+          [articleJsonLd, faqJsonLd, breadcrumbJsonLd] as unknown as object
+        }
       />
 
       <div className="guide-layout">
-        {/* Breadcrumb */}
+        {/* Breadcrumb — full on desktop, back-link only on mobile */}
         <nav className="guide-breadcrumb" aria-label="breadcrumb">
-          <Link to="/">alecsdesign</Link>
-          <span className="guide-breadcrumb__sep" aria-hidden="true">›</span>
-          <Link to={hubSlug}>{data.breadcrumb}</Link>
-          <span className="guide-breadcrumb__sep" aria-hidden="true">›</span>
-          <span>{data.title}</span>
+          <Link to={hubSlug} className="guide-breadcrumb__back" aria-label="Back to guides">
+            ← {data.breadcrumb}
+          </Link>
+          <span className="guide-breadcrumb__sep guide-breadcrumb__desktop" aria-hidden="true">›</span>
+          <Link to="/" className="guide-breadcrumb__desktop">alecsdesign</Link>
+          <span className="guide-breadcrumb__sep guide-breadcrumb__desktop" aria-hidden="true">›</span>
+          <Link to={hubSlug} className="guide-breadcrumb__desktop">{data.breadcrumb}</Link>
+          <span className="guide-breadcrumb__sep guide-breadcrumb__desktop" aria-hidden="true">›</span>
+          <span className="guide-breadcrumb__desktop guide-breadcrumb__current">{data.title}</span>
         </nav>
 
         {/* Reading meta strip */}
@@ -202,6 +209,36 @@ export default function GuideLayout({
 
         {/* Lead */}
         <p className="guide-lead">{data.lead}</p>
+
+        {/* Mobile TOC — collapsible, above article, hidden on desktop */}
+        <div className="guide-mobile-toc">
+          <button
+            className="guide-mobile-toc__toggle"
+            onClick={() => setMobileTocOpen(!mobileTocOpen)}
+            aria-expanded={mobileTocOpen}
+          >
+            <span>Contents</span>
+            <svg width="16" height="16" viewBox="0 0 20 20" fill="none" aria-hidden="true"
+              className={mobileTocOpen ? "guide-mobile-toc__chevron--open" : ""}>
+              <path d="M5 8l5 5 5-5" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+            </svg>
+          </button>
+          {mobileTocOpen && (
+            <ul className="guide-mobile-toc__list">
+              {data.sections.map((section) => (
+                <li key={section.id}>
+                  <a
+                    href={`#${section.id}`}
+                    className="guide-mobile-toc__link"
+                    onClick={() => setMobileTocOpen(false)}
+                  >
+                    {section.heading}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          )}
+        </div>
 
         {/* Two-column body */}
         <div className="guide-body">
@@ -228,7 +265,9 @@ export default function GuideLayout({
                 <h3 className="guide-table-block__heading">
                   {data.costTable.heading}
                 </h3>
-                <p className="guide-table-block__intro">{data.costTable.intro}</p>
+                <p className="guide-table-block__intro">
+                  {data.costTable.intro}
+                </p>
                 <table className="guide-table">
                   <thead>
                     <tr>
@@ -270,7 +309,9 @@ export default function GuideLayout({
 
             {/* Author box */}
             <div className="guide-author">
-              <div className="guide-author__avatar" aria-hidden="true">A</div>
+              <div className="guide-author__avatar" aria-hidden="true">
+                A
+              </div>
               <div className="guide-author__info">
                 <p className="guide-author__name">Alex</p>
                 <p className="guide-author__bio">{data.authorBio}</p>
