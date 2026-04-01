@@ -21,6 +21,46 @@
       "destination": "/api/index"
     },
     {
+      "source": "/wp-admin/:path*",
+      "destination": "/api/blocked"
+    },
+    {
+      "source": "/wp-content/:path*",
+      "destination": "/api/blocked"
+    },
+    {
+      "source": "/wp-includes/:path*",
+      "destination": "/api/blocked"
+    },
+    {
+      "source": "/wordpress/:path*",
+      "destination": "/api/blocked"
+    },
+    {
+      "source": "/wp-login.php",
+      "destination": "/api/blocked"
+    },
+    {
+      "source": "/xmlrpc.php",
+      "destination": "/api/blocked"
+    },
+    {
+      "source": "/phpmyadmin/:path*",
+      "destination": "/api/blocked"
+    },
+    {
+      "source": "/.env",
+      "destination": "/api/blocked"
+    },
+    {
+      "source": "/.git/:path*",
+      "destination": "/api/blocked"
+    },
+    {
+      "source": "/:path(.*\\.php)",
+      "destination": "/api/blocked"
+    },
+    {
       "source": "/:path((?!sitemap.*\\.xml|sitemap-.*\\.xml|robots\\.txt|api|logo).*)",
       "destination": "/api/index"
     }
