@@ -333,24 +333,7 @@ export default function GuideLayout({
               <FaqAccordion items={data.faq.items} />
             </div>
 
-            {/* CTA block — after content is consumed */}
-            <div className="guide-cta-block">
-              <div className="guide-cta-block__text">
-                <p>
-                  <strong>{t("guideUi.cta.heading")}</strong> {data.authorCta}
-                </p>
-              </div>
-              <a
-                href="https://wa.me/393801503074"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="guide-cta-block__btn"
-              >
-                {t("guideUi.cta.btn")}
-              </a>
-            </div>
-
-            {/* Author box */}
+            {/* Author box — trust signal: who wrote this, are they credible */}
             <div className="guide-author">
               <div className="guide-author__avatar" aria-hidden="true">
                 A
@@ -369,6 +352,24 @@ export default function GuideLayout({
               </div>
             </div>
 
+            {/* CTA block — single conversion point, after trust is established */}
+            <div className="guide-cta-block">
+              <div className="guide-cta-block__text">
+                <strong className="guide-cta-block__heading">
+                  {t("guideUi.cta.heading")}
+                </strong>
+                <p className="guide-cta-block__body">{t("guideUi.cta.body")}</p>
+              </div>
+              <a
+                href="https://wa.me/393801503074"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="guide-cta-block__btn"
+              >
+                {t("guideUi.cta.btn")}
+              </a>
+            </div>
+
             {/* Related guides */}
             {relatedGuides.length > 0 && (
               <div className="guide-related">
@@ -380,7 +381,9 @@ export default function GuideLayout({
                       to={rel.slug}
                       className="guide-related__card"
                     >
-                      <p className="guide-related__card-label">{t("guideUi.related.label")}</p>
+                      <p className="guide-related__card-label">
+                        {t("guideUi.related.label")}
+                      </p>
                       <p className="guide-related__card-title">{rel.title}</p>
                     </Link>
                   ))}
@@ -405,7 +408,9 @@ export default function GuideLayout({
             </nav>
 
             <div className="guide-sidebar-cta">
-              <p className="guide-sidebar-cta__heading">{t("guideUi.sidebar.heading")}</p>
+              <p className="guide-sidebar-cta__heading">
+                {t("guideUi.sidebar.heading")}
+              </p>
               <p className="guide-sidebar-cta__body">
                 {t("guideUi.sidebar.body")}
               </p>

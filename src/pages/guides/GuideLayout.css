@@ -183,7 +183,7 @@
 
 @media (max-width: 640px) {
   .guide-section__paras p {
-    font-size: 0.9375rem;
+    font-size: 1rem;
   }
 }
 
@@ -336,26 +336,40 @@
   flex-wrap: wrap;
 }
 
+.guide-cta-block__heading {
+  display: block;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 0.25rem;
+}
+
+.guide-cta-block__body {
+  font-size: 0.9375rem;
+  color: #475569;
+  margin: 0;
+  line-height: 1.5;
+}
+
 @media (max-width: 640px) {
   .guide-cta-block {
     background: #0f172a;
     border-color: #0f172a;
     border-radius: 16px;
     padding: 1.5rem;
-    margin: 2.5rem 0 2rem;
+    margin: 2rem 0;
     flex-direction: column;
     align-items: stretch;
-    gap: 1rem;
+    gap: 0.875rem;
   }
-  .guide-cta-block__text p {
+  .guide-cta-block__heading {
+    color: #fff;
+    font-size: 1.0625rem;
+    margin-bottom: 0.125rem;
+  }
+  .guide-cta-block__body {
     color: #94a3b8;
     font-size: 0.9375rem;
-  }
-  .guide-cta-block__text strong {
-    color: #fff;
-    display: block;
-    font-size: 1.0625rem;
-    margin-bottom: 0.25rem;
   }
   .guide-cta-block__btn {
     background: #f35422;
@@ -363,9 +377,11 @@
     width: 100%;
     text-align: center;
     justify-content: center;
-    padding: 0.9375rem 1.25rem;
+    padding: 1rem 1.25rem;
     font-size: 1rem;
+    font-weight: 700;
     border-radius: 10px;
+    letter-spacing: 0.01em;
   }
   .guide-cta-block__btn:hover {
     background: #d94315;
@@ -504,7 +520,15 @@
     border-right: 1px solid #e2e8f0;
     border-bottom: 1px solid #e2e8f0;
   }
+  /* Show avatar on mobile — it's the "named person" trust signal */
   .guide-author__avatar {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    font-size: 1rem;
+  }
+  /* On mobile, author box is trust only — CTA block below handles the ask */
+  .guide-author__cta {
     display: none;
   }
 }
