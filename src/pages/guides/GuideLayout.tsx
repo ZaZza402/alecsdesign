@@ -337,8 +337,6 @@ export default function GuideLayout({
             <blockquote className="guide-author">
               <p className="guide-author__quote">{data.authorBio}</p>
               <footer className="guide-author__footer">
-                <span className="guide-author__name">Alex</span>
-                <span className="guide-author__sep">·</span>
                 <a
                   href="https://wa.me/393801503074"
                   target="_blank"

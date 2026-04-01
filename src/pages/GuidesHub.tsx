@@ -90,9 +90,6 @@ export default function GuidesHub({ lang }: { lang: string }) {
           {cards.map((card) => (
             <Link key={card.key} to={card.slug} className="guides-hub__card">
               <div className="guides-hub__card-body">
-                <span className="guides-hub__card-label">
-                  {t("guideUi.hub.cardLabel")}
-                </span>
                 <h2 className="guides-hub__card-title">{card.title}</h2>
                 <p className="guides-hub__card-lead">
                   {card.lead.length > 120
