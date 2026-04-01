@@ -388,22 +388,6 @@
   }
 }
 
-.guide-cta-block__text {
-  flex: 1;
-  min-width: 200px;
-}
-
-.guide-cta-block__text p {
-  font-size: 1rem;
-  color: #334155;
-  margin: 0;
-  line-height: 1.5;
-}
-
-.guide-cta-block__text strong {
-  color: #0f172a;
-}
-
 .guide-cta-block__btn {
   display: inline-flex;
   align-items: center;
