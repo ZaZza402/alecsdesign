@@ -1,15 +1,16 @@
 import { motion } from "framer-motion";
 import { type ReactNode, useLayoutEffect } from "react";
+import { useLocation } from "react-router-dom";
 
 interface PageTransitionProps {
   children: ReactNode;
 }
 
 const PageTransition = ({ children }: PageTransitionProps) => {
-  // Scroll to top when the NEW page mounts.
-  // With AnimatePresence mode="wait", the old page has fully exited before
-  // this fires — so the scroll jump is invisible to the user.
+  const location = useLocation();
   useLayoutEffect(() => {
+    // Don't scroll to top on language switch — the user is reading the same page
+    if ((location.state as { langSwitch?: boolean } | null)?.langSwitch) return;
     window.scrollTo(0, 0);
   }, []);
 

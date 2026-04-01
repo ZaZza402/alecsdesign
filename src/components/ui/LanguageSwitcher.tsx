@@ -88,12 +88,12 @@ const LanguageSwitcher: React.FC = () => {
           langCode === "en"
             ? `/guide/${targetSlug}`
             : `/${langCode}/guide/${targetSlug}`;
-        navigate(targetPath, { replace: true });
+        navigate(targetPath, { replace: true, state: { langSwitch: true } });
       } else {
         // On the hub page
         const targetPath =
           langCode === "en" ? "/guide/" : `/${langCode}/guide/`;
-        navigate(targetPath, { replace: true });
+        navigate(targetPath, { replace: true, state: { langSwitch: true } });
       }
       setIsOpen(false);
       return;
@@ -105,7 +105,7 @@ const LanguageSwitcher: React.FC = () => {
       langCode === "en" && pathParts.length > 0
         ? `/${pathParts.join("/")}${location.hash}`
         : `/${langCode}${pathParts.length > 0 ? "/" + pathParts.join("/") : ""}${location.hash}`;
-    navigate(newPath, { replace: true });
+    navigate(newPath, { replace: true, state: { langSwitch: true } });
 
     setIsOpen(false);
   };

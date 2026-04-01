@@ -494,9 +494,10 @@
 
 @media (max-width: 640px) {
   .guide-author {
-    flex-direction: column;
-    gap: 0.75rem;
-    padding: 1.25rem 1rem;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 0.875rem;
+    padding: 1rem;
     border-radius: 12px;
     border-left: 3px solid #f35422;
     background: #f8fafc;
@@ -510,6 +511,7 @@
     width: 40px;
     height: 40px;
     font-size: 1rem;
+    flex-shrink: 0;
   }
   /* On mobile, author box is trust only — CTA block below handles the ask */
   .guide-author__cta {
