@@ -108,27 +108,21 @@ const ContactForm = () => {
 
       if (!response.ok) throw new Error("failed");
 
+      type GTagFn = (cmd: string, action: string, params?: Record<string, unknown>) => void;
       if (
         typeof window !== "undefined" &&
-        (window as typeof window & { gtag?: Function }).gtag
+        (window as typeof window & { gtag?: GTagFn }).gtag
       ) {
-        (window as typeof window & { gtag: Function }).gtag(
-          "event",
-          "form_submit_success",
-          {
-            event_category: "Form",
-            event_label: "Contact Form",
-            value: 1,
-          },
-        );
-        (window as typeof window & { gtag: Function }).gtag(
-          "event",
-          "generate_lead",
-          {
-            currency: "EUR",
-            value: 500,
-          },
-        );
+        const gtag = (window as typeof window & { gtag: GTagFn }).gtag;
+        gtag("event", "form_submit_success", {
+          event_category: "Form",
+          event_label: "Contact Form",
+          value: 1,
+        });
+        gtag("event", "generate_lead", {
+          currency: "EUR",
+          value: 500,
+        });
       }
 
       setSubmitted(true);
@@ -245,8 +239,6 @@ const ContactForm = () => {
                       setData((d) => ({ ...d, name: e.target.value }))
                     }
                     autoComplete="name"
-                    // eslint-disable-next-line jsx-a11y/no-autofocus
-                    autoFocus
                   />
                 </div>
                 <div className="cf__field">
@@ -350,8 +342,6 @@ const ContactForm = () => {
                         autoComplete={
                           data.preference === "email" ? "email" : "tel"
                         }
-                        // eslint-disable-next-line jsx-a11y/no-autofocus
-                        autoFocus
                       />
                     </motion.div>
                   )}
