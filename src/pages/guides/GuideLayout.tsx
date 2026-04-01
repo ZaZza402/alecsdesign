@@ -113,6 +113,13 @@ export default function GuideLayout({
 
   const hubSlug = lang === "en" ? "/guide/" : `/${lang}/guide/`;
 
+  const ctaHeadings: Record<string, string> = {
+    en: "Ready to talk?",
+    it: "Hai un progetto?",
+    ro: "Ai un proiect?",
+  };
+  const ctaHeading = ctaHeadings[lang] ?? "Ready to talk?";
+
   // Build JSON-LD structured data
   const articleJsonLd = {
     "@context": "https://schema.org",
@@ -327,11 +334,17 @@ export default function GuideLayout({
               </div>
             )}
 
-            {/* Inline CTA block */}
+            {/* FAQ — answers questions raised by the article */}
+            <div className="guide-faq">
+              <h2 className="guide-faq__heading">{data.faq.heading}</h2>
+              <FaqAccordion items={data.faq.items} />
+            </div>
+
+            {/* CTA block — after content is consumed */}
             <div className="guide-cta-block">
               <div className="guide-cta-block__text">
                 <p>
-                  <strong>Ready to talk?</strong> {data.authorCta}
+                  <strong>{ctaHeading}</strong> {data.authorCta}
                 </p>
               </div>
               <a
@@ -361,12 +374,6 @@ export default function GuideLayout({
                   {data.authorCta} →
                 </a>
               </div>
-            </div>
-
-            {/* FAQ */}
-            <div className="guide-faq">
-              <h2 className="guide-faq__heading">{data.faq.heading}</h2>
-              <FaqAccordion items={data.faq.items} />
             </div>
 
             {/* Related guides */}

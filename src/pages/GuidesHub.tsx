@@ -125,19 +125,24 @@ export default function GuidesHub({ lang }: { lang: string }) {
         <div className="guides-hub__grid">
           {cards.map((card) => (
             <Link key={card.key} to={card.slug} className="guides-hub__card">
-              <span className="guides-hub__card-label">{strings.label}</span>
-              <h2 className="guides-hub__card-title">{card.title}</h2>
-              <p className="guides-hub__card-lead">
-                {card.lead.length > 120
-                  ? card.lead.slice(0, 117) + "..."
-                  : card.lead}
-              </p>
-              <div className="guides-hub__card-footer">
-                <span className="guides-hub__card-time">
-                  {card.readingTime}
-                </span>
-                <span className="guides-hub__card-cta">{strings.readMore}</span>
+              <div className="guides-hub__card-body">
+                <span className="guides-hub__card-label">{strings.label}</span>
+                <h2 className="guides-hub__card-title">{card.title}</h2>
+                <p className="guides-hub__card-lead">
+                  {card.lead.length > 120
+                    ? card.lead.slice(0, 117) + "..."
+                    : card.lead}
+                </p>
+                <div className="guides-hub__card-footer">
+                  <span className="guides-hub__card-time">
+                    {card.readingTime}
+                  </span>
+                  <span className="guides-hub__card-cta">
+                    {strings.readMore}
+                  </span>
+                </div>
               </div>
+              <span className="guides-hub__card-arrow">›</span>
             </Link>
           ))}
         </div>

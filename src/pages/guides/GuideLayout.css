@@ -338,15 +338,37 @@
 
 @media (max-width: 640px) {
   .guide-cta-block {
+    background: #0f172a;
+    border-color: #0f172a;
+    border-radius: 16px;
+    padding: 1.5rem;
+    margin: 2.5rem 0 2rem;
     flex-direction: column;
     align-items: stretch;
     gap: 1rem;
-    padding: 1.25rem;
-    margin: 2rem 0;
+  }
+  .guide-cta-block__text p {
+    color: #94a3b8;
+    font-size: 0.9375rem;
+  }
+  .guide-cta-block__text strong {
+    color: #fff;
+    display: block;
+    font-size: 1.0625rem;
+    margin-bottom: 0.25rem;
   }
   .guide-cta-block__btn {
+    background: #f35422;
+    color: #fff;
+    width: 100%;
     text-align: center;
     justify-content: center;
+    padding: 0.9375rem 1.25rem;
+    font-size: 1rem;
+    border-radius: 10px;
+  }
+  .guide-cta-block__btn:hover {
+    background: #d94315;
   }
 }
 
@@ -467,7 +489,24 @@
   border: 1px solid #e2e8f0;
   border-radius: 12px;
   padding: 1.5rem;
-  margin-top: 3.5rem;
+  margin-top: 2rem;
+}
+
+@media (max-width: 640px) {
+  .guide-author {
+    flex-direction: column;
+    gap: 0.75rem;
+    padding: 1.25rem 1rem;
+    border-radius: 12px;
+    border-left: 3px solid #f35422;
+    background: #f8fafc;
+    border-top: 1px solid #e2e8f0;
+    border-right: 1px solid #e2e8f0;
+    border-bottom: 1px solid #e2e8f0;
+  }
+  .guide-author__avatar {
+    display: none;
+  }
 }
 
 .guide-author__avatar {
@@ -516,9 +555,43 @@
   text-decoration: underline;
 }
 
+@media (max-width: 640px) {
+  .guide-author__name {
+    font-size: 1rem;
+  }
+  .guide-author__bio {
+    margin-bottom: 0.875rem;
+    font-size: 0.875rem;
+    color: #475569;
+  }
+  .guide-author__cta {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #25d366;
+    color: #fff;
+    padding: 0.75rem 1rem;
+    border-radius: 8px;
+    font-size: 0.9375rem;
+    font-weight: 600;
+    text-decoration: none;
+    gap: 0.5rem;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .guide-author__cta:hover {
+    text-decoration: none;
+    background: #1fbd5a;
+  }
+  /* Kill the " →" suffix on mobile since it's inside a button */
+  .guide-author__cta::after {
+    content: none;
+  }
+}
+
 /* Related guides */
 .guide-related {
-  margin-top: 3.5rem;
+  margin-top: 3rem;
   padding-top: 2rem;
   border-top: 1px solid #e2e8f0;
 }
@@ -538,6 +611,20 @@
   gap: 1rem;
 }
 
+@media (max-width: 640px) {
+  .guide-related {
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+  }
+  .guide-related__cards {
+    grid-template-columns: 1fr;
+    gap: 0;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    overflow: hidden;
+  }
+}
+
 .guide-related__card {
   background: #fff;
   border: 1px solid #e2e8f0;
@@ -553,6 +640,36 @@
 .guide-related__card:hover {
   border-color: #f35422;
   box-shadow: 0 4px 16px rgba(243, 84, 34, 0.1);
+}
+
+@media (max-width: 640px) {
+  .guide-related__card {
+    border: none;
+    border-bottom: 1px solid #e2e8f0;
+    border-radius: 0;
+    padding: 0.875rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.75rem;
+  }
+  .guide-related__card:last-child {
+    border-bottom: none;
+  }
+  .guide-related__card:hover {
+    background: #fff8f6;
+    box-shadow: none;
+  }
+  .guide-related__card-title {
+    flex: 1;
+    min-width: 0;
+  }
+  .guide-related__card::after {
+    content: "›";
+    color: #cbd5e1;
+    font-size: 1.25rem;
+    flex-shrink: 0;
+  }
 }
 
 .guide-related__card-label {
