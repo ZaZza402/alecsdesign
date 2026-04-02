@@ -1,4 +1,4 @@
-# https://www.robotstxt.org/robotstxt.html
+# https://www.alecsdesign.xyz/robots.txt
 User-agent: *
 Allow: /
 
