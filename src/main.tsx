@@ -96,7 +96,7 @@ function AppRoutes() {
       <AnimatePresence mode="wait">
         <Routes location={location} key={routeKey(location.pathname)}>
           {/* Root domain serves English by default for SEO */}
-          <Route path="/" element={<LanguageWrapper lang="en" />} />
+          <Route path="/*" element={<LanguageWrapper lang="en" />} />
 
           {/* Language-specific routes - Note the trailing * to allow nested routes in App.tsx */}
           <Route path="/en/*" element={<LanguageWrapper lang="en" />} />
