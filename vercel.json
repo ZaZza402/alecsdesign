@@ -21,6 +21,14 @@
       "destination": "/api/index"
     },
     {
+      "source": "/sitemap",
+      "destination": "/api/sitemap"
+    },
+    {
+      "source": "/sitemap.xml",
+      "destination": "/api/sitemap"
+    },
+    {
       "source": "/wp-admin/:path*",
       "destination": "/api/blocked"
     },
@@ -61,7 +69,7 @@
       "destination": "/api/blocked"
     },
     {
-      "source": "/:path((?!sitemap.*\\.xml|sitemap-.*\\.xml|robots\\.txt|api|logo).*)",
+      "source": "/:path((?!sitemap|robots\\.txt|api|logo).*)",
       "destination": "/api/index"
     }
   ],
@@ -80,6 +88,23 @@
   ],
   "headers": [
     {
+      "source": "/sitemap",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "application/xml; charset=utf-8"
+        },
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=3600, s-maxage=3600"
+        }
+      ]
+    },
+    {
       "source": "/sitemap.xml",
       "headers": [
         {
@@ -92,7 +117,7 @@
         },
         {
           "key": "Cache-Control",
-          "value": "no-cache, no-store, must-revalidate"
+          "value": "public, max-age=3600, s-maxage=3600"
         }
       ]
     },

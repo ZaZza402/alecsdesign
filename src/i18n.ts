@@ -67,11 +67,6 @@ import roCookies from "./locales/ro/components/cookies.json";
 import roCommon from "./locales/ro/components/common.json";
 import roSeo from "./locales/ro/components/seo.json";
 
-// Import calculator translations
-import itCalculator from "./locales/it/calculator.json";
-import enCalculator from "./locales/en/calculator.json";
-import roCalculator from "./locales/ro/calculator.json";
-
 // Import floating contact translations
 import itFloatingContact from "./locales/it/floatingContact.json";
 import enFloatingContact from "./locales/en/floatingContact.json";
@@ -126,7 +121,6 @@ i18n
           common: enCommon,
           seo: enSeo,
           // Other
-          ...enCalculator,
           ...enFloatingContact,
           // Guides
           guides: {
@@ -159,7 +153,6 @@ i18n
           common: itCommon,
           seo: itSeo,
           // Other
-          ...itCalculator,
           ...itFloatingContact,
           // Guides
           guides: {
@@ -192,7 +185,6 @@ i18n
           common: roCommon,
           seo: roSeo,
           // Other
-          ...roCalculator,
           ...roFloatingContact,
           // Guides
           guides: {
