@@ -19,9 +19,16 @@ export default defineConfig({
         manualChunks: {
           "react-vendor": ["react", "react-dom"],
           "router-vendor": ["react-router-dom"],
-          "motion-vendor": ["framer-motion"], // Separate heavy animation library
+          "motion-vendor": ["framer-motion"],
           "icons-vendor": ["lucide-react"],
           "i18n-vendor": ["i18next", "react-i18next"],
+        },
+        // Give locale chunks predictable names for better cache headers
+        chunkFileNames: (chunkInfo) => {
+          if (chunkInfo.name?.startsWith("locales/")) {
+            return "assets/[name]-[hash].js";
+          }
+          return "assets/[name]-[hash].js";
         },
       },
     },

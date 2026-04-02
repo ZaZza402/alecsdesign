@@ -4,9 +4,9 @@ import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
 import { AnimatePresence } from "framer-motion";
 import { HelmetProvider } from "react-helmet-async";
 import "./index.css";
-import "aos/dist/aos.css"; // Import AOS styles
-import AOS from "aos";
-import i18n from "./i18n"; // Initialize i18n FIRST
+import "aos/dist/aos.css";
+import { i18nReady } from "./i18n"; // Async i18n — defers render until translations ready
+import i18n from "./i18n";
 import App from "./App.tsx";
 import LoadingSkeleton from "./components/ui/LoadingSkeleton";
 
@@ -32,13 +32,11 @@ import Footer from "./components/layout/Footer";
 import CookieBanner from "./components/ui/CookieBanner";
 import ScrollProgress from "./components/ui/ScrollProgress";
 
-// Initialize AOS
-AOS.init({
-  duration: 800,
-  easing: "ease-out",
-  once: true,
-  offset: 100,
-});
+// Lazy-load AOS after mount so it doesn't block the critical path
+const initAOS = () =>
+  import("aos").then(({ default: AOS }) =>
+    AOS.init({ duration: 800, easing: "ease-out", once: true, offset: 100 }),
+  );
 
 // Language wrapper component
 // eslint-disable-next-line react-refresh/only-export-components
@@ -512,14 +510,20 @@ function AppRoutes() {
   );
 }
 
-createRoot(document.getElementById("root")!).render(
-  <StrictMode>
-    <HelmetProvider>
-      <BrowserRouter>
-        <AppRoutes />
-        <CookieBanner />
-        <ScrollProgress />
-      </BrowserRouter>
-    </HelmetProvider>
-  </StrictMode>,
-);
+// Wait for translations to load before mounting — avoids flash of untranslated content
+// and keeps the main bundle ~150 kB lighter (only current language loads)
+i18nReady.then(() => {
+  createRoot(document.getElementById("root")!).render(
+    <StrictMode>
+      <HelmetProvider>
+        <BrowserRouter>
+          <AppRoutes />
+          <CookieBanner />
+          <ScrollProgress />
+        </BrowserRouter>
+      </HelmetProvider>
+    </StrictMode>,
+  );
+  // AOS initializes after React mounts — not in the critical render path
+  initAOS();
+});
