@@ -7,59 +7,59 @@
   },
   "breadcrumb": "Ghiduri",
   "title": "Cât Costă un Site Web?",
-  "lead": "Un site profesional pentru o afacere mică costă de obicei între 500 și 5.000 de euro. Majoritatea ajung între 1.000 și 2.500 de euro. Cifrele astea singure nu îți spun aproape nimic. Acest ghid explică ce plătești cu adevărat, unde plătești probabil prea mult și ce costă să menții un site funcțional pe termen lung.",
+  "lead": "Un site profesional pentru o afacere mică costă între €500 și €5.000. Majoritatea ajung între €1.000 și €2.500. Iată ce înseamnă cu adevărat acea diferență.",
   "sections": [
     {
       "id": "de-ce-variaza-preturile",
       "heading": "De ce variază prețurile atât de mult",
       "paras": [
-        "Factorul principal este cine construiește și cum.",
-        "Un ofertă de 150 de euro înseamnă de obicei un template gata-făcut cu logo-ul tău inserat, găzduit pe o platformă pe care nu o deții. Arată a site. Nu se va poziționa pe Google. Nu va încărca rapid pe mobil. Și când oprești abonamentul lunar, dispare.",
-        "O ofertă de 10.000 de euro de la o agenție include adesea manageri de proiect, account manageri, ședințe săptămânale și workshop-uri de strategie de brand. Plătești structura lor, nu rezultatele tale.",
-        "Un freelancer construiește site-ul de la zero. Niciun template, niciun cost lunar la el, nimic inutil. Pentru majoritatea afacerilor mici, asta e exact ce le trebuie."
+        "Diferența e cine construiește și cum.",
+        "O ofertă de €150 înseamnă un template pe o platformă pe care nu o deții. Nu se clasează pe Google, nu încarcă rapid pe mobil și dispare când oprești abonamentul.",
+        "O ofertă de €10.000 de la o agenție acoperă manageri de proiect, account manageri și workshop-uri de brand. Plătești structura lor, nu rezultatele tale.",
+        "Un freelancer construiește de la zero — fără template, fără costuri lunare. Pentru majoritatea afacerilor mici, asta e exact ce le trebuie."
       ]
     },
     {
       "id": "ce-platesti-de-fapt",
       "heading": "Ce plătești de fapt",
       "paras": [
-        "Design: nu doar cum arată, ci cum ghidează vizitatorul spre contactare. Fiecare culoare, fiecare buton, fiecare titlu este o decizie care influențează dacă cineva te sună sau închide pagina.",
-        "Calitatea codului: un site rapid (sub 2 secunde) nu este o coincidență. Este cod curat, imagini optimizate, caching și un hosting configurat corect. Google măsoară viteza. Site-urile lente se clasează mai jos.",
-        "Baza SEO: tag-uri de titlu, meta descrieri, date structurate, sitemap, configurare Google Search Console. Nu îți garantează primul loc. Fără ele, ești practic invizibil.",
-        "Mobil: peste 70% din vizitatorii unui site de afaceri mici ajung de pe telefon. Un site care arată prost pe mobil pierde acei vizitatori în mai puțin de 3 secunde.",
-        "Proprietate: deții rezultatul, sau nu. Asta e partea pe care aproape toată lumea o ignoră și de care se căiesc mai târziu."
+        "Design: nu doar estetică, ci cum ghidează vizitatorul spre contact. Fiecare buton și titlu este o decizie de conversie.",
+        "Calitatea codului: sub 2 secunde viteză de încărcare nu e o coincidență. Necesită cod curat, assets optimizate, caching și hosting configurat corect. Google măsoară Core Web Vitals. Site-urile lente coboară în clasamente.",
+        "Baza SEO: tag-uri de titlu, meta descrieri, Schema Markup, sitemap XML, configurare Google Search Console. Fără ele, ești invizibil.",
+        "Mobil: peste 70% din vizitatori vin de pe telefon. Un layout mobil slab îi pierde în mai puțin de 3 secunde.",
+        "Proprietate: deții rezultatul — sau nu. Majoritatea oamenilor regretă asta mai târziu."
       ]
     },
     {
       "id": "costuri-ascunse",
       "heading": "Costurile ascunse pe care nimeni nu le menționează",
       "paras": [
-        "Domeniu: 10-15 euro pe an. Îl plătești indiferent de cine construiește site-ul.",
-        "Hosting: 5-25 euro pe lună în funcție de furnizor. Unii dezvoltatori îl gestionează pentru tine cu un adaos. Alții construiesc pe platforme ca Vercel unde hosting-ul de bază este gratuit.",
-        "Abonamente CMS: dacă site-ul e pe Squarespace sau Wix, plătești un abonament lunar (13-40 de euro) pentru totdeauna. Oprești plata, site-ul cade.",
-        "Taxe pentru modificări: unele agenții cer 50-150 de euro pentru a schimba un număr de telefon sau o fotografie. Întreabă direct înainte de a semna orice: cine poate face modificări și la ce preț?",
-        "Reînnoiri plugin-uri: site-urile WordPress depind adesea de plugin-uri plătite pentru SEO, rezervări și formulare. Fiecare se reînnoiește anual. Un site care costă 800 de euro să fie construit poate acumula 300 de euro pe an în taxe de plugin-uri în doi ani."
+        "Domeniu: €10–15/an — îl plătești indiferent de cine construiește site-ul.",
+        "Hosting: €5–25/lună. Unii dezvoltatori îl gestionează cu un adaos. Alții construiesc pe Vercel unde hosting-ul de bază e gratuit.",
+        "Abonamente CMS: Squarespace și Wix costă €13–40/lună pentru totdeauna. Oprești plata, site-ul cade.",
+        "Taxe pentru modificări: unele agenții cer €50–150 pentru a schimba un număr de telefon. Întreabă înainte de a semna: cine face modificările și la ce preț?",
+        "Reînnoire plugin-uri: site-urile WordPress depind de plugin-uri plătite pentru SEO, rezervări și formulare — un site de €800 poate acumula €300/an în taxe de plugin-uri."
       ]
     },
     {
       "id": "codul-e-al-tau",
-      "heading": "Ce înseamnă cu adevărat că dești codul",
+      "heading": "Ce înseamnă cu adevărat că deții codul",
       "paras": [
-        "Când construiesc un site, la lansare primești tot: codul sursă, domeniul, accesul la hosting și fișierele de design. Nu închiriezi nimic de la mine.",
-        "Poți schimba furnizorul de hosting fără să reconstruiești nimic. Poți angaja orice dezvoltator să facă modificări, nu doar pe mine. Nu există un cost lunar pentru a menține site-ul online. Dacă aș dispărea mâine, site-ul tău ar continua să funcționeze.",
-        "Așa ar trebui să funcționeze. Nu e standard în industrie, deci întreabă explicit înainte de a te angaja."
+        "La lansare primești tot: codul sursă, domeniul, accesul la hosting și fișierele de design. Nu închiriezi nimic de la mine.",
+        "Poți schimba hosting-ul, poți angaja orice dezvoltator pentru modificări, iar site-ul rulează chiar dacă aș dispărea mâine. Niciun cost lunar.",
+        "Nu e standardul industriei. Întreabă explicit înainte de a te angaja cu orice dezvoltator."
       ]
     },
     {
       "id": "cand-costa-mai-mult",
       "heading": "Când costă mai mult?",
       "paras": [
-        "Sisteme de rezervări cu plăți: integrarea unui procesator de plăți, logica calendarului și confirmările automate necesită semnificativ mai mult timp decât un site static.",
-        "Mai multe limbi: trei versiuni lingvistice înseamnă trei seturi de pagini, cu un sistem de detectare a limbii. Construiesc frecvent site-uri multilingve.",
+        "Sisteme de rezervări cu plăți: integrat procesator de plăți, logică calendar și confirmări automate necesită semnificativ mai mult timp decât un site static.",
+        "Mai multe limbi: trei versiuni lingvistice = trei seturi de pagini plus un layer de detecție a limbii.",
         "Animații personalizate: necesită timp să fie făcute bine.",
-        "E-commerce: un catalog de produse, coș și checkout este un proiect de cu totul altă scală.",
-        "Termene strânse: un turnaround de cinci zile e posibil dar costă mai mult decât două săptămâni.",
-        "Dacă niciunul dintre acestea nu se aplică, un site profesional de cinci pagini nu ar trebui să coste mai mult de 2.000 de euro."
+        "E-commerce: catalog de produse, coș și checkout sunt un proiect de cu totul altă scală.",
+        "Termene strânse: un turnaround de 5 zile e posibil dar costă mai mult decât 2 săptămâni.",
+        "Dacă niciunul nu se aplică, un site profesional de 5 pagini nu ar trebui să depășească €2.000."
       ]
     }
   ],
@@ -80,35 +80,35 @@
     "items": [
       {
         "q": "Pot obține un site pentru mai puțin de 500 de euro?",
-        "a": "Da, dar cu așteptări clare. La acel preț primești un template, personalizare minimă și de obicei o platformă pentru care vei plăti lunar. E bine ca punct de plecare. Nu va aduce clienți."
+        "a": "Da — dar va fi un template pe o platformă pe care o vei plăti lunar. Bun ca punct de plecare. Nu va aduce clienți."
       },
       {
         "q": "Trebuie să plătesc lunar pentru un site?",
-        "a": "Nu neapărat. Site-urile pe platforme ca Squarespace și Wix necesită un abonament lunar. Un site custom pe infrastructură modernă nu. Întreabă-ți dezvoltatorul înainte ce abordare folosește."
+        "a": "Nu pentru un site custom pe infrastructură modernă. Site-urile pe Squarespace și Wix necesită mereu un abonament lunar. Întreabă-ți dezvoltatorul înainte ce abordare folosește."
       },
       {
         "q": "Cât durează să construiești un site?",
-        "a": "Pentru un site standard de afaceri mici: una până la două săptămâni de când conținutul e gata până la lansare. Întârzierile vin aproape întotdeauna din așteptarea textelor, fotografiilor și feedback-ului, nu din dezvoltare."
+        "a": "1–2 săptămâni de la conținut gata până la lansare pentru un site standard. Întârzierile vin aproape mereu din așteptarea textelor, fotografiilor și feedback-ului — nu din dezvoltare."
       },
       {
         "q": "Un site ieftin e vreodată alegerea potrivită?",
-        "a": "Pentru o afacere nou-înființată care are nevoie de ceva online imediat, da. Un site de 200 de euro pe Squarespace e mai bun decât nimic. Când ai clienți și ceva de spus, investește într-un site făcut cum trebuie."
+        "a": "Pentru o afacere nou-înființată care are nevoie de ceva online imediat, da. Un site de €200 pe Squarespace e mai bun decât nimic. Când ai clienți, investește într-un site făcut cum trebuie."
       },
       {
         "q": "Care e diferența dintre un freelancer și o agenție?",
-        "a": "Scară și overhead. O agenție angajează manageri de proiect, designeri, dezvoltatori și account manageri. Îi plătești pe toți. Un freelancer e persoana care construiește efectiv site-ul. Pentru o afacere mică, un freelancer bun oferă același rezultat la o fracțiune din cost."
+        "a": "Overhead. O agenție îți facturează manageri de proiect, designeri, dezvoltatori și account manageri. Freelancer-ul e persoana care construiește efectiv site-ul — același rezultat, fracțiune din cost."
       },
       {
         "q": "Site-ul meu va apărea pe Google?",
-        "a": "Un site construit corect cu o bază SEO va fi indexat de Google în câteva zile de la lansare. Să te clasezi bine pentru căutări competitive necesită luni de date de trafic real. Oricine îți garantează primul loc te induce în eroare."
+        "a": "Un site cu baze SEO corecte e indexat de Google în câteva zile de la lansare. Clasare bună pentru căutări competitive cere luni de date reale. Oricine garantează primul loc te minte."
       },
       {
         "q": "Am nevoie de un blog pentru a mă clasifica pe Google?",
-        "a": "Nu pentru numele afacerii tale sau căutările locale. Un blog ajută dacă publici conținut pe care potențialii tăi clienți îl caută activ. Pentru majoritatea afacerilor mici, trei articole ghid bine scrise bat un an de postări săptămânale generice."
+        "a": "Nu pentru numele afacerii sau căutările locale. Un blog ajută doar dacă publici conținut pe care clienții tăi îl caută activ. Trei articole ghid bine scrise bat un an de postări săptămânale generice."
       },
       {
         "q": "Cum știu dacă prețul e corect?",
-        "a": "Cere o ofertă detaliată: design, dezvoltare, SEO, conținut și ce e inclus după lansare. Un dezvoltator care lucrează transparent ți-o dă fără ezitare. Prețurile vagi sunt de obicei semnul unei munci vage."
+        "a": "Cere o ofertă detaliată: design, dezvoltare, SEO și ce e inclus după lansare. Un dezvoltator care lucrează transparent ți-o dă fără ezitare. Prețurile vagi semnalează muncă vagă."
       }
     ]
   },

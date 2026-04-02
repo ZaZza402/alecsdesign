@@ -1,65 +1,65 @@
 {
   "meta": {
     "title": "How Much Does a Website Cost? A Honest Breakdown for Small Businesses",
-    "description": "What does a website actually cost in 2026? Alex, web developer in Rome, breaks down real pricing, hidden fees, and what ownership actually means.",
+    "description": "Real pricing, hidden fees, and what ownership actually means in 2026. By Alex, web developer in Rome.",
     "readingTime": "5 min read",
     "published": "April 1, 2026"
   },
   "breadcrumb": "Guides",
   "title": "How Much Does a Website Cost?",
-  "lead": "A professionally built website for a small business typically costs between 500 and 5,000 euros. Most end up in the 1,000 to 2,500 range. That range is almost useless without context, though. This guide breaks down what you are actually paying for, what you are probably overpaying for, and what it really costs to get a site that works.",
+  "lead": "A small business website typically costs €500–€5,000. Most land in the €1,000–€2,500 range. Here is what that gap actually means.",
   "sections": [
     {
       "id": "why-prices-vary",
       "heading": "Why website prices vary so wildly",
       "paras": [
-        "The biggest driver is who builds it and how.",
-        "A 150 euro quote usually means a pre-built template with your logo dropped in, hosted on a platform you do not own. It looks like a website. It will not rank on Google. It will not load fast on mobile. And the moment you stop paying the monthly fee, it disappears.",
-        "An agency quote of 10,000 euros or more often includes project managers, account managers, weekly calls, and brand strategy workshops. You are paying for their overhead, not your results.",
-        "A freelance developer builds a custom site from scratch. No bloat, no recurring fees to them, no template. For most small businesses, that is exactly what they need."
+        "The difference is who builds it and how.",
+        "A €150 quote means a pre-built template on a platform you don't own. It won't rank on Google, won't load fast on mobile, and disappears the moment you stop paying.",
+        "A €10,000 agency quote covers project managers, account managers, and brand workshops. You are paying for their overhead, not your results.",
+        "A freelance developer builds from scratch — no template, no recurring fees to them. For most small businesses, that is exactly what they need."
       ]
     },
     {
       "id": "what-youre-paying-for",
       "heading": "What you are actually paying for",
       "paras": [
-        "Design: not just how it looks, but how it guides a visitor toward contacting you. Every colour, every button placement, every headline is a decision that affects whether someone calls you or leaves.",
-        "Code quality: a fast site (loading under 2 seconds) is not an accident. It is clean code, optimised images, caching, and a proper hosting setup. Google measures load speed. Slow sites rank lower.",
-        "SEO foundation: title tags, meta descriptions, structured data, sitemap, Google Search Console setup. These do not guarantee the top result on Google. Without them, you are essentially invisible.",
-        "Mobile: over 70% of visitors to a small business website arrive on a phone. A site that looks wrong on mobile loses those visitors in under 3 seconds.",
-        "Ownership: you own the result, or you do not. This is the part most people skip past and later regret."
+        "Design: how it guides a visitor toward contacting you — every button, headline, and colour is a conversion decision.",
+        "Code quality: sub-2-second load time is not an accident. It requires clean code, optimised assets, caching, and correct hosting. Google measures Core Web Vitals. Slow sites rank lower.",
+        "SEO foundation: title tags, meta descriptions, Schema Markup, XML sitemap, Google Search Console setup. Without these, you are invisible.",
+        "Mobile: 70%+ of small business visitors arrive on a phone. A poor mobile layout loses them in under 3 seconds.",
+        "Ownership: you own the result — or you don't. Most people only regret this later."
       ]
     },
     {
       "id": "hidden-costs",
       "heading": "The hidden costs nobody mentions upfront",
       "paras": [
-        "Domain name: 10 to 15 euros per year. You pay this regardless of who builds your site.",
-        "Hosting: 5 to 25 euros per month depending on provider. Some developers handle this for you and mark it up. Others build on platforms like Vercel where basic hosting is free.",
-        "CMS fees: if your site is built on Squarespace or Wix, you pay a monthly subscription (13 to 40 euros) forever. Stop paying, the site goes down.",
-        "Update charges: some agencies charge 50 to 150 euros to change a phone number or swap a photo. Ask directly before signing anything: who can make changes, and what does it cost?",
-        "Plugin renewals: WordPress sites often depend on paid plugins for SEO, bookings, and forms. Each renews annually. A site that costs 800 euros to build can accumulate 300 euros per year in plugin fees within two years."
+        "Domain: €10–15/year — you pay this regardless of who builds your site.",
+        "Hosting: €5–25/month. Some developers mark it up. Others build on Vercel where basic hosting is free.",
+        "CMS subscriptions: Squarespace or Wix cost €13–40/month forever. Stop paying, site goes down.",
+        "Update charges: some agencies charge €50–150 to change a phone number. Ask before signing: who makes changes, and at what cost?",
+        "Plugin renewals: WordPress sites often depend on paid plugins for SEO, bookings, and forms — each renewing annually. A €800 build can accumulate €300/year in plugin fees within two years."
       ]
     },
     {
       "id": "ownership",
       "heading": "What owning the code actually means",
       "paras": [
-        "When I build a website, you receive everything at launch: the source code, the domain, hosting access, and the design files. You are not renting anything from me.",
-        "You can move to a different host without rebuilding anything. You can hire any developer to make changes, not just me. There is no monthly fee to keep the site online. If I disappeared tomorrow, your website would still be running.",
-        "This is how it should work. It is not standard across the industry, so ask explicitly before you commit."
+        "At launch you receive everything: source code, domain, hosting access, design files. You are not renting from me.",
+        "You can move hosts, hire any developer for changes, and the site keeps running if I disappeared tomorrow. No monthly fee.",
+        "This is not industry-standard. Ask explicitly before you commit to any developer."
       ]
     },
     {
       "id": "when-costs-more",
       "heading": "When does it cost more?",
       "paras": [
-        "Booking systems with payments: integrating a payment processor, calendar logic, and automated confirmations takes significantly more time than a static site.",
-        "Multiple languages: three language versions means three sets of every page, plus a language detection system. I build multilingual sites frequently.",
-        "Custom animations: time-intensive to do well.",
-        "E-commerce: a product catalogue, cart, and checkout is a completely different scale of work.",
-        "Tight deadlines: a five-day turnaround is possible but costs more than a two-week timeline.",
-        "If none of these apply to you, a professional five-page business website should not cost more than 2,000 euros."
+        "Booking + payment systems: integrating a payment processor, calendar logic, and automated confirmations adds significant build time.",
+        "Multilingual sites: three language versions mean three sets of every page plus a language-detection layer.",
+        "Custom animations: time-intensive to do correctly.",
+        "E-commerce: a product catalogue, cart, and checkout is a different scale of project entirely.",
+        "Tight deadlines: a 5-day turnaround costs more than a 2-week timeline.",
+        "If none of these apply, a professional 5-page business site should not exceed €2,000."
       ]
     }
   ],
@@ -73,42 +73,42 @@
       ["SSL certificate", "€0 (included)"],
       ["My time for changes", "Per hour, only when you ask"]
     ],
-    "note": "Most small business sites I build cost under 15 euros per year to keep running after launch."
+    "note": "Most small business sites I build cost under €15/year to keep running after launch."
   },
   "faq": {
     "heading": "Frequently asked questions",
     "items": [
       {
         "q": "Can I get a website for under 500 euros?",
-        "a": "Yes, but manage expectations. At that price you are getting a template, minimal customisation, and usually a platform you will pay monthly for. It is fine as a starting point. It will not generate leads."
+        "a": "Yes — but it will be a template on a platform you pay monthly for. Fine as a placeholder. It will not generate leads."
       },
       {
         "q": "Do I need to pay monthly for a website?",
-        "a": "Not always. Platform-based sites like Squarespace and Wix require a monthly subscription. A custom-built site on modern hosting infrastructure does not. Ask your developer upfront which approach they use."
+        "a": "Not for a custom-built site on modern infrastructure. Platform sites like Squarespace and Wix always require a monthly subscription. Ask your developer upfront."
       },
       {
         "q": "How long does it take to build a website?",
-        "a": "For a standard small business site: one to two weeks from content ready to launch. Delays almost always come from waiting on text, photos, and client feedback, not from the development itself."
+        "a": "1–2 weeks from content-ready to launch for a standard site. Delays almost always come from waiting on copy, photos, and feedback — not development."
       },
       {
         "q": "Is a cheap website ever the right choice?",
-        "a": "For a brand-new business that needs something live while you find your footing, yes. A 200 euro Squarespace site is better than nothing. Once you have clients and something to say, invest in a proper site."
+        "a": "For a brand-new business that needs something live immediately, yes. A €200 Squarespace site beats nothing. Once you have clients, invest in a proper build."
       },
       {
         "q": "What is the difference between a freelancer and an agency?",
-        "a": "Scale and overhead. An agency employs project managers, designers, developers, and account teams. You pay for all of them. A freelancer is the person who actually builds the site. For a small business, a good freelancer typically delivers the same result at a fraction of the cost."
+        "a": "Overhead. An agency charges you for project managers, designers, developers, and account teams. A freelancer is the person who actually builds the site — same result, fraction of the cost."
       },
       {
         "q": "Will my website show up on Google?",
-        "a": "A properly built site with an SEO foundation will be indexed by Google within days of launch. Ranking well for competitive terms takes months of real-world traffic data. Anyone who guarantees you the top position is misleading you."
+        "a": "A properly built site with SEO foundations gets indexed within days of launch. Ranking for competitive terms takes months of real traffic data. Anyone guaranteeing the top position is lying."
       },
       {
         "q": "Do I need a blog to rank on Google?",
-        "a": "Not to rank for your business name or local searches. A blog helps if you publish content your potential clients are actively looking for. For most small businesses, three well-written guide articles outperform weekly posting for a year."
+        "a": "Not for local searches or your business name. A blog helps only if you publish content your clients are actively searching. Three well-written guide articles outperform a year of generic weekly posts."
       },
       {
         "q": "How do I know if the price is fair?",
-        "a": "Ask for an itemised quote: design, development, SEO setup, content, and what is included after launch. A developer who works transparently will give you this without hesitation. Vague pricing is usually a sign of vague work."
+        "a": "Ask for an itemised quote: design, development, SEO setup, and what is included post-launch. A developer who works transparently gives you this without hesitation. Vague pricing signals vague work."
       }
     ]
   },

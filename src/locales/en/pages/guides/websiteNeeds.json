@@ -1,61 +1,61 @@
 {
   "meta": {
     "title": "What Your Small Business Website Actually Needs in 2026",
-    "description": "Most business websites do not generate clients. Here is what separates a website that works from one that just exists online. By Alex, web developer in Rome.",
+    "description": "Most business websites don't generate clients. Here is what separates a site that works from one that just exists. By Alex, web developer in Rome.",
     "readingTime": "5 min read",
     "published": "April 1, 2026"
   },
   "breadcrumb": "Guides",
   "title": "What Your Small Business Website Actually Needs in 2026",
-  "lead": "Most business websites are online brochures. They look presentable, they have a contact form, and they do almost nothing to bring in new clients. Here is what separates a site that works from one that just exists.",
+  "lead": "Most business websites are online brochures. They look presentable and do almost nothing to bring in clients. Here is what separates a site that works from one that just exists.",
   "sections": [
     {
       "id": "the-uncomfortable-truth",
       "heading": "The uncomfortable truth about most business websites",
       "paras": [
-        "A website that exists is not the same as a website that works. The difference is not design. It is intent.",
-        "A working website answers questions, builds trust before anyone picks up the phone, ranks on Google so the right people can find it, and makes it easy to take the next step. Most websites do not do any of these things well.",
-        "The good news: most of what makes a website work is not complicated. It is a set of decisions made during the build, not something you bolt on afterwards."
+        "A site that exists is not the same as a site that works. The difference is not design — it is intent.",
+        "A working site answers questions, builds trust before anyone calls, ranks on Google so the right people find it, and makes the next step obvious. Most sites fail at all four.",
+        "The good news: what makes a site work is a set of decisions made during the build — not something you add later."
       ]
     },
     {
       "id": "seven-things",
       "heading": "Seven things your website must have",
       "paras": [
-        "Speed: it loads in under 2 seconds on a mobile phone. If it does not, most visitors leave before reading a single word. Google penalises slow sites in search results.",
-        "Mobile layout: designed for a phone, not adapted from a desktop. Over 70% of your visitors will see your site on a 6-inch screen first.",
-        "A clear next step: every page should direct the visitor toward one action. Book a call. Send a message. See the menu. One thing. Not five.",
-        "Trust signals: client reviews, real photos, a named person behind the business, a physical location. These answer the unspoken question every visitor has: is this person real and good at what they do?",
-        "Contact options that work: a phone number that is clickable, a WhatsApp link, an email. Not just a contact form that disappears into a spam folder.",
-        "SEO foundation: title tags, local business structured data, a verified Google Business Profile, and a sitemap. This is not optional. It is how Google decides whether your site exists.",
-        "Ownership: you own the code and the domain. Not a subscription, not a rental. If you ever want to move, change, or hand the site to someone else, you can."
+        "Speed: loads under 2 seconds on mobile. Fails this, and most visitors leave before reading a word. Core Web Vitals directly affect Google rankings.",
+        "Mobile-first layout: designed for a 390px phone screen — not adapted from desktop. 70%+ of your visitors arrive on mobile.",
+        "One clear next step per page: book a call, send a message, see the menu. One CTA. Not five.",
+        "Trust signals: real client reviews, real photos, a named person behind the business, a physical location.",
+        "Contact options that work: clickable phone number, WhatsApp link, email — not just a contact form that disappears into spam.",
+        "SEO foundation: title tags, LocalBusiness Schema Markup, verified Google Business Profile, XML sitemap. This is how Google decides your site exists.",
+        "Ownership: you own the code and domain. Not a subscription, not a rental. Move, change, or hand it to anyone — no permission needed."
       ]
     },
     {
       "id": "ai-search",
       "heading": "What changed with AI search",
       "paras": [
-        "In 2026, a growing share of people find businesses through AI assistants: ChatGPT, Perplexity, Google's AI overviews. These tools do not rank pages the way Google did in 2015. They extract answers from structured, authoritative content.",
-        "For your website to be recommended by an AI, it needs to be clear about who you are, what you do, where you do it, and why someone should trust you. Vague marketing language does not help. Direct, factual content does.",
-        "Structured data (schema markup) is particularly important here. It tells AI systems that your site represents a real business with a real address, phone number, and service offering. I include this on every site I build."
+        "In 2026, a growing share of people find businesses through AI: ChatGPT, Perplexity, Google AI Overviews. These systems extract answers from structured, authoritative content — not from pretty pages.",
+        "For an AI to recommend your business, your site must be factually clear: who you are, what you do, where, and why you are trustworthy. Vague marketing language is invisible to AI engines.",
+        "LocalBusiness Schema Markup is critical here. It tells AI systems your business is real, with a real address and verified service offering. I include it on every site I build."
       ]
     },
     {
       "id": "bookings-payments",
       "heading": "Bookings and online payments: growing expectations",
       "paras": [
-        "For service businesses (clinics, salons, restaurants, consultants), online booking has shifted from a nice addition to something clients actively expect.",
-        "A client who finds your website at 11pm should be able to book an appointment without calling you. A customer who wants to pay a deposit should be able to do it without a bank transfer.",
-        "These are not complex features. They are integrations: a booking calendar connected to your schedule, a payment link connected to your bank. Built once, they run without you touching them."
+        "For service businesses — clinics, salons, restaurants, consultants — online booking is no longer a nice addition. Clients expect it.",
+        "A client who finds your site at 11pm should book without calling you. A deposit should be payable without a bank transfer.",
+        "These are integrations, not complex builds: a booking calendar connected to your schedule, a payment link connected to your account. Built once, they run themselves."
       ]
     },
     {
       "id": "owning-vs-renting",
       "heading": "Owning versus renting your website",
       "paras": [
-        "A website built on Squarespace, Wix, or a similar platform is, technically, rented. You pay monthly. The platform controls the infrastructure. If they change pricing, change features, or shut down, your site is affected. You cannot move it.",
-        "A custom-built website gives you the code, the hosting credentials, and everything you need to move it anywhere, change it with any developer, or hand it to someone else entirely. It belongs to you.",
-        "The monthly cost of a properly hosted custom site is around 15 euros per year for the domain. That is it.",
+        "A site on Squarespace, Wix, or a similar platform is technically rented. If the platform changes pricing, features, or shuts down, you are affected and cannot move it.",
+        "A custom-built site gives you the source code, hosting credentials, and full portability. Move hosts, change developers, hand it to anyone. It belongs to you.",
+        "Maintenance cost on modern infrastructure: ~€15/year for the domain. Nothing else.",
         "I hand over everything via GitHub at launch: source code, design files, hosting access. Fully documented, fully yours."
       ]
     }
@@ -65,35 +65,35 @@
     "items": [
       {
         "q": "WordPress or custom? Which is better for a small business?",
-        "a": "WordPress is a good choice if you need to manage a lot of content yourself and are comfortable with it. Custom-built sites are faster, simpler to maintain, and less likely to break from plugin updates. For most small businesses that do not need daily content changes, a custom site is the better long-term investment."
+        "a": "WordPress suits content-heavy businesses comfortable managing it themselves. Custom sites are faster, easier to maintain, and don't break from plugin updates. For most small businesses with stable content, custom is the better long-term investment."
       },
       {
         "q": "Do I need a blog?",
-        "a": "Not necessarily. A blog helps if you publish content your potential clients are actively searching for. If you do not, it is just extra maintenance. Three well-written, evergreen guide articles outperform a neglected blog with 50 generic posts."
+        "a": "Not necessarily. A blog helps only if you publish content your clients are actively searching for. Three well-written evergreen guides outperform a neglected blog with 50 generic posts."
       },
       {
         "q": "How often should I update my website?",
-        "a": "Your core pages (services, contact, about) should reflect your current offering at all times. Beyond that, there is no magical update frequency. Adding useful content when you have something genuinely useful to say is better than updating for the sake of it."
+        "a": "Keep your core pages (services, contact, about) current at all times. Beyond that, add content when you have something genuinely useful to say — not on a forced schedule."
       },
       {
         "q": "Do I need a website if I already have Instagram?",
-        "a": "Yes. Social media platforms change their algorithms, reduce organic reach, and occasionally get blocked or banned. Your website is the only online presence you fully control. Instagram can drive traffic to it. It should not replace it."
+        "a": "Yes. Social platforms change algorithms, throttle organic reach, and can be blocked. Your website is the only online presence you fully control. Instagram drives traffic to it but cannot replace it."
       },
       {
         "q": "What is a CTA and why does it matter?",
-        "a": "CTA stands for call to action: the specific thing you want a visitor to do next. Book a call. Send a message. See the menu. A clear CTA on every page dramatically increases the number of visitors who actually contact you, compared to a page that just presents information and hopes for the best."
+        "a": "CTA = call to action: the specific thing you want a visitor to do next. One clear CTA per page dramatically increases the share of visitors who actually contact you."
       },
       {
         "q": "How do I know if my current website is actually working?",
-        "a": "Connect it to Google Search Console and Google Analytics, both free. Search Console shows you which searches bring people to your site. Analytics shows you what they do once they arrive. If visits are low or bounce rate is above 80%, something is not working."
+        "a": "Connect it to Google Search Console and Google Analytics — both free. Search Console shows which searches bring visitors. Analytics shows what they do when they arrive. Bounce rate above 80% means something is broken."
       },
       {
         "q": "Can I build my own website instead of hiring someone?",
-        "a": "You can. Platforms like Squarespace and Webflow make it possible without technical knowledge. The trade-off is time and the ceiling: you will hit limitations sooner than you expect, and the SEO and performance results are rarely as strong as a custom build. For a business where the website is a primary client channel, hiring someone pays for itself quickly."
+        "a": "You can — Squarespace and Webflow make it possible without technical skills. The trade-off: you'll hit limits faster than expected, and Core Web Vitals and SEO performance rarely match a custom build."
       },
       {
         "q": "What information do I need to prepare before working with a developer?",
-        "a": "Your services and pricing (or at least a price range), a short description of what makes you different, the area or city you serve, any existing photos or a logo, and examples of websites you like. That is enough to start. Everything else can be worked out during the project."
+        "a": "Services and pricing range, a short description of what makes you different, the city or area you serve, any existing photos or logo, and examples of sites you like. That is enough to start."
       }
     ]
   },

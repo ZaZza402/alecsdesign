@@ -7,55 +7,55 @@
   },
   "breadcrumb": "Guide",
   "title": "Cosa Deve Avere il Tuo Sito Web nel 2026",
-  "lead": "La maggior parte dei siti aziendali è una brochure online. Ha un'estetica decente, un modulo di contatto, e non fa quasi nulla per portare nuovi clienti. Ecco cosa separa un sito che lavora da uno che esiste e basta.",
+  "lead": "La maggior parte dei siti aziendali è una brochure online. Ha un'estetica decente e non fa quasi nulla per portare clienti. Ecco cosa separa un sito che lavora da uno che esiste.",
   "sections": [
     {
       "id": "la-verita-scomoda",
       "heading": "La verità scomoda sulla maggior parte dei siti aziendali",
       "paras": [
-        "Un sito che esiste non è la stessa cosa di un sito che funziona. La differenza non è nel design. È nell'intenzione.",
-        "Un sito che funziona risponde alle domande, costruisce fiducia prima ancora che qualcuno chiami, si posiziona su Google così le persone giuste riescono a trovarlo, e rende facile fare il passo successivo. La maggior parte dei siti non fa nessuna di queste cose bene.",
-        "La buona notizia: la maggior parte di quello che fa funzionare un sito non è complicata. Sono decisioni prese durante la costruzione, non qualcosa che aggiungi dopo."
+        "Un sito che esiste non è la stessa cosa di un sito che funziona. La differenza non è nel design — è nell'intenzione.",
+        "Un sito che funziona risponde alle domande, costruisce fiducia prima che qualcuno chiami, si posiziona su Google e rende il passo successivo ovvio. La maggior parte dei siti fallisce su tutti e quattro.",
+        "La buona notizia: quello che fa funzionare un sito sono decisioni prese durante la costruzione — non qualcosa che aggiungi dopo."
       ]
     },
     {
       "id": "sette-cose",
       "heading": "Sette cose che il tuo sito deve avere",
       "paras": [
-        "Velocità: si carica in meno di 2 secondi su smartphone. Se non lo fa, la maggior parte dei visitatori se ne va prima di leggere una parola. Google penalizza i siti lenti nei risultati di ricerca.",
-        "Layout mobile: progettato per il telefono, non adattato dal desktop. Oltre il 70% dei tuoi visitatori vedrà il sito su uno schermo da 6 pollici.",
-        "Un'azione chiara: ogni pagina deve guidare il visitatore verso una cosa sola. Prenota una chiamata. Manda un messaggio. Guarda il menu. Una cosa, non cinque.",
-        "Segnali di fiducia: recensioni di clienti, foto reali, una persona con un nome dietro all'attività, una sede fisica. Rispondono alla domanda silenziosa che ogni visitatore ha in testa.",
-        "Contatti che funzionano: un numero di telefono cliccabile, un link WhatsApp, un'email. Non solo un modulo di contatto che finisce nello spam.",
-        "Base SEO: tag del titolo, dati strutturati per l'attività locale, un Google Business Profile verificato e una sitemap. Non è opzionale. È come Google decide se il tuo sito esiste.",
-        "Proprietà: possiedi il codice e il dominio. Non un abbonamento, non un affitto. Se vuoi cambiare, spostare o passare il sito a qualcun altro, puoi farlo."
+        "Velocità: sotto i 2 secondi su smartphone. Manca questo, e la maggior parte dei visitatori se ne va prima di leggere una parola. I Core Web Vitals influenzano direttamente il ranking su Google.",
+        "Layout mobile-first: progettato per uno schermo da 390px — non adattato dal desktop. Oltre il 70% dei visitatori arriva da mobile.",
+        "Una sola azione chiara per pagina: prenota una chiamata, manda un messaggio, guarda il menu. Una CTA. Non cinque.",
+        "Segnali di fiducia: recensioni reali, foto reali, una persona con un nome dietro all'attività, una sede fisica.",
+        "Contatti che funzionano: numero cliccabile, link WhatsApp, email — non solo un modulo che finisce nello spam.",
+        "Base SEO: title tag, LocalBusiness Schema Markup, Google Business Profile verificato, sitemap XML. È come Google decide se il tuo sito esiste.",
+        "Proprietà: possiedi codice e dominio. Non un abbonamento, non un affitto. Spostare, modificare o passare il sito a qualcun altro è sempre possibile."
       ]
     },
     {
       "id": "ricerca-ai",
       "heading": "Cosa è cambiato con la ricerca AI",
       "paras": [
-        "Nel 2026, una parte crescente delle persone trova le attività tramite assistenti AI: ChatGPT, Perplexity, le panoramiche AI di Google. Questi strumenti non classificano le pagine come faceva Google nel 2015. Estraggono risposte da contenuti strutturati e autorevoli.",
-        "Perché il tuo sito venga consigliato da un AI, deve essere chiaro su chi sei, cosa fai, dove lo fai e perché dovrebbero fidarsi di te. Il linguaggio di marketing vago non aiuta. Il contenuto diretto e fattuale sì.",
-        "I dati strutturati (schema markup) sono particolarmente importanti. Dicono ai sistemi AI che il tuo sito rappresenta un'attività reale con indirizzo reale, numero di telefono e offerta di servizi. Li includo in ogni sito che costruisco."
+        "Nel 2026, una quota crescente di persone trova aziende tramite AI: ChatGPT, Perplexity, Google AI Overviews. Questi sistemi estraggono risposte da contenuti strutturati e autorevoli — non da pagine belle.",
+        "Perché un AI consigli la tua attività, il sito deve essere fattualmente chiaro: chi sei, cosa fai, dove, e perché sei affidabile. Il linguaggio di marketing vago è invisibile ai motori AI.",
+        "Il LocalBusiness Schema Markup è determinante. Segnala ai sistemi AI che la tua attività è reale, con indirizzo verificato e servizi definiti. Lo includo in ogni sito che costruisco."
       ]
     },
     {
       "id": "prenotazioni-pagamenti",
       "heading": "Prenotazioni e pagamenti online: aspettative crescenti",
       "paras": [
-        "Per le attività di servizi (studi medici, salon, ristoranti, consulenti), la prenotazione online è passata da un bel plus a qualcosa che i clienti si aspettano attivamente.",
-        "Un cliente che trova il tuo sito alle 23 dovrebbe poter prenotare un appuntamento senza chiamarti. Un cliente che vuole versare un acconto dovrebbe poterlo fare senza un bonifico bancario.",
-        "Non sono funzionalità complesse. Sono integrazioni: un calendario di prenotazione collegato ai tuoi orari, un link di pagamento collegato al tuo conto. Costruite una volta, girano senza che tu le tocchi."
+        "Per le attività di servizi — studi medici, salon, ristoranti, consulenti — la prenotazione online non è più un extra. I clienti la danno per scontata.",
+        "Un cliente che trova il sito alle 23 deve poter prenotare senza chiamare. Un acconto deve potersi pagare senza un bonifico.",
+        "Non sono funzionalità complesse — sono integrazioni: calendario collegato ai tuoi orari, link di pagamento collegato al tuo conto. Costruite una volta, girano senza che tu le tocchi."
       ]
     },
     {
       "id": "possedere-vs-affittare",
       "heading": "Possedere il sito contro affittarlo",
       "paras": [
-        "Un sito costruito su Squarespace, Wix o una piattaforma simile è, tecnicamente, in affitto. Paghi ogni mese. La piattaforma controlla l'infrastruttura. Se cambiano i prezzi, le funzionalità o chiudono, il tuo sito ne risente. Non puoi spostarlo.",
-        "Un sito custom ti dà il codice, le credenziali di hosting e tutto il necessario per spostarlo ovunque, modificarlo con qualsiasi sviluppatore o passarlo a qualcun altro. Ti appartiene.",
-        "Il costo mensile per tenere online un sito custom su hosting moderno è circa 15 euro l'anno per il dominio. Solo quello.",
+        "Un sito su Squarespace, Wix o piattaforme simili è tecnicamente in affitto. Se la piattaforma cambia prezzi, funzionalità o chiude, il tuo sito è condizionato. Non puoi spostarlo.",
+        "Un sito custom ti dà codice sorgente, credenziali di hosting e portabilità completa. Cambi host, cambi sviluppatore, passi il sito a chiunque — è tuo.",
+        "Costo di mantenimento su infrastruttura moderna: ~€15/anno per il dominio. Nient'altro.",
         "Consegno tutto via GitHub al lancio: codice sorgente, file di design, accesso all'hosting. Completamente documentato, completamente tuo."
       ]
     }
@@ -65,35 +65,35 @@
     "items": [
       {
         "q": "WordPress o sito custom? Qual è meglio per una piccola impresa?",
-        "a": "WordPress è una buona scelta se devi gestire molti contenuti e ti trovi a tuo agio con la piattaforma. I siti custom sono più veloci, più semplici da mantenere e meno soggetti a problemi causati da aggiornamenti di plugin. Per la maggior parte delle piccole imprese che non hanno bisogno di modifiche continue ai contenuti, il sito custom è l'investimento migliore a lungo termine."
+        "a": "WordPress è adatto se devi gestire molti contenuti e sei a tuo agio con la piattaforma. I siti custom sono più veloci, meno soggetti a problemi da aggiornamenti di plugin e più semplici da mantenere. Per la maggior parte delle piccole imprese, il sito custom è l'investimento migliore."
       },
       {
         "q": "Ho bisogno di un blog?",
-        "a": "Non necessariamente. Un blog aiuta se pubblichi contenuti che i tuoi potenziali clienti cercano attivamente. Altrimenti è solo manutenzione extra. Tre articoli guida ben scritti e sempre attuali battono un blog trascurato con 50 post generici."
+        "a": "Solo se pubblichi contenuti che i tuoi clienti cercano attivamente. Tre guide evergreen ben scritte battono un blog trascurato con 50 post generici."
       },
       {
         "q": "Con quale frequenza devo aggiornare il sito?",
-        "a": "Le tue pagine principali (servizi, contatti, chi siamo) devono sempre riflettere la tua offerta attuale. Per il resto, non esiste una frequenza magica. Aggiungere contenuti utili quando hai qualcosa di davvero utile da dire è meglio che aggiornare per il gusto di farlo."
+        "a": "Le pagine principali (servizi, contatti, chi siamo) devono riflettere sempre l'offerta attuale. Per il resto, aggiungi contenuti utili quando hai qualcosa di davvero utile da dire."
       },
       {
         "q": "Ho bisogno di un sito se ho già Instagram?",
-        "a": "Sì. Le piattaforme social cambiano algoritmi, riducono la portata organica e a volte vengono bloccate. Il tuo sito è l'unica presenza online che controlli completamente. Instagram può portare traffico. Non può sostituirlo."
+        "a": "Sì. I social cambiano algoritmi, riducono la portata organica e possono essere bloccati. Il tuo sito è l'unica presenza online che controlli completamente. Instagram porta traffico — non può sostituire il sito."
       },
       {
         "q": "Cosa vuol dire CTA e perché è importante?",
-        "a": "CTA sta per call to action: la cosa specifica che vuoi che il visitatore faccia dopo. Prenota una chiamata. Manda un messaggio. Guarda il menu. Una CTA chiara su ogni pagina aumenta drasticamente il numero di visitatori che ti contattano davvero."
+        "a": "CTA = call to action: la cosa specifica che vuoi che il visitatore faccia. Una CTA chiara per ogni pagina aumenta drasticamente il numero di contatti reali che ricevi."
       },
       {
         "q": "Come faccio a sapere se il mio sito attuale funziona?",
-        "a": "Collegalo a Google Search Console e Google Analytics, entrambi gratuiti. Search Console mostra quali ricerche portano visitatori al sito. Analytics mostra cosa fanno una volta arrivati. Se le visite sono basse o la frequenza di rimbalzo è sopra l'80%, qualcosa non funziona."
+        "a": "Collegalo a Google Search Console e Google Analytics — entrambi gratuiti. Search Console mostra le ricerche che portano visitatori. Analytics mostra cosa fanno una volta arrivati. Frequenza di rimbalzo sopra l'80%? Qualcosa non funziona."
       },
       {
         "q": "Posso costruire il sito da solo invece di assumere qualcuno?",
-        "a": "Puoi. Piattaforme come Squarespace e Webflow lo rendono possibile anche senza conoscenze tecniche. Il compromesso è il tempo e il limite tecnico: incontrerai vincoli prima del previsto, e i risultati in termini di SEO e prestazioni sono raramente paragonabili a un sito custom. Per un'attività in cui il sito è un canale primario per i clienti, assumere qualcuno si ripaga rapidamente."
+        "a": "Puoi — Squarespace e Webflow lo rendono possibile senza competenze tecniche. Il compromesso: incontrerai limiti prima del previsto, e i risultati in Core Web Vitals e SEO raramente eguagliano un sito custom."
       },
       {
         "q": "Quali informazioni devo preparare prima di lavorare con uno sviluppatore?",
-        "a": "I tuoi servizi e i prezzi (o almeno una fascia), una breve descrizione di cosa ti distingue, la zona o città in cui operi, eventuali foto o un logo esistenti, ed esempi di siti che ti piacciono. Basta per iniziare. Il resto si definisce durante il progetto."
+        "a": "Servizi e fascia di prezzo, cosa ti distingue, la città in cui operi, foto o logo esistenti, ed esempi di siti che ti piacciono. Basta per iniziare."
       }
     ]
   },

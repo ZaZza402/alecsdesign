@@ -7,55 +7,55 @@
   },
   "breadcrumb": "Ghiduri",
   "title": "Cum Să Apari pe Google Fără Să Plătești Reclame",
-  "lead": "Majoritatea site-urilor de afaceri sunt invizibile pe Google. Nu pentru că afacerea e slabă, ci pentru că site-ul a fost construit să arate bine, nu să se claseze. Iată ce determină cu adevărat dacă Google îți arată site-ul oamenilor care caută ce oferi.",
+  "lead": "Majoritatea site-urilor de afaceri sunt invizibile pe Google. Nu pentru că afacerea e slabă — ci pentru că site-ul a fost construit să arate bine, nu să se claseze.",
   "sections": [
     {
       "id": "de-ce-invizibile",
       "heading": "De ce 90% din site-urile de afaceri nu se găsesc",
       "paras": [
-        "Google nu clasează site-urile după cât arată de frumos. Le clasează după cât de utile, rapide și de încredere par.",
-        "Majoritatea site-urilor construite cu editoare drag-and-drop se încarcă în 4-6 secunde, nu au date structurate, nu sunt optimizate pentru mobil și îi dau Google-ului aproape nimic de citit. Există online. Pur și simplu nu se clasează.",
-        "Un site construit corect gestionează toate acestea din prima zi. Nu există niciun truc. Bazele sunt tehnice și aproape invizibile pentru vizitator."
+        "Google clasează după utilitate, viteză și credibilitate. Nu după estetică.",
+        "Site-urile drag-and-drop se încarcă în 4–6 secunde, nu au Schema Markup și îi dau Google-ului aproape nimic de indexat. Sunt online. Pur și simplu nu se clasează.",
+        "Un site construit corect rezolvă toate acestea din prima zi. Bazele sunt tehnice și invizibile vizitatorului."
       ]
     },
     {
       "id": "ce-masoara-google",
       "heading": "Ce măsoară Google în 2026",
       "paras": [
-        "Viteza de încărcare: Google folosește Core Web Vitals ca semnal de clasare. Un site care se încarcă în mai puțin de 2 secunde este tratat diferit față de unul care durează 5. Se măsoară pe dispozitive reale, cu conexiuni reale.",
-        "Mobil: Google indexează mai întâi versiunea mobilă a site-ului tău. Dacă se strică pe telefon, clasamentul tău suferă indiferent cum arată pe desktop.",
-        "Semnale locale: pentru o afacere care servește un oraș sau o regiune specifică, adresa, numărul de telefon și zona de servicii trebuie să fie corecte și structurate pe site și pe Google Business Profile.",
-        "Structura conținutului: Google citește pagina ta pentru a înțelege despre ce e. Titluri clare, paragrafe lizibile și date structurate (schema markup) îl ajută să clasifice afacerea ta corect.",
-        "Semnale de autoritate: linkuri de la alte site-uri credibile, un Google Business Profile complet și informații de afaceri coerente pe web contribuie la cât de serios ia Google domeniul tău."
+        "Core Web Vitals: sub 2 secunde încărcare este pragul de clasare. Măsurat pe dispozitive reale, conexiuni mobile reale.",
+        "Mobile-first indexing: Google indexează mai întâi versiunea mobilă. Layout mobil stricat = clasament penalizat, indiferent de cum arată pe desktop.",
+        "Semnale Local SEO: NAP-ul tău (nume, adresă, telefon) trebuie să fie consistent pe site și pe Google Business Profile.",
+        "Structura conținutului: ierarhia H1/H2/H3 și LocalBusiness Schema Markup ajută Google să clasifice corect afacerea ta.",
+        "Autoritatea domeniului: linkuri de la site-uri credibile și un Google Business Profile complet construiesc semnalele de încredere care mișcă clasamentele."
       ]
     },
     {
       "id": "cinci-lucruri",
       "heading": "Cinci lucruri de care are nevoie site-ul tău pentru a se clasa",
       "paras": [
-        "Încărcare rapidă: sub 2 secunde pe mobil, măsurată cu condiții reale de rețea. Vine din modul în care este construit site-ul, nu dintr-un plugin.",
-        "Layout mobile-first: proiectat pentru un ecran de 390px, nu o versiune micșorată a desktopului.",
-        "Semnale locale clare: orașul tău în tag-ul de titlu, adresa ta în datele structurate, un Google Business Profile verificat legat de site.",
-        "Conținut lizibil și structurat: titluri de pagină clare, ierarhie logică a heading-urilor (H1, H2, H3) și conținut care răspunde direct la ce caută vizitatorul.",
-        "Google Search Console conectat la lansare: astfel Google începe să indexeze paginile tale imediat și poți vedea ce căutări aduc oameni la tine."
+        "Viteză sub 2 secunde pe mobil — din arhitectură, nu dintr-un plugin.",
+        "Layout mobile-first: proiectat la 390px, nu micșorat de pe desktop.",
+        "Local SEO: orașul tău în tag-ul de titlu, adresa în LocalBusiness Schema, Google Business Profile verificat legat de site.",
+        "Conținut structurat: ierarhie H1→H2→H3, titluri clare, răspunsuri care corespund intenției reale de căutare.",
+        "Google Search Console conectat la lansare: indexare imediată, date despre căutări din prima zi."
       ]
     },
     {
       "id": "ce-gestioneaza-automat",
       "heading": "Ce gestionează automat un site construit bine",
       "paras": [
-        "Când construiesc un site, baza tehnică SEO este inclusă implicit. Hosting rapid, meta tag-uri corecte, sitemap trimis la Google, date structurate pentru afacerea ta, layout mobil care funcționează cu adevărat.",
-        "Nu ar trebui să instalezi un plugin SEO și să ghicești setările. Acestea nu sunt suplimente opționale. Fac parte din construirea corectă a site-ului.",
-        "Partea de conținut depinde de tine: ce scrii, cât de clar îți descrii serviciile și dacă publici ceva ce potențialii tăi clienți caută. Acea parte niciun dezvoltator nu o poate face pentru tine. Dar baza tehnică? Ăsta e jobul meu."
+        "Fiecare site pe care îl construiesc include: hosting rapid, meta tag-uri corecte, sitemap XML trimis la Google, LocalBusiness Schema și layout mobil care trece de Core Web Vitals.",
+        "Nu sunt opțiuni extra. Sunt minimul standard al unui site construit corect.",
+        "Strategia de conținut e treaba ta — ce scrii, cât de clar descrii serviciile. Baza tehnică SEO e a mea."
       ]
     },
     {
       "id": "google-business",
       "heading": "Singurul lucru gratuit pe care majoritatea afacerilor îl ignoră",
       "paras": [
-        "Google Business Profile este gratuit și influențează direct dacă apari în rezultate locale și pe Google Maps.",
-        "Configurează-l, verifică-ți adresa, adaugă numărul de telefon și orarul, încarcă fotografii reale și leagă-l de site. Cere câtorva clienți mulțumiți o recenzie. Asta singură te poate pune deasupra competitorilor care au doar un site.",
-        "Majoritatea afacerilor fie nu l-au configurat corect, fie l-au configurat o dată și nu l-au mai atins. E un avantaj ușor de obținut."
+        "Google Business Profile influențează direct clasamentele Local SEO și vizibilitatea pe Google Maps. E gratuit.",
+        "Verifică-ți adresa, adaugă telefon și program, încarcă fotografii reale, leagă-l de site. Cere câtorva clienți mulțumiți o recenzie.",
+        "Majoritatea afacerilor îl configurează o dată și nu-l mai ating. Acel avantaj e ușor de obținut."
       ]
     }
   ],
@@ -64,35 +64,35 @@
     "items": [
       {
         "q": "Social media ajută la clasamentul pe Google?",
-        "a": "Indirect. Social media nu îmbunătățește direct clasamentul pe Google. Dar aduce trafic pe site, iar semnalele de trafic contează. Un Google Business Profile solid și un site construit bine contează mult mai mult."
+        "a": "Nu direct. Social aduce trafic pe site, iar semnalele de trafic contează — dar un Google Business Profile solid și un site bine construit contează mult mai mult."
       },
       {
         "q": "Cât durează să te clasezi pe Google?",
-        "a": "Un site nou cu o bază SEO corectă este indexat în câteva zile. Să apari în primele rezultate pentru căutări competitive durează 3-6 luni de date de trafic real. Cuvintele cheie locale și de nișă se clasează mai repede."
+        "a": "Un site nou cu baze SEO corecte e indexat în câteva zile. Primele poziții pentru căutări competitive cer 3–6 luni de date de trafic real. Cuvintele cheie locale se clasează mai repede."
       },
       {
         "q": "Numele de domeniu afectează clasamentul?",
-        "a": "Puțin. Un domeniu care corespunde numelui afacerii tale e mai bun decât un șir de cuvinte aleatorii. Domeniile cu cuvinte cheie exacte ajutau mult în trecut. În 2026 fac foarte puțină diferență."
+        "a": "Minim. Un domeniu care corespunde numelui afacerii e mai bun ca un șir aleatoriu. Domeniile cu cuvinte cheie exacte în 2026 nu mai fac practic nicio diferență."
       },
       {
         "q": "Trebuie să plătesc Google Ads pentru a apărea pe Google?",
-        "a": "Nu. Reclamele plătite și rezultatele organice sunt separate. Un site construit corect și optimizat SEO poate îi clasa organic fără să cheltuiești nimic pe publicitate."
+        "a": "Nu. Reclamele și rezultatele organice sunt sisteme separate. Un site construit corect și optimizat SEO se clasează organic fără să cheltuiești pe publicitate."
       },
       {
         "q": "Un blog mă ajută să mă clasez?",
-        "a": "Doar dacă scrii conținut pe care oamenii îl caută cu adevărat. Un blog plin de știri de companie pe care nimeni nu le caută nu face nimic. Un ghid care răspunde la o întrebare reală a potențialilor tăi clienți poate aduce trafic constant ani de zile."
+        "a": "Doar dacă publici conținut pe care oamenii îl caută cu adevărat. Un ghid care răspunde la o întrebare reală a clienților tăi poate aduce trafic constant ani de zile. Știrile generice de companie nu fac nimic."
       },
       {
         "q": "Ce sunt datele structurate și am nevoie de ele?",
-        "a": "Datele structurate sunt cod adăugat pe site care îi spune Google-ului exact ce este afacerea ta: nume, adresă, telefon, servicii, recenzii. Le includ pe fiecare site pe care îl construiesc."
+        "a": "Schema Markup este cod care îi spune Google-ului exact ce ești: nume, adresă, telefon, servicii, recenzii. Deblochează rezultate îmbogățite în căutare. Îl includ pe fiecare site pe care îl construiesc."
       },
       {
         "q": "Competitorul meu are un site mai prost dar se clasează mai sus. De ce?",
-        "a": "De obicei unul din trei motive: este online de mai mult timp și a acumulat linkuri, are mai multe recenzii Google, sau Google Business Profile-ul lui este mai complet. Niciunul din acestea nu e un avantaj permanent."
+        "a": "De obicei: e online de mai mult timp și a acumulat backlink-uri, are mai multe recenzii Google, sau Google Business Profile-ul lui e mai complet. Niciunul nu e un avantaj permanent."
       },
       {
         "q": "Pot face SEO singur după lansarea site-ului?",
-        "a": "Absolut. Odată ce baza tehnică e la locul ei, cel mai eficient SEO pe termen lung este publicarea conținutului care răspunde la întrebări reale și menținerea activă a Google Business Profile. Nu ai nevoie de o agenție pentru asta."
+        "a": "Da. Cu baza tehnică la locul ei, cel mai eficient SEO este publicarea conținutului care răspunde la întrebări reale și menținerea activă a Google Business Profile. Nu ai nevoie de o agenție."
       }
     ]
   },
