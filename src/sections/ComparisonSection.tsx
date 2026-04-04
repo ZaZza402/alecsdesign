@@ -45,10 +45,20 @@ const ComparisonSection: React.FC = () => {
           animate={inView ? { opacity: 1 } : {}}
           transition={{ duration: 0.5 }}
         >
-          <h2 id="comparison-heading" className="comparison-title">
-            {t("comparison.title")}
+          <h2 id="comparison-heading" className="comparison-statement">
+            <span className="comparison-statement__sentence">
+              I know choosing the right developer is hard{" "}
+              <span className="comparison-statement__break-desktop" />
+              because few{" "}
+              <span className="comparison-statement__accent">truly deliver.</span>
+            </span>
+            <span className="comparison-statement__sentence">
+              So I made it simple to compare how I work{" "}
+              <span className="comparison-statement__break-desktop" />
+              versus what you usually get{" "}
+              <span className="comparison-statement__accent">in the market.</span>
+            </span>
           </h2>
-          <p className="comparison-subtitle">{t("comparison.subtitle")}</p>
         </motion.div>
 
         {/* Table — slides in from the right */}

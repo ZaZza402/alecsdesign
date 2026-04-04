@@ -21,19 +21,50 @@
   margin-bottom: 2.25rem;
 }
 
-.comparison-title {
-  font-size: clamp(1.5rem, 3.5vw, 2.125rem);
-  font-weight: 800;
-  color: #0f172a;
-  margin: 0 0 0.5rem;
-  line-height: 1.15;
+/* Statement heading */
+.comparison-statement {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
 }
 
-.comparison-subtitle {
-  font-size: 1rem;
-  color: #64748b;
-  margin: 0 auto;
-  text-align: center;
+.comparison-statement__sentence {
+  display: block;
+  /* 2 rows on desktop/tablet: large enough that ~42 chars fits one line */
+  font-size: clamp(1.15rem, 3.2vw, 2.2rem);
+  font-weight: 800;
+  line-height: 1.25;
+  color: #0f172a;
+  letter-spacing: -0.02em;
+}
+
+/* Inline break element — becomes a line break on desktop, invisible on mobile */
+.comparison-statement__break-desktop {
+  display: inline;
+}
+
+@media (min-width: 769px) {
+  .comparison-statement__break-desktop {
+    display: block;
+    /* zero height — just forces a new line within the inline flow */
+    font-size: 0;
+    line-height: 0;
+    height: 0;
+  }
+}
+
+/* On mobile: shrink font so copy wraps naturally across 3 rows */
+@media (max-width: 768px) {
+  .comparison-statement__sentence {
+    font-size: clamp(1.05rem, 5.5vw, 1.35rem);
+    line-height: 1.3;
+  }
+}
+
+.comparison-statement__accent {
+  color: #f35422;
 }
 
 /* ── Table wrapper ───────────────────────────────────────────── */
