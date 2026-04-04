@@ -47,16 +47,20 @@ const ComparisonSection: React.FC = () => {
         >
           <h2 id="comparison-heading" className="comparison-statement">
             <span className="comparison-statement__sentence">
-              I know choosing the right developer is hard{" "}
-              <span className="comparison-statement__break-desktop" />
-              because few{" "}
-              <span className="comparison-statement__accent">truly deliver.</span>
+              {t("comparison.stmt1a")}{" "}
+              <span className="comparison-statement__break" />
+              {t("comparison.stmt1b")}{" "}
+              <span className="comparison-statement__accent">
+                {t("comparison.stmt1accent")}
+              </span>
             </span>
             <span className="comparison-statement__sentence">
-              So I made it simple to compare how I work{" "}
-              <span className="comparison-statement__break-desktop" />
-              versus what you usually get{" "}
-              <span className="comparison-statement__accent">in the market.</span>
+              {t("comparison.stmt2a")}{" "}
+              <span className="comparison-statement__break" />
+              {t("comparison.stmt2b")}{" "}
+              <span className="comparison-statement__accent">
+                {t("comparison.stmt2accent")}
+              </span>
             </span>
           </h2>
         </motion.div>

@@ -1,6 +1,12 @@
 {
   "title": "The usual way vs. my way",
   "subtitle": "What you're actually getting.",
+  "stmt1a": "I know choosing the right developer is hard",
+  "stmt1b": "because few",
+  "stmt1accent": "truly deliver.",
+  "stmt2a": "So I made it simple to compare how I work",
+  "stmt2b": "versus what you usually get",
+  "stmt2accent": "in the market.",
   "colOthers": "The usual way",
   "colMine": "With me",
   "speed": {

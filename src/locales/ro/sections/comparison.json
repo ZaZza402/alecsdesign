@@ -1,6 +1,12 @@
 {
   "title": "Cum fac alții. Cum fac eu.",
   "subtitle": "Ce primești cu adevărat.",
+  "stmt1a": "Știu că alegerea unui developer bun e grea",
+  "stmt1b": "fiindcă puțini",
+  "stmt1accent": "chiar livrează ce promit.",
+  "stmt2a": "Am simplificat comparația: cum lucrez eu",
+  "stmt2b": "față de ce găsești",
+  "stmt2accent": "de obicei pe piață.",
   "colOthers": "Alții",
   "colMine": "Cu mine",
   "speed": {
