@@ -34,22 +34,17 @@ function AnimatedRing({
     if (!triggered) return;
     let animId: number;
     let start: number | null = null;
-    const duration = 2800;
+    const duration = 3200;
 
     const step = (ts: number) => {
       if (!start) start = ts;
       const progress = Math.min((ts - start) / duration, 1);
-      // Ease: slow start (quad in), fast middle, very slow finish (quint out)
-      // Blends ease-in-quad for first 40% then strong ease-out for rest
-      let eased: number;
-      if (progress < 0.5) {
-        // Accelerate slowly — quadratic in
-        eased = 2 * progress * progress * 0.7;
-      } else {
-        // Decelerate hard from ~70% value — quint out
-        const t2 = progress - 0.5;
-        eased = 0.7 + 0.3 * (1 - Math.pow(1 - t2 * 2, 5));
-      }
+      // Smooth easeInOutQuint — single continuous curve, no seams
+      // Slow start → fast middle → very slow finish
+      const eased =
+        progress < 0.5
+          ? 16 * Math.pow(progress, 5)
+          : 1 - Math.pow(-2 * progress + 2, 5) / 2;
       setCount(Math.round(eased * value));
       if (progress < 1) animId = requestAnimationFrame(step);
       else setCount(value);
