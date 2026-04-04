@@ -8,7 +8,6 @@ import ComparisonSection from "./sections/ComparisonSection";
 import StatsSection from "./sections/StatsSection";
 import LanguageSuggestionBanner from "./components/ui/LanguageSuggestionBanner";
 import LoadingSkeleton from "./components/ui/LoadingSkeleton";
-import { BackgroundPaths } from "./components/ui/background-paths";
 
 // Lazy load pages and sections
 const PortfolioSection = lazy(() => import("./sections/PortfolioSection"));
@@ -42,12 +41,8 @@ const HomePage = () => {
         ogType="website"
       />
       <main role="main">
-        {/* Blobs scoped to hero + comparison only */}
         <div className="hero-bg-scope">
-          <BackgroundPaths />
-          <section id="home" aria-labelledby="hero-heading">
-            <HeroSection />
-          </section>
+          <HeroSection />
           <ComparisonSection />
         </div>
         <StatsSection />

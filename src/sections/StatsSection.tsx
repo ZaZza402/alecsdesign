@@ -50,12 +50,7 @@ function AnimatedRing({
 
   return (
     <div className={`stats-ring stats-ring--${size}`}>
-      <svg
-        width={S}
-        height={S}
-        viewBox={`0 0 ${S} ${S}`}
-        aria-hidden="true"
-      >
+      <svg width={S} height={S} viewBox={`0 0 ${S} ${S}`} aria-hidden="true">
         {/* track circle */}
         <circle
           cx={cx}
@@ -95,7 +90,11 @@ const StatsSection: React.FC = () => {
   const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.25 });
 
   return (
-    <section className="stats-section" ref={ref} aria-labelledby="stats-heading">
+    <section
+      className="stats-section"
+      ref={ref}
+      aria-labelledby="stats-heading"
+    >
       <div className="stats-container">
         <h2 id="stats-heading" className="stats-title">
           {t("stats.title")}

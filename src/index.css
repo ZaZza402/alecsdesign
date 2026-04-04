@@ -247,12 +247,12 @@ section {
   }
 }
 
-/* ── Mesh gradient background ─────────────────────────────────── */
+/* ── Hero scope — no overflow:hidden here; hero-section handles containment ── */
 .hero-bg-scope {
   position: relative;
-  overflow: hidden;
 }
 
+/* ── Glow mesh — lives inside .hero-section (overflow:hidden clips it) ── */
 .bg-mesh {
   position: absolute;
   inset: 0;
@@ -260,81 +260,68 @@ section {
   pointer-events: none;
 }
 
-.bg-mesh__blob {
+.bg-mesh__glow {
   position: absolute;
   border-radius: 50%;
-  filter: blur(48px);
   will-change: transform;
 }
 
-.bg-mesh__blob--1 {
-  width: min(70vw, 860px);
-  height: min(70vw, 860px);
+/* Primary warm spotlight — top-right, tight + vivid */
+.bg-mesh__glow--warm {
+  width: 560px;
+  height: 560px;
   background: radial-gradient(
     circle,
-    rgba(243, 84, 34, 0.22) 0%,
+    rgba(243, 84, 34, 0.45) 0%,
+    rgba(255, 100, 30, 0.16) 48%,
     transparent 68%
   );
+  filter: blur(100px);
   top: -20%;
-  left: -12%;
-  animation: blob-drift-1 24s ease-in-out infinite alternate;
+  right: -12%;
+  animation: glow-drift-warm 22s ease-in-out infinite alternate;
 }
 
-.bg-mesh__blob--2 {
-  width: min(55vw, 720px);
-  height: min(55vw, 720px);
+/* Secondary echo — bottom-left, softer */
+.bg-mesh__glow--accent {
+  width: 420px;
+  height: 420px;
   background: radial-gradient(
     circle,
-    rgba(255, 140, 60, 0.16) 0%,
-    transparent 68%
+    rgba(255, 130, 50, 0.28) 0%,
+    transparent 65%
   );
-  top: 25%;
-  right: -14%;
-  animation: blob-drift-2 30s ease-in-out infinite alternate;
+  filter: blur(90px);
+  bottom: 5%;
+  left: -8%;
+  animation: glow-drift-accent 28s ease-in-out infinite alternate;
 }
 
-.bg-mesh__blob--3 {
-  width: min(50vw, 640px);
-  height: min(50vw, 640px);
-  background: radial-gradient(
-    circle,
-    rgba(80, 110, 160, 0.12) 0%,
-    transparent 68%
-  );
-  bottom: -15%;
-  left: 18%;
-  animation: blob-drift-3 20s ease-in-out infinite alternate;
+@keyframes glow-drift-warm {
+  from { transform: translate(0, 0) scale(1); }
+  to   { transform: translate(-5%, 9%) scale(1.06); }
 }
 
-@keyframes blob-drift-1 {
-  from {
-    transform: translate(0, 0) scale(1);
-  }
-  to {
-    transform: translate(9%, 13%) scale(1.1);
-  }
+@keyframes glow-drift-accent {
+  from { transform: translate(0, 0) scale(1); }
+  to   { transform: translate(8%, -7%) scale(1.08); }
 }
 
-@keyframes blob-drift-2 {
-  from {
-    transform: translate(0, 0) scale(1);
+@media (max-width: 640px) {
+  .bg-mesh__glow--warm {
+    width: 300px;
+    height: 300px;
+    top: -10%;
+    right: -16%;
   }
-  to {
-    transform: translate(-11%, 9%) scale(1.07);
-  }
-}
-
-@keyframes blob-drift-3 {
-  from {
-    transform: translate(0, 0) scale(1);
-  }
-  to {
-    transform: translate(7%, -11%) scale(1.12);
+  .bg-mesh__glow--accent {
+    width: 260px;
+    height: 260px;
   }
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .bg-mesh__blob {
+  .bg-mesh__glow {
     animation: none !important;
   }
 }

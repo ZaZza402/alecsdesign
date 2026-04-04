@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 import { Check } from "lucide-react";
 import LogoLoop from "../components/ui/LogoLoop";
+import { BackgroundPaths } from "../components/ui/background-paths";
 import { trackCTAClick } from "../utils/analytics";
 import "./HeroSection.css";
 
@@ -39,6 +40,7 @@ const HeroSection: React.FC = () => {
 
   return (
     <section id="home" className="hero-section" aria-label="Hero section">
+      <BackgroundPaths />
       <div className="hero-section__content">
         <motion.div
           initial="hidden"

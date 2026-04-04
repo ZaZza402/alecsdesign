@@ -1,9 +1,8 @@
 export function BackgroundPaths() {
   return (
-    <div className="bg-mesh">
-      <div className="bg-mesh__blob bg-mesh__blob--1" />
-      <div className="bg-mesh__blob bg-mesh__blob--2" />
-      <div className="bg-mesh__blob bg-mesh__blob--3" />
+    <div className="bg-mesh" aria-hidden="true">
+      <div className="bg-mesh__glow bg-mesh__glow--warm" />
+      <div className="bg-mesh__glow bg-mesh__glow--accent" />
     </div>
   );
 }
