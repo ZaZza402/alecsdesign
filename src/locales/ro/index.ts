@@ -5,6 +5,7 @@ import portfolio from "./sections/portfolio.json";
 import services from "./sections/services.json";
 import contact from "./sections/contact.json";
 import comparison from "./sections/comparison.json";
+import stats from "./sections/stats.json";
 import notFound from "./pages/notFound.json";
 import legal from "./pages/legal.json";
 import portfolioPage from "./pages/portfolioPage.json";
@@ -28,6 +29,7 @@ const translation = {
   services,
   contact,
   comparison,
+  stats,
   notFound,
   legal,
   portfolioPage,

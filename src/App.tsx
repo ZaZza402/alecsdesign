@@ -5,6 +5,7 @@ import Footer from "./components/layout/Footer";
 import HeroSection from "./sections/HeroSection";
 import HowItWorksSection from "./sections/HowItWorksSection";
 import ComparisonSection from "./sections/ComparisonSection";
+import StatsSection from "./sections/StatsSection";
 import LanguageSuggestionBanner from "./components/ui/LanguageSuggestionBanner";
 import LoadingSkeleton from "./components/ui/LoadingSkeleton";
 import { BackgroundPaths } from "./components/ui/background-paths";
@@ -49,6 +50,7 @@ const HomePage = () => {
           </section>
           <ComparisonSection />
         </div>
+        <StatsSection />
         <Suspense fallback={<LoadingSkeleton />}>
           <section id="portfolio" aria-labelledby="portfolio-heading">
             <PortfolioSection key={`portfolio-${t("nav.portfolio")}`} />

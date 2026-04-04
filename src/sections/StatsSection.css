@@ -1,0 +1,117 @@
+/* ================================================================
+   Stats Section — animated lighthouse score rings
+   ================================================================ */
+
+.stats-section {
+  background: #fff;
+  padding: 4.5rem 1.5rem 5rem;
+  text-align: center;
+}
+
+.stats-container {
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.stats-title {
+  font-size: clamp(1.5rem, 3.5vw, 2.125rem);
+  font-weight: 700;
+  color: #0f172a;
+  margin: 0 0 0.6rem;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+}
+
+.stats-subtitle {
+  font-size: clamp(0.875rem, 2vw, 1rem);
+  color: #64748b;
+  margin: 0 0 3rem;
+  max-width: 48ch;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ── Desktop: 3-column, center wider for SEO ─────────────────── */
+.stats-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.35fr 1fr;
+  gap: 1.5rem;
+  align-items: end;
+  justify-items: center;
+}
+
+.stats-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+/* ── Ring ────────────────────────────────────────────────────── */
+.stats-ring {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* number sits centered on top of the SVG */
+.stats-ring__number {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  color: #0f172a;
+  pointer-events: none;
+}
+
+.stats-ring__number--lg {
+  font-size: 1.5rem;
+}
+
+.stats-ring__number--sm {
+  font-size: 1.0625rem;
+}
+
+/* ── Stat label ──────────────────────────────────────────────── */
+.stats-label {
+  font-size: 0.6875rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #94a3b8;
+}
+
+/* ── Mobile: 2-col top row, SEO full-width below ─────────────── */
+@media (max-width: 600px) {
+  .stats-section {
+    padding: 3rem 1.25rem 3.5rem;
+  }
+
+  .stats-subtitle {
+    margin-bottom: 2rem;
+  }
+
+  .stats-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem 1rem;
+    align-items: start;
+  }
+
+  /* Performance top-left, Accessibility top-right */
+  .stats-item--performance {
+    order: 1;
+  }
+
+  .stats-item--accessibility {
+    order: 2;
+  }
+
+  /* SEO spans full width at the bottom, centered */
+  .stats-item--seo {
+    order: 3;
+    grid-column: 1 / -1;
+  }
+}
