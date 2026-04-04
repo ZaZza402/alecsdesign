@@ -1,29 +1,17 @@
 import React, { useRef } from "react";
-import {
-  Zap,
-  Search,
-  Bot,
-  Smartphone,
-  Key,
-  Clock,
-  Layers,
-  MessageCircle,
-  Check,
-  X,
-} from "lucide-react";
 import { motion, useInView } from "framer-motion";
 import { useTranslation } from "react-i18next";
 import "./ComparisonSection.css";
 
-const rows = [
-  { key: "speed", Icon: Zap },
-  { key: "google", Icon: Search },
-  { key: "ai", Icon: Bot },
-  { key: "mobile", Icon: Smartphone },
-  { key: "ownership", Icon: Key },
-  { key: "timeline", Icon: Clock },
-  { key: "design", Icon: Layers },
-  { key: "support", Icon: MessageCircle },
+const rowKeys = [
+  "speed",
+  "google",
+  "ai",
+  "mobile",
+  "ownership",
+  "timeline",
+  "design",
+  "support",
 ] as const;
 
 const ComparisonSection: React.FC = () => {
@@ -65,66 +53,39 @@ const ComparisonSection: React.FC = () => {
           </h2>
         </motion.div>
 
-        {/* Table — slides in from the right */}
         <motion.div
-          className="comparison-table-wrap"
-          initial={{ opacity: 0, x: 60 }}
-          animate={inView ? { opacity: 1, x: 0 } : {}}
+          className="comparison-cards"
+          role="region"
+          aria-label={t("comparison.title")}
+          initial={{ opacity: 0, y: 40 }}
+          animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.55, delay: 0.18, ease: [0.22, 1, 0.36, 1] }}
         >
-          <table
-            className="comparison-table"
-            aria-label={t("comparison.title")}
-          >
-            <thead>
-              <tr className="comparison-head-row">
-                <th className="col-feature" scope="col" />
-                <th className="col-others" scope="col">
-                  {t("comparison.colOthers")}
-                </th>
-                <th className="col-mine" scope="col">
-                  <span className="col-mine__badge" aria-hidden="true">
-                    <Check size={11} strokeWidth={3} />
-                  </span>
-                  {t("comparison.colMine")}
-                </th>
-              </tr>
-            </thead>
-            <tbody>
-              {rows.map(({ key, Icon }) => (
-                <tr key={key} className="comparison-row">
-                  <td className="col-feature">
-                    <span className="feature-inner">
-                      <span className="feature-icon" aria-hidden="true">
-                        <Icon size={14} strokeWidth={2.25} />
-                      </span>
-                      <span className="feature-label">
-                        {t(`comparison.${key}.label`)}
-                      </span>
-                    </span>
-                  </td>
-
-                  <td className="col-others">
-                    <span className="cell-x" aria-hidden="true">
-                      <X size={9} strokeWidth={3} />
-                    </span>
-                    <span className="cell-text">
-                      {t(`comparison.${key}.them`)}
-                    </span>
-                  </td>
-
-                  <td className="col-mine">
-                    <span className="cell-check" aria-hidden="true">
-                      <Check size={9} strokeWidth={3} />
-                    </span>
-                    <span className="cell-text">
-                      {t(`comparison.${key}.me`)}
-                    </span>
-                  </td>
-                </tr>
+          <div className="comparison-card comparison-card--others">
+            <h3 className="comparison-card__title">
+              {t("comparison.colOthers")}
+            </h3>
+            <ul className="comparison-card__list">
+              {rowKeys.map((key) => (
+                <li key={key} className="comparison-card__item">
+                  {t(`comparison.${key}.them`)}
+                </li>
               ))}
-            </tbody>
-          </table>
+            </ul>
+          </div>
+
+          <div className="comparison-card comparison-card--mine">
+            <h3 className="comparison-card__title">
+              {t("comparison.colMine")}
+            </h3>
+            <ul className="comparison-card__list">
+              {rowKeys.map((key) => (
+                <li key={key} className="comparison-card__item">
+                  {t(`comparison.${key}.me`)}
+                </li>
+              ))}
+            </ul>
+          </div>
         </motion.div>
       </div>
     </section>
