@@ -87,6 +87,10 @@ export default function handler(req: VercelRequest, res: VercelResponse) {
     .replace(/<html lang="[^"]*"/g, `<html lang="${lang}"`);
 
   res.setHeader("Content-Type", "text/html; charset=utf-8");
-  res.setHeader("Cache-Control", "public, max-age=3600, must-revalidate");
+  // no-cache: browser must revalidate HTML on every navigation.
+  // This prevents stale HTML (with old hashed asset filenames) from being
+  // served after a new deployment — which would cause a blank screen.
+  // JS/CSS assets remain immutably cached because they use content-hashed filenames.
+  res.setHeader("Cache-Control", "no-cache, must-revalidate");
   res.status(200).send(html);
 }
