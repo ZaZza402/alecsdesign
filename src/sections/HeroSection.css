@@ -21,12 +21,15 @@
       transparent 65%
     ),
     #fdfcfb;
-  background-size: 28px 28px, 100% 100%, auto;
+  background-size:
+    28px 28px,
+    100% 100%,
+    auto;
 }
 
 /* Smooth gradient dissolve into the white comparison section below */
 .hero-section::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: 0;
   left: 0;
@@ -77,6 +80,7 @@
 
 .hero-section__accent {
   color: #f35422;
+  text-shadow: 0 0 40px rgba(243, 84, 34, 0.35);
 }
 
 /* Subline */
