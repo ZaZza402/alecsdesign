@@ -4,6 +4,7 @@ import { useNavigate, useLocation } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import "./LanguageSwitcher.css";
 import { saveLanguagePreference } from "../../utils/languageDetection";
+import { switchLanguage } from "../../i18n";
 
 const languages = [
   { code: "it", label: "IT", fullName: "Italiano" },
@@ -70,9 +71,10 @@ const LanguageSwitcher: React.FC = () => {
   const currentLanguage =
     languages.find((lang) => lang.code === i18n.language) || languages[0];
 
-  const handleLanguageChange = (langCode: string) => {
+  const handleLanguageChange = async (langCode: string) => {
     saveLanguagePreference(langCode as "en" | "it" | "ro");
-    i18n.changeLanguage(langCode);
+    // Pre-load bundle first, then switch — prevents flash of missing translations
+    await switchLanguage(langCode);
 
     const pathParts = location.pathname.split("/").filter(Boolean);
     if (pathParts.length > 0 && ["en", "it", "ro"].includes(pathParts[0])) {

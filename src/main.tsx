@@ -6,7 +6,7 @@ import { HelmetProvider } from "react-helmet-async";
 import "./index.css";
 import "aos/dist/aos.css";
 import { i18nReady } from "./i18n"; // Async i18n — defers render until translations ready
-import i18n from "./i18n";
+import i18n, { switchLanguage } from "./i18n";
 import App from "./App.tsx";
 import LoadingSkeleton from "./components/ui/LoadingSkeleton";
 
@@ -44,7 +44,7 @@ function LanguageWrapper({ lang }: { lang: string }) {
   // Set language when route changes - use useEffect to avoid setState during render
   useEffect(() => {
     if (i18n.language !== lang) {
-      i18n.changeLanguage(lang);
+      switchLanguage(lang);
     }
   }, [lang]);
 
@@ -66,7 +66,7 @@ function PageWrapper({
 }) {
   useEffect(() => {
     if (i18n.language !== lang) {
-      i18n.changeLanguage(lang);
+      switchLanguage(lang);
     }
   }, [lang]);
 
