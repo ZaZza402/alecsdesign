@@ -1,10 +1,6 @@
 {
   "rewrites": [
     {
-      "source": "/",
-      "destination": "/api/index"
-    },
-    {
       "source": "/it",
       "destination": "/api/index"
     },
@@ -81,8 +77,8 @@
       "permanent": true
     },
     {
-      "source": "/en",
-      "destination": "/",
+      "source": "/",
+      "destination": "/en",
       "permanent": true
     }
   ],
