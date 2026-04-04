@@ -106,7 +106,7 @@
 }
 
 .comparison-card__item::before {
-  content: '\203A';
+  content: "\203A";
   font-size: 1.1rem;
   font-weight: 700;
   color: #cbd5e1;
@@ -126,11 +126,11 @@
 /* â”€â”€ Responsive â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 @media (max-width: 640px) {
   .comparison-section {
-    padding: 3rem 1rem 3.5rem;
+    padding: 2.25rem 1rem 2.5rem;
   }
 
   .comparison-intro {
-    margin-bottom: 1.75rem;
+    margin-bottom: 1.5rem;
   }
 
   .comparison-cards {
@@ -143,17 +143,22 @@
   }
 
   .comparison-card {
-    padding: 1.5rem 1.25rem;
+    padding: 1rem;
   }
 
   .comparison-card__title {
-    font-size: 1.125rem;
-    margin-bottom: 1.25rem;
+    font-size: 1rem;
+    margin-bottom: 0.6rem;
   }
 
   .comparison-card__item {
-    font-size: 0.875rem;
-    padding: 0.6rem 0;
+    font-size: 0.8125rem;
+    padding: 0.25rem 0;
+    gap: 0.4rem;
+  }
+
+  .comparison-card__item::before {
+    font-size: 0.95rem;
   }
 }
 
@@ -163,4 +168,3 @@
     transition: none;
   }
 }
-

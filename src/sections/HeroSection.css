@@ -34,7 +34,7 @@
 @media (max-width: 768px) {
   .hero-section__content {
     padding: 0 1.5rem 2rem 1.5rem;
-    text-align: left;
+    text-align: center;
   }
 }
 
@@ -116,7 +116,12 @@
 @media (max-width: 768px) {
   .hero-section__cta {
     flex-direction: column;
-    align-items: stretch; /* full-width buttons on mobile */
+    align-items: center;
+  }
+
+  .hero-cta-button {
+    width: 100%;
+    max-width: 260px;
   }
 }
 
