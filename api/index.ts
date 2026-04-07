@@ -148,9 +148,10 @@ export default function handler(req: VercelRequest, res: VercelResponse) {
   const langContent = content[lang];
 
   // Pre-rendered semantic HTML injected into #root.
-  // React (createRoot) replaces this on first render, so users see the live app.
-  // Static scrapers, AI crawlers, and no-JS environments read the actual content.
-  const prerender = `
+  // Wrapped in a visually-hidden container — invisible to users (no flash),
+  // but present in the DOM so AI crawlers and static scrapers read real content.
+  // React's createRoot replaces the entire #root content on first render.
+  const prerender = `<div style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap" aria-hidden="true">
 <main>
   <section aria-label="hero">
     <h1>${langContent.hero}</h1>
@@ -167,7 +168,7 @@ export default function handler(req: VercelRequest, res: VercelResponse) {
       <ul>${langContent.comparison.me.map((s) => `<li>${s}</li>`).join("")}</ul>
     </div>
   </section>
-</main>`;
+</main></div>`;
 
   // Read the base HTML file
   const htmlPath = join(process.cwd(), "dist", "index.html");
@@ -216,4 +217,3 @@ export default function handler(req: VercelRequest, res: VercelResponse) {
   res.setHeader("Cache-Control", "no-cache, must-revalidate");
   res.status(200).send(html);
 }
-

@@ -524,6 +524,16 @@ i18nReady.then(() => {
       </HelmetProvider>
     </StrictMode>,
   );
+  // Dismiss intro loader after React's first painted frame
+  requestAnimationFrame(() => {
+    requestAnimationFrame(() => {
+      const loader = document.getElementById("app-loader");
+      if (loader) {
+        loader.classList.add("hide");
+        setTimeout(() => loader.remove(), 460);
+      }
+    });
+  });
   // AOS initializes after React mounts — not in the critical render path
   initAOS();
   // Lenis smooth scroll — lazy loaded so it doesn't block initial render

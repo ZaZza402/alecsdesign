@@ -164,8 +164,70 @@
         cookie_flags: "SameSite=None;Secure",
       });
     </script>
+  <style>
+    #app-loader {
+      position: fixed;
+      inset: 0;
+      z-index: 99999;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background: #fdfcfb;
+      opacity: 1;
+      transition: opacity 0.45s ease;
+      pointer-events: all;
+    }
+    #app-loader.hide {
+      opacity: 0;
+      pointer-events: none;
+    }
+    .loader-wordmark {
+      font-family: 'Manrope', system-ui, sans-serif;
+      font-size: 1.875rem;
+      font-weight: 800;
+      letter-spacing: -0.035em;
+      color: #0f172a;
+      animation: loader-fade-up 0.5s ease both;
+    }
+    .loader-wordmark span {
+      color: #FF6321;
+    }
+    .loader-dots {
+      display: flex;
+      gap: 6px;
+      margin-top: 1.5rem;
+      animation: loader-fade-up 0.5s 0.15s ease both;
+    }
+    .loader-dots i {
+      display: block;
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      background: #FF6321;
+      opacity: 0.25;
+      animation: loader-pulse 1.2s ease-in-out infinite;
+      font-style: normal;
+    }
+    .loader-dots i:nth-child(2) { animation-delay: 0.2s; }
+    .loader-dots i:nth-child(3) { animation-delay: 0.4s; }
+    @keyframes loader-fade-up {
+      from { opacity: 0; transform: translateY(10px); }
+      to   { opacity: 1; transform: translateY(0);    }
+    }
+    @keyframes loader-pulse {
+      0%, 100% { opacity: 0.2; transform: scale(0.85); }
+      50%       { opacity: 1;   transform: scale(1.1);  }
+    }
+  </style>
   </head>
   <body>
+    <div id="app-loader" aria-hidden="true">
+      <p class="loader-wordmark">alecs<span>design</span></p>
+      <div class="loader-dots">
+        <i></i><i></i><i></i>
+      </div>
+    </div>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
   </body>
