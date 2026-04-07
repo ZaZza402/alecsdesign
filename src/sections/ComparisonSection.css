@@ -1,4 +1,4 @@
-﻿/* ================================================================
+/* ================================================================
    Comparison Section
    ================================================================ */
 
@@ -39,16 +39,16 @@
   letter-spacing: -0.02em;
 }
 
-/* Let text flow naturally â€” hidden so sentences read as continuous prose */
+/* Let text flow naturally — hidden so sentences read as continuous prose */
 .comparison-statement__break {
   display: none;
 }
 
 .comparison-statement__accent {
-  color: #f35422;
+  color: #FF6321;
 }
 
-/* â”€â”€ Cards â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+/* ── Cards ─────────────────────────────────────────────────────── */
 .comparison-cards {
   display: flex;
   flex-direction: row;
@@ -71,7 +71,7 @@
 }
 
 .comparison-card--mine {
-  background: #f35422;
+  background: #FF6321;
 }
 
 .comparison-card__title {
@@ -113,6 +113,10 @@
   flex-shrink: 0;
 }
 
+.comparison-card__item:first-child {
+  border-top: none;
+}
+
 .comparison-card--mine .comparison-card__item {
   color: #0f172a;
   font-weight: 600;
@@ -123,7 +127,7 @@
   color: rgba(0, 0, 0, 0.45);
 }
 
-/* â”€â”€ Responsive â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+/* ── Responsive ──────────────────────────────────────────────── */
 @media (max-width: 640px) {
   .comparison-section {
     padding: 2.25rem 1rem 2.5rem;

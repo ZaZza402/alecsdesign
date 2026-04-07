@@ -15,7 +15,7 @@
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.1em;
-  color: #f35422;
+  color: #FF6321;
   margin: 0 0 0.4rem;
 }
 
@@ -75,7 +75,7 @@
 }
 
 .guides-hub__entry:hover .guides-hub__entry-num {
-  color: #f35422;
+  color: #FF6321;
 }
 
 /* Entry content */
@@ -95,7 +95,7 @@
 }
 
 .guides-hub__entry:hover .guides-hub__entry-title {
-  color: #f35422;
+  color: #FF6321;
 }
 
 .guides-hub__entry-lead {
@@ -128,7 +128,7 @@
 
 .guides-hub__entry:hover .guides-hub__entry-arrow {
   transform: translateX(5px);
-  color: #f35422;
+  color: #FF6321;
 }
 
 /* ── Mobile ── */

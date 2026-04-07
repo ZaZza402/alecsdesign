@@ -70,7 +70,7 @@
 }
 
 .services-card:hover {
-  border-color: #f35422;
+  border-color: #FF6321;
   transform: translateY(-4px);
 }
 
@@ -87,9 +87,9 @@
   justify-content: center;
   width: 44px;
   height: 44px;
-  background: rgba(243, 84, 34, 0.12);
+  background: rgba(255, 99, 33, 0.12);
   border-radius: 10px;
-  color: #f35422;
+  color: #FF6321;
   flex-shrink: 0;
 }
 
@@ -118,7 +118,7 @@
   align-items: center;
   justify-content: center;
   padding: 0.9rem 2.5rem;
-  background: #f35422;
+  background: #FF6321;
   color: white;
   border: none;
   border-radius: 8px;

@@ -19,7 +19,7 @@
 
 .cf__progress-bar {
   height: 100%;
-  background: #f35422;
+  background: #FF6321;
   transition: width 0.45s cubic-bezier(0.65, 0.05, 0.36, 1);
 }
 
@@ -53,15 +53,15 @@
 }
 
 .cf__step-dot.active {
-  border-color: #f35422;
-  color: #f35422;
-  background: rgba(243, 84, 34, 0.06);
-  box-shadow: 0 0 0 4px rgba(243, 84, 34, 0.1);
+  border-color: #FF6321;
+  color: #FF6321;
+  background: rgba(255, 99, 33, 0.06);
+  box-shadow: 0 0 0 4px rgba(255, 99, 33, 0.1);
 }
 
 .cf__step-dot.done {
-  border-color: #f35422;
-  background: #f35422;
+  border-color: #FF6321;
+  background: #FF6321;
   color: #fff;
 }
 
@@ -74,7 +74,7 @@
 }
 
 .cf__step-line.done {
-  background: #f35422;
+  background: #FF6321;
 }
 
 /* ── Panel wrapper (overflow:hidden for slide) ────────────────────────── */
@@ -129,17 +129,17 @@
 }
 
 .cf__option:hover {
-  border-color: #f35422;
-  color: #f35422;
-  background: rgba(243, 84, 34, 0.04);
+  border-color: #FF6321;
+  color: #FF6321;
+  background: rgba(255, 99, 33, 0.04);
   transform: translateY(-2px);
-  box-shadow: 0 6px 16px rgba(243, 84, 34, 0.12);
+  box-shadow: 0 6px 16px rgba(255, 99, 33, 0.12);
 }
 
 .cf__option.selected {
-  border-color: #f35422;
-  background: rgba(243, 84, 34, 0.07);
-  color: #f35422;
+  border-color: #FF6321;
+  background: rgba(255, 99, 33, 0.07);
+  color: #FF6321;
 }
 
 /* ── Step 2 & 3: inputs ───────────────────────────────────────────────── */
@@ -179,8 +179,8 @@
 .cf__input:focus,
 .cf__textarea:focus {
   outline: none;
-  border-color: #f35422;
-  box-shadow: 0 0 0 3px rgba(243, 84, 34, 0.1);
+  border-color: #FF6321;
+  box-shadow: 0 0 0 3px rgba(255, 99, 33, 0.1);
 }
 
 .cf__textarea {
@@ -218,13 +218,13 @@
 }
 
 .cf__pref-btn:hover {
-  border-color: #f35422;
-  color: #f35422;
+  border-color: #FF6321;
+  color: #FF6321;
 }
 
 .cf__pref-btn.selected {
-  border-color: #f35422;
-  background: #f35422;
+  border-color: #FF6321;
+  background: #FF6321;
   color: #fff;
 }
 
@@ -286,9 +286,9 @@
 
 .cf__btn-next:hover:not(:disabled),
 .cf__btn-submit:hover:not(:disabled) {
-  background: #f35422;
+  background: #FF6321;
   transform: translateY(-1px);
-  box-shadow: 0 6px 20px rgba(243, 84, 34, 0.3);
+  box-shadow: 0 6px 20px rgba(255, 99, 33, 0.3);
 }
 
 .cf__btn-next:disabled,
@@ -301,7 +301,7 @@
 /* ── Error ────────────────────────────────────────────────────────────── */
 
 .cf__error {
-  color: #f35422;
+  color: #FF6321;
   font-size: 0.875rem;
   font-weight: 600;
   margin: 0 0 0.75rem;
@@ -323,12 +323,12 @@
 .cf__success-icon {
   width: 64px;
   height: 64px;
-  background: rgba(243, 84, 34, 0.1);
+  background: rgba(255, 99, 33, 0.1);
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #f35422;
+  color: #FF6321;
 }
 
 .cf--success h3 {

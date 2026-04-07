@@ -37,7 +37,7 @@
 .footer-heart {
   width: 10px;
   height: 10px;
-  color: #f35422;
+  color: #FF6321;
   flex-shrink: 0;
 }
 
@@ -59,10 +59,10 @@
   align-items: center;
   gap: 0.75rem;
   padding: 0.75rem 1.25rem;
-  background: rgba(243, 84, 34, 0.1);
-  border: 1px solid rgba(243, 84, 34, 0.3);
+  background: rgba(255, 99, 33, 0.1);
+  border: 1px solid rgba(255, 99, 33, 0.3);
   border-radius: 8px;
-  color: #f35422;
+  color: #FF6321;
   font-size: 0.9375rem;
   font-weight: 600;
   cursor: pointer;
@@ -71,10 +71,10 @@
 }
 
 .reveal-contact-btn:hover {
-  background: rgba(243, 84, 34, 0.2);
-  border-color: rgba(243, 84, 34, 0.5);
+  background: rgba(255, 99, 33, 0.2);
+  border-color: rgba(255, 99, 33, 0.5);
   transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(243, 84, 34, 0.2);
+  box-shadow: 0 4px 12px rgba(255, 99, 33, 0.2);
 }
 
 .reveal-contact-btn:active {
@@ -95,7 +95,7 @@
 
 .contact-item svg {
   flex-shrink: 0;
-  color: #f35422;
+  color: #FF6321;
 }
 
 .contact-item a {
@@ -105,7 +105,7 @@
 }
 
 .contact-item a:hover {
-  color: #f35422;
+  color: #FF6321;
 }
 
 .footer-links {
@@ -134,7 +134,7 @@
 
 .footer-links a:hover,
 .footer-link-button:hover {
-  color: #f35422;
+  color: #FF6321;
   transform: translateX(4px);
 }
 
@@ -160,17 +160,17 @@
   justify-content: center;
   width: 40px;
   height: 40px;
-  background: rgba(243, 84, 34, 0.1);
-  border: 1px solid rgba(243, 84, 34, 0.3);
+  background: rgba(255, 99, 33, 0.1);
+  border: 1px solid rgba(255, 99, 33, 0.3);
   border-radius: 8px;
-  color: #f35422;
+  color: #FF6321;
   text-decoration: none;
   transition: all 0.3s ease;
 }
 
 .social-icon:hover {
-  background: rgba(243, 84, 34, 0.2);
-  border-color: rgba(243, 84, 34, 0.5);
+  background: rgba(255, 99, 33, 0.2);
+  border-color: rgba(255, 99, 33, 0.5);
   transform: translateY(-2px);
 }
 
@@ -220,7 +220,7 @@
 }
 
 .footer-legal-links button:hover {
-  color: #f35422;
+  color: #FF6321;
 }
 
 .copyright {

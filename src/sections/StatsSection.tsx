@@ -72,7 +72,7 @@ function AnimatedRing({
           cy={cy}
           r={R}
           fill="transparent"
-          stroke="#f35422"
+          stroke="#FF6321"
           strokeWidth={SW}
           strokeDasharray={circ}
           strokeDashoffset={offset}

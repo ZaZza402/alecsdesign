@@ -22,9 +22,9 @@
 }
 
 .language-switcher__trigger:hover {
-  background: rgba(243, 84, 34, 0.08);
-  border-color: rgba(243, 84, 34, 0.2);
-  color: #f35422;
+  background: rgba(255, 99, 33, 0.08);
+  border-color: rgba(255, 99, 33, 0.2);
+  color: #FF6321;
   transform: translateY(-1px);
 }
 
@@ -70,16 +70,16 @@
 }
 
 .language-switcher__option:hover {
-  background: rgba(243, 84, 34, 0.08);
+  background: rgba(255, 99, 33, 0.08);
 }
 
 .language-switcher__option--active {
-  background: rgba(243, 84, 34, 0.1);
+  background: rgba(255, 99, 33, 0.1);
 }
 
 .language-switcher__option-code {
   font-weight: 700;
-  color: #f35422;
+  color: #FF6321;
   font-size: 0.75rem;
   letter-spacing: 0.3px;
   min-width: 20px;
@@ -93,7 +93,7 @@
 }
 
 .language-switcher__check {
-  color: #f35422;
+  color: #FF6321;
   font-weight: 700;
   font-size: 0.875rem;
 }

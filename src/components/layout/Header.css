@@ -24,7 +24,7 @@
 }
 
 .header.scrolled .nav-link:hover {
-  color: #f35422;
+  color: #FF6321;
 }
 
 .header.scrolled .hamburger-line {
@@ -33,7 +33,7 @@
 
 /* Keep heart orange even when scrolled */
 .header.scrolled .logo-heart {
-  color: #f35422;
+  color: #FF6321;
 }
 
 /* Language switcher white when header is black */
@@ -44,9 +44,9 @@
 }
 
 .header.scrolled .language-switcher__trigger:hover {
-  background: rgba(243, 84, 34, 0.15);
-  border-color: rgba(243, 84, 34, 0.3);
-  color: #f35422;
+  background: rgba(255, 99, 33, 0.15);
+  border-color: rgba(255, 99, 33, 0.3);
+  color: #FF6321;
 }
 
 .header-container {
@@ -87,7 +87,7 @@
 .logo-heart {
   width: 10px;
   height: 10px;
-  color: #f35422;
+  color: #FF6321;
   flex-shrink: 0;
 }
 
@@ -116,12 +116,12 @@
 }
 
 .nav-link:hover {
-  color: #f35422;
+  color: #FF6321;
   opacity: 0.8;
 }
 
 .nav-link.active {
-  color: #f35422;
+  color: #FF6321;
   font-weight: 500;
 }
 
@@ -132,7 +132,7 @@
   left: 0;
   right: 0;
   height: 2px;
-  background: #f35422;
+  background: #FF6321;
 }
 
 /* Language Switcher - visible on all screens */
@@ -167,7 +167,7 @@
 }
 
 .mobile-menu-button:hover .hamburger-line {
-  background-color: #f35422;
+  background-color: #FF6321;
 }
 
 .mobile-menu-button:active {
@@ -270,12 +270,12 @@
   left: 0;
   width: 0;
   height: 3px;
-  background: #f35422;
+  background: #FF6321;
   transition: width 0.3s ease;
 }
 
 .mobile-nav-link:hover {
-  color: #f35422;
+  color: #FF6321;
   transform: translateX(10px);
 }
 
@@ -284,7 +284,7 @@
 }
 
 .mobile-nav-link.active {
-  color: #f35422;
+  color: #FF6321;
 }
 
 .mobile-nav-link.active::after {

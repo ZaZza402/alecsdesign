@@ -16,7 +16,7 @@
     radial-gradient(circle, rgba(0, 0, 0, 0.055) 1px, transparent 1px),
     radial-gradient(
       ellipse 130% 75% at 72% -10%,
-      rgba(243, 84, 34, 0.13) 0%,
+      rgba(255, 99, 33, 0.13) 0%,
       rgba(255, 110, 40, 0.05) 42%,
       transparent 65%
     ),
@@ -79,8 +79,8 @@
 }
 
 .hero-section__accent {
-  color: #f35422;
-  text-shadow: 0 0 40px rgba(243, 84, 34, 0.35);
+  color: #FF6321;
+  text-shadow: 0 0 40px rgba(255, 99, 33, 0.35);
 }
 
 /* Subline */
@@ -120,7 +120,7 @@
 }
 
 .hero-section__perk-icon {
-  color: #f35422;
+  color: #FF6321;
   flex-shrink: 0;
   stroke-width: 2.5;
 }
@@ -168,15 +168,15 @@
 }
 
 .hero-cta-button--primary {
-  background: #f35422;
+  background: #FF6321;
   color: #fff;
-  box-shadow: 0 6px 16px rgba(243, 84, 34, 0.35);
+  box-shadow: 0 6px 16px rgba(255, 99, 33, 0.35);
 }
 
 .hero-cta-button--primary:hover {
   background: #d94212;
   transform: translateY(-2px);
-  box-shadow: 0 10px 24px rgba(243, 84, 34, 0.45);
+  box-shadow: 0 10px 24px rgba(255, 99, 33, 0.45);
 }
 
 .hero-cta-button--primary:active {

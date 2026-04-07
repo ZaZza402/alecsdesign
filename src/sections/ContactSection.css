@@ -71,12 +71,12 @@
 }
 
 .indicator-item svg {
-  color: #f35422;
+  color: #FF6321;
   flex-shrink: 0;
 }
 
 .indicator-item.available .status-badge {
-  color: #f35422;
+  color: #FF6321;
 }
 
 .indicator-item.unavailable .status-badge {
