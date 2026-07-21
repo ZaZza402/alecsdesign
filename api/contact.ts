@@ -8,7 +8,17 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
   }
 
   try {
-    const { name, contact, business, needs, preference, message } = req.body;
+    // Safely parse body for Node.js 22 serverless environment
+    let body = req.body;
+    if (typeof body === "string") {
+      try {
+        body = JSON.parse(body);
+      } catch {
+        body = {};
+      }
+    }
+
+    const { name, contact, business, needs, preference, message } = body || {};
 
     // Validate required fields
     if (!name || !contact || !business || !needs || !preference) {
@@ -27,14 +37,12 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
     // Clean and validate credentials
     const emailUser = process.env.EMAIL_USER.trim();
     const emailPass = process.env.EMAIL_PASS.trim();
-    // Create transporter using environment variables or default to Namecheap
-    // We default to Port 465 (SSL/TLS) as it is the standard for Namecheap Private Email
     const host = (process.env.EMAIL_HOST || "mail.privateemail.com").trim();
     const port = parseInt(process.env.EMAIL_PORT || "465");
-    const secure = port === 465; // true for 465 (SSL), false for 587 (STARTTLS)
+    const secure = port === 465;
 
     console.log(
-      `Configuration: Host=${host}, Port=${port}, User=${emailUser}, Secure=${secure}, PassLength=${emailPass.length}`
+      `Configuration: Host=${host}, Port=${port}, User=${emailUser}, Secure=${secure}, PassLength=${emailPass.length}`,
     );
 
     const transporter = nodemailer.createTransport({
@@ -45,9 +53,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
         user: emailUser,
         pass: emailPass,
       },
-      // specific TLS settings to ensure compatibility
       tls: {
-        // ciphers: 'SSLv3', // Sometimes needed for older servers, but Namecheap should be modern
         rejectUnauthorized: true,
       },
       logger: true,
@@ -56,9 +62,9 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
 
     // Email content
     const mailOptions = {
-      from: emailUser, // Must match the authenticated user
+      from: emailUser,
       to: "start@alecsdesign.xyz",
-      replyTo: contact, // Allows you to reply directly to the user
+      replyTo: contact,
       subject: `New Contact Form Submission from ${name}`,
       html: `
         <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
@@ -115,14 +121,12 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
   } catch (error) {
     console.error("Error sending email:", error);
 
-    // Provide detailed error information
     let errorMessage = "Failed to send email";
     let errorDetails = "Unknown error";
 
     if (error instanceof Error) {
       errorDetails = error.message;
 
-      // Check for specific auth errors
       if (errorDetails.includes("Invalid login")) {
         errorMessage = "Email authentication failed";
         errorDetails = "Invalid credentials. Please check your email password.";
