@@ -18,9 +18,12 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
       }
     }
 
-    const { name, contact, business, needs, preference, message } = body || {};
+    // Map contactDetail from frontend to 'contact' expected here
+    const { name, contactDetail, business, needs, preference, message } =
+      body || {};
+    const contact = contactDetail;
 
-    // Validate required fields
+    // Validate required fields matching frontend state
     if (!name || !contact || !business || !needs || !preference) {
       return res.status(400).json({ error: "Missing required fields" });
     }
@@ -75,8 +78,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
           <div style="margin: 20px 0;">
             <h3 style="color: #333; margin-bottom: 5px;">Contact Information</h3>
             <p><strong>Name:</strong> ${name}</p>
-            <p><strong>Contact:</strong> ${contact}</p>
-            <p><strong>Preferred Contact Method:</strong> ${preference}</p>
+            <p><strong>Contact (${preference}):</strong> ${contact}</p>
           </div>
 
           <div style="margin: 20px 0;">
