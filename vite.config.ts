@@ -23,7 +23,8 @@ export default defineConfig({
         enabled: true,
       },
       workbox: {
-        globPatterns: ["**/*.{js,css,html,png,svg,ico,webmanifest}"],
+        globPatterns: ["**/*.{html,css,js,png,svg,ico,webmanifest}"],
+        navigateFallback: "index.html",
       },
       manifest: {
         name: "alecsdesign - Professional Web Development",

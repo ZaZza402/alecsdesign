@@ -562,21 +562,26 @@ i18nReady.then(() => {
     },
   });
 
-  let deferredInstallPrompt: any = null;
-  window.addEventListener("beforeinstallprompt", (event: Event) => {
+  let deferredInstallPrompt: Event | null = null;
+
+  const handleInstallPrompt = (event: Event) => {
     event.preventDefault();
     deferredInstallPrompt = event;
-    console.log("PWA can be installed. Tap anywhere to show the prompt.");
+    console.log("PWA install prompt is available.");
+  };
 
-    const showInstallPrompt = async () => {
+  window.addEventListener("beforeinstallprompt", handleInstallPrompt);
+
+  window.addEventListener(
+    "click",
+    async () => {
       if (!deferredInstallPrompt) return;
-      deferredInstallPrompt.prompt();
-      const choiceResult = await deferredInstallPrompt.userChoice;
+      const promptEvent = deferredInstallPrompt as BeforeInstallPromptEvent;
+      promptEvent.prompt();
+      const choiceResult = await promptEvent.userChoice;
       console.log("PWA install choice:", choiceResult.outcome);
       deferredInstallPrompt = null;
-      window.removeEventListener("click", showInstallPrompt);
-    };
-
-    window.addEventListener("click", showInstallPrompt, { once: true });
-  });
+    },
+    { once: true },
+  );
 });
