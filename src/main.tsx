@@ -561,4 +561,22 @@ i18nReady.then(() => {
       console.error("PWA registration failed:", error);
     },
   });
+
+  let deferredInstallPrompt: any = null;
+  window.addEventListener("beforeinstallprompt", (event: Event) => {
+    event.preventDefault();
+    deferredInstallPrompt = event;
+    console.log("PWA can be installed. Tap anywhere to show the prompt.");
+
+    const showInstallPrompt = async () => {
+      if (!deferredInstallPrompt) return;
+      deferredInstallPrompt.prompt();
+      const choiceResult = await deferredInstallPrompt.userChoice;
+      console.log("PWA install choice:", choiceResult.outcome);
+      deferredInstallPrompt = null;
+      window.removeEventListener("click", showInstallPrompt);
+    };
+
+    window.addEventListener("click", showInstallPrompt, { once: true });
+  });
 });
