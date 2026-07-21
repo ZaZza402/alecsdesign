@@ -39,7 +39,7 @@
   letter-spacing: -0.02em;
 }
 
-/* Let text flow naturally — hidden so sentences read as continuous prose */
+/* Let text flow naturally - hidden so sentences read as continuous prose */
 .comparison-statement__break {
   display: none;
 }

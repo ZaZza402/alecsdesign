@@ -38,7 +38,7 @@ export default function handler(req: VercelRequest, res: VercelResponse) {
       description:
         "Transform your business with scalable web solutions that work 24/7. Expert web developer in Rome specializing in React applications, e-commerce, and SEO-optimized websites. Your digital growth partner who builds solutions, not just websites.",
       locale: "en_US",
-      hero: "Your website should work like your best employee — 24/7.",
+      hero: "Your website should work like your best employee - 24/7.",
       heroSub:
         "Web developer in Rome. I build fast, SEO-ready, scalable digital products for businesses that want to grow online.",
       services: [
@@ -50,7 +50,7 @@ export default function handler(req: VercelRequest, res: VercelResponse) {
       ],
       comparison: {
         them: [
-          "3–6 second load times",
+          "3-6 second load times",
           "Hard to find on Google",
           "AI assistants can't recommend you",
           "Breaks on mobile phones",
@@ -75,7 +75,7 @@ export default function handler(req: VercelRequest, res: VercelResponse) {
       description:
         "Trasforma la tua attività con soluzioni web scalabili che lavorano 24/7. Sviluppatore web esperto a Roma specializzato in applicazioni React, e-commerce e siti web ottimizzati SEO. Il tuo partner digitale che costruisce soluzioni, non solo siti web.",
       locale: "it_IT",
-      hero: "Il tuo sito dovrebbe lavorare come il tuo dipendente migliore — 24/7.",
+      hero: "Il tuo sito dovrebbe lavorare come il tuo dipendente migliore - 24/7.",
       heroSub:
         "Sviluppatore web a Roma. Creo prodotti digitali veloci, ottimizzati SEO e scalabili per aziende che vogliono crescere online.",
       services: [
@@ -87,7 +87,7 @@ export default function handler(req: VercelRequest, res: VercelResponse) {
       ],
       comparison: {
         them: [
-          "3–6 secondi di caricamento",
+          "3-6 secondi di caricamento",
           "Quasi introvabile su Google",
           "L'AI non ti trova",
           "Si rompe sullo smartphone",
@@ -112,7 +112,7 @@ export default function handler(req: VercelRequest, res: VercelResponse) {
       description:
         "Transformă-ți afacerea cu soluții web scalabile care funcționează 24/7. Dezvoltator web expert în Roma specializat în aplicații React, e-commerce și site-uri web optimizate SEO. Partenerul tău digital care construiește soluții, nu doar site-uri web.",
       locale: "ro_RO",
-      hero: "Site-ul tău ar trebui să lucreze ca cel mai bun angajat al tău — 24/7.",
+      hero: "Site-ul tău ar trebui să lucreze ca cel mai bun angajat al tău - 24/7.",
       heroSub:
         "Dezvoltator web în Roma. Construiesc produse digitale rapide, optimizate SEO și scalabile pentru afaceri care vor să crească online.",
       services: [
@@ -124,7 +124,7 @@ export default function handler(req: VercelRequest, res: VercelResponse) {
       ],
       comparison: {
         them: [
-          "3–6 secunde timp de încărcare",
+          "3-6 secunde timp de încărcare",
           "Greu de găsit pe Google",
           "Nu te găsește AI-ul",
           "Se strică pe telefon",
@@ -148,7 +148,7 @@ export default function handler(req: VercelRequest, res: VercelResponse) {
   const langContent = content[lang];
 
   // Pre-rendered semantic HTML injected into #root.
-  // Wrapped in a visually-hidden container — invisible to users (no flash),
+  // Wrapped in a visually-hidden container - invisible to users (no flash),
   // but present in the DOM so AI crawlers and static scrapers read real content.
   // React's createRoot replaces the entire #root content on first render.
   const prerender = `<div style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap" aria-hidden="true">
@@ -212,7 +212,7 @@ export default function handler(req: VercelRequest, res: VercelResponse) {
   res.setHeader("Content-Type", "text/html; charset=utf-8");
   // no-cache: browser must revalidate HTML on every navigation.
   // This prevents stale HTML (with old hashed asset filenames) from being
-  // served after a new deployment — which would cause a blank screen.
+  // served after a new deployment - which would cause a blank screen.
   // JS/CSS assets remain immutably cached because they use content-hashed filenames.
   res.setHeader("Cache-Control", "no-cache, must-revalidate");
   res.status(200).send(html);

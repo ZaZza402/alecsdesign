@@ -1,20 +1,20 @@
 {
   "meta": {
     "title": "Come Farsi Trovare su Google Senza Pagare le Pubblicità",
-    "description": "Perché la maggior parte dei siti aziendali non si posiziona su Google — e cosa fare concretamente. Di Alex, sviluppatore web a Roma.",
+    "description": "Perché la maggior parte dei siti aziendali non si posiziona su Google - e cosa fare concretamente. Di Alex, sviluppatore web a Roma.",
     "readingTime": "5 min di lettura",
     "published": "1 aprile 2026"
   },
   "breadcrumb": "Guide",
   "title": "Come Farsi Trovare su Google Senza Pagare le Pubblicità",
-  "lead": "La maggior parte dei siti aziendali è invisibile su Google. Non perché il business sia scadente — perché il sito è stato costruito per stare bene, non per posizionarsi.",
+  "lead": "La maggior parte dei siti aziendali è invisibile su Google. Non perché il business sia scadente - perché il sito è stato costruito per stare bene, non per posizionarsi.",
   "sections": [
     {
       "id": "perche-invisibili",
       "heading": "Perché il 90% dei siti aziendali non si trova",
       "paras": [
         "Google posiziona in base a utilità, velocità e affidabilità. Non all'estetica.",
-        "I siti drag-and-drop caricano in 4–6 secondi, non hanno Schema Markup e danno a Google quasi nulla da leggere. Esistono online. Non si posizionano.",
+        "I siti drag-and-drop caricano in 4-6 secondi, non hanno Schema Markup e danno a Google quasi nulla da leggere. Esistono online. Non si posizionano.",
         "Un sito costruito correttamente gestisce tutto questo dal primo giorno. Le fondamenta sono tecniche e invisibili al visitatore."
       ]
     },
@@ -33,7 +33,7 @@
       "id": "cinque-cose",
       "heading": "Cinque cose che il tuo sito deve avere per posizionarsi",
       "paras": [
-        "Caricamento sotto i 2 secondi su mobile — dall'architettura, non da un plugin.",
+        "Caricamento sotto i 2 secondi su mobile - dall'architettura, non da un plugin.",
         "Layout mobile-first: progettato a 390px, non ridotto dal desktop.",
         "Local SEO: città nel tag del titolo, indirizzo nel LocalBusiness Schema, Google Business Profile verificato collegato al sito.",
         "Contenuto strutturato: gerarchia H1→H2→H3, titoli di pagina chiari, risposte che corrispondono all'intento di ricerca reale.",
@@ -46,7 +46,7 @@
       "paras": [
         "Ogni sito che costruisco include: hosting veloce, meta tag corretti, sitemap XML inviata a Google, LocalBusiness Schema e layout mobile conforme ai Core Web Vitals.",
         "Non sono optional. Sono la base minima di un sito costruito correttamente.",
-        "Strategia dei contenuti è compito tuo — cosa scrivi, quanto chiaramente descrivi i tuoi servizi. La base tecnica SEO è il mio lavoro."
+        "Strategia dei contenuti è compito tuo - cosa scrivi, quanto chiaramente descrivi i tuoi servizi. La base tecnica SEO è il mio lavoro."
       ]
     },
     {
@@ -64,11 +64,11 @@
     "items": [
       {
         "q": "I social media aiutano il posizionamento su Google?",
-        "a": "Non direttamente. I social portano traffico al sito e i segnali di traffico contano — ma un Google Business Profile solido e un sito ben costruito contano molto di più."
+        "a": "Non direttamente. I social portano traffico al sito e i segnali di traffico contano - ma un Google Business Profile solido e un sito ben costruito contano molto di più."
       },
       {
         "q": "Quanto tempo ci vuole per posizionarsi?",
-        "a": "Un sito nuovo con basi SEO corrette viene indicizzato in pochi giorni. Primi risultati per ricerche competitive: 3–6 mesi di dati di traffico reali. Le keyword locali e di nicchia si posizionano prima."
+        "a": "Un sito nuovo con basi SEO corrette viene indicizzato in pochi giorni. Primi risultati per ricerche competitive: 3-6 mesi di dati di traffico reali. Le keyword locali e di nicchia si posizionano prima."
       },
       {
         "q": "Il nome di dominio influisce sul ranking?",

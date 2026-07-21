@@ -26,7 +26,7 @@ const ComparisonSection: React.FC = () => {
       aria-labelledby="comparison-heading"
     >
       <div className="comparison-container">
-        {/* Title stays put — opacity fade only, no Y movement */}
+        {/* Title stays put - opacity fade only, no Y movement */}
         <motion.div
           className="comparison-intro"
           initial={{ opacity: 0 }}

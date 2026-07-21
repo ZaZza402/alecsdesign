@@ -13,9 +13,9 @@
       "id": "la-verita-scomoda",
       "heading": "La verità scomoda sulla maggior parte dei siti aziendali",
       "paras": [
-        "Un sito che esiste non è la stessa cosa di un sito che funziona. La differenza non è nel design — è nell'intenzione.",
+        "Un sito che esiste non è la stessa cosa di un sito che funziona. La differenza non è nel design - è nell'intenzione.",
         "Un sito che funziona risponde alle domande, costruisce fiducia prima che qualcuno chiami, si posiziona su Google e rende il passo successivo ovvio. La maggior parte dei siti fallisce su tutti e quattro.",
-        "La buona notizia: quello che fa funzionare un sito sono decisioni prese durante la costruzione — non qualcosa che aggiungi dopo."
+        "La buona notizia: quello che fa funzionare un sito sono decisioni prese durante la costruzione - non qualcosa che aggiungi dopo."
       ]
     },
     {
@@ -23,10 +23,10 @@
       "heading": "Sette cose che il tuo sito deve avere",
       "paras": [
         "Velocità: sotto i 2 secondi su smartphone. Manca questo, e la maggior parte dei visitatori se ne va prima di leggere una parola. I Core Web Vitals influenzano direttamente il ranking su Google.",
-        "Layout mobile-first: progettato per uno schermo da 390px — non adattato dal desktop. Oltre il 70% dei visitatori arriva da mobile.",
+        "Layout mobile-first: progettato per uno schermo da 390px - non adattato dal desktop. Oltre il 70% dei visitatori arriva da mobile.",
         "Una sola azione chiara per pagina: prenota una chiamata, manda un messaggio, guarda il menu. Una CTA. Non cinque.",
         "Segnali di fiducia: recensioni reali, foto reali, una persona con un nome dietro all'attività, una sede fisica.",
-        "Contatti che funzionano: numero cliccabile, link WhatsApp, email — non solo un modulo che finisce nello spam.",
+        "Contatti che funzionano: numero cliccabile, link WhatsApp, email - non solo un modulo che finisce nello spam.",
         "Base SEO: title tag, LocalBusiness Schema Markup, Google Business Profile verificato, sitemap XML. È come Google decide se il tuo sito esiste.",
         "Proprietà: possiedi codice e dominio. Non un abbonamento, non un affitto. Spostare, modificare o passare il sito a qualcun altro è sempre possibile."
       ]
@@ -35,7 +35,7 @@
       "id": "ricerca-ai",
       "heading": "Cosa è cambiato con la ricerca AI",
       "paras": [
-        "Nel 2026, una quota crescente di persone trova aziende tramite AI: ChatGPT, Perplexity, Google AI Overviews. Questi sistemi estraggono risposte da contenuti strutturati e autorevoli — non da pagine belle.",
+        "Nel 2026, una quota crescente di persone trova aziende tramite AI: ChatGPT, Perplexity, Google AI Overviews. Questi sistemi estraggono risposte da contenuti strutturati e autorevoli - non da pagine belle.",
         "Perché un AI consigli la tua attività, il sito deve essere fattualmente chiaro: chi sei, cosa fai, dove, e perché sei affidabile. Il linguaggio di marketing vago è invisibile ai motori AI.",
         "Il LocalBusiness Schema Markup è determinante. Segnala ai sistemi AI che la tua attività è reale, con indirizzo verificato e servizi definiti. Lo includo in ogni sito che costruisco."
       ]
@@ -44,9 +44,9 @@
       "id": "prenotazioni-pagamenti",
       "heading": "Prenotazioni e pagamenti online: aspettative crescenti",
       "paras": [
-        "Per le attività di servizi — studi medici, salon, ristoranti, consulenti — la prenotazione online non è più un extra. I clienti la danno per scontata.",
+        "Per le attività di servizi - studi medici, salon, ristoranti, consulenti - la prenotazione online non è più un extra. I clienti la danno per scontata.",
         "Un cliente che trova il sito alle 23 deve poter prenotare senza chiamare. Un acconto deve potersi pagare senza un bonifico.",
-        "Non sono funzionalità complesse — sono integrazioni: calendario collegato ai tuoi orari, link di pagamento collegato al tuo conto. Costruite una volta, girano senza che tu le tocchi."
+        "Non sono funzionalità complesse - sono integrazioni: calendario collegato ai tuoi orari, link di pagamento collegato al tuo conto. Costruite una volta, girano senza che tu le tocchi."
       ]
     },
     {
@@ -54,7 +54,7 @@
       "heading": "Possedere il sito contro affittarlo",
       "paras": [
         "Un sito su Squarespace, Wix o piattaforme simili è tecnicamente in affitto. Se la piattaforma cambia prezzi, funzionalità o chiude, il tuo sito è condizionato. Non puoi spostarlo.",
-        "Un sito custom ti dà codice sorgente, credenziali di hosting e portabilità completa. Cambi host, cambi sviluppatore, passi il sito a chiunque — è tuo.",
+        "Un sito custom ti dà codice sorgente, credenziali di hosting e portabilità completa. Cambi host, cambi sviluppatore, passi il sito a chiunque - è tuo.",
         "Costo di mantenimento su infrastruttura moderna: ~€15/anno per il dominio. Nient'altro.",
         "Consegno tutto via GitHub al lancio: codice sorgente, file di design, accesso all'hosting. Completamente documentato, completamente tuo."
       ]
@@ -77,7 +77,7 @@
       },
       {
         "q": "Ho bisogno di un sito se ho già Instagram?",
-        "a": "Sì. I social cambiano algoritmi, riducono la portata organica e possono essere bloccati. Il tuo sito è l'unica presenza online che controlli completamente. Instagram porta traffico — non può sostituire il sito."
+        "a": "Sì. I social cambiano algoritmi, riducono la portata organica e possono essere bloccati. Il tuo sito è l'unica presenza online che controlli completamente. Instagram porta traffico - non può sostituire il sito."
       },
       {
         "q": "Cosa vuol dire CTA e perché è importante?",
@@ -85,11 +85,11 @@
       },
       {
         "q": "Come faccio a sapere se il mio sito attuale funziona?",
-        "a": "Collegalo a Google Search Console e Google Analytics — entrambi gratuiti. Search Console mostra le ricerche che portano visitatori. Analytics mostra cosa fanno una volta arrivati. Frequenza di rimbalzo sopra l'80%? Qualcosa non funziona."
+        "a": "Collegalo a Google Search Console e Google Analytics - entrambi gratuiti. Search Console mostra le ricerche che portano visitatori. Analytics mostra cosa fanno una volta arrivati. Frequenza di rimbalzo sopra l'80%? Qualcosa non funziona."
       },
       {
         "q": "Posso costruire il sito da solo invece di assumere qualcuno?",
-        "a": "Puoi — Squarespace e Webflow lo rendono possibile senza competenze tecniche. Il compromesso: incontrerai limiti prima del previsto, e i risultati in Core Web Vitals e SEO raramente eguagliano un sito custom."
+        "a": "Puoi - Squarespace e Webflow lo rendono possibile senza competenze tecniche. Il compromesso: incontrerai limiti prima del previsto, e i risultati in Core Web Vitals e SEO raramente eguagliano un sito custom."
       },
       {
         "q": "Quali informazioni devo preparare prima di lavorare con uno sviluppatore?",

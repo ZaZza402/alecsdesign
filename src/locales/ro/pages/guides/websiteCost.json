@@ -16,7 +16,7 @@
         "Diferența e cine construiește și cum.",
         "O ofertă de €150 înseamnă un template pe o platformă pe care nu o deții. Nu se clasează pe Google, nu încarcă rapid pe mobil și dispare când oprești abonamentul.",
         "O ofertă de €10.000 de la o agenție acoperă manageri de proiect, account manageri și workshop-uri de brand. Plătești structura lor, nu rezultatele tale.",
-        "Un freelancer construiește de la zero — fără template, fără costuri lunare. Pentru majoritatea afacerilor mici, asta e exact ce le trebuie."
+        "Un freelancer construiește de la zero - fără template, fără costuri lunare. Pentru majoritatea afacerilor mici, asta e exact ce le trebuie."
       ]
     },
     {
@@ -27,18 +27,18 @@
         "Calitatea codului: sub 2 secunde viteză de încărcare nu e o coincidență. Necesită cod curat, assets optimizate, caching și hosting configurat corect. Google măsoară Core Web Vitals. Site-urile lente coboară în clasamente.",
         "Baza SEO: tag-uri de titlu, meta descrieri, Schema Markup, sitemap XML, configurare Google Search Console. Fără ele, ești invizibil.",
         "Mobil: peste 70% din vizitatori vin de pe telefon. Un layout mobil slab îi pierde în mai puțin de 3 secunde.",
-        "Proprietate: deții rezultatul — sau nu. Majoritatea oamenilor regretă asta mai târziu."
+        "Proprietate: deții rezultatul - sau nu. Majoritatea oamenilor regretă asta mai târziu."
       ]
     },
     {
       "id": "costuri-ascunse",
       "heading": "Costurile ascunse pe care nimeni nu le menționează",
       "paras": [
-        "Domeniu: €10–15/an — îl plătești indiferent de cine construiește site-ul.",
-        "Hosting: €5–25/lună. Unii dezvoltatori îl gestionează cu un adaos. Alții construiesc pe Vercel unde hosting-ul de bază e gratuit.",
-        "Abonamente CMS: Squarespace și Wix costă €13–40/lună pentru totdeauna. Oprești plata, site-ul cade.",
-        "Taxe pentru modificări: unele agenții cer €50–150 pentru a schimba un număr de telefon. Întreabă înainte de a semna: cine face modificările și la ce preț?",
-        "Reînnoire plugin-uri: site-urile WordPress depind de plugin-uri plătite pentru SEO, rezervări și formulare — un site de €800 poate acumula €300/an în taxe de plugin-uri."
+        "Domeniu: €10-15/an - îl plătești indiferent de cine construiește site-ul.",
+        "Hosting: €5-25/lună. Unii dezvoltatori îl gestionează cu un adaos. Alții construiesc pe Vercel unde hosting-ul de bază e gratuit.",
+        "Abonamente CMS: Squarespace și Wix costă €13-40/lună pentru totdeauna. Oprești plata, site-ul cade.",
+        "Taxe pentru modificări: unele agenții cer €50-150 pentru a schimba un număr de telefon. Întreabă înainte de a semna: cine face modificările și la ce preț?",
+        "Reînnoire plugin-uri: site-urile WordPress depind de plugin-uri plătite pentru SEO, rezervări și formulare - un site de €800 poate acumula €300/an în taxe de plugin-uri."
       ]
     },
     {
@@ -80,7 +80,7 @@
     "items": [
       {
         "q": "Pot obține un site pentru mai puțin de 500 de euro?",
-        "a": "Da — dar va fi un template pe o platformă pe care o vei plăti lunar. Bun ca punct de plecare. Nu va aduce clienți."
+        "a": "Da - dar va fi un template pe o platformă pe care o vei plăti lunar. Bun ca punct de plecare. Nu va aduce clienți."
       },
       {
         "q": "Trebuie să plătesc lunar pentru un site?",
@@ -88,7 +88,7 @@
       },
       {
         "q": "Cât durează să construiești un site?",
-        "a": "1–2 săptămâni de la conținut gata până la lansare pentru un site standard. Întârzierile vin aproape mereu din așteptarea textelor, fotografiilor și feedback-ului — nu din dezvoltare."
+        "a": "1-2 săptămâni de la conținut gata până la lansare pentru un site standard. Întârzierile vin aproape mereu din așteptarea textelor, fotografiilor și feedback-ului - nu din dezvoltare."
       },
       {
         "q": "Un site ieftin e vreodată alegerea potrivită?",
@@ -96,7 +96,7 @@
       },
       {
         "q": "Care e diferența dintre un freelancer și o agenție?",
-        "a": "Overhead. O agenție îți facturează manageri de proiect, designeri, dezvoltatori și account manageri. Freelancer-ul e persoana care construiește efectiv site-ul — același rezultat, fracțiune din cost."
+        "a": "Overhead. O agenție îți facturează manageri de proiect, designeri, dezvoltatori și account manageri. Freelancer-ul e persoana care construiește efectiv site-ul - același rezultat, fracțiune din cost."
       },
       {
         "q": "Site-ul meu va apărea pe Google?",

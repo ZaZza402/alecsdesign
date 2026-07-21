@@ -10,7 +10,7 @@ const getLanguageFromPath = () => {
 
 const initialLanguage = getLanguageFromPath();
 
-// Dynamically load only the current language — keeps the main bundle ~150 kB lighter
+// Dynamically load only the current language - keeps the main bundle ~150 kB lighter
 const loadLanguage = (
   lang: string,
 ): Promise<{ default: Record<string, unknown> }> => {
@@ -43,13 +43,13 @@ export const i18nReady = loadLanguage(initialLanguage).then((module) => {
   });
 });
 
-// Sync handler — just keeps the <html lang> attribute in sync
+// Sync handler - just keeps the <html lang> attribute in sync
 i18n.on("languageChanged", (lng) => {
   document.documentElement.lang = lng;
 });
 
 /**
- * Pre-loads a language bundle THEN switches — avoids the race condition
+ * Pre-loads a language bundle THEN switches - avoids the race condition
  * where i18n.changeLanguage() fires before translations are available.
  * Use this everywhere instead of i18n.changeLanguage() directly.
  */

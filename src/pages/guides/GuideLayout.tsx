@@ -181,7 +181,7 @@ export default function GuideLayout({
       />
 
       <div className="guide-layout">
-        {/* Breadcrumb — full on desktop, back-link only on mobile */}
+        {/* Breadcrumb - full on desktop, back-link only on mobile */}
         <nav className="guide-breadcrumb" aria-label="breadcrumb">
           <Link
             to={hubSlug}
@@ -284,7 +284,7 @@ export default function GuideLayout({
               </div>
             )}
 
-            {/* FAQ — answers questions raised by the article */}
+            {/* FAQ - answers questions raised by the article */}
             <div className="guide-faq">
               <h2 className="guide-faq__heading">{data.faq.heading}</h2>
               <FaqAccordion items={data.faq.items} />
@@ -295,7 +295,7 @@ export default function GuideLayout({
               <p className="guide-author__quote">{data.authorBio}</p>
             </blockquote>
 
-            {/* CTA block — single conversion point, after trust is established */}
+            {/* CTA block - single conversion point, after trust is established */}
             <div className="guide-cta-block">
               <div className="guide-cta-block__text">
                 <strong className="guide-cta-block__heading">

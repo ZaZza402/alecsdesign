@@ -2,7 +2,7 @@
   "title": "The usual way vs. my way",
   "subtitle": "What you're actually getting.",
   "stmt1a": "I know choosing the right developer",
-  "stmt1b": "is hard — because few",
+  "stmt1b": "is hard - because few",
   "stmt1accent": "truly deliver.",
   "stmt2a": "So I made it simple to compare how I work",
   "stmt2b": "versus what you usually get",
@@ -11,7 +11,7 @@
   "colMine": "With me",
   "speed": {
     "label": "Load speed",
-    "them": "3–6 seconds",
+    "them": "3-6 seconds",
     "me": "Under 2 seconds"
   },
   "google": {

@@ -73,7 +73,7 @@ const LanguageSwitcher: React.FC = () => {
 
   const handleLanguageChange = async (langCode: string) => {
     saveLanguagePreference(langCode as "en" | "it" | "ro");
-    // Pre-load bundle first, then switch — prevents flash of missing translations
+    // Pre-load bundle first, then switch - prevents flash of missing translations
     await switchLanguage(langCode);
 
     const pathParts = location.pathname.split("/").filter(Boolean);
@@ -81,7 +81,7 @@ const LanguageSwitcher: React.FC = () => {
       pathParts.shift();
     }
 
-    // Guide-aware navigation — map slugs to the correct target language
+    // Guide-aware navigation - map slugs to the correct target language
     if (pathParts[0] === "guide") {
       const currentSlug = pathParts[1];
       if (currentSlug && GUIDE_SLUG_MAP[currentSlug]) {

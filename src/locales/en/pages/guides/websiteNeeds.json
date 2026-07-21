@@ -13,9 +13,9 @@
       "id": "the-uncomfortable-truth",
       "heading": "The uncomfortable truth about most business websites",
       "paras": [
-        "A site that exists is not the same as a site that works. The difference is not design — it is intent.",
+        "A site that exists is not the same as a site that works. The difference is not design - it is intent.",
         "A working site answers questions, builds trust before anyone calls, ranks on Google so the right people find it, and makes the next step obvious. Most sites fail at all four.",
-        "The good news: what makes a site work is a set of decisions made during the build — not something you add later."
+        "The good news: what makes a site work is a set of decisions made during the build - not something you add later."
       ]
     },
     {
@@ -23,19 +23,19 @@
       "heading": "Seven things your website must have",
       "paras": [
         "Speed: loads under 2 seconds on mobile. Fails this, and most visitors leave before reading a word. Core Web Vitals directly affect Google rankings.",
-        "Mobile-first layout: designed for a 390px phone screen — not adapted from desktop. 70%+ of your visitors arrive on mobile.",
+        "Mobile-first layout: designed for a 390px phone screen - not adapted from desktop. 70%+ of your visitors arrive on mobile.",
         "One clear next step per page: book a call, send a message, see the menu. One CTA. Not five.",
         "Trust signals: real client reviews, real photos, a named person behind the business, a physical location.",
-        "Contact options that work: clickable phone number, WhatsApp link, email — not just a contact form that disappears into spam.",
+        "Contact options that work: clickable phone number, WhatsApp link, email - not just a contact form that disappears into spam.",
         "SEO foundation: title tags, LocalBusiness Schema Markup, verified Google Business Profile, XML sitemap. This is how Google decides your site exists.",
-        "Ownership: you own the code and domain. Not a subscription, not a rental. Move, change, or hand it to anyone — no permission needed."
+        "Ownership: you own the code and domain. Not a subscription, not a rental. Move, change, or hand it to anyone - no permission needed."
       ]
     },
     {
       "id": "ai-search",
       "heading": "What changed with AI search",
       "paras": [
-        "In 2026, a growing share of people find businesses through AI: ChatGPT, Perplexity, Google AI Overviews. These systems extract answers from structured, authoritative content — not from pretty pages.",
+        "In 2026, a growing share of people find businesses through AI: ChatGPT, Perplexity, Google AI Overviews. These systems extract answers from structured, authoritative content - not from pretty pages.",
         "For an AI to recommend your business, your site must be factually clear: who you are, what you do, where, and why you are trustworthy. Vague marketing language is invisible to AI engines.",
         "LocalBusiness Schema Markup is critical here. It tells AI systems your business is real, with a real address and verified service offering. I include it on every site I build."
       ]
@@ -44,7 +44,7 @@
       "id": "bookings-payments",
       "heading": "Bookings and online payments: growing expectations",
       "paras": [
-        "For service businesses — clinics, salons, restaurants, consultants — online booking is no longer a nice addition. Clients expect it.",
+        "For service businesses - clinics, salons, restaurants, consultants - online booking is no longer a nice addition. Clients expect it.",
         "A client who finds your site at 11pm should book without calling you. A deposit should be payable without a bank transfer.",
         "These are integrations, not complex builds: a booking calendar connected to your schedule, a payment link connected to your account. Built once, they run themselves."
       ]
@@ -73,7 +73,7 @@
       },
       {
         "q": "How often should I update my website?",
-        "a": "Keep your core pages (services, contact, about) current at all times. Beyond that, add content when you have something genuinely useful to say — not on a forced schedule."
+        "a": "Keep your core pages (services, contact, about) current at all times. Beyond that, add content when you have something genuinely useful to say - not on a forced schedule."
       },
       {
         "q": "Do I need a website if I already have Instagram?",
@@ -85,11 +85,11 @@
       },
       {
         "q": "How do I know if my current website is actually working?",
-        "a": "Connect it to Google Search Console and Google Analytics — both free. Search Console shows which searches bring visitors. Analytics shows what they do when they arrive. Bounce rate above 80% means something is broken."
+        "a": "Connect it to Google Search Console and Google Analytics - both free. Search Console shows which searches bring visitors. Analytics shows what they do when they arrive. Bounce rate above 80% means something is broken."
       },
       {
         "q": "Can I build my own website instead of hiring someone?",
-        "a": "You can — Squarespace and Webflow make it possible without technical skills. The trade-off: you'll hit limits faster than expected, and Core Web Vitals and SEO performance rarely match a custom build."
+        "a": "You can - Squarespace and Webflow make it possible without technical skills. The trade-off: you'll hit limits faster than expected, and Core Web Vitals and SEO performance rarely match a custom build."
       },
       {
         "q": "What information do I need to prepare before working with a developer?",

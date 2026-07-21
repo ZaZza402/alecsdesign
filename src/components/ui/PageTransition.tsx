@@ -9,7 +9,7 @@ interface PageTransitionProps {
 const PageTransition = ({ children }: PageTransitionProps) => {
   const location = useLocation();
   useLayoutEffect(() => {
-    // Don't scroll to top on language switch — the user is reading the same page
+    // Don't scroll to top on language switch - the user is reading the same page
     if ((location.state as { langSwitch?: boolean } | null)?.langSwitch) return;
     window.scrollTo(0, 0);
   }, []);

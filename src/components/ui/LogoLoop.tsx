@@ -60,7 +60,7 @@ const LogoLoopComponent: React.FC<LogoLoopProps> = ({
   const isHoveringRef = useRef<boolean>(false);
   const [copyCount, setCopyCount] = useState(3);
 
-  // singleWidth stored as a ref — updating it does NOT restart the RAF loop
+  // singleWidth stored as a ref - updating it does NOT restart the RAF loop
   const singleWidthRef = useRef<number>(0);
 
   // Recompute singleWidth after the DOM updates for the current copyCount
@@ -98,7 +98,7 @@ const LogoLoopComponent: React.FC<LogoLoopProps> = ({
     return () => observer.disconnect();
   }, [updateCopyCount]);
 
-  // RAF loop — stable deps, never restarts due to copyCount/singleWidth changes
+  // RAF loop - stable deps, never restarts due to copyCount/singleWidth changes
   useEffect(() => {
     let lastTime: number | null = null;
     const dir = direction === "left" ? -1 : 1;

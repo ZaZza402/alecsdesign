@@ -7,14 +7,14 @@
   },
   "breadcrumb": "Ghiduri",
   "title": "Cum Să Apari pe Google Fără Să Plătești Reclame",
-  "lead": "Majoritatea site-urilor de afaceri sunt invizibile pe Google. Nu pentru că afacerea e slabă — ci pentru că site-ul a fost construit să arate bine, nu să se claseze.",
+  "lead": "Majoritatea site-urilor de afaceri sunt invizibile pe Google. Nu pentru că afacerea e slabă - ci pentru că site-ul a fost construit să arate bine, nu să se claseze.",
   "sections": [
     {
       "id": "de-ce-invizibile",
       "heading": "De ce 90% din site-urile de afaceri nu se găsesc",
       "paras": [
         "Google clasează după utilitate, viteză și credibilitate. Nu după estetică.",
-        "Site-urile drag-and-drop se încarcă în 4–6 secunde, nu au Schema Markup și îi dau Google-ului aproape nimic de indexat. Sunt online. Pur și simplu nu se clasează.",
+        "Site-urile drag-and-drop se încarcă în 4-6 secunde, nu au Schema Markup și îi dau Google-ului aproape nimic de indexat. Sunt online. Pur și simplu nu se clasează.",
         "Un site construit corect rezolvă toate acestea din prima zi. Bazele sunt tehnice și invizibile vizitatorului."
       ]
     },
@@ -33,7 +33,7 @@
       "id": "cinci-lucruri",
       "heading": "Cinci lucruri de care are nevoie site-ul tău pentru a se clasa",
       "paras": [
-        "Viteză sub 2 secunde pe mobil — din arhitectură, nu dintr-un plugin.",
+        "Viteză sub 2 secunde pe mobil - din arhitectură, nu dintr-un plugin.",
         "Layout mobile-first: proiectat la 390px, nu micșorat de pe desktop.",
         "Local SEO: orașul tău în tag-ul de titlu, adresa în LocalBusiness Schema, Google Business Profile verificat legat de site.",
         "Conținut structurat: ierarhie H1→H2→H3, titluri clare, răspunsuri care corespund intenției reale de căutare.",
@@ -46,7 +46,7 @@
       "paras": [
         "Fiecare site pe care îl construiesc include: hosting rapid, meta tag-uri corecte, sitemap XML trimis la Google, LocalBusiness Schema și layout mobil care trece de Core Web Vitals.",
         "Nu sunt opțiuni extra. Sunt minimul standard al unui site construit corect.",
-        "Strategia de conținut e treaba ta — ce scrii, cât de clar descrii serviciile. Baza tehnică SEO e a mea."
+        "Strategia de conținut e treaba ta - ce scrii, cât de clar descrii serviciile. Baza tehnică SEO e a mea."
       ]
     },
     {
@@ -64,11 +64,11 @@
     "items": [
       {
         "q": "Social media ajută la clasamentul pe Google?",
-        "a": "Nu direct. Social aduce trafic pe site, iar semnalele de trafic contează — dar un Google Business Profile solid și un site bine construit contează mult mai mult."
+        "a": "Nu direct. Social aduce trafic pe site, iar semnalele de trafic contează - dar un Google Business Profile solid și un site bine construit contează mult mai mult."
       },
       {
         "q": "Cât durează să te clasezi pe Google?",
-        "a": "Un site nou cu baze SEO corecte e indexat în câteva zile. Primele poziții pentru căutări competitive cer 3–6 luni de date de trafic real. Cuvintele cheie locale se clasează mai repede."
+        "a": "Un site nou cu baze SEO corecte e indexat în câteva zile. Primele poziții pentru căutări competitive cer 3-6 luni de date de trafic real. Cuvintele cheie locale se clasează mai repede."
       },
       {
         "q": "Numele de domeniu afectează clasamentul?",

@@ -5,7 +5,7 @@ import { AnimatePresence } from "framer-motion";
 import { HelmetProvider } from "react-helmet-async";
 import "./index.css";
 import "aos/dist/aos.css";
-import { i18nReady } from "./i18n"; // Async i18n — defers render until translations ready
+import { i18nReady } from "./i18n"; // Async i18n - defers render until translations ready
 import i18n, { switchLanguage } from "./i18n";
 import App from "./App.tsx";
 import LoadingSkeleton from "./components/ui/LoadingSkeleton";
@@ -510,7 +510,7 @@ function AppRoutes() {
   );
 }
 
-// Wait for translations to load before mounting — avoids flash of untranslated content
+// Wait for translations to load before mounting - avoids flash of untranslated content
 // and keeps the main bundle ~150 kB lighter (only current language loads)
 i18nReady.then(() => {
   createRoot(document.getElementById("root")!).render(
@@ -534,9 +534,9 @@ i18nReady.then(() => {
       }
     });
   });
-  // AOS initializes after React mounts — not in the critical render path
+  // AOS initializes after React mounts - not in the critical render path
   initAOS();
-  // Lenis smooth scroll — lazy loaded so it doesn't block initial render
+  // Lenis smooth scroll - lazy loaded so it doesn't block initial render
   import("lenis").then(({ default: Lenis }) => {
     const lenis = new Lenis({
       duration: 1.2,

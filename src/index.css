@@ -247,12 +247,12 @@ section {
   }
 }
 
-/* ── Hero scope — no overflow:hidden here; hero-section handles containment ── */
+/* ── Hero scope - no overflow:hidden here; hero-section handles containment ── */
 .hero-bg-scope {
   position: relative;
 }
 
-/* ── Glow mesh — lives inside .hero-section (overflow:hidden clips it) ── */
+/* ── Glow mesh - lives inside .hero-section (overflow:hidden clips it) ── */
 .bg-mesh {
   position: absolute;
   inset: 0;
@@ -266,7 +266,7 @@ section {
   will-change: transform;
 }
 
-/* Primary warm spotlight — top-right, tight + vivid */
+/* Primary warm spotlight - top-right, tight + vivid */
 .bg-mesh__glow--warm {
   width: 560px;
   height: 560px;
@@ -282,7 +282,7 @@ section {
   animation: glow-drift-warm 22s ease-in-out infinite alternate;
 }
 
-/* Secondary echo — bottom-left, softer */
+/* Secondary echo - bottom-left, softer */
 .bg-mesh__glow--accent {
   width: 420px;
   height: 420px;
@@ -352,13 +352,13 @@ section {
   font-size: 0.875rem;
 }
 
-/* Section subtitles — howItWorks and services */
+/* Section subtitles - howItWorks and services */
 :lang(ro) .how-it-works-subtitle,
 :lang(ro) .services-section__subtitle {
   font-size: 0.9375rem;
 }
 
-/* CTA buttons — allow slightly tighter padding so text never wraps */
+/* CTA buttons - allow slightly tighter padding so text never wraps */
 :lang(it) .hero-cta-button,
 :lang(ro) .hero-cta-button {
   padding-left: 1.4rem;

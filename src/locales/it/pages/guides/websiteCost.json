@@ -16,7 +16,7 @@
         "La differenza è chi lo costruisce e come.",
         "Un preventivo da €150 significa un template su una piattaforma che non possiedi. Non si posiziona su Google, non carica bene su mobile, e sparisce quando smetti di pagare.",
         "Un preventivo da €10.000 di un'agenzia copre project manager, account manager e workshop di brand. Stai pagando la loro struttura, non i tuoi risultati.",
-        "Un freelance costruisce da zero — nessun template, nessun costo mensile. Per la maggior parte delle piccole imprese, è esattamente quello che serve."
+        "Un freelance costruisce da zero - nessun template, nessun costo mensile. Per la maggior parte delle piccole imprese, è esattamente quello che serve."
       ]
     },
     {
@@ -34,11 +34,11 @@
       "id": "costi-nascosti",
       "heading": "I costi nascosti che nessuno ti dice",
       "paras": [
-        "Dominio: €10–15/anno — lo paghi indipendentemente da chi costruisce il sito.",
-        "Hosting: €5–25/mese. Alcuni sviluppatori lo gestiscono con un ricarico. Altri usano Vercel dove l'hosting base è gratuito.",
-        "Abbonamenti CMS: Squarespace e Wix costano €13–40/mese per sempre. Smetti di pagare, il sito va giù.",
-        "Tariffe per modifiche: alcune agenzie chiedono €50–150 per cambiare un numero di telefono. Chiedi prima di firmare: chi fa le modifiche, a quale prezzo?",
-        "Rinnovi plugin: i siti WordPress dipendono da plugin a pagamento per SEO, prenotazioni e moduli — un sito da €800 può accumulare €300/anno di plugin entro due anni."
+        "Dominio: €10-15/anno - lo paghi indipendentemente da chi costruisce il sito.",
+        "Hosting: €5-25/mese. Alcuni sviluppatori lo gestiscono con un ricarico. Altri usano Vercel dove l'hosting base è gratuito.",
+        "Abbonamenti CMS: Squarespace e Wix costano €13-40/mese per sempre. Smetti di pagare, il sito va giù.",
+        "Tariffe per modifiche: alcune agenzie chiedono €50-150 per cambiare un numero di telefono. Chiedi prima di firmare: chi fa le modifiche, a quale prezzo?",
+        "Rinnovi plugin: i siti WordPress dipendono da plugin a pagamento per SEO, prenotazioni e moduli - un sito da €800 può accumulare €300/anno di plugin entro due anni."
       ]
     },
     {
@@ -80,7 +80,7 @@
     "items": [
       {
         "q": "Si può avere un sito per meno di 500 euro?",
-        "a": "Sì — ma sarà un template su una piattaforma che pagherai mensilmente. Va bene come punto di partenza. Non porterà clienti."
+        "a": "Sì - ma sarà un template su una piattaforma che pagherai mensilmente. Va bene come punto di partenza. Non porterà clienti."
       },
       {
         "q": "Devo pagare ogni mese per avere un sito?",
@@ -88,7 +88,7 @@
       },
       {
         "q": "Quanto tempo ci vuole per costruire un sito?",
-        "a": "1–2 settimane dai contenuti pronti al lancio per un sito standard. I ritardi vengono quasi sempre dall'attesa di testi, foto e feedback — non dallo sviluppo."
+        "a": "1-2 settimane dai contenuti pronti al lancio per un sito standard. I ritardi vengono quasi sempre dall'attesa di testi, foto e feedback - non dallo sviluppo."
       },
       {
         "q": "Un sito economico è mai la scelta giusta?",
@@ -96,7 +96,7 @@
       },
       {
         "q": "Qual è la differenza tra un freelance e un'agenzia?",
-        "a": "Struttura e overhead. Un'agenzia ti fa pagare project manager, designer, sviluppatori e account. Un freelance è la persona che costruisce direttamente il tuo sito — stesso risultato, frazione del costo."
+        "a": "Struttura e overhead. Un'agenzia ti fa pagare project manager, designer, sviluppatori e account. Un freelance è la persona che costruisce direttamente il tuo sito - stesso risultato, frazione del costo."
       },
       {
         "q": "Il mio sito apparirà su Google?",

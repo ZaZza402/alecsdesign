@@ -91,7 +91,7 @@
 }
 
 .contact-method-content a:hover {
-  color: #FF6321;
+  color: #ff6321;
 }
 
 .reveal-btn {
@@ -101,15 +101,15 @@
   font-family: inherit;
   font-size: 0.9375rem;
   font-weight: 600;
-  color: #FF6321;
+  color: #ff6321;
   cursor: pointer;
   text-decoration: underline;
   text-underline-offset: 3px;
 }
 
-/* Right form column — just a layout wrapper, ContactForm.css handles the card */
+/* Right form column - just a layout wrapper, ContactForm.css handles the card */
 .contact-form-column {
-  /* no background/shadow here — ContactForm is the card */
+  /* no background/shadow here - ContactForm is the card */
 }
 
 /* Responsive */

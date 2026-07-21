@@ -13,9 +13,9 @@
       "id": "adevarul-neplacut",
       "heading": "Adevărul neplăcut despre majoritatea site-urilor de afaceri",
       "paras": [
-        "Un site care există nu e același lucru cu un site care funcționează. Diferența nu e în design — e în intenție.",
+        "Un site care există nu e același lucru cu un site care funcționează. Diferența nu e în design - e în intenție.",
         "Un site care funcționează răspunde la întrebări, construiește încredere înainte să cineva sune, se clasează pe Google și face pasul următor evident. Majoritatea site-urilor eșuează la toate patru.",
-        "Vestea bună: ce face un site să funcționeze sunt decizii luate în timpul construirii — nu ceva ce adaugi după."
+        "Vestea bună: ce face un site să funcționeze sunt decizii luate în timpul construirii - nu ceva ce adaugi după."
       ]
     },
     {
@@ -23,10 +23,10 @@
       "heading": "Șapte lucruri pe care site-ul tău trebuie să le aibă",
       "paras": [
         "Viteză: sub 2 secunde pe telefon. Dacă nu, majoritatea vizitatorilor pleacă înainte de a citi un cuvânt. Core Web Vitals influențează direct clasamentele Google.",
-        "Layout mobile-first: proiectat pentru un ecran de 390px — nu adaptat de pe desktop. Peste 70% din vizitatori vin de pe mobil.",
+        "Layout mobile-first: proiectat pentru un ecran de 390px - nu adaptat de pe desktop. Peste 70% din vizitatori vin de pe mobil.",
         "Un singur pas următor pe pagină: rezervă un apel, trimite un mesaj, vezi meniul. Un CTA. Nu cinci.",
         "Semnale de încredere: recenzii reale, fotografii reale, o persoană cu un nume în spatele afacerii, o locație fizică.",
-        "Opțiuni de contact care funcționează: număr cu click, link WhatsApp, email — nu doar un formular care dispare în spam.",
+        "Opțiuni de contact care funcționează: număr cu click, link WhatsApp, email - nu doar un formular care dispare în spam.",
         "Baza SEO: tag-uri de titlu, LocalBusiness Schema Markup, Google Business Profile verificat, sitemap XML. Așa decide Google dacă site-ul tău există.",
         "Proprietate: deții codul și domeniul. Nu un abonament, nu o chirie. Muți, modifici sau predai site-ul oricând, oricui."
       ]
@@ -35,7 +35,7 @@
       "id": "cautarea-ai",
       "heading": "Ce s-a schimbat cu căutarea AI",
       "paras": [
-        "În 2026, tot mai mulți oameni găsesc afaceri prin AI: ChatGPT, Perplexity, Google AI Overviews. Aceste sisteme extrag răspunsuri din conținut structurat și autoritar — nu din pagini frumoase.",
+        "În 2026, tot mai mulți oameni găsesc afaceri prin AI: ChatGPT, Perplexity, Google AI Overviews. Aceste sisteme extrag răspunsuri din conținut structurat și autoritar - nu din pagini frumoase.",
         "Ca un AI să recomande afacerea ta, site-ul trebuie să fie clar: cine ești, ce faci, unde, de ce ești de încredere. Limbajul de marketing vag e invizibil pentru motoarele AI.",
         "LocalBusiness Schema Markup este esențial. Spune sistemelor AI că afacerea ta e reală, cu adresă verificată și servicii definite. Îl includ pe fiecare site pe care îl construiesc."
       ]
@@ -44,9 +44,9 @@
       "id": "rezervari-plati",
       "heading": "Rezervări și plăți online: așteptări în creștere",
       "paras": [
-        "Pentru afacerile de servicii — clinici, saloane, restaurante, consultanți — rezervarea online nu mai e un bonus. Clienții o așteaptă.",
+        "Pentru afacerile de servicii - clinici, saloane, restaurante, consultanți - rezervarea online nu mai e un bonus. Clienții o așteaptă.",
         "Un client care găsește site-ul la 23:00 trebuie să poată rezerva fără să sune. Un avans trebuie să poată fi plătit fără transfer bancar.",
-        "Nu sunt funcționalități complexe — sunt integrări: calendar legat de programul tău, link de plată legat de contul tău. Construite o dată, rulează singure."
+        "Nu sunt funcționalități complexe - sunt integrări: calendar legat de programul tău, link de plată legat de contul tău. Construite o dată, rulează singure."
       ]
     },
     {
@@ -54,7 +54,7 @@
       "heading": "A deține versus a închiria site-ul tău",
       "paras": [
         "Un site pe Squarespace, Wix sau platforme similare e tehnic închiriat. Dacă platforma schimbă prețurile, funcționalitățile sau se închide, ești afectat. Nu îl poți muta.",
-        "Un site custom îți dă codul sursă, credențialele de hosting și portabilitate completă. Schimbi host, schimbi dezvoltator, predai site-ul oricui — e al tău.",
+        "Un site custom îți dă codul sursă, credențialele de hosting și portabilitate completă. Schimbi host, schimbi dezvoltator, predai site-ul oricui - e al tău.",
         "Cost de întreținere pe infrastructură modernă: ~€15/an pentru domeniu. Atât.",
         "Predau totul via GitHub la lansare: cod sursă, fișiere de design, acces la hosting. Complet documentat, complet al tău."
       ]
@@ -73,11 +73,11 @@
       },
       {
         "q": "Cât de des ar trebui să actualizez site-ul?",
-        "a": "Paginile principale (servicii, contact, despre noi) trebuie să reflecte mereu oferta actuală. Pentru rest — adaugă conținut util când ai ceva cu adevărat util de spus."
+        "a": "Paginile principale (servicii, contact, despre noi) trebuie să reflecte mereu oferta actuală. Pentru rest - adaugă conținut util când ai ceva cu adevărat util de spus."
       },
       {
         "q": "Am nevoie de un site dacă am deja Instagram?",
-        "a": "Da. Platformele social schimbă algoritmii, reduc acoperirea organică și pot fi blocate. Site-ul tău e singura prezență online pe care o controlezi complet. Instagram aduce trafic — nu îl poate înlocui."
+        "a": "Da. Platformele social schimbă algoritmii, reduc acoperirea organică și pot fi blocate. Site-ul tău e singura prezență online pe care o controlezi complet. Instagram aduce trafic - nu îl poate înlocui."
       },
       {
         "q": "Ce este un CTA și de ce contează?",
@@ -85,11 +85,11 @@
       },
       {
         "q": "Cum știu dacă site-ul meu actual funcționează?",
-        "a": "Conectează-l la Google Search Console și Google Analytics — ambele gratuite. Search Console arată ce căutări aduc vizitatori. Analytics arată ce fac odată ajunși. Rată de respingere peste 80%? Ceva nu funcționează."
+        "a": "Conectează-l la Google Search Console și Google Analytics - ambele gratuite. Search Console arată ce căutări aduc vizitatori. Analytics arată ce fac odată ajunși. Rată de respingere peste 80%? Ceva nu funcționează."
       },
       {
         "q": "Pot construi singur site-ul în loc să angajez pe cineva?",
-        "a": "Poți — Squarespace și Webflow fac asta posibil fără cunoștințe tehnice. Compromisul: vei întâlni limite mai repede decât te aștepți, iar Core Web Vitals și SEO-ul rareori egalează o construcție custom."
+        "a": "Poți - Squarespace și Webflow fac asta posibil fără cunoștințe tehnice. Compromisul: vei întâlni limite mai repede decât te aștepți, iar Core Web Vitals și SEO-ul rareori egalează o construcție custom."
       },
       {
         "q": "Ce informații trebuie să pregătesc înainte să lucrez cu un dezvoltator?",

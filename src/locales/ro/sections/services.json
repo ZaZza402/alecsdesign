@@ -7,11 +7,11 @@
   },
   "bookings": {
     "title": "Rezervări și plăți online",
-    "description": "Clienții tăi rezervă sau plătesc direct de pe site — fără apeluri sau emailuri."
+    "description": "Clienții tăi rezervă sau plătesc direct de pe site - fără apeluri sau emailuri."
   },
   "custom": {
     "title": "Funcționalități personalizate",
-    "description": "Zone pentru clienți, dashboard-uri, chat AI, conținut multilingv — construite pe cum lucrezi tu."
+    "description": "Zone pentru clienți, dashboard-uri, chat AI, conținut multilingv - construite pe cum lucrezi tu."
   },
   "cta": "Spune-mi despre proiectul tău"
 }

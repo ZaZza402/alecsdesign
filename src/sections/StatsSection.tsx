@@ -39,7 +39,7 @@ function AnimatedRing({
     const step = (ts: number) => {
       if (!start) start = ts;
       const progress = Math.min((ts - start) / duration, 1);
-      // Smooth easeInOutQuint — single continuous curve, no seams
+      // Smooth easeInOutQuint - single continuous curve, no seams
       // Slow start → fast middle → very slow finish
       const eased =
         progress < 0.5
@@ -83,7 +83,7 @@ function AnimatedRing({
           }}
         />
       </svg>
-      {/* number overlay — avoids SVG text font-family issues */}
+      {/* number overlay - avoids SVG text font-family issues */}
       <div className={`stats-ring__number stats-ring__number--${size}`}>
         {count}%
       </div>

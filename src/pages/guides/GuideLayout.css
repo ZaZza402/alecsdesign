@@ -28,7 +28,7 @@
 }
 
 .guide-breadcrumb a:hover {
-  color: #FF6321;
+  color: #ff6321;
 }
 
 .guide-breadcrumb__sep {
@@ -55,7 +55,7 @@
     align-items: center;
     gap: 0.25rem;
     font-weight: 600;
-    color: #FF6321;
+    color: #ff6321;
     font-size: 0.875rem;
   }
   .guide-breadcrumb__desktop {
@@ -86,7 +86,7 @@
   .guide-meta {
     gap: 0.5rem;
   }
-  /* Hide the dot separators and published date on mobile — keep only reading time + author */
+  /* Hide the dot separators and published date on mobile - keep only reading time + author */
   .guide-meta span:nth-child(n + 4) {
     display: none;
   }
@@ -111,7 +111,7 @@
   color: #334155;
   line-height: 1.7;
   margin: 0 0 2.5rem;
-  border-left: 3px solid #FF6321;
+  border-left: 3px solid #ff6321;
   padding-left: 1.25rem;
 }
 
@@ -169,7 +169,7 @@
   margin: 0 0 0.875rem;
 }
 
-/* First paragraph of each section is the "section lead" — slightly heavier */
+/* First paragraph of each section is the "section lead" - slightly heavier */
 .guide-section__paras p:first-child {
   color: #334155;
   font-weight: 500;
@@ -307,7 +307,7 @@
     font-size: 0.9375rem;
   }
   .guide-cta-block__btn {
-    background: #FF6321;
+    background: #ff6321;
     color: #fff;
     width: 100%;
     text-align: center;
@@ -327,7 +327,7 @@
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
-  background: #FF6321;
+  background: #ff6321;
   color: #fff;
   font-size: 0.9375rem;
   font-weight: 600;
@@ -381,7 +381,7 @@
 }
 
 .guide-faq__question:hover {
-  color: #FF6321;
+  color: #ff6321;
 }
 
 .guide-faq__icon {
@@ -394,7 +394,7 @@
 
 .guide-faq__item--open .guide-faq__icon {
   transform: rotate(45deg);
-  color: #FF6321;
+  color: #ff6321;
 }
 
 .guide-faq__answer {
@@ -420,7 +420,7 @@
 .guide-author {
   margin: 2rem 0;
   padding: 1.25rem 1.25rem 1.25rem 1.5rem;
-  border-left: 3px solid #FF6321;
+  border-left: 3px solid #ff6321;
   background: #f8fafc;
   border-radius: 0 10px 10px 0;
   border-top: 1px solid #e2e8f0;
@@ -457,7 +457,7 @@
 .guide-author__cta {
   font-size: 0.875rem;
   font-weight: 600;
-  color: #FF6321;
+  color: #ff6321;
   text-decoration: none;
 }
 
@@ -465,7 +465,7 @@
   text-decoration: underline;
 }
 
-/* Related guides — editorial list */
+/* Related guides - editorial list */
 .guide-related {
   margin-top: 3rem;
   padding-top: 2rem;
@@ -509,7 +509,7 @@
 }
 
 .guide-related__item:hover .guide-related__item-title {
-  color: #FF6321;
+  color: #ff6321;
 }
 
 .guide-related__item-arrow {
@@ -523,7 +523,7 @@
 
 .guide-related__item:hover .guide-related__item-arrow {
   transform: translateX(5px);
-  color: #FF6321;
+  color: #ff6321;
 }
 
 @media (max-width: 640px) {
@@ -589,7 +589,7 @@
 
 .guide-toc__link:hover {
   background: #f1f5f9;
-  color: #FF6321;
+  color: #ff6321;
 }
 
 /* Sidebar CTA card */
@@ -615,7 +615,7 @@
 
 .guide-sidebar-cta__btn {
   display: block;
-  background: #FF6321;
+  background: #ff6321;
   color: #fff;
   text-align: center;
   font-size: 0.9375rem;

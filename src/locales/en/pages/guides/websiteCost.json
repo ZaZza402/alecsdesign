@@ -7,7 +7,7 @@
   },
   "breadcrumb": "Guides",
   "title": "How Much Does a Website Cost?",
-  "lead": "A small business website typically costs €500–€5,000. Most land in the €1,000–€2,500 range. Here is what that gap actually means.",
+  "lead": "A small business website typically costs €500-€5,000. Most land in the €1,000-€2,500 range. Here is what that gap actually means.",
   "sections": [
     {
       "id": "why-prices-vary",
@@ -16,29 +16,29 @@
         "The difference is who builds it and how.",
         "A €150 quote means a pre-built template on a platform you don't own. It won't rank on Google, won't load fast on mobile, and disappears the moment you stop paying.",
         "A €10,000 agency quote covers project managers, account managers, and brand workshops. You are paying for their overhead, not your results.",
-        "A freelance developer builds from scratch — no template, no recurring fees to them. For most small businesses, that is exactly what they need."
+        "A freelance developer builds from scratch - no template, no recurring fees to them. For most small businesses, that is exactly what they need."
       ]
     },
     {
       "id": "what-youre-paying-for",
       "heading": "What you are actually paying for",
       "paras": [
-        "Design: how it guides a visitor toward contacting you — every button, headline, and colour is a conversion decision.",
+        "Design: how it guides a visitor toward contacting you - every button, headline, and colour is a conversion decision.",
         "Code quality: sub-2-second load time is not an accident. It requires clean code, optimised assets, caching, and correct hosting. Google measures Core Web Vitals. Slow sites rank lower.",
         "SEO foundation: title tags, meta descriptions, Schema Markup, XML sitemap, Google Search Console setup. Without these, you are invisible.",
         "Mobile: 70%+ of small business visitors arrive on a phone. A poor mobile layout loses them in under 3 seconds.",
-        "Ownership: you own the result — or you don't. Most people only regret this later."
+        "Ownership: you own the result - or you don't. Most people only regret this later."
       ]
     },
     {
       "id": "hidden-costs",
       "heading": "The hidden costs nobody mentions upfront",
       "paras": [
-        "Domain: €10–15/year — you pay this regardless of who builds your site.",
-        "Hosting: €5–25/month. Some developers mark it up. Others build on Vercel where basic hosting is free.",
-        "CMS subscriptions: Squarespace or Wix cost €13–40/month forever. Stop paying, site goes down.",
-        "Update charges: some agencies charge €50–150 to change a phone number. Ask before signing: who makes changes, and at what cost?",
-        "Plugin renewals: WordPress sites often depend on paid plugins for SEO, bookings, and forms — each renewing annually. A €800 build can accumulate €300/year in plugin fees within two years."
+        "Domain: €10-15/year - you pay this regardless of who builds your site.",
+        "Hosting: €5-25/month. Some developers mark it up. Others build on Vercel where basic hosting is free.",
+        "CMS subscriptions: Squarespace or Wix cost €13-40/month forever. Stop paying, site goes down.",
+        "Update charges: some agencies charge €50-150 to change a phone number. Ask before signing: who makes changes, and at what cost?",
+        "Plugin renewals: WordPress sites often depend on paid plugins for SEO, bookings, and forms - each renewing annually. A €800 build can accumulate €300/year in plugin fees within two years."
       ]
     },
     {
@@ -80,7 +80,7 @@
     "items": [
       {
         "q": "Can I get a website for under 500 euros?",
-        "a": "Yes — but it will be a template on a platform you pay monthly for. Fine as a placeholder. It will not generate leads."
+        "a": "Yes - but it will be a template on a platform you pay monthly for. Fine as a placeholder. It will not generate leads."
       },
       {
         "q": "Do I need to pay monthly for a website?",
@@ -88,7 +88,7 @@
       },
       {
         "q": "How long does it take to build a website?",
-        "a": "1–2 weeks from content-ready to launch for a standard site. Delays almost always come from waiting on copy, photos, and feedback — not development."
+        "a": "1-2 weeks from content-ready to launch for a standard site. Delays almost always come from waiting on copy, photos, and feedback - not development."
       },
       {
         "q": "Is a cheap website ever the right choice?",
@@ -96,7 +96,7 @@
       },
       {
         "q": "What is the difference between a freelancer and an agency?",
-        "a": "Overhead. An agency charges you for project managers, designers, developers, and account teams. A freelancer is the person who actually builds the site — same result, fraction of the cost."
+        "a": "Overhead. An agency charges you for project managers, designers, developers, and account teams. A freelancer is the person who actually builds the site - same result, fraction of the cost."
       },
       {
         "q": "Will my website show up on Google?",

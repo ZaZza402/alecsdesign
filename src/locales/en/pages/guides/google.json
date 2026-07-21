@@ -7,14 +7,14 @@
   },
   "breadcrumb": "Guides",
   "title": "How to Get Found on Google Without Paying for Ads",
-  "lead": "Most business websites are invisible on Google. Not because the business is bad — because the site was built to look good, not to rank.",
+  "lead": "Most business websites are invisible on Google. Not because the business is bad - because the site was built to look good, not to rank.",
   "sections": [
     {
       "id": "why-invisible",
       "heading": "Why 90% of business websites are invisible",
       "paras": [
-        "Google ranks on usefulness, load speed, and trust — not aesthetics.",
-        "Drag-and-drop sites load in 4–6 seconds, carry no Schema Markup, and give Google almost nothing to parse. They exist online. They don't rank.",
+        "Google ranks on usefulness, load speed, and trust - not aesthetics.",
+        "Drag-and-drop sites load in 4-6 seconds, carry no Schema Markup, and give Google almost nothing to parse. They exist online. They don't rank.",
         "A correctly built site handles all of this from day one. The fundamentals are technical and invisible to the visitor."
       ]
     },
@@ -33,7 +33,7 @@
       "id": "five-things",
       "heading": "Five things your website needs to rank",
       "paras": [
-        "Sub-2-second load time on mobile — from architecture, not a plugin.",
+        "Sub-2-second load time on mobile - from architecture, not a plugin.",
         "Mobile-first layout: designed at 390px, not shrunk from desktop.",
         "Local SEO: city in the title tag, address in LocalBusiness Schema, verified Google Business Profile linked to site.",
         "Structured content: logical H1→H2→H3, clear page titles, answers that match real search intent.",
@@ -46,7 +46,7 @@
       "paras": [
         "Every site I build ships with: fast hosting, correct meta tags, XML sitemap submitted to Google, LocalBusiness Schema, and a mobile layout that passes Core Web Vitals.",
         "These are not optional add-ons. They are the baseline of building a site correctly.",
-        "Content is your job — what you write, how clearly you describe your services. Technical SEO foundation is mine."
+        "Content is your job - what you write, how clearly you describe your services. Technical SEO foundation is mine."
       ]
     },
     {
@@ -64,11 +64,11 @@
     "items": [
       {
         "q": "Does social media help with Google ranking?",
-        "a": "Not directly. Social drives traffic to your site and traffic signals matter — but a solid Google Business Profile and well-built site move rankings far more."
+        "a": "Not directly. Social drives traffic to your site and traffic signals matter - but a solid Google Business Profile and well-built site move rankings far more."
       },
       {
         "q": "How long does it take to rank on Google?",
-        "a": "A new site with correct SEO foundations gets indexed within days. First-page positions for competitive searches take 3–6 months of real traffic data. Local and niche keywords rank faster."
+        "a": "A new site with correct SEO foundations gets indexed within days. First-page positions for competitive searches take 3-6 months of real traffic data. Local and niche keywords rank faster."
       },
       {
         "q": "Does my domain name affect my Google ranking?",
