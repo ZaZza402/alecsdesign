@@ -9,6 +9,7 @@ import { i18nReady } from "./i18n"; // Async i18n - defers render until translat
 import i18n, { switchLanguage } from "./i18n";
 import App from "./App.tsx";
 import LoadingSkeleton from "./components/ui/LoadingSkeleton";
+import { registerSW } from "virtual:pwa-register";
 
 const PrivacyPolicy = lazy(() => import("./pages/PrivacyPolicy.tsx"));
 const TermsConditions = lazy(() => import("./pages/TermsConditions.tsx"));
@@ -549,5 +550,15 @@ i18nReady.then(() => {
       requestAnimationFrame(raf);
     };
     requestAnimationFrame(raf);
+  });
+
+  registerSW({
+    immediate: true,
+    onOfflineReady() {
+      console.log("PWA is ready for offline use.");
+    },
+    onRegisterError(error: unknown) {
+      console.error("PWA registration failed:", error);
+    },
   });
 });
