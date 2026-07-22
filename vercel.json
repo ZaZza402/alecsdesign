@@ -17,14 +17,6 @@
       "destination": "/api/index"
     },
     {
-      "source": "/sitemap",
-      "destination": "/api/sitemap"
-    },
-    {
-      "source": "/sitemap.xml",
-      "destination": "/api/sitemap"
-    },
-    {
       "source": "/wp-admin/:path*",
       "destination": "/api/blocked"
     },
@@ -74,6 +66,11 @@
       "source": "/:path*",
       "has": [{ "type": "host", "value": "alecsdesign.xyz" }],
       "destination": "https://www.alecsdesign.xyz/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/sitemap",
+      "destination": "/sitemap.xml",
       "permanent": true
     },
     {
