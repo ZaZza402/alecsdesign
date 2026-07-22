@@ -45,8 +45,8 @@ export const SEO = ({
     rawPath === "/en"
       ? "/"
       : rawPath.startsWith("/en/")
-      ? rawPath.slice(3)
-      : rawPath;
+        ? rawPath.slice(3)
+        : rawPath;
   const fullUrl = `https://www.alecsdesign.xyz${canonicalPath}`;
   const canonicalUrl = canonical || fullUrl;
 
@@ -58,10 +58,10 @@ export const SEO = ({
     const setMetaTag = (
       name: string,
       content: string,
-      attribute: "name" | "property" = "name"
+      attribute: "name" | "property" = "name",
     ) => {
       let element = document.querySelector(
-        `meta[${attribute}="${name}"]`
+        `meta[${attribute}="${name}"]`,
       ) as HTMLMetaElement;
 
       if (!element) {
@@ -76,7 +76,7 @@ export const SEO = ({
     // Helper to set link tags
     const setLinkTag = (rel: string, href: string) => {
       let element = document.querySelector(
-        `link[rel="${rel}"]`
+        `link[rel="${rel}"]`,
       ) as HTMLLinkElement;
 
       if (!element) {
@@ -98,7 +98,7 @@ export const SEO = ({
     } else {
       setMetaTag(
         "robots",
-        "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+        "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
       );
     }
 
@@ -113,7 +113,7 @@ export const SEO = ({
 
     // Add alternate locales (excluding current)
     const alternateLocales = Object.values(LOCALE_MAP).filter(
-      (locale) => locale !== currentLocale
+      (locale) => locale !== currentLocale,
     );
     alternateLocales.forEach((locale, index) => {
       const attrName =
@@ -174,8 +174,8 @@ export const SEO = ({
         lang === "en"
           ? hreflangBase
           : hreflangBase === "/"
-          ? `/${lang}`
-          : `/${lang}${hreflangBase}`;
+            ? `/${lang}`
+            : `/${lang}${hreflangBase}`;
       link.href = `${baseUrl}${langPath}`;
       document.head.appendChild(link);
     });
@@ -301,7 +301,7 @@ export const generateWebsiteSchema = () => {
 
 // eslint-disable-next-line react-refresh/only-export-components
 export const generateBreadcrumbSchema = (
-  items: { name: string; url: string }[]
+  items: { name: string; url: string }[],
 ) => {
   return {
     "@context": "https://schema.org",

@@ -25,8 +25,8 @@ export default function handler(req: VercelRequest, res: VercelResponse) {
     urlPath === "/en"
       ? "/"
       : urlPath.startsWith("/en/")
-      ? urlPath.slice(3)
-      : urlPath;
+        ? urlPath.slice(3)
+        : urlPath;
   const canonicalUrl =
     `https://www.alecsdesign.xyz${canonicalPath === "/" ? "" : canonicalPath}` ||
     "https://www.alecsdesign.xyz/";
@@ -35,9 +35,7 @@ export default function handler(req: VercelRequest, res: VercelResponse) {
   const hreflangBase =
     urlPath === "/en" || urlPath === "/it" || urlPath === "/ro"
       ? "/"
-      : urlPath
-          .replace(/^\/(en|it|ro)\//, "/")
-          .replace(/^\/(en|it|ro)$/, "/");
+      : urlPath.replace(/^\/(en|it|ro)\//, "/").replace(/^\/(en|it|ro)$/, "/");
 
   const enHref =
     hreflangBase === "/"
