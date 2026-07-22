@@ -1,0 +1,28 @@
+{
+  "hub": {
+    "eyebrow": "Pacchetti di prodotti",
+    "title": "Design vettoriali, bundle, icone e altro",
+    "subtitle": "Una collezione compatta di asset grafici da scaricare.",
+    "cardLabel": "Pacchetto"
+  },
+  "page": {
+    "viewPack": "Vedi pacchetto",
+    "collection": "Pacchetto vettoriale",
+    "buyNow": "Acquista ora",
+    "backToPacks": "Torna ai pacchetti",
+    "specifications": "Specifiche",
+    "price": "Prezzo",
+    "license": "Licenza",
+    "formats": "Formati",
+    "canvasSize": "Dimensione canvas",
+    "vectorStyle": "Stile vettoriale",
+    "fileCount": "Numero file",
+    "includedItems": "Icone incluse",
+    "faq": "FAQ",
+    "notFoundTitle": "Pacchetto non trovato",
+    "notFoundDescription": "Il pacchetto richiesto non è stato trovato. Torna all'elenco dei pacchetti.",
+    "previousImage": "Immagine precedente",
+    "nextImage": "Immagine successiva",
+    "image": "Immagine"
+  }
+}

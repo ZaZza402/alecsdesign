@@ -1,0 +1,109 @@
+{
+  "id": "isometric-heavy-machinery",
+  "slug": "isometric-heavy-machinery-icons",
+  "meta": {
+    "title": "Isometric Logistics & Heavy Machinery Vector Icons | Alecs Design",
+    "description": "Precision-engineered isometric vector icons for logistics, machinery, and industrial UI designs. Includes optimized single-path SVGs.",
+    "keywords": [
+      "isometric icons",
+      "logistics vectors",
+      "heavy machinery svg",
+      "warehouse icons"
+    ]
+  },
+  "product": {
+    "title": "Isometric Heavy Machinery Vector Pack",
+    "tagline": "Precision vector assets for industrial applications & logistics UI",
+    "price": "19.00",
+    "currency": "EUR",
+    "buyLink": "https://iczazza.gumroad.com/l/industry-vector",
+    "license": "Commercial & Personal Royalty-Free License"
+  },
+  "images": {
+    "overview": "/images/packs/machinery/15-warehouse-logistics-vector-icons-pack.jpg",
+    "featureOne": "/images/packs/machinery/counterbalance-reach-manual-pallet-jack-icons.jpg",
+    "featureTwo": "/images/packs/machinery/US-style-truck-flat-cab-truck-delivery-van-icons.jpg"
+  },
+  "specs": {
+    "formatsIncluded": ["SVG", "PNG", "PDF", "EPS"],
+    "canvasSize": "1024x1024px",
+    "vectorStyle": "Optimized single & multi-path vectors, clean nodes",
+    "fileCount": "15 Icons"
+  },
+  "includedItems": [
+    "- Heavy Semi-Truck (Front/Angle View)",
+    "- Box Delivery Truck",
+    "- US-Style Flat Cab Truck",
+    "- Warehouse Forklift (Standard)",
+    "- Warehouse Forklift (High-Reach Mast)",
+    "- Manual Pallet Jack",
+    "- Thermal Barcode Label Printer",
+    "- Handheld Barcode Scanner",
+    "- Logistics Bill of Lading / Clipboard Checklist",
+    "- Wooden Shipping Pallet",
+    "- Shipping Container / Cargo Box",
+    "- Industrial Stretch Wrap Dispenser",
+    "- Handheld Carton Sealing Tape Gun",
+    "- Heavy-Duty Packaging Tape Roll",
+    "- Additional industrial handling hardware components"
+  ],
+  "faq": [
+    {
+      "question": "Can I use these icons in commercial client projects?",
+      "answer": "Yes, the commercial license covers both personal and commercial websites, apps, and print materials."
+    }
+  ],
+  "translations": {
+    "en": {
+      "meta": {
+        "title": "Isometric Logistics & Heavy Machinery Vector Icons | Alecs Design",
+        "description": "Precision-engineered isometric vector icons for logistics, machinery, and industrial UI designs. Includes optimized single-path SVGs."
+      },
+      "product": {
+        "title": "Isometric Heavy Machinery Vector Pack",
+        "tagline": "Precision vector assets for industrial applications & logistics UI"
+      },
+      "intro": "A compact asset collection for industrial dashboards, warehouse interfaces, and product mockups.",
+      "faq": [
+        {
+          "question": "Can I use these icons in commercial client projects?",
+          "answer": "Yes, the commercial license covers both personal and commercial websites, apps, and print materials."
+        }
+      ]
+    },
+    "it": {
+      "meta": {
+        "title": "Icone Vettoriali Isometriche per Logistica e Macchinari Pesanti | Alecs Design",
+        "description": "Icone vettoriali isometriche precise per logistica, macchinari e interfacce UI industriali. Include SVG ottimizzati con un solo path."
+      },
+      "product": {
+        "title": "Pacchetto Icone Vettoriali per Macchinari Pesanti",
+        "tagline": "Asset vettoriali precisi per applicazioni industriali e UI logistiche"
+      },
+      "intro": "Una raccolta compatta di asset per dashboard industriali, interfacce magazzino e mockup di prodotto.",
+      "faq": [
+        {
+          "question": "Posso usare queste icone in progetti commerciali per clienti?",
+          "answer": "Sì, la licenza commerciale copre siti web, app e materiali stampati sia personali che commerciali."
+        }
+      ]
+    },
+    "ro": {
+      "meta": {
+        "title": "Pictograme Vectoriale Izometrice pentru Logistică și Utilaje Grele | Alecs Design",
+        "description": "Pictograme vectoriale izometrice precise pentru logistică, utilaje și interfețe UI industriale. Include SVG-uri optimizate pe un singur path."
+      },
+      "product": {
+        "title": "Pachet de Iconi Vectoriale pentru Utilaje Grele",
+        "tagline": "Asset-uri vectoriale precise pentru aplicații industriale și UI de logistică"
+      },
+      "intro": "O colecție compactă de asset-uri pentru dashboard-uri industriale, interfețe de depozit și mockup-uri de produs.",
+      "faq": [
+        {
+          "question": "Pot folosi aceste pictograme în proiecte comerciale pentru clienți?",
+          "answer": "Da, licența comercială acoperă site-uri web, aplicații și materiale tipărite, atât personale, cât și comerciale."
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "hub": {
+    "eyebrow": "Pachete de produse",
+    "title": "Designuri vectoriale, bundle-uri, pictograme și altele",
+    "subtitle": "O colecție compactă de asset-uri grafice descărcabile.",
+    "cardLabel": "Pachet"
+  },
+  "page": {
+    "viewPack": "Vezi pachetul",
+    "collection": "Pachet vectorial",
+    "buyNow": "Cumpără acum",
+    "backToPacks": "Înapoi la pachete",
+    "specifications": "Specificații",
+    "price": "Preț",
+    "license": "Licență",
+    "formats": "Formate",
+    "canvasSize": "Dimensiunea canvasului",
+    "vectorStyle": "Stil vectorial",
+    "fileCount": "Număr fișiere",
+    "includedItems": "Iconițe incluse",
+    "faq": "FAQ",
+    "notFoundTitle": "Pachetul nu a fost găsit",
+    "notFoundDescription": "Pachetul solicitat nu a fost găsit. Vă rugăm să reveniți la lista de pachete.",
+    "previousImage": "Imaginea precedentă",
+    "nextImage": "Imaginea următoare",
+    "image": "Imagine"
+  }
+}

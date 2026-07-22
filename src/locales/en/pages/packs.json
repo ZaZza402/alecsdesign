@@ -1,0 +1,28 @@
+{
+  "hub": {
+    "eyebrow": "Product packs",
+    "title": "Vector designs, bundle, icons and more",
+    "subtitle": "A lightweight collection of downloadable design assets.",
+    "cardLabel": "Pack"
+  },
+  "page": {
+    "viewPack": "View",
+    "collection": "Vector pack",
+    "buyNow": "Buy now",
+    "backToPacks": "Back to packs",
+    "specifications": "Specifications",
+    "price": "Price",
+    "license": "License",
+    "formats": "Formats",
+    "canvasSize": "Canvas size",
+    "vectorStyle": "Vector style",
+    "fileCount": "File count",
+    "includedItems": "Included icons",
+    "faq": "FAQ",
+    "notFoundTitle": "Pack not found",
+    "notFoundDescription": "The requested pack could not be found. Please return to the pack list.",
+    "previousImage": "Previous image",
+    "nextImage": "Next image",
+    "image": "Image"
+  }
+}

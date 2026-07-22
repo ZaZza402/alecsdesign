@@ -20,7 +20,7 @@ export default defineConfig({
         "logo/og-image.jpg",
       ],
       devOptions: {
-        enabled: true,
+        enabled: false,
       },
       workbox: {
         globPatterns: ["**/*.{html,css,js,png,svg,ico,webmanifest}"],

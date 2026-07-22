@@ -394,4 +394,71 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.alecsdesign.xyz/cookie-policy" />
   </url>
 
+
+  <!-- ─── PACKS ─────────────────────────────────────── -->
+  <url>
+    <loc>https://www.alecsdesign.xyz/packs</loc>
+    <lastmod>2026-07-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.alecsdesign.xyz/packs" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.alecsdesign.xyz/it/packs" />
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.alecsdesign.xyz/ro/packs" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.alecsdesign.xyz/packs" />
+  </url>
+
+  <url>
+    <loc>https://www.alecsdesign.xyz/it/packs</loc>
+    <lastmod>2026-07-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.alecsdesign.xyz/packs" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.alecsdesign.xyz/it/packs" />
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.alecsdesign.xyz/ro/packs" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.alecsdesign.xyz/packs" />
+  </url>
+
+  <url>
+    <loc>https://www.alecsdesign.xyz/ro/packs</loc>
+    <lastmod>2026-07-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.alecsdesign.xyz/packs" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.alecsdesign.xyz/it/packs" />
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.alecsdesign.xyz/ro/packs" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.alecsdesign.xyz/packs" />
+  </url>
+
+  <url>
+    <loc>https://www.alecsdesign.xyz/packs/isometric-heavy-machinery-icons</loc>
+    <lastmod>2026-07-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.alecsdesign.xyz/packs/isometric-heavy-machinery-icons" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.alecsdesign.xyz/it/packs/isometric-heavy-machinery-icons" />
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.alecsdesign.xyz/ro/packs/isometric-heavy-machinery-icons" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.alecsdesign.xyz/packs/isometric-heavy-machinery-icons" />
+  </url>
+
+  <url>
+    <loc>https://www.alecsdesign.xyz/it/packs/isometric-heavy-machinery-icons</loc>
+    <lastmod>2026-07-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.alecsdesign.xyz/packs/isometric-heavy-machinery-icons" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.alecsdesign.xyz/it/packs/isometric-heavy-machinery-icons" />
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.alecsdesign.xyz/ro/packs/isometric-heavy-machinery-icons" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.alecsdesign.xyz/packs/isometric-heavy-machinery-icons" />
+  </url>
+
+  <url>
+    <loc>https://www.alecsdesign.xyz/ro/packs/isometric-heavy-machinery-icons</loc>
+    <lastmod>2026-07-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.alecsdesign.xyz/packs/isometric-heavy-machinery-icons" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.alecsdesign.xyz/it/packs/isometric-heavy-machinery-icons" />
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.alecsdesign.xyz/ro/packs/isometric-heavy-machinery-icons" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.alecsdesign.xyz/packs/isometric-heavy-machinery-icons" />
+  </url>
 </urlset>

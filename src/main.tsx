@@ -19,6 +19,8 @@ const PortfolioPage = lazy(() => import("./pages/PortfolioPage.tsx"));
 const ContactPage = lazy(() => import("./pages/ContactPage.tsx"));
 const AboutPage = lazy(() => import("./pages/AboutPage.tsx"));
 const GuidesHub = lazy(() => import("./pages/GuidesHub.tsx"));
+const PacksHub = lazy(() => import("./pages/PacksHub.tsx"));
+const PackPage = lazy(() => import("./pages/packs/PackPage.tsx"));
 const WebsiteCostGuide = lazy(
   () => import("./pages/guides/WebsiteCostGuide.tsx"),
 );
@@ -322,6 +324,24 @@ function AppRoutes() {
             }
           />
 
+          {/* Packs hub - EN */}
+          <Route
+            path="/packs"
+            element={
+              <PageWrapper lang="en">
+                <PacksHub lang="en" />
+              </PageWrapper>
+            }
+          />
+          <Route
+            path="/packs/:slug"
+            element={
+              <PageWrapper lang="en">
+                <PackPage lang="en" />
+              </PageWrapper>
+            }
+          />
+
           {/* Guide pages - EN */}
           <Route
             path="/guide/how-much-does-a-website-cost"
@@ -366,6 +386,24 @@ function AppRoutes() {
             }
           />
 
+          {/* Packs hub - IT */}
+          <Route
+            path="/it/packs"
+            element={
+              <PageWrapper lang="it">
+                <PacksHub lang="it" />
+              </PageWrapper>
+            }
+          />
+          <Route
+            path="/it/packs/:slug"
+            element={
+              <PageWrapper lang="it">
+                <PackPage lang="it" />
+              </PageWrapper>
+            }
+          />
+
           {/* Guide pages - IT */}
           <Route
             path="/it/guide/quanto-costa-un-sito-web"
@@ -406,6 +444,24 @@ function AppRoutes() {
             element={
               <PageWrapper lang="ro">
                 <GuidesHub lang="ro" />
+              </PageWrapper>
+            }
+          />
+
+          {/* Packs hub - RO */}
+          <Route
+            path="/ro/packs"
+            element={
+              <PageWrapper lang="ro">
+                <PacksHub lang="ro" />
+              </PageWrapper>
+            }
+          />
+          <Route
+            path="/ro/packs/:slug"
+            element={
+              <PageWrapper lang="ro">
+                <PackPage lang="ro" />
               </PageWrapper>
             }
           />
