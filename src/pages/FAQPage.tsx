@@ -38,7 +38,9 @@ const FAQPage: React.FC = () => {
     };
   }, [faqData]);
 
-  const currentUrl = `https://alecsdesign.xyz/${i18n.language}/faq`;
+  const lang = i18n.language;
+  const prefix = lang === "en" ? "" : `/${lang}`;
+  const currentUrl = `https://www.alecsdesign.xyz${prefix}/faq`;
   const pageTitle = t("faq.metaTitle");
   const pageDescription = t("faq.metaDescription");
 
@@ -72,22 +74,22 @@ const FAQPage: React.FC = () => {
         <link
           rel="alternate"
           hrefLang="en"
-          href="https://alecsdesign.xyz/en/faq"
+          href="https://www.alecsdesign.xyz/faq"
         />
         <link
           rel="alternate"
           hrefLang="it"
-          href="https://alecsdesign.xyz/it/faq"
+          href="https://www.alecsdesign.xyz/it/faq"
         />
         <link
           rel="alternate"
           hrefLang="ro"
-          href="https://alecsdesign.xyz/ro/faq"
+          href="https://www.alecsdesign.xyz/ro/faq"
         />
         <link
           rel="alternate"
           hrefLang="x-default"
-          href="https://alecsdesign.xyz/en/faq"
+          href="https://www.alecsdesign.xyz/faq"
         />
       </Helmet>
 

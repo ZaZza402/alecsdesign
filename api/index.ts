@@ -7,17 +7,50 @@ export default function handler(req: VercelRequest, res: VercelResponse) {
 
   // Detect language from URL path
   let lang = "en";
-  let ogUrl = "https://www.alecsdesign.xyz/";
 
   if (url?.startsWith("/it")) {
     lang = "it";
-    ogUrl = "https://www.alecsdesign.xyz/it";
   } else if (url?.startsWith("/ro")) {
     lang = "ro";
-    ogUrl = "https://www.alecsdesign.xyz/ro";
-  } else if (url === "/") {
-    ogUrl = "https://www.alecsdesign.xyz/";
   }
+
+  // Full page URL for og:url
+  const urlPath = url || "/";
+  const ogUrl =
+    `https://www.alecsdesign.xyz${urlPath === "/" ? "" : urlPath}` ||
+    "https://www.alecsdesign.xyz/";
+
+  // Canonical URL: /en/* strips the prefix (sitemap uses root paths for English)
+  const canonicalPath =
+    urlPath === "/en"
+      ? "/"
+      : urlPath.startsWith("/en/")
+      ? urlPath.slice(3)
+      : urlPath;
+  const canonicalUrl =
+    `https://www.alecsdesign.xyz${canonicalPath === "/" ? "" : canonicalPath}` ||
+    "https://www.alecsdesign.xyz/";
+
+  // Hreflang base path (without any language prefix)
+  const hreflangBase =
+    urlPath === "/en" || urlPath === "/it" || urlPath === "/ro"
+      ? "/"
+      : urlPath
+          .replace(/^\/(en|it|ro)\//, "/")
+          .replace(/^\/(en|it|ro)$/, "/");
+
+  const enHref =
+    hreflangBase === "/"
+      ? "https://www.alecsdesign.xyz/"
+      : `https://www.alecsdesign.xyz${hreflangBase}`;
+  const itHref =
+    hreflangBase === "/"
+      ? "https://www.alecsdesign.xyz/it"
+      : `https://www.alecsdesign.xyz/it${hreflangBase}`;
+  const roHref =
+    hreflangBase === "/"
+      ? "https://www.alecsdesign.xyz/ro"
+      : `https://www.alecsdesign.xyz/ro${hreflangBase}`;
 
   // Language-specific content
   const content: Record<
@@ -217,6 +250,17 @@ export default function handler(req: VercelRequest, res: VercelResponse) {
     )
     .replace(/<title>[^<]*<\/title>/g, `<title>${langContent.title}</title>`)
     .replace(/<html lang="[^"]*"/g, `<html lang="${lang}"`)
+    .replace(
+      /<link rel="canonical" href="[^"]*" \/>/,
+      `<link rel="canonical" href="${canonicalUrl}" />`,
+    )
+    .replace(/hreflang="en" href="[^"]*"/, `hreflang="en" href="${enHref}"`)
+    .replace(/hreflang="it" href="[^"]*"/, `hreflang="it" href="${itHref}"`)
+    .replace(/hreflang="ro" href="[^"]*"/, `hreflang="ro" href="${roHref}"`)
+    .replace(
+      /hreflang="x-default"[\s\S]*?href="[^"]*"/,
+      `hreflang="x-default"\n      href="${enHref}"`,
+    )
     .replace('<div id="root"></div>', `<div id="root">${prerender}</div>`);
 
   res.setHeader("Content-Type", "text/html; charset=utf-8");

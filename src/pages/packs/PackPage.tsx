@@ -111,8 +111,8 @@ export default function PackPage({ lang = "en" }: { lang?: string }) {
   const localized = getLocalizedPack(currentPack, currentLang);
   const currentUrl =
     currentLang === "en"
-      ? `https://alecsdesign.xyz/packs/${currentPack.slug}`
-      : `https://alecsdesign.xyz/${currentLang}/packs/${currentPack.slug}`;
+      ? `https://www.alecsdesign.xyz/packs/${currentPack.slug}`
+      : `https://www.alecsdesign.xyz/${currentLang}/packs/${currentPack.slug}`;
   const galleryImages = [
     currentPack.images?.overview,
     currentPack.images?.featureOne,
@@ -151,22 +151,22 @@ export default function PackPage({ lang = "en" }: { lang?: string }) {
         <link
           rel="alternate"
           hrefLang="en"
-          href={`https://alecsdesign.xyz/packs/${currentPack.slug}`}
+          href={`https://www.alecsdesign.xyz/packs/${currentPack.slug}`}
         />
         <link
           rel="alternate"
           hrefLang="it"
-          href={`https://alecsdesign.xyz/it/packs/${currentPack.slug}`}
+          href={`https://www.alecsdesign.xyz/it/packs/${currentPack.slug}`}
         />
         <link
           rel="alternate"
           hrefLang="ro"
-          href={`https://alecsdesign.xyz/ro/packs/${currentPack.slug}`}
+          href={`https://www.alecsdesign.xyz/ro/packs/${currentPack.slug}`}
         />
         <link
           rel="alternate"
           hrefLang="x-default"
-          href={`https://alecsdesign.xyz/packs/${currentPack.slug}`}
+          href={`https://www.alecsdesign.xyz/packs/${currentPack.slug}`}
         />
         <script type="application/ld+json">{JSON.stringify(schema)}</script>
       </Helmet>

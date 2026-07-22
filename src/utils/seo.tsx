@@ -40,7 +40,14 @@ export const SEO = ({
   const currentLang = i18n.language || "en";
   const currentLocale = LOCALE_MAP[currentLang] || "en_US";
 
-  const fullUrl = `https://www.alecsdesign.xyz${window.location.pathname}`;
+  const rawPath = window.location.pathname;
+  const canonicalPath =
+    rawPath === "/en"
+      ? "/"
+      : rawPath.startsWith("/en/")
+      ? rawPath.slice(3)
+      : rawPath;
+  const fullUrl = `https://www.alecsdesign.xyz${canonicalPath}`;
   const canonicalUrl = canonical || fullUrl;
 
   useEffect(() => {
@@ -148,6 +155,10 @@ export const SEO = ({
     const baseUrl = "https://www.alecsdesign.xyz";
     const pathname = window.location.pathname;
 
+    // Derive base path without any language prefix
+    const langMatch = pathname.match(/^\/(en|it|ro)(\/.*|$)/);
+    const hreflangBase = langMatch ? langMatch[2] || "/" : pathname;
+
     // Remove existing hreflang links
     document
       .querySelectorAll('link[rel="alternate"][hreflang]')
@@ -159,21 +170,21 @@ export const SEO = ({
       const link = document.createElement("link");
       link.rel = "alternate";
       link.hreflang = lang;
-      // If on root, link to /en, /it, /ro
-      // If on language path, replace with correct language
       const langPath =
-        pathname === "/"
+        lang === "en"
+          ? hreflangBase
+          : hreflangBase === "/"
           ? `/${lang}`
-          : pathname.replace(/^\/(en|it|ro)/, `/${lang}`);
+          : `/${lang}${hreflangBase}`;
       link.href = `${baseUrl}${langPath}`;
       document.head.appendChild(link);
     });
 
-    // Add x-default hreflang pointing to English version
+    // Add x-default hreflang pointing to the English canonical path
     const defaultLink = document.createElement("link");
     defaultLink.rel = "alternate";
     defaultLink.hreflang = "x-default";
-    defaultLink.href = `${baseUrl}/en`;
+    defaultLink.href = `${baseUrl}${hreflangBase}`;
     document.head.appendChild(defaultLink);
   }, [
     title,

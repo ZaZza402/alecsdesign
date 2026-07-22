@@ -20,26 +20,26 @@ export default function PacksHub({ lang = "en" }: { lang?: string }) {
       <Helmet>
         <title>{hubTitle}</title>
         <meta name="description" content={hubSubtitle} />
-        <link rel="canonical" href={`https://alecsdesign.xyz${basePath}`} />
+        <link rel="canonical" href={`https://www.alecsdesign.xyz${basePath}`} />
         <link
           rel="alternate"
           hrefLang="en"
-          href="https://alecsdesign.xyz/packs"
+          href="https://www.alecsdesign.xyz/packs"
         />
         <link
           rel="alternate"
           hrefLang="it"
-          href="https://alecsdesign.xyz/it/packs"
+          href="https://www.alecsdesign.xyz/it/packs"
         />
         <link
           rel="alternate"
           hrefLang="ro"
-          href="https://alecsdesign.xyz/ro/packs"
+          href="https://www.alecsdesign.xyz/ro/packs"
         />
         <link
           rel="alternate"
           hrefLang="x-default"
-          href="https://alecsdesign.xyz/packs"
+          href="https://www.alecsdesign.xyz/packs"
         />
       </Helmet>
 
