@@ -1,10 +1,6 @@
 {
   "rewrites": [
     {
-      "source": "/((?!api|assets|logo|sitemap|robots\\.txt|site\\.webmanifest).*)",
-      "destination": "/api/index"
-    },
-    {
       "source": "/it",
       "destination": "/api/index"
     },
@@ -67,6 +63,10 @@
     {
       "source": "/:path(.*\\.php)",
       "destination": "/api/blocked"
+    },
+    {
+      "source": "/:path((?!sitemap|robots\\.txt|api|logo).*)",
+      "destination": "/api/index"
     }
   ],
   "redirects": [
