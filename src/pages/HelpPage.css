@@ -3,10 +3,27 @@
   background:
     linear-gradient(180deg, rgba(15, 23, 42, 0.03), transparent 18%), #ffffff;
 }
+.help-page__media-strip {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+.help-page__media-card {
+  margin: 0;
+  overflow: hidden;
+  aspect-ratio: 2800 / 1310;
+}
+.help-page__media-card img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 49.47%;
+}
 .help-page__wrap {
   max-width: 1080px;
   margin: 0 auto;
-  padding: 3.75rem 1.5rem 4rem;
+  padding: 20px 1.5rem 4rem;
 }
 .help-page__home-link {
   display: inline-flex;
@@ -20,7 +37,9 @@
   font-size: 0.95rem;
   font-weight: 700;
   text-decoration: none;
-  box-shadow: 0 2px 8px rgba(15, 23, 42, 0.05);
+  box-shadow:
+    0 8px 20px rgba(15, 23, 42, 0.12),
+    0 1px 3px rgba(15, 23, 42, 0.08);
 }
 .help-page__home-link:hover {
   color: #ff6321;
@@ -28,7 +47,8 @@
 }
 .help-page__hero {
   max-width: 760px;
-  padding-top: 1.25rem;
+  padding-top: 0;
+  margin-top: 30px;
 }
 .help-page__eyebrow {
   margin: 0 0 0.75rem;
@@ -124,12 +144,9 @@
 }
 @media (max-width: 768px) {
   .help-page__wrap {
-    padding: 3.25rem 1rem 3rem;
+    padding: 20px 1rem 3rem;
   }
   .help-page__grid {
     grid-template-columns: 1fr;
-  }
-  .help-page__hero {
-    padding-top: 1rem;
   }
 }

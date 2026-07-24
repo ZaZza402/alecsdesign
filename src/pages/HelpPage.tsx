@@ -10,6 +10,7 @@ type HelpPageProps = { lang: string };
 const HelpPage = ({ lang }: HelpPageProps) => {
   const { t } = useTranslation();
   const prefix = lang === "en" ? "" : `/${lang}`;
+  const activeLang = lang === "it" || lang === "ro" ? lang : "en";
   const canonical =
     lang === "en"
       ? "https://www.alecsdesign.xyz/help"
@@ -17,6 +18,7 @@ const HelpPage = ({ lang }: HelpPageProps) => {
   const examples = t("help.sections.examples", {
     returnObjects: true,
   }) as string[];
+  const helpImageSrc = `/images/help/${activeLang}/help.webp`;
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -43,6 +45,19 @@ const HelpPage = ({ lang }: HelpPageProps) => {
           description: t("help.seo.description"),
         }}
       />
+
+      <section className="help-page__media-strip" aria-label={t("help.title")}>
+        <figure className="help-page__media-card">
+          <img
+            src={helpImageSrc}
+            alt={t("help.title")}
+            loading="lazy"
+            decoding="async"
+            width={2800}
+            height={1500}
+          />
+        </figure>
+      </section>
 
       <div className="help-page__wrap">
         <Link to={prefix || "/"} className="help-page__home-link">
