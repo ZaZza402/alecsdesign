@@ -25,26 +25,6 @@
   margin: 0 auto;
   padding: 20px 1.5rem 4rem;
 }
-.help-page__home-link {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
-  padding: 0.7rem 1rem;
-  border-radius: 999px;
-  border: 1px solid #e2e8f0;
-  background: rgba(255, 255, 255, 0.9);
-  color: #0f172a;
-  font-size: 0.95rem;
-  font-weight: 700;
-  text-decoration: none;
-  box-shadow:
-    0 8px 20px rgba(15, 23, 42, 0.12),
-    0 1px 3px rgba(15, 23, 42, 0.08);
-}
-.help-page__home-link:hover {
-  color: #ff6321;
-  border-color: rgba(255, 99, 33, 0.35);
-}
 .help-page__hero {
   max-width: 760px;
   padding-top: 0;
@@ -80,7 +60,6 @@
   max-width: 66ch;
 }
 .help-page__cta {
-  margin-top: 1.75rem;
   display: inline-flex;
   align-items: center;
   gap: 0.55rem;
@@ -100,11 +79,27 @@
   transform: translateY(-1px);
   box-shadow: 0 10px 24px rgba(255, 99, 33, 0.22);
 }
+.help-page__cta--top {
+  border-radius: 999px;
+  box-shadow:
+    0 8px 20px rgba(15, 23, 42, 0.12),
+    0 1px 3px rgba(15, 23, 42, 0.08);
+}
 .help-page__grid {
   margin-top: 3rem;
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 1rem;
+}
+.help-page__bottom-cta-wrap {
+  margin-top: 2.5rem;
+  display: flex;
+  justify-content: center;
+}
+.help-page__cta--bottom {
+  min-width: min(420px, 100%);
+  justify-content: center;
+  padding: 1.1rem 2rem;
 }
 .help-page__card {
   background: rgba(255, 255, 255, 0.9);
@@ -148,5 +143,9 @@
   }
   .help-page__grid {
     grid-template-columns: 1fr;
+  }
+  .help-page__cta--bottom {
+    width: 100%;
+    min-width: 0;
   }
 }

@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
-import { ArrowRight, Home } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import { SEO } from "../utils/seo";
 import "./HelpPage.css";
 
@@ -60,9 +60,9 @@ const HelpPage = ({ lang }: HelpPageProps) => {
       </section>
 
       <div className="help-page__wrap">
-        <Link to={prefix || "/"} className="help-page__home-link">
-          <Home size={16} />
-          <span>{t("help.homeButton")}</span>
+        <Link to={`${prefix}/help/request`} className="help-page__cta help-page__cta--top">
+          <span>{t("help.requestButton")}</span>
+          <ArrowRight size={16} />
         </Link>
 
         <header className="help-page__hero">
@@ -70,10 +70,6 @@ const HelpPage = ({ lang }: HelpPageProps) => {
           <h1 className="help-page__title">{t("help.title")}</h1>
           <p className="help-page__subtitle">{t("help.subtitle")}</p>
           <p className="help-page__note">{t("help.freeNote")}</p>
-          <Link to={`${prefix}/help/request`} className="help-page__cta">
-            <span>{t("help.requestButton")}</span>
-            <ArrowRight size={16} />
-          </Link>
         </header>
 
         <section className="help-page__grid" aria-label={t("help.title")}>
@@ -106,6 +102,16 @@ const HelpPage = ({ lang }: HelpPageProps) => {
             </div>
           </article>
         </section>
+
+        <div className="help-page__bottom-cta-wrap">
+          <Link
+            to={`${prefix}/help/request`}
+            className="help-page__cta help-page__cta--bottom"
+          >
+            <span>{t("help.requestButton")}</span>
+            <ArrowRight size={18} />
+          </Link>
+        </div>
       </div>
     </div>
   );
