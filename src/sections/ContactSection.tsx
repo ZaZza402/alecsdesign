@@ -3,7 +3,7 @@ import { useTranslation } from "react-i18next";
 import { useInView } from "react-intersection-observer";
 import { Clock, MessageSquare } from "lucide-react";
 import { trackSectionView } from "../utils/analytics";
-import ContactForm from "../components/ui/ContactForm";
+import { ContactForm } from "../components/ui";
 import "./ContactSection.css";
 
 const ContactSection = () => {

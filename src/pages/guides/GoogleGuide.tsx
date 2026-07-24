@@ -1,5 +1,5 @@
 import { useTranslation } from "react-i18next";
-import GuideLayout from "./GuideLayout";
+import { GuideLayout } from "../../components/guides";
 
 const RELATED: Record<string, Array<{ slug: string; titleKey: string }>> = {
   en: [

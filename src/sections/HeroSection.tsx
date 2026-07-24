@@ -2,8 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 import { Check } from "lucide-react";
-import LogoLoop from "../components/ui/LogoLoop";
-import { BackgroundPaths } from "../components/ui/background-paths";
+import { BackgroundPaths, LogoLoop } from "../components/ui";
 import { trackCTAClick } from "../utils/analytics";
 import "./HeroSection.css";
 

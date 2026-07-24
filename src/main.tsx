@@ -8,7 +8,13 @@ import "aos/dist/aos.css";
 import { i18nReady } from "./i18n"; // Async i18n - defers render until translations ready
 import i18n, { switchLanguage } from "./i18n";
 import App from "./App.tsx";
-import LoadingSkeleton from "./components/ui/LoadingSkeleton";
+import {
+  CookieBanner,
+  LoadingSkeleton,
+  PageTransition,
+  ScrollProgress,
+} from "./components/ui";
+import { Footer, Header } from "./components/layout";
 import { registerSW } from "virtual:pwa-register";
 
 const PrivacyPolicy = lazy(() => import("./pages/PrivacyPolicy.tsx"));
@@ -28,12 +34,6 @@ const GoogleGuide = lazy(() => import("./pages/guides/GoogleGuide.tsx"));
 const WebsiteNeedsGuide = lazy(
   () => import("./pages/guides/WebsiteNeedsGuide.tsx"),
 );
-
-import PageTransition from "./components/ui/PageTransition";
-import Header from "./components/layout/Header";
-import Footer from "./components/layout/Footer";
-import CookieBanner from "./components/ui/CookieBanner";
-import ScrollProgress from "./components/ui/ScrollProgress";
 
 // Lazy-load AOS after mount so it doesn't block the critical path
 const initAOS = () =>

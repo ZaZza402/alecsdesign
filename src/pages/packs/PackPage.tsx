@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { Helmet } from "react-helmet-async";
-import { getPackBySlug } from "../packData";
+import { getPackBySlug } from "../../utils/packsData";
 import "../PacksHub.css";
 
 interface PackItem {

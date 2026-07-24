@@ -1,13 +1,12 @@
 import { lazy, Suspense } from "react";
 import { useTranslation } from "react-i18next";
 import { Routes, Route } from "react-router-dom";
-import Footer from "./components/layout/Footer";
+import { Footer } from "./components/layout";
+import { LanguageSuggestionBanner, LoadingSkeleton } from "./components/ui";
 import HeroSection from "./sections/HeroSection";
 import HowItWorksSection from "./sections/HowItWorksSection";
 import ComparisonSection from "./sections/ComparisonSection";
 import StatsSection from "./sections/StatsSection";
-import LanguageSuggestionBanner from "./components/ui/LanguageSuggestionBanner";
-import LoadingSkeleton from "./components/ui/LoadingSkeleton";
 
 // Lazy load pages and sections
 const PortfolioSection = lazy(() => import("./sections/PortfolioSection"));

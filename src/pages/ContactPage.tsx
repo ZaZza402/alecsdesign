@@ -7,7 +7,7 @@ import {
   trackWhatsAppClick,
 } from "../utils/analytics";
 import { SEO } from "../utils/seo";
-import ContactForm from "../components/ui/ContactForm";
+import { ContactForm } from "../components/ui";
 import "./ContactPage.css";
 
 const ContactPage = () => {
@@ -74,7 +74,9 @@ const ContactPage = () => {
                 {contactRevealed ? (
                   <a
                     href={`tel:${getPhone().replace(/\s/g, "")}`}
-                    onClick={() => trackButtonClick("Phone Call", "Contact Page")}
+                    onClick={() =>
+                      trackButtonClick("Phone Call", "Contact Page")
+                    }
                   >
                     {getPhone()}
                   </a>

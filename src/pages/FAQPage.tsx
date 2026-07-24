@@ -2,7 +2,7 @@ import React, { useEffect, useMemo } from "react";
 import { useTranslation } from "react-i18next";
 import { Helmet } from "react-helmet-async";
 import FAQSearch from "../components/faq/FAQSearch";
-import Footer from "../components/layout/Footer";
+import { Footer } from "../components/layout";
 import { HelpCircle } from "lucide-react";
 import "./FAQPage.css";
 

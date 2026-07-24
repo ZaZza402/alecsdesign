@@ -1,0 +1,14 @@
+export { default as AboutPage } from "./AboutPage";
+export { default as ContactPage } from "./ContactPage";
+export { default as CookiePolicy } from "./CookiePolicy";
+export { default as FAQPage } from "./FAQPage";
+export { default as GuidesHub } from "./GuidesHub";
+export { default as NotFound } from "./NotFound";
+export { default as PacksHub } from "./PacksHub";
+export { default as PortfolioPage } from "./PortfolioPage";
+export { default as PrivacyPolicy } from "./PrivacyPolicy";
+export { default as TermsConditions } from "./TermsConditions";
+export { default as GoogleGuide } from "./guides/GoogleGuide";
+export { default as WebsiteCostGuide } from "./guides/WebsiteCostGuide";
+export { default as WebsiteNeedsGuide } from "./guides/WebsiteNeedsGuide";
+export { default as PackPage } from "./packs/PackPage";
