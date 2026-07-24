@@ -1,14 +1,40 @@
 {
   "seo": {
-    "title": "Free human help for everyday digital problems",
-    "description": "Stuck with a website, device, or confusing account? Get clear, step-by-step help from a real human developer. No jargon, no chatbots.",
-    "keywords": "free digital help, real tech support, simple internet help, human customer service, website problems"
+    "title": "Free Human Digital Help | Website, Account, Email, Device Problems",
+    "description": "Get free, human-to-human digital help for everyday issues: websites, accounts, email, forms, and device settings. Clear step-by-step guidance from a real developer.",
+    "keywords": "free digital help, human tech support, website troubleshooting, account login help, email problem help, device settings support, internet form errors"
   },
   "eyebrow": "Human-to-human service",
   "title": "Stuck online? Let's fix it in plain English.",
   "subtitle": "Modern technology is full of confusing screens and automated chatbots that go nowhere. If something digital is getting in your way, send me the problem.",
   "freeNote": "This service is 100% free. No hidden fees, no subscriptions.",
   "requestButton": "Ask for help",
+  "seoFaq": [
+    {
+      "question": "Is this digital help really free?",
+      "answer": "Yes. The service is completely free right now, with no subscription and no hidden fees."
+    },
+    {
+      "question": "What kinds of problems can I ask about?",
+      "answer": "You can ask about everyday digital issues such as website errors, account login loops, email problems, online forms, or device settings that block your task."
+    },
+    {
+      "question": "How detailed should my request be?",
+      "answer": "The more specific, the better. Include your device, the website or app, what you tried to do, and the exact result or error you saw."
+    },
+    {
+      "question": "How long does a response usually take?",
+      "answer": "Most replies are sent within 1 to 2 days. Complex issues can take longer if deeper research is needed."
+    },
+    {
+      "question": "Will a real person read my message?",
+      "answer": "Yes. Requests are reviewed by a real developer, not by an automated chatbot system."
+    },
+    {
+      "question": "What is outside the scope of this help service?",
+      "answer": "This service does not cover physically broken hardware, stolen password recovery without recovery data, instant live chat, or commercial spam messages."
+    }
+  ],
   "sections": {
     "whatItIsTitle": "Why this exists",
     "whatItIsBody": "Every day, things change online without warning. Buttons move, accounts get locked, and error messages make no sense. I am a web developer offering a simple, real-human help desk. No automated systems, no jargon - just a real person helping you figure out what went wrong.",

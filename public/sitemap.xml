@@ -495,4 +495,38 @@
     <xhtml:link rel="alternate" hreflang="ro" href="https://www.alecsdesign.xyz/ro/help" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.alecsdesign.xyz/help" />
   </url>
+
+  <!-- ─── PACKS ─────────────────────────────────────── -->
+  <url>
+    <loc>https://www.alecsdesign.xyz/help/request</loc>
+    <lastmod>2026-07-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.alecsdesign.xyz/help/request" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.alecsdesign.xyz/it/help/request" />
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.alecsdesign.xyz/ro/help/request" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.alecsdesign.xyz/help/request" />
+  </url>
+
+  <url>
+    <loc>https://www.alecsdesign.xyz/it/help/request</loc>
+    <lastmod>2026-07-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.alecsdesign.xyz/help/request" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.alecsdesign.xyz/it/help/request" />
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.alecsdesign.xyz/ro/help/request" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.alecsdesign.xyz/help/request" />
+  </url>
+
+  <url>
+    <loc>https://www.alecsdesign.xyz/ro/help/request</loc>
+    <lastmod>2026-07-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.alecsdesign.xyz/help/request" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.alecsdesign.xyz/it/help/request" />
+    <xhtml:link rel="alternate" hreflang="ro" href="https://www.alecsdesign.xyz/ro/help/request" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.alecsdesign.xyz/help/request" />
+  </url>
 </urlset>

@@ -17,10 +17,73 @@ type CategoryOption = { value: string; label: string };
 const HelpRequestPage = ({ lang }: HelpRequestPageProps) => {
   const { t } = useTranslation();
   const prefix = lang === "en" ? "" : `/${lang}`;
+  const activeLang = lang === "it" || lang === "ro" ? lang : "en";
   const canonical =
     lang === "en"
       ? "https://www.alecsdesign.xyz/help/request"
       : `https://www.alecsdesign.xyz/${lang}/help/request`;
+  const helpPageUrl =
+    lang === "en"
+      ? "https://www.alecsdesign.xyz/help"
+      : `https://www.alecsdesign.xyz/${lang}/help`;
+  const requestSchema = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": ["ContactPage", "WebPage"],
+        "@id": `${canonical}#webpage`,
+        url: canonical,
+        name: t("helpRequest.seo.title"),
+        description: t("helpRequest.seo.description"),
+        inLanguage: activeLang,
+        isPartOf: {
+          "@id": "https://www.alecsdesign.xyz/#website",
+        },
+      },
+      {
+        "@type": "Service",
+        "@id": `${canonical}#service`,
+        name: t("helpRequest.seo.title"),
+        serviceType: "Digital support request",
+        provider: {
+          "@type": "Organization",
+          name: "alecsdesign",
+          url: "https://www.alecsdesign.xyz",
+        },
+        areaServed: ["IT", "RO", "EU"],
+        availableLanguage: ["en", "it", "ro"],
+        potentialAction: {
+          "@type": "CommunicateAction",
+          name: t("helpRequest.submit"),
+          target: canonical,
+        },
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": `${canonical}#breadcrumb`,
+        itemListElement: [
+          {
+            "@type": "ListItem",
+            position: 1,
+            name: "Home",
+            item: "https://www.alecsdesign.xyz/",
+          },
+          {
+            "@type": "ListItem",
+            position: 2,
+            name: t("help.seo.title"),
+            item: helpPageUrl,
+          },
+          {
+            "@type": "ListItem",
+            position: 3,
+            name: t("helpRequest.seo.title"),
+            item: canonical,
+          },
+        ],
+      },
+    ],
+  };
   const categories = useMemo(
     () =>
       t("helpRequest.categories", { returnObjects: true }) as CategoryOption[],
@@ -80,7 +143,7 @@ const HelpRequestPage = ({ lang }: HelpRequestPageProps) => {
         description={t("helpRequest.seo.description")}
         keywords={t("helpRequest.seo.keywords")}
         canonical={canonical}
-        noindex
+        jsonLd={requestSchema}
       />
       <div className="help-request-page__wrap">
         <Link to={prefix || "/"} className="help-request-page__home-link">

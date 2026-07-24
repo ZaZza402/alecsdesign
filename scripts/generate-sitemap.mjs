@@ -42,6 +42,36 @@ const newEntries = [
     ],
   },
   {
+    path: "/help/request",
+    changefreq: "monthly",
+    priority: "0.7",
+    alternates: [
+      { lang: "en", href: "/help/request" },
+      { lang: "it", href: "/it/help/request" },
+      { lang: "ro", href: "/ro/help/request" },
+    ],
+  },
+  {
+    path: "/it/help/request",
+    changefreq: "monthly",
+    priority: "0.7",
+    alternates: [
+      { lang: "en", href: "/help/request" },
+      { lang: "it", href: "/it/help/request" },
+      { lang: "ro", href: "/ro/help/request" },
+    ],
+  },
+  {
+    path: "/ro/help/request",
+    changefreq: "monthly",
+    priority: "0.7",
+    alternates: [
+      { lang: "en", href: "/help/request" },
+      { lang: "it", href: "/it/help/request" },
+      { lang: "ro", href: "/ro/help/request" },
+    ],
+  },
+  {
     path: "/packs",
     changefreq: "weekly",
     priority: "0.9",

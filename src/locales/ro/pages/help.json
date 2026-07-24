@@ -1,14 +1,40 @@
 {
   "seo": {
-    "title": "Ajutor uman gratuit pentru probleme digitale de zi cu zi",
-    "description": "Ai un site, un dispozitiv sau un cont care îți pune probleme? Scrie-mi și primești ajutor clar, pas cu pas, de la o persoană reală. Fără jargon, fără chatbot-uri.",
-    "keywords": "ajutor digital gratuit, suport tehnic uman, asistență online simplă, probleme site web"
+    "title": "Ajutor Digital Uman Gratuit | Site, Cont, Email, Dispozitiv",
+    "description": "Primești ajutor digital gratuit, om la om, pentru probleme zilnice cu site-uri, conturi, email, formulare online și setări de dispozitiv. Pași clari de la o persoană reală.",
+    "keywords": "ajutor digital gratuit, suport tehnic uman, probleme autentificare cont, asistență email, erori formular online, probleme site web, ajutor setări dispozitiv"
   },
   "eyebrow": "Serviciu om la om",
   "title": "Te-a blocat ceva online? Hai să-l rezolvăm pe înțelesul tuturor.",
   "subtitle": "Tehnologia de azi e plină de ecrane încurcate și chatbot-uri care nu ajută cu nimic. Dacă ceva digital te ține pe loc, trimite-mi problema.",
   "freeNote": "Serviciul este 100% gratuit. Fără taxe ascunse, fără abonamente.",
   "requestButton": "Cere ajutor",
+  "seoFaq": [
+    {
+      "question": "Acest ajutor digital este chiar gratuit?",
+      "answer": "Da. În acest moment serviciul este complet gratuit, fără abonamente și fără costuri ascunse."
+    },
+    {
+      "question": "Pentru ce tipuri de probleme pot cere ajutor?",
+      "answer": "Poți cere ajutor pentru probleme digitale de zi cu zi: erori pe site-uri, blocaje la autentificare, email, formulare online sau setări de dispozitiv."
+    },
+    {
+      "question": "Cât de detaliată trebuie să fie cererea mea?",
+      "answer": "Cu cât e mai clară, cu atât mai bine. Spune ce dispozitiv folosești, ce site sau aplicație îți face probleme, ce ai încercat și ce eroare ai primit."
+    },
+    {
+      "question": "În cât timp primesc răspuns?",
+      "answer": "De obicei răspund în 1-2 zile. Dacă problema este mai complexă, poate dura puțin mai mult pentru verificări."
+    },
+    {
+      "question": "Mesajul meu este citit de o persoană reală?",
+      "answer": "Da. Cererile sunt citite de un dezvoltator real, nu de un sistem automat cu chatbot."
+    },
+    {
+      "question": "Ce nu acoperă acest serviciu?",
+      "answer": "Serviciul nu acoperă hardware stricat fizic, recuperarea parolelor furate fără date de recuperare, chat live instant sau mesaje de spam comercial."
+    }
+  ],
   "sections": {
     "whatItIsTitle": "De ce există acest serviciu",
     "whatItIsBody": "În fiecare zi, online se schimbă lucruri fără să fii anunțat. Butoanele se mută, conturile se blochează și mesajele de eroare nu au niciun sens. Eu sunt dezvoltator web și ofer un mic serviciu de ajutor făcut de o persoană reală. Fără sisteme automate, fără jargon - doar cineva care te ajută să înțelegi ce s-a întâmplat.",

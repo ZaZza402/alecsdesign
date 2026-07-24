@@ -1,14 +1,40 @@
 {
   "seo": {
-    "title": "Aiuto umano gratuito per problemi digitali di tutti i giorni",
-    "description": "Hai un sito, un dispositivo o un account che ti sta creando problemi? Scrivimi e riceverai aiuto chiaro, passo dopo passo, da una persona vera. Niente gergo, niente chatbot.",
-    "keywords": "aiuto digitale gratuito, supporto tecnico umano, assistenza online semplice, problemi sito web"
+    "title": "Aiuto Digitale Umano Gratuito | Siti, Account, Email, Dispositivi",
+    "description": "Ricevi aiuto digitale gratuito e umano per problemi quotidiani con siti, account, email, moduli online e impostazioni del dispositivo. Risposte chiare da una persona vera.",
+    "keywords": "aiuto digitale gratuito, supporto tecnico umano, problemi accesso account, assistenza email, errori modulo online, problemi sito web, aiuto impostazioni dispositivo"
   },
   "eyebrow": "Servizio persona a persona",
   "title": "Bloccato online? Risolviamolo insieme, in parole semplici.",
   "subtitle": "La tecnologia di oggi è piena di schermate confuse e chatbot che non portano da nessuna parte. Se qualcosa di digitale ti sta frenando, scrivimi il problema.",
   "freeNote": "Questo servizio è gratuito al 100%. Nessun costo nascosto, nessun abbonamento.",
   "requestButton": "Chiedi aiuto",
+  "seoFaq": [
+    {
+      "question": "Questo aiuto digitale è davvero gratuito?",
+      "answer": "Sì. Al momento il servizio è completamente gratuito, senza abbonamenti e senza costi nascosti."
+    },
+    {
+      "question": "Per quali problemi posso chiedere aiuto?",
+      "answer": "Puoi chiedere aiuto per problemi digitali quotidiani: errori su siti web, accessi bloccati, email che non funzionano, moduli online o impostazioni del dispositivo."
+    },
+    {
+      "question": "Quanto deve essere dettagliata la richiesta?",
+      "answer": "Più dettagli dai, meglio è. Indica il dispositivo, il sito o l'app, cosa stavi cercando di fare e quale errore o risultato hai ottenuto."
+    },
+    {
+      "question": "In quanto tempo arriva una risposta?",
+      "answer": "Di solito rispondo entro 1 o 2 giorni. Se il caso è più complesso, può servire più tempo per fare verifiche utili."
+    },
+    {
+      "question": "Legge davvero una persona reale?",
+      "answer": "Sì. Le richieste vengono lette da uno sviluppatore reale, non da un chatbot automatico."
+    },
+    {
+      "question": "Cosa non rientra in questo servizio?",
+      "answer": "Non rientrano hardware fisicamente danneggiato, recupero password rubate senza dati di recupero, chat live immediata e messaggi di spam commerciale."
+    }
+  ],
   "sections": {
     "whatItIsTitle": "Perché esiste questo servizio",
     "whatItIsBody": "Ogni giorno online cambiano cose senza avvisare. I pulsanti si spostano, gli account si bloccano e i messaggi di errore non hanno senso. Io sono uno sviluppatore web e offro un piccolo sportello di aiuto gestito da una persona reale. Niente sistemi automatici, niente gergo: solo qualcuno che ti aiuta a capire cosa non va.",

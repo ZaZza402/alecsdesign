@@ -6,11 +6,13 @@ import { SEO } from "../utils/seo";
 import "./HelpPage.css";
 
 type HelpPageProps = { lang: string };
+type FaqSchemaItem = { question: string; answer: string };
 
 const HelpPage = ({ lang }: HelpPageProps) => {
   const { t } = useTranslation();
   const prefix = lang === "en" ? "" : `/${lang}`;
   const activeLang = lang === "it" || lang === "ro" ? lang : "en";
+  const languageCode = activeLang;
   const canonical =
     lang === "en"
       ? "https://www.alecsdesign.xyz/help"
@@ -19,6 +21,113 @@ const HelpPage = ({ lang }: HelpPageProps) => {
     returnObjects: true,
   }) as string[];
   const helpImageSrc = `/images/help/${activeLang}/help.webp`;
+  const requestUrl = `https://www.alecsdesign.xyz${prefix}/help/request`;
+
+  const localizedFaq = t("help.seoFaq", {
+    returnObjects: true,
+  }) as FaqSchemaItem[];
+  const fallbackFaq: FaqSchemaItem[] = [
+    {
+      question: t("help.sections.whatItIsTitle"),
+      answer: t("help.sections.whatItIsBody"),
+    },
+    {
+      question: t("help.sections.whatToSendTitle"),
+      answer: t("help.sections.whatToSendBody"),
+    },
+    {
+      question: t("help.sections.howItWorksTitle"),
+      answer: t("help.sections.howItWorksBody"),
+    },
+    {
+      question: t("help.sections.responseTitle"),
+      answer: t("help.sections.responseBody"),
+    },
+    {
+      question: t("help.sections.limitsTitle"),
+      answer: t("help.sections.limitsBody"),
+    },
+  ];
+  const faqSource =
+    Array.isArray(localizedFaq) && localizedFaq.length > 0
+      ? localizedFaq
+      : fallbackFaq;
+
+  const faqEntities = faqSource.map((item) => ({
+    "@type": "Question",
+    name: item.question,
+    acceptedAnswer: {
+      "@type": "Answer",
+      text: item.answer,
+    },
+  }));
+
+  const helpSchema = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebPage",
+        "@id": `${canonical}#webpage`,
+        url: canonical,
+        name: t("help.seo.title"),
+        description: t("help.seo.description"),
+        inLanguage: languageCode,
+        isPartOf: {
+          "@id": "https://www.alecsdesign.xyz/#website",
+        },
+        primaryImageOfPage: {
+          "@type": "ImageObject",
+          url: `https://www.alecsdesign.xyz${helpImageSrc}`,
+          width: 2800,
+          height: 1500,
+        },
+      },
+      {
+        "@type": "Service",
+        "@id": `${canonical}#service`,
+        name: t("help.title"),
+        description: t("help.seo.description"),
+        serviceType: "Digital support",
+        provider: {
+          "@type": "Organization",
+          name: "alecsdesign",
+          url: "https://www.alecsdesign.xyz",
+        },
+        areaServed: ["IT", "RO", "EU"],
+        availableLanguage: ["en", "it", "ro"],
+        offers: {
+          "@type": "Offer",
+          price: "0",
+          priceCurrency: "EUR",
+          availability: "https://schema.org/InStock",
+          url: requestUrl,
+        },
+      },
+      {
+        "@type": "FAQPage",
+        "@id": `${canonical}#faq`,
+        mainEntity: faqEntities,
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": `${canonical}#breadcrumb`,
+        itemListElement: [
+          {
+            "@type": "ListItem",
+            position: 1,
+            name: "Home",
+            item: "https://www.alecsdesign.xyz/",
+          },
+          {
+            "@type": "ListItem",
+            position: 2,
+            name: t("help.seo.title"),
+            item: canonical,
+          },
+        ],
+      },
+    ],
+  };
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -31,19 +140,7 @@ const HelpPage = ({ lang }: HelpPageProps) => {
         description={t("help.seo.description")}
         keywords={t("help.seo.keywords")}
         canonical={canonical}
-        jsonLd={{
-          "@context": "https://schema.org",
-          "@type": "Service",
-          name: t("help.title"),
-          serviceType: "Digital support",
-          provider: {
-            "@type": "Organization",
-            name: "alecsdesign",
-            url: "https://www.alecsdesign.xyz",
-          },
-          areaServed: ["IT", "RO", "EU"],
-          description: t("help.seo.description"),
-        }}
+        jsonLd={helpSchema}
       />
 
       <section className="help-page__media-strip" aria-label={t("help.title")}>

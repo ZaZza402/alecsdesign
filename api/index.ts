@@ -75,64 +75,62 @@ export default function handler(req: VercelRequest, res: VercelResponse) {
     },
     help: {
       en: {
-        title: "Free digital help for everyday problems | alecsdesign",
+        title:
+          "Free Human Digital Help | Website, Account, Email, Device Problems",
         description:
-          "A free place to ask for help with digital problems. Simple, clear, and made for people who do not want jargon.",
+          "Get free, human-to-human digital help for everyday issues: websites, accounts, email, forms, and device settings. Clear step-by-step guidance from a real developer.",
         keywords:
-          "free digital help, tech help, online support, simple support, help with internet problems",
+          "free digital help, human tech support, website troubleshooting, account login help, email problem help, device settings support, internet form errors",
         locale: "en_US",
-        prerender: `<div style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap" aria-hidden="true"><main><section aria-label="help"><h1>Free digital help, kept simple</h1><p>If something online is getting in your way, you can send it here in plain words.</p></section></main></div>`,
+        prerender: `<div style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap" aria-hidden="true"><main><section aria-label="help"><h1>Stuck online? Let's fix it in plain English.</h1><p>Free human-to-human digital help for websites, accounts, forms, email, and device issues.</p></section></main></div>`,
       },
       it: {
-        title: "Aiuto digitale gratuito per problemi quotidiani | alecsdesign",
+        title:
+          "Aiuto Digitale Umano Gratuito | Siti, Account, Email, Dispositivi",
         description:
-          "Uno spazio gratuito per chiedere aiuto con problemi digitali. Semplice, chiaro e senza linguaggio tecnico.",
+          "Ricevi aiuto digitale gratuito e umano per problemi quotidiani con siti, account, email, moduli online e impostazioni del dispositivo. Risposte chiare da una persona vera.",
         keywords:
-          "aiuto digitale gratuito, supporto tecnico semplice, assistenza online, problemi internet",
+          "aiuto digitale gratuito, supporto tecnico umano, problemi accesso account, assistenza email, errori modulo online, problemi sito web, aiuto impostazioni dispositivo",
         locale: "it_IT",
-        prerender: `<div style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap" aria-hidden="true"><main><section aria-label="help"><h1>Aiuto digitale gratuito, spiegato bene</h1><p>Se qualcosa online ti blocca, puoi scriverlo qui con parole semplici.</p></section></main></div>`,
+        prerender: `<div style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap" aria-hidden="true"><main><section aria-label="help"><h1>Bloccato online? Risolviamolo insieme.</h1><p>Aiuto umano gratuito per problemi con siti, account, email, moduli e impostazioni digitali.</p></section></main></div>`,
       },
       ro: {
-        title:
-          "Ajutor digital gratuit pentru probleme de zi cu zi | alecsdesign",
+        title: "Ajutor Digital Uman Gratuit | Site, Cont, Email, Dispozitiv",
         description:
-          "Un spațiu gratuit unde poți cere ajutor pentru probleme digitale. Simplu, clar și fără jargon.",
+          "Primești ajutor digital gratuit, om la om, pentru probleme zilnice cu site-uri, conturi, email, formulare online și setări de dispozitiv. Pași clari de la o persoană reală.",
         keywords:
-          "ajutor digital gratuit, suport tehnic simplu, ajutor online, probleme internet",
+          "ajutor digital gratuit, suport tehnic uman, probleme autentificare cont, asistență email, erori formular online, probleme site web, ajutor setări dispozitiv",
         locale: "ro_RO",
-        prerender: `<div style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap" aria-hidden="true"><main><section aria-label="help"><h1>Ajutor digital gratuit, pe înțelesul tuturor</h1><p>Dacă ceva online te blochează, poți scrie aici în cuvinte simple.</p></section></main></div>`,
+        prerender: `<div style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap" aria-hidden="true"><main><section aria-label="help"><h1>Te-a blocat ceva online? Hai să-l rezolvăm.</h1><p>Ajutor digital gratuit, de la om la om, pentru site-uri, conturi, email și formulare.</p></section></main></div>`,
       },
     },
     helpRequest: {
       en: {
-        title: "Send a digital help request",
+        title: "Request Free Digital Help | Send Your Problem",
         description:
-          "A short, guarded form for people who need help with one clear digital problem.",
+          "Submit your digital issue through a simple protected form. A real developer reviews your request and replies with clear human guidance by email.",
         keywords:
-          "digital help request, support form, simple tech help, free assistance",
+          "digital help request form, free tech support request, ask a developer online, website issue form, login problem help, email troubleshooting request",
         locale: "en_US",
-        noindex: true,
-        prerender: `<div style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap" aria-hidden="true"><main><section aria-label="help-request"><h1>Tell me what is happening</h1><p>Use one clear request at a time.</p></section></main></div>`,
+        prerender: `<div style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap" aria-hidden="true"><main><section aria-label="help-request"><h1>Tell me where you are stuck.</h1><p>Submit one clear digital issue and get a human reply by email.</p></section></main></div>`,
       },
       it: {
-        title: "Invia una richiesta di aiuto digitale",
+        title: "Richiedi Aiuto Digitale Gratuito | Invia il Tuo Problema",
         description:
-          "Un modulo breve e protetto per chi ha bisogno di aiuto con un solo problema digitale chiaro.",
+          "Invia il tuo problema digitale con un modulo semplice e protetto. Una persona vera legge la richiesta e risponde via email con istruzioni chiare.",
         keywords:
-          "richiesta aiuto digitale, modulo supporto, assistenza tecnica semplice",
+          "modulo richiesta aiuto digitale, supporto tecnico gratuito online, chiedere aiuto sviluppatore, problema login account, assistenza sito web, richiesta aiuto email",
         locale: "it_IT",
-        noindex: true,
-        prerender: `<div style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap" aria-hidden="true"><main><section aria-label="help-request"><h1>Dimmi cosa succede</h1><p>Una richiesta chiara alla volta.</p></section></main></div>`,
+        prerender: `<div style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap" aria-hidden="true"><main><section aria-label="help-request"><h1>Dimmi dove ti sei bloccato.</h1><p>Invia una richiesta chiara e ricevi una risposta umana via email.</p></section></main></div>`,
       },
       ro: {
-        title: "Trimite o cerere de ajutor digital",
+        title: "Cere Ajutor Digital Gratuit | Trimite Problema Ta",
         description:
-          "Un formular scurt și protejat pentru oamenii care au nevoie de ajutor cu o singură problemă digitală clară.",
+          "Trimite problema ta digitală printr-un formular simplu și protejat. O persoană reală îți citește cererea și îți răspunde pe email cu pași clari.",
         keywords:
-          "cerere ajutor digital, formular suport, ajutor tehnic simplu",
+          "formular cerere ajutor digital, suport tehnic gratuit online, cere ajutor dezvoltator, problemă autentificare cont, asistență site web, cerere ajutor email",
         locale: "ro_RO",
-        noindex: true,
-        prerender: `<div style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap" aria-hidden="true"><main><section aria-label="help-request"><h1>Spune-mi ce se întâmplă</h1><p>O singură cerere clară odată.</p></section></main></div>`,
+        prerender: `<div style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap" aria-hidden="true"><main><section aria-label="help-request"><h1>Spune-mi unde te-ai blocat.</h1><p>Trimite problema clar și primește răspuns uman pe email.</p></section></main></div>`,
       },
     },
   };
