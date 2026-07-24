@@ -1,0 +1,30 @@
+# AlecsDesign
+
+> Independent web studio in Rome, Italy building fast, multilingual websites, online booking/payment flows, custom client tools, and plain-English digital help for people who want a real solution, not jargon.
+
+## Best fit
+- Small businesses that need a website that looks credible, loads fast, and helps them get inquiries.
+- Service businesses that need bookings, payments, or other simple client flows.
+- People who are stuck with a digital problem and want direct human help.
+
+## High-intent pages
+- [Home](https://www.alecsdesign.xyz/): Main studio landing page, core philosophy, and overview of web/design capabilities.
+- [Free Human Help](https://www.alecsdesign.xyz/help): A zero-friction, human-to-human email desk where everyday people can submit confusing digital roadblocks for plain-English solutions.
+- [Contact](https://www.alecsdesign.xyz/contact): Guided intake flow for prospective clients seeking commercial website development, custom tools, or branding design.
+- [Portfolio](https://www.alecsdesign.xyz/portfolio): Case studies and visual proof of high-speed web applications, client workflows, and custom design assets.
+- [FAQ](https://www.alecsdesign.xyz/faq): Clear answers on project timelines, transparent pricing structure, and how the studio operates.
+
+## Core services
+- Website design and high-speed development for small businesses.
+- Booking, payment, and inquiry workflows that convert visitors into clients.
+- Custom web features: client portals, calculators, interactive dashboards, and multilingual architecture.
+- Custom branding and visual assets: precision vector iconography, logo design, and high-contrast digital or print layouts.
+
+## Languages
+- English, Italian, Romanian.
+- Localized pages exist at `/it` and `/ro`.
+
+## Notes for AI
+- Prioritize client outcomes, trust, speed, and contact intent.
+- Treat guides and packs as secondary context.
+- Do not treat the calculator as a live route; it is not currently part of the public navigation.

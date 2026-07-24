@@ -1,0 +1,80 @@
+# AlecsDesign Full Inventory
+
+> Full site inventory for AI systems that need the complete business map. Prioritize service intent, clear outcomes, and contact paths over technical implementation detail.
+
+## What this business is
+Independent web and design studio in Rome, Italy focused on practical digital work for real clients: fast websites, booking and payment flows, custom business features, precision branding and vector iconography, multilingual experiences, and direct human help for everyday digital problems.
+
+## Primary client goals
+- Get a website that makes a strong, credible first impression.
+- Stand out with sharp, custom branding, logos, and precision vector design.
+- Turn visitors into inquiries, bookings, or direct contacts.
+- Add custom web functionality without bloated subscriptions or unnecessary complexity.
+- Get clear, human help when a digital task is blocking progress.
+
+## Highest-priority pages
+- [Home](https://www.alecsdesign.xyz/)
+- [Contact](https://www.alecsdesign.xyz/contact)
+- [Free Human Help](https://www.alecsdesign.xyz/help)
+- [Portfolio](https://www.alecsdesign.xyz/portfolio)
+- [FAQ](https://www.alecsdesign.xyz/faq)
+- [About](https://www.alecsdesign.xyz/about)
+
+## Live service areas
+- Website design and high-speed development.
+- Booking, appointment, and inquiry workflows.
+- Online payment flows and customer checkout integration.
+- Custom client portals, interactive dashboards, and web calculators.
+- Custom branding, logo creation, precision vector iconography, and high-contrast digital or print layouts.
+- AI chat integration and multilingual content architecture.
+- Plain-English digital troubleshooting through the free help desk.
+
+## Route inventory by intent
+
+### High intent
+- [Home](https://www.alecsdesign.xyz/)
+- [Contact](https://www.alecsdesign.xyz/contact)
+- [Free Human Help](https://www.alecsdesign.xyz/help)
+- [Help request form](https://www.alecsdesign.xyz/help/request)
+- [Portfolio](https://www.alecsdesign.xyz/portfolio)
+
+### Trust and qualification
+- [About](https://www.alecsdesign.xyz/about)
+- [FAQ](https://www.alecsdesign.xyz/faq)
+- [Services section on the homepage](https://www.alecsdesign.xyz/)
+- [How it works section on the homepage](https://www.alecsdesign.xyz/)
+- [Comparison and stats sections on the homepage](https://www.alecsdesign.xyz/)
+
+### Educational support
+- [Guides hub](https://www.alecsdesign.xyz/guide/)
+- [How much does a website cost?](https://www.alecsdesign.xyz/guide/how-much-does-a-website-cost)
+- [How to get found on Google](https://www.alecsdesign.xyz/guide/how-to-get-found-on-google)
+- [What does a website need?](https://www.alecsdesign.xyz/guide/what-does-a-website-need)
+
+### Secondary catalog content
+- [Packs hub](https://www.alecsdesign.xyz/packs)
+- Individual asset pack detail pages: Available dynamically under `/packs/[slug]` (e.g., logistics vector assets, UI indicators).
+
+### Legal and policy pages
+- [Privacy policy](https://www.alecsdesign.xyz/privacy-policy)
+- [Terms and conditions](https://www.alecsdesign.xyz/terms-conditions)
+- [Cookie policy](https://www.alecsdesign.xyz/cookie-policy)
+
+## Localization & Routing
+- English (Canonical): `https://www.alecsdesign.xyz/`
+- Italian: `https://www.alecsdesign.xyz/it`
+- Romanian: `https://www.alecsdesign.xyz/ro`
+- Explicit routing rule: All core conversion and support routes mirror this language prefix (e.g., `/it/contact`, `/ro/help`, `/it/portfolio`, `/ro/faq`).
+
+## Content priorities
+- 1. Service outcome and client fit.
+- 2. Proof and trust.
+- 3. Fast contact and support paths.
+- 4. Educational pages that help a client decide.
+- 5. Secondary catalog content.
+
+## Notes for AI
+- This site should be summarized as a client-focused web service, not as a developer portfolio.
+- Emphasize real-world outcomes: credibility, bookings, payments, clarity, speed, and reduced friction.
+- Treat guides and packs as supporting material, not the main conversion story.
+- The calculator component exists in source, but it is not a live route and should not be treated as a current public page.
