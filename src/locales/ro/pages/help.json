@@ -1,31 +1,31 @@
 {
   "seo": {
-    "title": "Ajutor digital gratuit pentru probleme de zi cu zi",
-    "description": "Un spațiu gratuit unde poți cere ajutor pentru probleme digitale. Simplu, clar și fără jargon.",
-    "keywords": "ajutor digital gratuit, suport tehnic simplu, ajutor online, probleme internet"
+    "title": "Ajutor uman gratuit pentru probleme digitale de zi cu zi",
+    "description": "Ai un site, un dispozitiv sau un cont care îți pune probleme? Scrie-mi și primești ajutor clar, pas cu pas, de la o persoană reală. Fără jargon, fără chatbot-uri.",
+    "keywords": "ajutor digital gratuit, suport tehnic uman, asistență online simplă, probleme site web"
   },
-  "eyebrow": "Serviciu gratuit",
-  "title": "Ajutor digital gratuit, pe înțelesul tuturor",
-  "subtitle": "Dacă ceva online te blochează, poți scrie aici în cuvinte simple.",
-  "freeNote": "Serviciul este gratuit deocamdată.",
+  "eyebrow": "Serviciu om la om",
+  "title": "Te-a blocat ceva online? Hai să-l rezolvăm pe înțelesul tuturor.",
+  "subtitle": "Tehnologia de azi e plină de ecrane încurcate și chatbot-uri care nu ajută cu nimic. Dacă ceva digital te ține pe loc, trimite-mi problema.",
+  "freeNote": "Serviciul este 100% gratuit. Fără taxe ascunse, fără abonamente.",
   "homeButton": "Înapoi acasă",
-  "requestButton": "Completează o cerere",
+  "requestButton": "Cere ajutor",
   "sections": {
-    "whatItIsTitle": "Ce este acest serviciu",
-    "whatItIsBody": "Este un loc simplu pentru oameni care au nevoie de ajutor cu lucruri digitale: un site, un email, un cont, un formular, un dispozitiv sau altă problemă mică de internet.",
-    "whatToSendTitle": "Ce să trimiți",
-    "whatToSendBody": "Scrie scurt și clar. Spune ce se întâmplă, ce te așteptai să se întâmple și ce dispozitiv sau site este implicat.",
+    "whatItIsTitle": "De ce există acest serviciu",
+    "whatItIsBody": "În fiecare zi, online se schimbă lucruri fără să fii anunțat. Butoanele se mută, conturile se blochează și mesajele de eroare nu au niciun sens. Eu sunt dezvoltator web și ofer un mic serviciu de ajutor făcut de o persoană reală. Fără sisteme automate, fără jargon - doar cineva care te ajută să înțelegi ce s-a întâmplat.",
+    "whatToSendTitle": "Cum să mă ajuți să înțeleg problema",
+    "whatToSendBody": "Nu văd ecranul tău și nu știu tot. Ca să-ți dau un răspuns bun, am nevoie de context. Spune-mi ce dispozitiv folosești, ce site sau aplicație îți dă bătăi de cap, ce încercai să faci și ce s-a întâmplat în loc.",
     "howItWorksTitle": "Cum funcționează",
-    "howItWorksBody": "Trimiți o singură cerere. Le citesc zilnic. Dacă pot ajuta, răspund pe email. Dacă am nevoie de mai multe detalii, voi cere o singură clarificare.",
-    "responseTitle": "Când poți aștepta un răspuns",
-    "responseBody": "Încerc să răspund în una sau două zile. Dacă cererea nu este clară sau are nevoie de context, poate dura puțin mai mult pentru că voi cere clarificări.",
-    "limitsTitle": "Ce nu trebuie trimis",
-    "limitsBody": "Nu este chat live, nu este spam și nu este un loc pentru mesaje comerciale întâmplătoare. Trimite o singură problemă reală pe rând.",
-    "examplesTitle": "Exemple bune",
+    "howItWorksBody": "Completezi un singur formular scurt. Citesc cererile în fiecare zi din inboxul meu personal. Dacă știu răspunsul, îți scriu instrucțiuni simple, pas cu pas. Dacă mai am nevoie de un detaliu ca să înțeleg problema, îți trimit o singură întrebare de clarificare.",
+    "responseTitle": "Când te poți aștepta la un răspuns",
+    "responseBody": "Încerc să răspund în 1 sau 2 zile. Pentru că aici citește o persoană reală, nu un chatbot instant, uneori poate dura puțin mai mult dacă problema cere puțină cercetare.",
+    "limitsTitle": "Ce nu este acest serviciu",
+    "limitsBody": "Nu pot repara hardware stricat, nu pot recupera parole furate fără datele de recuperare și nu ofer chat live imediat. Nici nu este un loc pentru spam comercial. Trimite câte o singură problemă digitală reală odată.",
+    "examplesTitle": "Cum arată o cerere bună",
     "examples": [
-      "Emailul meu nu se deschide pe telefon.",
-      "Nu mă mai pot conecta la un site pe care îl foloseam.",
-      "Un formular afișează o eroare și nu știu de ce."
+      "În loc de „Telefonul meu se blochează”, scrie: „Telefonul meu se blochează de fiecare dată când încerc să atașez o fotografie într-un email”.",
+      "În loc de „Nu mă pot loga”, scrie: „Încerc să intru în contul meu de utilități de pe laptop, dar mă trimite mereu înapoi pe pagina principală”.",
+      "În loc de „Site-ul e stricat”, scrie: „Încerc să completez un formular de la primărie, dar butonul Trimite rămâne gri și nu mă lasă să-l apăs”."
     ]
   }
 }

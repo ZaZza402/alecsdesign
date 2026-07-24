@@ -1,32 +1,32 @@
 {
   "seo": {
     "title": "Invia una richiesta di aiuto digitale",
-    "description": "Un modulo breve e protetto per chi ha bisogno di aiuto con un solo problema digitale chiaro.",
-    "keywords": "richiesta aiuto digitale, modulo supporto, assistenza tecnica semplice"
+    "description": "Un modulo semplice e protetto per raccontare il tuo problema digitale a una persona vera, in modo chiaro e diretto.",
+    "keywords": "richiesta aiuto digitale, modulo supporto tecnico, assistenza online semplice, aiuto internet"
   },
-  "eyebrow": "Modulo richiesta",
-  "title": "Dimmi cosa succede",
-  "subtitle": "Una richiesta chiara alla volta. Bastano pochi dettagli sinceri.",
+  "eyebrow": "Modulo diretto",
+  "title": "Dimmi dove ti sei bloccato",
+  "subtitle": "Scrivi in modo preciso. Più dettagli mi dai su cosa hai cliccato e su cosa è successo, prima riesco ad aiutarti.",
   "homeButton": "Torna alla home",
-  "formNote": "Controllo le richieste ogni giorno. Se posso aiutarti, risponderò via email. Se mi serve altro, ti farò una sola domanda di chiarimento.",
+  "formNote": "Una persona vera legge questo modulo. Se riesco a risolvere il problema, ti risponderò via email con istruzioni semplici. Se mi serve un dettaglio in più per capire meglio, ti farò una sola domanda.",
   "fields": {
-    "category": "Che tipo di problema è?",
-    "details": "Cosa succede?",
-    "email": "La tua email",
-    "honeypot": "Lascia questo campo vuoto"
+    "category": "Dove succede il problema?",
+    "details": "Cosa non va?",
+    "email": "Il tuo indirizzo email",
+    "honeypot": "Lascia vuoto questo campo"
   },
-  "categoryPlaceholder": "Scegli una voce",
-  "detailsPlaceholder": "Spiega il problema in poche frasi semplici.",
+  "categoryPlaceholder": "Scegli l'opzione più adatta",
+  "detailsPlaceholder": "Per esempio: sto usando il portatile e provo a stampare un PDF, ma ogni volta che clicco su Stampa compare l'errore 'stampante offline' anche se il cavo è collegato...",
   "emailPlaceholder": "tuo@esempio.com",
   "categories": [
-    { "value": "website", "label": "Sito web o app" },
-    { "value": "email", "label": "Email o messaggi" },
-    { "value": "account", "label": "Account o accesso" },
-    { "value": "device", "label": "Telefono o computer" },
-    { "value": "other", "label": "Altro" }
+    { "value": "website", "label": "Un sito web o un modulo online" },
+    { "value": "email", "label": "Email o app di messaggistica" },
+    { "value": "account", "label": "Account, password o accesso" },
+    { "value": "device", "label": "Telefono, tablet o computer" },
+    { "value": "other", "label": "Qualcos'altro" }
   ],
-  "submit": "Invia richiesta",
-  "successTitle": "Grazie. Ho ricevuto la tua richiesta.",
-  "successBody": "Se posso aiutarti, ti risponderò direttamente via email.",
-  "error": "Qualcosa è andato storto. Riprova."
+  "submit": "Invia alla mia casella",
+  "successTitle": "Messaggio ricevuto. Sei in lista.",
+  "successBody": "Leggerò la tua richiesta e ti risponderò direttamente via email appena possibile.",
+  "error": "C'è stato un problema nell'invio del messaggio. Prova di nuovo."
 }

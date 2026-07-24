@@ -1,31 +1,31 @@
 {
   "seo": {
-    "title": "Aiuto digitale gratuito per problemi quotidiani",
-    "description": "Uno spazio gratuito per chiedere aiuto con problemi digitali. Semplice, chiaro e senza linguaggio tecnico.",
-    "keywords": "aiuto digitale gratuito, supporto tecnico semplice, assistenza online, problemi internet"
+    "title": "Aiuto umano gratuito per problemi digitali di tutti i giorni",
+    "description": "Hai un sito, un dispositivo o un account che ti sta creando problemi? Scrivimi e riceverai aiuto chiaro, passo dopo passo, da una persona vera. Niente gergo, niente chatbot.",
+    "keywords": "aiuto digitale gratuito, supporto tecnico umano, assistenza online semplice, problemi sito web"
   },
-  "eyebrow": "Servizio gratuito",
-  "title": "Aiuto digitale gratuito, spiegato bene",
-  "subtitle": "Se qualcosa online ti blocca, puoi scriverlo qui con parole semplici.",
-  "freeNote": "Per ora il servizio è gratuito.",
+  "eyebrow": "Servizio persona a persona",
+  "title": "Bloccato online? Risolviamolo insieme, in parole semplici.",
+  "subtitle": "La tecnologia di oggi è piena di schermate confuse e chatbot che non portano da nessuna parte. Se qualcosa di digitale ti sta frenando, scrivimi il problema.",
+  "freeNote": "Questo servizio è gratuito al 100%. Nessun costo nascosto, nessun abbonamento.",
   "homeButton": "Torna alla home",
-  "requestButton": "Compila una richiesta",
+  "requestButton": "Chiedi aiuto",
   "sections": {
-    "whatItIsTitle": "Cos'è questo servizio",
-    "whatItIsBody": "È uno spazio semplice per chi ha bisogno di aiuto con cose digitali: un sito web, un'email, un accesso, un modulo, un dispositivo o un piccolo problema online.",
-    "whatToSendTitle": "Cosa scrivere",
-    "whatToSendBody": "Usa parole brevi e chiare. Spiega cosa succede, cosa ti aspettavi e quale dispositivo o sito è coinvolto.",
-    "howItWorksTitle": "Come funziona",
-    "howItWorksBody": "Invii una richiesta. Le leggo ogni giorno. Se posso aiutarti, ti rispondo via email. Se mi serve altro, ti mando una sola domanda di chiarimento.",
-    "responseTitle": "Quando aspettarsi una risposta",
-    "responseBody": "Cerco di rispondere entro uno o due giorni. Se il problema non è chiaro o serve più contesto, può volerci un po' di più perché prima chiederò chiarimenti.",
-    "limitsTitle": "Cosa non va inviato",
-    "limitsBody": "Non è una chat live, non è spam e non è un posto per messaggi commerciali casuali. Invia un problema reale alla volta.",
-    "examplesTitle": "Esempi utili",
+    "whatItIsTitle": "Perché esiste questo servizio",
+    "whatItIsBody": "Ogni giorno online cambiano cose senza avvisare. I pulsanti si spostano, gli account si bloccano e i messaggi di errore non hanno senso. Io sono uno sviluppatore web e offro un piccolo sportello di aiuto gestito da una persona reale. Niente sistemi automatici, niente gergo: solo qualcuno che ti aiuta a capire cosa non va.",
+    "whatToSendTitle": "Come aiutarmi a capire il problema",
+    "whatToSendBody": "Non vedo il tuo schermo e non so tutto. Per darti una risposta utile mi serve contesto. Dimmi che dispositivo usi, quale sito o app ti sta creando problemi, cosa stavi cercando di fare e cosa è successo invece.",
+    "howItWorksTitle": "Come funziona il tutto",
+    "howItWorksBody": "Compili un solo modulo breve. Leggo le richieste ogni giorno nella mia casella personale. Se conosco la risposta, ti scrivo istruzioni semplici, passo dopo passo. Se mi serve un dettaglio in più per capire il problema, ti mando una sola domanda di chiarimento.",
+    "responseTitle": "Quando aspettarti una risposta",
+    "responseBody": "Cerco di rispondere entro 1 o 2 giorni. Siccome c'è una persona vera che legge email vere e non un chatbot istantaneo, in alcuni casi può volerci un po' di più se serve fare ricerche più approfondite.",
+    "limitsTitle": "Cosa non è questo servizio",
+    "limitsBody": "Non posso riparare hardware rotto, recuperare password rubate senza le informazioni di recupero o offrire una chat live immediata. Non è nemmeno uno spazio per lo spam commerciale. Invia un solo problema digitale reale alla volta.",
+    "examplesTitle": "Come scrivere una buona richiesta",
     "examples": [
-      "La mia email non si apre sul telefono.",
-      "Non riesco più ad accedere a un sito che usavo prima.",
-      "Un modulo mostra un errore e non capisco il motivo."
+      "Invece di 'Il mio telefono si blocca', scrivi: 'Il mio telefono si blocca ogni volta che provo ad allegare una foto a un'email'.",
+      "Invece di 'Non riesco ad accedere', scrivi: 'Sto cercando di entrare nel mio account delle utenze dal laptop, ma continua a riportarmi alla pagina iniziale'.",
+      "Invece di 'Il sito è rotto', scrivi: 'Sto cercando di compilare un modulo del Comune, ma il pulsante Invia resta grigio e non mi lascia cliccare'."
     ]
   }
 }

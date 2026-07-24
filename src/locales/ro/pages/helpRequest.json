@@ -1,32 +1,32 @@
 {
   "seo": {
     "title": "Trimite o cerere de ajutor digital",
-    "description": "Un formular scurt și protejat pentru oamenii care au nevoie de ajutor cu o singură problemă digitală clară.",
-    "keywords": "cerere ajutor digital, formular suport, ajutor tehnic simplu"
+    "description": "Un formular simplu și protejat prin care poți spune problema ta digitală unei persoane reale, clar și direct.",
+    "keywords": "cerere ajutor digital, formular suport tehnic, ajutor online simplu, ajutor internet"
   },
-  "eyebrow": "Formular de cerere",
-  "title": "Spune-mi ce se întâmplă",
-  "subtitle": "O singură cerere clară odată. Ajută cele câteva detalii sincere.",
+  "eyebrow": "Formular direct",
+  "title": "Spune-mi unde te-ai blocat",
+  "subtitle": "Fii cât mai specific. Cu cât îmi spui mai clar ce ai apăsat și ce s-a întâmplat, cu atât te pot ajuta mai repede.",
   "homeButton": "Înapoi acasă",
-  "formNote": "Citesc cererile zilnic. Dacă pot ajuta, îți răspund pe email. Dacă am nevoie de mai multe detalii, îți voi cere o singură clarificare.",
+  "formNote": "O persoană reală citește acest formular. Dacă pot rezolva problema, îți răspund direct pe email cu pași simpli. Dacă am nevoie de un detaliu în plus, îți voi pune o singură întrebare clară.",
   "fields": {
-    "category": "Ce fel de problemă este?",
-    "details": "Ce se întâmplă?",
-    "email": "Emailul tău",
+    "category": "Unde apare problema?",
+    "details": "Ce nu merge?",
+    "email": "Adresa ta de email",
     "honeypot": "Lasă acest câmp gol"
   },
-  "categoryPlaceholder": "Alege o variantă",
-  "detailsPlaceholder": "Descrie problema în câteva propoziții simple.",
+  "categoryPlaceholder": "Alege cea mai potrivită opțiune",
+  "detailsPlaceholder": "De exemplu: folosesc laptopul și încerc să tipăresc un PDF, dar de fiecare dată când apăs pe Tipărește apare eroarea „imprimantă offline”, deși cablul este conectat...",
   "emailPlaceholder": "tu@exemplu.com",
   "categories": [
-    { "value": "website", "label": "Site sau aplicație" },
-    { "value": "email", "label": "Email sau mesaje" },
-    { "value": "account", "label": "Cont sau autentificare" },
-    { "value": "device", "label": "Telefon sau computer" },
+    { "value": "website", "label": "Un site web sau un formular online" },
+    { "value": "email", "label": "Email sau aplicație de mesaje" },
+    { "value": "account", "label": "Cont, parolă sau autentificare" },
+    { "value": "device", "label": "Telefon, tabletă sau computer" },
     { "value": "other", "label": "Altceva" }
   ],
-  "submit": "Trimite cererea",
-  "successTitle": "Mulțumesc. Am primit cererea ta.",
-  "successBody": "Dacă pot ajuta, îți voi trimite un răspuns direct pe email.",
-  "error": "A apărut o problemă. Te rog încearcă din nou."
+  "submit": "Trimite în inboxul meu",
+  "successTitle": "Mesaj primit. Ești în listă.",
+  "successBody": "Îți voi citi cererea și, dacă pot ajuta, îți voi răspunde direct pe email cât de curând.",
+  "error": "Ceva nu a mers la trimiterea mesajului. Te rog încearcă din nou."
 }

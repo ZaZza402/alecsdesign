@@ -1,32 +1,32 @@
 {
   "seo": {
     "title": "Send a digital help request",
-    "description": "A short, guarded form for people who need help with one clear digital problem.",
-    "keywords": "digital help request, support form, simple tech help, free assistance"
+    "description": "A simple, guarded form to send your digital problem to a real developer for clear, human advice.",
+    "keywords": "digital help request, simple tech support form, ask a developer, free internet assistance"
   },
-  "eyebrow": "Request form",
-  "title": "Tell me what is happening",
-  "subtitle": "Use one clear request at a time. Short, honest details work best.",
+  "eyebrow": "Direct inbox form",
+  "title": "Tell me where you are stuck",
+  "subtitle": "Be specific. The more details you give me about what you clicked and what happened, the faster I can help.",
   "homeButton": "Back home",
-  "formNote": "I read requests daily. If I can help, I will reply by email. If I need more detail, I will ask one follow-up question.",
+  "formNote": "A real human reads this. If I can solve it, I will reply directly to your email with simple instructions. If I need more details to understand the issue, I will ask.",
   "fields": {
-    "category": "What kind of problem is it?",
-    "details": "What is going on?",
-    "email": "Your email",
+    "category": "Where is the problem happening?",
+    "details": "What is going wrong?",
+    "email": "Your email address (so I can reply)",
     "honeypot": "Leave this field empty"
   },
-  "categoryPlaceholder": "Choose one",
-  "detailsPlaceholder": "Tell me the problem in a few simple lines.",
+  "categoryPlaceholder": "Choose the best match",
+  "detailsPlaceholder": "e.g., I am using my laptop and trying to print a PDF document, but every time I click Print, an error says 'printer offline' even though the cable is plugged in...",
   "emailPlaceholder": "you@example.com",
   "categories": [
-    { "value": "website", "label": "Website or app" },
-    { "value": "email", "label": "Email or messages" },
-    { "value": "account", "label": "Account or login" },
-    { "value": "device", "label": "Phone or computer" },
+    { "value": "website", "label": "A website or online form" },
+    { "value": "email", "label": "Email or messaging app" },
+    { "value": "account", "label": "Account, password, or login" },
+    { "value": "device", "label": "Phone, tablet, or computer setting" },
     { "value": "other", "label": "Something else" }
   ],
-  "submit": "Send request",
-  "successTitle": "Thanks. I received your request.",
-  "successBody": "If I can help, I will send a direct email reply.",
-  "error": "Something went wrong. Please try again."
+  "submit": "Send to my inbox",
+  "successTitle": "Message received. You are in the queue.",
+  "successBody": "I will read your request and reply to your email directly as soon as I can.",
+  "error": "Something went wrong sending the message. Please try clicking send again."
 }
