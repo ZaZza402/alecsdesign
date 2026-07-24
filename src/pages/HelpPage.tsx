@@ -60,7 +60,10 @@ const HelpPage = ({ lang }: HelpPageProps) => {
       </section>
 
       <div className="help-page__wrap">
-        <Link to={`${prefix}/help/request`} className="help-page__cta help-page__cta--top">
+        <Link
+          to={`${prefix}/help/request`}
+          className="help-page__cta help-page__cta--top"
+        >
           <span>{t("help.requestButton")}</span>
           <ArrowRight size={16} />
         </Link>
