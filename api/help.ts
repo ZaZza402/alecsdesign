@@ -113,20 +113,11 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
       details: cleanDetails,
     });
 
-    await transporter.verify();
-
     await transporter.sendMail({
-      from: {
-        name: "alecsdesign help",
-        address: emailUser,
-      },
+      from: `alecsdesign help <${emailUser}>`,
       to: "start@alecsdesign.xyz",
       replyTo: cleanEmail,
       subject: `[Help] ${formatCategory(cleanCategory)} request`,
-      headers: {
-        "X-Service": "alecsdesign-help",
-        "X-Form-Type": "help-request",
-      },
       text: plainText,
       html: `
         <div style="font-family: Arial, sans-serif; max-width: 680px; margin: 0 auto; color: #0f172a; background: #ffffff;">
@@ -169,6 +160,10 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
     return res.status(200).json({ success: true, message: "Request sent" });
   } catch (error) {
     console.error("Error sending help request:", error);
-    return res.status(500).json({ error: "Failed to send request" });
+    let details = "Failed to send request";
+    if (error instanceof Error && error.message) {
+      details = error.message;
+    }
+    return res.status(500).json({ error: "Failed to send request", details });
   }
 }
