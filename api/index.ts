@@ -15,7 +15,14 @@ export default function handler(req: VercelRequest, res: VercelResponse) {
   }
 
   // Full page URL for og:url
-  const urlPath = url || "/";
+    const urlPath = url || "/";
+    const normalizedPath = urlPath.replace(/^\/(en|it|ro)(?=\/|$)/, "") || "/";
+    const pageKey =
+      normalizedPath === "/help/request" || normalizedPath.startsWith("/help/request/")
+        ? "helpRequest"
+        : normalizedPath === "/help" || normalizedPath.startsWith("/help/")
+          ? "help"
+          : "home";
   const ogUrl =
     `https://www.alecsdesign.xyz${urlPath === "/" ? "" : urlPath}` ||
     "https://www.alecsdesign.xyz/";
@@ -71,6 +78,45 @@ export default function handler(req: VercelRequest, res: VercelResponse) {
         "Custom, ultra-fast React & TypeScript websites for small businesses in Rome & Europe. Full code ownership, €0 monthly hosting fees, and direct developer access.",
       keywords:
         "web development Rome, sviluppo web Roma, React developer Rome, custom websites, freelance web developer",
+            title:
+              "alecsdesign - Web Developer in Rome | Your 24/7 Digital Business Partner",
+            description:
+              "Custom, ultra-fast React & TypeScript websites for small businesses in Rome & Europe. Full code ownership, €0 monthly hosting fees, and direct developer access.",
+            keywords:
+              "web development Rome, sviluppo web Roma, React developer Rome, custom websites, freelance web developer",
+            locale: "en_US",
+            hero: "Your website should work like your best employee - 24/7.",
+            heroSub:
+              "Web developer in Rome. I build fast, SEO-ready, scalable digital products for businesses that want to grow online.",
+            services: [
+              "Custom website design & development",
+              "React & modern web applications",
+              "SEO optimization & Google rankings",
+              "E-commerce solutions",
+              "Performance & accessibility audits",
+            ],
+            comparison: {
+              them: [
+                "3-6 second load times",
+                "Hard to find on Google",
+                "AI assistants can't recommend you",
+                "Breaks on mobile phones",
+                "Months of waiting",
+                "Template with your logo",
+                "Open a ticket. Wait.",
+              ],
+              me: [
+                "Under 2 seconds",
+                "Ranked from day one",
+                "AI finds & suggests you",
+                "Flawless on every screen",
+                "Live in under 2 weeks",
+                "Built only for you",
+                "Message me directly",
+              ],
+            },
+          },
+          it: {
       locale: "en_US",
       hero: "Your website should work like your best employee - 24/7.",
       heroSub:
@@ -125,30 +171,56 @@ export default function handler(req: VercelRequest, res: VercelResponse) {
           "3-6 secondi di caricamento",
           "Quasi introvabile su Google",
           "L'AI non ti trova",
+          help: {
+            en: {
+              title: "Free digital help for everyday problems | alecsdesign",
+              description:
+                "A free place to ask for help with digital problems. Simple, clear, and made for people who do not want jargon.",
+              keywords:
+                "free digital help, tech help, online support, simple support, help with internet problems",
+              locale: "en_US",
+              hero: "Free digital help, kept simple",
+              heroSub:
+                "If something online is getting in your way, you can send it here in plain words.",
+              services: ["Website or app problems", "Email or login issues", "Phone or computer help", "Clear follow-up by email"],
+              comparison: { them: ["Vague form", "Spam", "No reply", "Hard to understand"], me: ["One clear request", "Daily review", "Email reply", "Simple language"] },
+              prerender: `<div style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap" aria-hidden="true"><main><section aria-label="help"><h1>Free digital help, kept simple</h1><p>If something online is getting in your way, you can send it here in plain words.</p><ul><li>Website or app problems</li><li>Email or login issues</li><li>Phone or computer help</li><li>Clear follow-up by email</li></ul></section></main></div>`,
+            },
+            it: {
+              title: "Aiuto digitale gratuito per problemi quotidiani | alecsdesign",
+              description:
+                "Uno spazio gratuito per chiedere aiuto con problemi digitali. Semplice, chiaro e senza linguaggio tecnico.",
+              keywords:
+                "aiuto digitale gratuito, supporto tecnico semplice, assistenza online, problemi internet",
+              locale: "it_IT",
+              hero: "Aiuto digitale gratuito, spiegato bene",
+              heroSub:
+                "Se qualcosa online ti blocca, puoi scriverlo qui con parole semplici.",
+              services: ["Problemi con siti o app", "Email o accessi", "Aiuto con telefono o computer", "Risposta chiara via email"],
+              comparison: { them: ["Modulo vago", "Spam", "Nessuna risposta", "Difficile da capire"], me: ["Una richiesta chiara", "Controllo ogni giorno", "Risposta via email", "Linguaggio semplice"] },
+              prerender: `<div style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap" aria-hidden="true"><main><section aria-label="help"><h1>Aiuto digitale gratuito, spiegato bene</h1><p>Se qualcosa online ti blocca, puoi scriverlo qui con parole semplici.</p><ul><li>Problemi con siti o app</li><li>Email o accessi</li><li>Aiuto con telefono o computer</li><li>Risposta chiara via email</li></ul></section></main></div>`,
+            },
+            ro: {
+              title: "Ajutor digital gratuit pentru probleme de zi cu zi | alecsdesign",
+              description:
+                "Un spațiu gratuit unde poți cere ajutor pentru probleme digitale. Simplu, clar și fără jargon.",
+              keywords:
+                "ajutor digital gratuit, suport tehnic simplu, ajutor online, probleme internet",
+              locale: "ro_RO",
+              hero: "Ajutor digital gratuit, pe înțelesul tuturor",
+              heroSub:
+                "Dacă ceva online te blochează, poți scrie aici în cuvinte simple.",
+              services: ["Probleme cu site-uri sau aplicații", "Email sau autentificare", "Ajutor cu telefonul sau computerul", "Răspuns clar pe email"],
+              comparison: { them: ["Formular vag", "Spam", "Fără răspuns", "Greu de înțeles"], me: ["O cerere clară", "Verific zilnic", "Răspuns pe email", "Limbaj simplu"] },
+              prerender: `<div style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap" aria-hidden="true"><main><section aria-label="help"><h1>Ajutor digital gratuit, pe înțelesul tuturor</h1><p>Dacă ceva online te blochează, poți scrie aici în cuvinte simple.</p><ul><li>Probleme cu site-uri sau aplicații</li><li>Email sau autentificare</li><li>Ajutor cu telefonul sau computerul</li><li>Răspuns clar pe email</li></ul></section></main></div>`,
+            },
           "Si rompe sullo smartphone",
           "Mesi di attesa",
           "Template col tuo logo",
           "Apri un ticket. Aspetta.",
         ],
         me: [
-          "Sotto i 2 secondi",
-          "Posizionato dal giorno 1",
-          "L'AI ti consiglia",
-          "Perfetto su ogni schermo",
-          "Online entro 2 settimane",
-          "Creato solo per te",
-          "Mi scrivi direttamente",
-        ],
-      },
-    },
-    ro: {
-      title:
-        "alecsdesign - Dezvoltator Web în Roma | Site-uri Web Personalizate",
-      description:
-        "Dezvoltare site-uri web rapide în React și TypeScript pentru afaceri în Roma și Europa. Cod 100% al tău, zero comisioane lunare și suport direct.",
-      keywords:
-        "dezvoltator web Roma, site-uri web personalizate, creare site web, programator web Italia, React developer",
-      locale: "ro_RO",
+        const prerender = langContent.prerender;
       hero: "Site-ul tău ar trebui să lucreze ca cel mai bun angajat al tău - 24/7.",
       heroSub:
         "Dezvoltator web în Roma. Construiesc produse digitale rapide, optimizate SEO și scalabile pentru afaceri care vor să crească online.",

@@ -23,6 +23,8 @@ const CookiePolicy = lazy(() => import("./pages/CookiePolicy.tsx"));
 const NotFound = lazy(() => import("./pages/NotFound.tsx"));
 const PortfolioPage = lazy(() => import("./pages/PortfolioPage.tsx"));
 const ContactPage = lazy(() => import("./pages/ContactPage.tsx"));
+const HelpPage = lazy(() => import("./pages/HelpPage.tsx"));
+const HelpRequestPage = lazy(() => import("./pages/HelpRequestPage.tsx"));
 const AboutPage = lazy(() => import("./pages/AboutPage.tsx"));
 const GuidesHub = lazy(() => import("./pages/GuidesHub.tsx"));
 const PacksHub = lazy(() => import("./pages/PacksHub.tsx"));
@@ -148,6 +150,22 @@ function AppRoutes() {
             }
           />
           <Route
+            path="/help"
+            element={
+              <PageWrapper lang="en">
+                <HelpPage lang="en" />
+              </PageWrapper>
+            }
+          />
+          <Route
+            path="/help/request"
+            element={
+              <PageWrapper lang="en">
+                <HelpRequestPage lang="en" />
+              </PageWrapper>
+            }
+          />
+          <Route
             path="/about"
             element={
               <PageWrapper lang="en">
@@ -194,6 +212,22 @@ function AppRoutes() {
             element={
               <PageWrapper lang="en">
                 <ContactPage />
+              </PageWrapper>
+            }
+          />
+          <Route
+            path="/en/help"
+            element={
+              <PageWrapper lang="en">
+                <HelpPage lang="en" />
+              </PageWrapper>
+            }
+          />
+          <Route
+            path="/en/help/request"
+            element={
+              <PageWrapper lang="en">
+                <HelpRequestPage lang="en" />
               </PageWrapper>
             }
           />
@@ -248,6 +282,22 @@ function AppRoutes() {
             }
           />
           <Route
+            path="/it/help"
+            element={
+              <PageWrapper lang="it">
+                <HelpPage lang="it" />
+              </PageWrapper>
+            }
+          />
+          <Route
+            path="/it/help/request"
+            element={
+              <PageWrapper lang="it">
+                <HelpRequestPage lang="it" />
+              </PageWrapper>
+            }
+          />
+          <Route
             path="/it/about"
             element={
               <PageWrapper lang="it">
@@ -294,6 +344,22 @@ function AppRoutes() {
             element={
               <PageWrapper lang="ro">
                 <ContactPage />
+              </PageWrapper>
+            }
+          />
+          <Route
+            path="/ro/help"
+            element={
+              <PageWrapper lang="ro">
+                <HelpPage lang="ro" />
+              </PageWrapper>
+            }
+          />
+          <Route
+            path="/ro/help/request"
+            element={
+              <PageWrapper lang="ro">
+                <HelpRequestPage lang="ro" />
               </PageWrapper>
             }
           />

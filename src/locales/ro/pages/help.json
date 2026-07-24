@@ -1,0 +1,31 @@
+{
+  "seo": {
+    "title": "Ajutor digital gratuit pentru probleme de zi cu zi",
+    "description": "Un spațiu gratuit unde poți cere ajutor pentru probleme digitale. Simplu, clar și fără jargon.",
+    "keywords": "ajutor digital gratuit, suport tehnic simplu, ajutor online, probleme internet"
+  },
+  "eyebrow": "Serviciu gratuit",
+  "title": "Ajutor digital gratuit, pe înțelesul tuturor",
+  "subtitle": "Dacă ceva online te blochează, poți scrie aici în cuvinte simple.",
+  "freeNote": "Serviciul este gratuit deocamdată.",
+  "homeButton": "Înapoi acasă",
+  "requestButton": "Completează o cerere",
+  "sections": {
+    "whatItIsTitle": "Ce este acest serviciu",
+    "whatItIsBody": "Este un loc simplu pentru oameni care au nevoie de ajutor cu lucruri digitale: un site, un email, un cont, un formular, un dispozitiv sau altă problemă mică de internet.",
+    "whatToSendTitle": "Ce să trimiți",
+    "whatToSendBody": "Scrie scurt și clar. Spune ce se întâmplă, ce te așteptai să se întâmple și ce dispozitiv sau site este implicat.",
+    "howItWorksTitle": "Cum funcționează",
+    "howItWorksBody": "Trimiți o singură cerere. Le citesc zilnic. Dacă pot ajuta, răspund pe email. Dacă am nevoie de mai multe detalii, voi cere o singură clarificare.",
+    "responseTitle": "Când poți aștepta un răspuns",
+    "responseBody": "Încerc să răspund în una sau două zile. Dacă cererea nu este clară sau are nevoie de context, poate dura puțin mai mult pentru că voi cere clarificări.",
+    "limitsTitle": "Ce nu trebuie trimis",
+    "limitsBody": "Nu este chat live, nu este spam și nu este un loc pentru mesaje comerciale întâmplătoare. Trimite o singură problemă reală pe rând.",
+    "examplesTitle": "Exemple bune",
+    "examples": [
+      "Emailul meu nu se deschide pe telefon.",
+      "Nu mă mai pot conecta la un site pe care îl foloseam.",
+      "Un formular afișează o eroare și nu știu de ce."
+    ]
+  }
+}

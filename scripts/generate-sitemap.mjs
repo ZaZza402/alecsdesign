@@ -12,6 +12,36 @@ const lastmod = "2026-07-22";
 
 const newEntries = [
   {
+    path: "/help",
+    changefreq: "monthly",
+    priority: "0.8",
+    alternates: [
+      { lang: "en", href: "/help" },
+      { lang: "it", href: "/it/help" },
+      { lang: "ro", href: "/ro/help" },
+    ],
+  },
+  {
+    path: "/it/help",
+    changefreq: "monthly",
+    priority: "0.8",
+    alternates: [
+      { lang: "en", href: "/help" },
+      { lang: "it", href: "/it/help" },
+      { lang: "ro", href: "/ro/help" },
+    ],
+  },
+  {
+    path: "/ro/help",
+    changefreq: "monthly",
+    priority: "0.8",
+    alternates: [
+      { lang: "en", href: "/help" },
+      { lang: "it", href: "/it/help" },
+      { lang: "ro", href: "/ro/help" },
+    ],
+  },
+  {
     path: "/packs",
     changefreq: "weekly",
     priority: "0.9",

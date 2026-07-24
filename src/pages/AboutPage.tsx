@@ -7,7 +7,8 @@ import profileImage from "../assets/zxcvbnm.webp";
 import "./AboutPage.css";
 
 const AboutPage = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+  const prefix = i18n.language === "en" ? "" : `/${i18n.language}`;
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -41,7 +42,7 @@ const AboutPage = () => {
             <div className="about-signature">{t("about.signature")}</div>
 
             <div className="about-cta-container">
-              <Link to="/contact" className="about-cta-btn">
+              <Link to={`${prefix}/help`} className="about-cta-btn">
                 {t("about.cta")}
               </Link>
             </div>

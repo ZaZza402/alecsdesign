@@ -1,0 +1,31 @@
+{
+  "seo": {
+    "title": "Free digital help for everyday problems",
+    "description": "A free place to ask for help with digital problems. Simple, clear, and made for people who do not want jargon.",
+    "keywords": "free digital help, tech help, online support, simple support, help with internet problems"
+  },
+  "eyebrow": "Free service",
+  "title": "Free digital help, kept simple",
+  "subtitle": "If something online is getting in your way, you can send it here in plain words.",
+  "freeNote": "This service is free for now.",
+  "homeButton": "Back home",
+  "requestButton": "Fill a request",
+  "sections": {
+    "whatItIsTitle": "What this service is",
+    "whatItIsBody": "This is a simple place for people who need help with digital things: a website, email, a login, a form, a device, or another small internet problem.",
+    "whatToSendTitle": "What to send",
+    "whatToSendBody": "Use short, clear words. Tell me what is happening, what you expected, and what device or site is involved.",
+    "howItWorksTitle": "How it works",
+    "howItWorksBody": "You send one request. I read requests daily. If I can help, I reply by email. If I need more detail, I will ask one follow-up question.",
+    "responseTitle": "When you can expect a reply",
+    "responseBody": "I try to answer within one to two days. If the request is unclear or needs more context, it may take a little longer because I will ask for clarification first.",
+    "limitsTitle": "What this is not for",
+    "limitsBody": "This is not live chat, not spam, and not a place for random sales messages. Please send one real problem at a time.",
+    "examplesTitle": "Good examples",
+    "examples": [
+      "My email will not open on my phone.",
+      "I cannot log into a website I used before.",
+      "A form keeps showing an error and I do not know why."
+    ]
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "seo": {
+    "title": "Send a digital help request",
+    "description": "A short, guarded form for people who need help with one clear digital problem.",
+    "keywords": "digital help request, support form, simple tech help, free assistance"
+  },
+  "eyebrow": "Request form",
+  "title": "Tell me what is happening",
+  "subtitle": "Use one clear request at a time. Short, honest details work best.",
+  "homeButton": "Back home",
+  "formNote": "I read requests daily. If I can help, I will reply by email. If I need more detail, I will ask one follow-up question.",
+  "fields": {
+    "category": "What kind of problem is it?",
+    "details": "What is going on?",
+    "email": "Your email",
+    "honeypot": "Leave this field empty"
+  },
+  "categoryPlaceholder": "Choose one",
+  "detailsPlaceholder": "Tell me the problem in a few simple lines.",
+  "emailPlaceholder": "you@example.com",
+  "categories": [
+    { "value": "website", "label": "Website or app" },
+    { "value": "email", "label": "Email or messages" },
+    { "value": "account", "label": "Account or login" },
+    { "value": "device", "label": "Phone or computer" },
+    { "value": "other", "label": "Something else" }
+  ],
+  "submit": "Send request",
+  "successTitle": "Thanks. I received your request.",
+  "successBody": "If I can help, I will send a direct email reply.",
+  "error": "Something went wrong. Please try again."
+}

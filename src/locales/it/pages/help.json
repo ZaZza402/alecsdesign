@@ -1,0 +1,31 @@
+{
+  "seo": {
+    "title": "Aiuto digitale gratuito per problemi quotidiani",
+    "description": "Uno spazio gratuito per chiedere aiuto con problemi digitali. Semplice, chiaro e senza linguaggio tecnico.",
+    "keywords": "aiuto digitale gratuito, supporto tecnico semplice, assistenza online, problemi internet"
+  },
+  "eyebrow": "Servizio gratuito",
+  "title": "Aiuto digitale gratuito, spiegato bene",
+  "subtitle": "Se qualcosa online ti blocca, puoi scriverlo qui con parole semplici.",
+  "freeNote": "Per ora il servizio è gratuito.",
+  "homeButton": "Torna alla home",
+  "requestButton": "Compila una richiesta",
+  "sections": {
+    "whatItIsTitle": "Cos'è questo servizio",
+    "whatItIsBody": "È uno spazio semplice per chi ha bisogno di aiuto con cose digitali: un sito web, un'email, un accesso, un modulo, un dispositivo o un piccolo problema online.",
+    "whatToSendTitle": "Cosa scrivere",
+    "whatToSendBody": "Usa parole brevi e chiare. Spiega cosa succede, cosa ti aspettavi e quale dispositivo o sito è coinvolto.",
+    "howItWorksTitle": "Come funziona",
+    "howItWorksBody": "Invii una richiesta. Le leggo ogni giorno. Se posso aiutarti, ti rispondo via email. Se mi serve altro, ti mando una sola domanda di chiarimento.",
+    "responseTitle": "Quando aspettarsi una risposta",
+    "responseBody": "Cerco di rispondere entro uno o due giorni. Se il problema non è chiaro o serve più contesto, può volerci un po' di più perché prima chiederò chiarimenti.",
+    "limitsTitle": "Cosa non va inviato",
+    "limitsBody": "Non è una chat live, non è spam e non è un posto per messaggi commerciali casuali. Invia un problema reale alla volta.",
+    "examplesTitle": "Esempi utili",
+    "examples": [
+      "La mia email non si apre sul telefono.",
+      "Non riesco più ad accedere a un sito che usavo prima.",
+      "Un modulo mostra un errore e non capisco il motivo."
+    ]
+  }
+}

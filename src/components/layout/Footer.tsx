@@ -182,6 +182,16 @@ const Footer = () => {
               <li>
                 <button
                   onClick={() => {
+                    trackButtonClick("Help", "Footer Quick Links");
+                    navigate(getLocalizedRoute("/help"));
+                  }}
+                >
+                  {t("footer.quickLinks.help")}
+                </button>
+              </li>
+              <li>
+                <button
+                  onClick={() => {
                     trackButtonClick("Contact", "Footer Quick Links");
                     navigate(getLocalizedRoute("/contact"));
                   }}

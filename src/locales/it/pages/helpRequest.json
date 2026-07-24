@@ -1,0 +1,32 @@
+{
+  "seo": {
+    "title": "Invia una richiesta di aiuto digitale",
+    "description": "Un modulo breve e protetto per chi ha bisogno di aiuto con un solo problema digitale chiaro.",
+    "keywords": "richiesta aiuto digitale, modulo supporto, assistenza tecnica semplice"
+  },
+  "eyebrow": "Modulo richiesta",
+  "title": "Dimmi cosa succede",
+  "subtitle": "Una richiesta chiara alla volta. Bastano pochi dettagli sinceri.",
+  "homeButton": "Torna alla home",
+  "formNote": "Controllo le richieste ogni giorno. Se posso aiutarti, risponderò via email. Se mi serve altro, ti farò una sola domanda di chiarimento.",
+  "fields": {
+    "category": "Che tipo di problema è?",
+    "details": "Cosa succede?",
+    "email": "La tua email",
+    "honeypot": "Lascia questo campo vuoto"
+  },
+  "categoryPlaceholder": "Scegli una voce",
+  "detailsPlaceholder": "Spiega il problema in poche frasi semplici.",
+  "emailPlaceholder": "tuo@esempio.com",
+  "categories": [
+    { "value": "website", "label": "Sito web o app" },
+    { "value": "email", "label": "Email o messaggi" },
+    { "value": "account", "label": "Account o accesso" },
+    { "value": "device", "label": "Telefono o computer" },
+    { "value": "other", "label": "Altro" }
+  ],
+  "submit": "Invia richiesta",
+  "successTitle": "Grazie. Ho ricevuto la tua richiesta.",
+  "successBody": "Se posso aiutarti, ti risponderò direttamente via email.",
+  "error": "Qualcosa è andato storto. Riprova."
+}

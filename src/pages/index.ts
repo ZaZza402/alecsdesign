@@ -1,5 +1,7 @@
 export { default as AboutPage } from "./AboutPage";
 export { default as ContactPage } from "./ContactPage";
+export { default as HelpPage } from "./HelpPage";
+export { default as HelpRequestPage } from "./HelpRequestPage";
 export { default as CookiePolicy } from "./CookiePolicy";
 export { default as FAQPage } from "./FAQPage";
 export { default as GuidesHub } from "./GuidesHub";

@@ -1,0 +1,32 @@
+{
+  "seo": {
+    "title": "Trimite o cerere de ajutor digital",
+    "description": "Un formular scurt și protejat pentru oamenii care au nevoie de ajutor cu o singură problemă digitală clară.",
+    "keywords": "cerere ajutor digital, formular suport, ajutor tehnic simplu"
+  },
+  "eyebrow": "Formular de cerere",
+  "title": "Spune-mi ce se întâmplă",
+  "subtitle": "O singură cerere clară odată. Ajută cele câteva detalii sincere.",
+  "homeButton": "Înapoi acasă",
+  "formNote": "Citesc cererile zilnic. Dacă pot ajuta, îți răspund pe email. Dacă am nevoie de mai multe detalii, îți voi cere o singură clarificare.",
+  "fields": {
+    "category": "Ce fel de problemă este?",
+    "details": "Ce se întâmplă?",
+    "email": "Emailul tău",
+    "honeypot": "Lasă acest câmp gol"
+  },
+  "categoryPlaceholder": "Alege o variantă",
+  "detailsPlaceholder": "Descrie problema în câteva propoziții simple.",
+  "emailPlaceholder": "tu@exemplu.com",
+  "categories": [
+    { "value": "website", "label": "Site sau aplicație" },
+    { "value": "email", "label": "Email sau mesaje" },
+    { "value": "account", "label": "Cont sau autentificare" },
+    { "value": "device", "label": "Telefon sau computer" },
+    { "value": "other", "label": "Altceva" }
+  ],
+  "submit": "Trimite cererea",
+  "successTitle": "Mulțumesc. Am primit cererea ta.",
+  "successBody": "Dacă pot ajuta, îți voi trimite un răspuns direct pe email.",
+  "error": "A apărut o problemă. Te rog încearcă din nou."
+}

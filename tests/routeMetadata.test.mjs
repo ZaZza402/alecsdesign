@@ -26,6 +26,14 @@ test("/it/faq canonical is unchanged", () => {
   assert.equal(toCanonicalPath("/it/faq"), "/it/faq");
 });
 
+test("/help canonical is unchanged", () => {
+  assert.equal(toCanonicalPath("/help"), "/help");
+});
+
+test("/en/help/request canonical strips /en prefix", () => {
+  assert.equal(toCanonicalPath("/en/help/request"), "/help/request");
+});
+
 test("/faq canonical is unchanged", () => {
   assert.equal(toCanonicalPath("/faq"), "/faq");
 });
@@ -40,4 +48,8 @@ test("hreflang base for /it/faq is /faq", () => {
 
 test("hreflang base for /faq (no prefix) is /faq", () => {
   assert.equal(toHreflangBase("/faq"), "/faq");
+});
+
+test("hreflang base for /help/request is unchanged", () => {
+  assert.equal(toHreflangBase("/help/request"), "/help/request");
 });
