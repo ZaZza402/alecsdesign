@@ -13,6 +13,11 @@ export interface PackItem {
     title: string;
     tagline: string;
   };
+  images?: {
+    overview?: string;
+    featureOne?: string;
+    featureTwo?: string;
+  };
   translations?: Record<
     string,
     {

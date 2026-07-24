@@ -57,6 +57,9 @@ export default function PacksHub({ lang = "en" }: { lang?: string }) {
             const tagline = localized?.product?.tagline ?? pack.product.tagline;
             const intro = localized?.intro ?? pack.meta.description;
             const href = `${basePath}/${pack.slug}`;
+            const previewSrc =
+              pack.images?.overview ??
+              "/images/packs/machinery/15-warehouse-logistics-vector-icons-pack.jpg";
 
             return (
               <Link
@@ -65,16 +68,23 @@ export default function PacksHub({ lang = "en" }: { lang?: string }) {
                 className="packs-hub__card"
                 role="listitem"
               >
-                <div className="packs-hub__card-top">
-                  <span className="packs-hub__card-label">
-                    {t("packs.hub.cardLabel")}
-                  </span>
-                  <span className="packs-hub__card-arrow">→</span>
+                <div className="packs-hub__card-main">
+                  <div className="packs-hub__card-content">
+                    <div className="packs-hub__card-top">
+                      <span className="packs-hub__card-label">
+                        {t("packs.hub.cardLabel")}
+                      </span>
+                      <span className="packs-hub__card-arrow">→</span>
+                    </div>
+                    <h2 className="packs-hub__card-title">{title}</h2>
+                    <p className="packs-hub__card-tagline">{tagline}</p>
+                    <p className="packs-hub__card-description">{intro}</p>
+                    <span className="packs-hub__card-link">{viewLabel}</span>
+                  </div>
+                  <div className="packs-hub__card-preview" aria-hidden="true">
+                    <img src={previewSrc} alt="" loading="lazy" />
+                  </div>
                 </div>
-                <h2 className="packs-hub__card-title">{title}</h2>
-                <p className="packs-hub__card-tagline">{tagline}</p>
-                <p className="packs-hub__card-description">{intro}</p>
-                <span className="packs-hub__card-link">{viewLabel}</span>
               </Link>
             );
           })}
