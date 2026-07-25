@@ -8,6 +8,7 @@ type PageContent = {
   keywords: string;
   locale: string;
   prerender: string;
+  ogImage: string;
   noindex?: boolean;
 };
 
@@ -51,6 +52,7 @@ export default function handler(req: VercelRequest, res: VercelResponse) {
         keywords:
           "web development Rome, sviluppo web Roma, React developer Rome, custom websites, freelance web developer",
         locale: "en_US",
+        ogImage: "https://www.alecsdesign.xyz/logo/og-image.jpg",
         prerender: `<div style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap" aria-hidden="true"><main><section aria-label="hero"><h1>Your website should work like your best employee - 24/7.</h1><p>Web developer in Rome. I build fast, SEO-ready, scalable digital products for businesses that want to grow online.</p></section></main></div>`,
       },
       it: {
@@ -60,6 +62,7 @@ export default function handler(req: VercelRequest, res: VercelResponse) {
         keywords:
           "sviluppo web Roma, sviluppatore web Roma, siti web su misura, React developer Roma, agenzia web Roma, consulenza digitale",
         locale: "it_IT",
+        ogImage: "https://www.alecsdesign.xyz/logo/og-image.jpg",
         prerender: `<div style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap" aria-hidden="true"><main><section aria-label="hero"><h1>Il tuo sito dovrebbe lavorare come il tuo dipendente migliore - 24/7.</h1><p>Sviluppatore web a Roma. Creo prodotti digitali veloci, ottimizzati SEO e scalabili per aziende che vogliono crescere online.</p></section></main></div>`,
       },
       ro: {
@@ -70,6 +73,7 @@ export default function handler(req: VercelRequest, res: VercelResponse) {
         keywords:
           "dezvoltator web Roma, site-uri web personalizate, creare site web, programator web Italia, React developer",
         locale: "ro_RO",
+        ogImage: "https://www.alecsdesign.xyz/logo/og-image.jpg",
         prerender: `<div style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap" aria-hidden="true"><main><section aria-label="hero"><h1>Site-ul tău ar trebui să lucreze ca cel mai bun angajat al tău - 24/7.</h1><p>Dezvoltator web în Roma. Construiesc produse digitale rapide, optimizate SEO și scalabile pentru afaceri care vor să crească online.</p></section></main></div>`,
       },
     },
@@ -82,6 +86,7 @@ export default function handler(req: VercelRequest, res: VercelResponse) {
         keywords:
           "free digital help, human tech support, website troubleshooting, account login help, email problem help, device settings support, internet form errors",
         locale: "en_US",
+        ogImage: "https://www.alecsdesign.xyz/images/help/en/help.webp",
         prerender: `<div style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap" aria-hidden="true"><main><section aria-label="help"><h1>Stuck online? Let's fix it in plain English.</h1><p>Free human-to-human digital help for websites, accounts, forms, email, and device issues.</p></section></main></div>`,
       },
       it: {
@@ -92,6 +97,7 @@ export default function handler(req: VercelRequest, res: VercelResponse) {
         keywords:
           "aiuto digitale gratuito, supporto tecnico umano, problemi accesso account, assistenza email, errori modulo online, problemi sito web, aiuto impostazioni dispositivo",
         locale: "it_IT",
+        ogImage: "https://www.alecsdesign.xyz/images/help/it/help.webp",
         prerender: `<div style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap" aria-hidden="true"><main><section aria-label="help"><h1>Bloccato online? Risolviamolo insieme.</h1><p>Aiuto umano gratuito per problemi con siti, account, email, moduli e impostazioni digitali.</p></section></main></div>`,
       },
       ro: {
@@ -101,6 +107,7 @@ export default function handler(req: VercelRequest, res: VercelResponse) {
         keywords:
           "ajutor digital gratuit, suport tehnic uman, probleme autentificare cont, asistență email, erori formular online, probleme site web, ajutor setări dispozitiv",
         locale: "ro_RO",
+        ogImage: "https://www.alecsdesign.xyz/images/help/ro/help.webp",
         prerender: `<div style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap" aria-hidden="true"><main><section aria-label="help"><h1>Te-a blocat ceva online? Hai să-l rezolvăm.</h1><p>Ajutor digital gratuit, de la om la om, pentru site-uri, conturi, email și formulare.</p></section></main></div>`,
       },
     },
@@ -112,6 +119,7 @@ export default function handler(req: VercelRequest, res: VercelResponse) {
         keywords:
           "digital help request form, free tech support request, ask a developer online, website issue form, login problem help, email troubleshooting request",
         locale: "en_US",
+        ogImage: "https://www.alecsdesign.xyz/images/help/en/help.webp",
         prerender: `<div style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap" aria-hidden="true"><main><section aria-label="help-request"><h1>Tell me where you are stuck.</h1><p>Submit one clear digital issue and get a human reply by email.</p></section></main></div>`,
       },
       it: {
@@ -121,6 +129,7 @@ export default function handler(req: VercelRequest, res: VercelResponse) {
         keywords:
           "modulo richiesta aiuto digitale, supporto tecnico gratuito online, chiedere aiuto sviluppatore, problema login account, assistenza sito web, richiesta aiuto email",
         locale: "it_IT",
+        ogImage: "https://www.alecsdesign.xyz/images/help/it/help.webp",
         prerender: `<div style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap" aria-hidden="true"><main><section aria-label="help-request"><h1>Dimmi dove ti sei bloccato.</h1><p>Invia una richiesta chiara e ricevi una risposta umana via email.</p></section></main></div>`,
       },
       ro: {
@@ -130,6 +139,7 @@ export default function handler(req: VercelRequest, res: VercelResponse) {
         keywords:
           "formular cerere ajutor digital, suport tehnic gratuit online, cere ajutor dezvoltator, problemă autentificare cont, asistență site web, cerere ajutor email",
         locale: "ro_RO",
+        ogImage: "https://www.alecsdesign.xyz/images/help/ro/help.webp",
         prerender: `<div style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap" aria-hidden="true"><main><section aria-label="help-request"><h1>Spune-mi unde te-ai blocat.</h1><p>Trimite problema clar și primește răspuns uman pe email.</p></section></main></div>`,
       },
     },
@@ -172,6 +182,10 @@ export default function handler(req: VercelRequest, res: VercelResponse) {
       `<meta property="og:locale" content="${langContent.locale}"`,
     )
     .replace(
+      /<meta property="og:image" content="[^"]*"/g,
+      `<meta property="og:image" content="${langContent.ogImage}"`,
+    )
+    .replace(
       /<meta name="description" content="[^"]*"/g,
       `<meta name="description" content="${langContent.description}"`,
     )
@@ -190,6 +204,10 @@ export default function handler(req: VercelRequest, res: VercelResponse) {
     .replace(
       /<meta name="twitter:description" content="[^"]*"/g,
       `<meta name="twitter:description" content="${langContent.description}"`,
+    )
+    .replace(
+      /<meta name="twitter:image" content="[^"]*"/g,
+      `<meta name="twitter:image" content="${langContent.ogImage}"`,
     )
     .replace(
       /<meta name="robots" content="[^"]*"/g,

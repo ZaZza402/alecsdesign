@@ -8,6 +8,11 @@
   "title": "Dimmi dove ti sei bloccato",
   "subtitle": "Scrivi in modo preciso. Più dettagli mi dai su cosa hai cliccato e su cosa è successo, prima riesco ad aiutarti.",
   "homeButton": "Torna alla home",
+  "shareButton": "Condividi questa pagina",
+  "copyLinkButton": "Copia link",
+  "shareText": "Richiedi aiuto digitale umano e gratuito tramite questo modulo breve.",
+  "shareCopied": "Link copiato. Puoi incollarlo su WhatsApp o in qualsiasi app.",
+  "shareUnavailable": "La condivisione non è disponibile su questo dispositivo.",
   "formNote": "Una persona vera legge questo modulo. Se riesco a risolvere il problema, ti risponderò via email con istruzioni semplici. Se mi serve un dettaglio in più per capire meglio, ti farò una sola domanda.",
   "fields": {
     "category": "Dove succede il problema?",

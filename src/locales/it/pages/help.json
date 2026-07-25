@@ -9,6 +9,11 @@
   "subtitle": "La tecnologia di oggi è piena di schermate confuse e chatbot che non portano da nessuna parte. Se qualcosa di digitale ti sta frenando, scrivimi il problema.",
   "freeNote": "Questo servizio è gratuito al 100%. Nessun costo nascosto, nessun abbonamento.",
   "requestButton": "Chiedi aiuto",
+  "shareButton": "Condividi questa pagina",
+  "copyLinkButton": "Copia link",
+  "shareText": "Aiuto digitale umano e gratuito per problemi con siti, account, email e dispositivi.",
+  "shareCopied": "Link copiato. Puoi incollarlo su WhatsApp o in qualsiasi app.",
+  "shareUnavailable": "La condivisione non è disponibile su questo dispositivo.",
   "seoFaq": [
     {
       "question": "Questo aiuto digitale è davvero gratuito?",

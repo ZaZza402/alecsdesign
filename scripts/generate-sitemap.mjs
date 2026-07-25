@@ -1,10 +1,11 @@
-import { readFileSync, writeFileSync } from "node:fs";
+import { readFileSync, readdirSync, writeFileSync } from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 const publicDir = path.resolve(__dirname, "../public");
+const packsDataDir = path.resolve(__dirname, "../data/packs");
 const sitemapPath = path.join(publicDir, "sitemap.xml");
 
 const baseUrl = "https://www.alecsdesign.xyz";
@@ -72,66 +73,81 @@ const newEntries = [
     ],
   },
   {
-    path: "/packs",
+    path: "/designs",
     changefreq: "weekly",
     priority: "0.9",
     alternates: [
-      { lang: "en", href: "/packs" },
-      { lang: "it", href: "/it/packs" },
-      { lang: "ro", href: "/ro/packs" },
+      { lang: "en", href: "/designs" },
+      { lang: "it", href: "/it/designs" },
+      { lang: "ro", href: "/ro/designs" },
     ],
   },
   {
-    path: "/it/packs",
+    path: "/it/designs",
     changefreq: "weekly",
     priority: "0.9",
     alternates: [
-      { lang: "en", href: "/packs" },
-      { lang: "it", href: "/it/packs" },
-      { lang: "ro", href: "/ro/packs" },
+      { lang: "en", href: "/designs" },
+      { lang: "it", href: "/it/designs" },
+      { lang: "ro", href: "/ro/designs" },
     ],
   },
   {
-    path: "/ro/packs",
+    path: "/ro/designs",
     changefreq: "weekly",
     priority: "0.9",
     alternates: [
-      { lang: "en", href: "/packs" },
-      { lang: "it", href: "/it/packs" },
-      { lang: "ro", href: "/ro/packs" },
+      { lang: "en", href: "/designs" },
+      { lang: "it", href: "/it/designs" },
+      { lang: "ro", href: "/ro/designs" },
     ],
   },
-  {
-    path: "/packs/isometric-heavy-machinery-icons",
-    changefreq: "monthly",
-    priority: "0.8",
-    alternates: [
-      { lang: "en", href: "/packs/isometric-heavy-machinery-icons" },
-      { lang: "it", href: "/it/packs/isometric-heavy-machinery-icons" },
-      { lang: "ro", href: "/ro/packs/isometric-heavy-machinery-icons" },
-    ],
-  },
-  {
-    path: "/it/packs/isometric-heavy-machinery-icons",
-    changefreq: "monthly",
-    priority: "0.8",
-    alternates: [
-      { lang: "en", href: "/packs/isometric-heavy-machinery-icons" },
-      { lang: "it", href: "/it/packs/isometric-heavy-machinery-icons" },
-      { lang: "ro", href: "/ro/packs/isometric-heavy-machinery-icons" },
-    ],
-  },
-  {
-    path: "/ro/packs/isometric-heavy-machinery-icons",
-    changefreq: "monthly",
-    priority: "0.8",
-    alternates: [
-      { lang: "en", href: "/packs/isometric-heavy-machinery-icons" },
-      { lang: "it", href: "/it/packs/isometric-heavy-machinery-icons" },
-      { lang: "ro", href: "/ro/packs/isometric-heavy-machinery-icons" },
-    ],
-  },
+  ...getDesignDetailEntries(),
 ];
+
+function getDesignDetailEntries() {
+  const files = readdirSync(packsDataDir).filter((fileName) =>
+    fileName.endsWith(".json"),
+  );
+
+  const entries = [];
+
+  for (const fileName of files) {
+    const filePath = path.join(packsDataDir, fileName);
+    const json = JSON.parse(readFileSync(filePath, "utf8"));
+    const slug = typeof json.slug === "string" ? json.slug.trim() : "";
+    if (!slug) continue;
+
+    const alternates = [
+      { lang: "en", href: `/designs/${slug}` },
+      { lang: "it", href: `/it/designs/${slug}` },
+      { lang: "ro", href: `/ro/designs/${slug}` },
+    ];
+
+    entries.push(
+      {
+        path: `/designs/${slug}`,
+        changefreq: "monthly",
+        priority: "0.8",
+        alternates,
+      },
+      {
+        path: `/it/designs/${slug}`,
+        changefreq: "monthly",
+        priority: "0.8",
+        alternates,
+      },
+      {
+        path: `/ro/designs/${slug}`,
+        changefreq: "monthly",
+        priority: "0.8",
+        alternates,
+      },
+    );
+  }
+
+  return entries;
+}
 
 function buildUrlEntry(entry) {
   const loc = `${baseUrl}${entry.path}`;
@@ -146,10 +162,6 @@ function buildUrlEntry(entry) {
   return `  <url>\n    <loc>${loc}</loc>\n    <lastmod>${lastmod}</lastmod>\n    <changefreq>${entry.changefreq}</changefreq>\n    <priority>${entry.priority}</priority>\n${alternates}\n${xDefault}\n  </url>`;
 }
 
-function escapeRegex(value) {
-  return value.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
-}
-
 const sitemapXml = readFileSync(sitemapPath, "utf8");
 const existingLocs = [...sitemapXml.matchAll(/<loc>(.*?)<\/loc>/g)].map(
   (match) => match[1],
@@ -159,11 +171,11 @@ const missingEntries = newEntries.filter(
 );
 
 if (missingEntries.length === 0) {
-  console.log("Sitemap already contains the pack routes.");
+  console.log("Sitemap already contains the design routes.");
   process.exit(0);
 }
 
-const block = `\n  <!-- ─── PACKS ─────────────────────────────────────── -->\n${missingEntries.map(buildUrlEntry).join("\n\n")}\n`;
+const block = `\n  <!-- ─── DESIGNS ───────────────────────────────────── -->\n${missingEntries.map(buildUrlEntry).join("\n\n")}\n`;
 const updatedSitemap = sitemapXml.replace(
   /<\/urlset>\s*$/,
   `${block}</urlset>\n`,

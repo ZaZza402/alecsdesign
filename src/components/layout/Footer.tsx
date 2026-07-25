@@ -162,7 +162,7 @@ const Footer = () => {
                   onClick={() => {
                     trackButtonClick("Packs", "Footer Quick Links");
                     const lang = i18n.language || "en";
-                    navigate(lang === "en" ? "/packs" : `/${lang}/packs`);
+                    navigate(lang === "en" ? "/designs" : `/${lang}/designs`);
                   }}
                 >
                   {t("nav.packs")}

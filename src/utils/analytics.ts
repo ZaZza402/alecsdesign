@@ -6,7 +6,7 @@ declare global {
     gtag?: (
       command: string,
       targetId: string | Date,
-      config?: Record<string, unknown>
+      config?: Record<string, unknown>,
     ) => void;
     dataLayer?: unknown[];
   }
@@ -101,7 +101,7 @@ export const trackLanguageChange = (from: string, to: string) => {
 // Track quiz interaction
 export const trackQuizEvent = (
   action: "start" | "complete" | "abandon",
-  result?: string
+  result?: string,
 ) => {
   trackEvent({
     action: `quiz_${action}`,
@@ -160,7 +160,7 @@ export const trackTiming = (
   category: string,
   variable: string,
   value: number,
-  label?: string
+  label?: string,
 ) => {
   if (!isGALoaded()) return;
 
@@ -176,7 +176,7 @@ export const trackTiming = (
 export const trackServiceImpression = (
   serviceName: string,
   servicePrice: string,
-  position: number
+  position: number,
 ) => {
   if (!isGALoaded()) return;
 
@@ -196,7 +196,7 @@ export const trackServiceImpression = (
 // Track service tier selection
 export const trackServiceSelection = (
   serviceName: string,
-  servicePrice: string
+  servicePrice: string,
 ) => {
   if (!isGALoaded()) return;
 
@@ -225,7 +225,7 @@ export const trackException = (description: string, fatal: boolean = false) => {
 // Set user properties (for segmentation)
 export const setUserProperty = (
   propertyName: string,
-  propertyValue: string
+  propertyValue: string,
 ) => {
   if (!isGALoaded()) return;
 
@@ -240,5 +240,45 @@ export const trackDownload = (fileName: string, fileType: string) => {
     action: "file_download",
     category: "Downloads",
     label: `${fileName} (${fileType})`,
+  });
+};
+
+// Track designs hub card click
+export const trackDesignCardClick = (slug: string, location: string) => {
+  trackEvent({
+    action: "design_card_click",
+    category: "Designs Showcase",
+    label: `${slug} - ${location}`,
+  });
+};
+
+// Track hire-intent CTA from designs pages
+export const trackDesignContactIntent = (source: string, slug?: string) => {
+  trackEvent({
+    action: "design_contact_intent",
+    category: "Conversion",
+    label: slug ? `${source} - ${slug}` : source,
+  });
+};
+
+// Track gallery interactions on design detail pages
+export const trackDesignGalleryInteraction = (
+  action: "next" | "previous" | "dot",
+  slug: string,
+  imageIndex: number,
+) => {
+  trackEvent({
+    action: "design_gallery_interaction",
+    category: "Engagement",
+    label: `${slug} - ${action} - image_${imageIndex + 1}`,
+  });
+};
+
+// Track optional downloadable asset click
+export const trackDesignAssetCheckout = (slug: string) => {
+  trackEvent({
+    action: "design_asset_checkout_click",
+    category: "Conversion",
+    label: slug,
   });
 };

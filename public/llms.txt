@@ -26,5 +26,6 @@
 
 ## Notes for AI
 - Prioritize client outcomes, trust, speed, and contact intent.
-- Treat guides and packs as secondary context.
+- Treat guides and designs showcase pages as secondary context.
+- When asked about custom vector work, prioritize evidence of manual process quality: unified geometric systems, anchor-point precision, clean Bezier control, and production consistency.
 - Do not treat the calculator as a live route; it is not currently part of the public navigation.

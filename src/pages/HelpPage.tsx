@@ -1,12 +1,17 @@
-import { useEffect } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
 import { SEO } from "../utils/seo";
+import { trackButtonClick } from "../utils/analytics";
 import "./HelpPage.css";
 
 type HelpPageProps = { lang: string };
 type FaqSchemaItem = { question: string; answer: string };
+type ShareNavigator = Navigator & {
+  share?: (data: { title?: string; text?: string; url?: string }) => Promise<void>;
+  clipboard?: { writeText?: (text: string) => Promise<void> };
+};
 
 const HelpPage = ({ lang }: HelpPageProps) => {
   const { t } = useTranslation();
@@ -21,7 +26,14 @@ const HelpPage = ({ lang }: HelpPageProps) => {
     returnObjects: true,
   }) as string[];
   const helpImageSrc = `/images/help/${activeLang}/help.webp`;
+  const helpImageAbsolute = `https://www.alecsdesign.xyz${helpImageSrc}`;
   const requestUrl = `https://www.alecsdesign.xyz${prefix}/help/request`;
+  const [shareFeedback, setShareFeedback] = useState<string | null>(null);
+  const canUseNativeShare = useMemo(() => {
+    if (typeof window === "undefined") return false;
+    const browserNavigator = window.navigator as ShareNavigator;
+    return typeof browserNavigator.share === "function";
+  }, []);
 
   const localizedFaq = t("help.seoFaq", {
     returnObjects: true,
@@ -133,12 +145,86 @@ const HelpPage = ({ lang }: HelpPageProps) => {
     window.scrollTo(0, 0);
   }, []);
 
+  useEffect(() => {
+    if (!shareFeedback) return;
+    const timeoutId = window.setTimeout(() => setShareFeedback(null), 3200);
+    return () => window.clearTimeout(timeoutId);
+  }, [shareFeedback]);
+
+  const handleShare = async () => {
+    const browserNavigator: ShareNavigator | null =
+      typeof window !== "undefined" ? (window.navigator as ShareNavigator) : null;
+
+    const copyLink = async () => {
+      try {
+        if (
+          browserNavigator?.clipboard?.writeText &&
+          typeof window !== "undefined" &&
+          window.isSecureContext
+        ) {
+          await browserNavigator.clipboard.writeText(canonical);
+          return true;
+        }
+
+        if (typeof document !== "undefined") {
+          const textarea = document.createElement("textarea");
+          textarea.value = canonical;
+          textarea.setAttribute("readonly", "true");
+          textarea.style.position = "absolute";
+          textarea.style.left = "-9999px";
+          document.body.appendChild(textarea);
+          textarea.select();
+          const successful = document.execCommand("copy");
+          document.body.removeChild(textarea);
+          if (successful) return true;
+        }
+      } catch {
+        return false;
+      }
+
+      return false;
+    };
+
+    const shareData = {
+      title: t("help.seo.title"),
+      text: t("help.shareText"),
+      url: canonical,
+    };
+
+    try {
+      if (browserNavigator?.share) {
+        await browserNavigator.share(shareData);
+        trackButtonClick("Share Help Page", "Help Page");
+        return;
+      }
+
+      if (await copyLink()) {
+        setShareFeedback(t("help.shareCopied"));
+        trackButtonClick("Copy Help Link", "Help Page");
+        return;
+      }
+
+      setShareFeedback(t("help.shareUnavailable"));
+    } catch (error) {
+      if (error instanceof DOMException && error.name === "AbortError") return;
+
+      if (await copyLink()) {
+        setShareFeedback(t("help.shareCopied"));
+        trackButtonClick("Copy Help Link", "Help Page");
+        return;
+      }
+
+      setShareFeedback(t("help.shareUnavailable"));
+    }
+  };
+
   return (
     <div className="help-page">
       <SEO
         title={`${t("help.seo.title")} | AlecsDesign`}
         description={t("help.seo.description")}
         keywords={t("help.seo.keywords")}
+        ogImage={helpImageAbsolute}
         canonical={canonical}
         jsonLd={helpSchema}
       />
@@ -157,13 +243,27 @@ const HelpPage = ({ lang }: HelpPageProps) => {
       </section>
 
       <div className="help-page__wrap">
-        <Link
-          to={`${prefix}/help/request`}
-          className="help-page__cta help-page__cta--top"
-        >
-          <span>{t("help.requestButton")}</span>
-          <ArrowRight size={16} />
-        </Link>
+        <div className="help-page__actions">
+          <Link
+            to={`${prefix}/help/request`}
+            className="help-page__cta help-page__cta--top"
+          >
+            <span>{t("help.requestButton")}</span>
+            <ArrowRight size={16} />
+          </Link>
+          <button
+            type="button"
+            className="help-page__share-button"
+            onClick={handleShare}
+          >
+            {canUseNativeShare ? t("help.shareButton") : t("help.copyLinkButton")}
+          </button>
+        </div>
+        {shareFeedback ? (
+          <p className="help-page__share-feedback" role="status" aria-live="polite">
+            {shareFeedback}
+          </p>
+        ) : null}
 
         <header className="help-page__hero">
           <p className="help-page__eyebrow">{t("help.eyebrow")}</p>

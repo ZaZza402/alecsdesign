@@ -390,9 +390,9 @@ function AppRoutes() {
             }
           />
 
-          {/* Packs hub - EN */}
+          {/* Designs hub - EN */}
           <Route
-            path="/packs"
+            path="/designs"
             element={
               <PageWrapper lang="en">
                 <PacksHub lang="en" />
@@ -400,7 +400,7 @@ function AppRoutes() {
             }
           />
           <Route
-            path="/packs/:slug"
+            path="/designs/:slug"
             element={
               <PageWrapper lang="en">
                 <PackPage lang="en" />
@@ -452,9 +452,9 @@ function AppRoutes() {
             }
           />
 
-          {/* Packs hub - IT */}
+          {/* Designs hub - IT */}
           <Route
-            path="/it/packs"
+            path="/it/designs"
             element={
               <PageWrapper lang="it">
                 <PacksHub lang="it" />
@@ -462,7 +462,7 @@ function AppRoutes() {
             }
           />
           <Route
-            path="/it/packs/:slug"
+            path="/it/designs/:slug"
             element={
               <PageWrapper lang="it">
                 <PackPage lang="it" />
@@ -514,9 +514,9 @@ function AppRoutes() {
             }
           />
 
-          {/* Packs hub - RO */}
+          {/* Designs hub - RO */}
           <Route
-            path="/ro/packs"
+            path="/ro/designs"
             element={
               <PageWrapper lang="ro">
                 <PacksHub lang="ro" />
@@ -524,7 +524,7 @@ function AppRoutes() {
             }
           />
           <Route
-            path="/ro/packs/:slug"
+            path="/ro/designs/:slug"
             element={
               <PageWrapper lang="ro">
                 <PackPage lang="ro" />

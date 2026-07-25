@@ -9,6 +9,11 @@
   "subtitle": "Tehnologia de azi e plină de ecrane încurcate și chatbot-uri care nu ajută cu nimic. Dacă ceva digital te ține pe loc, trimite-mi problema.",
   "freeNote": "Serviciul este 100% gratuit. Fără taxe ascunse, fără abonamente.",
   "requestButton": "Cere ajutor",
+  "shareButton": "Distribuie această pagină",
+  "copyLinkButton": "Copiază linkul",
+  "shareText": "Ajutor digital uman și gratuit pentru probleme cu site-uri, conturi, email și dispozitive.",
+  "shareCopied": "Link copiat. Îl poți lipi pe WhatsApp sau în orice aplicație.",
+  "shareUnavailable": "Partajarea nu este disponibilă pe acest dispozitiv.",
   "seoFaq": [
     {
       "question": "Acest ajutor digital este chiar gratuit?",

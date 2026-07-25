@@ -8,15 +8,55 @@ export interface PackItem {
   meta: {
     title: string;
     description: string;
+    keywords?: string[];
   };
   product: {
     title: string;
     tagline: string;
+    price?: string;
+    currency?: string;
+    buyLink?: string;
+    license?: string;
   };
   images?: {
     overview?: string;
     featureOne?: string;
     featureTwo?: string;
+    wireframe?: string;
+    finalDetail?: string;
+  };
+  specs?: {
+    formatsIncluded?: string[];
+    canvasSize?: string;
+    vectorStyle?: string;
+    fileCount?: string;
+  };
+  includedItems?: string[];
+  faq?: Array<{ question: string; answer: string }>;
+  showcase?: {
+    brief?: string;
+    problem?: string;
+    solution?: string;
+    craftsmanshipProof?: {
+      title?: string;
+      description?: string;
+      wireframeImage?: string;
+      finalImage?: string;
+      wireframeLabel?: string;
+      finalLabel?: string;
+    };
+    usageMockups?: string[];
+  };
+  cta?: {
+    title?: string;
+    subtitle?: string;
+    primaryLabel?: string;
+    secondaryLabel?: string;
+    scopeOptions?: string[];
+  };
+  seo?: {
+    intentKeywords?: string[];
+    processDescriptors?: string[];
   };
   translations?: Record<
     string,
@@ -24,6 +64,32 @@ export interface PackItem {
       meta?: { title?: string; description?: string };
       product?: { title?: string; tagline?: string };
       intro?: string;
+      showcase?: {
+        brief?: string;
+        problem?: string;
+        solution?: string;
+        craftsmanshipProof?: {
+          title?: string;
+          description?: string;
+          wireframeLabel?: string;
+          finalLabel?: string;
+        };
+      };
+      cta?: {
+        title?: string;
+        subtitle?: string;
+        primaryLabel?: string;
+        secondaryLabel?: string;
+        scopeOptions?: string[];
+      };
+      imageAlts?: {
+        overview?: string;
+        featureOne?: string;
+        featureTwo?: string;
+        wireframe?: string;
+        finalDetail?: string;
+      };
+      faq?: Array<{ question: string; answer: string }>;
     }
   >;
 }

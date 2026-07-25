@@ -51,3 +51,10 @@ This project is organized by responsibility so new files have an obvious home.
 
 - Do not rename/move files in `public/` without checking all string asset paths.
 - Do not move `public/site.webmanifest` or change sitemap paths without updating build/config scripts.
+
+## Workflow Docs
+
+- Designs contact prefill and intake flow behavior:
+  - [docs/designs-contact-intake.md](docs/designs-contact-intake.md)
+- Repository Copilot guardrails for future edits:
+  - [.github/copilot-instructions.md](.github/copilot-instructions.md)

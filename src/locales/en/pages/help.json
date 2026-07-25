@@ -9,6 +9,11 @@
   "subtitle": "Modern technology is full of confusing screens and automated chatbots that go nowhere. If something digital is getting in your way, send me the problem.",
   "freeNote": "This service is 100% free. No hidden fees, no subscriptions.",
   "requestButton": "Ask for help",
+  "shareButton": "Share this page",
+  "copyLinkButton": "Copy link",
+  "shareText": "Free human digital help for websites, accounts, email and device issues.",
+  "shareCopied": "Link copied. You can paste it in WhatsApp or any app.",
+  "shareUnavailable": "Sharing is not available on this device.",
   "seoFaq": [
     {
       "question": "Is this digital help really free?",

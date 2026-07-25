@@ -1,6 +1,6 @@
 {
   "title": "Let's Talk",
-  "subtitle": "Book a free call or send a message. I reply within 24 hours.",
+  "subtitle": "Book a free call or send a message about your web or design project. I reply within 24 hours.",
   "responseTime": "I typically reply:",
   "responseTimeValue": "within 24 hours",
   "whatsappStatus": "WhatsApp:",
@@ -24,16 +24,16 @@
     "contact": "Email or phone",
     "contactPlaceholder": "Best way to reach you",
     "contactRequired": "Email or phone is required",
-    "business": "Tell me about your business",
-    "businessPlaceholder": "What do you do? What do you need the website for?",
+    "business": "Tell me about your project",
+    "businessPlaceholder": "What are you building and what outcome do you want from this project?",
     "businessRequired": "Please give me a brief overview",
     "needs": "What do you need?",
     "needsPlaceholder": "Select a project type...",
     "needsRequired": "Please select an option",
     "needsOptions": {
-      "newWebsite": "New Website",
-      "redesign": "Redesign Existing Site",
-      "consultation": "Free Consultation",
+      "newWebsite": "New Web or Digital Project",
+      "redesign": "Redesign (Web, Brand, or UX)",
+      "consultation": "Strategy Consultation",
       "other": "Other / Not Sure"
     },
     "preference": "Preferred contact method",
@@ -44,6 +44,15 @@
       "phone": "Phone",
       "whatsapp": "WhatsApp"
     },
+    "contactDetailPlaceholderEmail": "your@email.com",
+    "contactDetailPlaceholderWhatsApp": "WhatsApp: +39 333 123 4567",
+    "contactDetailPlaceholderPhone": "+39 06 123 4567",
+    "prefillDesignsNote": "Design inquiry detected. The form is preselected for a redesign/custom design scope.",
+    "step2Ready": "Great, this is enough context to continue.",
+    "step2Incomplete": "Add your name and a short project overview to continue.",
+    "step3SelectMethod": "Choose your preferred contact method.",
+    "step3AddContact": "Add your email/phone so I can reply to you.",
+    "step3Ready": "Everything is ready. You can send now.",
     "message": "Anything else? (optional)",
     "messagePlaceholder": "Deadlines, budget, specific features...",
     "submit": "Send",
@@ -51,8 +60,11 @@
   },
   "steps": {
     "step1Title": "What do you need?",
+    "step1Hint": "Pick the closest project type. We can refine details together later.",
     "step2Title": "Tell me about yourself",
+    "step2Hint": "Two short answers are enough. Keep it practical.",
     "step3Title": "Almost there.",
+    "step3Hint": "Choose how you want to be contacted and share one working contact detail.",
     "next": "Next",
     "back": "Back"
   }

@@ -69,6 +69,46 @@
       "permanent": true
     },
     {
+      "source": "/packs",
+      "destination": "/designs",
+      "permanent": true
+    },
+    {
+      "source": "/packs/:slug*",
+      "destination": "/designs/:slug*",
+      "permanent": true
+    },
+    {
+      "source": "/en/packs",
+      "destination": "/designs",
+      "permanent": true
+    },
+    {
+      "source": "/en/packs/:slug*",
+      "destination": "/designs/:slug*",
+      "permanent": true
+    },
+    {
+      "source": "/it/packs",
+      "destination": "/it/designs",
+      "permanent": true
+    },
+    {
+      "source": "/it/packs/:slug*",
+      "destination": "/it/designs/:slug*",
+      "permanent": true
+    },
+    {
+      "source": "/ro/packs",
+      "destination": "/ro/designs",
+      "permanent": true
+    },
+    {
+      "source": "/ro/packs/:slug*",
+      "destination": "/ro/designs/:slug*",
+      "permanent": true
+    },
+    {
       "source": "/sitemap",
       "destination": "/sitemap.xml",
       "permanent": true

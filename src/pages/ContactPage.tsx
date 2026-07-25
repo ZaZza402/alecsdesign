@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
+import { useLocation } from "react-router-dom";
 import { Mail, Phone, MessageCircle, MapPin } from "lucide-react";
 import {
   trackButtonClick,
@@ -12,7 +13,10 @@ import "./ContactPage.css";
 
 const ContactPage = () => {
   const { t } = useTranslation();
+  const location = useLocation();
   const [contactRevealed, setContactRevealed] = useState(false);
+  const serviceParam =
+    new URLSearchParams(location.search).get("service")?.toLowerCase() ?? "";
 
   const getEmail = () => {
     const parts = ["start", "alecsdesign", "xyz"];
@@ -122,7 +126,7 @@ const ContactPage = () => {
 
         {/* Right column: 3-step form */}
         <div className="contact-form-column">
-          <ContactForm />
+          <ContactForm preselectedService={serviceParam} />
         </div>
       </div>
     </div>

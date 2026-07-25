@@ -8,6 +8,11 @@
   "title": "Spune-mi unde te-ai blocat",
   "subtitle": "Fii cât mai specific. Cu cât îmi spui mai clar ce ai apăsat și ce s-a întâmplat, cu atât te pot ajuta mai repede.",
   "homeButton": "Înapoi acasă",
+  "shareButton": "Distribuie această pagină",
+  "copyLinkButton": "Copiază linkul",
+  "shareText": "Cere ajutor digital uman și gratuit prin acest formular scurt.",
+  "shareCopied": "Link copiat. Îl poți lipi pe WhatsApp sau în orice aplicație.",
+  "shareUnavailable": "Partajarea nu este disponibilă pe acest dispozitiv.",
   "formNote": "O persoană reală citește acest formular. Dacă pot rezolva problema, îți răspund direct pe email cu pași simpli. Dacă am nevoie de un detaliu în plus, îți voi pune o singură întrebare clară.",
   "fields": {
     "category": "Unde apare problema?",

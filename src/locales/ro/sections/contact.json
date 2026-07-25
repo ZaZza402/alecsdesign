@@ -1,6 +1,6 @@
 {
   "title": "Hai să vorbim",
-  "subtitle": "Rezervă un apel gratuit sau trimite-mi un mesaj. Răspund în 24 de ore.",
+  "subtitle": "Rezerva un apel gratuit sau trimite-mi un mesaj despre proiectul tau web sau de design. Raspund in 24 de ore.",
   "successMessage": "Mulțumesc! Am primit mesajul tău și revin în curând.",
   "errorMessage": "Eroare la trimitere. Scrie-mi direct pe WhatsApp.",
   "responseTime": "Răspund de obicei:",
@@ -24,16 +24,16 @@
     "contact": "Email sau telefon",
     "contactPlaceholder": "Cum te contactez?",
     "contactRequired": "Email sau telefon obligatoriu",
-    "business": "Spune-mi despre afacerea ta",
-    "businessPlaceholder": "Cu ce te ocupi? La ce îți trebuie site-ul?",
+    "business": "Spune-mi despre proiectul tau",
+    "businessPlaceholder": "Ce construiesti si ce rezultat vrei sa obtii din acest proiect?",
     "businessRequired": "Descrie scurt proiectul",
     "needs": "De ce ai nevoie?",
     "needsPlaceholder": "Selectează un tip de proiect...",
     "needsRequired": "Selectează o opțiune",
     "needsOptions": {
-      "newWebsite": "Site web nou",
-      "redesign": "Redesign site existent",
-      "consultation": "Consultanță gratuită",
+      "newWebsite": "Proiect Web sau Digital Nou",
+      "redesign": "Redesign (Web, Brand sau UX)",
+      "consultation": "Consultanta Strategica",
       "other": "Altceva / Nu știu încă"
     },
     "preference": "Cum preferi să fiu contactat?",
@@ -44,6 +44,15 @@
       "phone": "Telefon",
       "whatsapp": "WhatsApp"
     },
+    "contactDetailPlaceholderEmail": "adresa@email.com",
+    "contactDetailPlaceholderWhatsApp": "WhatsApp: +40 733 123 456",
+    "contactDetailPlaceholderPhone": "+40 21 123 4567",
+    "prefillDesignsNote": "Cerere de design detectata. Formularul este preselectat pentru redesign/design personalizat.",
+    "step2Ready": "Perfect, aceste informatii sunt suficiente pentru a continua.",
+    "step2Incomplete": "Adauga numele si o scurta descriere a proiectului ca sa continui.",
+    "step3SelectMethod": "Alege metoda preferata de contact.",
+    "step3AddContact": "Adauga email/telefon ca sa iti pot raspunde.",
+    "step3Ready": "Totul este pregatit. Poti trimite acum.",
     "message": "Altceva? (opțional)",
     "messagePlaceholder": "Termene limită, buget, funcționalități specifice...",
     "submit": "Trimite",
@@ -51,8 +60,11 @@
   },
   "steps": {
     "step1Title": "De ce ai nevoie?",
+    "step1Hint": "Alege tipul de proiect cel mai apropiat. Detaliile le clarificam impreuna.",
     "step2Title": "Spune-mi despre tine",
+    "step2Hint": "Sunt suficiente doua raspunsuri scurte si clare.",
     "step3Title": "Mai un pas.",
+    "step3Hint": "Alege cum vrei sa fii contactat si adauga un detaliu valid de contact.",
     "next": "Înainte",
     "back": "Înapoi"
   }

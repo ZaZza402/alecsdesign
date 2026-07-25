@@ -25,15 +25,26 @@ interface FormData {
   message: string;
 }
 
-const ContactForm = () => {
+interface ContactFormProps {
+  preselectedService?: string;
+}
+
+const SERVICE_TO_NEEDS_MAP: Record<string, FormData["needs"]> = {
+  designs: "redesign",
+};
+
+const ContactForm = ({ preselectedService = "" }: ContactFormProps) => {
   const { t } = useTranslation();
-  const [step, setStep] = useState(1);
+  const normalizedService = preselectedService.trim().toLowerCase();
+  const preselectedNeeds = SERVICE_TO_NEEDS_MAP[normalizedService] ?? "";
+
+  const [step, setStep] = useState(preselectedNeeds ? 2 : 1);
   const [direction, setDirection] = useState(1);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitted, setSubmitted] = useState(false);
   const [submitError, setSubmitError] = useState<string | null>(null);
   const [data, setData] = useState<FormData>({
-    needs: "",
+    needs: preselectedNeeds,
     name: "",
     business: "",
     preference: "",
@@ -70,7 +81,11 @@ const ContactForm = () => {
       label: t("contact.form.preferenceOptions.email"),
       icon: Mail,
     },
-    { value: "whatsapp", label: "WhatsApp", icon: MessageSquare },
+    {
+      value: "whatsapp",
+      label: t("contact.form.preferenceOptions.whatsapp"),
+      icon: MessageSquare,
+    },
     {
       value: "phone",
       label: t("contact.form.preferenceOptions.phone"),
@@ -89,6 +104,8 @@ const ContactForm = () => {
 
   const canProceedStep2 =
     data.name.trim() !== "" && data.business.trim() !== "";
+  const canSubmitStep3 =
+    data.preference.trim() !== "" && data.contactDetail.trim() !== "";
 
   const handleSubmit = async () => {
     setIsSubmitting(true);
@@ -190,6 +207,12 @@ const ContactForm = () => {
         })}
       </div>
 
+      {normalizedService === "designs" && (
+        <p className="cf__prefill-note">
+          {t("contact.form.prefillDesignsNote")}
+        </p>
+      )}
+
       {/* Animated panels */}
       <div className="cf__panels-wrap">
         <AnimatePresence custom={direction} mode="wait" initial={false}>
@@ -207,6 +230,7 @@ const ContactForm = () => {
             {step === 1 && (
               <>
                 <h3 className="cf__title">{t("contact.steps.step1Title")}</h3>
+                <p className="cf__hint">{t("contact.steps.step1Hint")}</p>
                 <div className="cf__options">
                   {needsOptions.map((opt) => {
                     const Icon = opt.icon;
@@ -233,6 +257,7 @@ const ContactForm = () => {
             {step === 2 && (
               <>
                 <h3 className="cf__title">{t("contact.steps.step2Title")}</h3>
+                <p className="cf__hint">{t("contact.steps.step2Hint")}</p>
                 <div className="cf__field">
                   <input
                     type="text"
@@ -257,6 +282,11 @@ const ContactForm = () => {
                     autoComplete="organization"
                   />
                 </div>
+                <p className="cf__status" role="status" aria-live="polite">
+                  {canProceedStep2
+                    ? t("contact.form.step2Ready")
+                    : t("contact.form.step2Incomplete")}
+                </p>
                 <div className="cf__actions">
                   <button
                     type="button"
@@ -283,6 +313,7 @@ const ContactForm = () => {
             {step === 3 && (
               <>
                 <h3 className="cf__title">{t("contact.steps.step3Title")}</h3>
+                <p className="cf__hint">{t("contact.steps.step3Hint")}</p>
                 <div className="cf__preference">
                   {preferenceOptions.map((opt) => {
                     const Icon = opt.icon;
@@ -331,10 +362,12 @@ const ContactForm = () => {
                         className="cf__input"
                         placeholder={
                           data.preference === "email"
-                            ? "your@email.com"
+                            ? t("contact.form.contactDetailPlaceholderEmail")
                             : data.preference === "whatsapp"
-                              ? "WhatsApp: +39 333 123 4567"
-                              : "+39 06 123 4567"
+                              ? t(
+                                  "contact.form.contactDetailPlaceholderWhatsApp",
+                                )
+                              : t("contact.form.contactDetailPlaceholderPhone")
                         }
                         value={data.contactDetail}
                         onChange={(e) =>
@@ -361,6 +394,13 @@ const ContactForm = () => {
                     }
                   />
                 </div>
+                <p className="cf__status" role="status" aria-live="polite">
+                  {!data.preference
+                    ? t("contact.form.step3SelectMethod")
+                    : !data.contactDetail.trim()
+                      ? t("contact.form.step3AddContact")
+                      : t("contact.form.step3Ready")}
+                </p>
                 {submitError && <p className="cf__error">{submitError}</p>}
                 <div className="cf__actions">
                   <button
@@ -375,11 +415,7 @@ const ContactForm = () => {
                     type="button"
                     className="cf__btn-submit"
                     onClick={handleSubmit}
-                    disabled={
-                      isSubmitting ||
-                      !data.preference ||
-                      !data.contactDetail.trim()
-                    }
+                    disabled={isSubmitting || !canSubmitStep3}
                   >
                     {isSubmitting
                       ? t("contact.form.sending")

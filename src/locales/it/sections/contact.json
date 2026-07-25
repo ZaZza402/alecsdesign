@@ -1,6 +1,6 @@
 ﻿{
   "title": "Parliamone",
-  "subtitle": "Prenota una chiamata gratuita o mandami un messaggio. Rispondo entro 24 ore.",
+  "subtitle": "Prenota una chiamata gratuita o inviami un messaggio sul tuo progetto web o design. Rispondo entro 24 ore.",
   "successMessage": "Grazie! Ho ricevuto il tuo messaggio e ti contatterò a breve.",
   "errorMessage": "Invio fallito. Contattami direttamente su WhatsApp.",
   "responseTime": "Rispondo di solito:",
@@ -24,16 +24,16 @@
     "contact": "Email o telefono",
     "contactPlaceholder": "Come ti contatto?",
     "contactRequired": "Email o telefono obbligatorio",
-    "business": "Parlami della tua attività",
-    "businessPlaceholder": "Cosa fai? A cosa ti serve il sito?",
+    "business": "Parlami del tuo progetto",
+    "businessPlaceholder": "Cosa stai costruendo e quale risultato vuoi ottenere?",
     "businessRequired": "Descrivimi brevemente la tua attività",
     "needs": "Di cosa hai bisogno?",
     "needsPlaceholder": "Seleziona il tipo di progetto...",
     "needsRequired": "Seleziona un'opzione",
     "needsOptions": {
-      "newWebsite": "Nuovo Sito da Zero",
-      "redesign": "Restyling Sito Esistente",
-      "consultation": "Consulenza Gratuita",
+      "newWebsite": "Nuovo Progetto Web o Digitale",
+      "redesign": "Restyling (Web, Brand o UX)",
+      "consultation": "Consulenza Strategica",
       "other": "Altro / Non so ancora"
     },
     "preference": "Come preferisci essere ricontattato?",
@@ -44,6 +44,15 @@
       "phone": "Telefonata",
       "whatsapp": "Messaggio WhatsApp"
     },
+    "contactDetailPlaceholderEmail": "tuo@email.com",
+    "contactDetailPlaceholderWhatsApp": "WhatsApp: +39 333 123 4567",
+    "contactDetailPlaceholderPhone": "+39 06 123 4567",
+    "prefillDesignsNote": "Richiesta design rilevata. Il modulo è preimpostato su restyling/design personalizzato.",
+    "step2Ready": "Perfetto, queste informazioni bastano per proseguire.",
+    "step2Incomplete": "Inserisci nome e una breve panoramica del progetto per continuare.",
+    "step3SelectMethod": "Seleziona il metodo di contatto preferito.",
+    "step3AddContact": "Aggiungi email/telefono per poterti ricontattare.",
+    "step3Ready": "Tutto pronto. Puoi inviare ora.",
     "message": "Dettagli aggiuntivi (opzionale)",
     "messagePlaceholder": "Hai scadenze o funzionalità specifiche in mente?",
     "submit": "Invia",
@@ -51,8 +60,11 @@
   },
   "steps": {
     "step1Title": "Di cosa hai bisogno?",
+    "step1Hint": "Scegli il tipo di progetto più vicino alla tua esigenza. I dettagli li rifiniamo insieme.",
     "step2Title": "Parlami di te",
+    "step2Hint": "Bastano due risposte brevi e concrete.",
     "step3Title": "Ci siamo quasi.",
+    "step3Hint": "Scegli come preferisci essere contattato e inserisci un recapito valido.",
     "next": "Avanti",
     "back": "Indietro"
   }

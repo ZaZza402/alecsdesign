@@ -3,6 +3,7 @@ import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 import { Home } from "lucide-react";
 import { SEO } from "../utils/seo";
+import { trackButtonClick } from "../utils/analytics";
 import "./HelpRequestPage.css";
 
 type HelpRequestPageProps = { lang: string };
@@ -13,6 +14,10 @@ type RequestFormState = {
   honeypot: string;
 };
 type CategoryOption = { value: string; label: string };
+type ShareNavigator = Navigator & {
+  share?: (data: { title?: string; text?: string; url?: string }) => Promise<void>;
+  clipboard?: { writeText?: (text: string) => Promise<void> };
+};
 
 const HelpRequestPage = ({ lang }: HelpRequestPageProps) => {
   const { t } = useTranslation();
@@ -26,6 +31,8 @@ const HelpRequestPage = ({ lang }: HelpRequestPageProps) => {
     lang === "en"
       ? "https://www.alecsdesign.xyz/help"
       : `https://www.alecsdesign.xyz/${lang}/help`;
+  const helpImageSrc = `/images/help/${activeLang}/help.webp`;
+  const helpImageAbsolute = `https://www.alecsdesign.xyz${helpImageSrc}`;
   const requestSchema = {
     "@context": "https://schema.org",
     "@graph": [
@@ -36,6 +43,12 @@ const HelpRequestPage = ({ lang }: HelpRequestPageProps) => {
         name: t("helpRequest.seo.title"),
         description: t("helpRequest.seo.description"),
         inLanguage: activeLang,
+        primaryImageOfPage: {
+          "@type": "ImageObject",
+          url: helpImageAbsolute,
+          width: 2800,
+          height: 1500,
+        },
         isPartOf: {
           "@id": "https://www.alecsdesign.xyz/#website",
         },
@@ -99,10 +112,89 @@ const HelpRequestPage = ({ lang }: HelpRequestPageProps) => {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [errorMessage, setErrorMessage] = useState<string | null>(null);
+  const [shareFeedback, setShareFeedback] = useState<string | null>(null);
+  const canUseNativeShare = useMemo(() => {
+    if (typeof window === "undefined") return false;
+    const browserNavigator = window.navigator as ShareNavigator;
+    return typeof browserNavigator.share === "function";
+  }, []);
 
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
+  useEffect(() => {
+    if (!shareFeedback) return;
+    const timeoutId = window.setTimeout(() => setShareFeedback(null), 3200);
+    return () => window.clearTimeout(timeoutId);
+  }, [shareFeedback]);
+
+  const handleShare = async () => {
+    const browserNavigator: ShareNavigator | null =
+      typeof window !== "undefined" ? (window.navigator as ShareNavigator) : null;
+
+    const copyLink = async () => {
+      try {
+        if (
+          browserNavigator?.clipboard?.writeText &&
+          typeof window !== "undefined" &&
+          window.isSecureContext
+        ) {
+          await browserNavigator.clipboard.writeText(canonical);
+          return true;
+        }
+
+        if (typeof document !== "undefined") {
+          const textarea = document.createElement("textarea");
+          textarea.value = canonical;
+          textarea.setAttribute("readonly", "true");
+          textarea.style.position = "absolute";
+          textarea.style.left = "-9999px";
+          document.body.appendChild(textarea);
+          textarea.select();
+          const successful = document.execCommand("copy");
+          document.body.removeChild(textarea);
+          if (successful) return true;
+        }
+      } catch {
+        return false;
+      }
+
+      return false;
+    };
+
+    const shareData = {
+      title: t("helpRequest.seo.title"),
+      text: t("helpRequest.shareText"),
+      url: canonical,
+    };
+
+    try {
+      if (browserNavigator?.share) {
+        await browserNavigator.share(shareData);
+        trackButtonClick("Share Help Request Page", "Help Request Page");
+        return;
+      }
+
+      if (await copyLink()) {
+        setShareFeedback(t("helpRequest.shareCopied"));
+        trackButtonClick("Copy Help Request Link", "Help Request Page");
+        return;
+      }
+
+      setShareFeedback(t("helpRequest.shareUnavailable"));
+    } catch (error) {
+      if (error instanceof DOMException && error.name === "AbortError") return;
+
+      if (await copyLink()) {
+        setShareFeedback(t("helpRequest.shareCopied"));
+        trackButtonClick("Copy Help Request Link", "Help Request Page");
+        return;
+      }
+
+      setShareFeedback(t("helpRequest.shareUnavailable"));
+    }
+  };
 
   const isValid =
     form.category.trim() !== "" &&
@@ -142,14 +234,35 @@ const HelpRequestPage = ({ lang }: HelpRequestPageProps) => {
         title={`${t("helpRequest.seo.title")} | AlecsDesign`}
         description={t("helpRequest.seo.description")}
         keywords={t("helpRequest.seo.keywords")}
+        ogImage={helpImageAbsolute}
         canonical={canonical}
         jsonLd={requestSchema}
       />
       <div className="help-request-page__wrap">
-        <Link to={prefix || "/"} className="help-request-page__home-link">
-          <Home size={16} />
-          <span>{t("helpRequest.homeButton")}</span>
-        </Link>
+        <div className="help-request-page__top-actions">
+          <Link to={prefix || "/"} className="help-request-page__home-link">
+            <Home size={16} />
+            <span>{t("helpRequest.homeButton")}</span>
+          </Link>
+          <button
+            type="button"
+            className="help-request-page__share-button"
+            onClick={handleShare}
+          >
+            {canUseNativeShare
+              ? t("helpRequest.shareButton")
+              : t("helpRequest.copyLinkButton")}
+          </button>
+        </div>
+        {shareFeedback ? (
+          <p
+            className="help-request-page__share-feedback"
+            role="status"
+            aria-live="polite"
+          >
+            {shareFeedback}
+          </p>
+        ) : null}
 
         <div className="help-request-page__layout">
           <header className="help-request-page__intro">
