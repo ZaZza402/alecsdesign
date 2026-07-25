@@ -16,6 +16,32 @@
     0 4px 20px rgba(0, 0, 0, 0.32);
 }
 
+.header--home .logo-text,
+.header--home .nav-link,
+.header--home .mobile-menu-button {
+  color: #fff;
+}
+
+.header--home .hamburger-line {
+  background-color: #fff;
+}
+
+.header--home .logo-heart {
+  color: #ff6321;
+}
+
+.header--home .language-switcher__trigger {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.16);
+  color: #fff;
+}
+
+.header--home .language-switcher__trigger:hover {
+  background: rgba(255, 255, 255, 0.14);
+  border-color: rgba(255, 255, 255, 0.28);
+  color: #fff;
+}
+
 /* Header text color changes on scroll */
 .header.scrolled .logo-text,
 .header.scrolled .nav-link,
@@ -24,7 +50,7 @@
 }
 
 .header.scrolled .nav-link:hover {
-  color: #FF6321;
+  color: #ff6321;
 }
 
 .header.scrolled .hamburger-line {
@@ -33,7 +59,7 @@
 
 /* Keep heart orange even when scrolled */
 .header.scrolled .logo-heart {
-  color: #FF6321;
+  color: #ff6321;
 }
 
 /* Language switcher white when header is black */
@@ -46,7 +72,7 @@
 .header.scrolled .language-switcher__trigger:hover {
   background: rgba(255, 99, 33, 0.15);
   border-color: rgba(255, 99, 33, 0.3);
-  color: #FF6321;
+  color: #ff6321;
 }
 
 .header-container {
@@ -87,7 +113,7 @@
 .logo-heart {
   width: 10px;
   height: 10px;
-  color: #FF6321;
+  color: #ff6321;
   flex-shrink: 0;
 }
 
@@ -116,12 +142,12 @@
 }
 
 .nav-link:hover {
-  color: #FF6321;
+  color: #ff6321;
   opacity: 0.8;
 }
 
 .nav-link.active {
-  color: #FF6321;
+  color: #ff6321;
   font-weight: 500;
 }
 
@@ -132,7 +158,7 @@
   left: 0;
   right: 0;
   height: 2px;
-  background: #FF6321;
+  background: #ff6321;
 }
 
 /* Language Switcher - visible on all screens */
@@ -167,7 +193,7 @@
 }
 
 .mobile-menu-button:hover .hamburger-line {
-  background-color: #FF6321;
+  background-color: #ff6321;
 }
 
 .mobile-menu-button:active {
@@ -270,12 +296,12 @@
   left: 0;
   width: 0;
   height: 3px;
-  background: #FF6321;
+  background: #ff6321;
   transition: width 0.3s ease;
 }
 
 .mobile-nav-link:hover {
-  color: #FF6321;
+  color: #ff6321;
   transform: translateX(10px);
 }
 
@@ -284,7 +310,7 @@
 }
 
 .mobile-nav-link.active {
-  color: #FF6321;
+  color: #ff6321;
 }
 
 .mobile-nav-link.active::after {

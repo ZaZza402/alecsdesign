@@ -14,6 +14,13 @@ const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [activeSection, setActiveSection] = useState("home");
 
+  const isHomeRoute =
+    location.pathname === "/" ||
+    location.pathname === `/${i18n.language}` ||
+    location.pathname === `/en` ||
+    location.pathname === `/it` ||
+    location.pathname === `/ro`;
+
   const navItems = [
     { id: "home", label: t("nav.home"), href: "#home" },
     {
@@ -130,7 +137,9 @@ const Header = () => {
   };
 
   return (
-    <header className={`header ${isScrolled ? "scrolled" : ""}`}>
+    <header
+      className={`header ${isScrolled ? "scrolled" : ""} ${isHomeRoute && !isScrolled ? "header--home" : ""}`}
+    >
       <div className="header-container">
         {/* Logo */}
         <a

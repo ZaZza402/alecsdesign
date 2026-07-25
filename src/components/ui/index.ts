@@ -1,4 +1,3 @@
-export { BackgroundPaths } from "./BackgroundPaths";
 export { default as ContactForm } from "./ContactForm";
 export { default as CookieBanner } from "./CookieBanner";
 export { default as LanguageSuggestionBanner } from "./LanguageSuggestionBanner";

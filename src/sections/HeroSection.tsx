@@ -1,13 +1,16 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
+import { useNavigate } from "react-router-dom";
 import { Check } from "lucide-react";
-import { BackgroundPaths, LogoLoop } from "../components/ui";
+import Particles from "../components/Particles";
+import { LogoLoop } from "../components/ui";
 import { trackCTAClick } from "../utils/analytics";
 import "./HeroSection.css";
 
 const HeroSection: React.FC = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+  const navigate = useNavigate();
 
   const containerVariants = {
     hidden: { opacity: 0, y: 20 },
@@ -26,20 +29,34 @@ const HeroSection: React.FC = () => {
     }),
   };
 
-  const handleWhatsAppClick = () => {
-    trackCTAClick("WhatsApp", "Hero Section");
-    window.open("https://wa.me/393801503074", "_blank", "noopener,noreferrer");
-  };
+  const handlePrimaryClick = () => {
+    const lang = (i18n.resolvedLanguage || i18n.language || "en").slice(0, 2);
+    const contactPath = lang === "en" ? "/contact" : `/${lang}/contact`;
 
-  const handleSeeWorkClick = () => {
-    trackCTAClick("See My Work", "Hero Section");
-    const portfolioSection = document.getElementById("portfolio");
-    portfolioSection?.scrollIntoView({ behavior: "smooth" });
+    trackCTAClick("Let's Talk", "Hero Section");
+    navigate(contactPath);
   };
 
   return (
     <section id="home" className="hero-section" aria-label="Hero section">
-      <BackgroundPaths />
+      <div className="hero-section__particles-layer" aria-hidden="true">
+        <div className="hero-section__particles-shell">
+          <Particles
+            particleCount={540}
+            particleSpread={25}
+            speed={0.06}
+            particleColors={["#f35422", "#DBEAFE", "#f35422"]}
+            moveParticlesOnHover
+            particleHoverFactor={1}
+            alphaParticles={false}
+            particleBaseSize={100}
+            sizeRandomness={0.5}
+            cameraDistance={20}
+            disableRotation={false}
+            className="hero-section__particles"
+          />
+        </div>
+      </div>
       <div className="hero-section__content">
         <motion.div
           initial="hidden"
@@ -49,6 +66,9 @@ const HeroSection: React.FC = () => {
         >
           <h1 className="hero-section__title">
             {t("hero.title")}{" "}
+            <span className="hero-section__connector">
+              {t("hero.titleConnector")}
+            </span>{" "}
             <span className="hero-section__accent">
               {t("hero.titleAccent")}
             </span>
@@ -86,6 +106,16 @@ const HeroSection: React.FC = () => {
           )}
         </motion.ul>
 
+        <motion.p
+          className="hero-section__trustline"
+          initial="hidden"
+          animate="visible"
+          custom={0.44}
+          variants={fadeIn}
+        >
+          {t("hero.trustLine")}
+        </motion.p>
+
         <motion.div
           className="hero-section__cta"
           initial="hidden"
@@ -94,18 +124,11 @@ const HeroSection: React.FC = () => {
           variants={fadeIn}
         >
           <button
-            onClick={handleWhatsAppClick}
+            onClick={handlePrimaryClick}
             className="hero-cta-button hero-cta-button--primary"
-            aria-label="Message Alex on WhatsApp"
+            aria-label={t("hero.ctaPrimary")}
           >
             <span>{t("hero.ctaPrimary")}</span>
-          </button>
-
-          <button
-            onClick={handleSeeWorkClick}
-            className="hero-cta-button hero-cta-button--secondary"
-          >
-            <span>{t("hero.ctaSecondary")}</span>
           </button>
         </motion.div>
       </div>

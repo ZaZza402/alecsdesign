@@ -42,25 +42,27 @@ const HomePage = () => {
       <main role="main">
         <div className="hero-bg-scope">
           <HeroSection />
-          <ComparisonSection />
+          <div className="home-page__drawer">
+            <ComparisonSection />
+            <StatsSection />
+            <Suspense fallback={<LoadingSkeleton />}>
+              <section id="portfolio" aria-labelledby="portfolio-heading">
+                <PortfolioSection key={`portfolio-${t("nav.portfolio")}`} />
+              </section>
+              <section id="services" aria-labelledby="services-heading">
+                <ServicesSection />
+              </section>
+            </Suspense>
+            <section id="how-it-works" aria-labelledby="how-it-works-heading">
+              <HowItWorksSection />
+            </section>
+            <Suspense fallback={<LoadingSkeleton />}>
+              <section id="contact" aria-labelledby="contact-heading">
+                <ContactSection key={`contact-${t("nav.contact")}`} />
+              </section>
+            </Suspense>
+          </div>
         </div>
-        <StatsSection />
-        <Suspense fallback={<LoadingSkeleton />}>
-          <section id="portfolio" aria-labelledby="portfolio-heading">
-            <PortfolioSection key={`portfolio-${t("nav.portfolio")}`} />
-          </section>
-          <section id="services" aria-labelledby="services-heading">
-            <ServicesSection />
-          </section>
-        </Suspense>
-        <section id="how-it-works" aria-labelledby="how-it-works-heading">
-          <HowItWorksSection />
-        </section>
-        <Suspense fallback={<LoadingSkeleton />}>
-          <section id="contact" aria-labelledby="contact-heading">
-            <ContactSection key={`contact-${t("nav.contact")}`} />
-          </section>
-        </Suspense>
       </main>
       <Footer />
     </>
