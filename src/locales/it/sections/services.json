@@ -1,17 +1,17 @@
-{
-  "title": "Cosa Realizzo",
-  "subtitle": "Ogni lavoro è diverso. Queste sono le richieste più comuni.",
+﻿{
+  "title": "Servizi pensati per la tua crescita",
+  "subtitle": "Dalla direzione iniziale al lancio e alle evoluzioni, ogni scelta è legata ai risultati.",
   "website": {
-    "title": "Un sito per la tua attività",
-    "description": "Veloce, professionale, trovabile su Google. Ottima prima impressione su ogni dispositivo."
+    "title": "Siti che convertono con fiducia",
+    "description": "Costruiti sulla tua offerta e sul tuo pubblico, per trasformare i visitatori giusti in contatti qualificati."
   },
   "bookings": {
-    "title": "Prenotazioni e pagamenti online",
-    "description": "I tuoi clienti prenotano o pagano direttamente dal sito - senza telefonate o email."
+    "title": "Flussi di prenotazione e pagamento",
+    "description": "Riduci l'attrito con percorsi chiari, credibili e semplici da completare su qualsiasi dispositivo."
   },
   "custom": {
-    "title": "Funzionalità su misura",
-    "description": "Aree clienti, dashboard, chat AI, contenuti multilingua - costruiti come lavora la tua attività."
+    "title": "Sistemi su misura per le operazioni",
+    "description": "Aree clienti, dashboard, assistenza AI e basi multilingua allineate al modo reale in cui lavora il tuo team."
   },
-  "cta": "Parlami del tuo progetto"
+  "cta": "Esplora le tue opzioni"
 }

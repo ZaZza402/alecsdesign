@@ -160,33 +160,12 @@ const Footer = () => {
               <li>
                 <button
                   onClick={() => {
-                    trackButtonClick("Packs", "Footer Quick Links");
-                    const lang = i18n.language || "en";
-                    navigate(lang === "en" ? "/designs" : `/${lang}/designs`);
-                  }}
-                >
-                  {t("nav.packs")}
-                </button>
-              </li>
-              <li>
-                <button
-                  onClick={() => {
                     trackButtonClick("FAQ", "Footer Quick Links");
                     const lang = i18n.language || "en";
                     navigate(`/${lang}/faq`);
                   }}
                 >
                   {t("nav.faq")}
-                </button>
-              </li>
-              <li>
-                <button
-                  onClick={() => {
-                    trackButtonClick("Help", "Footer Quick Links");
-                    navigate(getLocalizedRoute("/help"));
-                  }}
-                >
-                  {t("footer.quickLinks.help")}
                 </button>
               </li>
               <li>

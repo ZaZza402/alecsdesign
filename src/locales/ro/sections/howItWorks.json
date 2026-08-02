@@ -1,16 +1,16 @@
-{
-  "title": "Cum Funcționează",
-  "subtitle": "Trei pași, de la prima discuție până la site-ul tău online.",
+﻿{
+  "title": "Cum lucram impreuna",
+  "subtitle": "Proces simplu, colaborare apropiata, fara confuzie intre etape.",
   "step1": {
-    "title": "Un apel gratuit",
-    "description": "Îmi spui despre afacerea ta. Îți pun întrebările potrivite. Niciun angajament, niciun jargon."
+    "title": "Kickoff strategic",
+    "description": "Stabilim obiective, public si constrangeri intr-un apel focusat, ca proiectul sa porneasca limpede."
   },
   "step2": {
-    "title": "Proiectez și construiesc",
-    "description": "Întâi vezi designul. Îl aprobăm împreună. Apoi scriu codul."
+    "title": "Intai directia, apoi build-ul",
+    "description": "Validezi directia vizuala, apoi construiesc personal experienta finala cu disciplina de productie."
   },
   "step3": {
-    "title": "Lansezi - și site-ul e al tău",
-    "description": "Site-ul merge online. Primești codul, domeniul, totul. E al tău, pentru totdeauna."
+    "title": "Lansare cu control total",
+    "description": "Intri live cu control complet asupra codului, domeniului, asset-urilor si deciziilor viitoare."
   }
 }

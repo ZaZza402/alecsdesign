@@ -54,7 +54,5 @@ This project is organized by responsibility so new files have an obvious home.
 
 ## Workflow Docs
 
-- Designs contact prefill and intake flow behavior:
-  - [docs/designs-contact-intake.md](docs/designs-contact-intake.md)
 - Repository Copilot guardrails for future edits:
   - [.github/copilot-instructions.md](.github/copilot-instructions.md)

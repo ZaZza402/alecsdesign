@@ -1,16 +1,16 @@
-{
-  "title": "Come Funziona",
-  "subtitle": "Tre step, dalla prima chiacchierata al sito online.",
+﻿{
+  "title": "Come lavoreremo insieme",
+  "subtitle": "Processo semplice, collaborazione vicina, nessuna confusione nei passaggi.",
   "step1": {
-    "title": "Una chiamata gratuita",
-    "description": "Mi parli della tua attività. Ti faccio le domande giuste. Nessun impegno, nessun tecnicismo."
+    "title": "Kickoff strategico",
+    "description": "Definiamo obiettivi, pubblico e vincoli in una call mirata, così il progetto parte con chiarezza."
   },
   "step2": {
-    "title": "Disegno e costruisco il sito",
-    "description": "Prima vedi il design. Lo approvi. Poi scrivo il codice."
+    "title": "Prima direzione, poi sviluppo",
+    "description": "Approvi prima la direzione visiva, poi costruisco personalmente l'esperienza finale con disciplina da produzione."
   },
   "step3": {
-    "title": "Vai online - e il sito è tuo",
-    "description": "Il sito va live. Ricevi il codice, il dominio, tutto. È tuo, per sempre."
+    "title": "Lancio con piena proprietà",
+    "description": "Vai online con controllo completo su codice, dominio, asset e decisioni future."
   }
 }

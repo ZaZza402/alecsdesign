@@ -254,7 +254,6 @@ section {
 
 .home-page__drawer {
   position: relative;
-  z-index: 1;
 }
 
 /* ── Language-adaptive typography ─────────────────────────────

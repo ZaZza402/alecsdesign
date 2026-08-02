@@ -1,11 +1,15 @@
-import React from "react";
+import React, { useRef } from "react";
 import { Globe, CalendarCheck, Sparkles } from "lucide-react";
+import { motion, useInView } from "framer-motion";
 import { useTranslation } from "react-i18next";
 import { trackCTAClick } from "../utils/analytics";
+import StoryMascot from "../components/ui/StoryMascot";
 import "./ServicesSection.css";
 
 const ServicesSection: React.FC = () => {
   const { t } = useTranslation();
+  const sectionRef = useRef<HTMLElement>(null);
+  const inView = useInView(sectionRef, { once: true, margin: "-80px" });
 
   const services = [
     {
@@ -28,30 +32,50 @@ const ServicesSection: React.FC = () => {
   };
 
   return (
-    <section className="services-section" aria-labelledby="services-heading">
+    <section
+      ref={sectionRef}
+      className="services-section"
+      aria-labelledby="services-heading"
+    >
       <div className="services-section__container">
-        <h2
+        <motion.h2
           id="services-heading"
           className="services-section__title"
-          data-aos="fade-up"
+          initial={{ opacity: 0, y: 22 }}
+          animate={inView ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.55, ease: [0.22, 1, 0.36, 1] }}
         >
           {t("services.title")}
-        </h2>
-        <p
+        </motion.h2>
+
+        <StoryMascot
+          pose="crafting-gesture"
+          align="right"
+          size="md"
+          delay={0.12}
+        />
+
+        <motion.p
           className="services-section__subtitle"
-          data-aos="fade-up"
-          data-aos-delay="100"
+          initial={{ opacity: 0, y: 20 }}
+          animate={inView ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.55, delay: 0.1, ease: [0.22, 1, 0.36, 1] }}
         >
           {t("services.subtitle")}
-        </p>
+        </motion.p>
 
         <div className="services-section__grid">
           {services.map((service, index) => (
-            <div
+            <motion.div
               key={service.key}
               className="services-card"
-              data-aos="fade-up"
-              data-aos-delay={String(index * 100)}
+              initial={{ opacity: 0, y: 26 }}
+              animate={inView ? { opacity: 1, y: 0 } : {}}
+              transition={{
+                duration: 0.55,
+                delay: 0.18 + index * 0.08,
+                ease: [0.22, 1, 0.36, 1],
+              }}
             >
               <div className="services-card__header">
                 <span className="services-card__icon" aria-hidden="true">
@@ -64,19 +88,26 @@ const ServicesSection: React.FC = () => {
               <p className="services-card__description">
                 {t(`services.${service.key}.description`)}
               </p>
-            </div>
+            </motion.div>
           ))}
         </div>
 
-        <div className="services-section__cta" data-aos="fade-up">
-          <button
+        <motion.div
+          className="services-section__cta"
+          initial={{ opacity: 0, y: 20 }}
+          animate={inView ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.5, delay: 0.42, ease: [0.22, 1, 0.36, 1] }}
+        >
+          <motion.button
             onClick={handleWhatsAppClick}
             className="services-cta-button"
             aria-label="Message Alex on WhatsApp to discuss your project"
+            whileHover={{ y: -2 }}
+            whileTap={{ y: 0 }}
           >
             {t("services.cta")}
-          </button>
-        </div>
+          </motion.button>
+        </motion.div>
       </div>
     </section>
   );

@@ -69,6 +69,86 @@
       "permanent": true
     },
     {
+      "source": "/help",
+      "destination": "/contact",
+      "permanent": true
+    },
+    {
+      "source": "/help/:path*",
+      "destination": "/contact",
+      "permanent": true
+    },
+    {
+      "source": "/en/help",
+      "destination": "/contact",
+      "permanent": true
+    },
+    {
+      "source": "/en/help/:path*",
+      "destination": "/contact",
+      "permanent": true
+    },
+    {
+      "source": "/it/help",
+      "destination": "/it/contact",
+      "permanent": true
+    },
+    {
+      "source": "/it/help/:path*",
+      "destination": "/it/contact",
+      "permanent": true
+    },
+    {
+      "source": "/ro/help",
+      "destination": "/ro/contact",
+      "permanent": true
+    },
+    {
+      "source": "/ro/help/:path*",
+      "destination": "/ro/contact",
+      "permanent": true
+    },
+    {
+      "source": "/designs",
+      "destination": "/portfolio",
+      "permanent": true
+    },
+    {
+      "source": "/designs/:slug*",
+      "destination": "/portfolio",
+      "permanent": true
+    },
+    {
+      "source": "/en/designs",
+      "destination": "/portfolio",
+      "permanent": true
+    },
+    {
+      "source": "/en/designs/:slug*",
+      "destination": "/portfolio",
+      "permanent": true
+    },
+    {
+      "source": "/it/designs",
+      "destination": "/it/portfolio",
+      "permanent": true
+    },
+    {
+      "source": "/it/designs/:slug*",
+      "destination": "/it/portfolio",
+      "permanent": true
+    },
+    {
+      "source": "/ro/designs",
+      "destination": "/ro/portfolio",
+      "permanent": true
+    },
+    {
+      "source": "/ro/designs/:slug*",
+      "destination": "/ro/portfolio",
+      "permanent": true
+    },
+    {
       "source": "/packs",
       "destination": "/designs",
       "permanent": true

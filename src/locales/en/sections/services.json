@@ -1,17 +1,17 @@
-{
-  "title": "What I Build",
-  "subtitle": "Every project is different. Here's what most businesses come to me for.",
+﻿{
+  "title": "Services Built Around Your Growth",
+  "subtitle": "From first concept to launch and iteration, every decision is tied to outcomes.",
   "website": {
-    "title": "A website for your business",
-    "description": "Fast, professional, found on Google. Makes a great first impression and works on every device."
+    "title": "Websites that convert with confidence",
+    "description": "Built around your offer and your audience so the right visitors become qualified leads."
   },
   "bookings": {
-    "title": "Bookings and online payments",
-    "description": "Let clients book appointments or pay you directly from your website - without calling or emailing."
+    "title": "Booking and payment journeys",
+    "description": "Reduce friction with flows that feel clear, credible, and easy to complete on any device."
   },
   "custom": {
-    "title": "Custom features",
-    "description": "Client portals, dashboards, AI chat, multilingual content - built for the way your business actually works."
+    "title": "Custom systems for daily operations",
+    "description": "Portals, dashboards, AI assistance, and multilingual foundations aligned to how your team actually works."
   },
-  "cta": "Ask me about your project"
+  "cta": "Explore your options"
 }

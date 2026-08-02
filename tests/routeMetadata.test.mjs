@@ -26,28 +26,8 @@ test("/it/faq canonical is unchanged", () => {
   assert.equal(toCanonicalPath("/it/faq"), "/it/faq");
 });
 
-test("/help canonical is unchanged", () => {
-  assert.equal(toCanonicalPath("/help"), "/help");
-});
-
-test("/en/help/request canonical strips /en prefix", () => {
-  assert.equal(toCanonicalPath("/en/help/request"), "/help/request");
-});
-
 test("/faq canonical is unchanged", () => {
   assert.equal(toCanonicalPath("/faq"), "/faq");
-});
-
-test("/designs canonical is unchanged", () => {
-  assert.equal(toCanonicalPath("/designs"), "/designs");
-});
-
-test("/en/designs canonical strips /en prefix", () => {
-  assert.equal(toCanonicalPath("/en/designs"), "/designs");
-});
-
-test("/it/designs canonical is unchanged", () => {
-  assert.equal(toCanonicalPath("/it/designs"), "/it/designs");
 });
 
 test("hreflang base for /it is /", () => {
@@ -60,22 +40,4 @@ test("hreflang base for /it/faq is /faq", () => {
 
 test("hreflang base for /faq (no prefix) is /faq", () => {
   assert.equal(toHreflangBase("/faq"), "/faq");
-});
-
-test("hreflang base for /help/request is unchanged", () => {
-  assert.equal(toHreflangBase("/help/request"), "/help/request");
-});
-
-test("hreflang base for /it/designs/item is /designs/item", () => {
-  assert.equal(
-    toHreflangBase("/it/designs/isometric-heavy-machinery-icons"),
-    "/designs/isometric-heavy-machinery-icons",
-  );
-});
-
-test("hreflang base for /designs/item is unchanged", () => {
-  assert.equal(
-    toHreflangBase("/designs/isometric-heavy-machinery-icons"),
-    "/designs/isometric-heavy-machinery-icons",
-  );
 });

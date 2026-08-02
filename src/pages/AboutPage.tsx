@@ -42,7 +42,7 @@ const AboutPage = () => {
             <div className="about-signature">{t("about.signature")}</div>
 
             <div className="about-cta-container">
-              <Link to={`${prefix}/help`} className="about-cta-btn">
+              <Link to={`${prefix}/contact`} className="about-cta-btn">
                 {t("about.cta")}
               </Link>
             </div>

@@ -1,12 +1,10 @@
 /* Contact Section */
 .contact-section {
   padding: 4rem 0;
-  padding-top: calc(4rem + 20px);
   background: linear-gradient(180deg, #ffffff 0%, #eeeeee 100%);
   position: relative;
-  overflow: clip;
-  z-index: 13;
-  margin-top: -20px;
+  overflow: hidden;
+  z-index: 7;
   border-radius: 24px 24px 0 0;
   box-shadow: 0 -16px 48px rgba(0, 0, 0, 0.1);
 }
@@ -14,7 +12,6 @@
 @media (min-width: 1024px) {
   .contact-section {
     padding: 5rem 0;
-    padding-top: calc(5rem + 20px);
   }
 }
 
@@ -24,7 +21,9 @@
   padding: 0 2rem;
   opacity: 0;
   transform: translateY(20px);
-  transition: opacity 0.5s ease, transform 0.5s ease;
+  transition:
+    opacity 0.5s ease,
+    transform 0.5s ease;
 }
 
 .contact-container.animate-in {
@@ -71,12 +70,12 @@
 }
 
 .indicator-item svg {
-  color: #FF6321;
+  color: #ff6321;
   flex-shrink: 0;
 }
 
 .indicator-item.available .status-badge {
-  color: #FF6321;
+  color: #ff6321;
 }
 
 .indicator-item.unavailable .status-badge {

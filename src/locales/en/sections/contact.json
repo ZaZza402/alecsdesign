@@ -1,6 +1,6 @@
 {
   "title": "Let's Talk",
-  "subtitle": "Book a free call or send a message about your web or design project. I reply within 24 hours.",
+  "subtitle": "Share your scope. I reply within 24 hours with clear next steps.",
   "responseTime": "I typically reply:",
   "responseTimeValue": "within 24 hours",
   "whatsappStatus": "WhatsApp:",
@@ -15,7 +15,7 @@
     "chatOnWhatsApp": "Chat on WhatsApp",
     "location": "Location",
     "sendMessage": "Send a Message",
-    "sendMessageDesc": "Fill in the form and I'll get back to you within 24 hours."
+    "sendMessageDesc": "Short form, clear response, no sales pressure."
   },
   "form": {
     "name": "Your name",
@@ -25,7 +25,7 @@
     "contactPlaceholder": "Best way to reach you",
     "contactRequired": "Email or phone is required",
     "business": "Tell me about your project",
-    "businessPlaceholder": "What are you building and what outcome do you want from this project?",
+    "businessPlaceholder": "What are you building, and what result should this project deliver?",
     "businessRequired": "Please give me a brief overview",
     "needs": "What do you need?",
     "needsPlaceholder": "Select a project type...",
@@ -47,7 +47,6 @@
     "contactDetailPlaceholderEmail": "your@email.com",
     "contactDetailPlaceholderWhatsApp": "WhatsApp: +39 333 123 4567",
     "contactDetailPlaceholderPhone": "+39 06 123 4567",
-    "prefillDesignsNote": "Design inquiry detected. The form is preselected for a redesign/custom design scope.",
     "step2Ready": "Great, this is enough context to continue.",
     "step2Incomplete": "Add your name and a short project overview to continue.",
     "step3SelectMethod": "Choose your preferred contact method.",

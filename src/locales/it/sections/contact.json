@@ -1,6 +1,6 @@
 ﻿{
   "title": "Parliamone",
-  "subtitle": "Prenota una chiamata gratuita o inviami un messaggio sul tuo progetto web o design. Rispondo entro 24 ore.",
+  "subtitle": "Condividi lo scope. Ti rispondo entro 24 ore con prossimi passi chiari.",
   "successMessage": "Grazie! Ho ricevuto il tuo messaggio e ti contatterò a breve.",
   "errorMessage": "Invio fallito. Contattami direttamente su WhatsApp.",
   "responseTime": "Rispondo di solito:",
@@ -15,7 +15,7 @@
     "chatOnWhatsApp": "Chatta su WhatsApp",
     "location": "Posizione",
     "sendMessage": "Invia un Messaggio",
-    "sendMessageDesc": "Compila il modulo e ti rispondo entro 24 ore."
+    "sendMessageDesc": "Modulo rapido, risposta chiara, zero pressione commerciale."
   },
   "form": {
     "name": "Il tuo nome",
@@ -25,7 +25,7 @@
     "contactPlaceholder": "Come ti contatto?",
     "contactRequired": "Email o telefono obbligatorio",
     "business": "Parlami del tuo progetto",
-    "businessPlaceholder": "Cosa stai costruendo e quale risultato vuoi ottenere?",
+    "businessPlaceholder": "Cosa stai costruendo e quale risultato deve generare questo progetto?",
     "businessRequired": "Descrivimi brevemente la tua attività",
     "needs": "Di cosa hai bisogno?",
     "needsPlaceholder": "Seleziona il tipo di progetto...",
@@ -47,7 +47,6 @@
     "contactDetailPlaceholderEmail": "tuo@email.com",
     "contactDetailPlaceholderWhatsApp": "WhatsApp: +39 333 123 4567",
     "contactDetailPlaceholderPhone": "+39 06 123 4567",
-    "prefillDesignsNote": "Richiesta design rilevata. Il modulo è preimpostato su restyling/design personalizzato.",
     "step2Ready": "Perfetto, queste informazioni bastano per proseguire.",
     "step2Incomplete": "Inserisci nome e una breve panoramica del progetto per continuare.",
     "step3SelectMethod": "Seleziona il metodo di contatto preferito.",

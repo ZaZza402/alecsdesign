@@ -1,11 +1,9 @@
 .how-it-works-section {
   padding: 4rem 1.5rem;
-  padding-top: calc(4rem + 20px);
   background: #fff;
   position: relative;
-  overflow: clip;
-  z-index: 12;
-  margin-top: -20px;
+  overflow: hidden;
+  z-index: 6;
   border-radius: 24px 24px 0 0;
   box-shadow: 0 -16px 48px rgba(0, 0, 0, 0.07);
 }
@@ -13,14 +11,12 @@
 @media (max-width: 768px) {
   .how-it-works-section {
     padding: 3rem 1.5rem;
-    padding-top: calc(3rem + 20px);
   }
 }
 
 @media (min-width: 1024px) {
   .how-it-works-section {
     padding: 5rem 2rem;
-    padding-top: calc(5rem + 20px);
   }
 }
 
@@ -32,6 +28,9 @@
 .how-it-works-header {
   text-align: center;
   margin-bottom: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .how-it-works-title {
@@ -54,6 +53,11 @@
   max-width: 700px;
   margin: 0 auto;
   line-height: 1.5;
+}
+
+.how-it-works-header .story-mascot {
+  width: clamp(130px, 32vw, 190px);
+  margin: 0.55rem auto 0.85rem;
 }
 
 /* dd.nyc-inspired asymmetric layout with large number placeholders */
@@ -175,6 +179,89 @@
   }
 
   .step-item.step-right .step-description {
+    margin-left: 0;
+  }
+}
+
+@media (min-width: 1025px) {
+  .how-it-works-header {
+    margin-bottom: 2.75rem;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    grid-template-areas:
+      "title mascot"
+      "subtitle mascot";
+    align-items: center;
+    column-gap: 2.2rem;
+    text-align: left;
+  }
+
+  .how-it-works-title {
+    grid-area: title;
+    margin-bottom: 0.7rem;
+  }
+
+  .how-it-works-header .story-mascot {
+    grid-area: mascot;
+    width: clamp(180px, 18vw, 250px);
+    margin: 0;
+  }
+
+  .how-it-works-subtitle {
+    grid-area: subtitle;
+    margin: 0;
+    max-width: 640px;
+  }
+
+  .steps-list {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1.4rem;
+    max-width: 1120px;
+  }
+
+  .step-item,
+  .step-item.step-right {
+    display: flex;
+    flex-direction: column;
+    gap: 0.85rem;
+    min-height: 280px;
+    padding: 1.55rem 1.35rem 1.4rem;
+    border-radius: 18px;
+    border: 1px solid rgba(15, 23, 42, 0.08);
+    background: linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);
+    box-shadow: 0 12px 26px rgba(15, 23, 42, 0.07);
+    grid-template-columns: 1fr;
+  }
+
+  .step-item.step-right .step-number-placeholder,
+  .step-item.step-right .step-content {
+    order: initial;
+  }
+
+  .step-number-placeholder {
+    font-size: clamp(4.25rem, 5.2vw, 5.5rem);
+    opacity: 0.13;
+    padding-top: 0;
+    line-height: 0.9;
+  }
+
+  .step-content,
+  .step-item.step-right .step-content {
+    text-align: left;
+    padding-top: 0;
+  }
+
+  .step-title {
+    font-size: 1.46rem;
+    line-height: 1.22;
+  }
+
+  .step-description,
+  .step-item.step-right .step-description {
+    font-size: 0.98rem;
+    line-height: 1.62;
+    max-width: none;
     margin-left: 0;
   }
 }

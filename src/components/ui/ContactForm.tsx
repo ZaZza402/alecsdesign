@@ -25,18 +25,9 @@ interface FormData {
   message: string;
 }
 
-interface ContactFormProps {
-  preselectedService?: string;
-}
-
-const SERVICE_TO_NEEDS_MAP: Record<string, FormData["needs"]> = {
-  designs: "redesign",
-};
-
-const ContactForm = ({ preselectedService = "" }: ContactFormProps) => {
+const ContactForm = () => {
   const { t } = useTranslation();
-  const normalizedService = preselectedService.trim().toLowerCase();
-  const preselectedNeeds = SERVICE_TO_NEEDS_MAP[normalizedService] ?? "";
+  const preselectedNeeds = "";
 
   const [step, setStep] = useState(preselectedNeeds ? 2 : 1);
   const [direction, setDirection] = useState(1);
@@ -206,12 +197,6 @@ const ContactForm = ({ preselectedService = "" }: ContactFormProps) => {
           return els;
         })}
       </div>
-
-      {normalizedService === "designs" && (
-        <p className="cf__prefill-note">
-          {t("contact.form.prefillDesignsNote")}
-        </p>
-      )}
 
       {/* Animated panels */}
       <div className="cf__panels-wrap">

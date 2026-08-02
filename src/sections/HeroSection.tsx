@@ -1,9 +1,9 @@
-import React from "react";
+import React, { useEffect, useMemo, useRef, useState } from "react";
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 import { useNavigate } from "react-router-dom";
-import { Check } from "lucide-react";
 import Particles from "../components/Particles";
+import HeroMascot, { type HeroPose } from "../components/ui/HeroMascot";
 import { LogoLoop } from "../components/ui";
 import { trackCTAClick } from "../utils/analytics";
 import "./HeroSection.css";
@@ -11,6 +11,142 @@ import "./HeroSection.css";
 const HeroSection: React.FC = () => {
   const { t, i18n } = useTranslation();
   const navigate = useNavigate();
+  const [reduceMotion, setReduceMotion] = useState(false);
+  const [viewportWidth, setViewportWidth] = useState(1280);
+  const [activeSection, setActiveSection] = useState<
+    | "hero"
+    | "stats"
+    | "services"
+    | "how-it-works"
+    | "comparison"
+    | "portfolio"
+    | "contact"
+  >("hero");
+  const [ctaActive, setCtaActive] = useState(false);
+  const ratiosRef = useRef<Record<string, number>>({});
+
+  useEffect(() => {
+    if (typeof window === "undefined") return;
+
+    const mediaQuery = window.matchMedia("(prefers-reduced-motion: reduce)");
+    const handleChange = (event: MediaQueryListEvent) => {
+      setReduceMotion(event.matches);
+    };
+
+    setReduceMotion(mediaQuery.matches);
+    mediaQuery.addEventListener("change", handleChange);
+
+    return () => mediaQuery.removeEventListener("change", handleChange);
+  }, []);
+
+  useEffect(() => {
+    if (typeof window === "undefined") return;
+
+    const updateViewport = () => setViewportWidth(window.innerWidth);
+    updateViewport();
+    window.addEventListener("resize", updateViewport);
+    return () => window.removeEventListener("resize", updateViewport);
+  }, []);
+
+  useEffect(() => {
+    if (typeof window === "undefined") return;
+
+    const sectionIds = [
+      "stats",
+      "portfolio",
+      "services",
+      "how-it-works",
+      "comparison",
+      "contact",
+    ];
+
+    const sectionElements = sectionIds
+      .map((id) => document.getElementById(id))
+      .filter((node): node is HTMLElement => Boolean(node));
+
+    if (sectionElements.length === 0) return;
+
+    const priority: Record<string, number> = {
+      stats: 1,
+      portfolio: 2,
+      services: 3,
+      "how-it-works": 4,
+      comparison: 5,
+      contact: 6,
+    };
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          const target = entry.target as HTMLElement;
+          if (!target.id) return;
+
+          ratiosRef.current[target.id] = entry.isIntersecting
+            ? entry.intersectionRatio
+            : 0;
+        });
+
+        const activeEntries = Object.entries(ratiosRef.current).filter(
+          ([, ratio]) => ratio > 0.42,
+        );
+
+        if (activeEntries.length === 0) {
+          setActiveSection("hero");
+          return;
+        }
+
+        activeEntries.sort((a, b) => {
+          if (b[1] !== a[1]) return b[1] - a[1];
+          return (priority[a[0]] ?? 0) - (priority[b[0]] ?? 0);
+        });
+
+        const leading = activeEntries[0][0];
+        if (
+          leading === "stats" ||
+          leading === "services" ||
+          leading === "how-it-works" ||
+          leading === "comparison" ||
+          leading === "portfolio" ||
+          leading === "contact"
+        ) {
+          setActiveSection(leading);
+        }
+      },
+      {
+        threshold: [0.4, 0.6, 0.8],
+      },
+    );
+
+    sectionElements.forEach((element) => observer.observe(element));
+    return () => observer.disconnect();
+  }, []);
+
+  const currentPose = useMemo<HeroPose>(() => {
+    if (ctaActive) return "invite-point-forward";
+    if (activeSection === "stats") return "speed-performance";
+    if (activeSection === "services") return "crafting-gesture";
+    if (activeSection === "how-it-works") return "problem-solving-think-pose";
+    if (activeSection === "comparison") return "open-arms-trust-pose";
+    if (activeSection === "portfolio") return "success-pose";
+    if (activeSection === "contact") return "success-pose";
+    return "neutral-stance";
+  }, [activeSection, ctaActive]);
+
+  const mascotProminence = useMemo<"high" | "medium" | "low">(() => {
+    if (activeSection === "stats" || activeSection === "services")
+      return "high";
+    if (activeSection === "comparison" || activeSection === "how-it-works") {
+      return "medium";
+    }
+    return "low";
+  }, [activeSection]);
+
+  const particleCount = useMemo(() => {
+    if (reduceMotion) return 120;
+    if (viewportWidth < 640) return 180;
+    if (viewportWidth < 1024) return 280;
+    return 420;
+  }, [reduceMotion, viewportWidth]);
 
   const containerVariants = {
     hidden: { opacity: 0, y: 20 },
@@ -42,96 +178,95 @@ const HeroSection: React.FC = () => {
       <div className="hero-section__particles-layer" aria-hidden="true">
         <div className="hero-section__particles-shell">
           <Particles
-            particleCount={540}
+            particleCount={particleCount}
             particleSpread={25}
-            speed={0.06}
+            speed={reduceMotion ? 0.025 : 0.05}
             particleColors={["#f35422", "#DBEAFE", "#f35422"]}
-            moveParticlesOnHover
+            moveParticlesOnHover={!reduceMotion}
             particleHoverFactor={1}
             alphaParticles={false}
-            particleBaseSize={100}
+            particleBaseSize={reduceMotion ? 85 : 96}
             sizeRandomness={0.5}
             cameraDistance={20}
-            disableRotation={false}
+            disableRotation={reduceMotion}
             className="hero-section__particles"
           />
         </div>
       </div>
+
       <div className="hero-section__content">
-        <motion.div
-          initial="hidden"
-          animate="visible"
-          variants={containerVariants}
-          className="hero-section__headline-block"
-        >
-          <h1 className="hero-section__title">
-            {t("hero.title")}{" "}
-            <span className="hero-section__connector">
-              {t("hero.titleConnector")}
-            </span>{" "}
-            <span className="hero-section__accent">
-              {t("hero.titleAccent")}
-            </span>
-          </h1>
-        </motion.div>
-
-        <motion.p
-          className="hero-section__subline"
-          initial="hidden"
-          animate="visible"
-          custom={0.2}
-          variants={fadeIn}
-        >
-          {t("hero.subline")}
-        </motion.p>
-
-        <motion.ul
-          className="hero-section__perks"
-          initial="hidden"
-          animate="visible"
-          custom={0.35}
-          variants={fadeIn}
-        >
-          {[t("hero.stat1"), t("hero.stat2"), t("hero.stat3")].map(
-            (stat, i) => (
-              <li key={i} className="hero-section__perk">
-                <Check
-                  size={15}
-                  className="hero-section__perk-icon"
-                  aria-hidden="true"
-                />
-                <span>{stat}</span>
-              </li>
-            ),
-          )}
-        </motion.ul>
-
-        <motion.p
-          className="hero-section__trustline"
-          initial="hidden"
-          animate="visible"
-          custom={0.44}
-          variants={fadeIn}
-        >
-          {t("hero.trustLine")}
-        </motion.p>
-
-        <motion.div
-          className="hero-section__cta"
-          initial="hidden"
-          animate="visible"
-          custom={0.5}
-          variants={fadeIn}
-        >
-          <button
-            onClick={handlePrimaryClick}
-            className="hero-cta-button hero-cta-button--primary"
-            aria-label={t("hero.ctaPrimary")}
+        <div className="hero-section__text-column">
+          <motion.div
+            initial="hidden"
+            animate="visible"
+            variants={containerVariants}
+            className="hero-section__headline-block"
           >
-            <span>{t("hero.ctaPrimary")}</span>
-          </button>
-        </motion.div>
+            <h1 className="hero-section__title">
+              <span className="hero-section__title-lead">
+                {t("hero.titleLead", { defaultValue: t("hero.title") })}
+              </span>{" "}
+              <span className="hero-section__title-strong">
+                {t("hero.titleStrong", { defaultValue: "" })}
+              </span>
+            </h1>
+          </motion.div>
+
+          <motion.div
+            className="hero-section__cta hero-section__cta--desktop"
+            initial="hidden"
+            animate="visible"
+            custom={0.24}
+            variants={fadeIn}
+          >
+            <button
+              onClick={handlePrimaryClick}
+              onMouseEnter={() => setCtaActive(true)}
+              onMouseLeave={() => setCtaActive(false)}
+              onFocus={() => setCtaActive(true)}
+              onBlur={() => setCtaActive(false)}
+              className="hero-cta-button hero-cta-button--primary"
+              aria-label={t("hero.ctaPrimary")}
+            >
+              <span>{t("hero.ctaPrimary")}</span>
+            </button>
+          </motion.div>
+        </div>
+
+        <div className="hero-section__mascot-column">
+          <HeroMascot
+            pose={currentPose}
+            reduceMotion={reduceMotion}
+            prominence={mascotProminence}
+            preloadPoses={[
+              "invite-point-forward",
+              "success-pose",
+              "speed-performance",
+            ]}
+          />
+
+          <motion.div
+            className="hero-section__cta hero-section__cta--mobile"
+            initial="hidden"
+            animate="visible"
+            custom={0.32}
+            variants={fadeIn}
+          >
+            <button
+              onClick={handlePrimaryClick}
+              onMouseEnter={() => setCtaActive(true)}
+              onMouseLeave={() => setCtaActive(false)}
+              onFocus={() => setCtaActive(true)}
+              onBlur={() => setCtaActive(false)}
+              className="hero-cta-button hero-cta-button--primary"
+              aria-label={t("hero.ctaPrimary")}
+            >
+              <span>{t("hero.ctaPrimary")}</span>
+            </button>
+          </motion.div>
+        </div>
       </div>
+
       <div className="hero-section__logoloop">
         <LogoLoop
           logos={[

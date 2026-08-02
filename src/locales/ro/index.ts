@@ -11,10 +11,7 @@ import legal from "./pages/legal.json";
 import portfolioPage from "./pages/portfolioPage.json";
 import about from "./pages/about.json";
 import faq from "./pages/faq.json";
-import help from "./pages/help.json";
-import helpRequest from "./pages/helpRequest.json";
 import guideUi from "./pages/guideUi.json";
-import packs from "./pages/packs.json";
 import nav from "./components/nav.json";
 import footer from "./components/footer.json";
 import cookies from "./components/cookies.json";
@@ -38,8 +35,6 @@ const translation = {
   portfolioPage,
   about,
   faq,
-  help,
-  helpRequest,
   nav,
   footer,
   cookies,
@@ -52,7 +47,6 @@ const translation = {
     websiteNeeds: guidesWebsiteNeeds,
   },
   guideUi,
-  packs,
 };
 
 export default translation;

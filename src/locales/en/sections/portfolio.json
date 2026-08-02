@@ -1,20 +1,20 @@
-{
+﻿{
   "title": "Selected Works",
-  "subtitle": "Live projects, launched for clients.",
+  "subtitle": "Live projects shaped to build trust, improve clarity, and perform smoothly on every screen.",
   "visitWebsite": "Visit Website",
   "viewAllProjects": "View All Projects",
   "projects": {
     "immigration-agency": {
-      "description": "A professional website for an immigration assistance centre. Clear, accessible, and easy to navigate for any client."
+      "description": "A professional website for an immigration assistance centre, designed to make service paths clear on desktop and mobile."
     },
     "psychologist": {
-      "description": "A calm, trustworthy website for a clinical psychologist. Makes it easy for clients to book appointments."
+      "description": "A calm and trustworthy experience for a clinical psychologist, built to make appointment decisions easier from any device."
     },
     "sartoria": {
-      "description": "An elegant website for a bespoke tailoring studio in Rome. Reflects the quality and craftsmanship of the brand."
+      "description": "An elegant website for a bespoke tailoring studio in Rome, translating craftsmanship into a premium browsing journey on all screens."
     },
     "restaurant": {
-      "description": "A vibrant website for a Roman restaurant with online menu, photo gallery, and table reservations."
+      "description": "A vibrant website for a Roman restaurant with menu, gallery, and reservations, structured for quick browsing on mobile and desktop."
     }
   }
 }

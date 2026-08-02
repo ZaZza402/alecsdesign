@@ -1,52 +1,53 @@
-{
-  "title": "Cum fac alții. Cum fac eu.",
-  "subtitle": "Ce primești cu adevărat.",
-  "stmt1a": "Știu că alegerea unui developer bun e grea",
-  "stmt1b": "fiindcă puțini",
-  "stmt1accent": "chiar livrează ce promit.",
-  "stmt2a": "Am simplificat comparația: cum lucrez eu",
-  "stmt2b": "față de ce găsești",
-  "stmt2accent": "de obicei pe piață.",
-  "colOthers": "Alții",
-  "colMine": "Cu mine",
+﻿{
+  "title": "Template vs parteneriat",
+  "subtitle": "O comparatie scurta inainte sa alegi.",
+  "note": "Scor orientativ bazat pe standarde de livrare, profunzime tehnica si claritate a proprietatii.",
+  "stmt1a": "",
+  "stmt1b": "",
+  "stmt1accent": "",
+  "stmt2a": "",
+  "stmt2b": "",
+  "stmt2accent": "",
+  "colOthers": "Furnizor de template",
+  "colMine": "Partener strategic",
   "speed": {
-    "label": "Viteză",
-    "them": "3-6 secunde",
-    "me": "Sub 2 secunde"
+    "label": "Viteza",
+    "them": "Rapid doar la lansare",
+    "me": "Buget de performanta din ziua 1"
   },
   "google": {
     "label": "Google",
-    "them": "Greu de găsit",
-    "me": "Vizibil din prima zi"
+    "them": "SEO pus dupa lansare",
+    "me": "SEO tehnic planificat din build"
   },
   "ai": {
-    "label": "AI",
-    "them": "Nu te găsește",
-    "me": "AI-ul te recomandă"
+    "label": "Vizibilitate AI",
+    "them": "Fara semnale structurate pentru AI",
+    "me": "Date structurate pe care AI-ul le poate cita"
   },
   "mobile": {
-    "label": "Mobil",
-    "them": "Se strică pe telefon",
-    "me": "Perfect pe orice ecran"
+    "label": "Mobile",
+    "them": "Desktop intai, mobile reparat dupa",
+    "me": "Mobile-first din start"
   },
   "ownership": {
     "label": "Proprietate",
-    "them": "Plătești chirie",
-    "me": "Codul e al tău. Mereu."
+    "them": "Dependenta de platforma",
+    "me": "Detii codul si asset-urile"
   },
   "timeline": {
-    "label": "Timp",
-    "them": "Luni de așteptare",
-    "me": "Online în sub 2 săptămâni"
+    "label": "Termene",
+    "them": "Domeniu neclar si intarzieri",
+    "me": "Domeniu clar, etape si termene"
   },
   "design": {
     "label": "Design",
-    "them": "Șablon cu logo-ul tău",
-    "me": "Creat doar pentru tine"
+    "them": "Layout reciclat cu ajustari",
+    "me": "Directie vizuala personalizata"
   },
   "support": {
     "label": "Suport",
-    "them": "Deschizi tichet. Aștepți.",
-    "me": "Îmi scrii direct"
+    "them": "Tichete si asteptare",
+    "me": "Suport direct si raspuns rapid"
   }
 }

@@ -6,11 +6,11 @@ import { LanguageSuggestionBanner, LoadingSkeleton } from "./components/ui";
 import HeroSection from "./sections/HeroSection";
 import HowItWorksSection from "./sections/HowItWorksSection";
 import ComparisonSection from "./sections/ComparisonSection";
-import StatsSection from "./sections/StatsSection";
 
 // Lazy load pages and sections
 const PortfolioSection = lazy(() => import("./sections/PortfolioSection"));
 const ServicesSection = lazy(() => import("./sections/ServicesSection"));
+const StatsSection = lazy(() => import("./sections/StatsSection"));
 const ContactSection = lazy(() => import("./sections/ContactSection"));
 const PrivacyPolicy = lazy(() => import("./pages/PrivacyPolicy"));
 const TermsConditions = lazy(() => import("./pages/TermsConditions"));
@@ -43,9 +43,10 @@ const HomePage = () => {
         <div className="hero-bg-scope">
           <HeroSection />
           <div className="home-page__drawer">
-            <ComparisonSection />
-            <StatsSection />
             <Suspense fallback={<LoadingSkeleton />}>
+              <section id="stats" aria-labelledby="stats-heading">
+                <StatsSection />
+              </section>
               <section id="portfolio" aria-labelledby="portfolio-heading">
                 <PortfolioSection key={`portfolio-${t("nav.portfolio")}`} />
               </section>
@@ -56,6 +57,7 @@ const HomePage = () => {
             <section id="how-it-works" aria-labelledby="how-it-works-heading">
               <HowItWorksSection />
             </section>
+            <ComparisonSection />
             <Suspense fallback={<LoadingSkeleton />}>
               <section id="contact" aria-labelledby="contact-heading">
                 <ContactSection key={`contact-${t("nav.contact")}`} />

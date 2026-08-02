@@ -1,52 +1,53 @@
-{
-  "title": "Come fanno gli altri. Come lo faccio io.",
-  "subtitle": "Quello che ottieni davvero.",
-  "stmt1a": "Scegliere il developer giusto è difficile",
-  "stmt1b": "perché in pochi",
-  "stmt1accent": "ci mettono davvero l'anima.",
-  "stmt2a": "Ho reso semplice capire come lavoro io",
-  "stmt2b": "e cosa trovi",
-  "stmt2accent": "di solito sul mercato.",
-  "colOthers": "Gli altri",
-  "colMine": "Con me",
+﻿{
+  "title": "Template vs partner",
+  "subtitle": "Confronto rapido prima di scegliere.",
+  "note": "Punteggio indicativo basato su standard di consegna, profondita tecnica e chiarezza della proprieta.",
+  "stmt1a": "",
+  "stmt1b": "",
+  "stmt1accent": "",
+  "stmt2a": "",
+  "stmt2b": "",
+  "stmt2accent": "",
+  "colOthers": "Fornitore template",
+  "colMine": "Partner strategico",
   "speed": {
-    "label": "Velocit\u00e0",
-    "them": "3\u20136 secondi",
-    "me": "Sotto i 2 secondi"
+    "label": "Velocità",
+    "them": "Velocita curata solo al lancio",
+    "me": "Performance pianificata dal primo giorno"
   },
   "google": {
     "label": "Google",
-    "them": "Quasi introvabile",
-    "me": "Posizionato dal giorno 1"
+    "them": "SEO aggiunta dopo il lancio",
+    "me": "SEO tecnica prevista in fase di build"
   },
   "ai": {
-    "label": "AI",
-    "them": "L\u2019AI non ti trova",
-    "me": "L\u2019AI ti consiglia"
+    "label": "Scopribilità AI",
+    "them": "Nessun segnale strutturato per IA",
+    "me": "Dati strutturati che l IA puo citare"
   },
   "mobile": {
     "label": "Mobile",
-    "them": "Si rompe sullo smartphone",
-    "me": "Perfetto su ogni schermo"
+    "them": "Desktop prima, mobile corretto dopo",
+    "me": "Mobile-first fin dall inizio"
   },
   "ownership": {
-    "label": "Propriet\u00e0",
-    "them": "Stai affittando",
-    "me": "Il codice \u00e8 tuo. Sempre."
+    "label": "Proprietà",
+    "them": "Dipendenza dalla piattaforma",
+    "me": "Codice e asset di tua proprieta"
   },
   "timeline": {
     "label": "Tempi",
-    "them": "Mesi di attesa",
-    "me": "Online entro 2 settimane"
+    "them": "Ambito confuso e ritardi",
+    "me": "Ambito chiaro, milestone e scadenze"
   },
   "design": {
     "label": "Design",
-    "them": "Template col tuo logo",
-    "me": "Creato solo per te"
+    "them": "Layout riciclato con ritocchi",
+    "me": "Direzione visiva su misura"
   },
   "support": {
     "label": "Supporto",
-    "them": "Apri un ticket. Aspetta.",
-    "me": "Mi scrivi direttamente"
+    "them": "Passaggi tra ticket e attese",
+    "me": "Supporto diretto e risposte rapide"
   }
 }

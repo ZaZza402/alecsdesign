@@ -1,16 +1,16 @@
-{
-  "title": "How It Works",
-  "subtitle": "Three simple steps from first chat to live website.",
+﻿{
+  "title": "How We'll Work Together",
+  "subtitle": "Simple process, close collaboration, and no handoff confusion.",
   "step1": {
-    "title": "We have a free call",
-    "description": "You tell me about your business. I ask the right questions. No commitment, no jargon."
+    "title": "Strategic kickoff",
+    "description": "We define goals, audience, and constraints in one focused call so everything starts with clarity."
   },
   "step2": {
-    "title": "I design and build it",
-    "description": "You see the design first. We agree on it. Then I write the code."
+    "title": "Direction first, build second",
+    "description": "You approve the visual direction first, then I personally build the final experience with production discipline."
   },
   "step3": {
-    "title": "You launch - and you own it",
-    "description": "The site goes live. You get the code, the domain, everything. It's yours."
+    "title": "Launch with full ownership",
+    "description": "You go live with complete control of code, domain, assets, and future decisions."
   }
 }

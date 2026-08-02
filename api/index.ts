@@ -34,13 +34,7 @@ export default function handler(req: VercelRequest, res: VercelResponse) {
     : urlPath.startsWith("/ro")
       ? "ro"
       : "en";
-  const basePath = stripLanguagePrefix(urlPath);
-  const pageKey =
-    basePath === "/help/request" || basePath.startsWith("/help/request/")
-      ? "helpRequest"
-      : basePath === "/help" || basePath.startsWith("/help/")
-        ? "help"
-        : "home";
+  const pageKey = "home";
 
   const content: Record<string, Record<string, PageContent>> = {
     home: {
@@ -75,72 +69,6 @@ export default function handler(req: VercelRequest, res: VercelResponse) {
         locale: "ro_RO",
         ogImage: "https://www.alecsdesign.xyz/logo/og-image.jpg",
         prerender: `<div style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap" aria-hidden="true"><main><section aria-label="hero"><h1>Site-ul tău ar trebui să lucreze ca cel mai bun angajat al tău - 24/7.</h1><p>Dezvoltator web în Roma. Construiesc produse digitale rapide, optimizate SEO și scalabile pentru afaceri care vor să crească online.</p></section></main></div>`,
-      },
-    },
-    help: {
-      en: {
-        title:
-          "Free Human Digital Help | Website, Account, Email, Device Problems",
-        description:
-          "Get free, human-to-human digital help for everyday issues: websites, accounts, email, forms, and device settings. Clear step-by-step guidance from a real developer.",
-        keywords:
-          "free digital help, human tech support, website troubleshooting, account login help, email problem help, device settings support, internet form errors",
-        locale: "en_US",
-        ogImage: "https://www.alecsdesign.xyz/images/help/en/help.webp",
-        prerender: `<div style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap" aria-hidden="true"><main><section aria-label="help"><h1>Stuck online? Let's fix it in plain English.</h1><p>Free human-to-human digital help for websites, accounts, forms, email, and device issues.</p></section></main></div>`,
-      },
-      it: {
-        title:
-          "Aiuto Digitale Umano Gratuito | Siti, Account, Email, Dispositivi",
-        description:
-          "Ricevi aiuto digitale gratuito e umano per problemi quotidiani con siti, account, email, moduli online e impostazioni del dispositivo. Risposte chiare da una persona vera.",
-        keywords:
-          "aiuto digitale gratuito, supporto tecnico umano, problemi accesso account, assistenza email, errori modulo online, problemi sito web, aiuto impostazioni dispositivo",
-        locale: "it_IT",
-        ogImage: "https://www.alecsdesign.xyz/images/help/it/help.webp",
-        prerender: `<div style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap" aria-hidden="true"><main><section aria-label="help"><h1>Bloccato online? Risolviamolo insieme.</h1><p>Aiuto umano gratuito per problemi con siti, account, email, moduli e impostazioni digitali.</p></section></main></div>`,
-      },
-      ro: {
-        title: "Ajutor Digital Uman Gratuit | Site, Cont, Email, Dispozitiv",
-        description:
-          "Primești ajutor digital gratuit, om la om, pentru probleme zilnice cu site-uri, conturi, email, formulare online și setări de dispozitiv. Pași clari de la o persoană reală.",
-        keywords:
-          "ajutor digital gratuit, suport tehnic uman, probleme autentificare cont, asistență email, erori formular online, probleme site web, ajutor setări dispozitiv",
-        locale: "ro_RO",
-        ogImage: "https://www.alecsdesign.xyz/images/help/ro/help.webp",
-        prerender: `<div style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap" aria-hidden="true"><main><section aria-label="help"><h1>Te-a blocat ceva online? Hai să-l rezolvăm.</h1><p>Ajutor digital gratuit, de la om la om, pentru site-uri, conturi, email și formulare.</p></section></main></div>`,
-      },
-    },
-    helpRequest: {
-      en: {
-        title: "Request Free Digital Help | Send Your Problem",
-        description:
-          "Submit your digital issue through a simple protected form. A real developer reviews your request and replies with clear human guidance by email.",
-        keywords:
-          "digital help request form, free tech support request, ask a developer online, website issue form, login problem help, email troubleshooting request",
-        locale: "en_US",
-        ogImage: "https://www.alecsdesign.xyz/images/help/en/help.webp",
-        prerender: `<div style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap" aria-hidden="true"><main><section aria-label="help-request"><h1>Tell me where you are stuck.</h1><p>Submit one clear digital issue and get a human reply by email.</p></section></main></div>`,
-      },
-      it: {
-        title: "Richiedi Aiuto Digitale Gratuito | Invia il Tuo Problema",
-        description:
-          "Invia il tuo problema digitale con un modulo semplice e protetto. Una persona vera legge la richiesta e risponde via email con istruzioni chiare.",
-        keywords:
-          "modulo richiesta aiuto digitale, supporto tecnico gratuito online, chiedere aiuto sviluppatore, problema login account, assistenza sito web, richiesta aiuto email",
-        locale: "it_IT",
-        ogImage: "https://www.alecsdesign.xyz/images/help/it/help.webp",
-        prerender: `<div style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap" aria-hidden="true"><main><section aria-label="help-request"><h1>Dimmi dove ti sei bloccato.</h1><p>Invia una richiesta chiara e ricevi una risposta umana via email.</p></section></main></div>`,
-      },
-      ro: {
-        title: "Cere Ajutor Digital Gratuit | Trimite Problema Ta",
-        description:
-          "Trimite problema ta digitală printr-un formular simplu și protejat. O persoană reală îți citește cererea și îți răspunde pe email cu pași clari.",
-        keywords:
-          "formular cerere ajutor digital, suport tehnic gratuit online, cere ajutor dezvoltator, problemă autentificare cont, asistență site web, cerere ajutor email",
-        locale: "ro_RO",
-        ogImage: "https://www.alecsdesign.xyz/images/help/ro/help.webp",
-        prerender: `<div style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap" aria-hidden="true"><main><section aria-label="help-request"><h1>Spune-mi unde te-ai blocat.</h1><p>Trimite problema clar și primește răspuns uman pe email.</p></section></main></div>`,
       },
     },
   };
